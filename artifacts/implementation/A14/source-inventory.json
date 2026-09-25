@@ -1,0 +1,65 @@
+{
+  "revision": "A14",
+  "files": [
+    {
+      "path": "apps/web/src/declared.tsx",
+      "sha256": "3c9cd3390aea38d79fd316fb963aaff0a0c62f1fdf7daae30af5c78e29d9258b"
+    },
+    {
+      "path": "apps/web/src/observation.tsx",
+      "sha256": "2e68f6babe0cb8918a06bac78d893346d0b23211bf29135e3b1b3f67e3c4fd78"
+    },
+    {
+      "path": "backend/observation.ts",
+      "sha256": "4605218ce1626bd935077159bb22a072ace56fb93bcbcc0f8de365d5f486784a"
+    },
+    {
+      "path": "contracts/observation.ts",
+      "sha256": "105b4772f6880286f890d2bd60e1f2f08450e9fe9a7416434321dbea9e7f56cc"
+    },
+    {
+      "path": "native/observer/inspect.py",
+      "sha256": "b4958a4532d1ddf3bfa8b3f2bd4314f73ea5aef09c71e27d8a5379af6b5ac176"
+    },
+    {
+      "path": "package.json",
+      "sha256": "053d4a7e3ccb38909182ccaeee8e7e9f504e290581a6eb36657faa3314c795ef"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1815d43125823948b065d1d8fdee86fef8eba65aa077fe5e59a08fc7e1ee7fd3"
+    },
+    {
+      "path": "scripts/native-session.py",
+      "sha256": "01db448a9fdb2f4ed04ae882345278ac0807e80e47f1f431db3894b9dc7feb4c"
+    },
+    {
+      "path": "scripts/observation-session.py",
+      "sha256": "290b9dba1d177abc54f75e091ef518604f5ce2c82442a89bb2abbeae776bb2e5"
+    },
+    {
+      "path": "tests/browser/observation.spec.ts",
+      "sha256": "fae63f0081ccc3d7742031e086d9c32d58bb2741e510a76dea54be40436e1f2c"
+    },
+    {
+      "path": "tests/browser/interfaces.spec.ts",
+      "sha256": "d6054d02158b6453f3b7f3b6f71bc75cb7c9994ac858f171a36525eead49f2f8"
+    },
+    {
+      "path": "tests/integration/interfaces.test.ts",
+      "sha256": "9c2c69ba4dec8983f27090910de2df94fca4023431f36f09a582fb8568178038"
+    },
+    {
+      "path": "tests/integration/interface_faults.py",
+      "sha256": "cd422d1e645423480dec1ebcebaca0ca1788dae63b831e4e5b5125411a897efa"
+    },
+    {
+      "path": "tests/integration/observer_faults.py",
+      "sha256": "e2fbf07ec328f8ffd8dbe6acc93e43e8608abe05d7798d964cfaec608fb1ae42"
+    },
+    {
+      "path": "tests/interfaces.test.ts",
+      "sha256": "1fd5ffe5f910b04e5d892a298d7d63090382bda1c1a70512c76e997ca221181b"
+    }
+  ]
+}

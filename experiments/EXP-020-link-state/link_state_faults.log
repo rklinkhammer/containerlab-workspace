@@ -1,0 +1,57 @@
+[
+  {
+    "case": "up",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "no-carrier",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "admin-down",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "missing-flags",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "bad-flags",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "changed-index",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "changed-mac",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "changed-name",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "OUTPUT_LIMIT",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "INSPECTION_TIMEOUT",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "INSPECTION_FAILED",
+    "status": "PASS",
+    "evidenceType": "mock"
+  }
+]

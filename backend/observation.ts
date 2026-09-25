@@ -1,6 +1,6 @@
 import {readFileSync} from 'node:fs';
 import {spawn} from 'node:child_process';
-import {associate,type Binding} from '../contracts/observation.ts';
+import {associateStates,type Binding} from '../contracts/observation.ts';
 import {parseLiveGraph} from '../contracts/live-graph.ts';
 import type {IncomingMessage,ServerResponse} from 'node:http';
 function session(){
@@ -20,7 +20,7 @@ export function inspectNative(vm:string,signal?:AbortSignal):Promise<any>{return
 });}
 export async function observe(signal?:AbortSignal){
  const s=session();if(active)throw Error('BUSY');if(Date.now()-lastStart<1000)throw Error('RATE_LIMIT');active=true;lastStart=Date.now();
- try{const raw=await inspectNative(s.vm,signal);if(!raw.ok)throw Error(['INSPECTION_TIMEOUT','OUTPUT_LIMIT','ASSOCIATION_CONFLICT','BUSY'].includes(raw.code)?raw.code:'INSPECTION_FAILED');return associate(raw,s.binding as Binding,++sequence);}finally{active=false;}
+ try{const raw=await inspectNative(s.vm,signal);if(!raw.ok)throw Error(['INSPECTION_TIMEOUT','OUTPUT_LIMIT','ASSOCIATION_CONFLICT','BUSY'].includes(raw.code)?raw.code:'INSPECTION_FAILED');return associateStates(raw,s.binding as Binding,++sequence);}finally{active=false;}
 }
 const messages:Record<string,string>={OBSERVATION_UNAVAILABLE:'No active runtime observation session.',INSPECTION_FAILED:'Native inspection failed; absence is not established.',INSPECTION_TIMEOUT:'Native inspection exceeded its time limit.',OUTPUT_LIMIT:'Inspection output exceeded its limit.',MALFORMED_OBSERVATION:'Native observation could not be accepted.',ASSOCIATION_CONFLICT:'Runtime identity differs from the enrolled deployment; no replacement was associated.',BUSY:'An inspection is already running.',RATE_LIMIT:'Refresh is rate limited.',CANCELLED:'Inspection cancelled.'};
 export async function observationAPI(req:IncomingMessage,res:ServerResponse,port:number){

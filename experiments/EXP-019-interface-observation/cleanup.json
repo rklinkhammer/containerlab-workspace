@@ -1,0 +1,7 @@
+{
+  "vm": "clab-load-20260925-100311-exp016",
+  "status": "Stopped",
+  "taskSessionManifestsAbsent": true,
+  "preexistingManifestUnchanged": true,
+  "labEvidence": "lab-cleanup.json"
+}

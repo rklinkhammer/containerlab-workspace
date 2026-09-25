@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Explicit opt-in fresh VM lifecycle. Never starts or reuses an existing VM."""
 import pathlib,subprocess,hashlib,json,datetime,secrets,sys,os
-ROOT=pathlib.Path(__file__).resolve().parents[1];os.chdir(ROOT);R=ROOT/'.runtime';R.mkdir(exist_ok=True)
+ROOT=pathlib.Path(__file__).resolve().parents[1];os.chdir(ROOT);R=pathlib.Path(os.environ.get('CLAB_SESSION_DIR',str(ROOT/'.runtime'))).resolve();R.mkdir(exist_ok=True)
 def run(args,**kw):return subprocess.run(args,check=True,**kw)
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 if len(sys.argv)!=2 or sys.argv[1] not in ('create','stop'):raise SystemExit('Usage: python3 scripts/native-session.py create|stop')

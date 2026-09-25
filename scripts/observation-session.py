@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Explicit disposable lab qualification only; no application lifecycle API."""
 import pathlib,json,subprocess,hashlib,sys,os,datetime
-ROOT=pathlib.Path(__file__).resolve().parents[1];os.chdir(ROOT);R=ROOT/'.runtime';P=R/'observation-session.json';N=R/'native-session.json'
+ROOT=pathlib.Path(__file__).resolve().parents[1];os.chdir(ROOT);R=pathlib.Path(os.environ.get('CLAB_SESSION_DIR',str(ROOT/'.runtime'))).resolve();P=R/'observation-session.json';N=R/'native-session.json'
 def run(args,**kw):return subprocess.run(args,check=True,**kw)
 def guest(vm,*args):return run(['limactl','shell',vm,*args])
 def setup():
@@ -19,11 +19,12 @@ def setup():
  guest(vm,'sudo','mkdir','-p','/opt/observation-slice')
  run(['limactl','copy','fixtures/bundles/RUNTIME-PAIR/RUNTIME-PAIR.clab.yml',vm+':/tmp/runtime.clab.yml'])
  guest(vm,'sudo','install','-m','644','/tmp/runtime.clab.yml','/opt/observation-slice/topology.clab.yml')
- env={**os.environ,'CLAB_NATIVE_SESSION':str(N)}
- run(['node','--input-type=module','-e',"import {load} from './backend/native-loader.ts';import{writeFileSync}from'node:fs';import{randomBytes}from'node:crypto';const g=await load('RUNTIME-PAIR',randomBytes(16).toString('hex'));if(g.status!=='declarations_only')throw Error('DECLARATION_REJECTED');writeFileSync('.runtime/observation-graph.json',JSON.stringify(g));"],env=env)
+ env={**os.environ,'CLAB_NATIVE_SESSION':str(N),'CLAB_OBSERVATION_GRAPH':str(R/'observation-graph.json')}
+ run(['node','--input-type=module','-e',"import {load} from './backend/native-loader.ts';import{writeFileSync}from'node:fs';import{randomBytes}from'node:crypto';const g=await load('RUNTIME-PAIR',randomBytes(16).toString('hex'));if(g.status!=='declarations_only')throw Error('DECLARATION_REJECTED');writeFileSync(process.env.CLAB_OBSERVATION_GRAPH,JSON.stringify(g));"],env=env)
  guest(vm,'sudo','containerlab','deploy','--topo','/opt/observation-slice/topology.clab.yml')
  raw=json.loads(subprocess.check_output(['limactl','shell',vm,'sudo','python3','/opt/clab-observer.py'],text=True));assert raw['ok'] and len(raw['rows'])==2
- nodes=sorted([{'node':r['node'],'id':r['id']} for r in raw['rows']],key=lambda x:x['node']);assert [n['node'] for n in nodes]==['left','right'] and len({n['id'] for n in nodes})==2
+ assert all(r['interfaces']['status']=='complete' and len(r['interfaces']['items'])==1 for r in raw['rows']), 'Required native endpoint enrollment unavailable'
+ nodes=sorted([{'node':r['node'],'id':r['id'],'endpoint':r['interfaces']} for r in raw['rows']],key=lambda x:x['node']);assert [n['node'] for n in nodes]==['left','right'] and len({n['id'] for n in nodes})==2
  graph=json.loads((R/'observation-graph.json').read_text());binding={'nodes':nodes,'sourceSha256':graph['provenance']['sourceSha256'],'deploymentId':hashlib.sha256(json.dumps([vm,nodes,graph['provenance']['sourceSha256']],sort_keys=True).encode()).hexdigest()}
  binary=subprocess.check_output(['limactl','shell',vm,'sha256sum','/usr/local/bin/containerlab'],text=True).split()[0]
  P.write_text(json.dumps({'vm':vm,'expiresAt':s['expiresAt'],'createdFor':'runtime-observation-qualification','binding':binding,'graph':graph,'nativeBinarySha256':binary},indent=2)+'\n')

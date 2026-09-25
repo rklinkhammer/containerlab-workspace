@@ -1,0 +1,13 @@
+{
+  "revision": "A14",
+  "baselineVerifiedFiles": 519,
+  "archiveVerifiedFiles": 27,
+  "stagedWritesVerified": 13,
+  "brokenLinks": [],
+  "labRemoved": true,
+  "vmStopped": true,
+  "taskSessionManifestsAbsent": true,
+  "preexistingManifestUnchanged": true,
+  "wholeSetAtomicity": false,
+  "publication": "Verified archive, staged per-file publication, completion last"
+}

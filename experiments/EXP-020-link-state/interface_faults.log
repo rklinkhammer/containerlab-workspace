@@ -1,0 +1,32 @@
+[
+  {
+    "case": "partial",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "namespace-race",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "container-race",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "duplicate",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "oversize",
+    "status": "PASS",
+    "evidenceType": "mock"
+  },
+  {
+    "case": "omitted",
+    "status": "PASS",
+    "evidenceType": "mock"
+  }
+]

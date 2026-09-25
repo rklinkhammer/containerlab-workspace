@@ -1,0 +1,18 @@
+[
+  {
+    "path": "cmd/inspect_interfaces.go",
+    "sha256": "87b03b7658ee11f24978f2dbbaa6c3a13fbc8935722471067a1b1312388feb82"
+  },
+  {
+    "path": "core/list.go",
+    "sha256": "747bd0432c79349bcee8f4a93602c406c98db04f4f57aa11a6575efb0a9d979d"
+  },
+  {
+    "path": "types/types.go",
+    "sha256": "1197977a729e0ffeef1fa7e93388f0d822f325e1dc069e9c2d79dd764171db86"
+  },
+  {
+    "path": "core/options_list.go",
+    "sha256": "4780d73498e4d80dd63c11cdb55953a6ec98e55edfaa1a0d19eb1464a0dff016"
+  }
+]

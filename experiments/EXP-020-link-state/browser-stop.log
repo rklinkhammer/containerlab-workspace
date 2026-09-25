@@ -1,0 +1,11 @@
+06:39:11 INFO Parsing & checking topology file=topology.clab.yml
+06:39:11 INFO no containerlab containers found
+time="2026-09-25T06:39:11-04:00" level=info msg="Sending SIGINT to hostagent process 5969"
+time="2026-09-25T06:39:11-04:00" level=info msg="Waiting for the host agent and the driver processes to shut down"
+time="2026-09-25T06:39:11-04:00" level=info msg="[hostagent] Received SIGINT, shutting down the host agent"
+time="2026-09-25T06:39:11-04:00" level=info msg="[hostagent] Shutting down the host agent"
+time="2026-09-25T06:39:11-04:00" level=info msg="[hostagent] Shutting down VZ"
+time="2026-09-25T06:39:11-04:00" level=info msg="[hostagent] [VZ] - vm state change: stopped"
+time="2026-09-25T06:39:11-04:00" level=error msg="[hostagent] accept tcp 127.0.0.1:51091: use of closed network connection"
+time="2026-09-25T06:39:12-04:00" level=info msg="Waiting for the instance to shut down"
+time="2026-09-25T06:39:12-04:00" level=info msg="The instance clab-load-20260925-103509-exp016 has shut down"

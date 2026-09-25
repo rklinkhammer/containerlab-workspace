@@ -1,0 +1,145 @@
+{
+  "vm": "clab-load-20260925-100311-exp016",
+  "expiresAt": "2026-09-25T11:03:48.302629+00:00",
+  "createdFor": "runtime-observation-qualification",
+  "binding": {
+    "nodes": [
+      {
+        "node": "left",
+        "id": "ab0415d86cb460f8e6892090ffa7c0605b9e6803ee9ee4d822f89967432bce04",
+        "endpoint": {
+          "status": "complete",
+          "reason": "NATIVE_INTERFACE_INVENTORY",
+          "namespace": "58030e77807b3b2fe198b4cd97777fa3cc9ab860c0eaed36f2fb368514841e9f",
+          "items": [
+            {
+              "name": "eth1",
+              "index": 8,
+              "mac": "aa:c1:ab:59:ce:fe",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          ]
+        }
+      },
+      {
+        "node": "right",
+        "id": "e8260b5d859389c62b4733d2ac2fc62ea21cd96aa95daacb17840da955da398c",
+        "endpoint": {
+          "status": "complete",
+          "reason": "NATIVE_INTERFACE_INVENTORY",
+          "namespace": "76561b7d5d470ca82c185434630bfc970e9426749db8fae3bca0b2a7174545e9",
+          "items": [
+            {
+              "name": "eth1",
+              "index": 7,
+              "mac": "aa:c1:ab:7b:4a:af",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          ]
+        }
+      }
+    ],
+    "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+    "deploymentId": "138e935f58aa46b4e41ae0a697c4691cc6d815f781d0d31184f91372d77650bc"
+  },
+  "graph": {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "RUNTIME-PAIR",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "outcomeSha256": "6ba4d6dec0d897c9a4d1b52a1dee3fa79c299999e88e2e0d8a9767fe494d53bf",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "RUNTIME-PAIR",
+      "bundleSha256": "640571e307a557760cb15a20fa651d3cb329d175ee142bca5b9bd4cd3931b348",
+      "entryFile": "RUNTIME-PAIR.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "a2b1049c1f7ec3886244f09ab22de8e5",
+      "completedAt": "2026-09-25T10:03:56.101Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n0",
+        "name": "left",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n1",
+        "name": "right",
+        "kind": "linux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n0",
+            "nodeLabel": "left",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n1",
+            "nodeLabel": "right",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:d0",
+        "ownerId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:d1",
+        "ownerId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  "nativeBinarySha256": "30e841ad0f443ad07f4c1189844f33447d31587b472b9062954bbeb65596b4d5"
+}

@@ -1,0 +1,29 @@
+ M IMPLEMENTATION_HANDOFF.md
+ M README.md
+ M apps/web/src/declared.tsx
+ M apps/web/src/observation.tsx
+ M artifacts/design/ARCHITECTURE.md
+ M artifacts/design/COMPLETION.json
+ M artifacts/design/DECISIONS.md
+ M artifacts/design/IMPLEMENTATION_PLAN.md
+ M artifacts/design/OBSERVATION_CONTRACT.md
+ M artifacts/design/P1A_BACKLOG.md
+ M artifacts/design/READINESS.md
+ M artifacts/design/README.md
+ M artifacts/design/TRACEABILITY.md
+ M artifacts/implementation/RESULTS.md
+ M backend/observation.ts
+ M contracts/observation.ts
+ M native/observer/inspect.py
+ M package.json
+ M scripts/native-session.py
+ M scripts/observation-session.py
+ M tests/browser/observation.spec.ts
+?? artifacts/design/history/A13-before-A14/
+?? artifacts/implementation/A14/
+?? experiments/EXP-019-interface-observation/
+?? experiments/EXP-020-link-state/
+?? tests/browser/interfaces.spec.ts
+?? tests/integration/interface_faults.py
+?? tests/integration/interfaces.test.ts
+?? tests/interfaces.test.ts

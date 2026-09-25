@@ -1,0 +1,69 @@
+{
+  "revision": "A15",
+  "files": [
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "4899f9242f877f0c7b03960efae64cfc46508974142531fbb6a187f8623c5ef1"
+    },
+    {
+      "path": "apps/web/src/declared.tsx",
+      "sha256": "3cd33dde41e8a32831ec74cecd75957d9c09c9cfe8dedcbaadae1249abcf52ea"
+    },
+    {
+      "path": "apps/web/src/observation.tsx",
+      "sha256": "bd46481a439e72334825d7feae27774c66c18b511f9d8b68376e4de7ed4d731c"
+    },
+    {
+      "path": "backend/observation.ts",
+      "sha256": "69cc1e1157c42767600e8bcb5833500342d9e4707ec446c7f3fc4f6c8885d53c"
+    },
+    {
+      "path": "contracts/observation.ts",
+      "sha256": "e9016795f7cf35a83751cd94acedf26d70a27ec45ea94d7e74c39bd11043e87a"
+    },
+    {
+      "path": "native/observer/inspect.py",
+      "sha256": "983b99d0adc01b2270da082bdcc080ecf5b1d7331a2d62eb2b606953cbd0aa8d"
+    },
+    {
+      "path": "package.json",
+      "sha256": "8a3238964c2b4063af5b7ed5805dd34ac2ff090b6f602b630046320a30cedc74"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1815d43125823948b065d1d8fdee86fef8eba65aa077fe5e59a08fc7e1ee7fd3"
+    },
+    {
+      "path": "tests/browser/interfaces.spec.ts",
+      "sha256": "7e4b5e46148756992691558c50bf7c0badde3a3908a4dfe6bad44edd2e1e7e36"
+    },
+    {
+      "path": "tests/browser/link-state.spec.ts",
+      "sha256": "e3181cd3b42d76fcc8f76d569a01af8a88059ff67d0c96df117098087ce38b5b"
+    },
+    {
+      "path": "tests/integration/interfaces.test.ts",
+      "sha256": "70b0a4d9d3c3351c5300b345bc2b9d8f3c6ac56857cf574ff58e88dc3c6b53cb"
+    },
+    {
+      "path": "tests/integration/link-state.test.ts",
+      "sha256": "d7657a02acd0add9cdda3e94f6c8e290ec022cd7322f5fd772e62a8f763c10a4"
+    },
+    {
+      "path": "tests/integration/link_state_faults.py",
+      "sha256": "8d189859d4030ae25a59ec82360d05263966a3f5e6d805ab0fc8fd0fc7fef857"
+    },
+    {
+      "path": "tests/link-state.test.ts",
+      "sha256": "588511dc457038b8902f7e7c8163abf7d1120e9ad405de380a452fa29cbcec30"
+    },
+    {
+      "path": "scripts/observation-session.py",
+      "sha256": "290b9dba1d177abc54f75e091ef518604f5ce2c82442a89bb2abbeae776bb2e5"
+    },
+    {
+      "path": "scripts/native-session.py",
+      "sha256": "01db448a9fdb2f4ed04ae882345278ac0807e80e47f1f431db3894b9dc7feb4c"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+Continue from architecture A13 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Treat ../containerlab-investigation as read-only evidence.
+Preserve the sibling-directory arrangement, historical evidence
+and unrelated changes. Do not access, start, stop or modify
+pre-existing Lima VMs.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, README.md and:
+- artifacts/implementation/A13/RESULTS.md
+- artifacts/design/OBSERVATION_CONTRACT.md
+- The current architecture, decisions, readiness, backlog,
+  implementation plan and traceability.
+- experiments/EXP-018-runtime-observation/PLAN.md
+- experiments/EXP-018-runtime-observation/RESULTS.md
+- The implemented observation backend, contracts and GUI.
+
+Inspect Git status and verify artifacts/design/COMPLETION.json
+before relying on the baseline.
+
+Implement the next bounded slice: native interface observations
+associated with declared endpoints for the controlled two-node lab.
+
+Purpose:
+Validate our application's integration with Containerlab and its
+faithful presentation of runtime evidence. Do not expand this into
+general Containerlab validation or another broad parsing exercise.
+Keep universal 177-case corpus fidelity separate and unchanged.
+
+1. Select the native interface.
+   Inspect pinned Containerlab interface-inspection capabilities
+   and existing evidence first.
+   Determine which fields are actually available: interface identity,
+   name, administrative state, operational state, carrier, peer
+   information and network-namespace identity.
+   Choose the smallest supported native inspection path.
+   Do not infer unavailable fields or build independent topology
+   parsing, alias normalization or lifecycle semantics.
+
+2. Define association and independent expectations first.
+   Extend/version the observation contract deliberately.
+   Associate each observation with the enrolled deployment, full
+   container ID, declared node and declared endpoint.
+   Account for interface recreation and namespace-local interface
+   indexes; do not treat an interface name or index alone as durable
+   identity.
+   If native evidence cannot establish an association reliably,
+   report it as unresolved rather than guessing.
+
+   Keep these concepts distinct:
+   - Declared endpoint.
+   - Observed interface.
+   - Administrative state.
+   - Operational state or carrier, when actually available.
+   - Confirmed absence from a successful inspection.
+   - Inspection failure, unavailable information and stale data.
+
+   Define any displayed link-state summary explicitly. Do not label
+   a link “healthy” merely because its containers are running or its
+   interfaces exist. Do not claim routing or forwarding correctness.
+
+3. Implement the minimal GUI integration.
+   Show interface observations in the existing node/link inspectors
+   and provide clear endpoint-to-observation association details.
+   Include timestamps, freshness, unknown states and specific safe
+   errors.
+   Preserve declared objects when runtime interfaces are absent.
+   Preserve selection and navigation during refresh.
+   Retain bounded polling, non-overlapping requests, cancellation
+   and rejection of superseded responses.
+   Keep observations separate from declaration data.
+
+4. Qualify in a new dedicated VM.
+   This task authorizes creating a fresh VM and deploying the same
+   small pinned synthetic two-node lab through native tools.
+   Do not reuse a stopped trial or deploy external corpus examples.
+
+   Write expected outcomes before execution, then exercise:
+   - Both declared endpoints associated with actual interfaces.
+   - A controlled interface administrative down/up transition.
+   - Node stop/start and inspection unavailability.
+   - Interface removal/recreation where supported by the selected
+     native workflow.
+   - Lab removal/recreation with reused display names.
+   - Incorrect, ambiguous or outdated endpoint associations.
+   - Partial inspection failure and stale observations.
+   - Cancellation, output limits and scoped cleanup.
+
+   Perform lifecycle and interface changes only as explicit
+   qualification actions through supported native tools.
+   Do not add GUI mutation controls.
+   If a requested transition lacks a supported reproducible mechanism,
+   record the exact limitation and continue independent checks.
+
+5. Retain the privilege and disclosure boundaries.
+   Do not expose a privileged runtime socket to the browser or
+   declaration-loading worker.
+   Extend the fixed observation path only as necessary; document
+   the access it requires and what its read-only guarantee actually
+   covers.
+   Do not accept browser-selected commands, VM names, filesystem paths,
+   daemon addresses or arbitrary inspection targets.
+   Use strict disclosure allowlists, safe text rendering, finite
+   diagnostics and bounded execution/output/concurrency.
+   Do not return raw configuration, credentials, unrestricted native
+   output or private paths.
+
+   TT-01 remains active: login and multi-user ownership authorization
+   are out of scope. Do not reintroduce them as prerequisites.
+
+6. Verify by stage.
+   Separate native inspection outcomes, endpoint association,
+   projected observation correctness, GUI behavior and process
+   safeguards.
+   Compare against independent expectations, not only counts or
+   current implementation output.
+   Preserve failed attempts and never change expectations merely
+   to match code.
+   Run relevant contract, integration and browser regressions.
+   Identify actual-runtime evidence, mocks and unrun checks separately.
+
+Use port 4173. Do not terminate unrelated processes if occupied.
+Ordinary builds/tests must not create VMs or deploy labs automatically.
+Runtime qualification must use the explicit fresh-session workflow.
+
+Do not implement arbitrary uploads, persistent private-source storage,
+GUI deployment/interface controls, terminals, capture or packet analysis.
+Do not introduce a traffic-testing framework or claim end-to-end network
+correctness from this interface-observation slice.
+
+Destroy only the task-created lab, collect cleanup evidence and stop
+the newly created VM. Preserve prior trial results.
+
+Update affected architecture decisions, observation contracts,
+implementation status, traceability and handoff. Follow D-15
+archival/publication rules before replacing published documents.
+Keep historical Q-gate outcomes unchanged unless their actual
+acceptance criteria are satisfied.
+
+Complete the bounded implementation, not just research or scaffolding.
+
+Finish with:
+- What interface information the GUI now observes.
+- How observations are associated with declared endpoints.
+- Precisely what any displayed link state establishes—and what
+  remains unknown.
+- Actual verification results, preserved failures and unrun checks.
+- Reproducible setup, preview, qualification and cleanup commands.
+- Confirmation that the task lab is removed and the new VM is stopped.
+- Remaining blockers and the smallest next gated implementation step.

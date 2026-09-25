@@ -1,0 +1,146 @@
+Continue from architecture A14 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Treat ../containerlab-investigation as read-only evidence.
+Preserve the sibling-directory arrangement, historical evidence
+and unrelated changes. Do not access, start, stop or modify
+pre-existing Lima VMs.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, README.md and:
+- artifacts/implementation/A14/RESULTS.md
+- artifacts/design/OBSERVATION_CONTRACT.md
+- The current architecture, decisions, readiness, backlog,
+  implementation plan and traceability.
+- experiments/EXP-019-interface-observation/PLAN.md
+- experiments/EXP-019-interface-observation/RESULTS.md
+- The implemented observer, association contracts and GUI.
+
+Inspect Git status and preserve staged work. Verify
+artifacts/design/COMPLETION.json before relying on the baseline.
+
+Execute the next bounded risk-reduction slice: qualify native-supported
+administrative state, carrier, peer information and endpoint continuity
+for the existing controlled two-node Linux-veth lab.
+
+Purpose:
+Determine which additional runtime facts our application can reliably
+associate with declared endpoints and display. Validate our integration
+with Containerlab; do not expand into general Containerlab validation,
+another broad parsing exercise or a traffic-testing framework.
+
+1. Establish capabilities before implementing.
+   Inspect the exact pinned Containerlab CLI, APIs and exported types.
+   Identify supported sources for administrative flags, operational
+   state, carrier, peer identity and interface lifecycle evidence.
+
+   Separate:
+   - Native Containerlab exports.
+   - Linux/runtime facts requiring a supplemental observer.
+   - Derived interpretations.
+   - Information that cannot be established reliably.
+
+   Prefer the smallest supported native path. If supplemental Linux
+   observation is necessary, document why, its privilege requirements
+   and its precise relationship to native identity before implementing.
+   Do not independently parse topology semantics or normalize aliases.
+
+2. Define association and independent expectations.
+   Preserve deployment/source identity, full container IDs and declared
+   endpoint identity. Treat interface indexes as namespace-local and
+   reusable; names, MACs and matching tuples are not durable identity.
+
+   Examine deletion/recreation, namespace replacement, peer references
+   and missed changes between polls. Do not infer peer identity from an
+   unqualified numeric index or infer continuity from unchanged values.
+
+   Write acceptance expectations before execution. Distinguish observed,
+   absent, unavailable, unresolved and stale evidence. Keep administrative
+   state, operational state, carrier and peer association separate.
+
+   If reliable continuity cannot be established, retain unknown and
+   document the limitation. A well-supported negative finding is a valid
+   qualification result; do not invent a mechanism merely to close a gate.
+
+3. Implement only evidence-supported additions.
+   This task authorizes minimal application changes for newly qualified
+   fields in the existing observation backend, DTO and node/link inspectors.
+
+   Version the contract deliberately if its meaning changes. Preserve
+   recorded evidence and existing declarations. Include evidence source,
+   timestamp, association basis and safe failure reasons as appropriate.
+
+   Maintain selection, bounded polling, cancellation, freshness and
+   rejection of superseded responses. Do not add speculative fields,
+   services, automatic adoption or GUI mutation controls.
+
+   Link health must remain unknown unless separately defined evidence
+   supports a narrower claim. Administrative up, carrier or peer
+   association does not establish routing or forwarding correctness.
+
+4. Qualify in a new dedicated VM.
+   This task authorizes a fresh VM and deployment of only the same pinned
+   synthetic RUNTIME-PAIR lab. Use a separate task session directory;
+   never reuse an existing or stopped trial.
+
+   Exercise, where supported:
+   - Initial endpoint association.
+   - Administrative down/up and independently observed operational state.
+   - Carrier and peer behavior, without assuming expected relationships.
+   - Interface deletion/recreation and changed identity attributes.
+   - Same-name or same-attribute replacement where reproducible.
+   - Node restart and namespace replacement.
+   - Partial inspection failure, races and stale evidence.
+   - Cancellation, output limits and scoped cleanup.
+
+   Perform mutations only as explicit qualification actions through
+   supported native/runtime tools. Preserve failed attempts.
+   Label mocks separately from actual runtime evidence.
+
+   Continue independent work if a capability or runtime prerequisite
+   is unavailable. Record exact blockers and unrun checks.
+
+5. Preserve existing boundaries.
+   No daemon socket may reach the browser or declaration worker.
+   Keep fixed, reviewed observation targets and commands; do not accept
+   arbitrary browser-selected VM names, paths, commands or daemon addresses.
+
+   Retain disclosure allowlists, safe rendering, finite diagnostics,
+   execution/output/concurrency limits and process cleanup. Do not expose
+   raw configuration, credentials, private paths or unrestricted stderr.
+
+   Document what the privileged observer's read-only guarantee actually
+   covers. TT-01 remains active: login and multi-user authorization remain
+   out of scope.
+
+6. Verify and publish.
+   Run appropriate contract, integration and browser regressions.
+   Test independent semantics rather than only object counts.
+   Never change expectations merely to match implementation.
+
+   Use port 4173; do not terminate unrelated listeners. Ordinary builds
+   and tests must not create VMs automatically. Account for state-changing
+   tests: use separate fresh trials where required rather than silently
+   re-enrolling or repairing test state.
+
+   Destroy only the task-created lab, collect cleanup evidence and stop
+   the new VM, including when qualification fails.
+
+   Update affected architecture decisions, observation contracts,
+   implementation status, traceability and handoff. Follow D-15 archival
+   and publication rules before replacing published documents.
+
+   Keep historical Q-gate outcomes and the 177-case corpus denominator
+   unchanged unless new evidence satisfies their actual criteria.
+
+Do not implement capture, terminals, packet analysis, arbitrary uploads,
+persistent private-source storage, GUI lifecycle controls or broad
+multi-kind support during this slice.
+
+Finish with:
+- A capability matrix: available, qualified, unavailable or unresolved.
+- What the GUI now displays and the evidence supporting each field.
+- What endpoint association and continuity do—and do not—establish.
+- Actual verification results, preserved failures and unrun checks.
+- Reproducible setup, preview, qualification and cleanup commands.
+- Confirmation that the task lab is removed and its VM stopped.
+- The smallest next gated implementation step.

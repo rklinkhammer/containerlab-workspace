@@ -1,0 +1,7 @@
+06:14:16 INFO Parsing & checking topology file=topology.clab.yml
+06:14:16 INFO Parsing & checking topology file=topology.clab.yml
+06:14:16 INFO Destroying lab name=observation-slice
+06:14:16 INFO Removed container name=clab-observation-slice-right
+06:14:16 INFO Removed container name=clab-observation-slice-left
+06:14:16 INFO Removing host entries path=/etc/hosts
+06:14:16 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-observation-slice.conf

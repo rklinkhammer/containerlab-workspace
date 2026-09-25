@@ -1,0 +1,46 @@
+{
+  "reason": "Qualification recreated lab; explicit operator enrollment for browser regressions only. Application never auto-adopts.",
+  "vm": "clab-load-20260925-100311-exp016",
+  "binding": {
+    "nodes": [
+      {
+        "node": "left",
+        "id": "541dd9e44edfc62093bd8a036461aadc62898dc27aaff361c27502d99ec24eac",
+        "endpoint": {
+          "status": "complete",
+          "reason": "NATIVE_INTERFACE_INVENTORY",
+          "namespace": "91067fb94afd4c005824527e3e20fbe8307d6a7e6075a558c2320fa3aefc0ef3",
+          "items": [
+            {
+              "name": "eth1",
+              "index": 19,
+              "mac": "aa:c1:ab:19:7a:fd",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          ]
+        }
+      },
+      {
+        "node": "right",
+        "id": "04f01c80832f718121b6cb7cbeb9293e773b004d6a7019c15c508166d7d122fd",
+        "endpoint": {
+          "status": "complete",
+          "reason": "NATIVE_INTERFACE_INVENTORY",
+          "namespace": "296da3940b8223349494df5d00132ca2d3756c3197f18315a6b82c6b915a78d2",
+          "items": [
+            {
+              "name": "eth1",
+              "index": 18,
+              "mac": "aa:c1:ab:14:31:cc",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          ]
+        }
+      }
+    ],
+    "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+    "deploymentId": "436c185e260baf904bc0d5123043e0d534ef1ecf52625f996bb84de2e48c20cd"
+  }
+}

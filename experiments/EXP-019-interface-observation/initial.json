@@ -1,0 +1,56 @@
+{
+  "contract": "observation/0.2",
+  "deploymentId": "138e935f58aa46b4e41ae0a697c4691cc6d815f781d0d31184f91372d77650bc",
+  "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+  "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+  "sequence": 1,
+  "observedAt": "2026-09-25T10:05:23.828Z",
+  "freshForMs": 15000,
+  "linkHealth": "unknown",
+  "nodes": [
+    {
+      "node": "left",
+      "containerId": "ab0415d86cb460f8e6892090ffa7c0605b9e6803ee9ee4d822f89967432bce04",
+      "state": "running",
+      "association": "enrolled_full_id"
+    },
+    {
+      "node": "right",
+      "containerId": "e8260b5d859389c62b4733d2ac2fc62ea21cd96aa95daacb17840da955da398c",
+      "state": "running",
+      "association": "enrolled_full_id"
+    }
+  ],
+  "endpoints": [
+    {
+      "node": "left",
+      "containerId": "ab0415d86cb460f8e6892090ffa7c0605b9e6803ee9ee4d822f89967432bce04",
+      "declaredInterface": "eth1",
+      "status": "unavailable",
+      "reason": "INTERFACE_INSPECTION_UNAVAILABLE",
+      "namespaceFingerprint": null,
+      "index": null,
+      "mac": null,
+      "operationalState": "unknown",
+      "administrativeState": "unknown",
+      "carrier": "unknown",
+      "peer": "unknown",
+      "continuity": "unknown"
+    },
+    {
+      "node": "right",
+      "containerId": "e8260b5d859389c62b4733d2ac2fc62ea21cd96aa95daacb17840da955da398c",
+      "declaredInterface": "eth1",
+      "status": "unavailable",
+      "reason": "INTERFACE_INSPECTION_UNAVAILABLE",
+      "namespaceFingerprint": null,
+      "index": null,
+      "mac": null,
+      "operationalState": "unknown",
+      "administrativeState": "unknown",
+      "carrier": "unknown",
+      "peer": "unknown",
+      "continuity": "unknown"
+    }
+  ]
+}

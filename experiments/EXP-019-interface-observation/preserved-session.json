@@ -1,0 +1,5 @@
+{
+  "path": ".runtime/observation-session.json",
+  "sha256": "3589f8707ef2b036bdf49b4015132a7cee3000d4bea55a6e6f7bee0f5e2cb376",
+  "policy": "Pre-existing manifest and VM untouched; task uses .runtime/exp019"
+}
