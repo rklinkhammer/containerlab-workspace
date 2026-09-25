@@ -1,0 +1,46 @@
+[
+  {
+    "path": "contracts/native-graph.ts",
+    "sha256": "808298c25511b6f51c3ed67467034ff9563be440c85298d5c99a514c1fd3eecf"
+  },
+  {
+    "path": "contracts/project-native.ts",
+    "sha256": "9162576172eb090bedf6a641020c985d2839d62caac37fbec8657186257e6c41"
+  },
+  {
+    "path": "scripts/project-native.ts",
+    "sha256": "a70482436c4f3f73c6d0190a958c78b7cd79886f934b1c4ecf469af1c14ded2b"
+  },
+  {
+    "path": "scripts/native-fixture-pins.json",
+    "sha256": "8170b3d45884391c22a828d37ae984c059cc529dea9a5df5ad365a221fbd5eba"
+  },
+  {
+    "path": "apps/web/src/generated/native-fixtures.json",
+    "sha256": "5a67e18a12ea6cc649bf99b058e3c302cc89872db76068372e3a93bcdd07a32a"
+  },
+  {
+    "path": "apps/web/src/main.tsx",
+    "sha256": "21824a3429f8b5ac5253f5f29798d20dabeba6b94249b456e3654e029982da3d"
+  },
+  {
+    "path": "apps/web/src/style.css",
+    "sha256": "aab58362b6c7ec91449a73fbfd5b5ae01bf18752c54288e6075f02e62f0479cd"
+  },
+  {
+    "path": "tests/native.test.ts",
+    "sha256": "73db01a0b9725785827a8ae81a50be965a0c19cc698f7f09a6fe2d92196d6042"
+  },
+  {
+    "path": "tests/browser/preview.spec.ts",
+    "sha256": "2f53a43fe72a7f9f5ca63a0308552fa638acd81644bd0d5930facbca4f100bfc"
+  },
+  {
+    "path": "package.json",
+    "sha256": "652be6dc2e33e805e908667d80b495ed5b0e2b6a3961e499484be3a8fd071c45"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha256": "52d4371127410f4e61ffb688e5f7bee65b2c6a8e8864207192c1b7289f9ed402"
+  }
+]

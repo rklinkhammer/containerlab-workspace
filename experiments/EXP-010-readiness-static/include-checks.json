@@ -1,0 +1,386 @@
+[
+  {
+    "document": "docs/cmd/completion.md",
+    "line": 7,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/deploy.md",
+    "line": 17,
+    "directive": "--8<-- [start:env-vars-flags] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/cmd/deploy.md",
+    "line": 23,
+    "directive": "--8<-- [end:env-vars-flags] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/cmd/destroy.md",
+    "line": 7,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/exec.md",
+    "line": 13,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/generate.md",
+    "line": 11,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/graph.md",
+    "line": 14,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/redeploy.md",
+    "line": 33,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/restart.md",
+    "line": 3,
+    "directive": "--8<-- \"docs/cmd/start.md:lifecycle-commands\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "c095fd34960285921bace40a3692ce25137bd6e06cf8df9654b92864689f249f"
+  },
+  {
+    "document": "docs/cmd/restart.md",
+    "line": 13,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/restart.md",
+    "line": 43,
+    "directive": "--8<-- \"docs/cmd/start.md:limitations\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "c095fd34960285921bace40a3692ce25137bd6e06cf8df9654b92864689f249f"
+  },
+  {
+    "document": "docs/cmd/save.md",
+    "line": 17,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/start.md",
+    "line": 2,
+    "directive": "--8<-- [start:lifecycle-commands] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/cmd/start.md",
+    "line": 7,
+    "directive": "--8<-- [end:lifecycle-commands] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/cmd/start.md",
+    "line": 17,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/start.md",
+    "line": 47,
+    "directive": "--8<-- [start:limitations] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/cmd/start.md",
+    "line": 55,
+    "directive": "--8<-- [end:limitations] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/cmd/stop.md",
+    "line": 3,
+    "directive": "--8<-- \"docs/cmd/start.md:lifecycle-commands\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "c095fd34960285921bace40a3692ce25137bd6e06cf8df9654b92864689f249f"
+  },
+  {
+    "document": "docs/cmd/stop.md",
+    "line": 11,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/cmd/stop.md",
+    "line": 41,
+    "directive": "--8<-- \"docs/cmd/start.md:limitations\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "c095fd34960285921bace40a3692ce25137bd6e06cf8df9654b92864689f249f"
+  },
+  {
+    "document": "docs/cmd/validate.md",
+    "line": 19,
+    "directive": "--8<-- \"docs/cmd/deploy.md:env-vars-flags\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "2973404496a783b9298266641354c7e39ca8ad0d5a2f5b96b9861073afc00a0b"
+  },
+  {
+    "document": "docs/install.md",
+    "line": 39,
+    "directive": "--8<-- [start:quick-setup-script-cmd] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/install.md",
+    "line": 43,
+    "directive": "--8<-- [end:quick-setup-script-cmd] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/install.md",
+    "line": 88,
+    "directive": "--8<-- [start:install-script-cmd] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/install.md",
+    "line": 92,
+    "directive": "--8<-- [end:install-script-cmd] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/clabernetes/install.md",
+    "line": 14,
+    "directive": "--8<-- \"docs/manual/clabernetes/quickstart.md:helm-alias\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "7155062929136a58608b70d411c4e31aea6ff4bdcedc2bd4dda004e730df0c4c"
+  },
+  {
+    "document": "docs/manual/clabernetes/install.md",
+    "line": 20,
+    "directive": "--8<-- [start:chart-install] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/clabernetes/install.md",
+    "line": 25,
+    "directive": "--8<-- [end:chart-install] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/clabernetes/install.md",
+    "line": 69,
+    "directive": "--8<-- [start:cv-install] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/clabernetes/install.md",
+    "line": 75,
+    "directive": "--8<-- [end:cv-install] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/clabernetes/quickstart.md",
+    "line": 61,
+    "directive": "--8<-- [start:helm-alias] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/clabernetes/quickstart.md",
+    "line": 86,
+    "directive": "--8<-- [end:helm-alias] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/clabernetes/quickstart.md",
+    "line": 88,
+    "directive": "--8<-- \"docs/manual/clabernetes/install.md:chart-install\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "cae2e3b157522e13884f70e0ed2fdb750897e7c1d87c5243fa8b7f888d8d7aa1"
+  },
+  {
+    "document": "docs/manual/clabernetes/quickstart.md",
+    "line": 167,
+    "directive": "--8<-- \"docs/manual/clabernetes/install.md:cv-install\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "cae2e3b157522e13884f70e0ed2fdb750897e7c1d87c5243fa8b7f888d8d7aa1"
+  },
+  {
+    "document": "docs/manual/codespaces.md",
+    "line": 61,
+    "directive": "--8<-- [start:request-beefier] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/codespaces.md",
+    "line": 63,
+    "directive": "--8<-- [end:request-beefier] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/codespaces.md",
+    "line": 168,
+    "directive": "--8<-- \"docs/manual/codespaces.md:request-beefier\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "ba6307276d0e690e5c1ce8c78515a298d82f26e1c78f0b1261f3cdefb7794df3"
+  },
+  {
+    "document": "docs/manual/inventory.md",
+    "line": 232,
+    "directive": "--8<-- \"core/export.go:37:44\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_line_slice_present",
+    "target_sha256": "3e62ec87783ca31485a980203d7aa3a5f4b54c76fb3e9d719cafdc1ea52b43bc"
+  },
+  {
+    "document": "docs/manual/kinds/ceos.md",
+    "line": 23,
+    "directive": "--8<-- [start:ceos-get-image] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/kinds/ceos.md",
+    "line": 32,
+    "directive": "--8<-- [end:ceos-get-image] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/kinds/k8s-kind.md",
+    "line": 38,
+    "directive": "--8<-- \"lab-examples/k8s_kind01/k8s_kind01.clab.yml\"",
+    "disposition": "existing C028 topology alias",
+    "checked": "local_file_present",
+    "target_sha256": "7cb53a33d6a0b3706be4eadce6bb0f7c22cab968dfac62558e570b0cd64fbc56"
+  },
+  {
+    "document": "docs/manual/kinds/k8s-kind.md",
+    "line": 81,
+    "directive": "--8<-- \"lab-examples/k8s_kind01/k01-config.yaml\"",
+    "disposition": "support configuration; existing exclusion",
+    "checked": "local_file_present",
+    "target_sha256": "0a5c0963844ae5e3a53294b499e82bd9087f4eac842d310deae8a2660aaa253c"
+  },
+  {
+    "document": "docs/manual/kinds/vyosnetworks_vyos.md",
+    "line": 25,
+    "directive": "--8<-- [start:vyos-get-image] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/kinds/vyosnetworks_vyos.md",
+    "line": 65,
+    "directive": "--8<-- [end:vyos-get-image] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/topo-def-file.md",
+    "line": 167,
+    "directive": "--8<-- [start:aliases] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/manual/topo-def-file.md",
+    "line": 208,
+    "directive": "--8<-- [end:aliases] -->",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "section_marker"
+  },
+  {
+    "document": "docs/quickstart.md",
+    "line": 14,
+    "directive": "--8<-- \"docs/install.md:quick-setup-script-cmd\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "849b449267e0bf974bbc2ac98e339fb173a5b77aaea2faa94a37c9eec079b4aa"
+  },
+  {
+    "document": "docs/quickstart.md",
+    "line": 40,
+    "directive": "--8<-- \"https://raw.githubusercontent.com/srl-labs/containerlab/main/lab-examples/srlceos01/srlceos01.clab.yml\"",
+    "disposition": "existing C048; resolve main URL to baseline commit explicitly, not live main",
+    "checked": "mutable_remote_reference_local_pinned_candidate",
+    "target_sha256": "cda3745d6b0c9c282b704384a6468dc34de672278bdb156acc4c32b40f1ef0dd"
+  },
+  {
+    "document": "docs/quickstart.md",
+    "line": 100,
+    "directive": "--8<-- \"docs/manual/kinds/ceos.md:ceos-get-image\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "e5d093134558ad4dd5bc16abc3b46f3f6174a5586a5482eb9bff7f475cfec155"
+  },
+  {
+    "document": "docs/rn/0.56.md",
+    "line": 11,
+    "directive": "--8<-- \"docs/manual/topo-def-file.md:aliases\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "30a13fcd8c753c5a4bec081410e452bd3fc78c0639c81636684e07386b8589f9"
+  },
+  {
+    "document": "docs/windows.md",
+    "line": 167,
+    "directive": "--8<-- \"docs/install.md:quick-setup-script-cmd\"",
+    "disposition": "section marker or shared prose/code section; underlying pinned file scanned",
+    "checked": "local_section_present",
+    "target_sha256": "849b449267e0bf974bbc2ac98e339fb173a5b77aaea2faa94a37c9eec079b4aa"
+  }
+]

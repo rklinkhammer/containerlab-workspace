@@ -1,0 +1,23 @@
+name: p1a-fixture
+topology:
+  defaults:
+    kind: linux
+    image: alpine:3.20
+    labels:
+      fixture-role: default
+  groups:
+    transit:
+      labels:
+        fixture-role: transit
+  nodes:
+    left:
+      group: transit
+    right: {}
+    isolated: {}
+    srl:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:25.10.1
+  links:
+    - endpoints: ["left:eth1", "right:eth1"]
+    - endpoints: ["left:eth2", "right:eth2"]
+    - endpoints: ["srl:ethernet-1/1", "left:eth3"]

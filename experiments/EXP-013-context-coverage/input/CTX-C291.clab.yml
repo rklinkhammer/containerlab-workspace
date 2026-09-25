@@ -1,0 +1,6 @@
+name: vyos_lab
+topology:
+  nodes:
+    vyos:
+      kind: vyosnetworks_vyos
+      startup-config: myconfig.conf

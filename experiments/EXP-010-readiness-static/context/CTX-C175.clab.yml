@@ -1,0 +1,19 @@
+    name: ceos
+
+    topology:
+      kinds:
+        arista_ceos:
+          startup-config: ceos-custom-startup.cfg
+      nodes:
+        # ceos1 will boot with ceos-custom-startup.cfg as set in the kind parameters
+        ceos1:
+          kind: arista_ceos
+          image: ceos:4.32.0F
+        # ceos2 will boot with its own specific startup config, as it overrides the kind variables
+        ceos2:
+          kind: arista_ceos
+          image: ceos:4.32.0F
+          startup-config: node-specific-startup.cfg
+      links:
+        - endpoints: ["ceos1:eth1", "ceos2:eth1"]
+    

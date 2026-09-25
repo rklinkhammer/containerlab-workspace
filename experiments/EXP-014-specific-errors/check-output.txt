@@ -1,0 +1,1 @@
+PASS: 58 input hashes/case mappings; all rejected diagnostics retained and bounded; F1/F2/F3/CTX-C168 expectations; isolation, nine denied routes, expiry, no containers.

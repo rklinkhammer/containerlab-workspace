@@ -1,0 +1,50 @@
+{
+  "snapshot": "A2-before-A3",
+  "created_utc": "2026-09-24T23:32:58.604249+00:00",
+  "layout": "Flat archive per user directory-arrangement requirement; original paths recorded in manifest. Archived Markdown links retain original context.",
+  "expected_missing": [],
+  "files": [
+    {
+      "file": "ARCHITECTURE.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/design/ARCHITECTURE.md",
+      "sha256": "7e62509d43b9ad2b8fcb6cfc3b780669462b1df39716e6171580308535428255",
+      "bytes": 34139
+    },
+    {
+      "file": "TRACEABILITY.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/design/TRACEABILITY.md",
+      "sha256": "7a24b4a3a1700ae0d587f60cde90d7e66b3beb91402026b935b2267c0849ec33",
+      "bytes": 7476
+    },
+    {
+      "file": "README.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/design/README.md",
+      "sha256": "ad1b13582eef73542c7d0cde1665fbcce117e9cbd01d8c0da1a3c723ee613f03",
+      "bytes": 2848
+    },
+    {
+      "file": "IMPLEMENTATION_PLAN.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/design/IMPLEMENTATION_PLAN.md",
+      "sha256": "5f36f2a1d9829ae3578c6d33037c5ef6e4c914e641834ebf09117d7f6efb1af1",
+      "bytes": 15730
+    },
+    {
+      "file": "DECISIONS.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/design/DECISIONS.md",
+      "sha256": "800c25845d6d5951d28041290ea45fa5b830567da09ee67b9ccd1707bd82c9f2",
+      "bytes": 17395
+    },
+    {
+      "file": "ARCHITECTURE_PROMPT.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-investigation/ARCHITECTURE_PROMPT.md",
+      "sha256": "9de965514ce01e66bbb82e6aa53a68697d607ecf4a10647f2fd865d05bf12b0b",
+      "bytes": 21125
+    },
+    {
+      "file": "IMPLEMENTATION_HANDOFF.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-workspace/IMPLEMENTATION_HANDOFF.md",
+      "sha256": "101e239af794f546a8a170668594686fc35f0c966264c9a6ca3624ca64920466",
+      "bytes": 15327
+    }
+  ]
+}

@@ -1,0 +1,1774 @@
+{
+  "results": [
+    {
+      "case": "C088-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: yaml: unmarshal errors:\n  line 8: field publish not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "3a4ca3ab6255a88740eb3193b827e0c1f6ba0a18675519da5b0c50a59f06b04c",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C112-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C113-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C140-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C141-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C150-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C155-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C159-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C162-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C162.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "f712ed12ec42182e71d951d919b72bcf83b693b3a19fd25c13f23cfdc78baffa",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C163-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.048,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C163.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "64f99decc74870f8c1976ae21c7963ac6b0cec58fe0c6bdfa13907db421693c6",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C164-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C164.clab.yml:18: function \"kind_code_name\" not defined",
+          "raw_sha256": "90293c95e4626c2905fc2d418088fd754f6cafaf986ba5fa6d27c6e9678a1516",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C166-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C166.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "2a0d89dfd14546b8308bc06bd3ca00e821790e8a15dd092ac5136827e9fb94d3",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C167-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C167.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "6324b64f8330a852c3efea2f61df4bed37fe6b57206672399474188d4a58dace",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C168-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C168.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "97725414dbd74e19fe88cca16ed4a3c9bd9a3a2c45fda9ff21436df6a70e73ee",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C171-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C171.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "c34fc0df15ab8e8bd8236eaf5c96e81fe1f987e98e39992b7a2ebfc803ac6111",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C172-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C172.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "f655e7011491f29db47ba37c64b971069fa5a21bf67871d13fef254c42fe51a2",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C173-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C173.clab.yml:12: function \"kind_code_name\" not defined",
+          "raw_sha256": "9290c8a7672f91285f3dac4470d5f66c779b41a774dda79a47b51b1907a46e59",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C174-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C174.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "9546f39b1cc95239d8773212ac251719d87e6847950319ddf15f3371f5051421",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C175-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C175.clab.yml:10: function \"kind_code_name\" not defined",
+          "raw_sha256": "943d870b14132acd1ae1752e2cd9a4434c5bea3f7feacf9d088f20874bea0f03",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C176-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C176.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "8f827c9382362e2039fca5000588e0aacd8352b569bdd2c86d79259aa252ae8e",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C201-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C201.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "eeeee2836afd1f0910859505aa9bba8457449b68237e42d7a18068ccfb54fe37",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C202-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C202.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "5e49cfae1024df89c6447b5755347e6afafb735e4ba3bf8cdec74fe9a0c9d07c",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C204-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C204.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "9239de19031fd0b9fdcb852495449f5b9439cdee99fcb1b4fdf688734179a22b",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C205-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C205.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "44434401e5d50a6dc6b2eb1db0277894426cb8f92f3b5590c37ee336af152d63",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C206-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C206.clab.yml:9: function \"kind_code_name\" not defined",
+          "raw_sha256": "3bb1b210d1c7dc85f59e279e4e4b44e91711595eae1ac912630cc3d747cd5bc5",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C217-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C217.clab.yml:7: function \"kind_code_name\" not defined",
+          "raw_sha256": "81eeae79f08be7471c58ab3270354b28e9451f170c997ae070694452deaba9f0",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C218-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: yaml: unmarshal errors:\n  line 9: field mgmt_ipv6 not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "0cfadb22b3ce3a5ba7894d655265768a3329d1f4e0452b7faa985a489fc9d8a5",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C221-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C221.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "f177b54106ba388a82d47ee64bd1e58887b67017f53513e9b0e9f335e092e93c",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C226-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C226.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "487c277fd0f4f15bbb366e7a523df1f105adbf8550207be8fdc23fc0dbbcd315",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C227-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C227.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "55d7b6a697a8805c14b706069d99c0c9c53344f90fa781ca2d03bdaa56842d29",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C228-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.031,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C228.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "417377c3277a45a43c55f590bb8d2a84178ee66be82f8f3da7d2c1980db68c54",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C248-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to fetch http(s) resource: https://gist.com/<somehash>/staticroute.partial.cfg",
+          "raw_sha256": "27ae0150eab9ccf13b426a2c80c6ab97ce27e1363bf17f8f60f3075e3f46f748",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C252-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to verify bind path: stat /input/corerouter1/daemons: no such file or directory",
+          "raw_sha256": "ca14a446acd41ffe31891cbbd2931b781d2dad2983cd1b91ee42193681d2bfe3",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C258-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to verify bind path: stat /path/to/vswitch.xml: no such file or directory",
+          "raw_sha256": "7a142a74a3350bc615ed958dbb210db2ef91df70377cd549a6854310cf4a4635",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C276-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to fetch http(s) resource: https://gist.com/<somehash>/staticroute.partial.cfg",
+          "raw_sha256": "27ae0150eab9ccf13b426a2c80c6ab97ce27e1363bf17f8f60f3075e3f46f748",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C290-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C290.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "3913b19f57ad92a18924ffa3189687be06aaa82cb638751001935077e27920bf",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C291-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C291.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "7648a13d22b3b2feb17b7fb649439efca1892f62ed7edc9f1fe7d994e5707c40",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C292-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C292.clab.yml:10: function \"kind_code_name\" not defined",
+          "raw_sha256": "f44e55e270aed82ef68455b20eb5ba6d5860e5a5fd64b2277fa140e13caac2e2",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C293-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C293.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "385537903230834aac4018f7f2cda0192a2e3fc77b897e91ea61b4783a2cd206",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C294-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C294.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "9da38b9dadbf1c5cf98c96e7abb17272e66a870b5aaa8232b405484745decb1a",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C295-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C295.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "1eb2d7228580d1a94e24c83c4e3d1cc16ec30bc20d395d16493d9fd1615f972a",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C310-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"n1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "8c05fb1bd3e6932dcc67e3754431d1d2c7a50563c99868ad295536f19f8c4e85",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C314-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "links",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "Link not found",
+          "raw_sha256": "33002c9cfac32dcff505d7d996f09c6bdc75f260503280e83d1611fd1686d826",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C316-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.03,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C324-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to verify bind path: stat /input/cfgs/n1/conf: no such file or directory",
+          "raw_sha256": "395529ab42799c54886f2dfb7d76d0244e62775fb953f7c2219aa745fcb2832d",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C325-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to verify bind path: stat /input/clab-mylab/n1/conf: no such file or directory",
+          "raw_sha256": "5df94e680b6ca39462da85be1f1ffe7774a4f4f997fd94c639c8c33a8e2b964f",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C326-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.046,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"ansible\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "3855f9b225b3ea0aed6025137bcfdf52cb9074bfacf8dbe85b1fcb5c74fb8ec2",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C368-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 4.575,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to fetch s3 resource: s3://my-bucket/configs/router1.cli: object not found or access denied: Head \"https://my-bucket.s3.dualstack.us-east-1.amazonaws.com/configs/router1.cli\": dial tcp: lookup my-bucket.s3.dualstack.us-east-1.amazonaws.com on 127.0.0.53:53: read udp 127.0.0.1:48789->127.0.0.53:53: read: connection refused",
+          "raw_sha256": "a98995f26fc6b5e920c9bd9e8ae4f2e808cef144493a6361670a3d1191f6f912",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C398-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.053,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"router1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "e533d3163ae51fa1fa5d21bef11cd6037aa7fc308ae9ccb15b613990eafc901f",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C399-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to verify bind path: stat /input/clab-mylab/shared-data.json: no such file or directory",
+          "raw_sha256": "1364dca77c210a4d754038f0d8cac5ba9fd79a181418305ba8c354bd0a217d4b",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C400-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C413-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "links",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "Link not found",
+          "raw_sha256": "33002c9cfac32dcff505d7d996f09c6bdc75f260503280e83d1611fd1686d826",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C416-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: yaml: unmarshal errors:\n  line 6: cannot unmarshal !!str `nokia_s...` into types.NodeDefinitionWithDeprecatedFields\n  line 7: cannot unmarshal !!str `ghcr.io...` into types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "707ac369c6cac7c93c6e6683d0c3096da7c3e3ddd57407a9bf256ef371cb4d60",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C423-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 72,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "CTX-C168-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 76,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to verify bind path: stat /input/mymapping.json: no such file or directory",
+          "raw_sha256": "6d649dcedb96724663681e610ad26e5449238e0acc8e9439f0778846a0943f58",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "F1-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 5104,
+            "error": false,
+            "link_count": 3,
+            "links_present": true,
+            "node_count": 4,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 45,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 45,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "2": {
+            "endpoints": [
+              {
+                "alias": "ethernet-1/1",
+                "display": "ethernet-1/1",
+                "interface": "e1-1",
+                "node": "srl"
+              },
+              {
+                "alias": "",
+                "display": "eth3",
+                "interface": "eth3",
+                "node": "left"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "isolated": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "left": {
+            "fixture_role": "transit",
+            "kind": "linux"
+          },
+          "right": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "srl": {
+            "fixture_role": "default",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F2-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: yaml: unmarshal errors:\n  line 12: field x-unknown not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "2a2a1511fac1fe2fdd6abade9cbaa73e36ea97ef38697e681da3aacfc2072931",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "F3-diagnostic",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 70,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to verify bind path: stat /input/missing-fixture-file: no such file or directory",
+          "raw_sha256": "5d955e555977a1a75eeebb3385a314215f3cc5a996a132954bae7d9d9b5d1aa8",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "control-isolation",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.032,
+      "stderr_bytes": 0,
+      "output": "{\"uid\": 65534, \"outside_hidden\": true, \"socket_hidden\": true, \"symlink_target_hidden\": true, \"network_denied\": true, \"input_readonly\": true, \"scratch_writable\": true}\n"
+    },
+    {
+      "case": "facade-denial-matrix",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "output": "[403, 403, 403, 403, 403, 403, 403, 403, 403]\n"
+    },
+    {
+      "case": "F1-expired",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to init the container runtime: Error response from daemon: EXPIRED",
+          "raw_sha256": "25225ae8a02183e3b364535e325d6b3ba413e1b429a1719677f637e1f08205f8",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    }
+  ],
+  "snapshot_routes": [
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/containers/json",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/containers/create",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version?x=1",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/../version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "http://localhost/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/%76ersion",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v0.00/version",
+      "status": 403
+    },
+    {
+      "method": "HEAD",
+      "path": "/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 503
+    },
+    {
+      "method": "GET",
+      "path": "/_ping",
+      "status": 503
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 503
+    }
+  ],
+  "runtime_metadata": {
+    "Version": "29.1.3",
+    "ApiVersion": "1.52",
+    "MinAPIVersion": "1.44",
+    "Os": "linux",
+    "Arch": "arm64"
+  },
+  "daemon_containers_after": "",
+  "positive_controls": {
+    "outside_visible": true,
+    "same_namespace_network_reachable": true
+  },
+  "cleanup": "scratch unmounted; sentinels closed; no containers deployed; task-only daemon remains until VM shutdown"
+}

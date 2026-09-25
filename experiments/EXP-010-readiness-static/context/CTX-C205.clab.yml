@@ -1,0 +1,7 @@
+name: csrx_lab
+topology:
+  nodes:
+    csrx:
+      kind: juniper_csrx
+      image: csrx:24.4R1.9
+      startup-config: myconfig.conf

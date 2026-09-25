@@ -1,0 +1,6 @@
+name: vsr_lab
+topology:
+  nodes:
+    vsr:
+      kind: -{{ kind_code_name }}-
+      startup-config: myconfig.conf

@@ -1,0 +1,16 @@
+# example topo file with management VRF
+# node1 will have vrf MGMT
+# node2 will have vrf FOO
+name: ceos_vrf
+topology:
+  kinds:
+    arista_ceos:
+      env:
+        CLAB_MGMT_VRF: MGMT
+  nodes:
+    node1:
+      kind: arista_ceos
+    node2:
+      kind: arista_ceos
+      env:
+        CLAB_MGMT_VRF: FOO

@@ -1,0 +1,6 @@
+name: xrd
+topology:
+  nodes:
+    xrd:
+      kind: -{{ kind_code_name }}-
+      startup-config: xrd.cfg

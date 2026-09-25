@@ -1,0 +1,13 @@
+name: ceos_link_ips
+topology:
+  nodes:
+    ceos1:
+      kind: -{{ kind_code_name }}-
+      image: ceos:4.32.0F
+    ceos2:
+      kind: -{{ kind_code_name }}-
+      image: ceos:4.32.0F
+  links:
+    - endpoints: ["ceos1:eth1", "ceos2:eth1"]
+      ipv4: ["192.168.0.1/24", "192.168.0.2/24"]
+      ipv6: ["2001:db8::1/64", "2001:db8::2/64"]

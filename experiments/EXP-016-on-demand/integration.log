@@ -1,0 +1,13 @@
+
+> containerlab-synthetic-preview@0.1.0 test:native
+> node --test tests/integration/native-load.test.ts
+
+✔ approved native bundles match independent expectations and stable recorded declarations (1141.360125ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1235.82475

@@ -1,0 +1,121 @@
+
+> containerlab-synthetic-preview@0.1.0 verify
+> npm run test && npm run build && npm run test:browser
+
+
+> containerlab-synthetic-preview@0.1.0 test
+> node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts
+
+✔ independent expected files retain their published hashes (0.83575ms)
+✔ F1 retains independent node, link occurrence and alias expectations (not native execution) (3.691417ms)
+✔ F2 is diagnostic-only, with no raw source or synthetic secret in browser fixture (0.173375ms)
+✔ F3 missing input never produces invented nodes (0.159167ms)
+✔ F4 external roles remain distinct and explicitly unresolved (0.23925ms)
+✔ F5 duplicate declarations survive as two occurrence identities with rejection (0.199666ms)
+✔ unknown fields at every boundary are rejected, never stripped silently (1.837333ms)
+✔ IDs are unique and revision-scoped; all references must resolve (1.690417ms)
+✔ redacted/unavailable values cannot carry data; unknowns require reasons (0.574334ms)
+✔ F6 text/node/response bounds reject rather than truncate graph data (1.528083ms)
+✔ operational capabilities and foreign session fields are rejected, not authenticated (0.838084ms)
+✔ safe errors do not echo malformed data, native diagnostics or secrets (0.143333ms)
+✔ same immutable synthetic revision has stable IDs and output (0.205709ms)
+✔ 63 declaration fixtures and all pinned source/evidence hashes verify (8.874667ms)
+✔ independent declaration object/dependency expectations remain intact (0.884916ms)
+✔ specific reviewed errors identify template/schema rejection without raw native errors (0.177542ms)
+✔ contract rejects disclosure, forged resolution, invalid references, duplicate IDs and budgets (3.704ms)
+✔ adapter omits hostile raw dependency strings and unreviewed configuration (5.933209ms)
+✔ display text stays text in schema, with bounds rather than HTML interpretation (0.190083ms)
+✔ live contract separates executed provenance and stable bundle IDs from recorded evidence (10.089042ms)
+✔ worker provenance, cleanup, output and error disclosure fail closed (0.345209ms)
+✔ 58 recorded fixtures validate; source hashes and evidence pin match retained bytes (8.049084ms)
+✔ native F1 matches independent kinds, counts and alias; source tokens are not invented (0.547458ms)
+✔ native F4 roles survive endpoint ordering and F5 preserves accepted duplicate occurrences (0.232875ms)
+✔ F7 independent single-ended requirement never invents a peer (0.98875ms)
+✔ rejections remain diagnostic-only and original/context identities stay separate (0.172208ms)
+✔ native DTO rejects unknown fields, bad references, invented origins and capabilities (2.501292ms)
+✔ projection ignores unreviewed native attributes and fails closed on unsupported arity (1.5355ms)
+✔ projection treats native display strings as text and does not turn them into IDs or URLs (0.344667ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 125.390167
+
+> containerlab-synthetic-preview@0.1.0 build
+> npm run fixtures:native && npm run fixtures:declared && npm run typecheck && vite build
+
+
+> containerlab-synthetic-preview@0.1.0 fixtures:native
+> node scripts/project-native.ts
+
+Projected 58 verified native fixture records; no runtime executed.
+
+> containerlab-synthetic-preview@0.1.0 fixtures:declared
+> node scripts/project-declared.ts
+
+Projected 63 pinned declaration fixtures. No native execution.
+
+> containerlab-synthetic-preview@0.1.0 typecheck
+> tsc --noEmit
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 274 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.43 kB │ gzip:   0.30 kB
+dist/assets/index-Dm3NqBk6.css   23.51 kB │ gzip:   4.90 kB
+dist/assets/index-CyVgJwZg.js   681.91 kB │ gzip: 173.04 kB
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "node_modules/@xyflow/react/dist/esm/index.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/@xyflow/react/dist/esm/index.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client"
+ [38;5;240m  │[0m ──────┬─────  
+ [38;5;240m  │[0m       ╰─────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 74ms
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test
+
+[WebServer] (node:9850) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 19 tests using 1 worker
+
+(node:9851) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/declared.spec.ts:2:1 › declared missing-bind topology renders with explicit unresolved dependencies (274ms)
+  ✓   2 tests/browser/declared.spec.ts:13:1 › declarations preserve single-ended, dangling, parallel and external occurrences (222ms)
+  ✓   3 tests/browser/declared.spec.ts:24:1 › specific errors and keyboard navigation work at narrow width (192ms)
+  ✓   4 tests/browser/declared.spec.ts:36:1 › declared labels render hostile text without creating HTML or requests (142ms)
+  -   5 tests/browser/on-demand.spec.ts:2:1 › on-demand view clearly reports an unavailable worker without a session
+  ✓   6 tests/browser/on-demand.spec.ts:7:1 › actual native load renders declarations and live bundle provenance (749ms)
+  ✓   7 tests/browser/on-demand.spec.ts:17:1 › actual native schema and missing-template errors remain specific (611ms)
+  ✓   8 tests/browser/on-demand.spec.ts:23:1 › local API rejects arbitrary bundle/path payloads and cross-origin execution (19ms)
+  ✓   9 tests/browser/on-demand.spec.ts:29:1 › UI cancellation discards stale responses (transport mock) (266ms)
+  ✓  10 tests/browser/preview.spec.ts:2:1 › F1 graph, parallel occurrences and keyboard-accessible inspectors (302ms)
+  ✓  11 tests/browser/preview.spec.ts:16:1 › special endpoints preserve roles; duplicate occurrences remain rejected (243ms)
+  ✓  12 tests/browser/preview.spec.ts:21:1 › rejection and missing-input views never fabricate graph nodes (179ms)
+  ✓  13 tests/browser/preview.spec.ts:25:1 › hostile display text stays inert; CSP blocks inline scripts and network (190ms)
+  ✓  14 tests/browser/preview.spec.ts:36:1 › bounded long text has explicit truncation; over-limit graph rejected (224ms)
+  ✓  15 tests/browser/preview.spec.ts:41:1 › loopback static server denies mutation, source files and traversal (5ms)
+  ✓  16 tests/browser/preview.spec.ts:45:1 › narrow viewport exposes object list and inspector without page overflow (220ms)
+  ✓  17 tests/browser/preview.spec.ts:51:1 › recorded native single-ended link has no fabricated peer and keyboard inspector (204ms)
+  ✓  18 tests/browser/preview.spec.ts:59:1 › native preview preserves parallel links, aliases, source roles and rejected inputs (205ms)
+  ✓  19 tests/browser/preview.spec.ts:67:1 › recorded native evidence remains readable at narrow width (213ms)
+
+  1 skipped
+  18 passed (5.3s)

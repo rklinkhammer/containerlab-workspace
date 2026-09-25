@@ -1,0 +1,324 @@
+{
+  "files": [
+    {
+      "path": "experiments/EXP-014-specific-errors/DIAGNOSTICS.md",
+      "sha256": "685681dc716750acb5e78f9c42bd188e5b601e78ff37982acac2ed7cbe7bf21a"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/FAILURE_INDEX.before.md",
+      "sha256": "830a9b379bb15a61e1fed1da5b8c437424146ebb02d5ea4ca339dd8be1fdafda"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/README.md",
+      "sha256": "a6257e38176798a14e854b3fe389fc0c35ea3860492e4b092843bdf20c6d2ba8"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/RESULTS.md",
+      "sha256": "681092d6d021bedc8a81d53990359567c80d51d489275c1e94a3e3a2e5363db6"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/build.log",
+      "sha256": "8816b3ea9f8ea92e30e91ffdf2d9acd2c1282bcb962bd7f1bad37567d557a87d"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/build.sh",
+      "sha256": "7c19bda6659850ae944feb9cdd1694d603e949f432dcbcaade6a2c3ea0f1c763"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/check-output.txt",
+      "sha256": "dd3e4fbfac2a5cc7d63323310f59b608a5934194bd4ce8b5f3bdc18ed615be08"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/check.py",
+      "sha256": "8a4a9432554da913f99f8997066bc6f08cc70cd831d572b635269066b22b873d"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/cleanup-prestop.txt",
+      "sha256": "ba008a1d9756c40011c5834443acbebcf5dcafc68f48c8d27fd3569c8d3ab94a"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/execution.md",
+      "sha256": "7000fc33f043a843ab6fbf6a48bbca13e5178a909a3b02325d164e7ce494fba2"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/facade.py",
+      "sha256": "fb0fdb28154cf33ac1b53213d8ceaa30d49c687922ebbaa9df76d802ac5f70ff"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/final-vm.json",
+      "sha256": "4fa98c3d2d63a6e320ae4a6b7513ec878b9df56368f2ea96f1827e3f9910d429"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C088.clab.yml",
+      "sha256": "b2e1a58db41432e5d31cb610521498e72bc1b3b0431b404b0104820f346cc4b5"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C112.clab.yml",
+      "sha256": "e7580dffcab8ffe712dc9ceb04e740b4f6fed73b0ff10716355d2db1bc5aaaf1"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C113.clab.yml",
+      "sha256": "6d0055c6a9295a3ca6c9dd1e1fd67f96f475377f3fe85b5a64493a9c69e1140c"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C140.clab.yml",
+      "sha256": "efed48ecd47118d74ce776ae19d66119bf9c87adc42e2714576e6ba233b4795b"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C141.clab.yml",
+      "sha256": "36e30648396bc9324c4dabb039b7773cfa78d69ad1f1d0a66788c177a2ae7c32"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C150.clab.yml",
+      "sha256": "5d376d802fb5fb7eaecc14809bbc592bf6697d38f22e84374dc9b1afa255a894"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C155.clab.yml",
+      "sha256": "d56e06e185bd75d5227d56420f8ae8f4183cba962158045918873377979b900d"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C159.clab.yml",
+      "sha256": "658655c1d554f393c62850fb35b30ae8a44dc27dc986e3aa7a9f996b1840e0d9"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C162.clab.yml",
+      "sha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C163.clab.yml",
+      "sha256": "ec6a1d7cbd401ed13ab573d51c801ab2d1bf57ac09b777fceaad80f74abbf728"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C164.clab.yml",
+      "sha256": "82e3bef60e00abadd82f300397495f9f01a0133786361487db18b5b5a52b8980"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C166.clab.yml",
+      "sha256": "20142045a38c4c48465797c350291d5d0340d08da11154237670f3fbb1ca1825"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C167.clab.yml",
+      "sha256": "bb54f84a3a8764f0019e7155cfcf80e6ba200626a4be918ca6d1eea5126903f5"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C168.clab.yml",
+      "sha256": "b2a7978ba2e809ca8a516c31059bf1993d80e394e950c444370c4044f0c81f8a"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C171.clab.yml",
+      "sha256": "6bf572cf6eb3b96dcb708b5188de1c71d98f463e47456a62636301a700e209ff"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C172.clab.yml",
+      "sha256": "5c804d00fc8d16ad5c71ff139209bcb4524ef6cec656a2671c99f39412b544ee"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C173.clab.yml",
+      "sha256": "f32a735e80ef104a6bc3e44d67b892323ded129eef8605f17d6fec6edf13d812"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C174.clab.yml",
+      "sha256": "04821b7d1e09a924a34bf5d415a53e08d3054894abe761c6eabc078d23633f40"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C175.clab.yml",
+      "sha256": "ec1f418ab25cf54c28fef4dd3d4c8167d80a1b6798f5c5adcca89f54a8b754c8"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C176.clab.yml",
+      "sha256": "890ce0850fc82987742e6a9791b08444c39ae5dfc1522196e2b0aad0025938f6"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C201.clab.yml",
+      "sha256": "6d005204938f1dcc81381e8258a8a1a8ba9e96e41ed6dc3a7b5f0839ba4c526b"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C202.clab.yml",
+      "sha256": "ac189f02a4aad582465b6131c2bbcbcbae147d93268490c5bceb68c6e01a0e7c"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C204.clab.yml",
+      "sha256": "f5b9368bcef9d217dbd79682caa37de9d4badd9de529ec7f6fb3637232342b0e"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C205.clab.yml",
+      "sha256": "b08a47641bb783dc88f50094cc1f3a8aad3f30cb5f077793d9fd6e56a474d973"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C206.clab.yml",
+      "sha256": "7d6b62e312385fef60d431c018539f25a106ce5d374afed9af6a2b5ec568c25e"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C217.clab.yml",
+      "sha256": "47f7018bf1ac05ca12892273ae5e9095553fce7891dfb96dcb0f66d7282e18a8"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C218.clab.yml",
+      "sha256": "dea8acafda19d9fcb7b4507e168efac65081004c9dfebce9209f6446e06f5165"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C221.clab.yml",
+      "sha256": "f261e65242945007d39e44f22c7fd0d60a025113903f960b8dde384ca88329e4"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C226.clab.yml",
+      "sha256": "127c53050d76294118eacc79963da184bea5b2352af90b9c3b4915ae9a68e253"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C227.clab.yml",
+      "sha256": "4e53641c85986bbd8293a026385679dedb4cf7d214e70594e2ea9e1b239c9b56"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C228.clab.yml",
+      "sha256": "f5e5002f6605b8d189d1593ca9bfac52f986c7eea17df2de8d9b4acb6a3e1dd6"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C248.clab.yml",
+      "sha256": "03ce2143bab2899077e7bac758721625e9ca69afe3bafc09afb32a059dfb18cc"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C252.clab.yml",
+      "sha256": "f6ad8b3d9e2693f88bfc632d41f631e513743e35199d84f3590eabc429db09f7"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C258.clab.yml",
+      "sha256": "7fd19abf509cd7946743aa2ff5c643b9db1b8d6406073504ea75363415de441d"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C276.clab.yml",
+      "sha256": "b892b1d538589398851ef276fdd2e201a813d606b945443a28549945b44c99bd"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C290.clab.yml",
+      "sha256": "227a4704fb8318e4198aea24c433048a7cd96b3904848ce6e622a8ba801a1631"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C291.clab.yml",
+      "sha256": "dced2d748f0defb2da737d6a571cea2dd750b71ff073be30f4cfb28f53e9f71e"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C292.clab.yml",
+      "sha256": "eaf0a3ab6bd6b52de8f32ac59d189e2d28a04e0c7f6e73c4e29e0cc15199f575"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C293.clab.yml",
+      "sha256": "dfd31a25fe546ab89a47a5347ef365d5248204ada76115aa79b74e273d7544c6"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C294.clab.yml",
+      "sha256": "38edd7091d48019109355c22afab01965e32486b408da677f55d885bee75120d"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C295.clab.yml",
+      "sha256": "8e02c791d0d0303e000d134d7b0282e6a3e1dd1359858694208f660cdee9a3eb"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C310.clab.yml",
+      "sha256": "c31f40d96dc50686c48b7ab548a7c94d7d30c8734032f24f11d4942856c1ebdb"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C314.clab.yml",
+      "sha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C316.clab.yml",
+      "sha256": "affaa77e08168edef646e439b543957e41462c8ae975f51e96f8ae265ec967e4"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C324.clab.yml",
+      "sha256": "083b0318d39b16195274449c9c6859afc3d0046fc5f8546aeb032dfd496f1577"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C325.clab.yml",
+      "sha256": "e43e5b86f058ac08f44327e706437ae952ca3005a6381804837fc9de48fbc237"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C326.clab.yml",
+      "sha256": "2634d4fea4e80714267ac1db5a0d116dc231b6d7540fc905d84eefa7ead93500"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C368.clab.yml",
+      "sha256": "3923bdba86b6e1287d55617e801829d40485556ede6775b7b516522b23a05ee1"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C398.clab.yml",
+      "sha256": "4412cf610d4c2b1d57f258f53058d84ec2ac1aae6fc6856bda44e8c81cde4660"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C399.clab.yml",
+      "sha256": "fe983b657ebb13cbf2c96b875eee53b82779d6516d1a411d9c51306cf8e82477"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C400.clab.yml",
+      "sha256": "1ac42b2cc8d66b18527caa02ca5f51b88b0d5e022509216b6ff7ce08b4ac078b"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C413.clab.yml",
+      "sha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C416.clab.yml",
+      "sha256": "f5cbc29c3ed78ebe20291f81615ba2e5476ff71c7a8b005226bcbb1894077198"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/C423.clab.yml",
+      "sha256": "6d0055c6a9295a3ca6c9dd1e1fd67f96f475377f3fe85b5a64493a9c69e1140c"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/CTX-C168.clab.yml",
+      "sha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/F1.clab.yml",
+      "sha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/F2.clab.yml",
+      "sha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input/F3.clab.yml",
+      "sha256": "225e7850232935fafc7a7f2a42011d9de2c43cff8784deaa9c45f10d6d80fb95"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/input-manifest.json",
+      "sha256": "9765439515b4a573a6856c25d7ec28f98f58b4253c6b6d5f93bca4bced46d1da"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/lima.yaml",
+      "sha256": "802eb43c93179de33db1bdc3a070479ed55e7714ea78a1533bf741db0f49a979"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/main.go",
+      "sha256": "83f8b86d0b73512516be9bc206fcd837bee3614e8fff2bf8b95e0078171422f7"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/results.json",
+      "sha256": "a6f62840939939b06573f65bffb75ef4f26894f1883897dfa13af7ae6f81f847"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/run.log",
+      "sha256": "ddea2607d212535000b9f213c9582108f8116b4d9b7e8fa04ade345acfa74a76"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/run.py",
+      "sha256": "df19ddc7773c7bd7d46604f681e76a64b9edc652c79651188cbb98bb34997d45"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/source-evidence.json",
+      "sha256": "452bb97a3038f7800afa0f316282c6088c417ffe6b0db4a43326c68952f8788a"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/start.log",
+      "sha256": "d754f08c8d55a8050a66ec0ecfc1be191b90b61fa3134a9457ccc7da8a5dc3a9"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/stop.log",
+      "sha256": "a9106a4a93f625c05189612427f485b210cb4151baa2dbc8fec2740422b614e3"
+    },
+    {
+      "path": "experiments/EXP-014-specific-errors/vm-name.txt",
+      "sha256": "b25e264ccc0ddb09bfa4c6475be2238d72e408ac9bee9b94e54134d9719e55aa"
+    }
+  ]
+}

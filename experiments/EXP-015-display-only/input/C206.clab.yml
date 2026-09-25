@@ -1,0 +1,12 @@
+name: ext-cont
+
+topology:
+  nodes:
+    srl:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux
+    external-node1: #(1)!
+      kind: -{{ kind_code_name }}-
+
+  links:
+    - endpoints: ["srl:e1-1", "external-node1:eth1"]

@@ -1,0 +1,66 @@
+{
+  "revision": "A3",
+  "status": "document_set_complete",
+  "published_utc": "2026-09-24T23:38:00.053565+00:00",
+  "predecessor_snapshot": "history/A2-before-A3/MANIFEST.json",
+  "predecessor_manifest_sha256": "8121154a6ccb58f44c000e9b3d4af173d5562b3d3c7e251ca6673e70106091c3",
+  "file_paths_relative_to": "workspace root (../.. from this manifest)",
+  "files": [
+    {
+      "path": "artifacts/design/ARCHITECTURE.md",
+      "sha256": "40a8f9c3cff694da358225547c1268f47065d518ebfa0d53f1eae9eb2ecca0f3",
+      "bytes": 48728,
+      "previously_present": false
+    },
+    {
+      "path": "artifacts/design/DECISIONS.md",
+      "sha256": "ed19d8d2495317ae7234e16971dd581d4e5c9f88c7111b3da568467293e45f3c",
+      "bytes": 22619,
+      "previously_present": false
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.md",
+      "sha256": "c112d9d48bfa4adab1ba84314c67ec62333e1a4eb030a5ad9bb61a8618ccf035",
+      "bytes": 15060,
+      "previously_present": true
+    },
+    {
+      "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "sha256": "187bddfd60d9d6ddb2464a97916015a2c44ed9416f3b323eea240f5aa5ae5b35",
+      "bytes": 21904,
+      "previously_present": false
+    },
+    {
+      "path": "artifacts/design/README.md",
+      "sha256": "23c956533a42081fe984e7350ec80f3782fe7c08efc5da7d2cfa897953710bb0",
+      "bytes": 3037,
+      "previously_present": false
+    },
+    {
+      "path": "artifacts/design/TRACEABILITY.md",
+      "sha256": "3ed1835cae9e718b4a01c91819f3bfabcb3670f2b7aec01eb3cf836711be5149",
+      "bytes": 9397,
+      "previously_present": false
+    }
+  ],
+  "verification": {
+    "local_links_checked": 87,
+    "markdown_fences": "balanced",
+    "source_fingerprints_unchanged": 13,
+    "archive_files_verified": 7,
+    "application_tests": "NOT_RUN",
+    "publication_fault_injection_S08": "NOT_RUN",
+    "runtime_actions": "none"
+  },
+  "qualification": "Historical run 03 unchanged: 3 PASS / 4 PARTIAL / 1 FAIL; universal static 0/177",
+  "new_acceptance_tests": {
+    "S-01": "NOT_RUN",
+    "S-02": "NOT_RUN",
+    "S-03": "NOT_RUN",
+    "S-04": "NOT_RUN",
+    "S-05": "NOT_RUN",
+    "S-06": "NOT_RUN",
+    "S-07": "NOT_RUN",
+    "S-08": "NOT_RUN"
+  }
+}

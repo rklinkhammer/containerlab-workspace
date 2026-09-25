@@ -1,0 +1,44 @@
+[
+  {
+    "path": "runtime/docker/docker.go",
+    "sha256": "282980cc51d328181d533559171f71c520d66f68f6f9aab9586a381625ae14e6",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/runtime/docker/docker.go"
+  },
+  {
+    "path": "core/export.go",
+    "sha256": "3e62ec87783ca31485a980203d7aa3a5f4b54c76fb3e9d719cafdc1ea52b43bc",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/export.go"
+  },
+  {
+    "path": "core/file.go",
+    "sha256": "e4b81233d32e0e188246b075331fd2fa60278f4ad19063ecf1dba66ca99373a1",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/file.go"
+  },
+  {
+    "path": "core/clab.go",
+    "sha256": "6913678dbf34d01b29687294d9f2f1de0ae611bccdf2d1b17465971762e9a92c",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/clab.go"
+  },
+  {
+    "path": "core/options_clab.go",
+    "sha256": "46fbf1891ce95fa93e903cd33335f7a5adb95d9db1a2905e6eb26aa0713d88fe",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/options_clab.go"
+  },
+  {
+    "path": "core/export_templates/auto.tmpl",
+    "sha256": "6f8cd58be4912449afe3892ab8b7d2a1273ea906e2e6fe96530e0216da37735e",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/export_templates/auto.tmpl"
+  },
+  {
+    "path": "links/endpoint.go",
+    "sha256": "be0ce17fc81bb89aaa72e46f02130e810d3618dd6c569614ea871f1852f18c23",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/links/endpoint.go"
+  }
+]

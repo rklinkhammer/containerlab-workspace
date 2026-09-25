@@ -1,0 +1,1 @@
+PASS: 63 pinned inputs x 2 modes; independent object/dependency/alias/negative expectations; preserved unresolved references; isolation/route/expiry checks. No deployment or universal fidelity claim.

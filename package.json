@@ -1,0 +1,35 @@
+{
+  "name": "containerlab-synthetic-preview",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "26.8.1"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts",
+    "build": "npm run fixtures:native && npm run fixtures:declared && npm run typecheck && vite build",
+    "preview": "node scripts/preview.mjs",
+    "test:browser": "playwright test",
+    "verify": "npm run test && npm run build && npm run test:browser",
+    "fixtures:native": "node scripts/project-native.ts",
+    "fixtures:declared": "node scripts/project-declared.ts",
+    "test:native": "node --test tests/integration/native-load.test.ts"
+  },
+  "dependencies": {
+    "@xyflow/react": "12.10.2",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.0.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "7.0.2",
+    "vite": "8.3.1"
+  }
+}

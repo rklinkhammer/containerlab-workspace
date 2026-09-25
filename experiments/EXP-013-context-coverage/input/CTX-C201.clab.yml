@@ -1,0 +1,8 @@
+# example of a topo file that does not define a custom config
+# as a result, the config will be generated from a template
+# and used by this node
+name: crpd
+topology:
+  nodes:
+    crpd:
+      kind: juniper_crpd

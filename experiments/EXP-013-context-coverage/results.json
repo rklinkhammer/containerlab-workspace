@@ -1,0 +1,3082 @@
+{
+  "results": [
+    {
+      "case": "C162-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C163-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C164-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C166-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C167-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C168-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C171-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C172-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C173-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C174-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C175-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.045,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C176-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C201-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C202-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C204-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C205-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C217-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.045,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C226-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C227-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C228-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C290-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C291-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C292-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C293-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C294-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "C295-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "CTX-C162-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1193,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 41,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 41,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "vsr": {
+            "fixture_role": "",
+            "kind": "6wind_vsr"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C163-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1180,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 36,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 36,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "arcos": {
+            "fixture_role": "",
+            "kind": "arrcus_arcos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C164-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 4848,
+            "error": false,
+            "link_count": 3,
+            "links_present": true,
+            "node_count": 4,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "e1-1",
+                "interface": "e1-1",
+                "node": "srl1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "br-clab"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "e1-1",
+                "interface": "e1-1",
+                "node": "srl2"
+              },
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "br-clab"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "2": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "e1-1",
+                "interface": "e1-1",
+                "node": "srl3"
+              },
+              {
+                "alias": "",
+                "display": "eth3",
+                "interface": "eth3",
+                "node": "br-clab"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "br-clab": {
+            "fixture_role": "",
+            "kind": "bridge"
+          },
+          "srl1": {
+            "fixture_role": "",
+            "kind": "nokia_srlinux"
+          },
+          "srl2": {
+            "fixture_role": "",
+            "kind": "nokia_srlinux"
+          },
+          "srl3": {
+            "fixture_role": "",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C166-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1199,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 39,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 39,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "c8000": {
+            "fixture_role": "",
+            "kind": "cisco_c8000"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C167-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2541,
+            "error": false,
+            "link_count": 1,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "FH0_0_0_0",
+                "interface": "FH0_0_0_0",
+                "node": "Cisco8201-1"
+              },
+              {
+                "alias": "",
+                "display": "FH0_0_0_0",
+                "interface": "FH0_0_0_0",
+                "node": "Cisco8201-2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "Cisco8201-1": {
+            "fixture_role": "",
+            "kind": "cisco_c8000"
+          },
+          "Cisco8201-2": {
+            "fixture_role": "",
+            "kind": "cisco_c8000"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C168-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 76,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "CTX-C171-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2447,
+            "error": false,
+            "link_count": 1,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1_1",
+                "interface": "eth1_1",
+                "node": "ceos1"
+              },
+              {
+                "alias": "",
+                "display": "eth2_1_1",
+                "interface": "eth2_1_1",
+                "node": "ceos2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "ceos1": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          },
+          "ceos2": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C172-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1201,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "ceos": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C173-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2141,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "node1": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          },
+          "node2": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C174-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.032,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1229,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "ceos": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C175-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2441,
+            "error": false,
+            "link_count": 1,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "ceos1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "ceos2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "ceos1": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          },
+          "ceos2": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C176-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2702,
+            "error": false,
+            "link_count": 1,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 47,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 47,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "ceos1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "ceos2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "ceos1": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          },
+          "ceos2": {
+            "fixture_role": "",
+            "kind": "arista_ceos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C201-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1186,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "crpd": {
+            "fixture_role": "",
+            "kind": "juniper_crpd"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C202-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1214,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "crpd": {
+            "fixture_role": "",
+            "kind": "juniper_crpd"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C204-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.045,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1199,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "csrx": {
+            "fixture_role": "",
+            "kind": "juniper_csrx"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C205-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1227,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "csrx": {
+            "fixture_role": "",
+            "kind": "juniper_csrx"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C217-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2331,
+            "error": false,
+            "link_count": 1,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 38,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "n1": {
+            "fixture_role": "",
+            "kind": "linux"
+          },
+          "n2": {
+            "fixture_role": "",
+            "kind": "linux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C226-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1215,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 41,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 41,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "srl1": {
+            "fixture_role": "",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C227-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1236,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 41,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 41,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "srl1": {
+            "fixture_role": "",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C228-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1236,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 41,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 41,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "srl1": {
+            "fixture_role": "",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C290-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1224,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "vyos": {
+            "fixture_role": "",
+            "kind": "vyosnetworks_vyos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C291-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.047,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1224,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "vyos": {
+            "fixture_role": "",
+            "kind": "vyosnetworks_vyos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C292-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.045,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2481,
+            "error": false,
+            "link_count": 1,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 42,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "vyos1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "vyos2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "vyos1": {
+            "fixture_role": "",
+            "kind": "vyosnetworks_vyos"
+          },
+          "vyos2": {
+            "fixture_role": "",
+            "kind": "vyosnetworks_vyos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C293-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2690,
+            "error": false,
+            "link_count": 1,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 47,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 47,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "vyos1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "vyos2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "vyos1": {
+            "fixture_role": "",
+            "kind": "vyosnetworks_vyos"
+          },
+          "vyos2": {
+            "fixture_role": "",
+            "kind": "vyosnetworks_vyos"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C294-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1165,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 37,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 37,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "xrd": {
+            "fixture_role": "",
+            "kind": "cisco_xrd"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "CTX-C295-coverage",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 346,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1165,
+            "error": false,
+            "link_count": 0,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 37,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 37,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {},
+        "nodes": {
+          "xrd": {
+            "fixture_role": "",
+            "kind": "cisco_xrd"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F1-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F1-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.036,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F2-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F2-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.036,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F3-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F3-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.041,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F4-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F4-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.038,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F5-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F5-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.035,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "remote-topology-denied",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F1-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 5104,
+            "error": false,
+            "link_count": 3,
+            "links_present": true,
+            "node_count": 4,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 45,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 45,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "2": {
+            "endpoints": [
+              {
+                "alias": "ethernet-1/1",
+                "display": "ethernet-1/1",
+                "interface": "e1-1",
+                "node": "srl"
+              },
+              {
+                "alias": "",
+                "display": "eth3",
+                "interface": "eth3",
+                "node": "left"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "isolated": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "left": {
+            "fixture_role": "transit",
+            "kind": "linux"
+          },
+          "right": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "srl": {
+            "fixture_role": "default",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F1-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 124
+    },
+    {
+      "case": "F2-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F2-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.037,
+      "stderr_bytes": 391
+    },
+    {
+      "case": "F3-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 70,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F3-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.041,
+      "stderr_bytes": 212
+    },
+    {
+      "case": "F4-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1921,
+            "error": false,
+            "link_count": 2,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 51,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 51,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n1"
+              },
+              {
+                "alias": "",
+                "display": "fixture_host",
+                "interface": "fixture_host",
+                "node": "host"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "fixture_mgmt",
+                "interface": "fixture_mgmt",
+                "node": "mgmt-net"
+              },
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "n1"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "n1": {
+            "fixture_role": "",
+            "kind": "linux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F4-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 130
+    },
+    {
+      "case": "F5-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2846,
+            "error": false,
+            "link_count": 2,
+            "links_present": true,
+            "node_count": 2,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 54,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 54,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "n1": {
+            "fixture_role": "",
+            "kind": "linux"
+          },
+          "n2": {
+            "fixture_role": "",
+            "kind": "linux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F5-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 133
+    },
+    {
+      "case": "F7-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1460,
+            "error": false,
+            "link_count": 1,
+            "links_present": true,
+            "node_count": 1,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 54,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 54,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "dummy1",
+                "interface": "dummy1",
+                "node": "n1"
+              }
+            ],
+            "mtu": 9500,
+            "type": "dummy"
+          }
+        },
+        "nodes": {
+          "n1": {
+            "fixture_role": "",
+            "kind": "linux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F7-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 133
+    },
+    {
+      "case": "F1-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 5104,
+            "error": false,
+            "link_count": 3,
+            "links_present": true,
+            "node_count": 4,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 45,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 45,
+            "error": false,
+            "link_count": -1,
+            "links_present": false,
+            "node_count": -1,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "2": {
+            "endpoints": [
+              {
+                "alias": "ethernet-1/1",
+                "display": "ethernet-1/1",
+                "interface": "e1-1",
+                "node": "srl"
+              },
+              {
+                "alias": "",
+                "display": "eth3",
+                "interface": "eth3",
+                "node": "left"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "isolated": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "left": {
+            "fixture_role": "transit",
+            "kind": "linux"
+          },
+          "right": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "srl": {
+            "fixture_role": "default",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F1-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 124
+    },
+    {
+      "case": "control-isolation",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "output": "{\"uid\": 65534, \"outside_hidden\": true, \"socket_hidden\": true, \"symlink_target_hidden\": true, \"network_denied\": true, \"input_readonly\": true, \"scratch_writable\": true}\n"
+    },
+    {
+      "case": "facade-denial-matrix",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.032,
+      "stderr_bytes": 0,
+      "output": "[403, 403, 403, 403, 403, 403, 403, 403, 403]\n"
+    },
+    {
+      "case": "F1-expired",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    }
+  ],
+  "snapshot_routes": [
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/containers/json",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/containers/create",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version?x=1",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/../version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "http://localhost/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/%76ersion",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v0.00/version",
+      "status": 403
+    },
+    {
+      "method": "HEAD",
+      "path": "/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 503
+    },
+    {
+      "method": "GET",
+      "path": "/_ping",
+      "status": 503
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 503
+    }
+  ],
+  "runtime_metadata": {
+    "Version": "29.1.3",
+    "ApiVersion": "1.52",
+    "MinAPIVersion": "1.44",
+    "Os": "linux",
+    "Arch": "arm64"
+  },
+  "daemon_containers_after": "",
+  "positive_controls": {
+    "outside_visible": true,
+    "same_namespace_network_reachable": true
+  },
+  "cleanup": "scratch unmounted; sentinels closed; no containers deployed; task-only daemon remains until VM shutdown"
+}

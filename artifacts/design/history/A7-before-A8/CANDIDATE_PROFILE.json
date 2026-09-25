@@ -1,0 +1,78 @@
+{
+  "id": "CP-01",
+  "status": "PROPOSED_NOT_BUILT_NOT_RUNTIME_TESTED",
+  "native": {
+    "version": "0.79.0",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26"
+  },
+  "api": {
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "embedded_containerlab": "0.79.0",
+    "go_directive": "1.27.1",
+    "binary_sha256": null,
+    "image_digest": null
+  },
+  "gui_reference": {
+    "commit": "31727ea16c915004319cfe70cdec3e1032ad68a9",
+    "node_engine": ">=24.0.0",
+    "clab_ui": {
+      "version": "0.3.1",
+      "resolved": "https://npm.pkg.github.com/download/@srl-labs/clab-ui/0.3.1/cfac6af89e0233efe355f334c0a9cce3932c9874",
+      "integrity": "sha512-RId6vOOmiJkeMyFxZXgAjxKTdbzQ7djzN5Mb/DwACwt64aWWbFTNrilYQMxtbyFkQctmuM43BoU5PTn3xf+uSQ==",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.1",
+        "@fontsource/roboto": "^5.2.10",
+        "@mui/icons-material": "^7.3.10",
+        "@mui/material": "^7.3.10",
+        "@mui/x-charts": "^8.28.2",
+        "@xyflow/react": "^12.10.2",
+        "ajv": "^8.18.0",
+        "d3-force": "^3.0.0",
+        "dompurify": "^3.4.1",
+        "elkjs": "^0.11.1",
+        "highlight.js": "^11.11.1",
+        "maplibre-gl": "^5.24.0",
+        "markdown-it": "^14.1.1",
+        "markdown-it-emoji": "^3.0.0",
+        "monaco-editor": "^0.55.1",
+        "monaco-yaml": "^5.4.1",
+        "yaml": "^2.8.3",
+        "zustand": "^4.5.7"
+      },
+      "engines": {
+        "node": ">=24.0.0"
+      },
+      "peerDependencies": {
+        "react": "^19.2.5",
+        "react-dom": "^19.2.5"
+      }
+    }
+  },
+  "toolchain_distribution_hash": null,
+  "runtime": "NOT_RUN",
+  "reason": "Choose already aligned immutable upstream API source; retain old operational baseline independently",
+  "native_trial": {
+    "experiment": "EXP-011",
+    "cli_sha256": "42b79c3f27a839f111c08af48a89e654153f2aef667c7e470d219c191b6701ff",
+    "go": "1.27.1",
+    "go_archive_sha256": "3450b45a3f9ee8568792736a5c5e70a1f2e9b36c35a8f74958c03e51d7d92bec",
+    "status": "NATIVE_ONLY_SUBSET_OBSERVED_WITH_SYNTHETIC_RUNTIME_INFORMATION",
+    "api_profile": "NOT_BUILT_NOT_QUALIFIED"
+  },
+  "runtime_information_trial": {
+    "experiment": "EXP-012",
+    "daemon_metadata": {
+      "Version": "29.1.3",
+      "ApiVersion": "1.52",
+      "MinAPIVersion": "1.44",
+      "Os": "linux",
+      "Arch": "arm64"
+    },
+    "client_api": "1.51",
+    "status": "SELECTED_FIXTURE_EVIDENCE_ONLY",
+    "peer_authorization": "UNQUALIFIED_EXPERIMENT_SOCKET_PERMISSIONS",
+    "production_enablement": false
+  }
+}

@@ -1,0 +1,6 @@
+name: ceos_lab
+topology:
+  nodes:
+    ceos:
+      kind: arista_ceos
+      startup-config: myconfig.conf

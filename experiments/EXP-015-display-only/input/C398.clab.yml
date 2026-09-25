@@ -1,0 +1,7 @@
+name: mylab
+topology:
+  defaults:
+    startup-config: configs/__clabNodeName__.cfg
+  nodes:
+    router1:
+    router2:

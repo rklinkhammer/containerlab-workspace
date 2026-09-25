@@ -1,0 +1,77 @@
+
+> containerlab-synthetic-preview@0.1.0 verify
+> npm run test && npm run build && npm run test:browser
+
+
+> containerlab-synthetic-preview@0.1.0 test
+> node --test tests/contract.test.ts
+
+✔ independent expected files retain their published hashes (0.803667ms)
+✔ F1 retains independent node, link occurrence and alias expectations (not native execution) (3.62125ms)
+✔ F2 is diagnostic-only, with no raw source or synthetic secret in browser fixture (0.153167ms)
+✔ F3 missing input never produces invented nodes (0.115792ms)
+✔ F4 external roles remain distinct and explicitly unresolved (0.195292ms)
+✔ F5 duplicate declarations survive as two occurrence identities with rejection (0.164083ms)
+✔ unknown fields at every boundary are rejected, never stripped silently (1.731583ms)
+✔ IDs are unique and revision-scoped; all references must resolve (1.680542ms)
+✔ redacted/unavailable values cannot carry data; unknowns require reasons (0.528666ms)
+✔ F6 text/node/response bounds reject rather than truncate graph data (1.660417ms)
+✔ operational capabilities and foreign session fields are rejected, not authenticated (0.796166ms)
+✔ safe errors do not echo malformed data, native diagnostics or secrets (0.13775ms)
+✔ same immutable synthetic revision has stable IDs and output (0.174375ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 114.736916
+
+> containerlab-synthetic-preview@0.1.0 build
+> npm run typecheck && vite build
+
+
+> containerlab-synthetic-preview@0.1.0 typecheck
+> tsc --noEmit
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 267 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.43 kB │ gzip:   0.30 kB
+dist/assets/index-DwFCCzXZ.css   22.52 kB │ gzip:   4.67 kB
+dist/assets/index-DrGvnrTq.js   466.99 kB │ gzip: 145.33 kB
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "node_modules/@xyflow/react/dist/esm/index.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/@xyflow/react/dist/esm/index.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client"
+ [38;5;240m  │[0m ──────┬─────  
+ [38;5;240m  │[0m       ╰─────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+✓ built in 73ms
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test
+
+[WebServer] (node:49552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:49553) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/preview.spec.ts:2:1 › F1 graph, parallel occurrences and keyboard-accessible inspectors (315ms)
+  ✓  2 tests/browser/preview.spec.ts:16:1 › special endpoints preserve roles; duplicate occurrences remain rejected (234ms)
+  ✓  3 tests/browser/preview.spec.ts:21:1 › rejection and missing-input views never fabricate graph nodes (175ms)
+  ✓  4 tests/browser/preview.spec.ts:25:1 › hostile display text stays inert; CSP blocks inline scripts and network (179ms)
+  ✓  5 tests/browser/preview.spec.ts:36:1 › bounded long text has explicit truncation; over-limit graph rejected (207ms)
+  ✓  6 tests/browser/preview.spec.ts:41:1 › loopback static server denies mutation, source files and traversal (21ms)
+  ✓  7 tests/browser/preview.spec.ts:45:1 › narrow viewport exposes object list and inspector without page overflow (220ms)
+
+  7 passed (2.0s)

@@ -1,0 +1,11 @@
+name: single-ended-fixture
+topology:
+  nodes:
+    n1:
+      kind: linux
+      image: alpine:3.20
+  links:
+    - type: dummy
+      endpoint:
+        node: n1
+        interface: dummy1

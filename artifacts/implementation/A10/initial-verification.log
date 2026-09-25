@@ -1,0 +1,92 @@
+
+> containerlab-synthetic-preview@0.1.0 verify
+> npm run test && npm run build && npm run test:browser
+
+
+> containerlab-synthetic-preview@0.1.0 test
+> node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts
+
+✔ independent expected files retain their published hashes (0.738167ms)
+✔ F1 retains independent node, link occurrence and alias expectations (not native execution) (3.460291ms)
+✔ F2 is diagnostic-only, with no raw source or synthetic secret in browser fixture (0.173583ms)
+✔ F3 missing input never produces invented nodes (0.177875ms)
+✔ F4 external roles remain distinct and explicitly unresolved (0.281708ms)
+✔ F5 duplicate declarations survive as two occurrence identities with rejection (0.214334ms)
+✔ unknown fields at every boundary are rejected, never stripped silently (1.73225ms)
+✔ IDs are unique and revision-scoped; all references must resolve (1.5265ms)
+✔ redacted/unavailable values cannot carry data; unknowns require reasons (0.506959ms)
+✔ F6 text/node/response bounds reject rather than truncate graph data (1.686625ms)
+✔ operational capabilities and foreign session fields are rejected, not authenticated (0.831375ms)
+✔ safe errors do not echo malformed data, native diagnostics or secrets (0.168042ms)
+✔ same immutable synthetic revision has stable IDs and output (0.179125ms)
+✔ 63 declaration fixtures and all pinned source/evidence hashes verify (8.556625ms)
+✔ independent declaration object/dependency expectations remain intact (0.920375ms)
+✔ specific reviewed errors identify template/schema rejection without raw native errors (0.186834ms)
+✔ contract rejects disclosure, forged resolution, invalid references, duplicate IDs and budgets (3.735125ms)
+✔ adapter omits hostile raw dependency strings and unreviewed configuration (5.678958ms)
+✔ display text stays text in schema, with bounds rather than HTML interpretation (0.169167ms)
+✔ 58 recorded fixtures validate; source hashes and evidence pin match retained bytes (8.686208ms)
+✔ native F1 matches independent kinds, counts and alias; source tokens are not invented (0.521666ms)
+✔ native F4 roles survive endpoint ordering and F5 preserves accepted duplicate occurrences (0.206375ms)
+✔ F7 independent single-ended requirement never invents a peer (1.012959ms)
+✔ rejections remain diagnostic-only and original/context identities stay separate (0.20175ms)
+✔ native DTO rejects unknown fields, bad references, invented origins and capabilities (2.384458ms)
+✔ projection ignores unreviewed native attributes and fails closed on unsupported arity (1.190666ms)
+✔ projection treats native display strings as text and does not turn them into IDs or URLs (0.307416ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.424875
+
+> containerlab-synthetic-preview@0.1.0 build
+> npm run fixtures:native && npm run fixtures:declared && npm run typecheck && vite build
+
+
+> containerlab-synthetic-preview@0.1.0 fixtures:native
+> node scripts/project-native.ts
+
+Projected 58 verified native fixture records; no runtime executed.
+
+> containerlab-synthetic-preview@0.1.0 fixtures:declared
+> node scripts/project-declared.ts
+
+Projected 63 pinned declaration fixtures. No native execution.
+
+> containerlab-synthetic-preview@0.1.0 typecheck
+> tsc --noEmit
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 272 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.43 kB │ gzip:   0.30 kB
+dist/assets/index-D4vPmhia.css   23.10 kB │ gzip:   4.82 kB
+dist/assets/index-DGkHhyz0.js   676.57 kB │ gzip: 171.26 kB
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "node_modules/@xyflow/react/dist/esm/index.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/@xyflow/react/dist/esm/index.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client"
+ [38;5;240m  │[0m ──────┬─────  
+ [38;5;240m  │[0m       ╰─────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 94ms
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test
+
+Error: http://127.0.0.1:4173 is already used, make sure that nothing is running on the port/url or set reuseExistingServer:true in config.webServer.
+

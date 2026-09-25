@@ -1,0 +1,27 @@
+{
+  "id": "F4",
+  "basis": "Hand-authored independent requirement expectations; no adapter output used",
+  "native_execution": "NOT_RUN",
+  "renderer_execution": "NOT_RUN",
+  "declarations": {
+    "nodes": [
+      "n1"
+    ],
+    "link_occurrences": 2,
+    "source_roles": [
+      "host",
+      "management"
+    ]
+  },
+  "native_expectations": {
+    "result": "environment-dependent; NOT_RUN"
+  },
+  "projection_requirements": [
+    "keep source host/management role even if native type veth",
+    "external endpoints not confused with declared deployable nodes",
+    "unavailable native mapping stays explicit",
+    "no runtime capability inferred from source links"
+  ],
+  "source_sha256": "60e8976995c6ea25921fe80a251a4ba98ad420912a976452c6797d7d4e301c13",
+  "source_file": "F4.clab.yml"
+}

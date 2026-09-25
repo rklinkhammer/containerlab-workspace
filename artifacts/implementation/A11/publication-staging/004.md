@@ -1,0 +1,11 @@
+# A11 on-demand approved-bundle contract
+
+**Observed implementation:** `contracts/live-graph.ts` defines `p1a/0.4`, `native-approved-bundle-v1`. It preserves p1a/0.3 object/reference/dependency limits and validates the same invariants, but rejects recorded evidence as live provenance. Fields bind source ID/hash, approved bundle ID/hash, entry file/count, native commit, worker binary hash, execution ID, completion time and confirmed cleanup. Revision identity is deterministic over bundle/native/worker profile, separate from fresh execution IDs.
+
+API: GET `/api/native/catalog`; POST `/api/native/load` with exactly `{bundleId,jobId}`; POST `/api/native/cancel` with exactly `{jobId}`. Correlation IDs are 32 lowercase hex characters; requests max512 bytes, one active load. No caller-provided worker commands/files/paths or uploads. Explicit local session configuration is required; no active session leaves recorded previews available and loading unavailable. Native load errors remain rejected graphs with safe specific messages and input provenance. Supervisor errors return safe code/message/stage/job ID plus known approved source/bundle identity; no raw native stderr.
+
+Bundle admission: <=32 declared files, <=1MiB each / 4MiB total, relative canonical paths, no symlinks/special/undeclared files, all SHA-256 checked. Companion files are first-class inventory; originals and derivatives remain distinct. No external asset fetch or fabricated prerequisite.
+
+Worker: 30s deadline, 1GiB memory, zero swap, 64 tasks, 2MiB output, 16MiB tmpfs; no runtime/metadata socket or network, read-only input and minimal guest runtime files. Scoped cancellation/cleanup and next-load orphan cleanup. Host transport has a 45s cap and requests cancellation on unconfirmed failure. No arbitrary persistent source store; approved public/synthetic fixture copies are the only stored inputs.
+
+Unresolved dependency states are not promoted to missing/satisfied merely because checks are skipped. Complete provenance, full dependency discovery, all link families and corpus fidelity remain unqualified. Safe rendering/CSP, path/hash boundaries and tests are in [A11 evidence](../implementation/A11/RESULTS.md).

@@ -1,0 +1,12 @@
+name: ovs
+
+topology:
+  nodes:
+    myovs:
+      kind: -{{ kind_code_name }}-
+    ceos:
+      kind: arista_ceos
+      image: ceos:latest
+  links:
+    - endpoints: ["myovs:ovsp1", "srl:eth1"]
+

@@ -1,0 +1,7 @@
+name: mylab
+topology:
+  nodes:
+    node1:
+      startup-config: startup-configs/__clabLabName__/__clabNodeName__/config.json
+    node2:
+      startup-config: startup-configs/__clabLabName__/__clabNodeName__/config.json

@@ -1,0 +1,24 @@
+{
+  "id": "F2",
+  "basis": "Hand-authored independent requirement expectations; no adapter output used",
+  "native_execution": "NOT_RUN",
+  "renderer_execution": "NOT_RUN",
+  "declarations": {
+    "nodes": [
+      "n1"
+    ],
+    "unknown_key": "x-unknown"
+  },
+  "native_expectations": {
+    "strict_rejection_expected": "unknown native node attribute; verify on pin, never silently remove"
+  },
+  "projection_requirements": [
+    "original bytes and unknown key preserved privately",
+    "diagnostic-only result acceptable; no fabricated native success",
+    "CANARY_NOT_A_REAL_SECRET_010 absent from response/log/trace",
+    "HTML remains text if explicitly reviewed for display; no fetch/script/navigation",
+    "no raw YAML/error fallback"
+  ],
+  "source_sha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01",
+  "source_file": "F2.clab.yml"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "F6",
+  "basis": "Hand-authored independent requirement expectations; no adapter output used",
+  "native_execution": "NOT_RUN",
+  "renderer_execution": "NOT_RUN",
+  "scenarios": [
+    {
+      "name": "field-limit",
+      "input": "4097-byte reviewed text",
+      "expected": "explicit truncation marker or safe rejection, no silent drop"
+    },
+    {
+      "name": "node-limit",
+      "input": "101-node synthetic DTO",
+      "expected": "safe over-limit result; no complete claim"
+    },
+    {
+      "name": "foreign-owner",
+      "input": "Bob requests Alice source/result",
+      "expected": "deny without payload; native identity gate still required"
+    },
+    {
+      "name": "cancel-expire",
+      "input": "cancel or revoke while result pending",
+      "expected": "deny result publication; terminate only owned job; scratch cleanup"
+    },
+    {
+      "name": "schema-extra",
+      "input": "DTO with unknown rawNodeConfig field",
+      "expected": "reject, never forward extra fields"
+    }
+  ]
+}

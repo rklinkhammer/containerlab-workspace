@@ -1,0 +1,6 @@
+name: sros_lab
+topology:
+  nodes:
+    sros:
+      kind: nokia_sros
+      startup-config: https://gist.com/<somehash>/staticroute.partial.cfg

@@ -1,0 +1,134 @@
+[
+  {
+    "path": ".gitignore",
+    "sha256": "8763e3fb94a5d28269c87ce0326ac83496b544b7dbe437567a2b4f911088dcc5"
+  },
+  {
+    "path": "apps/web/src/declared.tsx",
+    "sha256": "8212fa4c5ae66cc2d8b45595ea985472f66459ed650344c2b120a1dc4b598605"
+  },
+  {
+    "path": "apps/web/src/main.tsx",
+    "sha256": "f5258b4eeb78b26ab69201c8d8dcafc1d71f6dbef44dc06746298d2a4f5b2ca6"
+  },
+  {
+    "path": "apps/web/src/on-demand.tsx",
+    "sha256": "e47ce71bdfe1f38608bdf1ceba3f091db24a29fcec02c65f50689782aa5a7f94"
+  },
+  {
+    "path": "apps/web/src/style.css",
+    "sha256": "84b13a17f333111c979aeb0a1f976cac4d1435f065f4ac463423cd716e204ada"
+  },
+  {
+    "path": "backend/native-api.ts",
+    "sha256": "dae67cb559ad577fd90ef51ee7269f028017d271f97eaa80b44b7aa0b9be5323"
+  },
+  {
+    "path": "backend/native-loader.ts",
+    "sha256": "c8dc8b9801c7dcc2c1789d65908885dac41f6c006208b22efd218f43369845ef"
+  },
+  {
+    "path": "contracts/declared-graph.ts",
+    "sha256": "a9654db113ca520be1dbd3ef1631d3b9844340bb52b84582285aa23e043e5d9f"
+  },
+  {
+    "path": "contracts/live-graph.ts",
+    "sha256": "0c25d523043a770b2b0ba9f55cf04279593c963f5b7f853c2ea37afbebe91d8f"
+  },
+  {
+    "path": "contracts/project-declared.ts",
+    "sha256": "88d37aa6d76344af4fe47c9fdc2607130eaff01649f8a77b3a86db8f15f1547a"
+  },
+  {
+    "path": "fixtures/bundles/BUNDLE-CONTEXT/clab_templates/nodes.gotmpl",
+    "sha256": "0c06d396e3555f7ce7fdf91f98b2b4ab3c8d05580dd49d0cd258049e67137580"
+  },
+  {
+    "path": "fixtures/bundles/BUNDLE-CONTEXT/topology.clab.yml",
+    "sha256": "1cf465220ecbea901fbb8eb63bed3cd2f5764e23edd8f204c697add1a45bdbfe"
+  },
+  {
+    "path": "fixtures/bundles/BUNDLE-MISSING/topology.clab.yml",
+    "sha256": "1cf465220ecbea901fbb8eb63bed3cd2f5764e23edd8f204c697add1a45bdbfe"
+  },
+  {
+    "path": "fixtures/bundles/C162/C162.clab.yml",
+    "sha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b"
+  },
+  {
+    "path": "fixtures/bundles/CTX-C168/CTX-C168.clab.yml",
+    "sha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591"
+  },
+  {
+    "path": "fixtures/bundles/D1/D1.clab.yml",
+    "sha256": "ebf9373308571245c4f6df3f1e5d54fd541e2266ef3c236355f6e8305b789b23"
+  },
+  {
+    "path": "fixtures/bundles/D2/D2.clab.yml",
+    "sha256": "c1ecbd16ddf95683a954d0c9a15bee8bc2b2ebacb79db759fb200af46cb92267"
+  },
+  {
+    "path": "fixtures/bundles/F1/F1.clab.yml",
+    "sha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911"
+  },
+  {
+    "path": "fixtures/bundles/F2/F2.clab.yml",
+    "sha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01"
+  },
+  {
+    "path": "fixtures/bundles/F7/F7.clab.yml",
+    "sha256": "614c345a6bd15cca1d0fb8ce072254ee21257fdb0c316af6441fda83ffbf56ef"
+  },
+  {
+    "path": "fixtures/bundles/catalog.json",
+    "sha256": "32dce7352d765a38b996fe0c32b8d749b58a98a44f64af2c8aed03472c4de02d"
+  },
+  {
+    "path": "native/worker/install.sh",
+    "sha256": "a28a63d71c7ee426355929abfc0a1d8f72a98c386377b569dc562aa6638bb857"
+  },
+  {
+    "path": "native/worker/main.go",
+    "sha256": "431df5556572cb2203784224766df128e3cf53aab852aaa1d364a362a278b5fb"
+  },
+  {
+    "path": "native/worker/runner.py",
+    "sha256": "d901241466e9aa60d00b2271007265e6074f15c16b5912f4b427fdd18787eb59"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "1815d43125823948b065d1d8fdee86fef8eba65aa077fe5e59a08fc7e1ee7fd3"
+  },
+  {
+    "path": "package.json",
+    "sha256": "2123d803bf9695732e6e2ed9dc7da214b6ae11d8ada22b2f5d42dfd89925d927"
+  },
+  {
+    "path": "scripts/native-session.py",
+    "sha256": "d748c11780c708c88befdd0ead222bf8ee3489df1cee3af006af598f43e5e4c8"
+  },
+  {
+    "path": "scripts/preview.mjs",
+    "sha256": "793abf548bde4096a5824d3105ca835766915d977aa21c1b1b09d76cf309a6cb"
+  },
+  {
+    "path": "tests/browser/on-demand.spec.ts",
+    "sha256": "b3b96297d89fe0033f96a27e4f99d40fb97c4c5417a81ca5d3b321d763340b21"
+  },
+  {
+    "path": "tests/browser/preview.spec.ts",
+    "sha256": "875d2a78a1a6274d6105163e8e33790703c8861974fa7319a14fe4ad0bd940d8"
+  },
+  {
+    "path": "tests/integration/native-load.test.ts",
+    "sha256": "58041dc534467f84129091b5307490077a6359d6e1cbf00cd996227dcffab7bc"
+  },
+  {
+    "path": "tests/integration/worker_qualification.py",
+    "sha256": "4d86c9e0d929e25e99e56f793536da4bd57d5b397244af0b5b881c2d010ac170"
+  },
+  {
+    "path": "tests/live.test.ts",
+    "sha256": "d9be1a79108f4d9c524b4f6f4826ce799ffdb4e78cbcf1ebf370ec2f0cec5c58"
+  }
+]

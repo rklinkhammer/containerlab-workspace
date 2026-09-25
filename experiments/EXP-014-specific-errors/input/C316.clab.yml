@@ -1,0 +1,17 @@
+name: filter
+
+topology:
+  defaults:
+    image: alpine:3
+  nodes:
+    node1:
+    node2:
+    node3:
+    node4:
+
+  links:
+    - endpoints: ["node1:eth1", "node2:eth1"]
+    - endpoints: ["node1:eth2", "node3:eth2"]
+    - endpoints: ["node1:eth3", "node4:eth3"]
+    - endpoints: ["node2:eth2", "node4:eth2"]
+    - endpoints: ["node3:eth1", "node4:eth1"]

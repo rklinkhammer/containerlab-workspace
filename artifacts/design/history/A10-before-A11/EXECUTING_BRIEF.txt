@@ -1,0 +1,99 @@
+Continue from architecture A10 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Treat ../containerlab-investigation as read-only evidence.
+Preserve the sibling-directory arrangement. Do not access,
+start, stop or modify pre-existing Lima VMs.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, the current design
+documents, and:
+
+- artifacts/implementation/A10/RESULTS.md
+- artifacts/design/DECLARED_PREVIEW_CONTRACT.md
+- experiments/EXP-015-display-only/RESULTS.md
+- experiments/EXP-015-display-only/PROPOSED_CONTRACT.md
+- experiments/EXP-015-display-only/expectations.json
+
+Verify artifacts/design/COMPLETION.json before relying on the
+baseline. Preserve unrelated changes and historical evidence.
+
+Implement the next bounded slice: on-demand native declaration
+loading for explicitly selected, approved local fixture bundles.
+
+This authorizes implementation and runtime qualification in a
+newly created dedicated VM. Stop that VM after collecting evidence.
+Do not deploy labs or containers.
+
+1. Define the fixture-bundle boundary.
+   Preserve original YAML bytes, IDs and hashes. Explicitly inventory
+   companion files and template context. Reject path traversal,
+   escaping symlinks and undeclared filesystem access. Do not fetch
+   remote resources, fabricate missing files or silently repair inputs.
+   Keep originals and separately identified context derivatives distinct.
+
+2. Implement the native worker.
+   Use the pinned Containerlab declaration-loading APIs qualified in
+   EXP-015. Do not reimplement YAML semantics, defaults, inheritance,
+   link shorthand or alias normalization.
+   The worker must not receive a runtime/daemon socket. Bound execution
+   time, memory, output, concurrency and temporary storage; implement
+   cancellation and scoped cleanup. Continue independent implementation
+   if a runtime prerequisite is blocked, recording exact limitations.
+
+3. Connect the selected bundle to the preview.
+   Add the smallest local integration needed to load an approved
+   fixture on demand and display its actual native-derived declarations.
+   Keep recorded fixtures available as regression references.
+   Distinguish recorded evidence from a newly executed load.
+   Include source/bundle identity, native version and current outcome.
+   Do not introduce arbitrary uploads, a persistent source store,
+   speculative services or a database.
+
+4. Preserve the declared-graph contract.
+   Keep declared objects separate from resolved/runtime observations.
+   Preserve parallel links, disconnected nodes, single-ended links,
+   external roles and dangling references without invented peers.
+   Keep dependency inventory completeness explicit. “Not checked”
+   must not become “missing” or “satisfied” without evidence.
+   Version the DTO deliberately if the integration requires changes.
+
+5. Make failures actionable.
+   Associate every failure with its input ID/hash, stage, safe reason
+   code and specific sanitized message. Include line/field context when
+   available. Do not return raw configuration, credentials, private
+   paths or unrestricted native stderr to the browser or logs.
+   Preserve native template/schema rejection rather than stripping
+   unknown fields to force a graph.
+
+6. Verify independently.
+   Use the existing independent expectations and recorded evidence;
+   never change expectations merely to match implementation.
+   Cover F1, F7, CTX-C168, D1, D2, C162 and F2.
+   Compare stable semantics, not incidental output ordering.
+   Test bundle containment, missing context, malformed output,
+   timeout, cancellation, output limits, cleanup and malicious text.
+   Run appropriate contract, integration and browser tests.
+   Use port 4173 for the preview; do not terminate an unrelated process
+   if the port is occupied.
+
+TT-01 remains active: login, caller ownership and multi-user
+authorization are out of scope. Retain containment, disclosure
+allowlists, safe rendering and resource limits.
+
+Do not implement deployment, live inspection, terminals, capture
+or packet analysis. A successful declaration load does not establish
+deployment readiness or universal corpus fidelity.
+
+Update architecture decisions, contracts, implementation status,
+traceability and handoff as needed. Follow D-15 archival/publication
+rules before replacing the published design set. Keep historical
+Q-gate outcomes unchanged unless new evidence satisfies their actual
+acceptance criteria.
+
+Complete the authorized slice, not just scaffolding. Finish with:
+
+- What now loads on demand and what remains recorded-only.
+- Actual verification results and separately identified unrun checks.
+- Reproducible setup, preview and cleanup commands.
+- VM cleanup status.
+- Remaining limitations and the smallest next gated step.

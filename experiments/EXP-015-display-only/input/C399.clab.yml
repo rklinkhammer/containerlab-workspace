@@ -1,0 +1,9 @@
+name: mylab
+topology:
+  nodes:
+    node1:
+      binds:
+        # Node-specific files
+        - __clabNodeDir__/custom.conf:/etc/custom.conf
+        # Lab-wide shared files
+        - __clabDir__/shared-data.json:/shared.json:ro

@@ -1,0 +1,269 @@
+{
+  "results": [
+    {
+      "case": "F1-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F1-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.041,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F2-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F2-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.042,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F3-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F3-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.041,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F4-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F4-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.04,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F5-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.033,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F5-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.036,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "remote-topology-denied",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.024,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F1-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F1-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n"
+    },
+    {
+      "case": "F2-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F2-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.01,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n"
+    },
+    {
+      "case": "F3-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.019,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F3-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.01,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n"
+    },
+    {
+      "case": "F4-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.01,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F4-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.01,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n"
+    },
+    {
+      "case": "F5-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.01,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F5-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.01,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n"
+    },
+    {
+      "case": "F1-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F1-validate-snapshot",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.028,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n"
+    },
+    {
+      "case": "control-isolation",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.025,
+      "stderr_bytes": 0,
+      "output": "{\"uid\": 65534, \"outside_hidden\": true, \"socket_hidden\": true, \"symlink_target_hidden\": true, \"network_denied\": true, \"input_readonly\": true, \"scratch_writable\": true}\n"
+    },
+    {
+      "case": "facade-denial-matrix",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.024,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "output": ""
+    },
+    {
+      "case": "F1-expired",
+      "profile": "real-version-snapshot",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 84,
+      "sandbox_error": "bwrap: Can't find source path /tmp/exp012/private-info/info.sock: Permission denied\n",
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    }
+  ],
+  "snapshot_routes": [],
+  "runtime_metadata": {
+    "Version": "29.1.3",
+    "ApiVersion": "1.52",
+    "MinAPIVersion": "1.44",
+    "Os": "linux",
+    "Arch": "arm64"
+  },
+  "daemon_containers_after": "",
+  "positive_controls": {
+    "outside_visible": true,
+    "same_namespace_network_reachable": true
+  },
+  "cleanup": "scratch unmounted; sentinels closed; no containers deployed; task-only daemon remains until VM shutdown"
+}

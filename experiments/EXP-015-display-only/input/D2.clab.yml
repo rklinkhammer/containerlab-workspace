@@ -1,0 +1,6 @@
+name: dangling
+topology:
+  nodes:
+    a: {kind: linux, image: alpine:3.20}
+  links:
+    - endpoints: ["a:eth1", "absent:eth1"]

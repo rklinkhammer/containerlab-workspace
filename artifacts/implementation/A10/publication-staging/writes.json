@@ -1,0 +1,67 @@
+[
+  {
+    "target": "artifacts/design/README.md",
+    "staged": "000.md",
+    "sha256": "4f97229de688abfcbb5b697b4ca4f25426f4039a6deb2afa8920517962fe4e18"
+  },
+  {
+    "target": "artifacts/design/ARCHITECTURE.md",
+    "staged": "001.md",
+    "sha256": "230dfa84db3daeb350bc2ff272459d343fdc1d122525b9993a4a41cdf2b190da"
+  },
+  {
+    "target": "artifacts/design/DECISIONS.md",
+    "staged": "002.md",
+    "sha256": "3254876559581c777cad6c6bdf6e40f9cf5f3b94ad34170541890284d5dd6078"
+  },
+  {
+    "target": "artifacts/design/P1A_CONTRACT.md",
+    "staged": "003.md",
+    "sha256": "b5e31ddee7edddbb3ad59a9e45d473d9c1409e1eed7ab216b1c3ae2cea42154a"
+  },
+  {
+    "target": "artifacts/design/DECLARED_PREVIEW_CONTRACT.md",
+    "staged": "004.md",
+    "sha256": "139a531618a8cb0bc3cc4631c5942a166790e6185308d113a0cc5ddc22378592"
+  },
+  {
+    "target": "artifacts/design/TRACEABILITY.md",
+    "staged": "005.md",
+    "sha256": "b9a646b27b18b4131aa70663cf58176be8a47e0ba1bff1892d63e8423682ad4e"
+  },
+  {
+    "target": "artifacts/design/IMPLEMENTATION_PLAN.md",
+    "staged": "006.md",
+    "sha256": "4c673ae8b1b86637f2d50831034b7836d3f8ecf04ef2646d419c9fefc12950ba"
+  },
+  {
+    "target": "artifacts/design/P1A_BACKLOG.md",
+    "staged": "007.md",
+    "sha256": "17f0b0d0d555d6c873e882f9b541cf473f8097ff2f8f5309bd15fd67719a449a"
+  },
+  {
+    "target": "artifacts/design/READINESS.md",
+    "staged": "008.md",
+    "sha256": "91b1c7bba444ad95daebcc2d45ea52a26bea55cfe5d429188af0621ba14d044b"
+  },
+  {
+    "target": "IMPLEMENTATION_HANDOFF.md",
+    "staged": "009.md",
+    "sha256": "7da01d5d9efb93d18f52dc607e1ae349d6cf800410f6a73f034a9b539a393a5b"
+  },
+  {
+    "target": "artifacts/implementation/RESULTS.md",
+    "staged": "010.md",
+    "sha256": "b7fee447bf8b1ba316c9526394712d3de7c648c5d5b6cc078d4dbbb906583482"
+  },
+  {
+    "target": "README.md",
+    "staged": "011.md",
+    "sha256": "a22bd499194096a6b092c47a0d1dd40e61cbdfb610afd05939ab7dfbc0ebaf76"
+  },
+  {
+    "target": "artifacts/design/DECLARED_PREVIEW_BRIEF.md",
+    "staged": "012.md",
+    "sha256": "68af43294e35d03631ed6cd82dd984873814b5d87502d4f85df38000c2345a78"
+  }
+]

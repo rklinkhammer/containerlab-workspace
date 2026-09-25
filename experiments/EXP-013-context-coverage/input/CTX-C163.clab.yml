@@ -1,0 +1,6 @@
+name: r1
+topology:
+  nodes:
+    arcos:
+      kind: arrcus_arcos
+      startup-config: r1.cfg

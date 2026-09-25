@@ -1,0 +1,4369 @@
+[
+  {
+    "id": "N-C162",
+    "title": "Native C162",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "cef2f49634b12c5f5b3c8ea2e52d36e30dbea77fdb0851a91005f4a2f67e55af",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C162",
+        "sourceSha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C162",
+    "title": "Native CTX-C162",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "228285c0c244aed5513240047a12063c90cf63d781f10da540375dd94d8dd9ae",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C162",
+        "sourceSha256": "e8ead1273155724f69751a471552329622b6b40c10e4ed9d91affd287a5fb438",
+        "outcomeSha256": "eee2fea74dfa5ed6210a47a37817a6107aee6956f05e1edc24279c7a24792045",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "228285c0c244aed5513240047a12063c90cf63d781f10da540375dd94d8dd9ae:n:0",
+          "name": "vsr",
+          "kind": "6wind_vsr",
+          "source": {
+            "fileId": "CTX-C162",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C163",
+    "title": "Native C163",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "c18af04b846c3ac62957010237fce760c6ef4a063dcf4d9d9d3b37d0bbe7576f",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C163",
+        "sourceSha256": "ec6a1d7cbd401ed13ab573d51c801ab2d1bf57ac09b777fceaad80f74abbf728",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C163",
+    "title": "Native CTX-C163",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "6bfc32842480b909df7a46993f70cf2ed2f92d50b0b58020519829f159cd01be",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C163",
+        "sourceSha256": "6222bffad5130d80008b8c1a461dac53415ba0d65d178ff9398a17fd65710dcc",
+        "outcomeSha256": "f0ba2fa9e04eac9031ce2b7c76d86c1239f86982fb4ebfc0ea66aaf1b64a73d9",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "6bfc32842480b909df7a46993f70cf2ed2f92d50b0b58020519829f159cd01be:n:0",
+          "name": "arcos",
+          "kind": "arrcus_arcos",
+          "source": {
+            "fileId": "CTX-C163",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C164",
+    "title": "Native C164",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "8891913ab452cd20d7278af5b1d28f7e91a62020109afda33409ce6606374335",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C164",
+        "sourceSha256": "82e3bef60e00abadd82f300397495f9f01a0133786361487db18b5b5a52b8980",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C164",
+    "title": "Native CTX-C164",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C164",
+        "sourceSha256": "250d4a848019a0b1e4a8bb87635bd698b9448bca32971643f4c711da216349f3",
+        "outcomeSha256": "6fd93625c698006c128123325bbd8930042a7fdc4d0abe9e52ad07160152f0d0",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:0",
+          "name": "br-clab",
+          "kind": "bridge",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:1",
+          "name": "srl1",
+          "kind": "nokia_srlinux",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:2",
+          "name": "srl2",
+          "kind": "nokia_srlinux",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:3",
+          "name": "srl3",
+          "kind": "nokia_srlinux",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:0:e:0",
+          "nodeId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "e1-1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:0:e:1",
+          "nodeId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:1:e:0",
+          "nodeId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:2",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "e1-1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:1:e:1",
+          "nodeId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth2",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:2:e:0",
+          "nodeId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:3",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "e1-1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:2:e:1",
+          "nodeId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth3",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:0",
+          "endpoints": [
+            "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:0:e:0",
+            "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:1",
+          "endpoints": [
+            "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:1:e:0",
+            "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:1:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:2",
+          "endpoints": [
+            "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:2:e:0",
+            "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:2:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:0:mtu",
+          "objectId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          }
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:1:mtu",
+          "objectId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:1",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          }
+        },
+        {
+          "id": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:2:mtu",
+          "objectId": "0c0bcd1bca8881e09f84a3a97c6052d2af6fb4dbda5e8c21e65729c4078afc47:l:2",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C164",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C166",
+    "title": "Native C166",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "f6b6977625e37dd13cc6e85dc156b0f3be161cb487b41de85c7a2628fff2bf97",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C166",
+        "sourceSha256": "20142045a38c4c48465797c350291d5d0340d08da11154237670f3fbb1ca1825",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C166",
+    "title": "Native CTX-C166",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "fc22c97aef3042f42cd7b3d601b8277832ab8c4258b276bfbb6818cca9b3ef29",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C166",
+        "sourceSha256": "1c8efbd4ffc32a1d835c2c05173e0dd7208b3e4163483d7051e7ef98130ecdbb",
+        "outcomeSha256": "a3b2bd6d20f6cd256bc78c8224a4012ec48522aa75477adc49608c64d54ba017",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "fc22c97aef3042f42cd7b3d601b8277832ab8c4258b276bfbb6818cca9b3ef29:n:0",
+          "name": "c8000",
+          "kind": "cisco_c8000",
+          "source": {
+            "fileId": "CTX-C166",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C167",
+    "title": "Native C167",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "1341cc09f4507d11fd707380ec06ff855fdb4da4719bd7740a164486f0eefcf7",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C167",
+        "sourceSha256": "bb54f84a3a8764f0019e7155cfcf80e6ba200626a4be918ca6d1eea5126903f5",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C167",
+    "title": "Native CTX-C167",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C167",
+        "sourceSha256": "7f94e356d386c259ea16cf97d204c6bb88bd809fe6e5b2cafd0d3974b0c055a3",
+        "outcomeSha256": "42df5cf6b36ae4c88385a626ebd7d4221284f129a7b4fd94ec7fbf483fcf9059",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:n:0",
+          "name": "Cisco8201-1",
+          "kind": "cisco_c8000",
+          "source": {
+            "fileId": "CTX-C167",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:n:1",
+          "name": "Cisco8201-2",
+          "kind": "cisco_c8000",
+          "source": {
+            "fileId": "CTX-C167",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:l:0:e:0",
+          "nodeId": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "FH0_0_0_0",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:l:0:e:1",
+          "nodeId": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "FH0_0_0_0",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:l:0",
+          "endpoints": [
+            "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:l:0:e:0",
+            "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C167",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:l:0:mtu",
+          "objectId": "bf51a99ffdb884ad2ffeebd03ed5cd91b80bac030e9cae69e42f19b02edaa168:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C167",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C168",
+    "title": "Native C168",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "d78ff7d5403b43d0a1b91d4cb91773348d0da74b3df26bcb31c1a35f7cc30dfd",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C168",
+        "sourceSha256": "b2a7978ba2e809ca8a516c31059bf1993d80e394e950c444370c4044f0c81f8a",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C168",
+    "title": "Native CTX-C168",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "8295fb189bbf02055d1832cea512dbc52d0edba94673bdaaf5095eae59c3beed",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C168",
+        "sourceSha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C171",
+    "title": "Native C171",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "289b6419c0bd43effd84eb354304aea03029bba7777df44fc70258487683d3f4",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C171",
+        "sourceSha256": "6bf572cf6eb3b96dcb708b5188de1c71d98f463e47456a62636301a700e209ff",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C171",
+    "title": "Native CTX-C171",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C171",
+        "sourceSha256": "8c1a1878584d738d2d9a66f16a3ffe2ba11d3eb1739dacafd873c94e36568f45",
+        "outcomeSha256": "1c940d3e05cd3fb6b6165f882161c7220625a859b5daa00d24686ca7a6763bb1",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:n:0",
+          "name": "ceos1",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C171",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:n:1",
+          "name": "ceos2",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C171",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:l:0:e:0",
+          "nodeId": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1_1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:l:0:e:1",
+          "nodeId": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth2_1_1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:l:0",
+          "endpoints": [
+            "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:l:0:e:0",
+            "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C171",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:l:0:mtu",
+          "objectId": "d5aeae116a58eec13d24d9a43b6627d5d9e62503f99419829911461bee77cd07:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C171",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C172",
+    "title": "Native C172",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "a7b9d99d8416b7db7663bf9d89ff44d54470d6643b2316d6a927a4bd21810352",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C172",
+        "sourceSha256": "5c804d00fc8d16ad5c71ff139209bcb4524ef6cec656a2671c99f39412b544ee",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C172",
+    "title": "Native CTX-C172",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "5b1bfc1e0449dcaa4c8d07ed669eefcddad26764800de1e3ffea3d0f09a0c628",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C172",
+        "sourceSha256": "f8c4fbf0794067beb91e90edff2219b2385e0ae9f699ea31780ff4397a94cc10",
+        "outcomeSha256": "ac71a8a00b492aa0bb5b3c0ced07942a12fedb78b78b57efcb1b1a4a03e5a239",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "5b1bfc1e0449dcaa4c8d07ed669eefcddad26764800de1e3ffea3d0f09a0c628:n:0",
+          "name": "ceos",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C172",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C173",
+    "title": "Native C173",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "1de1cd6219d6a919ae7a874764e38629884bdd9b30f44c30436bbeb5090eedec",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C173",
+        "sourceSha256": "f32a735e80ef104a6bc3e44d67b892323ded129eef8605f17d6fec6edf13d812",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C173",
+    "title": "Native CTX-C173",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "67841d3f0704e40670d704fe25732340cdb00c9321028c5ce9041408983eaf56",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C173",
+        "sourceSha256": "dd75637d8d512cb79d1a9e729ea88d76684469b53dbc5c8902ba02a5e61bdd29",
+        "outcomeSha256": "0bbd7140faa8760344f2e7a62b7fd65e7d133ac3861a854d861c078b99765570",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "67841d3f0704e40670d704fe25732340cdb00c9321028c5ce9041408983eaf56:n:0",
+          "name": "node1",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C173",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "67841d3f0704e40670d704fe25732340cdb00c9321028c5ce9041408983eaf56:n:1",
+          "name": "node2",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C173",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C174",
+    "title": "Native C174",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "0dd61793639d132eeb7320d72f7b70d3e5ef7092d405c28048870ebf066966df",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C174",
+        "sourceSha256": "04821b7d1e09a924a34bf5d415a53e08d3054894abe761c6eabc078d23633f40",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C174",
+    "title": "Native CTX-C174",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "9f43dc6377c89e89277ed6fc2020ebbf33ed49f41455a7aea2ba2a9632a9abe9",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C174",
+        "sourceSha256": "5ab513bd7fc66211bbfb9bf8b3f1d413f4cb028da5fc0a965f0a6a6df07a5f15",
+        "outcomeSha256": "40c39dca3923c33dbca6da7bbea0d56643ba6feea041bb93533306060c3b6b0d",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "9f43dc6377c89e89277ed6fc2020ebbf33ed49f41455a7aea2ba2a9632a9abe9:n:0",
+          "name": "ceos",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C174",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C175",
+    "title": "Native C175",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "426aceb78d8cae504c0cfc249cf6b01259a6871ce168f967b687459a09062195",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C175",
+        "sourceSha256": "ec1f418ab25cf54c28fef4dd3d4c8167d80a1b6798f5c5adcca89f54a8b754c8",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C175",
+    "title": "Native CTX-C175",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C175",
+        "sourceSha256": "78788c2ee1f5c2454208df3cdc29aee34dc4661cff6f08db4e0ba816ea7cbdd2",
+        "outcomeSha256": "a6850b1a771d889a66a7450529aacfb17a92ce357cb4a01a225e8695febe4136",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:n:0",
+          "name": "ceos1",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C175",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:n:1",
+          "name": "ceos2",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C175",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:l:0:e:0",
+          "nodeId": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:l:0:e:1",
+          "nodeId": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:l:0",
+          "endpoints": [
+            "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:l:0:e:0",
+            "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C175",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:l:0:mtu",
+          "objectId": "9ea6e431d509741f36b22c16348c698f6aef1f23a775123713ce7e38168ad9e8:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C175",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C176",
+    "title": "Native C176",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "d853054f969dec1e074024b68f3eb6c3d9982c54a22244aa8f16965071ec9d12",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C176",
+        "sourceSha256": "890ce0850fc82987742e6a9791b08444c39ae5dfc1522196e2b0aad0025938f6",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C176",
+    "title": "Native CTX-C176",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C176",
+        "sourceSha256": "26e4315e3c9d81c0d7800048f900c6ed938f7bdef0435a5413e51e5605d1740e",
+        "outcomeSha256": "c8c5efe88867691f36146d5eb28675c4bb5bf8e9c30950bf8d709f7b917b862e",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:n:0",
+          "name": "ceos1",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C176",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:n:1",
+          "name": "ceos2",
+          "kind": "arista_ceos",
+          "source": {
+            "fileId": "CTX-C176",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:l:0:e:0",
+          "nodeId": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:l:0:e:1",
+          "nodeId": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:l:0",
+          "endpoints": [
+            "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:l:0:e:0",
+            "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C176",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:l:0:mtu",
+          "objectId": "a6cb940f43d206d270f7dd1202dbf8073d7a153ddb9ca0ad0ef7af7ef5f8bb7c:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C176",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C201",
+    "title": "Native C201",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "eea82a5a8653a40be7dba2cca3feab9ffda5c7de89af29e53bd4a2bec678e6d4",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C201",
+        "sourceSha256": "6d005204938f1dcc81381e8258a8a1a8ba9e96e41ed6dc3a7b5f0839ba4c526b",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C201",
+    "title": "Native CTX-C201",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "d256ecc158a5efac3d9ff6eb7dd66d0a1c461fb45cc9d9056ff82fa6a7e8f067",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C201",
+        "sourceSha256": "ccc0e60e1274637a57b436afbb1ac7570a3934c9ea26bd42bf68de6ed9f0ac20",
+        "outcomeSha256": "8dbc87a3a559c554126036343dce655091142b1048dbbaed972b07e1f2906ac0",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "d256ecc158a5efac3d9ff6eb7dd66d0a1c461fb45cc9d9056ff82fa6a7e8f067:n:0",
+          "name": "crpd",
+          "kind": "juniper_crpd",
+          "source": {
+            "fileId": "CTX-C201",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C202",
+    "title": "Native C202",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "d925f6860bb22fb8df402744d7c487fbd149aee88e90f5a17963068d96d5dc7f",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C202",
+        "sourceSha256": "ac189f02a4aad582465b6131c2bbcbcbae147d93268490c5bceb68c6e01a0e7c",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C202",
+    "title": "Native CTX-C202",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "cfdcfcba33a302ebf7891b5267ff946819956a56c782fb467e594c6ec1d0bf3c",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C202",
+        "sourceSha256": "f453d46a328234857a2b8b22c1cd6276b63d3317dbaf98aecc41a5f464bee86a",
+        "outcomeSha256": "3fb338cf24c926842a6bad324e4b4e729b7ca3e0618f50560ce1ee69f426d02f",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "cfdcfcba33a302ebf7891b5267ff946819956a56c782fb467e594c6ec1d0bf3c:n:0",
+          "name": "crpd",
+          "kind": "juniper_crpd",
+          "source": {
+            "fileId": "CTX-C202",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C204",
+    "title": "Native C204",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "7fd91d1108e21ab8dfde2301b843a7f1f711a589112cb13cda594bc742e40197",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C204",
+        "sourceSha256": "f5b9368bcef9d217dbd79682caa37de9d4badd9de529ec7f6fb3637232342b0e",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C204",
+    "title": "Native CTX-C204",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "96d8f659873bfa21e162ea94959733ffb09b11985d3bfeb47a46c8a040352896",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C204",
+        "sourceSha256": "9691661a77b472a255dd71040e415e7027e6b07078054e9d705c0964668eab35",
+        "outcomeSha256": "82e83a8fc70c03bea57f66698cbabe5aaff2f2886f8bce409213d6b92d2ce411",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "96d8f659873bfa21e162ea94959733ffb09b11985d3bfeb47a46c8a040352896:n:0",
+          "name": "csrx",
+          "kind": "juniper_csrx",
+          "source": {
+            "fileId": "CTX-C204",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C205",
+    "title": "Native C205",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "35972fa488cf72223f2650073a415fec25e0dd3501f8a427a0c1464744fc923d",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C205",
+        "sourceSha256": "b08a47641bb783dc88f50094cc1f3a8aad3f30cb5f077793d9fd6e56a474d973",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C205",
+    "title": "Native CTX-C205",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "012d6c01f83e36a0f9479ed9266e6218d512740204d4f6782e3816fa09a70f53",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C205",
+        "sourceSha256": "e5665ea85abffccd5b34b5f6cdabdad5211cd9074c6a6083530095de6e769b61",
+        "outcomeSha256": "b886f5b8be6544632fe8c2b3336465d14fd61e8bd9835da716de7e6d32259d4a",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "012d6c01f83e36a0f9479ed9266e6218d512740204d4f6782e3816fa09a70f53:n:0",
+          "name": "csrx",
+          "kind": "juniper_csrx",
+          "source": {
+            "fileId": "CTX-C205",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C217",
+    "title": "Native C217",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "1cea32983fff0eed03dca69a24fb7ce152dcdaa560cf1900799869d50abc9e5b",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C217",
+        "sourceSha256": "47f7018bf1ac05ca12892273ae5e9095553fce7891dfb96dcb0f66d7282e18a8",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C217",
+    "title": "Native CTX-C217",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C217",
+        "sourceSha256": "8d66e84ad7dcd5f666a0aa006579aecc30a1a26700edfbacb3e6393839c02428",
+        "outcomeSha256": "5f73cd12c927be2f23ef7e7323c3afedfcb9cfc244f1e9d7c3445d9bd4fffe1d",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:n:0",
+          "name": "n1",
+          "kind": "linux",
+          "source": {
+            "fileId": "CTX-C217",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:n:1",
+          "name": "n2",
+          "kind": "linux",
+          "source": {
+            "fileId": "CTX-C217",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:l:0:e:0",
+          "nodeId": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:l:0:e:1",
+          "nodeId": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:l:0",
+          "endpoints": [
+            "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:l:0:e:0",
+            "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C217",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:l:0:mtu",
+          "objectId": "b6f73f2cc9f6684f1ff29ccec88825e5f620527532a27c8da23fd4578ef4585c:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C217",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C226",
+    "title": "Native C226",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "5b84cdfa4fc17e7f1eb1ecd401f3916735badaa2957948c69b262b58452d1cae",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C226",
+        "sourceSha256": "127c53050d76294118eacc79963da184bea5b2352af90b9c3b4915ae9a68e253",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C226",
+    "title": "Native CTX-C226",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "aa9eb0883ef2f3f70d343b04e690dccc00ed7d6c102729133df637bc13464fd5",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C226",
+        "sourceSha256": "44a96bad5c95043b1c24f52cb5f24af893a61ec36984afd20993de8a967342dd",
+        "outcomeSha256": "6fbb7e2edd26bc667f0cf2a8c1740f565408a971c176e617df57d27929534aa1",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "aa9eb0883ef2f3f70d343b04e690dccc00ed7d6c102729133df637bc13464fd5:n:0",
+          "name": "srl1",
+          "kind": "nokia_srlinux",
+          "source": {
+            "fileId": "CTX-C226",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C227",
+    "title": "Native C227",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "829b41f413290f9b72eb1264982d5f973b6b2795d7775159c0ed2a0a1cb51a4e",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C227",
+        "sourceSha256": "4e53641c85986bbd8293a026385679dedb4cf7d214e70594e2ea9e1b239c9b56",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C227",
+    "title": "Native CTX-C227",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "61e61b1d85e98541e78e17af5cd25ef9a1a51642fba00e70b41affbdb9586a31",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C227",
+        "sourceSha256": "6fbda5f50d827d4047aa4beffa0b81b03142f7689c26adf9a45f7d7bc96483df",
+        "outcomeSha256": "9aa6aac97ce3edffac4fb6004bde0935bfbea1a46d719d26a0e52e8046dbb5e4",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "61e61b1d85e98541e78e17af5cd25ef9a1a51642fba00e70b41affbdb9586a31:n:0",
+          "name": "srl1",
+          "kind": "nokia_srlinux",
+          "source": {
+            "fileId": "CTX-C227",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C228",
+    "title": "Native C228",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "f1988a5173fc618b1d4e3d2437756cb8cd500e91c283a6fa9fd2525b2bc0863b",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C228",
+        "sourceSha256": "f5e5002f6605b8d189d1593ca9bfac52f986c7eea17df2de8d9b4acb6a3e1dd6",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C228",
+    "title": "Native CTX-C228",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "aca5d4729ce5db358696d1e3dd39ee0e254657702c96f8ff85e05fe718efa7ba",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C228",
+        "sourceSha256": "7b9ccbe62119b13e91c03451995065a0c0b82081d27a1e3f22deeec2f394f3ed",
+        "outcomeSha256": "9aa6aac97ce3edffac4fb6004bde0935bfbea1a46d719d26a0e52e8046dbb5e4",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "aca5d4729ce5db358696d1e3dd39ee0e254657702c96f8ff85e05fe718efa7ba:n:0",
+          "name": "srl1",
+          "kind": "nokia_srlinux",
+          "source": {
+            "fileId": "CTX-C228",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C290",
+    "title": "Native C290",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "c69de098bdfa804928d60953a2ed385e63d46d1abf49277976f5f017b38819cc",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C290",
+        "sourceSha256": "227a4704fb8318e4198aea24c433048a7cd96b3904848ce6e622a8ba801a1631",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C290",
+    "title": "Native CTX-C290",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "ab7534acf5276f3636d2ed2dce746cca9322328ef6d11c39567c88b2976f397f",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C290",
+        "sourceSha256": "4cee91986ae75e7aa2f2d5acb4246ed93dc7354cd98bf06434859b10e12b0ddc",
+        "outcomeSha256": "c70876e2a4f6062cc7d3a462ae23e8fad485eb26c071a69591d8e38e3a5c710f",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "ab7534acf5276f3636d2ed2dce746cca9322328ef6d11c39567c88b2976f397f:n:0",
+          "name": "vyos",
+          "kind": "vyosnetworks_vyos",
+          "source": {
+            "fileId": "CTX-C290",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C291",
+    "title": "Native C291",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "f5d8e1f8200e0b2bf85ccf509898ae34de44da043f7f310073a3d70c9df68302",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C291",
+        "sourceSha256": "dced2d748f0defb2da737d6a571cea2dd750b71ff073be30f4cfb28f53e9f71e",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C291",
+    "title": "Native CTX-C291",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "e740700109188b8bead2124b08d86ea499b2a990cf5b13199943405c55c94370",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C291",
+        "sourceSha256": "f99587006be9ba509cd8ba5b5851aae3cdfdf5bfd69e1143219e11b1b773b181",
+        "outcomeSha256": "c70876e2a4f6062cc7d3a462ae23e8fad485eb26c071a69591d8e38e3a5c710f",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "e740700109188b8bead2124b08d86ea499b2a990cf5b13199943405c55c94370:n:0",
+          "name": "vyos",
+          "kind": "vyosnetworks_vyos",
+          "source": {
+            "fileId": "CTX-C291",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C292",
+    "title": "Native C292",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "62733978b38535334639adee783ebc519260a04d7e7473febfc0a5eb8d2ebd5f",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C292",
+        "sourceSha256": "eaf0a3ab6bd6b52de8f32ac59d189e2d28a04e0c7f6e73c4e29e0cc15199f575",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C292",
+    "title": "Native CTX-C292",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C292",
+        "sourceSha256": "471a90c3bfc105560cd5c2e0735e968941227f339094a43d104b2bdffd8a67d8",
+        "outcomeSha256": "37e576e53d4ca2ef919cde3272f03ed538151b6657d7657f5d95f4b3f2a80530",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:n:0",
+          "name": "vyos1",
+          "kind": "vyosnetworks_vyos",
+          "source": {
+            "fileId": "CTX-C292",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:n:1",
+          "name": "vyos2",
+          "kind": "vyosnetworks_vyos",
+          "source": {
+            "fileId": "CTX-C292",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:l:0:e:0",
+          "nodeId": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:l:0:e:1",
+          "nodeId": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:l:0",
+          "endpoints": [
+            "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:l:0:e:0",
+            "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C292",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:l:0:mtu",
+          "objectId": "96a27618b4e2f7a4b30c44f196a679fa724a7af5841fa52110d0fdece381dbe7:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C292",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C293",
+    "title": "Native C293",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "3b28ef3b1d65bf8320a283fd6e0a3cb2f8b9717e1ee1605d94c8ee8079b55b84",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C293",
+        "sourceSha256": "dfd31a25fe546ab89a47a5347ef365d5248204ada76115aa79b74e273d7544c6",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C293",
+    "title": "Native CTX-C293",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C293",
+        "sourceSha256": "0725665fa2ae12bb2d9e4ec473fd91cfdc417f8b0a0b85df312914382331715f",
+        "outcomeSha256": "0d7ba864ed75491e585ad7cea608c074dce7cc95d55d2e865d68e7805ab97785",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:n:0",
+          "name": "vyos1",
+          "kind": "vyosnetworks_vyos",
+          "source": {
+            "fileId": "CTX-C293",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:n:1",
+          "name": "vyos2",
+          "kind": "vyosnetworks_vyos",
+          "source": {
+            "fileId": "CTX-C293",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:l:0:e:0",
+          "nodeId": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:l:0:e:1",
+          "nodeId": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:l:0",
+          "endpoints": [
+            "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:l:0:e:0",
+            "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "CTX-C293",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:l:0:mtu",
+          "objectId": "d3b08158341305288b0891d2bd76e85d3806ac699a4770b6e6b65c52f7071a72:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "CTX-C293",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C294",
+    "title": "Native C294",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "7d6cd9a308789414cfde140229e8e6a2c78c6f943fb3affcf43aad9b7a9015af",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C294",
+        "sourceSha256": "38edd7091d48019109355c22afab01965e32486b408da677f55d885bee75120d",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C294",
+    "title": "Native CTX-C294",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "50db515e7097a14f48d51c6543605ec2d78a43d1b69157d4adb0161d1a617eed",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C294",
+        "sourceSha256": "5ef8be91d14b1ea5a9d8fd73a58df735c103ddf6ba99886dcb0ec2c7006f8071",
+        "outcomeSha256": "7c40643bb6b0a98c5dce84643ddf898663c8e47c608f8f451aaf85da51545c8a",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "50db515e7097a14f48d51c6543605ec2d78a43d1b69157d4adb0161d1a617eed:n:0",
+          "name": "xrd",
+          "kind": "cisco_xrd",
+          "source": {
+            "fileId": "CTX-C294",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-C295",
+    "title": "Native C295",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "02411ce403e386f6061c8445172f71e4c828aa6e76ac1c8dfada4d56dde6debb",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "C295",
+        "sourceSha256": "8e02c791d0d0303e000d134d7b0282e6a3e1dd1359858694208f660cdee9a3eb",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-CTX-C295",
+    "title": "Native CTX-C295",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "d9a039153d8d742849b63e7baf6cff7109a2c2dfcadc28c06447884cd70bbd6d",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "CTX-C295",
+        "sourceSha256": "fe3a5b0e6d678761851b639f19545a660b74050edbcaaee8f36a004dcd51114f",
+        "outcomeSha256": "7c40643bb6b0a98c5dce84643ddf898663c8e47c608f8f451aaf85da51545c8a",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "d9a039153d8d742849b63e7baf6cff7109a2c2dfcadc28c06447884cd70bbd6d:n:0",
+          "name": "xrd",
+          "kind": "cisco_xrd",
+          "source": {
+            "fileId": "CTX-C295",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-F1",
+    "title": "Native F1",
+    "subtitle": "Parallel links and native aliases",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "F1",
+        "sourceSha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911",
+        "outcomeSha256": "9bddeb39e9ae384bbd72c10e2bb35ef4368db834cd550f8c793853d03178b8e8",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:0",
+          "name": "isolated",
+          "kind": "linux",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:1",
+          "name": "left",
+          "kind": "linux",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:2",
+          "name": "right",
+          "kind": "linux",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:3",
+          "name": "srl",
+          "kind": "nokia_srlinux",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:0:e:0",
+          "nodeId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:0:e:1",
+          "nodeId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:2",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:1:e:0",
+          "nodeId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth2",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:1:e:1",
+          "nodeId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:2",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth2",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:2:e:0",
+          "nodeId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:3",
+          "externalRole": null,
+          "token": null,
+          "alias": "ethernet-1/1",
+          "normalized": "e1-1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:2:e:1",
+          "nodeId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth3",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:0",
+          "endpoints": [
+            "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:0:e:0",
+            "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:1",
+          "endpoints": [
+            "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:1:e:0",
+            "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:1:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:2",
+          "endpoints": [
+            "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:2:e:0",
+            "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:2:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:0:mtu",
+          "objectId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          }
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:1:mtu",
+          "objectId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:1",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          }
+        },
+        {
+          "id": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:2:mtu",
+          "objectId": "9b262216a7587f9f9714f3d6f9381f12956c77e038ad9c4425b71f431eae37c5:l:2",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "F1",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-F2",
+    "title": "Native F2",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "f59ab4a81f86fabb8d5831ecf0da40bcb9d2840c8b97dd6a0c36c8c09aca6ed0",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "F2",
+        "sourceSha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-F3",
+    "title": "Native F3",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "66137c3c9d999ecdb6a19dfa2d3011944be4dd47d2c42d702684f8138861f08a",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "rejected",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "F3",
+        "sourceSha256": "225e7850232935fafc7a7f2a42011d9de2c43cff8784deaa9c45f10d6d80fb95",
+        "outcomeSha256": "73f1383e14fa2e7d0168c9aab67c1724ddccce9a4513282b51f36663798a5763",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [],
+      "endpoints": [],
+      "links": [],
+      "facts": [],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        },
+        {
+          "code": "NATIVE_REJECTED",
+          "objectId": null,
+          "severity": "error"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-F4",
+    "title": "Native F4",
+    "subtitle": "Native host and management endpoints",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "F4",
+        "sourceSha256": "60e8976995c6ea25921fe80a251a4ba98ad420912a976452c6797d7d4e301c13",
+        "outcomeSha256": "40f6fe85eb23c4879aded0860350190f996bf894eddfd623ee02ddc0aec3c338",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:n:0",
+          "name": "n1",
+          "kind": "linux",
+          "source": {
+            "fileId": "F4",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:0:e:0",
+          "nodeId": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:0:e:1",
+          "nodeId": null,
+          "externalRole": "host",
+          "token": null,
+          "alias": null,
+          "normalized": "fixture_host",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:1:e:0",
+          "nodeId": null,
+          "externalRole": "management",
+          "token": null,
+          "alias": null,
+          "normalized": "fixture_mgmt",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:1:e:1",
+          "nodeId": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth2",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:0",
+          "endpoints": [
+            "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:0:e:0",
+            "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:0:e:1"
+          ],
+          "logicalRole": "host",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "F4",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:1",
+          "endpoints": [
+            "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:1:e:0",
+            "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:1:e:1"
+          ],
+          "logicalRole": "management",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "F4",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:0:mtu",
+          "objectId": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "F4",
+            "pointer": null
+          }
+        },
+        {
+          "id": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:1:mtu",
+          "objectId": "580b3367fb812c352f6d0941cd1628a1d0e8a259d4de578872396cb6457f9350:l:1",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "F4",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-F5",
+    "title": "Native F5",
+    "subtitle": "Recorded native fixture",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "F5",
+        "sourceSha256": "41385331a06c6dd1e520c177f91cbafe81e727810fc52c65f9f63fae391dd16d",
+        "outcomeSha256": "bd6e74869b4f8bce7c3558fc792d482d8fec3ec98cb3da26798fc4103f1804de",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:n:0",
+          "name": "n1",
+          "kind": "linux",
+          "source": {
+            "fileId": "F5",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:n:1",
+          "name": "n2",
+          "kind": "linux",
+          "source": {
+            "fileId": "F5",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:0:e:0",
+          "nodeId": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:0:e:1",
+          "nodeId": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:1:e:0",
+          "nodeId": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        },
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:1:e:1",
+          "nodeId": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:n:1",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "eth1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:0",
+          "endpoints": [
+            "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:0:e:0",
+            "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:0:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "F5",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        },
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:1",
+          "endpoints": [
+            "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:1:e:0",
+            "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:1:e:1"
+          ],
+          "logicalRole": "node",
+          "nativeType": "veth",
+          "source": {
+            "fileId": "F5",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:0:mtu",
+          "objectId": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "F5",
+            "pointer": null
+          }
+        },
+        {
+          "id": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:1:mtu",
+          "objectId": "e431c13d17b6040b4cf6322cc8c83010db1ce06caf5b26a865a571ba0d734ecc:l:1",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "F5",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  },
+  {
+    "id": "N-F7",
+    "title": "Native F7",
+    "subtitle": "Single-ended dummy link",
+    "graph": {
+      "contract": "p1a/0.2",
+      "revision": "b8215449855f738b2c73df1192b2b465f28a40a5324bb07715c3a463171016f6",
+      "profile": "native-recorded-exp013-v1",
+      "resolution": "partial",
+      "provenance": {
+        "experiment": "EXP-013",
+        "sourceId": "F7",
+        "sourceSha256": "614c345a6bd15cca1d0fb8ce072254ee21257fdb0c316af6441fda83ffbf56ef",
+        "outcomeSha256": "06cbb8ea241325a33ebe4dce43fd16a5aecb7373e7781deb878a3256dbad4371",
+        "metadataSha256": "5822db1fdcfa86db4ce7c64d17c1379f133b36ef8aa8da6f07988b5401b67dec",
+        "resolverCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "evidence": "recorded"
+      },
+      "nodes": [
+        {
+          "id": "b8215449855f738b2c73df1192b2b465f28a40a5324bb07715c3a463171016f6:n:0",
+          "name": "n1",
+          "kind": "linux",
+          "source": {
+            "fileId": "F7",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "b8215449855f738b2c73df1192b2b465f28a40a5324bb07715c3a463171016f6:l:0:e:0",
+          "nodeId": "b8215449855f738b2c73df1192b2b465f28a40a5324bb07715c3a463171016f6:n:0",
+          "externalRole": null,
+          "token": null,
+          "alias": null,
+          "normalized": "dummy1",
+          "origin": "unresolved",
+          "reason": "SOURCE_TOKEN_UNRESOLVED"
+        }
+      ],
+      "links": [
+        {
+          "id": "b8215449855f738b2c73df1192b2b465f28a40a5324bb07715c3a463171016f6:l:0",
+          "endpoints": [
+            "b8215449855f738b2c73df1192b2b465f28a40a5324bb07715c3a463171016f6:l:0:e:0"
+          ],
+          "logicalRole": "dummy",
+          "nativeType": "dummy",
+          "source": {
+            "fileId": "F7",
+            "pointer": null
+          },
+          "origin": "unresolved"
+        }
+      ],
+      "facts": [
+        {
+          "id": "b8215449855f738b2c73df1192b2b465f28a40a5324bb07715c3a463171016f6:l:0:mtu",
+          "objectId": "b8215449855f738b2c73df1192b2b465f28a40a5324bb07715c3a463171016f6:l:0",
+          "key": "mtu",
+          "disclosure": "visible",
+          "value": 9500,
+          "origin": "native",
+          "source": {
+            "fileId": "F7",
+            "pointer": null
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "code": "RECORDED_NATIVE",
+          "objectId": null,
+          "severity": "info"
+        },
+        {
+          "code": "UNRESOLVED_PROVENANCE",
+          "objectId": null,
+          "severity": "warning"
+        }
+      ],
+      "capabilities": {
+        "inspection": "disabled",
+        "terminal": "disabled",
+        "capture": "disabled",
+        "analysis": "disabled",
+        "reason": "RECORDED_ONLY"
+      },
+      "limits": {
+        "truncated": false,
+        "responseBytes": 2097152,
+        "textBytes": 4096,
+        "nodes": 100,
+        "links": 200
+      }
+    }
+  }
+]

@@ -1,0 +1,4 @@
+active.lock
+no-daemon-socket
+6ce6f5170a26545e4ab3b1dbdb3cde290a936436bf30a4389ab0b7f2b5505963  /opt/clab-loader/worker
+d901241466e9aa60d00b2271007265e6074f15c16b5912f4b427fdd18787eb59  /opt/clab-loader/runner.py

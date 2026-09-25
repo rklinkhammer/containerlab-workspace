@@ -1,0 +1,13 @@
+name: hostile-fixture
+topology:
+  nodes:
+    n1:
+      kind: linux
+      image: alpine:3.20
+      labels:
+        note: '<img src="https://invalid.example/pixel" onerror="alert(1)">'
+        link: 'javascript:alert(1)'
+      env:
+        SYNTHETIC_SECRET: CANARY_NOT_A_REAL_SECRET_010
+      x-unknown:
+        retained: true

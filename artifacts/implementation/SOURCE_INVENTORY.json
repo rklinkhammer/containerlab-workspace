@@ -1,0 +1,73 @@
+{
+  "meaning": "A5 delivered source snapshot; future routine edits need not republish design",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "21450d83dd4f4e8fe5c88a9308b584206e70915b4107944232d2f69bbd3f5c66"
+    },
+    {
+      "path": ".node-version",
+      "sha256": "50b8995029fdebc8ca439031c6945518d38ab6ad38a3985c9ba386bfafebcb35"
+    },
+    {
+      "path": "README.md",
+      "sha256": "bdf0448417bcba492e873ee5d3d8504f5f8ff5a41cff7ed7a7ceabd38e026cbe"
+    },
+    {
+      "path": "apps/web/src/env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "apps/web/src/fixtures.ts",
+      "sha256": "8d121445371f81675a0c2b18f376e13e9eaab507a72a06465d7cf94d4add3277"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "7ab9acf56a1a8f994c5ba6375651beb377145626e22fed0fd8f0b6401b7de3a1"
+    },
+    {
+      "path": "apps/web/src/style.css",
+      "sha256": "894766516906f2fc593717b56d61eec264e842c4d4880e96f8e5f1abf6b61c01"
+    },
+    {
+      "path": "contracts/graph.ts",
+      "sha256": "be554d9bdf36ba7c53793b1dc46d7b51db236ca46d7ad42f0afe7c7b02984c1d"
+    },
+    {
+      "path": "index.html",
+      "sha256": "306d851d3849116073ed1f4628d702433a96705bb60c36d01fd351f33db32128"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1815d43125823948b065d1d8fdee86fef8eba65aa077fe5e59a08fc7e1ee7fd3"
+    },
+    {
+      "path": "package.json",
+      "sha256": "2ae314aa5003afde8b35b9904b6be4afaae1ac3595cea6c0c07a38b6f9500f8a"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "e0f6be33e95abf3933201a278eb95e96159b4bc67999c2e6a1a78c54218addbf"
+    },
+    {
+      "path": "scripts/preview.mjs",
+      "sha256": "932ede562b4808a205dd9440fa0a774dabcb50967116b21eb9d0615b1587d68f"
+    },
+    {
+      "path": "tests/browser/preview.spec.ts",
+      "sha256": "5b8c08ab8dab2537822d488f1b6af46732b0b461c9d92458d790229f09016a71"
+    },
+    {
+      "path": "tests/contract.test.ts",
+      "sha256": "1e563f3eb2a1da3e7fd741be035579a63614bf9c3552e2a63151fab7c8427554"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "41bcb23a5b797ffcba9b8db7b5436434b552f95bd13cf296cdd1dec83e1515a7"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "c3370c565e63d878ea21346aad25c5ef86c7b34e38155b455d1de29f1895cbe8"
+    }
+  ]
+}

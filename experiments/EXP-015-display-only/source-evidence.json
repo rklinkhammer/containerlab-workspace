@@ -1,0 +1,50 @@
+[
+  {
+    "file": "core/file.go",
+    "sha256": "e4b81233d32e0e188246b075331fd2fa60278f4ad19063ecf1dba66ca99373a1",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/file.go"
+  },
+  {
+    "file": "core/clab.go",
+    "sha256": "6913678dbf34d01b29687294d9f2f1de0ae611bccdf2d1b17465971762e9a92c",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/clab.go"
+  },
+  {
+    "file": "core/options_clab.go",
+    "sha256": "46fbf1891ce95fa93e903cd33335f7a5adb95d9db1a2905e6eb26aa0713d88fe",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/options_clab.go"
+  },
+  {
+    "file": "core/config.go",
+    "sha256": "7292475a1c83d8980c7d31249b8ddae79b67fdb1894d356c54b68f5a7b19ba51",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/config.go"
+  },
+  {
+    "file": "types/topology.go",
+    "sha256": "471a6447ae6560c7de1dbb45f0f57fa05108870f81eecf761d62afa324915526",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/types/topology.go"
+  },
+  {
+    "file": "links/link.go",
+    "sha256": "ddb7b4643e688272c49c471e5efd3a0dfbddd3a170c986a013bdfe1b6cd91d8a",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/links/link.go"
+  },
+  {
+    "file": "links/link_brief.go",
+    "sha256": "8e660565dc7ee5d66aeba8cb5e331ca31d8833c640e793542c8f3fc639e3a39b",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/links/link_brief.go"
+  },
+  {
+    "file": "links/link_macvlan.go",
+    "sha256": "ddcd8050fb80db182ec2fc221a9f46280704b14a8924ac623fb229859f38ed9d",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/links/link_macvlan.go"
+  }
+]

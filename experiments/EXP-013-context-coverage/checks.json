@@ -1,0 +1,157 @@
+{
+  "scope": "observed behavior checks; not gate or production acceptance",
+  "checks": [
+    {
+      "check": "unchanged F1.expected.json",
+      "status": "PASS"
+    },
+    {
+      "check": "unchanged F2.expected.json",
+      "status": "PASS"
+    },
+    {
+      "check": "unchanged F3.expected.json",
+      "status": "PASS"
+    },
+    {
+      "check": "unchanged F4.expected.json",
+      "status": "PASS"
+    },
+    {
+      "check": "unchanged F5.expected.json",
+      "status": "PASS"
+    },
+    {
+      "check": "unchanged F6.expected.json",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 fails closed without socket",
+      "status": "PASS"
+    },
+    {
+      "check": "F2 fails closed without socket",
+      "status": "PASS"
+    },
+    {
+      "check": "F3 fails closed without socket",
+      "status": "PASS"
+    },
+    {
+      "check": "F4 fails closed without socket",
+      "status": "PASS"
+    },
+    {
+      "check": "F5 fails closed without socket",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 all nodes including isolated",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 kinds",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 default/group inheritance",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 parallel occurrences",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 native alias and normalized identity",
+      "status": "PASS"
+    },
+    {
+      "check": "F2 native reject",
+      "status": "PASS"
+    },
+    {
+      "check": "F3 missing bind reject",
+      "status": "PASS"
+    },
+    {
+      "check": "F4 external targets retained",
+      "status": "PASS"
+    },
+    {
+      "check": "F5 duplicate occurrences retained (native accepts)",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 repeat same selected fields",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 default export counts",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 __full returns silent minimal fallback",
+      "status": "PASS"
+    },
+    {
+      "check": "F1 /missing-template returns silent minimal fallback",
+      "status": "PASS"
+    },
+    {
+      "check": "F4 default export counts",
+      "status": "PASS"
+    },
+    {
+      "check": "F4 __full returns silent minimal fallback",
+      "status": "PASS"
+    },
+    {
+      "check": "F4 /missing-template returns silent minimal fallback",
+      "status": "PASS"
+    },
+    {
+      "check": "F5 default export counts",
+      "status": "PASS"
+    },
+    {
+      "check": "F5 __full returns silent minimal fallback",
+      "status": "PASS"
+    },
+    {
+      "check": "F5 /missing-template returns silent minimal fallback",
+      "status": "PASS"
+    },
+    {
+      "check": "isolation negative controls",
+      "status": "PASS"
+    },
+    {
+      "check": "isolation positive controls",
+      "status": "PASS"
+    },
+    {
+      "check": "native remote path denied",
+      "status": "PASS"
+    },
+    {
+      "check": "expired snapshot rejects native job",
+      "status": "PASS"
+    },
+    {
+      "check": "forbidden routes denied",
+      "status": "PASS"
+    },
+    {
+      "check": "no containers deployed",
+      "status": "PASS"
+    },
+    {
+      "check": "real metadata allowlist",
+      "status": "PASS"
+    },
+    {
+      "check": "snapshot allows only exact ping/version",
+      "status": "PASS"
+    }
+  ]
+}

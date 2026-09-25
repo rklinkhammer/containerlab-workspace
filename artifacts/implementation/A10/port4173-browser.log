@@ -1,0 +1,27 @@
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test
+
+[WebServer] (node:92756) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 14 tests using 1 worker
+
+(node:92767) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/declared.spec.ts:2:1 › declared missing-bind topology renders with explicit unresolved dependencies (254ms)
+  ✓   2 tests/browser/declared.spec.ts:13:1 › declarations preserve single-ended, dangling, parallel and external occurrences (188ms)
+  ✓   3 tests/browser/declared.spec.ts:24:1 › specific errors and keyboard navigation work at narrow width (191ms)
+  ✓   4 tests/browser/declared.spec.ts:36:1 › declared labels render hostile text without creating HTML or requests (134ms)
+  ✓   5 tests/browser/preview.spec.ts:2:1 › F1 graph, parallel occurrences and keyboard-accessible inspectors (296ms)
+  ✓   6 tests/browser/preview.spec.ts:16:1 › special endpoints preserve roles; duplicate occurrences remain rejected (235ms)
+  ✓   7 tests/browser/preview.spec.ts:21:1 › rejection and missing-input views never fabricate graph nodes (182ms)
+  ✓   8 tests/browser/preview.spec.ts:25:1 › hostile display text stays inert; CSP blocks inline scripts and network (180ms)
+  ✓   9 tests/browser/preview.spec.ts:36:1 › bounded long text has explicit truncation; over-limit graph rejected (206ms)
+  ✓  10 tests/browser/preview.spec.ts:41:1 › loopback static server denies mutation, source files and traversal (16ms)
+  ✓  11 tests/browser/preview.spec.ts:45:1 › narrow viewport exposes object list and inspector without page overflow (224ms)
+  ✓  12 tests/browser/preview.spec.ts:51:1 › recorded native single-ended link has no fabricated peer and keyboard inspector (198ms)
+  ✓  13 tests/browser/preview.spec.ts:59:1 › native preview preserves parallel links, aliases, source roles and rejected inputs (224ms)
+  ✓  14 tests/browser/preview.spec.ts:67:1 › recorded native evidence remains readable at narrow width (205ms)
+
+  14 passed (3.5s)

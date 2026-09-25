@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "path": "apps/web/src/fixtures.ts",
+      "sha256": "282b988e45e8bc84d452ead12fe1d7807bebeb913287f4bc68dbe97e347edf90"
+    },
+    {
+      "path": "tests/contract.test.ts",
+      "sha256": "5dae99837531c43673e7fe48787167c105256feaba525f5c6bafc9c829959a18"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "results": [
+    {
+      "case": "F1-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.02,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F1-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.033,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F2-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.02,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F2-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.012,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F3-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.018,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F3-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.02,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F4-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F4-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.012,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F5-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F5-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.019,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F1-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F1-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F2-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.019,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F2-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F3-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.017,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F3-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F4-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F4-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.02,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F5-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F5-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.022,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "F1-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.011,
+      "stderr_bytes": 46,
+      "summary": {
+        "status": "no_json",
+        "stdout_bytes": 0
+      }
+    },
+    {
+      "case": "F1-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.023,
+      "stderr_bytes": 53
+    },
+    {
+      "case": "control-isolation",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.026,
+      "stderr_bytes": 0,
+      "output": "{\"uid\": 65534, \"outside_hidden\": true, \"socket_hidden\": true, \"symlink_target_hidden\": true, \"network_denied\": true, \"input_readonly\": true, \"scratch_writable\": true}\n"
+    }
+  ],
+  "stub_routes": [],
+  "positive_controls": {
+    "outside_visible": true,
+    "same_namespace_network_reachable": true
+  },
+  "cleanup": "scratch unmounted; sentinels closed; no daemon deployed"
+}

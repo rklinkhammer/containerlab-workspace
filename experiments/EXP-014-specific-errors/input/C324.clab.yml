@@ -1,0 +1,9 @@
+name: mylab
+topology:
+  nodes:
+    n1:
+      binds:
+        - cfgs/n1/conf:/conf
+    n2:
+      binds:
+        - cfgs/n2/conf:/conf

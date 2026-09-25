@@ -1,0 +1,6 @@
+name: xrd
+topology:
+  nodes:
+    xrd:
+      kind: cisco_xrd
+      startup-config: xrd.cfg

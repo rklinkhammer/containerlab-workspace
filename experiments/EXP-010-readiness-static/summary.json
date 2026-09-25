@@ -1,0 +1,31 @@
+{
+  "candidate_hashes_verified": 435,
+  "included": 177,
+  "excluded": 258,
+  "stage_records": 177,
+  "parse": {
+    "PASS": 123,
+    "FAIL": 54
+  },
+  "failure_categories": {
+    "native_schema_rejection": 3,
+    "missing_kind_context": 13,
+    "documentation_macro_context": 28,
+    "external_resource_context": 3,
+    "missing_static_file": 5,
+    "host_interface_context": 2
+  },
+  "context_derivatives": 26,
+  "context_native_validation": "NOT_RUN",
+  "include_checks": {
+    "local_section_present": 23,
+    "section_marker": 24,
+    "local_line_slice_present": 1,
+    "local_file_present": 2,
+    "mutable_remote_reference_local_pinned_candidate": 1
+  },
+  "external_reference_rows": 526,
+  "external_page_expansion": "NOT_RUN",
+  "source_files_git_verified": 27,
+  "qualification_changed": false
+}

@@ -1,0 +1,6 @@
+name: ceos_lab
+topology:
+  nodes:
+    ceos:
+      kind: -{{ kind_code_name }}-
+      startup-config: myconfig.conf

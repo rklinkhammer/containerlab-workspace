@@ -1,0 +1,9 @@
+name: mylab
+topology:
+  nodes:
+    ansible:
+      binds:
+        - __clabDir__/ansible-inventory.yml:/ansible-inventory.yml:ro
+    graphite:
+      binds:
+        - __clabDir__/topology-data.json:/htdocs/clab/topology-data.json:ro

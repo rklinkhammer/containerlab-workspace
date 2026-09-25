@@ -1,0 +1,56 @@
+{
+  "snapshot": "A3-before-A4",
+  "created_utc": "2026-09-24T23:46:16.948619+00:00",
+  "layout": "flat; original locations in manifest",
+  "expected_missing": [],
+  "files": [
+    {
+      "file": "ARCHITECTURE.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-workspace/artifacts/design/ARCHITECTURE.md",
+      "sha256": "40a8f9c3cff694da358225547c1268f47065d518ebfa0d53f1eae9eb2ecca0f3",
+      "bytes": 48728
+    },
+    {
+      "file": "TRACEABILITY.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-workspace/artifacts/design/TRACEABILITY.md",
+      "sha256": "3ed1835cae9e718b4a01c91819f3bfabcb3670f2b7aec01eb3cf836711be5149",
+      "bytes": 9397
+    },
+    {
+      "file": "README.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-workspace/artifacts/design/README.md",
+      "sha256": "23c956533a42081fe984e7350ec80f3782fe7c08efc5da7d2cfa897953710bb0",
+      "bytes": 3037
+    },
+    {
+      "file": "IMPLEMENTATION_PLAN.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-workspace/artifacts/design/IMPLEMENTATION_PLAN.md",
+      "sha256": "187bddfd60d9d6ddb2464a97916015a2c44ed9416f3b323eea240f5aa5ae5b35",
+      "bytes": 21904
+    },
+    {
+      "file": "COMPLETION.json",
+      "source": "/Users/rklinkhammer/workspace/containerlab-workspace/artifacts/design/COMPLETION.json",
+      "sha256": "17b478eb3384ea3aea553230bb82fc21fc33a5722018de5a2aa4fd8c6729c6c2",
+      "bytes": 2176
+    },
+    {
+      "file": "DECISIONS.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-workspace/artifacts/design/DECISIONS.md",
+      "sha256": "ed19d8d2495317ae7234e16971dd581d4e5c9f88c7111b3da568467293e45f3c",
+      "bytes": 22619
+    },
+    {
+      "file": "IMPLEMENTATION_HANDOFF.md",
+      "source": "/Users/rklinkhammer/workspace/containerlab-workspace/IMPLEMENTATION_HANDOFF.md",
+      "sha256": "c112d9d48bfa4adab1ba84314c67ec62333e1a4eb030a5ad9bb61a8618ccf035",
+      "bytes": 15060
+    },
+    {
+      "file": "READINESS_BRIEF.md",
+      "source": "Current user request",
+      "sha256": "b6c61a9b3be888da38d582209a9437ec2e76c38dfd4ac9c7708acce1e65105f5",
+      "bytes": 2322
+    }
+  ]
+}

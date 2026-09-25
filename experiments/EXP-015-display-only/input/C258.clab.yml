@@ -1,0 +1,8 @@
+name: my-cat9kv-lab
+topology:
+  nodes:
+    node1:
+      kind: cisco_cat9kv
+      image: vrnetlab/vr-cat9kv:17.12.01p
+      binds:
+        - /path/to/vswitch.xml:/vswitch.xml

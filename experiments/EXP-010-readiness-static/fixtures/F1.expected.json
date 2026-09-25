@@ -1,0 +1,54 @@
+{
+  "id": "F1",
+  "basis": "Hand-authored independent requirement expectations; no adapter output used",
+  "native_execution": "NOT_RUN",
+  "renderer_execution": "NOT_RUN",
+  "declarations": {
+    "nodes": [
+      "left",
+      "right",
+      "isolated",
+      "srl"
+    ],
+    "link_occurrences": 3,
+    "endpoint_tokens": [
+      [
+        "left:eth1",
+        "right:eth1"
+      ],
+      [
+        "left:eth2",
+        "right:eth2"
+      ],
+      [
+        "srl:ethernet-1/1",
+        "left:eth3"
+      ]
+    ]
+  },
+  "native_expectations": {
+    "kinds": {
+      "left": "linux",
+      "right": "linux",
+      "isolated": "linux",
+      "srl": "nokia_srlinux"
+    },
+    "fixture_role": {
+      "left": "transit",
+      "right": "default"
+    },
+    "srl_alias": {
+      "source": "ethernet-1/1",
+      "normalized": "e1-1"
+    }
+  },
+  "projection_requirements": [
+    "4 nodes, including isolated",
+    "3 unique link occurrence IDs; first two connect same node pair without collapsing",
+    "origin unresolved where native provenance is absent",
+    "no generated MAC in source revision identity",
+    "operational actions disabled"
+  ],
+  "source_sha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911",
+  "source_file": "F1.clab.yml"
+}

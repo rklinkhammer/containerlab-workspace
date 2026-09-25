@@ -1,0 +1,18 @@
+    name: vxlan-stitch
+
+    topology:
+      nodes:
+        srl1:
+        kind: nokia_srlinux
+        image: ghcr.io/nokia/srlinux
+
+      links:
+        - type: vxlan-stitch
+          endpoint:
+            node: srl1
+            interface: e1-1
+            mac: 02:00:00:00:00:04
+          remote: 172.20.25.22 #(1)!
+          vni: 100
+          udp-port: 14788
+    

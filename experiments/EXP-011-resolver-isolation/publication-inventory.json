@@ -1,0 +1,62 @@
+[
+  {
+    "path": "artifacts/design/ARCHITECTURE.md",
+    "sha256": "077edb09a66e52a3fb80e43cc4e25cb94fdd43d6fae7ed6e7e0dcad6430db832",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/DECISIONS.md",
+    "sha256": "0eba72c09f5fc299a639937e45a227391cef5c94672df80d58ce0f56694abdc7",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+    "sha256": "f994eec9e989fd5d2650e79a11cde8507ccc53a8365af7255a60f84aa15f6196",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/TRACEABILITY.md",
+    "sha256": "24bcb0887bccc8920f237a7a2f0f5dd4c776d9d049392fa0c31a7f283f872329",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/READINESS.md",
+    "sha256": "81d39bce9a8cc161baa48e24106db6e78347697a3efa49880bec0ec5e3262338",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/P1A_BACKLOG.md",
+    "sha256": "96596f80cb98df43190b6ca0ec2c01422063fe1d75149c81f8325552a4aadda1",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/P1A_CONTRACT.md",
+    "sha256": "943589339ee337d282975632a373188ad65cb4e1672cc591003a2b117802289d",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/README.md",
+    "sha256": "00a1b4bfcf8d3c6331064ddef4c0629d3c47a6f01db3dd40d3386bb9baa3d0c3",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/RUNTIME_QUALIFICATION_PLAN.md",
+    "sha256": "811bc49eeb05b1767a4844670545a8f22dfeb3d0af0e8870ef91715ac3f18972",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/CANDIDATE_PROFILE.json",
+    "sha256": "cde343094d70a7ddde476ad0c632a84668f2524875ed99964cb0fc5705fbae0e",
+    "new": false
+  },
+  {
+    "path": "IMPLEMENTATION_HANDOFF.md",
+    "sha256": "2107a173b5ef2f1e6c39028131826a6507b3e02aecf395b89d1551cbcf11e396",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/RISK_REDUCTION_BRIEF.md",
+    "sha256": "1e719ce4e7754512fae4e188bf006225d96ea9d581094ddba7106a729d0ed195",
+    "new": true
+  }
+]

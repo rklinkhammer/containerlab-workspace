@@ -1,0 +1,5142 @@
+{
+  "results": [
+    {
+      "case": "C088-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "yaml: unmarshal errors:\n  line 8: field publish not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "c376490524d273e5b00fc013fc58b5f1dcdf755f85d82c78a9a4fd97aba8c6bc",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C088-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: yaml: unmarshal errors:\n  line 8: field publish not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "3a4ca3ab6255a88740eb3193b827e0c1f6ba0a18675519da5b0c50a59f06b04c",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C112-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C112-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C113-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "startup-configs/__clabLabName__/__clabNodeName__/config.json",
+            "state": "unresolved"
+          },
+          {
+            "kind": "startup-config",
+            "owner": "node2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "startup-configs/__clabLabName__/__clabNodeName__/config.json",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C113-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C140-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "cfgs/node1.partial.cfg",
+            "state": "unresolved"
+          },
+          {
+            "kind": "startup-config",
+            "owner": "node2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "cfgs/node2.partial.cfg",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C140-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.046,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C141-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "cfg/__clabNodeName__.partial.cfg",
+            "state": "unresolved"
+          },
+          {
+            "kind": "startup-config",
+            "owner": "node2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "cfgs/__clabNodeName__.partial.cfg",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C141-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C150-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "node2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ubuntu:20.04",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "node3",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ghcr.io/hellt/network-multitool",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "node4",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "myregistry.local/private/alpine:custom",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node3"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node4"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node3",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node4",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C150-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C155-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C155-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C159-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C159-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C162-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C162.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "0ef1dfd4e0a01d5f63e776cd01b0c19808521e983f5b0831b1cc1bc13dc22f91",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C162-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.033,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C162.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "f712ed12ec42182e71d951d919b72bcf83b693b3a19fd25c13f23cfdc78baffa",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C163-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C163.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "af6b2a272d4d224b87b09e14b90be30e4d3f298b1de2d071b7d2033da6a02f6b",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C163-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C163.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "64f99decc74870f8c1976ae21c7963ac6b0cec58fe0c6bdfa13907db421693c6",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C164-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C164.clab.yml:18: function \"kind_code_name\" not defined",
+          "raw_sha256": "fe54758874e0da50dbeb2c43f444bd4d03a1b4d731cb35923f61342fe2a2fec8",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C164-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C164.clab.yml:18: function \"kind_code_name\" not defined",
+          "raw_sha256": "90293c95e4626c2905fc2d418088fd754f6cafaf986ba5fa6d27c6e9678a1516",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C166-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C166.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "8a55d261a7fe4da471c122a3f93101c414cdc073dc4943059497b7bd6ee74613",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C166-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C166.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "2a0d89dfd14546b8308bc06bd3ca00e821790e8a15dd092ac5136827e9fb94d3",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C167-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C167.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "6ce5869f8dc2e7b8c70bbbd7eb7083dac96721312431a58d9f8d7798eb42891d",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C167-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C167.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "6324b64f8330a852c3efea2f61df4bed37fe6b57206672399474188d4a58dace",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C168-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C168.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "bb464fbe6fa84f627ae3f2e845eb57ef6146816db78f7150c769a078eb890d77",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C168-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C168.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "97725414dbd74e19fe88cca16ed4a3c9bd9a3a2c45fda9ff21436df6a70e73ee",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C171-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C171.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "069e671f1fe3c0d093b3925905a8fd93185c0e39b0a3735549f9e3c2605f3721",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C171-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C171.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "c34fc0df15ab8e8bd8236eaf5c96e81fe1f987e98e39992b7a2ebfc803ac6111",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C172-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C172.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "326a21d6785ae473f1f796a38b2d2029f6eddc1beb7a76aba7a97a8f47202161",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C172-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C172.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "f655e7011491f29db47ba37c64b971069fa5a21bf67871d13fef254c42fe51a2",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C173-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C173.clab.yml:12: function \"kind_code_name\" not defined",
+          "raw_sha256": "c4891c2296edf56b72af276e01f0a444728a2465ec40ae4278be236791786efa",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C173-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C173.clab.yml:12: function \"kind_code_name\" not defined",
+          "raw_sha256": "9290c8a7672f91285f3dac4470d5f66c779b41a774dda79a47b51b1907a46e59",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C174-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C174.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "2c35a9a344fd962db048ddcd52cb7614add6ac70e11a654806a35f80a8e3a90f",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C174-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C174.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "9546f39b1cc95239d8773212ac251719d87e6847950319ddf15f3371f5051421",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C175-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C175.clab.yml:10: function \"kind_code_name\" not defined",
+          "raw_sha256": "49d7f633304fe5ae3621993a1e06a7978fdab7ecbf0712a9f94d227a3ee4f6e2",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C175-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.048,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C175.clab.yml:10: function \"kind_code_name\" not defined",
+          "raw_sha256": "943d870b14132acd1ae1752e2cd9a4434c5bea3f7feacf9d088f20874bea0f03",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C176-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C176.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "d5dcf7a69692d04d7482c2ca9946fa54ff0130b1268d75711870a32f6dbef2eb",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C176-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C176.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "8f827c9382362e2039fca5000588e0aacd8352b569bdd2c86d79259aa252ae8e",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C201-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C201.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "95b36f0cf53d9aba18aa28884791477cd9ff1d2a6e70a79a13d30023b006234d",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C201-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C201.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "eeeee2836afd1f0910859505aa9bba8457449b68237e42d7a18068ccfb54fe37",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C202-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C202.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "03b9c22109136eab9e47c577a2773c91c14192ece037029d4c831a17cd006b50",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C202-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C202.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "5e49cfae1024df89c6447b5755347e6afafb735e4ba3bf8cdec74fe9a0c9d07c",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C204-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C204.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "618bce98622a27cbf0a1cb4da4162acb7e53d8bafb0f74d807139efb60d0e1f8",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C204-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C204.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "9239de19031fd0b9fdcb852495449f5b9439cdee99fcb1b4fdf688734179a22b",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C205-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C205.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "709a3a4739fd1a35e265010ab174b3519d7d03e1e9d55c45ec4a222df7c60d6c",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C205-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C205.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "44434401e5d50a6dc6b2eb1db0277894426cb8f92f3b5590c37ee336af152d63",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C206-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C206.clab.yml:9: function \"kind_code_name\" not defined",
+          "raw_sha256": "307e61ff716bcbd249e10540a67c09ebd5f3875d4c97d02ee28de5ec5dc6a801",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C206-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.033,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C206.clab.yml:9: function \"kind_code_name\" not defined",
+          "raw_sha256": "3bb1b210d1c7dc85f59e279e4e4b44e91711595eae1ac912630cc3d747cd5bc5",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C217-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C217.clab.yml:7: function \"kind_code_name\" not defined",
+          "raw_sha256": "7d56f1ffbf784eb17d1773fea844308160661588fbefe79988403ab5a261c183",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C217-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C217.clab.yml:7: function \"kind_code_name\" not defined",
+          "raw_sha256": "81eeae79f08be7471c58ab3270354b28e9451f170c997ae070694452deaba9f0",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C218-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "yaml: unmarshal errors:\n  line 9: field mgmt_ipv6 not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "459462c9e43efc8a3a9aad972ffafef74e494a48781c09bebc53a5d2127a039b",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C218-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: yaml: unmarshal errors:\n  line 9: field mgmt_ipv6 not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "0cfadb22b3ce3a5ba7894d655265768a3329d1f4e0452b7faa985a489fc9d8a5",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C221-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.046,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C221.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "35b0b250b3a991db94232c3e2f7657ffe6ba76b65f066a92e55fa04020a03bbc",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C221-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C221.clab.yml:6: function \"kind_code_name\" not defined",
+          "raw_sha256": "f177b54106ba388a82d47ee64bd1e58887b67017f53513e9b0e9f335e092e93c",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C226-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C226.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "dd2ec46b216d3b27233e775f78a0d8dae1c63e84b513abc00929b84ea2b34b82",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C226-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C226.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "487c277fd0f4f15bbb366e7a523df1f105adbf8550207be8fdc23fc0dbbcd315",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C227-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C227.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "74f253c85f4b21e8aad592cb2478a1e5e2510b6dbc127fc7343ce9577dc00ed2",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C227-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C227.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "55d7b6a697a8805c14b706069d99c0c9c53344f90fa781ca2d03bdaa56842d29",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C228-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C228.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "262a06815948919ae2a00136605cd3bb7223f90122beb598f8955a7f1a634b11",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C228-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C228.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "417377c3277a45a43c55f590bb8d2a84178ee66be82f8f3da7d2c1980db68c54",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C248-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "sros",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "https://gist.com/<somehash>/staticroute.partial.cfg",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "sros",
+            "kind": "nokia_srsim",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C248-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to fetch http(s) resource: https://gist.com/<somehash>/staticroute.partial.cfg",
+          "raw_sha256": "27ae0150eab9ccf13b426a2c80c6ab97ce27e1363bf17f8f60f3075e3f46f748",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C252-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "bng1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "bng1/osvbng.yaml",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "bng1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "veesixnetworks/osvbng:v0.3.1",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "corerouter1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "corerouter1/daemons:/etc/frr/daemons",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "corerouter1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "corerouter1/frr.conf:/etc/frr/frr.conf",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "corerouter1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "frrouting/frr:v8.4.1",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "subscribers",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "subscribers/config.json:/config/config.json",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "subscribers",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "veesixnetworks/bngblaster:0.9.30",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "subscribers",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "bng1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "bng1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "corerouter1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 1,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "bng1",
+            "kind": "veesix_osvbng",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "corerouter1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "subscribers",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C252-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 72,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "bng1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "bng1/osvbng.yaml",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "bng1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "veesixnetworks/osvbng:v0.3.1",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "corerouter1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "corerouter1/daemons:/etc/frr/daemons",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "corerouter1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "corerouter1/frr.conf:/etc/frr/frr.conf",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "corerouter1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "frrouting/frr:v8.4.1",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "subscribers",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "subscribers/config.json:/config/config.json",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "subscribers",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "veesixnetworks/bngblaster:0.9.30",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "subscribers",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "bng1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "bng1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "corerouter1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 1,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "bng1",
+            "kind": "veesix_osvbng",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "corerouter1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "subscribers",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "resolved_link_count": 2,
+        "resolved_node_count": 3,
+        "status": "resolved_with_unchecked_dependencies"
+      }
+    },
+    {
+      "case": "C258-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "/path/to/vswitch.xml:/vswitch.xml",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "vrnetlab/vr-cat9kv:17.12.01p",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "cisco_cat9kv",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C258-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 72,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "/path/to/vswitch.xml:/vswitch.xml",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "vrnetlab/vr-cat9kv:17.12.01p",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "cisco_cat9kv",
+            "kind_state": "native_getter"
+          }
+        ],
+        "resolved_link_count": 0,
+        "resolved_node_count": 1,
+        "status": "resolved_with_unchecked_dependencies"
+      }
+    },
+    {
+      "case": "C276-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.033,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "sros",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "https://gist.com/<somehash>/staticroute.partial.cfg",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "sros",
+            "kind": "nokia_sros",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C276-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to fetch http(s) resource: https://gist.com/<somehash>/staticroute.partial.cfg",
+          "raw_sha256": "27ae0150eab9ccf13b426a2c80c6ab97ce27e1363bf17f8f60f3075e3f46f748",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C290-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C290.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "672ea9919cb7f9df034660f8e32730690979a68e52445a51a3536b6ee6866bdd",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C290-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C290.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "3913b19f57ad92a18924ffa3189687be06aaa82cb638751001935077e27920bf",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C291-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C291.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "93156881872455a5a33e3ae5fdb087a2a04798a0f2914763565b0cdb367de399",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C291-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C291.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "7648a13d22b3b2feb17b7fb649439efca1892f62ed7edc9f1fe7d994e5707c40",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C292-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.042,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C292.clab.yml:10: function \"kind_code_name\" not defined",
+          "raw_sha256": "3cb258e8eff4d87aeb0df4633ebdf73d7d8b5edc3b43c1a05b5b9151901af1dd",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C292-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C292.clab.yml:10: function \"kind_code_name\" not defined",
+          "raw_sha256": "f44e55e270aed82ef68455b20eb5ba6d5860e5a5fd64b2277fa140e13caac2e2",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C293-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C293.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "b0b416474309ca65be6694b5bda293ccdaba04808ef8db000d30b62eaa5e01f6",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C293-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C293.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "385537903230834aac4018f7f2cda0192a2e3fc77b897e91ea61b4783a2cd206",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C294-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C294.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "282f26e8ed9f441e2d867107ed5b5acd4317bb36985a54955aaeef8e8adb2b0c",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C294-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C294.clab.yml:8: function \"kind_code_name\" not defined",
+          "raw_sha256": "9da38b9dadbf1c5cf98c96e7abb17272e66a870b5aaa8232b405484745decb1a",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C295-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "template: C295.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "375620bd7e6a264865d2721688f12592d2ec0dbf7dd08290ff923cfb540247ec",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C295-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: template: C295.clab.yml:5: function \"kind_code_name\" not defined",
+          "raw_sha256": "1eb2d7228580d1a94e24c83c4e3d1cc16ec30bc20d395d16493d9fd1615f972a",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C310-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "n1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "n2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "n2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C310-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"n1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "8c05fb1bd3e6932dcc67e3754431d1d2c7a50563c99868ad295536f19f8c4e85",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C314-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "l1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3",
+            "state": "unresolved"
+          },
+          {
+            "kind": "host-interface",
+            "owner": "0",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "enp0s3",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "l1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "host-interface",
+            "id": 0,
+            "state": "declared",
+            "type": "macvlan"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "l1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C314-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 72,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "l1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3",
+            "state": "unresolved"
+          },
+          {
+            "kind": "host-interface",
+            "owner": "0",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "enp0s3",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "l1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "host-interface",
+            "id": 0,
+            "state": "declared",
+            "type": "macvlan"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "l1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "stage": "links",
+        "status": "link_resolution_failed",
+        "diagnostic": {
+          "message": "Link not found",
+          "raw_sha256": "33002c9cfac32dcff505d7d996f09c6bdc75f260503280e83d1611fd1686d826",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C316-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "node2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "node3",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "node4",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node3"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node4"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node2",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node3",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 1,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth3",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth3",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node4",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 2,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node2",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node4",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 3,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node3",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "node4",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 4,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node3",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node4",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C316-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C324-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "cfgs/n1/conf:/conf",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "n2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "cfgs/n2/conf:/conf",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "n1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "n2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "n2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C324-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"n1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "8c05fb1bd3e6932dcc67e3754431d1d2c7a50563c99868ad295536f19f8c4e85",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C325-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "__clabNodeDir__/conf:/conf",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "n2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "__clabNodeDir__/conf:/conf",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "n1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "n2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "n2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C325-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"n1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "8c05fb1bd3e6932dcc67e3754431d1d2c7a50563c99868ad295536f19f8c4e85",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C326-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "ansible",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "__clabDir__/ansible-inventory.yml:/ansible-inventory.yml:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "graphite",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "__clabDir__/topology-data.json:/htdocs/clab/topology-data.json:ro",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "ansible"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "graphite"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "ansible",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "graphite",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C326-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"ansible\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "3855f9b225b3ea0aed6025137bcfdf52cb9074bfacf8dbe85b1fcb5c74fb8ec2",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C368-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "router1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "s3://my-bucket/configs/router1.cli",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "router1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ghcr.io/nokia/srlinux:latest",
+            "state": "unresolved"
+          },
+          {
+            "kind": "startup-config",
+            "owner": "router2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "s3://my-bucket/configs/router2.cli",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "router2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ghcr.io/nokia/srlinux:latest",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "router1",
+            "kind": "nokia_srlinux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "router2",
+            "kind": "nokia_srlinux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C368-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 4.041,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to fetch s3 resource: s3://my-bucket/configs/router1.cli: object not found or access denied: Head \"https://my-bucket.s3.dualstack.us-east-1.amazonaws.com/configs/router1.cli\": dial tcp: lookup my-bucket.s3.dualstack.us-east-1.amazonaws.com on 127.0.0.53:53: read udp 127.0.0.1:53460->127.0.0.53:53: read: connection refused",
+          "raw_sha256": "03c744a3d7f14cf4cffda1f4c5c7e326429ee5dcbafccc211cf3cb7bf8c951f4",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C398-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.049,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "router1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "configs/__clabNodeName__.cfg",
+            "state": "unresolved"
+          },
+          {
+            "kind": "startup-config",
+            "owner": "router2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "configs/__clabNodeName__.cfg",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "router1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "router2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "router1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "router2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C398-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"router1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "e533d3163ae51fa1fa5d21bef11cd6037aa7fc308ae9ccb15b613990eafc901f",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C399-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "__clabDir__/shared-data.json:/shared.json:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "__clabNodeDir__/custom.conf:/etc/custom.conf",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C399-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C400-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C400-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C413-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.033,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "l1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3",
+            "state": "unresolved"
+          },
+          {
+            "kind": "host-interface",
+            "owner": "0",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "enp0s3",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "l1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "host-interface",
+            "id": 0,
+            "state": "declared",
+            "type": "macvlan"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "l1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C413-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 72,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "l1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3",
+            "state": "unresolved"
+          },
+          {
+            "kind": "host-interface",
+            "owner": "0",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "enp0s3",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "l1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "host-interface",
+            "id": 0,
+            "state": "declared",
+            "type": "macvlan"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "l1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "stage": "links",
+        "status": "link_resolution_failed",
+        "diagnostic": {
+          "message": "Link not found",
+          "raw_sha256": "33002c9cfac32dcff505d7d996f09c6bdc75f260503280e83d1611fd1686d826",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C416-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "yaml: unmarshal errors:\n  line 6: cannot unmarshal !!str `nokia_s...` into types.NodeDefinitionWithDeprecatedFields\n  line 7: cannot unmarshal !!str `ghcr.io...` into types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "eea1d5aebd241ef095ddc56ece57742828e1e3e47353cd51939e32211291eee1",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C416-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: yaml: unmarshal errors:\n  line 6: cannot unmarshal !!str `nokia_s...` into types.NodeDefinitionWithDeprecatedFields\n  line 7: cannot unmarshal !!str `ghcr.io...` into types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "707ac369c6cac7c93c6e6683d0c3096da7c3e3ddd57407a9bf256ef371cb4d60",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "C423-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "startup-config",
+            "owner": "node1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "startup-configs/__clabLabName__/__clabNodeName__/config.json",
+            "state": "unresolved"
+          },
+          {
+            "kind": "startup-config",
+            "owner": "node2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "startup-configs/__clabLabName__/__clabNodeName__/config.json",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node1"
+          },
+          {
+            "code": "KIND_UNRESOLVED",
+            "owner": "node2"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "node1",
+            "kind": "",
+            "kind_state": "unresolved"
+          },
+          {
+            "id": "node2",
+            "kind": "",
+            "kind_state": "unresolved"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "C423-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 72,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "constructing node \"node1\": kind \"\" is not supported. Supported kinds are \"6wind_vsr, arista_ceos, arista_veos, arrcus_arcos, aruba_aoscx, bridge, c8000, ceos, checkpoint_cloudguard, ciena_saos, cisco_asav, cisco_c8000, cisco_c8000v, cisco_cat9kv, cisco_csr1000v, cisco_ftdv, cisco_iol, cisco_n9kv, cisco_sdwan, cisco_vios, cisco_xrd, cisco_xrd_vrouter, cisco_xrv, cisco_xrv9k, cjunosevolved, crpd, cumulus_cvx, cvx, dell_ftosv, dell_sonic, ext-container, f5_bigip-ve, fdio_vpp, fortinet_fortigate, freebsd, generic_vm, host, huawei_vrp, ipinfusion_ocnos, juniper_cjunosevolved, juniper_crpd, juniper_csrx, juniper_vjunosevolved, juniper_vjunosrouter, juniper_vjunosswitch, juniper_vmx, juniper_vqfx, juniper_vsrx, k8s-kind, keysight_ixia-c-one, linux, mikrotik_ros, nokia_srlinux, nokia_sros, nokia_srsim, nvidia_cumulusvx, openbsd, openwrt, ovs-bridge, paloalto_panos, plvision_sonic, rare, sonic-vm, sonic-vs, spirent_stc, srl, veesix_osvbng, vr-aoscx, vr-arista_veos, vr-aruba_aoscx, vr-ciena_saos, vr-cisco_csr1000v, vr-cisco_n9kv, vr-cisco_xrv, vr-cisco_xrv9k, vr-csr, vr-dell_ftosv, vr-ftosv, vr-juniper_vmx, vr-juniper_vqfx, vr-juniper_vsrx, vr-mikrotik_ros, vr-n9kv, vr-nokia_sros, vr-paloalto_panos, vr-pan, vr-ros, vr-sros, vr-veos, vr-vmx, vr-vqfx, vr-vsrx, vr-xrv, vr-xrv9k, vyosnetworks_vyos, xrd\"",
+          "raw_sha256": "c278e8c51fa35a1f74007bfa9db7a40f27949d7d155f19713a8a2c0dcf65c194",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "CTX-C168-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "ceos1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "mymapping.json:/mnt/flash/EosIntfMapping.json:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "ceos1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ceos:4.32.0F",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "ceos2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "mymapping.json:/mnt/flash/EosIntfMapping.json:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "ceos2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ceos:4.32.0F",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "ceos1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "ceos2",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "ceos1",
+            "kind": "arista_ceos",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "ceos2",
+            "kind": "arista_ceos",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "CTX-C168-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 76,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "ceos1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "mymapping.json:/mnt/flash/EosIntfMapping.json:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "ceos1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ceos:4.32.0F",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "ceos2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "mymapping.json:/mnt/flash/EosIntfMapping.json:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "ceos2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ceos:4.32.0F",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "ceos1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "ceos2",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "ceos1",
+            "kind": "arista_ceos",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "ceos2",
+            "kind": "arista_ceos",
+            "kind_state": "native_getter"
+          }
+        ],
+        "resolved_link_count": 1,
+        "resolved_node_count": 2,
+        "status": "resolved_with_unchecked_dependencies"
+      }
+    },
+    {
+      "case": "F1-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "isolated",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "left",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "right",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "srl",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ghcr.io/nokia/srlinux:25.10.1",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "left",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "right",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "left",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "right",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 1,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "ethernet-1/1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "srl",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth3",
+                "interface_state": "declared_unresolved_alias",
+                "node": "left",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 2,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "isolated",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "left",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "right",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "srl",
+            "kind": "nokia_srlinux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "F1-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 70,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "isolated",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "left",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "right",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "srl",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "ghcr.io/nokia/srlinux:25.10.1",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "left",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "right",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "left",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "right",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 1,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "ethernet-1/1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "srl",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth3",
+                "interface_state": "declared_unresolved_alias",
+                "node": "left",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 2,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "isolated",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "left",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "right",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "srl",
+            "kind": "nokia_srlinux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "resolved_link_count": 3,
+        "resolved_node_count": 4,
+        "status": "resolved_with_unchecked_dependencies"
+      }
+    },
+    {
+      "case": "F2-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.034,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "declarations",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "yaml: unmarshal errors:\n  line 12: field x-unknown not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "a072428224e9b78013fdf3faab9e123a6926af3b228fa8071a0d4633a97f9b3d",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "F2-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to read topology file: yaml: unmarshal errors:\n  line 12: field x-unknown not found in type types.NodeDefinitionWithDeprecatedFields\nConsult with release notes to see if any fields were changed/removed",
+          "raw_sha256": "2a2a1511fac1fe2fdd6abade9cbaa73e36ea97ef38697e681da3aacfc2072931",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "F3-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "missing-fixture-file:/etc/fixture",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "F3-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 70,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "missing-fixture-file:/etc/fixture",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "resolved_link_count": 0,
+        "resolved_node_count": 1,
+        "status": "resolved_with_unchecked_dependencies"
+      }
+    },
+    {
+      "case": "F4-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "host-endpoint",
+            "owner": "0",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "fixture_host",
+            "state": "unresolved"
+          },
+          {
+            "kind": "management-endpoint",
+            "owner": "1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "fixture_mgmt",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "host-endpoint",
+            "id": 0,
+            "state": "declared",
+            "type": "host"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "management-endpoint",
+            "id": 1,
+            "state": "declared",
+            "type": "mgmt-net"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "F4-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 70,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "host-endpoint",
+            "owner": "0",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "fixture_host",
+            "state": "unresolved"
+          },
+          {
+            "kind": "management-endpoint",
+            "owner": "1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "fixture_mgmt",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "host-endpoint",
+            "id": 0,
+            "state": "declared",
+            "type": "host"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "management-endpoint",
+            "id": 1,
+            "state": "declared",
+            "type": "mgmt-net"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "resolved_link_count": 2,
+        "resolved_node_count": 1,
+        "status": "resolved_with_unchecked_dependencies"
+      }
+    },
+    {
+      "case": "F5-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.035,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "n2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n2",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n2",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 1,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "n2",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "F5-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 70,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "n2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n2",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n2",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 1,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "n2",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "resolved_link_count": 2,
+        "resolved_node_count": 2,
+        "status": "resolved_with_unchecked_dependencies"
+      }
+    },
+    {
+      "case": "F7-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "dummy1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "dummy"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "F7-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 70,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "n1",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "dummy1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "n1",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "dummy"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "n1",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "resolved_link_count": 1,
+        "resolved_node_count": 1,
+        "status": "resolved_with_unchecked_dependencies"
+      }
+    },
+    {
+      "case": "D1-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "bind",
+            "owner": "a",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "absent.json:/etc/absent.json:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "startup-config",
+            "owner": "a",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "https://example.invalid/startup.cfg",
+            "state": "unresolved"
+          },
+          {
+            "kind": "license",
+            "owner": "a",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "absent.license",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "a",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "b",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "absent.json:/etc/absent.json:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "b",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "bind",
+            "owner": "isolated",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "absent.json:/etc/absent.json:ro",
+            "state": "unresolved"
+          },
+          {
+            "kind": "image",
+            "owner": "isolated",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          },
+          {
+            "kind": "host-interface",
+            "owner": "2",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "missing-parent",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "a",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "b",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "a",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth2",
+                "interface_state": "declared_unresolved_alias",
+                "node": "b",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "",
+            "id": 1,
+            "state": "declared",
+            "type": "veth"
+          },
+          {
+            "endpoints": [
+              {
+                "interface": "eth3",
+                "interface_state": "declared_unresolved_alias",
+                "node": "a",
+                "reference_state": "declared"
+              }
+            ],
+            "external_role": "host-interface",
+            "id": 2,
+            "state": "declared",
+            "type": "macvlan"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "a",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "b",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          },
+          {
+            "id": "isolated",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "D1-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.046,
+      "stderr_bytes": 70,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to fetch http(s) resource: https://example.invalid/startup.cfg",
+          "raw_sha256": "659ac37c05d6db18fbfbf780c59ae3e6bbf589e240c25d353e9781d5a358f957",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "D2-declarations",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 0,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "a",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "ENDPOINT_NODE_UNRESOLVED",
+            "node": "absent",
+            "owner": "0"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "a",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "absent",
+                "reference_state": "unresolved"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "declarations",
+        "nodes": [
+          {
+            "id": "a",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "status": "declarations_only"
+      }
+    },
+    {
+      "case": "D2-skip-binds",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 70,
+      "summary": {
+        "dependencies": [
+          {
+            "kind": "image",
+            "owner": "a",
+            "reason": "NOT_CHECKED_DISPLAY_ONLY",
+            "reference": "alpine:3.20",
+            "state": "unresolved"
+          }
+        ],
+        "dependency_inventory": "partial_allowlist",
+        "deployment": "NOT_RUN",
+        "diagnostics": [
+          {
+            "code": "ENDPOINT_NODE_UNRESOLVED",
+            "node": "absent",
+            "owner": "0"
+          }
+        ],
+        "field_provenance": "unresolved",
+        "links": [
+          {
+            "endpoints": [
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "a",
+                "reference_state": "declared"
+              },
+              {
+                "interface": "eth1",
+                "interface_state": "declared_unresolved_alias",
+                "node": "absent",
+                "reference_state": "unresolved"
+              }
+            ],
+            "external_role": "",
+            "id": 0,
+            "state": "declared",
+            "type": "veth"
+          }
+        ],
+        "mode": "skip-binds",
+        "nodes": [
+          {
+            "id": "a",
+            "kind": "linux",
+            "kind_state": "native_getter"
+          }
+        ],
+        "stage": "links",
+        "status": "link_resolution_failed",
+        "diagnostic": {
+          "message": "unable to find node absent",
+          "raw_sha256": "2612ede7887d95ab5fbb2e63a68aa15dcee3eff517fb7d81d0bd0a299c1b5809",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    },
+    {
+      "case": "control-isolation",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.044,
+      "stderr_bytes": 0,
+      "output": "{\"uid\": 65534, \"outside_hidden\": true, \"socket_hidden\": true, \"symlink_target_hidden\": true, \"network_denied\": true, \"input_readonly\": true, \"scratch_writable\": true}\n"
+    },
+    {
+      "case": "facade-denial-matrix",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 0,
+      "output": "[403, 403, 403, 403, 403, 403, 403, 403, 403]\n"
+    },
+    {
+      "case": "F1-expired",
+      "profile": "real-version-snapshot",
+      "exit": 0,
+      "seconds": 0.033,
+      "stderr_bytes": 0,
+      "summary": {
+        "deployment": "NOT_RUN",
+        "mode": "skip-binds",
+        "stage": "load",
+        "status": "rejected",
+        "diagnostic": {
+          "message": "failed to init the container runtime: Error response from daemon: EXPIRED",
+          "raw_sha256": "25225ae8a02183e3b364535e325d6b3ba413e1b429a1719677f637e1f08205f8",
+          "redacted": false,
+          "truncated": false
+        }
+      }
+    }
+  ],
+  "snapshot_routes": [
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/containers/json",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/containers/create",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version?x=1",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/../version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "http://localhost/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/%76ersion",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "path": "/v0.00/version",
+      "status": 403
+    },
+    {
+      "method": "HEAD",
+      "path": "/v1.51/version",
+      "status": 403
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping",
+      "status": 503
+    },
+    {
+      "method": "GET",
+      "path": "/_ping",
+      "status": 503
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version",
+      "status": 503
+    }
+  ],
+  "runtime_metadata": {
+    "Version": "29.1.3",
+    "ApiVersion": "1.52",
+    "MinAPIVersion": "1.44",
+    "Os": "linux",
+    "Arch": "arm64"
+  },
+  "daemon_containers_after": "",
+  "positive_controls": {
+    "outside_visible": true,
+    "same_namespace_network_reachable": true
+  },
+  "cleanup": "scratch unmounted; sentinels closed; no containers deployed; task-only daemon remains until VM shutdown"
+}

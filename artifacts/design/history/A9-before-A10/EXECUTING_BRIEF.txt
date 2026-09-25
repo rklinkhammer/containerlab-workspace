@@ -1,0 +1,3 @@
+User request: "continue with next"
+
+Context: implement the next declared-topology preview slice from EXP-015 qualification and PROPOSED_CONTRACT.md. Use pinned recorded evidence, separate declaration DTO, explicit unresolved dependencies, specific sanitized errors, contract/browser verification. No runtime operation or real-source ingestion is needed. Preserve sibling evidence, TT-01 and historical gates.

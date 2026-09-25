@@ -1,0 +1,9 @@
+name: special-endpoints
+topology:
+  nodes:
+    n1:
+      kind: linux
+      image: alpine:3.20
+  links:
+    - endpoints: ["n1:eth1", "host:fixture_host"]
+    - endpoints: ["n1:eth2", "mgmt-net:fixture_mgmt"]

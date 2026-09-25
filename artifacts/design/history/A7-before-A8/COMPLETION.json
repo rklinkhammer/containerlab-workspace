@@ -1,0 +1,629 @@
+{
+  "revision": "A7",
+  "status": "document_set_complete_R2_subset_only",
+  "published_utc": "2026-09-25T00:52:26.090175+00:00",
+  "predecessor_snapshot": "history/A6-before-A7/MANIFEST.json",
+  "predecessor_manifest_sha256": "0b0c9469e7c324cb9c8a3ea234e6d3f46e81bbe0594bcb361424c70237843bc3",
+  "file_paths_relative_to": "workspace root",
+  "files": [
+    {
+      "path": "artifacts/design/ARCHITECTURE.md",
+      "sha256": "13af06b67cc1ad7ff810b8f7a8f7c30eca58a877e402ea5ffd93cf925ca91c0a",
+      "bytes": 54078
+    },
+    {
+      "path": "artifacts/design/CANDIDATE_PROFILE.json",
+      "sha256": "159a7b7cbac67e5c80babadae5b97e26fa7a568a7b3cfad29f0d847efe75a6be",
+      "bytes": 2601
+    },
+    {
+      "path": "artifacts/design/DECISIONS.md",
+      "sha256": "b116466cc790c0451c65810650e8a2ffe79cae128a2c327050f279cd288d9682",
+      "bytes": 29750
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.md",
+      "sha256": "3e92335e9bb28ff50fc93b83fbece23477327a4711f95f0db87d67e02d4336db",
+      "bytes": 18198
+    },
+    {
+      "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "sha256": "64a978a2572606b13711849622cd32607bb0bd7f4096b4b077d90b536bf9c9da",
+      "bytes": 26624
+    },
+    {
+      "path": "artifacts/design/P1A_BACKLOG.md",
+      "sha256": "f7092aa4855e4fa192235dcf9eced4a1158356e1933609f9ba0384f6ef3ff97e",
+      "bytes": 6338
+    },
+    {
+      "path": "artifacts/design/P1A_CONTRACT.md",
+      "sha256": "943589339ee337d282975632a373188ad65cb4e1672cc591003a2b117802289d",
+      "bytes": 8275
+    },
+    {
+      "path": "artifacts/design/READINESS.md",
+      "sha256": "ca062b9b3d59d15d615cd37c5ff2354f8aef1dd893a085d37bdf2ea4e919a6be",
+      "bytes": 14615
+    },
+    {
+      "path": "artifacts/design/READINESS_BRIEF.md",
+      "sha256": "b6c61a9b3be888da38d582209a9437ec2e76c38dfd4ac9c7708acce1e65105f5",
+      "bytes": 2322,
+      "previously_present": false
+    },
+    {
+      "path": "artifacts/design/README.md",
+      "sha256": "77ffd4728cc025236c4307b3e669208e52b61f250e6894c3af67753467d1699c",
+      "bytes": 4253
+    },
+    {
+      "path": "artifacts/design/RUNTIME_QUALIFICATION_PLAN.md",
+      "sha256": "535185c0c0c2c42c20a9f11c59d4b8535111ae673d8ae3653f6011c11cf7960f",
+      "bytes": 6058
+    },
+    {
+      "path": "artifacts/design/TRACEABILITY.md",
+      "sha256": "d79a9cd3728e9e36f8cce824a4bcbd502516df17723f745d8ccddf129a116e5f",
+      "bytes": 15330
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/README.md",
+      "sha256": "e96811180f0dc80fc4a5f2ce7e90a94f4653fce17b19b2201a4cba6e8ca610a6",
+      "bytes": 1989,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/RESULTS.md",
+      "sha256": "e7394ccc551f87c4121263f2b6641a25f087b41a2ddced96cfa2ec490b2133e6",
+      "bytes": 3251,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/audit.py",
+      "sha256": "cb3dcf442256a332f5ce440cd1dc82f897c16e399c7e3915b61042946e6ddeda",
+      "bytes": 7381,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C162.clab.yml",
+      "sha256": "e8ead1273155724f69751a471552329622b6b40c10e4ed9d91affd287a5fb438",
+      "bytes": 100,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C163.clab.yml",
+      "sha256": "6222bffad5130d80008b8c1a461dac53415ba0d65d178ff9398a17fd65710dcc",
+      "bytes": 93,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C164.clab.yml",
+      "sha256": "250d4a848019a0b1e4a8bb87635bd698b9448bca32971643f4c711da216349f3",
+      "bytes": 541,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C166.clab.yml",
+      "sha256": "1c8efbd4ffc32a1d835c2c05173e0dd7208b3e4163483d7051e7ef98130ecdbb",
+      "bytes": 95,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C167.clab.yml",
+      "sha256": "7f94e356d386c259ea16cf97d204c6bb88bd809fe6e5b2cafd0d3974b0c055a3",
+      "bytes": 341,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C168.clab.yml",
+      "sha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591",
+      "bytes": 423,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C171.clab.yml",
+      "sha256": "8c1a1878584d738d2d9a66f16a3ffe2ba11d3eb1739dacafd873c94e36568f45",
+      "bytes": 214,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C172.clab.yml",
+      "sha256": "f8c4fbf0794067beb91e90edff2219b2385e0ae9f699ea31780ff4397a94cc10",
+      "bytes": 210,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C173.clab.yml",
+      "sha256": "dd75637d8d512cb79d1a9e729ea88d76684469b53dbc5c8902ba02a5e61bdd29",
+      "bytes": 300,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C174.clab.yml",
+      "sha256": "5ab513bd7fc66211bbfb9bf8b3f1d413f4cb028da5fc0a965f0a6a6df07a5f15",
+      "bytes": 104,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C175.clab.yml",
+      "sha256": "78788c2ee1f5c2454208df3cdc29aee34dc4661cff6f08db4e0ba816ea7cbdd2",
+      "bytes": 576,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C176.clab.yml",
+      "sha256": "26e4315e3c9d81c0d7800048f900c6ed938f7bdef0435a5413e51e5605d1740e",
+      "bytes": 314,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C201.clab.yml",
+      "sha256": "ccc0e60e1274637a57b436afbb1ac7570a3934c9ea26bd42bf68de6ed9f0ac20",
+      "bytes": 211,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C202.clab.yml",
+      "sha256": "f453d46a328234857a2b8b22c1cd6276b63d3317dbaf98aecc41a5f464bee86a",
+      "bytes": 105,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C204.clab.yml",
+      "sha256": "9691661a77b472a255dd71040e415e7027e6b07078054e9d705c0964668eab35",
+      "bytes": 238,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C205.clab.yml",
+      "sha256": "e5665ea85abffccd5b34b5f6cdabdad5211cd9074c6a6083530095de6e769b61",
+      "bytes": 132,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C217.clab.yml",
+      "sha256": "8d66e84ad7dcd5f666a0aa006579aecc30a1a26700edfbacb3e6393839c02428",
+      "bytes": 252,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C226.clab.yml",
+      "sha256": "44a96bad5c95043b1c24f52cb5f24af893a61ec36984afd20993de8a967342dd",
+      "bytes": 226,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C227.clab.yml",
+      "sha256": "6fbda5f50d827d4047aa4beffa0b81b03142f7689c26adf9a45f7d7bc96483df",
+      "bytes": 251,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C228.clab.yml",
+      "sha256": "7b9ccbe62119b13e91c03451995065a0c0b82081d27a1e3f22deeec2f394f3ed",
+      "bytes": 250,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C290.clab.yml",
+      "sha256": "4cee91986ae75e7aa2f2d5acb4246ed93dc7354cd98bf06434859b10e12b0ddc",
+      "bytes": 220,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C291.clab.yml",
+      "sha256": "f99587006be9ba509cd8ba5b5851aae3cdfdf5bfd69e1143219e11b1b773b181",
+      "bytes": 110,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C292.clab.yml",
+      "sha256": "471a90c3bfc105560cd5c2e0735e968941227f339094a43d104b2bdffd8a67d8",
+      "bytes": 524,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C293.clab.yml",
+      "sha256": "0725665fa2ae12bb2d9e4ec473fd91cfdc417f8b0a0b85df312914382331715f",
+      "bytes": 324,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C294.clab.yml",
+      "sha256": "5ef8be91d14b1ea5a9d8fd73a58df735c103ddf6ba99886dcb0ec2c7006f8071",
+      "bytes": 206,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context/CTX-C295.clab.yml",
+      "sha256": "fe3a5b0e6d678761851b639f19545a660b74050edbcaaee8f36a004dcd51114f",
+      "bytes": 90,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/context-manifest.json",
+      "sha256": "78e645cea4543f91614b9ab7fb625aa846fa809ea8a8290efd62ad66bccc9a42",
+      "bytes": 13866,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/corpus-hashes.json",
+      "sha256": "c602522eca6368bba7894d84ab166e32e42da21c985f35bc5fbfec89599d57c2",
+      "bytes": 68827,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/failure-disposition.csv",
+      "sha256": "27897b338005eac11effbbd3e7813ab84bd4afdf0a8265af6c8dc14b8be6c482",
+      "bytes": 25437,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F1.clab.yml",
+      "sha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911",
+      "bytes": 485,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F1.expected.json",
+      "sha256": "0fd1251829dc1f5ce03bb05198e6707dd78e08dea52a12803d05598699ebb476",
+      "bytes": 1265,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F2.clab.yml",
+      "sha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01",
+      "bytes": 325,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F2.expected.json",
+      "sha256": "659904a5cd291f435e2aba91e6e02e98dea8349b574fb4bc1c6fe7b17fdb93a6",
+      "bytes": 870,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F3.clab.yml",
+      "sha256": "225e7850232935fafc7a7f2a42011d9de2c43cff8784deaa9c45f10d6d80fb95",
+      "bytes": 147,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F3.expected.json",
+      "sha256": "990dbfb293e430a90b45ca30779830b62bfd0a0648e6c13a6977b3d3302df5f1",
+      "bytes": 578,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F4.clab.yml",
+      "sha256": "60e8976995c6ea25921fe80a251a4ba98ad420912a976452c6797d7d4e301c13",
+      "bytes": 207,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F4.expected.json",
+      "sha256": "915f001d471c5c13f6aae17b660287b5ebec20bbea21b399b578824f5cc7f38b",
+      "bytes": 793,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F5.clab.yml",
+      "sha256": "41385331a06c6dd1e520c177f91cbafe81e727810fc52c65f9f63fae391dd16d",
+      "bytes": 219,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F5.expected.json",
+      "sha256": "dbd893b0323b2cd6fa0d572e4682323fabdcc5d4ed7bbe220131f0e0c0f4eb54",
+      "bytes": 703,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/F6.expected.json",
+      "sha256": "4fc51566bb3de8ac8a7817bec1a678590b9be343e13006b9e30ab2f3be8aa18e",
+      "bytes": 1017,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/README.md",
+      "sha256": "178974f26f57495f14c995d2598564dc3b665d95475c8dda4194aa369cb7aa76",
+      "bytes": 1294,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/fixtures/manifest.json",
+      "sha256": "2e8ef55fe4b31f261d4977ca838524fccaf8fc8deef6dba67b5341d99ed55c71",
+      "bytes": 1606,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/include-checks.json",
+      "sha256": "0d269711ebf8a83c34e3accf22540c5a9d58e4c449f23ef2edf61bd79e0c1308",
+      "bytes": 15804,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/source-ledger.json",
+      "sha256": "33d1a3230148666e863a1bdffbf32ef5ca8fde8bc32a434ec1a9e878cfe066fd",
+      "bytes": 10778,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/summary.json",
+      "sha256": "bbe0ef39f7600b189bdf58623ec60a9998a237339c6c07605362ce74100563d2",
+      "bytes": 806,
+      "role": "static_experiment"
+    },
+    {
+      "path": "experiments/EXP-010-readiness-static/validate_fixtures.py",
+      "sha256": "e2386a3c18915f4e77cfaa7ddebf1ae63540065e3cf523aa12b6d79952324463",
+      "bytes": 832,
+      "role": "static_experiment"
+    },
+    {
+      "path": "artifacts/design/IMPLEMENTATION_BRIEF.md",
+      "sha256": "c2c362aaa6e00682acabb8cfdfe24457748e67ecd60e95ecc40cb5f5b28b8ee3",
+      "bytes": 2788
+    },
+    {
+      "path": "artifacts/implementation/npm-audit.json",
+      "sha256": "2a1724c20a113723ef92b3ea8942ceeaa771a3724ea82d1a1c7da4da9568329b",
+      "bytes": 362
+    },
+    {
+      "path": "artifacts/implementation/dependency-review.json",
+      "sha256": "105402af2fefd4250aff87469bc115c1b03a88c6f2bc201115fa072756b957d2",
+      "bytes": 22277
+    },
+    {
+      "path": "artifacts/implementation/verification.json",
+      "sha256": "8feef1429d4eb2dcc1c79c8b745988769039d9fa373c805783422922b584c5cb",
+      "bytes": 967
+    },
+    {
+      "path": "artifacts/implementation/RESULTS.md",
+      "sha256": "1b134af9c65b579160a01896f8ef4dee37cd3bc19d4ec43ec022b8a5f944b944",
+      "bytes": 5567
+    },
+    {
+      "path": "artifacts/implementation/SOURCE_INVENTORY.json",
+      "sha256": "00ee0fd4b8ce72394dd4b061d5e113099dca2f294cb372705ea312a664b3c0e0",
+      "bytes": 2345
+    },
+    {
+      "path": "artifacts/implementation/DESIGN_WRITE_INVENTORY.json",
+      "sha256": "0bb8420808719b231ba3909612a78f43d2447e377be9ab4ce91aa001e9ca47ca",
+      "bytes": 1557
+    },
+    {
+      "path": "artifacts/design/RISK_REDUCTION_BRIEF.md",
+      "sha256": "1e719ce4e7754512fae4e188bf006225d96ea9d581094ddba7106a729d0ed195",
+      "bytes": 1040
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/image.sha256",
+      "sha256": "b14685dfe5970c4fcce0a488bed29714b358aea65b46038a7fdb8871be9b44fe",
+      "bytes": 199
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/run.py",
+      "sha256": "19ddd1bc9cb10e8459d0e1ef5df1317eb265fcd2b7828f73f6bc03d7f5da1774",
+      "bytes": 5590
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/check.py",
+      "sha256": "66f2d2e3b9be8d95cb8926a70231a1acb3e687bf37f1d9e9d0952100da768114",
+      "bytes": 3527
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/results-attempt2.json",
+      "sha256": "23da9951354485172f35dd0e2375053a66f73ebd87e6defe1d4e5657c246834a",
+      "bytes": 14645
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/application-regression.log",
+      "sha256": "f66d9ddd537ade970dd019d5bdcce52d4fbb088eb269f597745038ceee814957",
+      "bytes": 3962
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/results.json",
+      "sha256": "5dfd7c995fdf069b244c186e1803cb95bb09e4f1198588b57098ef7a618caf94",
+      "bytes": 16080
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/checks.json",
+      "sha256": "b1a45099f6b52cb478bed579bd2c257e5de7362c6f2cbf69f6ae674c9dc953c5",
+      "bytes": 3148
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/README.md",
+      "sha256": "fffa40bb77ff2a947e5fdafebc825e863ca26780cb8527918d77f69c2b6724fc",
+      "bytes": 1400
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/publication-inventory.json",
+      "sha256": "8de70f6122a328763b6fdd016c964e5db2d850d0b15e51e7e994645a53c534d8",
+      "bytes": 1890
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/build.sh",
+      "sha256": "9e5844e2fc8de053bb3dbc7d2462e83f63cc2e9144dc29f3badb4dfca4a47270",
+      "bytes": 680
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/cleanup-prestop.txt",
+      "sha256": "eda11b4e15e9dacd2920b5722b912e77b491d080fcfcf971e0c1157cc5d9c9f0",
+      "bytes": 396
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/binaries.sha256",
+      "sha256": "80b7571371f7d12c675f324b6ee25e421b2f05fb30418a99834976608a0399b5",
+      "bytes": 183
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/RESULTS.md",
+      "sha256": "f22cbc4cf0ec374d755fa3da842b62351f714af0ec7201e69039e8ee1cee8588",
+      "bytes": 8157
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/build-attempt1.log",
+      "sha256": "7d6e01a0d622774ca272720218b72bf99ea2cec40c10d87bfe474908f6bba85c",
+      "bytes": 72
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/results-attempt1.json",
+      "sha256": "4029cdc68adde343db5edf816fc539583af156e7677d6c40134d2d5e6ff04167",
+      "bytes": 4862
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/source-evidence.json",
+      "sha256": "f7a06e10cb2624ca95789bc526c6a7181c76909269eb0bac30df87f025064bfd",
+      "bytes": 2125
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/preflight.json",
+      "sha256": "53ab591cf35c5f53d4070cbfeb43cda960684a05a8b8bcaf23a9040c7ceabb1f",
+      "bytes": 782
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/main.go",
+      "sha256": "26aa42c5cc29c71735e12f96a3cc06e23785a2eab5c48eb1809a2f08b1717750",
+      "bytes": 1762
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/final-vm.json",
+      "sha256": "cdadd583926c061fef62bb66a27b588e83da9f242d7e038020d3713f61de6ee4",
+      "bytes": 2412
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/source-changes.json",
+      "sha256": "a6e141fc7252c2cd76a6ec35869104cf82e1af3b7e1b8cdac33903108c75968e",
+      "bytes": 294
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/build.log",
+      "sha256": "255a6f85f6f132d6e0009d94b92ecd33ef2ad997573174d35d2392242c0d0de9",
+      "bytes": 8074
+    },
+    {
+      "path": "experiments/EXP-011-resolver-isolation/lima.yaml",
+      "sha256": "bf4b29ec0b7e0c9d395fe9a2ab36c0dfab117b455a8a33920ef04bbbaccc4094",
+      "bytes": 841
+    },
+    {
+      "path": "artifacts/design/R2_NEXT_BRIEF.md",
+      "sha256": "7f3892c6b48fe1b6c7f3d37e34f9186f9ad7e8d05930d03e776331c8db7cab90",
+      "bytes": 514
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/facade.py",
+      "sha256": "fb0fdb28154cf33ac1b53213d8ceaa30d49c687922ebbaa9df76d802ac5f70ff",
+      "bytes": 2505
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/run.py",
+      "sha256": "4088047d29992baa50a0ea6aa0da7514115f1c4df534208942ee9942a37f1581",
+      "bytes": 6265
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/check.py",
+      "sha256": "c27e0608d800109fe6695643db4221bbb0134763b04d0307bb8030008439b5fa",
+      "bytes": 3784
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/results-attempt2.json",
+      "sha256": "69b52a881c89234bf826394d75197d285b8273603344837967834e089424ee35",
+      "bytes": 5735
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/results.json",
+      "sha256": "9eab338b4086f85ef902f33aa79178331520b6d14d76f50f0f85a2fb307e8840",
+      "bytes": 18026
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/results-attempt3.json",
+      "sha256": "a679726e6fd69ac7286f7864f614ab9446039ab05e386a1e62f9da1072ddf4cc",
+      "bytes": 7410
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/checks.json",
+      "sha256": "4301820a3cfbdcc0816d44b166f13fbf4b27994573a4935e3f8020562cd49af2",
+      "bytes": 3338
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/README.md",
+      "sha256": "bbf67b4c22b7aece664bf9155116aa47206eaf95948f14a53a37c0981a6d4cbf",
+      "bytes": 2360
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/publication-inventory.json",
+      "sha256": "fabbc21d65d7f5481458d1edebb1c37b59d3d9c11fb83470f8e72284524dfcc1",
+      "bytes": 1727
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/guest-preflight.txt",
+      "sha256": "098aa472b76d7ce5fa1e2f496e936b2d7b50852be2ea9268174c911453a85ae5",
+      "bytes": 239
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/build.sh",
+      "sha256": "1b62b5f0340b1b23e0a2a7d34b0e830de38d76a7b9f61afc230adb80b01f6ddf",
+      "bytes": 680
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/cleanup-prestop.txt",
+      "sha256": "288b572f2e0a2363b6dfb1bb716da95604b67d612ffd103b31e344748991ed07",
+      "bytes": 390
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/RESULTS.md",
+      "sha256": "13d13829098b07dbcf955e5f3385ba6e2fff75b2698517097f633be6d7be91f1",
+      "bytes": 7983
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/results-attempt1.json",
+      "sha256": "5810841f4277ec0d287d46e7817e2216c1e4b882d8620a0e9ed5c8edf9c1df93",
+      "bytes": 5701
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/source-evidence.json",
+      "sha256": "24cff6f3283727b66b0cb5fb82f2733d827a1ef9a90c0d9e0518ae6fc1a5f892",
+      "bytes": 1533
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/main.go",
+      "sha256": "26aa42c5cc29c71735e12f96a3cc06e23785a2eab5c48eb1809a2f08b1717750",
+      "bytes": 1762
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/final-vm.json",
+      "sha256": "7cbfeef992494bcb5d962a6f30a05831b028f331d861a6fcb9b392d9e81d970a",
+      "bytes": 2453
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/build.log",
+      "sha256": "ac4f670c42270b8971c02d7a11186f056d1b13a33d98e9a463e87e51d37cd5c4",
+      "bytes": 8074
+    },
+    {
+      "path": "experiments/EXP-012-runtime-information/lima.yaml",
+      "sha256": "802eb43c93179de33db1bdc3a070479ed55e7714ea78a1533bf741db0f49a979",
+      "bytes": 887
+    }
+  ],
+  "qualification": "run 03 unchanged: 3 PASS / 4 PARTIAL / 1 FAIL, universal static 0/177",
+  "verification": {
+    "A6_baseline": "91 hashes verified",
+    "EXP012": "26 jobs / 38 checks PASS, not gate acceptance",
+    "application": "NOT_RUN; no application changes",
+    "new_VM": "Stopped",
+    "R2": "OPEN",
+    "publication": "source/archive/manifest hashes and local links verified; fault injection NOT_RUN"
+  },
+  "limitations": [
+    "Per-job metadata socket authorization unqualified",
+    "Snapshot identity/freshness and broader native effects remain open",
+    "No R3/P3 qualification or real-source enablement"
+  ]
+}

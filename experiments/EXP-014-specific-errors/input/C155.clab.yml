@@ -1,0 +1,11 @@
+name: custom-groups
+topology:
+  nodes:
+    node1:
+      # <some node config data>
+      labels:
+        ansible-group: spine
+    node2:
+      # <some node config data>
+      labels:
+        ansible-group: extra_group

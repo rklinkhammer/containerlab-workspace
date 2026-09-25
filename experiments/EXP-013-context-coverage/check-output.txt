@@ -1,0 +1,4 @@
+38 checks; 0 failures
+originals 26 resolved 0 other 26
+derivatives 26 resolved 25 other 1
+F7 single-ended independent expectations PASS

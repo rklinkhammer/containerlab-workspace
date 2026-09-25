@@ -1,0 +1,6 @@
+name: mylab
+topology:
+  nodes:
+    node1:
+      exec:
+        - echo "Node __clabNodeName__ started in __clabLabName__"  # Will output "Node node1 started in clab-mylab"

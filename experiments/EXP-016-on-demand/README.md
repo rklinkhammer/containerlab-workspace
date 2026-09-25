@@ -1,0 +1,7 @@
+# EXP-016 — on-demand approved bundle integration
+
+User authorizes application implementation and fresh-VM qualification. Question: can an approved immutable bundle be loaded on demand by the pinned native declaration API, with bounded isolated execution, specific safe errors and cleanup, then rendered through a distinct live provenance contract?
+
+Only the new VM in vm-name.txt may be used. No containers/deployment, Docker installation, host mounts, automatic forwards or existing VM access. Pin image/native/Go as EXP-015. Two-hour guest shutdown lease, one active load, 30-second worker + bounded cleanup, 1GiB memory, 64 tasks, 2MiB output, 16MiB per-job tmpfs. Supervisor verifies approved bundle manifest/hash and stages read-only input; worker gets no daemon or metadata socket, network, host directories or native external fetches. Native templates run only inside the sandbox. Retain sanitized results, no raw native stderr. Stop task VM after tests.
+
+Test F1/F7/CTX-C168/D1/D2/C162/F2 against independent expectations and historical recordings. Add independent multi-file template context and missing-context cases; verify traversal/symlink/undeclared-file rejection. Fault tests use isolated test commands through the same supervisor primitive, never reachable from the application API. Test timeout/cancel/output/malformed result and cleanup. UI runs on port 4173; never terminate unrelated processes. Existing tests and Q statuses remain unchanged unless justified by new acceptance evidence.

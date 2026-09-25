@@ -1,0 +1,19 @@
+{
+  "id": "F5",
+  "basis": "Hand-authored independent requirement expectations; no adapter output used",
+  "native_execution": "NOT_RUN",
+  "renderer_execution": "NOT_RUN",
+  "declarations": {
+    "link_occurrences": 2
+  },
+  "native_expectations": {
+    "result": "may reject duplicate endpoint use; native result NOT_RUN"
+  },
+  "projection_requirements": [
+    "if declarations are displayed preserve both occurrence IDs",
+    "never convert two identical declarations into one to hide invalidity",
+    "partial/rejected output explicit; no invented successful native links"
+  ],
+  "source_sha256": "41385331a06c6dd1e520c177f91cbafe81e727810fc52c65f9f63fae391dd16d",
+  "source_file": "F5.clab.yml"
+}

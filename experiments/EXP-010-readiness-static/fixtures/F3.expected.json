@@ -1,0 +1,16 @@
+{
+  "id": "F3",
+  "basis": "Hand-authored independent requirement expectations; no adapter output used",
+  "native_execution": "NOT_RUN",
+  "renderer_execution": "NOT_RUN",
+  "native_expectations": {
+    "result": "reject or explicit unresolved missing dependency"
+  },
+  "projection_requirements": [
+    "no automatic file creation or network fetch",
+    "safe missing-input diagnostic with no host-path disclosure",
+    "no operational socket access"
+  ],
+  "source_sha256": "225e7850232935fafc7a7f2a42011d9de2c43cff8784deaa9c45f10d6d80fb95",
+  "source_file": "F3.clab.yml"
+}

@@ -1,0 +1,32 @@
+{
+  "basis": "Independent of new worker output; EXP-015 expectations unchanged",
+  "BUNDLE-CONTEXT": {
+    "nodes": [
+      "isolated",
+      "left",
+      "right"
+    ],
+    "links": 1
+  },
+  "BUNDLE-MISSING": {
+    "status": "rejected",
+    "error": "TEMPLATE_ERROR"
+  },
+  "same_entry_bytes": [
+    "BUNDLE-CONTEXT",
+    "BUNDLE-MISSING"
+  ],
+  "controls": [
+    "path traversal",
+    "absolute path",
+    "symlink",
+    "undeclared file",
+    "hash mismatch",
+    "concurrency",
+    "timeout",
+    "cancel",
+    "output limit",
+    "malformed output",
+    "cleanup"
+  ]
+}

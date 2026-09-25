@@ -1,0 +1,58 @@
+[
+  {
+    "path": "package.json",
+    "sha256": "9ed42e75f32b714d326411bb2e81e923ac38388894599fae359624830e27351a"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "1815d43125823948b065d1d8fdee86fef8eba65aa077fe5e59a08fc7e1ee7fd3"
+  },
+  {
+    "path": "playwright.config.ts",
+    "sha256": "dbe72d7859d30e8a2cbcda048d427fa1e41794f15fe467107fa7703ab60243ce"
+  },
+  {
+    "path": "scripts/preview.mjs",
+    "sha256": "2344520daa25d5f38994a3e9948c588f42a89333f6a5a0fee673219d2c678356"
+  },
+  {
+    "path": "scripts/project-declared.ts",
+    "sha256": "b97fe301253d629c3d845f440a58e2f004dc967c2150110508254678fdaa7bfa"
+  },
+  {
+    "path": "scripts/declared-fixture-pins.json",
+    "sha256": "db5ca69d2a95e1e21e71b23c2b47cf0c31cf1bdfe55f62a535511900470306b1"
+  },
+  {
+    "path": "contracts/declared-graph.ts",
+    "sha256": "0543487a017657fafb8629bd255e6df6a9f45dd909facea957fae59b64194256"
+  },
+  {
+    "path": "contracts/project-declared.ts",
+    "sha256": "acb70acfa93458ac3b39cc64e92d68fb1de41b6f0ba4bcf5e355dbac9f441043"
+  },
+  {
+    "path": "apps/web/src/declared.tsx",
+    "sha256": "c99ae7d1e49237a5c4c0caa57f6c1299476241484c75fa3c5d191f656c24c40f"
+  },
+  {
+    "path": "apps/web/src/main.tsx",
+    "sha256": "af566a32b4768938c7855601deca6e460ba0be7d4e32b2812ed3bd6055e676ea"
+  },
+  {
+    "path": "apps/web/src/generated/declared-fixtures.json",
+    "sha256": "e64cccb7b84cf7f5a350d62b8cc8f1ecd6e1476e9b208976dc201ef0257ec5c0"
+  },
+  {
+    "path": "tests/declared.test.ts",
+    "sha256": "e9ed4f56a92a92b99140056550ce4de970e7c66e1011d4775f3e53042c03ce91"
+  },
+  {
+    "path": "tests/browser/declared.spec.ts",
+    "sha256": "4ebb2512cc3ea7ff83e9a8e1d6a0a82f02ddb7942e97c1fee836070743cc1cde"
+  },
+  {
+    "path": "tests/browser/preview.spec.ts",
+    "sha256": "199d2aecc1a65b45daaa617436fc7611e07076f6bf914bf265e9c1bf69681a53"
+  }
+]

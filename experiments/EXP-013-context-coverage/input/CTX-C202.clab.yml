@@ -1,0 +1,6 @@
+name: crpd_lab
+topology:
+  nodes:
+    crpd:
+      kind: juniper_crpd
+      startup-config: myconfig.conf

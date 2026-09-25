@@ -1,0 +1,20 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {projectNative} from '../contracts/project-native.ts';
+const root=new URL('../',import.meta.url);
+const read=(path:string)=>readFileSync(new URL(path,root));
+const hash=(v:string|Uint8Array)=>createHash('sha256').update(v).digest('hex');
+const pins=JSON.parse(read('scripts/native-fixture-pins.json').toString());
+const raw=read(pins.evidenceFile);if(hash(raw)!==pins.sha256)throw Error('Pinned native evidence changed');
+const evidence=JSON.parse(raw.toString());const resolverCommit='5ae50094a3afd70e4e1674fe5385e64d8979da26' as const;
+const metadataSha256=hash(JSON.stringify(evidence.runtime_metadata));
+const fixtures=pins.inputs.map((p:{id:string;file:string;sha256:string;case:string})=>{
+ if(hash(read(p.file))!==p.sha256)throw Error(`Source integrity mismatch: ${p.id}`);
+ const outcome=evidence.results.find((x:{case:string})=>x.case===p.case);
+ if(!outcome||outcome.exit!==0||outcome.profile!=='real-version-snapshot')throw Error('No accepted native record');
+ const revision=hash(JSON.stringify({sourceSha256:p.sha256,resolverCommit,metadataSha256,inputs:'single-retained-file-v1'}));
+ return {id:`N-${p.id}`,title:`Native ${p.id}`,subtitle: p.id==='F7'?'Single-ended dummy link':p.id==='F1'?'Parallel links and native aliases':p.id==='F4'?'Native host and management endpoints':'Recorded native fixture',graph:projectNative(outcome.summary,revision,{experiment:'EXP-013',sourceId:p.id,sourceSha256:p.sha256,outcomeSha256:hash(JSON.stringify(outcome.summary)),metadataSha256,resolverCommit,evidence:'recorded'})};
+});
+const target=fileURLToPath(new URL('apps/web/src/generated/native-fixtures.json',root));mkdirSync(fileURLToPath(new URL('apps/web/src/generated/',root)),{recursive:true});writeFileSync(target,JSON.stringify(fixtures,null,2)+'\n');
+console.log(`Projected ${fixtures.length} verified native fixture records; no runtime executed.`);

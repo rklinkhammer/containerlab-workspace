@@ -1,0 +1,4120 @@
+[
+  {
+    "id": "D-C088",
+    "title": "Declared C088",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "fd6d35a53e66be16a8ba3b8dfc4ff43cd7748629a4d70c4962bededd60756134",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C088",
+        "sourceSha256": "b2e1a58db41432e5d31cb610521498e72bc1b3b0431b404b0104820f346cc4b5",
+        "outcomeSha256": "e145b6aadf5a7f9aea0d2a31f89b3cc92ecddcf6cbfa6eb20d2795a2ac44fc7a",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "SCHEMA_ERROR",
+          "message": "Line 8: native schema rejects node field publish.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C112",
+    "title": "Declared C112",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "6a5efcc445b524fafda4643d13c9e4e56b2669d9b1a265407dc20a95bf0c4f6a",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C112",
+        "sourceSha256": "e7580dffcab8ffe712dc9ceb04e740b4f6fed73b0ff10716355d2db1bc5aaaf1",
+        "outcomeSha256": "f06014b21e6477c9395fa75e13d63e7a513308b8ed926d5a1dcb56ac3842fae5",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "6a5efcc445b524fafda4643d13c9e4e56b2669d9b1a265407dc20a95bf0c4f6a:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "6a5efcc445b524fafda4643d13c9e4e56b2669d9b1a265407dc20a95bf0c4f6a:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "6a5efcc445b524fafda4643d13c9e4e56b2669d9b1a265407dc20a95bf0c4f6a:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "6a5efcc445b524fafda4643d13c9e4e56b2669d9b1a265407dc20a95bf0c4f6a:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C113",
+    "title": "Declared C113",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C113",
+        "sourceSha256": "6d0055c6a9295a3ca6c9dd1e1fd67f96f475377f3fe85b5a64493a9c69e1140c",
+        "outcomeSha256": "8aed86da91979dea5ef5891aa9e0f9d8be2a5c71197944d69918b58acfecdb3a",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:d0",
+          "ownerId": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:d1",
+          "ownerId": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n1",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C140",
+    "title": "Declared C140",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C140",
+        "sourceSha256": "efed48ecd47118d74ce776ae19d66119bf9c87adc42e2714576e6ba233b4795b",
+        "outcomeSha256": "132352861c75b6133ea221cc2f37767bac07080f0e22c133e90215dc6bd4d9b7",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc:d0",
+          "ownerId": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc:d1",
+          "ownerId": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc:n1",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "3bfeb0b2d4e9a6ffd2ff3f5e8b7855b1ead98dbce2af45a8ddcf74757bf360fc:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C141",
+    "title": "Declared C141",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C141",
+        "sourceSha256": "36e30648396bc9324c4dabb039b7773cfa78d69ad1f1d0a66788c177a2ae7c32",
+        "outcomeSha256": "3a4d48bd29227711a39940e0ef96838130f2db2e890449b01745967ae8aa6a0a",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2:d0",
+          "ownerId": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2:d1",
+          "ownerId": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2:n1",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "d172a63e9af152d2d0ed8d9d375f999104032317b4160e261bf0de2f6c7c79b2:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C150",
+    "title": "Declared C150",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C150",
+        "sourceSha256": "5d376d802fb5fb7eaecc14809bbc592bf6697d38f22e84374dc9b1afa255a894",
+        "outcomeSha256": "433bddefff7ff9af97ca0003981c1d409862d5447540571a1be3f1726e68f07b",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n2",
+          "name": "node3",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n3",
+          "name": "node4",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:d0",
+          "ownerId": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:d1",
+          "ownerId": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n1",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:d2",
+          "ownerId": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n2",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 3",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:d3",
+          "ownerId": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n3",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 4",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n1"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n2"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "5218d3109413c2fca7e3d74768296f5c8e27410d75fe939282dcc5795149923e:n3"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C155",
+    "title": "Declared C155",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "7fc7770b36fbff150e1883d4a8c4ec825222e4820235e250cbde2cb88a688692",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C155",
+        "sourceSha256": "d56e06e185bd75d5227d56420f8ae8f4183cba962158045918873377979b900d",
+        "outcomeSha256": "f06014b21e6477c9395fa75e13d63e7a513308b8ed926d5a1dcb56ac3842fae5",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "7fc7770b36fbff150e1883d4a8c4ec825222e4820235e250cbde2cb88a688692:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "7fc7770b36fbff150e1883d4a8c4ec825222e4820235e250cbde2cb88a688692:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "7fc7770b36fbff150e1883d4a8c4ec825222e4820235e250cbde2cb88a688692:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "7fc7770b36fbff150e1883d4a8c4ec825222e4820235e250cbde2cb88a688692:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C159",
+    "title": "Declared C159",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "ec9dc7e489d0facdb41079d47a1bd5bb77f40220a40c8c8b78559c24b172647f",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C159",
+        "sourceSha256": "658655c1d554f393c62850fb35b30ae8a44dc27dc986e3aa7a9f996b1840e0d9",
+        "outcomeSha256": "f06014b21e6477c9395fa75e13d63e7a513308b8ed926d5a1dcb56ac3842fae5",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "ec9dc7e489d0facdb41079d47a1bd5bb77f40220a40c8c8b78559c24b172647f:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "ec9dc7e489d0facdb41079d47a1bd5bb77f40220a40c8c8b78559c24b172647f:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "ec9dc7e489d0facdb41079d47a1bd5bb77f40220a40c8c8b78559c24b172647f:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "ec9dc7e489d0facdb41079d47a1bd5bb77f40220a40c8c8b78559c24b172647f:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C162",
+    "title": "Declared C162",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "b499b25ab88abf14eb85a632e355dea56aef0c829629f0b716400a6a9c30338e",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C162",
+        "sourceSha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b",
+        "outcomeSha256": "3efc5d6f8687ef6b0335b8d03909d57044438af548bc6f6530b0b7af658d515b",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C163",
+    "title": "Declared C163",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "92bbf24074ac7d2500940dfc43d35227ad021591788474a6df873222c279f8b4",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C163",
+        "sourceSha256": "ec6a1d7cbd401ed13ab573d51c801ab2d1bf57ac09b777fceaad80f74abbf728",
+        "outcomeSha256": "f74678f5f4362ef570482e73fe4a8109eee46b7f15224e22eef16b33b576c7d0",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C164",
+    "title": "Declared C164",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "0817fd9566d2cf65ffe634f147b522be2eb839bb23777b03007802479483f1ba",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C164",
+        "sourceSha256": "82e3bef60e00abadd82f300397495f9f01a0133786361487db18b5b5a52b8980",
+        "outcomeSha256": "fb562ef26833fcd922b806b3447f33ea66cc46bc066e6cd868ff1fd6431a9e55",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 18: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C166",
+    "title": "Declared C166",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "9810dad5b29c89b0289e1e9250f963a31fb70af475b7e0861051784637df8b27",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C166",
+        "sourceSha256": "20142045a38c4c48465797c350291d5d0340d08da11154237670f3fbb1ca1825",
+        "outcomeSha256": "dd678cf6ef3d9b02df76d8f7e333a53762df428e71bc5a4dc06b12c2f83f2a77",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C167",
+    "title": "Declared C167",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "1f1a3edd848163db941ce9318047b22cb60d95dc73ce2b486ab7fab262044250",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C167",
+        "sourceSha256": "bb54f84a3a8764f0019e7155cfcf80e6ba200626a4be918ca6d1eea5126903f5",
+        "outcomeSha256": "aadd3afe61299b80448979f7e28012aac3a7eb014fbcfb33cf50252a48dc4a6c",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C168",
+    "title": "Declared C168",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "a741acc702885bb2a2f5693976f39b3058f3abb20e995076a1bf3e55ef33c0e8",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C168",
+        "sourceSha256": "b2a7978ba2e809ca8a516c31059bf1993d80e394e950c444370c4044f0c81f8a",
+        "outcomeSha256": "e156836f9c1fc22fd20a868d530aeee8b9b2a4ab00b30708a4332ee283a27d4c",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 6: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C171",
+    "title": "Declared C171",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "e653f06e9081039c18e7c244a62fa1764309a45b833f8902b7b75e934e7f1453",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C171",
+        "sourceSha256": "6bf572cf6eb3b96dcb708b5188de1c71d98f463e47456a62636301a700e209ff",
+        "outcomeSha256": "4aff78fbae514b90f57a1daf441ea6f3f8e562cdb07ff4c8d0ce557b9858e5eb",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 6: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C172",
+    "title": "Declared C172",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "9f1b32cb601157153a7aad98f405da8b08d3be1cb40871e02c8ec4e489e0994b",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C172",
+        "sourceSha256": "5c804d00fc8d16ad5c71ff139209bcb4524ef6cec656a2671c99f39412b544ee",
+        "outcomeSha256": "d3632706f7152e652f7982f8acc15ee52ef2db8e80a68db6e7333f859f19fc70",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 8: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C173",
+    "title": "Declared C173",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "b1c88f6bdcfd509a2dbddee6234a0fc1fc267a87b8f52d6aff8d3742fae5a717",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C173",
+        "sourceSha256": "f32a735e80ef104a6bc3e44d67b892323ded129eef8605f17d6fec6edf13d812",
+        "outcomeSha256": "9e5db5dd522b684e2737bd5440fe6fa2917941aee7a67a82f82d3c68b4ea901e",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 12: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C174",
+    "title": "Declared C174",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "bba1e76c6f53c2196d2c24fc1049c85498c2dfb46a7e4b2b005da77cd4b831bf",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C174",
+        "sourceSha256": "04821b7d1e09a924a34bf5d415a53e08d3054894abe761c6eabc078d23633f40",
+        "outcomeSha256": "bd4d4e6045500e993de12c7aa5cc192363c47a022d23e9eb5c7f5bd6193c26bb",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C175",
+    "title": "Declared C175",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "5921b36e612f1037c6fd5480045ea101e7a68081a40b97cea7bc1b93a094a2a6",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C175",
+        "sourceSha256": "ec1f418ab25cf54c28fef4dd3d4c8167d80a1b6798f5c5adcca89f54a8b754c8",
+        "outcomeSha256": "aac0484e93202ca3f275ff28bc96c01285ee84c51ccc116307437c4dc4b2fd37",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 10: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C176",
+    "title": "Declared C176",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "e8b4b54bdb0b8ffe90bc9cf78398b1367356e15124fd06e60d22824ef3b5b220",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C176",
+        "sourceSha256": "890ce0850fc82987742e6a9791b08444c39ae5dfc1522196e2b0aad0025938f6",
+        "outcomeSha256": "77b92e29a5c38b841767dcfd7db65c8bf2ea60b189cdac0a9b08227ec1d5a4a3",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C201",
+    "title": "Declared C201",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "d29f1b1c74edf2ab23ed26c50513696088fc281b399b10d9911fb2d6993fcc99",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C201",
+        "sourceSha256": "6d005204938f1dcc81381e8258a8a1a8ba9e96e41ed6dc3a7b5f0839ba4c526b",
+        "outcomeSha256": "a9fc52ba3f34e699e0200a660f672f4958e6dd9da741bad11782b652f166f933",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 8: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C202",
+    "title": "Declared C202",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "0cf73a5d4d71e30b5bdca972b66db1cc9326cf6c8818b397c73a35f447142491",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C202",
+        "sourceSha256": "ac189f02a4aad582465b6131c2bbcbcbae147d93268490c5bceb68c6e01a0e7c",
+        "outcomeSha256": "0bc295e309a5fa8b949d528a245ec7a53787c2d3f47a7d29c62bf55129da69a1",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C204",
+    "title": "Declared C204",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "48096b691e96a8dfc62b3829188f2f5c12f5e187ad9f192b85d543af6373d7f4",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C204",
+        "sourceSha256": "f5b9368bcef9d217dbd79682caa37de9d4badd9de529ec7f6fb3637232342b0e",
+        "outcomeSha256": "8ba078c9628c9c31cb1f9b086953aaeadb39333f62479df99c96c58ed831d6f3",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 8: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C205",
+    "title": "Declared C205",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "f140213e89380d23cf6926191aff9521051916f4be3236a1b7f3d5257b02b70c",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C205",
+        "sourceSha256": "b08a47641bb783dc88f50094cc1f3a8aad3f30cb5f077793d9fd6e56a474d973",
+        "outcomeSha256": "4c54c380698508500cd597819d173ccde2b0b4c8ba27bc60f58bee0b542a6f41",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C206",
+    "title": "Declared C206",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "e12f6ab64eefe1af8367d1abd28201e6bbe1f43230cd2a83d8874d65398ce6ef",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C206",
+        "sourceSha256": "7d6b62e312385fef60d431c018539f25a106ce5d374afed9af6a2b5ec568c25e",
+        "outcomeSha256": "28238d57945a041644b7eb9a56a82a01842b15afb5447c7fccc432b202d1379a",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 9: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C217",
+    "title": "Declared C217",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "ceed33ccef3458cefa75376d20b86f36db9e8ab8d83da0a06a0f8d585fb1b356",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C217",
+        "sourceSha256": "47f7018bf1ac05ca12892273ae5e9095553fce7891dfb96dcb0f66d7282e18a8",
+        "outcomeSha256": "94495b7e0ad2d79746dd4e0a73e0d68e0883e23ca2ae9fca6f2dca9eb338a36e",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 7: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C218",
+    "title": "Declared C218",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "0ed6dd4b97faf9740a9478de371dfbaceae38e14a7aba58203709e79e860ed8a",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C218",
+        "sourceSha256": "dea8acafda19d9fcb7b4507e168efac65081004c9dfebce9209f6446e06f5165",
+        "outcomeSha256": "4b72fdc19c34450f90ba90cba97f9f100472b9e40ddeb088e36a13ea72fd6cb9",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "SCHEMA_ERROR",
+          "message": "Line 9: native schema rejects node field mgmt_ipv6.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C221",
+    "title": "Declared C221",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "e47566103e40b1e0cada94db8599865c5394f1b7c63bf0d36abb582f1697a146",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C221",
+        "sourceSha256": "f261e65242945007d39e44f22c7fd0d60a025113903f960b8dde384ca88329e4",
+        "outcomeSha256": "6e0913a97f3b7aab873da4452c9bc2c64e4114c31e407ec62859a9d5b9b04d45",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 6: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C226",
+    "title": "Declared C226",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "316728b838f1b74e22fd755dfbb6132dfc224efd385118032167edc1e62b24ca",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C226",
+        "sourceSha256": "127c53050d76294118eacc79963da184bea5b2352af90b9c3b4915ae9a68e253",
+        "outcomeSha256": "740e9275ee40d1a8402835cf58c0f756653a71a152eec1813686d148841c0e1c",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 8: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C227",
+    "title": "Declared C227",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "9acd31df1df367e7ea1a24a9b874c457be34d1046dab596507d02fcf4cf87da9",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C227",
+        "sourceSha256": "4e53641c85986bbd8293a026385679dedb4cf7d214e70594e2ea9e1b239c9b56",
+        "outcomeSha256": "9995fae91e1850fb889d6f58c08b29db27747fa3a77857c8640e5c048bfc6ffe",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C228",
+    "title": "Declared C228",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "5975cd4f67dbe2c40e0f39ef10773309b4557df3d667ed17f6efe4c6789ba820",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C228",
+        "sourceSha256": "f5e5002f6605b8d189d1593ca9bfac52f986c7eea17df2de8d9b4acb6a3e1dd6",
+        "outcomeSha256": "153725708a66dc90bbe33682996b0e34f6a3c41ccefd2a5fc96e96ee40ab5c9d",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C248",
+    "title": "Declared C248",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "592deddbc56967a746965a6856424f1d6207736642d47236dfe594589ef07b97",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C248",
+        "sourceSha256": "03ce2143bab2899077e7bac758721625e9ca69afe3bafc09afb32a059dfb18cc",
+        "outcomeSha256": "6f771c882c0f708e25a4a91608b4b915b4563fa2201a0f4259ab884e993c87c1",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "592deddbc56967a746965a6856424f1d6207736642d47236dfe594589ef07b97:n0",
+          "name": "sros",
+          "kind": "nokia_srsim",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "592deddbc56967a746965a6856424f1d6207736642d47236dfe594589ef07b97:d0",
+          "ownerId": "592deddbc56967a746965a6856424f1d6207736642d47236dfe594589ef07b97:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C252",
+    "title": "Declared C252",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C252",
+        "sourceSha256": "f6ad8b3d9e2693f88bfc632d41f631e513743e35199d84f3590eabc429db09f7",
+        "outcomeSha256": "b381f67863429df16af910d95f7484b867e5803bfb3f31f9f6a4933627918943",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n0",
+          "name": "bng1",
+          "kind": "veesix_osvbng",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n1",
+          "name": "corerouter1",
+          "kind": "linux",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n2",
+          "name": "subscribers",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:l0",
+          "occurrence": 0,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n2",
+              "nodeLabel": "subscribers",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n0",
+              "nodeLabel": "bng1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:l1",
+          "occurrence": 1,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n0",
+              "nodeLabel": "bng1",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n1",
+              "nodeLabel": "corerouter1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:d0",
+          "ownerId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:d1",
+          "ownerId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:d2",
+          "ownerId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n1",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 3",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:d3",
+          "ownerId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n1",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 4",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:d4",
+          "ownerId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n1",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 5",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:d5",
+          "ownerId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n2",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 6",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:d6",
+          "ownerId": "ae5bc6f7f08a3e82120f9f51967fa2176a77a504f0c8f0e88d25afb1fbc35c80:n2",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 7",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C258",
+    "title": "Declared C258",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "95428c258d7aa464121a7137cc9af8d425f0de2f6f3258b8f455c0430a7f6ac5",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C258",
+        "sourceSha256": "7fd19abf509cd7946743aa2ff5c643b9db1b8d6406073504ea75363415de441d",
+        "outcomeSha256": "e47ac70ff9f50ce62be2eef78d02d916d5ee7f3b45b9e773414a930e2e9b557b",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "95428c258d7aa464121a7137cc9af8d425f0de2f6f3258b8f455c0430a7f6ac5:n0",
+          "name": "node1",
+          "kind": "cisco_cat9kv",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "95428c258d7aa464121a7137cc9af8d425f0de2f6f3258b8f455c0430a7f6ac5:d0",
+          "ownerId": "95428c258d7aa464121a7137cc9af8d425f0de2f6f3258b8f455c0430a7f6ac5:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "95428c258d7aa464121a7137cc9af8d425f0de2f6f3258b8f455c0430a7f6ac5:d1",
+          "ownerId": "95428c258d7aa464121a7137cc9af8d425f0de2f6f3258b8f455c0430a7f6ac5:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C276",
+    "title": "Declared C276",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "a41c095fa2a12befbb2a352f510bb8cf9166144135590cc062f097c0304cebce",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C276",
+        "sourceSha256": "b892b1d538589398851ef276fdd2e201a813d606b945443a28549945b44c99bd",
+        "outcomeSha256": "7e8972b028f2e12a2b63efef9ac82a8197cee6f157297b8ddc4b3af4377b9650",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "a41c095fa2a12befbb2a352f510bb8cf9166144135590cc062f097c0304cebce:n0",
+          "name": "sros",
+          "kind": "nokia_sros",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "a41c095fa2a12befbb2a352f510bb8cf9166144135590cc062f097c0304cebce:d0",
+          "ownerId": "a41c095fa2a12befbb2a352f510bb8cf9166144135590cc062f097c0304cebce:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C290",
+    "title": "Declared C290",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "4701f5cfb4a89dfa58167fc82505e8126a82d7f16d688b178108fbde3fdc8408",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C290",
+        "sourceSha256": "227a4704fb8318e4198aea24c433048a7cd96b3904848ce6e622a8ba801a1631",
+        "outcomeSha256": "eb24b2df468cea86a407773c7048430fc8953b7598a29fc9e92c9b7e4891730f",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 8: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C291",
+    "title": "Declared C291",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "36275dc8dc4be2d388999a69c0342abbcd5eee760637048d727c50ad27551c42",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C291",
+        "sourceSha256": "dced2d748f0defb2da737d6a571cea2dd750b71ff073be30f4cfb28f53e9f71e",
+        "outcomeSha256": "f457cc1b8c8ed943a49d01564242752e276b3152d617b9013ea46ca852db44dd",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C292",
+    "title": "Declared C292",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "41789d2a7c3e1f2a6f45cebad98b7320eb0bbf21908ae045e0f8d09406320476",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C292",
+        "sourceSha256": "eaf0a3ab6bd6b52de8f32ac59d189e2d28a04e0c7f6e73c4e29e0cc15199f575",
+        "outcomeSha256": "a32e0e95940f94c773f8241b71031736b5db43a33acbcd7c563016ef9b176896",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 10: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C293",
+    "title": "Declared C293",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "cbd0dcdff4179a6cd861584e9974dda15467f1eaca077993b8af75ed9aa04bcb",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C293",
+        "sourceSha256": "dfd31a25fe546ab89a47a5347ef365d5248204ada76115aa79b74e273d7544c6",
+        "outcomeSha256": "41c7944bf7186ed5bf64e026ca3955a1a87543c7cfce75ce056ad0d76c5336e4",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C294",
+    "title": "Declared C294",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "fbb76638e3c2cabf00bf931744441d5ef2fd4872ba1e967258462ff83fc25127",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C294",
+        "sourceSha256": "38edd7091d48019109355c22afab01965e32486b408da677f55d885bee75120d",
+        "outcomeSha256": "919ada4869ecf9997ce370b1655c7c1b343c7dde55d2e1bc303f264a10b67027",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 8: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C295",
+    "title": "Declared C295",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "b7197d2e06fea69df789dd5bbc591742ac23bec9c1371e47a03977cd86d4a258",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C295",
+        "sourceSha256": "8e02c791d0d0303e000d134d7b0282e6a3e1dd1359858694208f660cdee9a3eb",
+        "outcomeSha256": "aeb91a9a6c5271ae0eaa3aa529f12bbe887c5434fc192b9e5b05d0f09cd5c9cd",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "TEMPLATE_ERROR",
+          "message": "Line 5: native template function kind_code_name is undefined. This documentation fragment requires its template context.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C310",
+    "title": "Declared C310",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "c1a603bbfa7225f5a2231b1a6b51b253fd9932dc56530fb76d9fb4e9e53ff31b",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C310",
+        "sourceSha256": "c31f40d96dc50686c48b7ab548a7c94d7d30c8734032f24f11d4942856c1ebdb",
+        "outcomeSha256": "733f6e107d4c5c8bc6ef7d2436a5642c1daaff28e3dfe85c9dc8713273a5cb85",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "c1a603bbfa7225f5a2231b1a6b51b253fd9932dc56530fb76d9fb4e9e53ff31b:n0",
+          "name": "n1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "c1a603bbfa7225f5a2231b1a6b51b253fd9932dc56530fb76d9fb4e9e53ff31b:n1",
+          "name": "n2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "c1a603bbfa7225f5a2231b1a6b51b253fd9932dc56530fb76d9fb4e9e53ff31b:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "c1a603bbfa7225f5a2231b1a6b51b253fd9932dc56530fb76d9fb4e9e53ff31b:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C314",
+    "title": "Declared C314",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C314",
+        "sourceSha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091",
+        "outcomeSha256": "b9dab9728839119bd32cd49bca646e64ab464f70d2a314ed07ef5f592e879890",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:n0",
+          "name": "l1",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:l0",
+          "occurrence": 0,
+          "type": "macvlan",
+          "state": "declared",
+          "externalRole": "host-interface",
+          "endpoints": [
+            {
+              "nodeId": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:n0",
+              "nodeLabel": "l1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:d0",
+          "ownerId": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:l0",
+          "ownerType": "link",
+          "kind": "host-interface",
+          "label": "host-interface reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:d1",
+          "ownerId": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C316",
+    "title": "Declared C316",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C316",
+        "sourceSha256": "affaa77e08168edef646e439b543957e41462c8ae975f51e96f8ae265ec967e4",
+        "outcomeSha256": "c0660fd8f61cdd64f2dcabb549d495ac741a2d88396c03c9facd7a192155901a",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n2",
+          "name": "node3",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n3",
+          "name": "node4",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:l0",
+          "occurrence": 0,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n0",
+              "nodeLabel": "node1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n1",
+              "nodeLabel": "node2",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:l1",
+          "occurrence": 1,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n0",
+              "nodeLabel": "node1",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n2",
+              "nodeLabel": "node3",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:l2",
+          "occurrence": 2,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n0",
+              "nodeLabel": "node1",
+              "interface": "eth3",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n3",
+              "nodeLabel": "node4",
+              "interface": "eth3",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:l3",
+          "occurrence": 3,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n1",
+              "nodeLabel": "node2",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n3",
+              "nodeLabel": "node4",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:l4",
+          "occurrence": 4,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n2",
+              "nodeLabel": "node3",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n3",
+              "nodeLabel": "node4",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:d0",
+          "ownerId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:d1",
+          "ownerId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n1",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:d2",
+          "ownerId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n2",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 3",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:d3",
+          "ownerId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n3",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 4",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n1"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n2"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "5328d69fac4bcf8db9ddcfa172bca75b381ad8e8e6621ccb3be6599ae883f5d6:n3"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C324",
+    "title": "Declared C324",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C324",
+        "sourceSha256": "083b0318d39b16195274449c9c6859afc3d0046fc5f8546aeb032dfd496f1577",
+        "outcomeSha256": "e6215a139f548fda7f921e6b856b1b93790e287dec3749f87e0b5db1962911ff",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d:n0",
+          "name": "n1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d:n1",
+          "name": "n2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d:d0",
+          "ownerId": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d:d1",
+          "ownerId": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d:n1",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "0f074f84908071423a1744400a305121cf88627ddd2ef97c41a42d168c12185d:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C325",
+    "title": "Declared C325",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C325",
+        "sourceSha256": "e43e5b86f058ac08f44327e706437ae952ca3005a6381804837fc9de48fbc237",
+        "outcomeSha256": "724d97df567eddc700fd86d9054dd7b4607d93b5eb97c0dbfc31f1266bb40074",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b:n0",
+          "name": "n1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b:n1",
+          "name": "n2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b:d0",
+          "ownerId": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b:d1",
+          "ownerId": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b:n1",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "c0c35758e8f8dbf7c49cce4ef9d13dc990ce5b34113c0a929337cdb95b29b59b:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C326",
+    "title": "Declared C326",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C326",
+        "sourceSha256": "2634d4fea4e80714267ac1db5a0d116dc231b6d7540fc905d84eefa7ead93500",
+        "outcomeSha256": "68ebab35e421bb627ce35ddfa63f178417c70944fbabce17074cb0e32ae209cc",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b:n0",
+          "name": "ansible",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b:n1",
+          "name": "graphite",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b:d0",
+          "ownerId": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b:d1",
+          "ownerId": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b:n1",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "581b66f4a041c37238407e084e9045865539f713e05a46e885fd7073f919ea7b:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C368",
+    "title": "Declared C368",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C368",
+        "sourceSha256": "3923bdba86b6e1287d55617e801829d40485556ede6775b7b516522b23a05ee1",
+        "outcomeSha256": "6c50afad208adeeb1503c503b0271cfacd76506ec0495d7612c33181e84c93f0",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:n0",
+          "name": "router1",
+          "kind": "nokia_srlinux",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:n1",
+          "name": "router2",
+          "kind": "nokia_srlinux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:d0",
+          "ownerId": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:d1",
+          "ownerId": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:d2",
+          "ownerId": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:n1",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 3",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:d3",
+          "ownerId": "f04c7d846da89927c75b1e96d6a1caa9c403e38c63cfe655e002eba39450d5bd:n1",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 4",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C398",
+    "title": "Declared C398",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C398",
+        "sourceSha256": "4412cf610d4c2b1d57f258f53058d84ec2ac1aae6fc6856bda44e8c81cde4660",
+        "outcomeSha256": "65af321051484bbe5100b17a0f34ac3bf0be04aee62002ef5e90dadec72b12f7",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e:n0",
+          "name": "router1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e:n1",
+          "name": "router2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e:d0",
+          "ownerId": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e:d1",
+          "ownerId": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e:n1",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "54a4f8319f4f3e950df1ab47e988f5b2c3e923c4ce9ec2c1fef74a747a19ee2e:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C399",
+    "title": "Declared C399",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "53b37244033d2936e766f6e38630260306d999e506c2444a5d3bd003be20c27e",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C399",
+        "sourceSha256": "fe983b657ebb13cbf2c96b875eee53b82779d6516d1a411d9c51306cf8e82477",
+        "outcomeSha256": "e21ac246167f60e8f0ba0f2178b00b6ddacab95a7718819accb87c2654f56067",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "53b37244033d2936e766f6e38630260306d999e506c2444a5d3bd003be20c27e:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "53b37244033d2936e766f6e38630260306d999e506c2444a5d3bd003be20c27e:d0",
+          "ownerId": "53b37244033d2936e766f6e38630260306d999e506c2444a5d3bd003be20c27e:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "53b37244033d2936e766f6e38630260306d999e506c2444a5d3bd003be20c27e:d1",
+          "ownerId": "53b37244033d2936e766f6e38630260306d999e506c2444a5d3bd003be20c27e:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "53b37244033d2936e766f6e38630260306d999e506c2444a5d3bd003be20c27e:n0"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C400",
+    "title": "Declared C400",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "1c1028611c4cc4183db7082ea05ac14c5a0ff6770a0b7701de1722cdc44eed3c",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C400",
+        "sourceSha256": "1ac42b2cc8d66b18527caa02ca5f51b88b0d5e022509216b6ff7ce08b4ac078b",
+        "outcomeSha256": "9a68dc1cf6d0babff37b30875587edbb4615eef57262daa366639a67961c6986",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "1c1028611c4cc4183db7082ea05ac14c5a0ff6770a0b7701de1722cdc44eed3c:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "1c1028611c4cc4183db7082ea05ac14c5a0ff6770a0b7701de1722cdc44eed3c:n0"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C413",
+    "title": "Declared C413",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C413",
+        "sourceSha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091",
+        "outcomeSha256": "b9dab9728839119bd32cd49bca646e64ab464f70d2a314ed07ef5f592e879890",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:n0",
+          "name": "l1",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:l0",
+          "occurrence": 0,
+          "type": "macvlan",
+          "state": "declared",
+          "externalRole": "host-interface",
+          "endpoints": [
+            {
+              "nodeId": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:n0",
+              "nodeLabel": "l1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:d0",
+          "ownerId": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:l0",
+          "ownerType": "link",
+          "kind": "host-interface",
+          "label": "host-interface reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:d1",
+          "ownerId": "0ee6ee296edfe7fb8a1873df454399616251c3a7793bccbacf2f5212d6e29acf:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C416",
+    "title": "Declared C416",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "244f241776c4f197cce8bc32e0f6a0dd440d4b12d0a5c7afda91bc51f4ff8f37",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C416",
+        "sourceSha256": "f5cbc29c3ed78ebe20291f81615ba2e5476ff71c7a8b005226bcbb1894077198",
+        "outcomeSha256": "3107831e10bc687ded057b6d0d604bde7dcb1935164363f8d67f1db2501e1fbe",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "SCHEMA_ERROR",
+          "message": "Lines 6–7: native schema expects node definitions but received scalar strings.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-C423",
+    "title": "Declared C423",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "C423",
+        "sourceSha256": "6d0055c6a9295a3ca6c9dd1e1fd67f96f475377f3fe85b5a64493a9c69e1140c",
+        "outcomeSha256": "8aed86da91979dea5ef5891aa9e0f9d8be2a5c71197944d69918b58acfecdb3a",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n0",
+          "name": "node1",
+          "kind": null,
+          "kindState": "unresolved"
+        },
+        {
+          "id": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n1",
+          "name": "node2",
+          "kind": null,
+          "kindState": "unresolved"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:d0",
+          "ownerId": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:d1",
+          "ownerId": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n1",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n0"
+        },
+        {
+          "code": "KIND_UNRESOLVED",
+          "message": "Native kind is unspecified; no kind was guessed.",
+          "stage": "projection",
+          "objectId": "f635bef227a7eb35e8130e000d001d11c75c1b748890321221aa93e8e8fc38ea:n1"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-CTX-C168",
+    "title": "Declared CTX-C168",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "CTX-C168",
+        "sourceSha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591",
+        "outcomeSha256": "138b62cab103cb7f567d6c14c190801a6ee81a11c23c64399ea5f84d9114d090",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:n0",
+          "name": "ceos1",
+          "kind": "arista_ceos",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:n1",
+          "name": "ceos2",
+          "kind": "arista_ceos",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:l0",
+          "occurrence": 0,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:n0",
+              "nodeLabel": "ceos1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:n1",
+              "nodeLabel": "ceos2",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:d0",
+          "ownerId": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:d1",
+          "ownerId": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:d2",
+          "ownerId": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:n1",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 3",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:d3",
+          "ownerId": "01991aa31ba2e43a82ce3686ae7c08a203ee3b329b9c66f5f83633d8092f078c:n1",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 4",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-F1",
+    "title": "Declared F1",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "F1",
+        "sourceSha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911",
+        "outcomeSha256": "431e216af6d5f183586645a77b7c7308fb4c98f6565f19cfffeedcfefb95bc75",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n0",
+          "name": "isolated",
+          "kind": "linux",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n1",
+          "name": "left",
+          "kind": "linux",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n2",
+          "name": "right",
+          "kind": "linux",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n3",
+          "name": "srl",
+          "kind": "nokia_srlinux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:l0",
+          "occurrence": 0,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n1",
+              "nodeLabel": "left",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n2",
+              "nodeLabel": "right",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:l1",
+          "occurrence": 1,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n1",
+              "nodeLabel": "left",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n2",
+              "nodeLabel": "right",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:l2",
+          "occurrence": 2,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n3",
+              "nodeLabel": "srl",
+              "interface": "ethernet-1/1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n1",
+              "nodeLabel": "left",
+              "interface": "eth3",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:d0",
+          "ownerId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:d1",
+          "ownerId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n1",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:d2",
+          "ownerId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n2",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 3",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:d3",
+          "ownerId": "21117556d9f4f67153359e1070740be7815e8e082ff2c359ec7af253fc43d9b3:n3",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 4",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-F2",
+    "title": "Declared F2",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "adc900a145220d68dc67e5835029bcaae747e813ce8439b02ec36cb5ce31e9e2",
+      "status": "rejected",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "F2",
+        "sourceSha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01",
+        "outcomeSha256": "f52d87417f7ae6b505ab5f76d778b07fb9c5a50d14ca6f55aae68ed71edca57b",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [],
+      "links": [],
+      "dependencies": [],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "SCHEMA_ERROR",
+          "message": "Line 12: native schema rejects node field x-unknown.",
+          "stage": "load",
+          "objectId": null
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-F3",
+    "title": "Declared F3",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "b3545119837ef3b98e72ff4184c68f87f52a696c6373c45639563c83fa65e016",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "F3",
+        "sourceSha256": "225e7850232935fafc7a7f2a42011d9de2c43cff8784deaa9c45f10d6d80fb95",
+        "outcomeSha256": "d18739745d27a81ad1add07973f6fbae3c797c90a11987a623ea8b3f5bea8e19",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "b3545119837ef3b98e72ff4184c68f87f52a696c6373c45639563c83fa65e016:n0",
+          "name": "n1",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [],
+      "dependencies": [
+        {
+          "id": "b3545119837ef3b98e72ff4184c68f87f52a696c6373c45639563c83fa65e016:d0",
+          "ownerId": "b3545119837ef3b98e72ff4184c68f87f52a696c6373c45639563c83fa65e016:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "b3545119837ef3b98e72ff4184c68f87f52a696c6373c45639563c83fa65e016:d1",
+          "ownerId": "b3545119837ef3b98e72ff4184c68f87f52a696c6373c45639563c83fa65e016:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-F4",
+    "title": "Declared F4",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "F4",
+        "sourceSha256": "60e8976995c6ea25921fe80a251a4ba98ad420912a976452c6797d7d4e301c13",
+        "outcomeSha256": "d30f8346901e435218189854472704f8157229b6e5ebca601ab57d3caa9b3d5c",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:n0",
+          "name": "n1",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:l0",
+          "occurrence": 0,
+          "type": "host",
+          "state": "declared",
+          "externalRole": "host-endpoint",
+          "endpoints": [
+            {
+              "nodeId": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:n0",
+              "nodeLabel": "n1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:l1",
+          "occurrence": 1,
+          "type": "mgmt-net",
+          "state": "declared",
+          "externalRole": "management-endpoint",
+          "endpoints": [
+            {
+              "nodeId": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:n0",
+              "nodeLabel": "n1",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:d0",
+          "ownerId": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:l0",
+          "ownerType": "link",
+          "kind": "host-endpoint",
+          "label": "host-endpoint reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:d1",
+          "ownerId": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:l1",
+          "ownerType": "link",
+          "kind": "management-endpoint",
+          "label": "management-endpoint reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:d2",
+          "ownerId": "247d7dd4c01b6b11fd32e32bdc67fb5c8619370635041a4fa0050bf41343c25a:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 3",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-F5",
+    "title": "Declared F5",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "F5",
+        "sourceSha256": "41385331a06c6dd1e520c177f91cbafe81e727810fc52c65f9f63fae391dd16d",
+        "outcomeSha256": "0de90c4c9fb9483deb4bbbcd6f33de5000761548ed8557e291a469eb35fd8796",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:n0",
+          "name": "n1",
+          "kind": "linux",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:n1",
+          "name": "n2",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:l0",
+          "occurrence": 0,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:n0",
+              "nodeLabel": "n1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:n1",
+              "nodeLabel": "n2",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:l1",
+          "occurrence": 1,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:n0",
+              "nodeLabel": "n1",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:n1",
+              "nodeLabel": "n2",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:d0",
+          "ownerId": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:d1",
+          "ownerId": "6a1fa913af10efd8fda7d7f8ec291ee1f77709f65c7df0609ec1731e19134d88:n1",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-F7",
+    "title": "Declared F7",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "f1bf0ed9c6d509a65ee3d490150cc3295a74a1efe1c8d0b875b14a4e939fad32",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "F7",
+        "sourceSha256": "614c345a6bd15cca1d0fb8ce072254ee21257fdb0c316af6441fda83ffbf56ef",
+        "outcomeSha256": "8cccbb2fde2aec7f5044535304a69d75d5febf40ffc08a7ad5233de9ad7f4831",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "f1bf0ed9c6d509a65ee3d490150cc3295a74a1efe1c8d0b875b14a4e939fad32:n0",
+          "name": "n1",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "f1bf0ed9c6d509a65ee3d490150cc3295a74a1efe1c8d0b875b14a4e939fad32:l0",
+          "occurrence": 0,
+          "type": "dummy",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "f1bf0ed9c6d509a65ee3d490150cc3295a74a1efe1c8d0b875b14a4e939fad32:n0",
+              "nodeLabel": "n1",
+              "interface": "dummy1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "f1bf0ed9c6d509a65ee3d490150cc3295a74a1efe1c8d0b875b14a4e939fad32:d0",
+          "ownerId": "f1bf0ed9c6d509a65ee3d490150cc3295a74a1efe1c8d0b875b14a4e939fad32:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-D1",
+    "title": "Declared D1",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "D1",
+        "sourceSha256": "ebf9373308571245c4f6df3f1e5d54fd541e2266ef3c236355f6e8305b789b23",
+        "outcomeSha256": "72fb746e21458d8f7bf3eff089ff6e1cd1891e005c9ca09fae79e4f403eab26e",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n0",
+          "name": "a",
+          "kind": "linux",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n1",
+          "name": "b",
+          "kind": "linux",
+          "kindState": "native_getter"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n2",
+          "name": "isolated",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:l0",
+          "occurrence": 0,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n0",
+              "nodeLabel": "a",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n1",
+              "nodeLabel": "b",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:l1",
+          "occurrence": 1,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n0",
+              "nodeLabel": "a",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n1",
+              "nodeLabel": "b",
+              "interface": "eth2",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:l2",
+          "occurrence": 2,
+          "type": "macvlan",
+          "state": "declared",
+          "externalRole": "host-interface",
+          "endpoints": [
+            {
+              "nodeId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n0",
+              "nodeLabel": "a",
+              "interface": "eth3",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d0",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:l2",
+          "ownerType": "link",
+          "kind": "host-interface",
+          "label": "host-interface reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d1",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n0",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 2",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d2",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 3",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d3",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n0",
+          "ownerType": "node",
+          "kind": "license",
+          "label": "license reference 4",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d4",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n0",
+          "ownerType": "node",
+          "kind": "startup-config",
+          "label": "startup-config reference 5",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d5",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n1",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 6",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d6",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n1",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 7",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d7",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n2",
+          "ownerType": "node",
+          "kind": "bind",
+          "label": "bind reference 8",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        },
+        {
+          "id": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:d8",
+          "ownerId": "7b47ef8bc368318fad41327c4a2b52ae2968ded95590f7348354842fd98ca6e4:n2",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 9",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  },
+  {
+    "id": "D-D2",
+    "title": "Declared D2",
+    "graph": {
+      "contract": "p1a/0.3",
+      "profile": "native-declarations-exp015-v1",
+      "revision": "e74fdf8d779dc6d0bd336a7b7072582a562db920d2e9d4ef2e04f819452e257f",
+      "status": "declarations_only",
+      "deployment": "NOT_RUN",
+      "operations": "disabled",
+      "provenance": {
+        "sourceId": "D2",
+        "sourceSha256": "c1ecbd16ddf95683a954d0c9a15bee8bc2b2ebacb79db759fb200af46cb92267",
+        "outcomeSha256": "95fa7610cd08639bbb0ec745b9b7714fa4e92b68af0b7b9120591703e92eb377",
+        "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+        "experiment": "EXP-015",
+        "evidence": "recorded",
+        "fieldCoordinates": null
+      },
+      "nodes": [
+        {
+          "id": "e74fdf8d779dc6d0bd336a7b7072582a562db920d2e9d4ef2e04f819452e257f:n0",
+          "name": "a",
+          "kind": "linux",
+          "kindState": "native_getter"
+        }
+      ],
+      "links": [
+        {
+          "id": "e74fdf8d779dc6d0bd336a7b7072582a562db920d2e9d4ef2e04f819452e257f:l0",
+          "occurrence": 0,
+          "type": "veth",
+          "state": "declared",
+          "externalRole": "",
+          "endpoints": [
+            {
+              "nodeId": "e74fdf8d779dc6d0bd336a7b7072582a562db920d2e9d4ef2e04f819452e257f:n0",
+              "nodeLabel": "a",
+              "interface": "eth1",
+              "referenceState": "declared",
+              "interfaceState": "declared_unresolved_alias"
+            },
+            {
+              "nodeId": null,
+              "nodeLabel": "absent",
+              "interface": "eth1",
+              "referenceState": "unresolved",
+              "interfaceState": "declared_unresolved_alias"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "e74fdf8d779dc6d0bd336a7b7072582a562db920d2e9d4ef2e04f819452e257f:d0",
+          "ownerId": "e74fdf8d779dc6d0bd336a7b7072582a562db920d2e9d4ef2e04f819452e257f:n0",
+          "ownerType": "node",
+          "kind": "image",
+          "label": "image reference 1",
+          "state": "unresolved",
+          "reason": "NOT_CHECKED_DISPLAY_ONLY"
+        }
+      ],
+      "dependencyInventory": "partial",
+      "fieldProvenance": "unresolved",
+      "diagnostics": [
+        {
+          "code": "ENDPOINT_NODE_UNRESOLVED",
+          "message": "An endpoint names an undeclared node; the reference is retained without creating a node.",
+          "stage": "projection",
+          "objectId": "e74fdf8d779dc6d0bd336a7b7072582a562db920d2e9d4ef2e04f819452e257f:l0"
+        }
+      ],
+      "limits": {
+        "nodes": 100,
+        "links": 200,
+        "dependencies": 1000,
+        "textBytes": 4096,
+        "responseBytes": 2097152
+      }
+    }
+  }
+]

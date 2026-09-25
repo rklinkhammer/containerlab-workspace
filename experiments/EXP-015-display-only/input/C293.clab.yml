@@ -1,0 +1,13 @@
+name: vyos_link_ips
+topology:
+  nodes:
+    vyos1:
+      kind: -{{ kind_code_name }}-
+      image: vyos:latest
+    vyos2:
+      kind: -{{ kind_code_name }}-
+      image: vyos:latest
+  links:
+    - endpoints: ["vyos1:eth1", "vyos2:eth1"]
+      ipv4: ["192.168.0.1/24", "192.168.0.2/24"]
+      ipv6: ["2001:db8::1/64", "2001:db8::2/64"]

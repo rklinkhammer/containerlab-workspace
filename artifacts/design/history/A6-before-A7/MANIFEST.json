@@ -1,0 +1,103 @@
+{
+  "snapshot": "A6-before-A7",
+  "utc": "2026-09-25T00:52:26.076685+00:00",
+  "files": [
+    {
+      "archive_name": "P1A_BACKLOG.md",
+      "source_path": "artifacts/design/P1A_BACKLOG.md",
+      "sha256": "96596f80cb98df43190b6ca0ec2c01422063fe1d75149c81f8325552a4aadda1",
+      "bytes": 5276
+    },
+    {
+      "archive_name": "ARCHITECTURE.md",
+      "source_path": "artifacts/design/ARCHITECTURE.md",
+      "sha256": "077edb09a66e52a3fb80e43cc4e25cb94fdd43d6fae7ed6e7e0dcad6430db832",
+      "bytes": 52457
+    },
+    {
+      "archive_name": "CANDIDATE_PROFILE.json",
+      "source_path": "artifacts/design/CANDIDATE_PROFILE.json",
+      "sha256": "cde343094d70a7ddde476ad0c632a84668f2524875ed99964cb0fc5705fbae0e",
+      "bytes": 2193
+    },
+    {
+      "archive_name": "READINESS_BRIEF.md",
+      "source_path": "artifacts/design/READINESS_BRIEF.md",
+      "sha256": "b6c61a9b3be888da38d582209a9437ec2e76c38dfd4ac9c7708acce1e65105f5",
+      "bytes": 2322
+    },
+    {
+      "archive_name": "READINESS.md",
+      "source_path": "artifacts/design/READINESS.md",
+      "sha256": "81d39bce9a8cc161baa48e24106db6e78347697a3efa49880bec0ec5e3262338",
+      "bytes": 13492
+    },
+    {
+      "archive_name": "TRACEABILITY.md",
+      "source_path": "artifacts/design/TRACEABILITY.md",
+      "sha256": "24bcb0887bccc8920f237a7a2f0f5dd4c776d9d049392fa0c31a7f283f872329",
+      "bytes": 13944
+    },
+    {
+      "archive_name": "README.md",
+      "source_path": "artifacts/design/README.md",
+      "sha256": "00a1b4bfcf8d3c6331064ddef4c0629d3c47a6f01db3dd40d3386bb9baa3d0c3",
+      "bytes": 3635
+    },
+    {
+      "archive_name": "RISK_REDUCTION_BRIEF.md",
+      "source_path": "artifacts/design/RISK_REDUCTION_BRIEF.md",
+      "sha256": "1e719ce4e7754512fae4e188bf006225d96ea9d581094ddba7106a729d0ed195",
+      "bytes": 1040
+    },
+    {
+      "archive_name": "IMPLEMENTATION_BRIEF.md",
+      "source_path": "artifacts/design/IMPLEMENTATION_BRIEF.md",
+      "sha256": "c2c362aaa6e00682acabb8cfdfe24457748e67ecd60e95ecc40cb5f5b28b8ee3",
+      "bytes": 2788
+    },
+    {
+      "archive_name": "IMPLEMENTATION_PLAN.md",
+      "source_path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "sha256": "f994eec9e989fd5d2650e79a11cde8507ccc53a8365af7255a60f84aa15f6196",
+      "bytes": 25448
+    },
+    {
+      "archive_name": "RUNTIME_QUALIFICATION_PLAN.md",
+      "source_path": "artifacts/design/RUNTIME_QUALIFICATION_PLAN.md",
+      "sha256": "811bc49eeb05b1767a4844670545a8f22dfeb3d0af0e8870ef91715ac3f18972",
+      "bytes": 5528
+    },
+    {
+      "archive_name": "COMPLETION.json",
+      "source_path": "artifacts/design/COMPLETION.json",
+      "sha256": "30c64bb8596a85ea2713d976b232c49d28384cf3ec902e613ec372570932911e",
+      "bytes": 19803
+    },
+    {
+      "archive_name": "DECISIONS.md",
+      "source_path": "artifacts/design/DECISIONS.md",
+      "sha256": "0eba72c09f5fc299a639937e45a227391cef5c94672df80d58ce0f56694abdc7",
+      "bytes": 27852
+    },
+    {
+      "archive_name": "P1A_CONTRACT.md",
+      "source_path": "artifacts/design/P1A_CONTRACT.md",
+      "sha256": "943589339ee337d282975632a373188ad65cb4e1672cc591003a2b117802289d",
+      "bytes": 8275
+    },
+    {
+      "archive_name": "IMPLEMENTATION_HANDOFF.md",
+      "source_path": "IMPLEMENTATION_HANDOFF.md",
+      "sha256": "2107a173b5ef2f1e6c39028131826a6507b3e02aecf395b89d1551cbcf11e396",
+      "bytes": 17629
+    },
+    {
+      "archive_name": "R2_NEXT_BRIEF.md",
+      "source_path": ".publication-A7/R2_NEXT_BRIEF.md",
+      "sha256": "7f3892c6b48fe1b6c7f3d37e34f9186f9ad7e8d05930d03e776331c8db7cab90",
+      "bytes": 514
+    }
+  ],
+  "absent_expected_files": []
+}

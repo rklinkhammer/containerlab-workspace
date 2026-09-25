@@ -1,0 +1,9 @@
+{
+  "basis": "Independent expectation from pinned native docs/manual/topo-def-file.md dummy-link syntax, written before native trial",
+  "nodes": ["n1"],
+  "link_count": 1,
+  "native_type": "dummy",
+  "endpoint_count": 1,
+  "interface": "dummy1",
+  "projection_requirement": "Represent one endpoint explicitly; never invent a peer to satisfy a two-ended DTO"
+}

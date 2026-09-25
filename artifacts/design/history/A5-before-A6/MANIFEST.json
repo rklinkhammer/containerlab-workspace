@@ -1,0 +1,97 @@
+{
+  "snapshot": "A5-before-A6",
+  "utc": "2026-09-25T00:37:43.006805+00:00",
+  "files": [
+    {
+      "archive_name": "P1A_BACKLOG.md",
+      "source_path": "artifacts/design/P1A_BACKLOG.md",
+      "sha256": "05a266f1fe3843117c44e082315d9f8c3e8ab6e637365d61d6e7edbc32a23aac",
+      "bytes": 4141
+    },
+    {
+      "archive_name": "ARCHITECTURE.md",
+      "source_path": "artifacts/design/ARCHITECTURE.md",
+      "sha256": "0bf252f8f636548c2e4d92f88393003b2deb7f438d14d7207b49294197e0965a",
+      "bytes": 50955
+    },
+    {
+      "archive_name": "CANDIDATE_PROFILE.json",
+      "source_path": "artifacts/design/CANDIDATE_PROFILE.json",
+      "sha256": "1eaf6aa964a0d9834f3f21a2d62d3440496c3c4370003e616a15ff241ec47898",
+      "bytes": 1815
+    },
+    {
+      "archive_name": "READINESS_BRIEF.md",
+      "source_path": "artifacts/design/READINESS_BRIEF.md",
+      "sha256": "b6c61a9b3be888da38d582209a9437ec2e76c38dfd4ac9c7708acce1e65105f5",
+      "bytes": 2322
+    },
+    {
+      "archive_name": "READINESS.md",
+      "source_path": "artifacts/design/READINESS.md",
+      "sha256": "a0ad6152fb6babb91d27eb71e02a97fafc3cf0686bb175f6f24d192b42cd755e",
+      "bytes": 12415
+    },
+    {
+      "archive_name": "TRACEABILITY.md",
+      "source_path": "artifacts/design/TRACEABILITY.md",
+      "sha256": "ce4a7d593afb21db7696995927344a6256d2aa8c309935fb7b1cbf4b3645342a",
+      "bytes": 12278
+    },
+    {
+      "archive_name": "README.md",
+      "source_path": "artifacts/design/README.md",
+      "sha256": "8719e5d77b91ff3e4b7fa678c42ea43e5d625a0b887c6f4dceb24c61f93ec567",
+      "bytes": 3014
+    },
+    {
+      "archive_name": "IMPLEMENTATION_BRIEF.md",
+      "source_path": "artifacts/design/IMPLEMENTATION_BRIEF.md",
+      "sha256": "c2c362aaa6e00682acabb8cfdfe24457748e67ecd60e95ecc40cb5f5b28b8ee3",
+      "bytes": 2788
+    },
+    {
+      "archive_name": "IMPLEMENTATION_PLAN.md",
+      "source_path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "sha256": "d2676701390244ad1e2635f6bdc0999965cc75894b99475daa8c2c0a2e803bb4",
+      "bytes": 24038
+    },
+    {
+      "archive_name": "RUNTIME_QUALIFICATION_PLAN.md",
+      "source_path": "artifacts/design/RUNTIME_QUALIFICATION_PLAN.md",
+      "sha256": "106c98102d29a7b469481b62d3110f9ae8d1b7fd3725bef3379fb548f18363dc",
+      "bytes": 4904
+    },
+    {
+      "archive_name": "COMPLETION.json",
+      "source_path": "artifacts/design/COMPLETION.json",
+      "sha256": "ebad3143a4660892b463fee8fd525fb641cb9e68cd26867dc58b7f6f6775b299",
+      "bytes": 16273
+    },
+    {
+      "archive_name": "DECISIONS.md",
+      "source_path": "artifacts/design/DECISIONS.md",
+      "sha256": "e4ef919cb3bc3a24c04f569e4f4656f47d7ecc5e1d3e975f4530d5f20750991f",
+      "bytes": 26194
+    },
+    {
+      "archive_name": "P1A_CONTRACT.md",
+      "source_path": "artifacts/design/P1A_CONTRACT.md",
+      "sha256": "b55b3dfeda7c19f5520947d1d024eade5bd3baa64f9bf13cc4a89c1921b9f702",
+      "bytes": 7654
+    },
+    {
+      "archive_name": "IMPLEMENTATION_HANDOFF.md",
+      "source_path": "IMPLEMENTATION_HANDOFF.md",
+      "sha256": "f8ad0166352a81f43592f583b86ab0be660f463e23c00ef0001bd81f43e21165",
+      "bytes": 16992
+    },
+    {
+      "archive_name": "RISK_REDUCTION_BRIEF.md",
+      "source_path": ".publication-A6/RISK_REDUCTION_BRIEF.md",
+      "sha256": "1e719ce4e7754512fae4e188bf006225d96ea9d581094ddba7106a729d0ed195",
+      "bytes": 1040
+    }
+  ],
+  "absent_expected_files": []
+}

@@ -1,0 +1,9 @@
+name: srl_lab
+topology:
+  nodes:
+    srl1:
+      kind: -{{ kind_code_name }}-
+      type: ixr-d3
+      image: ghcr.io/nokia/srlinux
+      # a path to the full config in JSON format relative to the current working directory
+      startup-config: myconfig.json

@@ -1,0 +1,74 @@
+[
+  {
+    "test": "reject_path_.._escape",
+    "status": "PASS"
+  },
+  {
+    "test": "reject_path__etc_passwd",
+    "status": "PASS"
+  },
+  {
+    "test": "reject_path_a_.._escape",
+    "status": "PASS"
+  },
+  {
+    "test": "reject_path_a__b",
+    "status": "PASS"
+  },
+  {
+    "test": "reject_path_a\\b",
+    "status": "PASS"
+  },
+  {
+    "test": "valid_pinned_bundle",
+    "status": "PASS"
+  },
+  {
+    "test": "undeclared_file",
+    "status": "PASS"
+  },
+  {
+    "test": "symlink_escape",
+    "status": "PASS"
+  },
+  {
+    "test": "changed_source",
+    "status": "PASS"
+  },
+  {
+    "test": "bundle_root_symlink",
+    "status": "PASS"
+  },
+  {
+    "test": "timeout_cleanup",
+    "status": "PASS"
+  },
+  {
+    "test": "output_limit_cleanup",
+    "status": "PASS"
+  },
+  {
+    "test": "worker_exit_cleanup",
+    "status": "PASS"
+  },
+  {
+    "test": "malformed_output_cleanup",
+    "status": "PASS"
+  },
+  {
+    "test": "isolation",
+    "status": "PASS"
+  },
+  {
+    "test": "scratch_limit",
+    "status": "PASS"
+  },
+  {
+    "test": "cancel_concurrency_cleanup",
+    "status": "PASS"
+  },
+  {
+    "test": "supervisor_crash_recovery_on_next_load",
+    "status": "PASS"
+  }
+]

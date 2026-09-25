@@ -1,0 +1,6 @@
+name: c8201
+topology:
+  nodes:
+    c8000:
+      kind: -{{ kind_code_name }}-
+      startup-config: r1.cfg

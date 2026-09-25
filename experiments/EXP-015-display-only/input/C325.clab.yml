@@ -1,0 +1,9 @@
+name: mylab
+topology:
+  nodes:
+    n1:
+      binds:
+        - __clabNodeDir__/conf:/conf
+    n2:
+      binds:
+        - __clabNodeDir__/conf:/conf

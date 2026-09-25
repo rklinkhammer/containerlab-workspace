@@ -1,0 +1,16 @@
+name: display-dependencies
+topology:
+  defaults:
+    kind: linux
+    image: alpine:3.20
+    binds: ["absent.json:/etc/absent.json:ro"]
+  nodes:
+    a:
+      startup-config: https://example.invalid/startup.cfg
+      license: absent.license
+    b: {}
+    isolated: {}
+  links:
+    - endpoints: ["a:eth1", "b:eth1"]
+    - endpoints: ["a:eth2", "b:eth2"]
+    - endpoints: ["a:eth3", "macvlan:missing-parent"]

@@ -1,0 +1,21 @@
+{
+  "utc": "2026-09-25T00:27:05.940139+00:00",
+  "vm": "clab-t2-20260925-exp011",
+  "image": {
+    "location": "https://cloud-images.ubuntu.com/releases/noble/release-20260705/ubuntu-24.04-server-cloudimg-arm64.img",
+    "arch": "aarch64",
+    "digest": "sha256:7df0201546f75b8bcc1044594c806c35749421ad3c9bc1be2a3ab806cfae39cc"
+  },
+  "go": {
+    "filename": "go1.27.1.linux-arm64.tar.gz",
+    "os": "linux",
+    "arch": "arm64",
+    "version": "go1.27.1",
+    "sha256": "3450b45a3f9ee8568792736a5c5e70a1f2e9b36c35a8f74958c03e51d7d92bec",
+    "size": 67009954,
+    "kind": "archive"
+  },
+  "source_commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+  "source_archive_sha256": "d7f0ce9cd64e7427777e1aba901f89d7207e25a04391dd14286da4b0b952a45e",
+  "preexisting_vm_access": "none"
+}

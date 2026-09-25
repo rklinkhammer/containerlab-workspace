@@ -1,0 +1,7 @@
+name: mylab
+topology:
+  nodes:
+    node1:
+      startup-config: cfgs/node1.partial.cfg
+    node2:
+      startup-config: cfgs/node2.partial.cfg

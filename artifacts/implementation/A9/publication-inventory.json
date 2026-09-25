@@ -1,0 +1,67 @@
+[
+  {
+    "path": "artifacts/design/ARCHITECTURE.md",
+    "sha256": "209001dac9dd013a537baffede0caa5c8ee204cb13d4bac1ff46f52c4b112e97",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/DECISIONS.md",
+    "sha256": "d9db3308b6b6c5b2bbac084e13bb1f90dd126377242db0494e52f11852f088c8",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+    "sha256": "248d0de0fff5ad198ea77e5d345392a2ffd019c08ab520837db23b5a8aed8ee9",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/TRACEABILITY.md",
+    "sha256": "7a0eb5bb0f9cb5fdc7539ab1218c4f19eff2bcb7393500db4745e68365c872eb",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/READINESS.md",
+    "sha256": "a117a33b7241fc41105ba82cccd34555c11f0244489c5bdacad1cd66e7a7e7d2",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/P1A_CONTRACT.md",
+    "sha256": "eeecd8ea846599b7b0bfa63e1fcfeb0f7ce76c9dde8e90a78dfe5384c6eae972",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/README.md",
+    "sha256": "d9bb5b771d071a604849d97a824abfa8d6f7a333e5a95137834d1659fa04d12e",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/P1A_BACKLOG.md",
+    "sha256": "975fb13f0d553f1865855aff4be83f370b5f23954c5726a6fb02243ed9cd06b8",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/TEST_PROFILE.md",
+    "sha256": "3c1bdd63c7ea485367edd75330962b52cc798870b723eea57135de2364a8602c",
+    "new": false
+  },
+  {
+    "path": "IMPLEMENTATION_HANDOFF.md",
+    "sha256": "147f1daa809f703736a98aee2f7608145592bf5bf8ff8765e569459064bdd5c4",
+    "new": false
+  },
+  {
+    "path": "README.md",
+    "sha256": "f7b969986f76b6a03815f5610abc769f358a8b4681b18b04b4fa192317fb4343",
+    "new": false
+  },
+  {
+    "path": "artifacts/implementation/RESULTS.md",
+    "sha256": "be2387e41cc61391e9268775b45511b62161ae0e392fe1463df2e39613107d5d",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/NATIVE_PREVIEW_BRIEF.md",
+    "sha256": "f70d8066a138b21213f3e5f83af08fd7cd2e055b7125f313102577bf79340687",
+    "new": true
+  }
+]

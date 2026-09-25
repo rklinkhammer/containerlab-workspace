@@ -1,0 +1,123 @@
+[
+  {
+    "id": "F1",
+    "entry": "F1.clab.yml",
+    "files": [
+      {
+        "path": "F1.clab.yml",
+        "sha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911"
+      }
+    ],
+    "source": "experiments/EXP-015-display-only/input/F1.clab.yml",
+    "context": "single-file; external prerequisites unresolved",
+    "bundleSha256": "c58a22fdc9842ee070004384dcc0fd820123a3e14a0b31cf12f33937bde754f2"
+  },
+  {
+    "id": "F7",
+    "entry": "F7.clab.yml",
+    "files": [
+      {
+        "path": "F7.clab.yml",
+        "sha256": "614c345a6bd15cca1d0fb8ce072254ee21257fdb0c316af6441fda83ffbf56ef"
+      }
+    ],
+    "source": "experiments/EXP-015-display-only/input/F7.clab.yml",
+    "context": "single-file; external prerequisites unresolved",
+    "bundleSha256": "aac5ab156acbcb0e7d8d47751e84aee4d0d5ccc5c4555c3e82d56c91f82aebca"
+  },
+  {
+    "id": "CTX-C168",
+    "entry": "CTX-C168.clab.yml",
+    "files": [
+      {
+        "path": "CTX-C168.clab.yml",
+        "sha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591"
+      }
+    ],
+    "source": "experiments/EXP-015-display-only/input/CTX-C168.clab.yml",
+    "context": "single-file; external prerequisites unresolved",
+    "bundleSha256": "a69f13da6785c430a1cea038133ad8f04b5c2eb2c5d001da482a9596d31df198"
+  },
+  {
+    "id": "D1",
+    "entry": "D1.clab.yml",
+    "files": [
+      {
+        "path": "D1.clab.yml",
+        "sha256": "ebf9373308571245c4f6df3f1e5d54fd541e2266ef3c236355f6e8305b789b23"
+      }
+    ],
+    "source": "experiments/EXP-015-display-only/input/D1.clab.yml",
+    "context": "single-file; external prerequisites unresolved",
+    "bundleSha256": "5ad3e21a90652e92e84bba8bc0d25650e4db3c2ada74e4686bbae98a5a03512e"
+  },
+  {
+    "id": "D2",
+    "entry": "D2.clab.yml",
+    "files": [
+      {
+        "path": "D2.clab.yml",
+        "sha256": "c1ecbd16ddf95683a954d0c9a15bee8bc2b2ebacb79db759fb200af46cb92267"
+      }
+    ],
+    "source": "experiments/EXP-015-display-only/input/D2.clab.yml",
+    "context": "single-file; external prerequisites unresolved",
+    "bundleSha256": "84c48c07d2832d2570743f404d937c27dd77b9fddfdfb7355e7a33fdde79ddc9"
+  },
+  {
+    "id": "C162",
+    "entry": "C162.clab.yml",
+    "files": [
+      {
+        "path": "C162.clab.yml",
+        "sha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b"
+      }
+    ],
+    "source": "experiments/EXP-015-display-only/input/C162.clab.yml",
+    "context": "single-file; external prerequisites unresolved",
+    "bundleSha256": "031ff4ae5b4a51fb19915e03262b51fab7406521b7a3888179189cf0224ba9b0"
+  },
+  {
+    "id": "F2",
+    "entry": "F2.clab.yml",
+    "files": [
+      {
+        "path": "F2.clab.yml",
+        "sha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01"
+      }
+    ],
+    "source": "experiments/EXP-015-display-only/input/F2.clab.yml",
+    "context": "single-file; external prerequisites unresolved",
+    "bundleSha256": "ae902aed7039d1ba89771de458d04e2ce2b1728ade75e4d0ede857f6fcbe5a46"
+  },
+  {
+    "id": "BUNDLE-CONTEXT",
+    "entry": "topology.clab.yml",
+    "files": [
+      {
+        "path": "clab_templates/nodes.gotmpl",
+        "sha256": "0c06d396e3555f7ce7fdf91f98b2b4ab3c8d05580dd49d0cd258049e67137580"
+      },
+      {
+        "path": "topology.clab.yml",
+        "sha256": "1cf465220ecbea901fbb8eb63bed3cd2f5764e23edd8f204c697add1a45bdbfe"
+      }
+    ],
+    "source": "independent authored bundle; same topology bytes in missing/context variants",
+    "context": "explicit subtemplate",
+    "bundleSha256": "dbea4eb289dcaaf88ddcf31be51f930989409b11ffe051190b715cf1de9e9fbb"
+  },
+  {
+    "id": "BUNDLE-MISSING",
+    "entry": "topology.clab.yml",
+    "files": [
+      {
+        "path": "topology.clab.yml",
+        "sha256": "1cf465220ecbea901fbb8eb63bed3cd2f5764e23edd8f204c697add1a45bdbfe"
+      }
+    ],
+    "source": "independent authored bundle; same topology bytes in missing/context variants",
+    "context": "deliberately absent subtemplate",
+    "bundleSha256": "be2b80d4cd42509b8091c50448a10655c45fb141c566df3e6cfd0d05c93db33c"
+  }
+]

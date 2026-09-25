@@ -1,0 +1,27 @@
+[
+  {
+    "file": "core/clab.go",
+    "sha256": "6913678dbf34d01b29687294d9f2f1de0ae611bccdf2d1b17465971762e9a92c",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26"
+  },
+  {
+    "file": "links/link.go",
+    "sha256": "ddb7b4643e688272c49c471e5efd3a0dfbddd3a170c986a013bdfe1b6cd91d8a",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26"
+  },
+  {
+    "file": "links/link_dummy.go",
+    "sha256": "7b954dfef8505081becd1086752b4c75a798feacdf8b6eb605f597afdd95d039",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26"
+  },
+  {
+    "file": "links/endpoint.go",
+    "sha256": "be0ce17fc81bb89aaa72e46f02130e810d3618dd6c569614ea871f1852f18c23",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26"
+  },
+  {
+    "file": "docs/manual/topo-def-file.md",
+    "sha256": "30a13fcd8c753c5a4bec081410e452bd3fc78c0639c81636684e07386b8589f9",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26"
+  }
+]

@@ -1,0 +1,7 @@
+name: mylab
+topology:
+  nodes:
+    node1:
+      startup-config: cfg/__clabNodeName__.partial.cfg
+    node2:
+      startup-config: cfgs/__clabNodeName__.partial.cfg

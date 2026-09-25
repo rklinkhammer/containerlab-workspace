@@ -1,0 +1,9 @@
+name: srl_lab
+topology:
+  nodes:
+    srl1:
+      kind: nokia_srlinux
+      type: ixr-d3
+      image: ghcr.io/nokia/srlinux
+      # a path to the partial config in CLI format relative to the current working directory
+      startup-config: myconfig.cli

@@ -1,0 +1,9 @@
+name: all-none
+mgmt:
+  skip-when-unused: true
+topology:
+  defaults:
+    network-mode: none
+  nodes:
+    n1:
+    n2:

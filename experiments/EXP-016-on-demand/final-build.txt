@@ -1,0 +1,1 @@
+6ce6f5170a26545e4ab3b1dbdb3cde290a936436bf30a4389ab0b7f2b5505963  /opt/clab-loader/worker

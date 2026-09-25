@@ -1,0 +1,17 @@
+    name: ceos
+
+    topology:
+      nodes:
+        ceos1:
+          kind: arista_ceos
+          image: ceos:4.32.0F
+          binds:
+            - mymapping.json:/mnt/flash/EosIntfMapping.json:ro # (1)!
+        ceos2:
+          kind: arista_ceos
+          image: ceos:4.32.0F
+          binds:
+            - mymapping.json:/mnt/flash/EosIntfMapping.json:ro
+      links:
+        - endpoints: ["ceos1:eth1", "ceos2:eth1"]
+    

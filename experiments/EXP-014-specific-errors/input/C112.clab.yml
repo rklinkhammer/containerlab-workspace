@@ -1,0 +1,5 @@
+name: mylab
+topology:
+  nodes:
+    node1:
+    node2:

@@ -1,0 +1,13 @@
+name: custom-groups
+topology:
+  nodes:
+    node1:
+      # <some node config data>
+      labels:
+        nornir-group: spine
+    node2:
+      # <some node config data>
+      # multiple groups are possible
+      labels:
+        nornir-group: extra_group
+        nornir-group-2: another_extra_group

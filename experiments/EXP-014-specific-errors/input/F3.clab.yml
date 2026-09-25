@@ -1,0 +1,8 @@
+name: missing-input
+topology:
+  nodes:
+    n1:
+      kind: linux
+      image: alpine:3.20
+      binds:
+        - missing-fixture-file:/etc/fixture

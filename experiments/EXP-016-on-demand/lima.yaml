@@ -1,0 +1,33 @@
+minimumLimaVersion: 2.0.0
+vmType: vz
+arch: aarch64
+images:
+  - location: https://cloud-images.ubuntu.com/releases/noble/release-20260705/ubuntu-24.04-server-cloudimg-arm64.img
+    arch: aarch64
+    digest: sha256:7df0201546f75b8bcc1044594c806c35749421ad3c9bc1be2a3ab806cfae39cc
+cpus: 8
+memory: 16GiB
+disk: 50GiB
+mounts: []
+containerd:
+  system: false
+  user: false
+ssh:
+  loadDotSSHPubKeys: false
+  forwardAgent: false
+portForwards:
+  - guestIP: 0.0.0.0
+    guestIPMustBeZero: false
+    guestPortRange: [1, 65535]
+    hostPortRange: [1, 65535]
+    proto: any
+    ignore: true
+provision:
+  - mode: system
+    script: |
+      #!/bin/bash
+      set -eu
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get update
+      apt-get install -y --no-install-recommends curl ca-certificates build-essential libpcap-dev python3 iproute2 bubblewrap
+      systemd-run --unit=clab-test-lease --on-active=2h /usr/bin/systemctl poweroff

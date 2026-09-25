@@ -1,0 +1,19 @@
+name: openwrt
+
+topology:
+  nodes:
+    openwrt:
+      kind: openwrt
+      image: vrnetlab/openwrt_openwrt:24.10.0
+      mgmt-ipv4: 172.20.20.12                             # optional
+      mgmt_ipv6: 2001:172:20:20::12                       # optional
+      ports:
+        - 8080:80                                         # required for LuCI web interface (HTTP); adjust host ports if running multiple nodes or based on your setup
+        - 8443:443                                        # required for LuCI web interface (HTTPS); adjust host ports if running multiple nodes or based on your setup
+      env:
+        USERNAME: root                                    # default: root
+        PASSWORD: mypassword                              # default: VR-netlab9
+        CLAB_MGMT_PASSTHROUGH: "false"                    # default: "false"
+        PACKET_REPOSITORY_DNS_SERVER: 8.8.8.8             # default 8.8.8.8
+        PACKET_REPOSITORY_DOMAINS: "example.com"          # additional repository domains (space-separated); creates a host route via the MGMT interface
+        PACKAGES: "tinc htop tcpdump btop luci-proto-gre" # installed on boot if not already present

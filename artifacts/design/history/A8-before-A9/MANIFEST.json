@@ -1,0 +1,133 @@
+{
+  "snapshot": "A8-before-A9",
+  "utc": "2026-09-25T01:20:43.963893+00:00",
+  "files": [
+    {
+      "archive_name": "P1A_BACKLOG.md",
+      "source_path": "artifacts/design/P1A_BACKLOG.md",
+      "sha256": "781339112c89df33472aadc464d8f16d94dc1145aea46726b073a7be13c891f4",
+      "bytes": 2575
+    },
+    {
+      "archive_name": "ARCHITECTURE.md",
+      "source_path": "artifacts/design/ARCHITECTURE.md",
+      "sha256": "2eafcc546805b1cb3da3fe6460cd57ad3c17253e516ab4768a4f157bfe4b5722",
+      "bytes": 53923
+    },
+    {
+      "archive_name": "CANDIDATE_PROFILE.json",
+      "source_path": "artifacts/design/CANDIDATE_PROFILE.json",
+      "sha256": "1183a54bf3f8c7e4eca1c0ec9cdb860d8a65e19c1d68d1df09cef0f368a09e28",
+      "bytes": 2848
+    },
+    {
+      "archive_name": "READINESS_BRIEF.md",
+      "source_path": "artifacts/design/READINESS_BRIEF.md",
+      "sha256": "b6c61a9b3be888da38d582209a9437ec2e76c38dfd4ac9c7708acce1e65105f5",
+      "bytes": 2322
+    },
+    {
+      "archive_name": "R2_NEXT_BRIEF.md",
+      "source_path": "artifacts/design/R2_NEXT_BRIEF.md",
+      "sha256": "7f3892c6b48fe1b6c7f3d37e34f9186f9ad7e8d05930d03e776331c8db7cab90",
+      "bytes": 514
+    },
+    {
+      "archive_name": "READINESS.md",
+      "source_path": "artifacts/design/READINESS.md",
+      "sha256": "c5dd0fd54e3dab6fba5eccad1506ad5e7638637bc219a674e0bc4fe844a337c5",
+      "bytes": 13958
+    },
+    {
+      "archive_name": "TRACEABILITY.md",
+      "source_path": "artifacts/design/TRACEABILITY.md",
+      "sha256": "66b4b1f35096ba3653223344bcbc05f389fa3f51019e85b7b1bbb6e2145dabf7",
+      "bytes": 15158
+    },
+    {
+      "archive_name": "README.md",
+      "source_path": "artifacts/design/README.md",
+      "sha256": "a01d194778012f24af34f5fe3495cc23674ac011d90e6dabc62b6d678111b738",
+      "bytes": 3067
+    },
+    {
+      "archive_name": "RISK_REDUCTION_BRIEF.md",
+      "source_path": "artifacts/design/RISK_REDUCTION_BRIEF.md",
+      "sha256": "1e719ce4e7754512fae4e188bf006225d96ea9d581094ddba7106a729d0ed195",
+      "bytes": 1040
+    },
+    {
+      "archive_name": "IMPLEMENTATION_BRIEF.md",
+      "source_path": "artifacts/design/IMPLEMENTATION_BRIEF.md",
+      "sha256": "c2c362aaa6e00682acabb8cfdfe24457748e67ecd60e95ecc40cb5f5b28b8ee3",
+      "bytes": 2788
+    },
+    {
+      "archive_name": "TEST_PROFILE.md",
+      "source_path": "artifacts/design/TEST_PROFILE.md",
+      "sha256": "621aa46a8691a051c798b6523b3f5f9af25cd3177b208c0582e09254680d027a",
+      "bytes": 2506
+    },
+    {
+      "archive_name": "IMPLEMENTATION_PLAN.md",
+      "source_path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "sha256": "9c98045a9bf1f5ff12999ad12ef5f522ea70930ebb850bd50e40f50db6d4e70b",
+      "bytes": 26351
+    },
+    {
+      "archive_name": "RUNTIME_QUALIFICATION_PLAN.md",
+      "source_path": "artifacts/design/RUNTIME_QUALIFICATION_PLAN.md",
+      "sha256": "b3acc43a0249b61554bf03e54fff509afec02cf3bd1f0c3da6a5877742c278af",
+      "bytes": 7214
+    },
+    {
+      "archive_name": "COMPLETION.json",
+      "source_path": "artifacts/design/COMPLETION.json",
+      "sha256": "55a6b99a0bdc0ef582cde54fdc4b9a812362a15751803a65c2b7fd5b93a42eea",
+      "bytes": 39154
+    },
+    {
+      "archive_name": "DECISIONS.md",
+      "source_path": "artifacts/design/DECISIONS.md",
+      "sha256": "5ece9d0425d00645d342253f9b69e5d56ed256e82a3457999848ad05b09d69a3",
+      "bytes": 30246
+    },
+    {
+      "archive_name": "TRUSTED_TEST_BRIEF.md",
+      "source_path": "artifacts/design/TRUSTED_TEST_BRIEF.md",
+      "sha256": "72e27c49a682a1abb74e2aced291d7e297cb08bd8b3b8ca7c7f5a4ba0a535b66",
+      "bytes": 900
+    },
+    {
+      "archive_name": "P1A_CONTRACT.md",
+      "source_path": "artifacts/design/P1A_CONTRACT.md",
+      "sha256": "4d01aadae334d8c574c76ba156b2b65752babb020df426651923614f7238e37d",
+      "bytes": 8390
+    },
+    {
+      "archive_name": "IMPLEMENTATION_HANDOFF.md",
+      "source_path": "IMPLEMENTATION_HANDOFF.md",
+      "sha256": "b3df9ac3056701be40d14bf7acbc2fefbc065f686ce1d40a83e8cec3e1301d63",
+      "bytes": 18695
+    },
+    {
+      "archive_name": "WORKSPACE_README.md",
+      "source_path": "README.md",
+      "sha256": "9630b55d66bdc9bd200282a65b5b239d8c7067a539b9bc0c2d85479c6fa2a609",
+      "bytes": 2964
+    },
+    {
+      "archive_name": "IMPLEMENTATION_RESULTS.md",
+      "source_path": "artifacts/implementation/RESULTS.md",
+      "sha256": "1b134af9c65b579160a01896f8ef4dee37cd3bc19d4ec43ec022b8a5f944b944",
+      "bytes": 5567
+    },
+    {
+      "archive_name": "NATIVE_PREVIEW_BRIEF.md",
+      "source_path": ".publication-A9/NATIVE_PREVIEW_BRIEF.md",
+      "sha256": "f70d8066a138b21213f3e5f83af08fd7cd2e055b7125f313102577bf79340687",
+      "bytes": 548
+    }
+  ],
+  "absent_expected_files": []
+}

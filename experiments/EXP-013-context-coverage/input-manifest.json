@@ -1,0 +1,470 @@
+[
+  {
+    "id": "C162",
+    "original_id": "C162",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C162.clab.yml",
+    "sha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b",
+    "file": "C162.clab.yml",
+    "context_kind": "6wind_vsr",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C162",
+    "original_id": "C162",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C162.clab.yml",
+    "sha256": "e8ead1273155724f69751a471552329622b6b40c10e4ed9d91affd287a5fb438",
+    "file": "CTX-C162.clab.yml",
+    "context_kind": "6wind_vsr",
+    "derivative": true
+  },
+  {
+    "id": "C163",
+    "original_id": "C163",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C163.clab.yml",
+    "sha256": "ec6a1d7cbd401ed13ab573d51c801ab2d1bf57ac09b777fceaad80f74abbf728",
+    "file": "C163.clab.yml",
+    "context_kind": "arrcus_arcos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C163",
+    "original_id": "C163",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C163.clab.yml",
+    "sha256": "6222bffad5130d80008b8c1a461dac53415ba0d65d178ff9398a17fd65710dcc",
+    "file": "CTX-C163.clab.yml",
+    "context_kind": "arrcus_arcos",
+    "derivative": true
+  },
+  {
+    "id": "C164",
+    "original_id": "C164",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C164.clab.yml",
+    "sha256": "82e3bef60e00abadd82f300397495f9f01a0133786361487db18b5b5a52b8980",
+    "file": "C164.clab.yml",
+    "context_kind": "bridge",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C164",
+    "original_id": "C164",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C164.clab.yml",
+    "sha256": "250d4a848019a0b1e4a8bb87635bd698b9448bca32971643f4c711da216349f3",
+    "file": "CTX-C164.clab.yml",
+    "context_kind": "bridge",
+    "derivative": true
+  },
+  {
+    "id": "C166",
+    "original_id": "C166",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C166.clab.yml",
+    "sha256": "20142045a38c4c48465797c350291d5d0340d08da11154237670f3fbb1ca1825",
+    "file": "C166.clab.yml",
+    "context_kind": "cisco_c8000",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C166",
+    "original_id": "C166",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C166.clab.yml",
+    "sha256": "1c8efbd4ffc32a1d835c2c05173e0dd7208b3e4163483d7051e7ef98130ecdbb",
+    "file": "CTX-C166.clab.yml",
+    "context_kind": "cisco_c8000",
+    "derivative": true
+  },
+  {
+    "id": "C167",
+    "original_id": "C167",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C167.clab.yml",
+    "sha256": "bb54f84a3a8764f0019e7155cfcf80e6ba200626a4be918ca6d1eea5126903f5",
+    "file": "C167.clab.yml",
+    "context_kind": "cisco_c8000",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C167",
+    "original_id": "C167",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C167.clab.yml",
+    "sha256": "7f94e356d386c259ea16cf97d204c6bb88bd809fe6e5b2cafd0d3974b0c055a3",
+    "file": "CTX-C167.clab.yml",
+    "context_kind": "cisco_c8000",
+    "derivative": true
+  },
+  {
+    "id": "C168",
+    "original_id": "C168",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C168.clab.yml",
+    "sha256": "b2a7978ba2e809ca8a516c31059bf1993d80e394e950c444370c4044f0c81f8a",
+    "file": "C168.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C168",
+    "original_id": "C168",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C168.clab.yml",
+    "sha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591",
+    "file": "CTX-C168.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": true
+  },
+  {
+    "id": "C171",
+    "original_id": "C171",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C171.clab.yml",
+    "sha256": "6bf572cf6eb3b96dcb708b5188de1c71d98f463e47456a62636301a700e209ff",
+    "file": "C171.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C171",
+    "original_id": "C171",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C171.clab.yml",
+    "sha256": "8c1a1878584d738d2d9a66f16a3ffe2ba11d3eb1739dacafd873c94e36568f45",
+    "file": "CTX-C171.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": true
+  },
+  {
+    "id": "C172",
+    "original_id": "C172",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C172.clab.yml",
+    "sha256": "5c804d00fc8d16ad5c71ff139209bcb4524ef6cec656a2671c99f39412b544ee",
+    "file": "C172.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C172",
+    "original_id": "C172",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C172.clab.yml",
+    "sha256": "f8c4fbf0794067beb91e90edff2219b2385e0ae9f699ea31780ff4397a94cc10",
+    "file": "CTX-C172.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": true
+  },
+  {
+    "id": "C173",
+    "original_id": "C173",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C173.clab.yml",
+    "sha256": "f32a735e80ef104a6bc3e44d67b892323ded129eef8605f17d6fec6edf13d812",
+    "file": "C173.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C173",
+    "original_id": "C173",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C173.clab.yml",
+    "sha256": "dd75637d8d512cb79d1a9e729ea88d76684469b53dbc5c8902ba02a5e61bdd29",
+    "file": "CTX-C173.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": true
+  },
+  {
+    "id": "C174",
+    "original_id": "C174",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C174.clab.yml",
+    "sha256": "04821b7d1e09a924a34bf5d415a53e08d3054894abe761c6eabc078d23633f40",
+    "file": "C174.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C174",
+    "original_id": "C174",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C174.clab.yml",
+    "sha256": "5ab513bd7fc66211bbfb9bf8b3f1d413f4cb028da5fc0a965f0a6a6df07a5f15",
+    "file": "CTX-C174.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": true
+  },
+  {
+    "id": "C175",
+    "original_id": "C175",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C175.clab.yml",
+    "sha256": "ec1f418ab25cf54c28fef4dd3d4c8167d80a1b6798f5c5adcca89f54a8b754c8",
+    "file": "C175.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C175",
+    "original_id": "C175",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C175.clab.yml",
+    "sha256": "78788c2ee1f5c2454208df3cdc29aee34dc4661cff6f08db4e0ba816ea7cbdd2",
+    "file": "CTX-C175.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": true
+  },
+  {
+    "id": "C176",
+    "original_id": "C176",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C176.clab.yml",
+    "sha256": "890ce0850fc82987742e6a9791b08444c39ae5dfc1522196e2b0aad0025938f6",
+    "file": "C176.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C176",
+    "original_id": "C176",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C176.clab.yml",
+    "sha256": "26e4315e3c9d81c0d7800048f900c6ed938f7bdef0435a5413e51e5605d1740e",
+    "file": "CTX-C176.clab.yml",
+    "context_kind": "arista_ceos",
+    "derivative": true
+  },
+  {
+    "id": "C201",
+    "original_id": "C201",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C201.clab.yml",
+    "sha256": "6d005204938f1dcc81381e8258a8a1a8ba9e96e41ed6dc3a7b5f0839ba4c526b",
+    "file": "C201.clab.yml",
+    "context_kind": "juniper_crpd",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C201",
+    "original_id": "C201",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C201.clab.yml",
+    "sha256": "ccc0e60e1274637a57b436afbb1ac7570a3934c9ea26bd42bf68de6ed9f0ac20",
+    "file": "CTX-C201.clab.yml",
+    "context_kind": "juniper_crpd",
+    "derivative": true
+  },
+  {
+    "id": "C202",
+    "original_id": "C202",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C202.clab.yml",
+    "sha256": "ac189f02a4aad582465b6131c2bbcbcbae147d93268490c5bceb68c6e01a0e7c",
+    "file": "C202.clab.yml",
+    "context_kind": "juniper_crpd",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C202",
+    "original_id": "C202",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C202.clab.yml",
+    "sha256": "f453d46a328234857a2b8b22c1cd6276b63d3317dbaf98aecc41a5f464bee86a",
+    "file": "CTX-C202.clab.yml",
+    "context_kind": "juniper_crpd",
+    "derivative": true
+  },
+  {
+    "id": "C204",
+    "original_id": "C204",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C204.clab.yml",
+    "sha256": "f5b9368bcef9d217dbd79682caa37de9d4badd9de529ec7f6fb3637232342b0e",
+    "file": "C204.clab.yml",
+    "context_kind": "juniper_csrx",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C204",
+    "original_id": "C204",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C204.clab.yml",
+    "sha256": "9691661a77b472a255dd71040e415e7027e6b07078054e9d705c0964668eab35",
+    "file": "CTX-C204.clab.yml",
+    "context_kind": "juniper_csrx",
+    "derivative": true
+  },
+  {
+    "id": "C205",
+    "original_id": "C205",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C205.clab.yml",
+    "sha256": "b08a47641bb783dc88f50094cc1f3a8aad3f30cb5f077793d9fd6e56a474d973",
+    "file": "C205.clab.yml",
+    "context_kind": "juniper_csrx",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C205",
+    "original_id": "C205",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C205.clab.yml",
+    "sha256": "e5665ea85abffccd5b34b5f6cdabdad5211cd9074c6a6083530095de6e769b61",
+    "file": "CTX-C205.clab.yml",
+    "context_kind": "juniper_csrx",
+    "derivative": true
+  },
+  {
+    "id": "C217",
+    "original_id": "C217",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C217.clab.yml",
+    "sha256": "47f7018bf1ac05ca12892273ae5e9095553fce7891dfb96dcb0f66d7282e18a8",
+    "file": "C217.clab.yml",
+    "context_kind": "linux",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C217",
+    "original_id": "C217",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C217.clab.yml",
+    "sha256": "8d66e84ad7dcd5f666a0aa006579aecc30a1a26700edfbacb3e6393839c02428",
+    "file": "CTX-C217.clab.yml",
+    "context_kind": "linux",
+    "derivative": true
+  },
+  {
+    "id": "C226",
+    "original_id": "C226",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C226.clab.yml",
+    "sha256": "127c53050d76294118eacc79963da184bea5b2352af90b9c3b4915ae9a68e253",
+    "file": "C226.clab.yml",
+    "context_kind": "nokia_srlinux",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C226",
+    "original_id": "C226",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C226.clab.yml",
+    "sha256": "44a96bad5c95043b1c24f52cb5f24af893a61ec36984afd20993de8a967342dd",
+    "file": "CTX-C226.clab.yml",
+    "context_kind": "nokia_srlinux",
+    "derivative": true
+  },
+  {
+    "id": "C227",
+    "original_id": "C227",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C227.clab.yml",
+    "sha256": "4e53641c85986bbd8293a026385679dedb4cf7d214e70594e2ea9e1b239c9b56",
+    "file": "C227.clab.yml",
+    "context_kind": "nokia_srlinux",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C227",
+    "original_id": "C227",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C227.clab.yml",
+    "sha256": "6fbda5f50d827d4047aa4beffa0b81b03142f7689c26adf9a45f7d7bc96483df",
+    "file": "CTX-C227.clab.yml",
+    "context_kind": "nokia_srlinux",
+    "derivative": true
+  },
+  {
+    "id": "C228",
+    "original_id": "C228",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C228.clab.yml",
+    "sha256": "f5e5002f6605b8d189d1593ca9bfac52f986c7eea17df2de8d9b4acb6a3e1dd6",
+    "file": "C228.clab.yml",
+    "context_kind": "nokia_srlinux",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C228",
+    "original_id": "C228",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C228.clab.yml",
+    "sha256": "7b9ccbe62119b13e91c03451995065a0c0b82081d27a1e3f22deeec2f394f3ed",
+    "file": "CTX-C228.clab.yml",
+    "context_kind": "nokia_srlinux",
+    "derivative": true
+  },
+  {
+    "id": "C290",
+    "original_id": "C290",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C290.clab.yml",
+    "sha256": "227a4704fb8318e4198aea24c433048a7cd96b3904848ce6e622a8ba801a1631",
+    "file": "C290.clab.yml",
+    "context_kind": "vyosnetworks_vyos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C290",
+    "original_id": "C290",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C290.clab.yml",
+    "sha256": "4cee91986ae75e7aa2f2d5acb4246ed93dc7354cd98bf06434859b10e12b0ddc",
+    "file": "CTX-C290.clab.yml",
+    "context_kind": "vyosnetworks_vyos",
+    "derivative": true
+  },
+  {
+    "id": "C291",
+    "original_id": "C291",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C291.clab.yml",
+    "sha256": "dced2d748f0defb2da737d6a571cea2dd750b71ff073be30f4cfb28f53e9f71e",
+    "file": "C291.clab.yml",
+    "context_kind": "vyosnetworks_vyos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C291",
+    "original_id": "C291",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C291.clab.yml",
+    "sha256": "f99587006be9ba509cd8ba5b5851aae3cdfdf5bfd69e1143219e11b1b773b181",
+    "file": "CTX-C291.clab.yml",
+    "context_kind": "vyosnetworks_vyos",
+    "derivative": true
+  },
+  {
+    "id": "C292",
+    "original_id": "C292",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C292.clab.yml",
+    "sha256": "eaf0a3ab6bd6b52de8f32ac59d189e2d28a04e0c7f6e73c4e29e0cc15199f575",
+    "file": "C292.clab.yml",
+    "context_kind": "vyosnetworks_vyos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C292",
+    "original_id": "C292",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C292.clab.yml",
+    "sha256": "471a90c3bfc105560cd5c2e0735e968941227f339094a43d104b2bdffd8a67d8",
+    "file": "CTX-C292.clab.yml",
+    "context_kind": "vyosnetworks_vyos",
+    "derivative": true
+  },
+  {
+    "id": "C293",
+    "original_id": "C293",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C293.clab.yml",
+    "sha256": "dfd31a25fe546ab89a47a5347ef365d5248204ada76115aa79b74e273d7544c6",
+    "file": "C293.clab.yml",
+    "context_kind": "vyosnetworks_vyos",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C293",
+    "original_id": "C293",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C293.clab.yml",
+    "sha256": "0725665fa2ae12bb2d9e4ec473fd91cfdc417f8b0a0b85df312914382331715f",
+    "file": "CTX-C293.clab.yml",
+    "context_kind": "vyosnetworks_vyos",
+    "derivative": true
+  },
+  {
+    "id": "C294",
+    "original_id": "C294",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C294.clab.yml",
+    "sha256": "38edd7091d48019109355c22afab01965e32486b408da677f55d885bee75120d",
+    "file": "C294.clab.yml",
+    "context_kind": "cisco_xrd",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C294",
+    "original_id": "C294",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C294.clab.yml",
+    "sha256": "5ef8be91d14b1ea5a9d8fd73a58df735c103ddf6ba99886dcb0ec2c7006f8071",
+    "file": "CTX-C294.clab.yml",
+    "context_kind": "cisco_xrd",
+    "derivative": true
+  },
+  {
+    "id": "C295",
+    "original_id": "C295",
+    "source_path": "/Users/rklinkhammer/workspace/containerlab-investigation/artifacts/corpus/inline/C295.clab.yml",
+    "sha256": "8e02c791d0d0303e000d134d7b0282e6a3e1dd1359858694208f660cdee9a3eb",
+    "file": "C295.clab.yml",
+    "context_kind": "cisco_xrd",
+    "derivative": false
+  },
+  {
+    "id": "CTX-C295",
+    "original_id": "C295",
+    "source_path": "experiments/EXP-010-readiness-static/context/CTX-C295.clab.yml",
+    "sha256": "fe3a5b0e6d678761851b639f19545a660b74050edbcaaee8f36a004dcd51114f",
+    "file": "CTX-C295.clab.yml",
+    "context_kind": "cisco_xrd",
+    "derivative": true
+  }
+]

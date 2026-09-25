@@ -1,0 +1,44 @@
+[
+  {
+    "id": "F1",
+    "expected_file": "F1.expected.json",
+    "expected_sha256": "0fd1251829dc1f5ce03bb05198e6707dd78e08dea52a12803d05598699ebb476",
+    "source_file": "F1.clab.yml",
+    "source_sha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911"
+  },
+  {
+    "id": "F2",
+    "expected_file": "F2.expected.json",
+    "expected_sha256": "659904a5cd291f435e2aba91e6e02e98dea8349b574fb4bc1c6fe7b17fdb93a6",
+    "source_file": "F2.clab.yml",
+    "source_sha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01"
+  },
+  {
+    "id": "F3",
+    "expected_file": "F3.expected.json",
+    "expected_sha256": "990dbfb293e430a90b45ca30779830b62bfd0a0648e6c13a6977b3d3302df5f1",
+    "source_file": "F3.clab.yml",
+    "source_sha256": "225e7850232935fafc7a7f2a42011d9de2c43cff8784deaa9c45f10d6d80fb95"
+  },
+  {
+    "id": "F4",
+    "expected_file": "F4.expected.json",
+    "expected_sha256": "915f001d471c5c13f6aae17b660287b5ebec20bbea21b399b578824f5cc7f38b",
+    "source_file": "F4.clab.yml",
+    "source_sha256": "60e8976995c6ea25921fe80a251a4ba98ad420912a976452c6797d7d4e301c13"
+  },
+  {
+    "id": "F5",
+    "expected_file": "F5.expected.json",
+    "expected_sha256": "dbd893b0323b2cd6fa0d572e4682323fabdcc5d4ed7bbe220131f0e0c0f4eb54",
+    "source_file": "F5.clab.yml",
+    "source_sha256": "41385331a06c6dd1e520c177f91cbafe81e727810fc52c65f9f63fae391dd16d"
+  },
+  {
+    "id": "F6",
+    "expected_file": "F6.expected.json",
+    "expected_sha256": "4fc51566bb3de8ac8a7817bec1a678590b9be343e13006b9e30ab2f3be8aa18e",
+    "source_file": null,
+    "source_sha256": null
+  }
+]

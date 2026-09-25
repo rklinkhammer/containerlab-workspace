@@ -1,0 +1,15 @@
+name: test
+topology:
+  nodes:
+    Cisco8201-1:
+      kind: -{{ kind_code_name }}-
+      image: 8201-32fh-clab:7.9.1
+      image-pull-policy: Never
+                    
+    Cisco8201-2:
+      kind: -{{ kind_code_name }}-
+      image: 8201-32fh-clab:7.9.1
+      image-pull-policy: Never
+
+  links:
+    - endpoints: ["Cisco8201-1:FH0_0_0_0", "Cisco8201-2:FH0_0_0_0"]

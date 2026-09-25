@@ -1,0 +1,6 @@
+name: r1
+topology:
+  nodes:
+    arcos:
+      kind: -{{ kind_code_name }}-
+      startup-config: r1.cfg

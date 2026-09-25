@@ -1,0 +1,18 @@
+name: vyos_lab
+
+topology:
+  kinds:
+    vyosnetworks_vyos:
+      startup-config: vyos-custom-startup.cfg
+  nodes:
+    # vyos1 will boot with vyos-custom-startup.cfg as set in the kind parameters
+    vyos1:
+      kind: vyosnetworks_vyos
+      image: vyos:latest
+    # vyos2 will boot with its own specific startup config, as it overrides the kind variables
+    vyos2:
+      kind: vyosnetworks_vyos
+      image: vyos:latest
+      startup-config: node-specific-startup.cfg
+  links:
+    - endpoints: ["vyos1:eth1", "vyos2:eth1"]

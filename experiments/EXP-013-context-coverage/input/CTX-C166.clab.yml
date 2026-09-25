@@ -1,0 +1,6 @@
+name: c8201
+topology:
+  nodes:
+    c8000:
+      kind: cisco_c8000
+      startup-config: r1.cfg

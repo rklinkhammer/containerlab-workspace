@@ -1,0 +1,13 @@
+# a simple topo of two alpine containers connected with each other
+name: demo
+
+topology:
+  nodes:
+    n1:
+      kind: -{{ kind_code_name }}-
+      image: alpine:latest
+    n2:
+      kind: -{{ kind_code_name }}-
+      image: alpine:latest
+  links:
+    - endpoints: ["n1:eth1","n2:eth1"]

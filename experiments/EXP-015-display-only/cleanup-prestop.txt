@@ -1,0 +1,4 @@
+inactive
+inactive
+inactive
+/tmp/exp015/scratch is not a mountpoint

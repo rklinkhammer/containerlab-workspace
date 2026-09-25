@@ -1,0 +1,641 @@
+{
+  "results": [
+    {
+      "case": "F1-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.032,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F1-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.042,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F2-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F2-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.043,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F3-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F3-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.04,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F4-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F4-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.038,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F5-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.039,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F5-validate-no-socket",
+      "profile": "no-runtime-socket",
+      "exit": 1,
+      "seconds": 0.049,
+      "stderr_bytes": 272
+    },
+    {
+      "case": "F1-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.038,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 5104,
+            "error": false,
+            "links_present": true,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 45,
+            "error": false,
+            "links_present": false,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 45,
+            "error": false,
+            "links_present": false,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "2": {
+            "endpoints": [
+              {
+                "alias": "ethernet-1/1",
+                "display": "ethernet-1/1",
+                "interface": "e1-1",
+                "node": "srl"
+              },
+              {
+                "alias": "",
+                "display": "eth3",
+                "interface": "eth3",
+                "node": "left"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "isolated": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "left": {
+            "fixture_role": "transit",
+            "kind": "linux"
+          },
+          "right": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "srl": {
+            "fixture_role": "default",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F1-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 124
+    },
+    {
+      "case": "F2-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.036,
+      "stderr_bytes": 0,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F2-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.048,
+      "stderr_bytes": 391
+    },
+    {
+      "case": "F3-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.037,
+      "stderr_bytes": 70,
+      "summary": {
+        "stage": "load",
+        "status": "rejected"
+      }
+    },
+    {
+      "case": "F3-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 1,
+      "seconds": 0.038,
+      "stderr_bytes": 212
+    },
+    {
+      "case": "F4-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 1921,
+            "error": false,
+            "links_present": true,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 51,
+            "error": false,
+            "links_present": false,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 51,
+            "error": false,
+            "links_present": false,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n1"
+              },
+              {
+                "alias": "",
+                "display": "fixture_host",
+                "interface": "fixture_host",
+                "node": "host"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "fixture_mgmt",
+                "interface": "fixture_mgmt",
+                "node": "mgmt-net"
+              },
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "n1"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "n1": {
+            "fixture_role": "",
+            "kind": "linux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F4-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 130
+    },
+    {
+      "case": "F5-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.043,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 2846,
+            "error": false,
+            "links_present": true,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 54,
+            "error": false,
+            "links_present": false,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 54,
+            "error": false,
+            "links_present": false,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n1"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "n2"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "n1": {
+            "fixture_role": "",
+            "kind": "linux"
+          },
+          "n2": {
+            "fixture_role": "",
+            "kind": "linux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F5-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 133
+    },
+    {
+      "case": "F1-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.04,
+      "stderr_bytes": 340,
+      "summary": {
+        "exports": {
+          "": {
+            "bytes": 5104,
+            "error": false,
+            "links_present": true,
+            "nodes_present": true,
+            "valid_json": true
+          },
+          "/missing-template": {
+            "bytes": 45,
+            "error": false,
+            "links_present": false,
+            "nodes_present": false,
+            "valid_json": true
+          },
+          "__full": {
+            "bytes": 45,
+            "error": false,
+            "links_present": false,
+            "nodes_present": false,
+            "valid_json": true
+          }
+        },
+        "links": {
+          "0": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth1",
+                "interface": "eth1",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "1": {
+            "endpoints": [
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "left"
+              },
+              {
+                "alias": "",
+                "display": "eth2",
+                "interface": "eth2",
+                "node": "right"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          },
+          "2": {
+            "endpoints": [
+              {
+                "alias": "ethernet-1/1",
+                "display": "ethernet-1/1",
+                "interface": "e1-1",
+                "node": "srl"
+              },
+              {
+                "alias": "",
+                "display": "eth3",
+                "interface": "eth3",
+                "node": "left"
+              }
+            ],
+            "mtu": 9500,
+            "type": "veth"
+          }
+        },
+        "nodes": {
+          "isolated": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "left": {
+            "fixture_role": "transit",
+            "kind": "linux"
+          },
+          "right": {
+            "fixture_role": "default",
+            "kind": "linux"
+          },
+          "srl": {
+            "fixture_role": "default",
+            "kind": "nokia_srlinux"
+          }
+        },
+        "status": "resolved"
+      }
+    },
+    {
+      "case": "F1-validate-stub",
+      "profile": "synthetic-information-stub",
+      "exit": 0,
+      "seconds": 0.041,
+      "stderr_bytes": 124
+    },
+    {
+      "case": "control-isolation",
+      "profile": "no-runtime-socket",
+      "exit": 0,
+      "seconds": 0.032,
+      "stderr_bytes": 0,
+      "output": "{\"uid\": 65534, \"outside_hidden\": true, \"socket_hidden\": true, \"symlink_target_hidden\": true, \"network_denied\": true, \"input_readonly\": true, \"scratch_writable\": true}\n"
+    }
+  ],
+  "stub_routes": [
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    },
+    {
+      "method": "HEAD",
+      "path": "/_ping"
+    },
+    {
+      "method": "GET",
+      "path": "/v1.51/version"
+    }
+  ],
+  "positive_controls": {
+    "outside_visible": true,
+    "same_namespace_network_reachable": true
+  },
+  "cleanup": "scratch unmounted; sentinels closed; no daemon deployed"
+}

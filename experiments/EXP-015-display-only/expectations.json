@@ -1,0 +1,64 @@
+{
+  "basis": "Independent requirements written before native execution; no probe results used",
+  "F1": {
+    "nodes": [
+      "isolated",
+      "left",
+      "right",
+      "srl"
+    ],
+    "links": 3,
+    "srl_interface": "ethernet-1/1"
+  },
+  "CTX-C168": {
+    "nodes": [
+      "ceos1",
+      "ceos2"
+    ],
+    "links": 1,
+    "bind_references": 2
+  },
+  "F3": {
+    "nodes": [
+      "n1"
+    ],
+    "links": 0,
+    "bind_references": 1
+  },
+  "F7": {
+    "nodes": [
+      "n1"
+    ],
+    "links": 1,
+    "endpoint_count": 1
+  },
+  "D1": {
+    "nodes": [
+      "a",
+      "b",
+      "isolated"
+    ],
+    "links": 3,
+    "bind_references": 3,
+    "host_interface": "missing-parent",
+    "startup_config": "https://example.invalid/startup.cfg",
+    "license": "absent.license"
+  },
+  "D2": {
+    "nodes": [
+      "a"
+    ],
+    "links": 1,
+    "unresolved_node": "absent"
+  },
+  "reject_in_both": [
+    "C162",
+    "F2",
+    "C088"
+  ],
+  "all_display": {
+    "deployment": "NOT_RUN",
+    "dependency_state": "unresolved",
+    "provenance": "unresolved"
+  }
+}

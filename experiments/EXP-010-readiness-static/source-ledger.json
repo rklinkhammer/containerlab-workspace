@@ -1,0 +1,218 @@
+[
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "go.mod",
+    "sha256": "0b006d732122ea996786767cf3d0bc584e9cb4b0280f0c07bcdbe49f6313b0e9",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/go.mod",
+    "local": "work/containerlab/go.mod"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "cmd/validate.go",
+    "sha256": "a662d405d165445f7b4b3cfc1f80215f5c9cbc7f2a8e911c5a0d8c954a5be463",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/cmd/validate.go",
+    "local": "work/containerlab/cmd/validate.go"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "cmd/graph.go",
+    "sha256": "8d250e32712205ad2c68cecf9ff0b603c677d22d901a9d3243e4c7e3b41099de",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/cmd/graph.go",
+    "local": "work/containerlab/cmd/graph.go"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "cmd/inspect.go",
+    "sha256": "2369454eb32223f1749fc1724373a138168c2983956c3d84963acdbb7ecf2c2f",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/cmd/inspect.go",
+    "local": "work/containerlab/cmd/inspect.go"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "core/export.go",
+    "sha256": "3e62ec87783ca31485a980203d7aa3a5f4b54c76fb3e9d719cafdc1ea52b43bc",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/export.go",
+    "local": "work/containerlab/core/export.go"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "core/export_templates/auto.tmpl",
+    "sha256": "6f8cd58be4912449afe3892ab8b7d2a1273ea906e2e6fe96530e0216da37735e",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/export_templates/auto.tmpl",
+    "local": "work/containerlab/core/export_templates/auto.tmpl"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "core/export_templates/full.tmpl",
+    "sha256": "f5570dba1cddeb288dff6f4735ee1728d1b6f3a4c224bc4c34609f32541bf756",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/export_templates/full.tmpl",
+    "local": "work/containerlab/core/export_templates/full.tmpl"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "core/file.go",
+    "sha256": "e4b81233d32e0e188246b075331fd2fa60278f4ad19063ecf1dba66ca99373a1",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/file.go",
+    "local": "work/containerlab/core/file.go"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "core/clab.go",
+    "sha256": "6913678dbf34d01b29687294d9f2f1de0ae611bccdf2d1b17465971762e9a92c",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/core/clab.go",
+    "local": "work/containerlab/core/clab.go"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "mkdocs.yml",
+    "sha256": "1149d60a68e19633b4390be957e2ffd8cda85e3389234808af8916c7fbb50cb2",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/mkdocs.yml",
+    "local": "work/containerlab/mkdocs.yml"
+  },
+  {
+    "profile": "native",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "file": "macros/main.py",
+    "sha256": "69abe6414b30bd9d1b4226103fb34f9d2a82a9cc4c015fdb27393214a5dfbcbf",
+    "url": "https://github.com/srl-labs/containerlab/blob/5ae50094a3afd70e4e1674fe5385e64d8979da26/macros/main.py",
+    "local": "work/containerlab/macros/main.py"
+  },
+  {
+    "profile": "api_candidate",
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "file": "go.mod",
+    "sha256": "05b579b15050e26430a09b20f27fcc46c62e2bc273966e9bde27d5993e4b81f4",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/7376ab9fcc0d8aa099102f52e373c8ee6f0869b6/go.mod",
+    "local": "work/clab-api-server/go.mod"
+  },
+  {
+    "profile": "api_candidate",
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "file": "internal/api/routes.go",
+    "sha256": "bddc6f827955c9c30b1fc18f9ccc3bdfba51a84928d4883da9a3408ea23061be",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/7376ab9fcc0d8aa099102f52e373c8ee6f0869b6/internal/api/routes.go",
+    "local": "work/clab-api-server/internal/api/routes.go"
+  },
+  {
+    "profile": "api_candidate",
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "file": "internal/api/middleware.go",
+    "sha256": "6a6b11fcd0bcbd8bd22277f611ac81dd45b33e98ab8e02002ded8656ab9ad324",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/7376ab9fcc0d8aa099102f52e373c8ee6f0869b6/internal/api/middleware.go",
+    "local": "work/clab-api-server/internal/api/middleware.go"
+  },
+  {
+    "profile": "api_candidate",
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "file": "internal/auth/auth.go",
+    "sha256": "fab406f0833bf399a9e74f0cf116c56a788b2bc26867e1ad3ebcb3eec6211b96",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/7376ab9fcc0d8aa099102f52e373c8ee6f0869b6/internal/auth/auth.go",
+    "local": "work/clab-api-server/internal/auth/auth.go"
+  },
+  {
+    "profile": "api_candidate",
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "file": "internal/config/config.go",
+    "sha256": "8f6e54df0f9e17183f5a84d7facbbf5c116c0f2dfcb0fecb34a1e5e6c088b56c",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/7376ab9fcc0d8aa099102f52e373c8ee6f0869b6/internal/config/config.go",
+    "local": "work/clab-api-server/internal/config/config.go"
+  },
+  {
+    "profile": "api_candidate",
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "file": "internal/api/helpers.go",
+    "sha256": "9dd4984fdafac89e4e415d2a48afe87447c61c1bd09fa9a1971f74d9ee55299d",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/7376ab9fcc0d8aa099102f52e373c8ee6f0869b6/internal/api/helpers.go",
+    "local": "work/clab-api-server/internal/api/helpers.go"
+  },
+  {
+    "profile": "api_candidate",
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "file": "internal/api/user_handlers.go",
+    "sha256": "582f18a591c479215a57ee92ac0b8a5194f465a182bed26b19f478382eba3e2f",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/7376ab9fcc0d8aa099102f52e373c8ee6f0869b6/internal/api/user_handlers.go",
+    "local": "work/clab-api-server/internal/api/user_handlers.go"
+  },
+  {
+    "profile": "api_candidate",
+    "commit": "7376ab9fcc0d8aa099102f52e373c8ee6f0869b6",
+    "file": "internal/api/events_handlers.go",
+    "sha256": "dab7f4be32c576185ba9f255e72b607ff81ef45cab93bf85910df455e7bdda33",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/7376ab9fcc0d8aa099102f52e373c8ee6f0869b6/internal/api/events_handlers.go",
+    "local": "work/clab-api-server/internal/api/events_handlers.go"
+  },
+  {
+    "profile": "api_historical",
+    "commit": "bdbd2ecb97033b6ee65d580c968aee7ee90f15ff",
+    "file": "go.mod",
+    "sha256": "41136e64fc2ea70874be36608274134d470f97dc1ff2e78474cdabcd1f581a09",
+    "url": "https://github.com/srl-labs/clab-api-server/blob/bdbd2ecb97033b6ee65d580c968aee7ee90f15ff/go.mod",
+    "local": "work/qualification/api-source/go.mod"
+  },
+  {
+    "profile": "gui",
+    "commit": "31727ea16c915004319cfe70cdec3e1032ad68a9",
+    "file": "package.json",
+    "sha256": "5a838cdaec02af2826b3d1b0a134711f91fced466a3383c6f68e90ff19599396",
+    "url": "https://github.com/srl-labs/containerlab-app/blob/31727ea16c915004319cfe70cdec3e1032ad68a9/package.json",
+    "local": "work/qualification/gui-source/package.json"
+  },
+  {
+    "profile": "gui",
+    "commit": "31727ea16c915004319cfe70cdec3e1032ad68a9",
+    "file": "package-lock.json",
+    "sha256": "1edbec5987b710d98415847b514fdf5f0b9e8805ca9b18c4afe9967a8e3f8cb5",
+    "url": "https://github.com/srl-labs/containerlab-app/blob/31727ea16c915004319cfe70cdec3e1032ad68a9/package-lock.json",
+    "local": "work/qualification/gui-source/package-lock.json"
+  },
+  {
+    "profile": "gui",
+    "commit": "31727ea16c915004319cfe70cdec3e1032ad68a9",
+    "file": "packages/app-server/src/auth.ts",
+    "sha256": "360d234baf6dbb2e8f362df3c95fd75184635f3adc1bb411fc0d8e548cdb4e52",
+    "url": "https://github.com/srl-labs/containerlab-app/blob/31727ea16c915004319cfe70cdec3e1032ad68a9/packages/app-server/src/auth.ts",
+    "local": "work/qualification/gui-source/packages/app-server/src/auth.ts"
+  },
+  {
+    "profile": "gui",
+    "commit": "31727ea16c915004319cfe70cdec3e1032ad68a9",
+    "file": "packages/app-server/src/topologyProxy.ts",
+    "sha256": "91ee59a8e0edb52262076097d34cd7d7380158f587d9cba920d9c3689f23a747",
+    "url": "https://github.com/srl-labs/containerlab-app/blob/31727ea16c915004319cfe70cdec3e1032ad68a9/packages/app-server/src/topologyProxy.ts",
+    "local": "work/qualification/gui-source/packages/app-server/src/topologyProxy.ts"
+  },
+  {
+    "profile": "gui",
+    "commit": "31727ea16c915004319cfe70cdec3e1032ad68a9",
+    "file": "packages/app-server/src/topologySessionManager.ts",
+    "sha256": "9145f708f29bec9ee0dfd286a07ece8e858d56036b980e60abe120565f951aaf",
+    "url": "https://github.com/srl-labs/containerlab-app/blob/31727ea16c915004319cfe70cdec3e1032ad68a9/packages/app-server/src/topologySessionManager.ts",
+    "local": "work/qualification/gui-source/packages/app-server/src/topologySessionManager.ts"
+  },
+  {
+    "profile": "gui",
+    "commit": "31727ea16c915004319cfe70cdec3e1032ad68a9",
+    "file": "packages/standalone-runtime/src/standaloneTopology.ts",
+    "sha256": "ca6710cc7f8102cdfa7bcde5c4a54fd0dbef6c23e4887e3da27dc7152f2b7bd7",
+    "url": "https://github.com/srl-labs/containerlab-app/blob/31727ea16c915004319cfe70cdec3e1032ad68a9/packages/standalone-runtime/src/standaloneTopology.ts",
+    "local": "work/qualification/gui-source/packages/standalone-runtime/src/standaloneTopology.ts"
+  },
+  {
+    "profile": "gui",
+    "commit": "31727ea16c915004319cfe70cdec3e1032ad68a9",
+    "file": "apps/web/vite.config.ts",
+    "sha256": "12d5bdce87ebf9c2c5d5fbe9dc8a380d1b33d3f7c60895f3734a3726868975c6",
+    "url": "https://github.com/srl-labs/containerlab-app/blob/31727ea16c915004319cfe70cdec3e1032ad68a9/apps/web/vite.config.ts",
+    "local": "work/qualification/gui-source/apps/web/vite.config.ts"
+  }
+]

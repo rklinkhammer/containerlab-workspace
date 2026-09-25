@@ -1,0 +1,9 @@
+# example of a topo file that does not define a custom startup-config
+# as a result, the default configuration will be used by this node
+
+name: srl_lab
+topology:
+  nodes:
+    srl1:
+      kind: -{{ kind_code_name }}-
+      type: ixr-d3

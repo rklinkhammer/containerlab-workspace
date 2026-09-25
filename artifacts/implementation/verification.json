@@ -1,0 +1,34 @@
+{
+  "recorded_utc": "2026-09-25T00:15:19.451464+00:00",
+  "baseline_A4_hashes": "61 PASS",
+  "node": "26.8.1",
+  "npm": "11.19.0",
+  "npm_run_verify": {
+    "contract": "13 PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "chromium": "7 PASS"
+  },
+  "browser_followup": "7 PASS with actual connect-src blocking and viewport transform checks",
+  "visual_review": [
+    "desktop 1440px",
+    "narrow 390px"
+  ],
+  "audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "package_clab_ui": "BLOCKED: 401; integrity and interfaces NOT_RUN",
+  "native_runtime": "NOT_RUN",
+  "Q_gates": "unchanged",
+  "S_gates": "synthetic subset only, no complete gate closure",
+  "prior_failures": [
+    "Node unsupported TS parameter property corrected",
+    "CSS type declaration added"
+  ],
+  "browser_install_effect": "Playwright install removed obsolete chromium-1193 from shared cache; no VM/container accessed"
+}

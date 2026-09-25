@@ -1,0 +1,9 @@
+name: bundle-template
+topology:
+  defaults:
+    kind: linux
+    image: alpine:3.20
+  nodes:
+{{ template "nodes" . }}
+  links:
+    - endpoints: ["left:eth1", "right:eth1"]

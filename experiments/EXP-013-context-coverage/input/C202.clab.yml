@@ -1,0 +1,6 @@
+name: crpd_lab
+topology:
+  nodes:
+    crpd:
+      kind: -{{ kind_code_name }}-
+      startup-config: myconfig.conf
