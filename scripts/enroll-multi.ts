@@ -1,0 +1,5 @@
+import{readFileSync,writeFileSync}from'node:fs';import{dirname,join}from'node:path';import{createHash}from'node:crypto';import{execFileSync}from'node:child_process';import{derivePlan}from'../contracts/enrollment.ts';import{enroll,associateMulti}from'../contracts/multi-observation.ts';
+const graphPath=process.env.CLAB_OBSERVATION_GRAPH!,dir=dirname(graphPath),graph=JSON.parse(readFileSync(graphPath,'utf8')),plan=derivePlan(graph),raw=JSON.parse(readFileSync(join(dir,'initial-native.json'),'utf8')),vm=process.env.CLAB_ENROLLMENT_VM!,native=JSON.parse(readFileSync(process.env.CLAB_NATIVE_SESSION!,'utf8'));
+const binding=enroll(raw,plan,createHash('sha256').update(JSON.stringify([vm,plan,raw])).digest('hex'));associateMulti(raw,binding,1);
+const nativeBinarySha256=execFileSync('limactl',['shell',vm,'sha256sum','/usr/local/bin/containerlab'],{encoding:'utf8'}).split(' ')[0];
+writeFileSync(join(dir,'observation-session.json'),JSON.stringify({vm,expiresAt:native.expiresAt,createdFor:'runtime-observation-qualification',profile:'MULTI-ENDPOINT-V2',binding,graph,nativeBinarySha256},null,2)+'\n');

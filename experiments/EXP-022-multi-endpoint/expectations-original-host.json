@@ -1,0 +1,14 @@
+{
+ "profile":"MULTI-ENDPOINT",
+ "nodes":[{"name":"router","kind":"nokia_srlinux"},{"name":"host","kind":"linux"},{"name":"isolated","kind":"linux"}],
+ "links":[
+  {"occurrence":0,"endpoints":[{"position":0,"node":"router","declared":"ethernet-1/1","native":"e1-1","alias":"ethernet-1/1"},{"position":1,"node":"host","declared":"eth1","native":"eth1","alias":""}]},
+  {"occurrence":1,"endpoints":[{"position":0,"node":"router","declared":"ethernet-1/2","native":"e1-2","alias":"ethernet-1/2"},{"position":1,"node":"host","declared":"eth2","native":"eth2","alias":""}]}
+ ],
+ "isolatedEndpointCount":0,
+ "aliasLoss":"ALIAS_UNRESOLVED",
+ "literalMissing":"MISSING_FROM_NATIVE_INVENTORY",
+ "duplicateAlias":"AMBIGUOUS_INTERFACE",
+ "replacement":"ASSOCIATION_CONFLICT",
+ "continuity":"unknown","peer":"unknown"
+}

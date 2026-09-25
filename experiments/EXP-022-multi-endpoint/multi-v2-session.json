@@ -1,0 +1,299 @@
+{
+  "vm": "clab-load-20260925-112640-exp016",
+  "expiresAt": "2026-09-25T12:27:17.683966+00:00",
+  "createdFor": "runtime-observation-qualification",
+  "profile": "MULTI-ENDPOINT-V2",
+  "binding": {
+    "deploymentId": "360d97995c643a623f932ee50af976c4fe07731d2cc86fa9a3b1afdd75788a0b",
+    "sourceSha256": "af0a5dc66b3a332ad9ca04f0d783e6a25ec357a96556ace28a0b2c41f48644d2",
+    "plan": {
+      "version": "enrollment/0.1",
+      "bundleId": "MULTI-ENDPOINT-V2",
+      "bundleSha256": "23496e9869c2b8187f4423ed01209337d5cf09916b34e1bc4109c64579316b34",
+      "sourceSha256": "af0a5dc66b3a332ad9ca04f0d783e6a25ec357a96556ace28a0b2c41f48644d2",
+      "nodes": [
+        {
+          "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n0",
+          "node": "client",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n1",
+          "node": "isolated",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n2",
+          "node": "router",
+          "kind": "nokia_srlinux",
+          "supported": true
+        }
+      ],
+      "links": [
+        {
+          "linkId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l0",
+          "occurrence": 0
+        },
+        {
+          "linkId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l1",
+          "occurrence": 1
+        }
+      ],
+      "endpoints": [
+        {
+          "endpointId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l0:endpoint:0",
+          "linkId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l0",
+          "position": 0,
+          "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n2",
+          "node": "router",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/1",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l0:endpoint:1",
+          "linkId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l0",
+          "position": 1,
+          "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l1:endpoint:0",
+          "linkId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l1",
+          "position": 0,
+          "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n2",
+          "node": "router",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/2",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l1:endpoint:1",
+          "linkId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l1",
+          "position": 1,
+          "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth2",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n0",
+        "node": "client",
+        "id": "534a09bb53acbf2bf061ac9c6f4811474280be945d96b2f583c34075723c3925",
+        "namespace": "92241a59d5e75528a2ad97df1d4d07927276417e34d0684b31f485ac6a690608",
+        "endpoints": [
+          {
+            "endpointId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l0:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 8,
+              "mac": "aa:c1:ab:18:80:7b",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l1:endpoint:1",
+            "item": {
+              "name": "eth2",
+              "alias": "",
+              "index": 10,
+              "mac": "aa:c1:ab:43:50:87",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n1",
+        "node": "isolated",
+        "id": "9580503b58aa0c6160a71fb620ab770b86085ec51331d60023b1a6fa93a6a74e",
+        "namespace": "d1bf45cc0d96442686fdb633a5099b2d889db3756779797756f7c3f781bf0fdb",
+        "endpoints": []
+      },
+      {
+        "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n2",
+        "node": "router",
+        "id": "14c9913c9bb20eba68d62d380c166032ea3d48fcb4e4d2a624459cfd9a66c055",
+        "namespace": "dfe53e91bc4e0f27700965ed6a16468b7dc0f1c0148964f0119c1826acb09bba",
+        "endpoints": [
+          {
+            "endpointId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l0:endpoint:0",
+            "item": {
+              "name": "e1-1",
+              "alias": "ethernet-1/1",
+              "index": 9,
+              "mac": "aa:c1:ab:a0:dc:df",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l1:endpoint:0",
+            "item": {
+              "name": "e1-2",
+              "alias": "ethernet-1/2",
+              "index": 11,
+              "mac": "aa:c1:ab:1b:e5:77",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "graph": {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "MULTI-ENDPOINT-V2",
+      "sourceSha256": "af0a5dc66b3a332ad9ca04f0d783e6a25ec357a96556ace28a0b2c41f48644d2",
+      "outcomeSha256": "2bce24a85e5031bf053f0cc040b4f8818e5d524913ed20a8275f75d15d77ad8e",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "MULTI-ENDPOINT-V2",
+      "bundleSha256": "23496e9869c2b8187f4423ed01209337d5cf09916b34e1bc4109c64579316b34",
+      "entryFile": "MULTI-ENDPOINT-V2.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "b6471a490813d8fa4eba520edd56d6b7",
+      "completedAt": "2026-09-25T11:27:25.795Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n0",
+        "name": "client",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n1",
+        "name": "isolated",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n2",
+        "name": "router",
+        "kind": "nokia_srlinux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n2",
+            "nodeLabel": "router",
+            "interface": "ethernet-1/1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n0",
+            "nodeLabel": "client",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:l1",
+        "occurrence": 1,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n2",
+            "nodeLabel": "router",
+            "interface": "ethernet-1/2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n0",
+            "nodeLabel": "client",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:d0",
+        "ownerId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:d1",
+        "ownerId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:d2",
+        "ownerId": "ad44f5cb300eb3047d3125e1076bf7af91ef3f724064f23eee144276a7a71605:n2",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 3",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  "nativeBinarySha256": "30e841ad0f443ad07f4c1189844f33447d31587b472b9062954bbeb65596b4d5"
+}

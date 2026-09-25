@@ -1,0 +1,67 @@
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test
+
+[WebServer] (node:30204) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 28 tests using 1 worker
+
+(node:30206) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/declared.spec.ts:2:1 › declared missing-bind topology renders with explicit unresolved dependencies (306ms)
+  ✓   2 tests/browser/declared.spec.ts:13:1 › declarations preserve single-ended, dangling, parallel and external occurrences (209ms)
+  ✓   3 tests/browser/declared.spec.ts:24:1 › specific errors and keyboard navigation work at narrow width (197ms)
+  ✓   4 tests/browser/declared.spec.ts:36:1 › declared labels render hostile text without creating HTML or requests (146ms)
+  -   5 tests/browser/interfaces.spec.ts:2:1 › actual endpoint inspector follows native operational down/up without claiming link health
+  ✓   6 tests/browser/interfaces.spec.ts:10:1 › endpoint absence and unresolved replacements retain declared links (transport mock) (377ms)
+  ✓   7 tests/browser/link-state.spec.ts:2:1 › administrative, carrier and operational facts render independently with provenance (transport mock) (319ms)
+  ✘   8 tests/browser/multi.spec.ts:2:1 › actual multiple endpoint occurrences, parallel selection and disconnected state (30.0s)
+(node:30457) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -   9 tests/browser/observation.spec.ts:4:1 › actual runtime inspection retains declaration selection across stop and recovery
+  ✓  10 tests/browser/observation.spec.ts:22:1 › polling, failure, stale data, cancellation and recovery (transport control) (19.9s)
+  ✓  11 tests/browser/observation.spec.ts:32:1 › observation routes expose no mutation and reject foreign browser origin (22ms)
+  -  12 tests/browser/on-demand.spec.ts:2:1 › on-demand view clearly reports an unavailable worker without a session
+  ✓  13 tests/browser/on-demand.spec.ts:7:1 › actual native load renders declarations and live bundle provenance (770ms)
+  ✓  14 tests/browser/on-demand.spec.ts:17:1 › actual native schema and missing-template errors remain specific (619ms)
+  ✓  15 tests/browser/on-demand.spec.ts:23:1 › local API rejects arbitrary bundle/path payloads and cross-origin execution (4ms)
+  ✓  16 tests/browser/on-demand.spec.ts:30:1 › UI cancellation discards stale responses (transport mock) (294ms)
+  ✓  17 tests/browser/on-demand.spec.ts:37:1 › expanded approved cases expose native objects and scoped dependency evidence (3.2s)
+  ✓  18 tests/browser/preview.spec.ts:2:1 › F1 graph, parallel occurrences and keyboard-accessible inspectors (300ms)
+  ✓  19 tests/browser/preview.spec.ts:16:1 › special endpoints preserve roles; duplicate occurrences remain rejected (268ms)
+  ✓  20 tests/browser/preview.spec.ts:21:1 › rejection and missing-input views never fabricate graph nodes (203ms)
+  ✓  21 tests/browser/preview.spec.ts:25:1 › hostile display text stays inert; CSP blocks inline scripts and network (210ms)
+  ✓  22 tests/browser/preview.spec.ts:36:1 › bounded long text has explicit truncation; over-limit graph rejected (225ms)
+  ✓  23 tests/browser/preview.spec.ts:41:1 › loopback static server denies mutation, source files and traversal (5ms)
+  ✓  24 tests/browser/preview.spec.ts:45:1 › narrow viewport exposes object list and inspector without page overflow (226ms)
+  ✓  25 tests/browser/preview.spec.ts:51:1 › recorded native single-ended link has no fabricated peer and keyboard inspector (249ms)
+  ✓  26 tests/browser/preview.spec.ts:59:1 › native preview preserves parallel links, aliases, source roles and rejected inputs (214ms)
+  ✓  27 tests/browser/preview.spec.ts:67:1 › recorded native evidence remains readable at narrow width (232ms)
+  -  28 tests/browser/profile.spec.ts:2:1 › actual SR Linux profile preserves declared alias and native name in inspectors
+
+
+  1) tests/browser/multi.spec.ts:2:1 › actual multiple endpoint occurrences, parallel selection and disconnected state 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Link 1 · veth' })
+
+
+      3 |  test.skip(!process.env.CLAB_OBSERVATION_SESSION,'Explicit fresh trial required');const s=JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_SESSION!,'utf8'));test.skip(s.profile!=='MULTI-ENDPOINT','Multi endpoint profile only');
+      4 |  await page.goto('/');await page.getByRole('button',{name:'Runtime observations',exact:true}).click();const refresh=page.getByRole('button',{name:'Refresh runtime',exact:true}),inspector=page.getByRole('region',{name:'Observed endpoints'});await refresh.click();await expect(page.getByRole('region',{name:'Runtime snapshot'})).toContainText('observation/0.5');await expect(inspector).toContainText('router:ethernet-1/1');await expect(inspector).toContainText('router:ethernet-1/2');
+    > 5 |  await page.getByRole('button',{name:'Link 1 · veth',exact:false}).click();await expect(inspector).toContainText('host:eth1');await expect(inspector).not.toContainText('host:eth2');await expect(inspector).toContainText('e1-1');await expect(inspector).toContainText('Endpoint occurrence');
+        |                                                                    ^
+      6 |  const second=page.getByRole('button',{name:'Link 2 · veth',exact:false});await second.focus();await page.keyboard.press('Enter');await expect(inspector).toContainText('host:eth2');await expect(inspector).not.toContainText('host:eth1');await expect(inspector).toContainText('e1-2');await page.waitForTimeout(1100);await refresh.click();await expect(second).toHaveAttribute('aria-pressed','true');
+      7 |  await page.getByRole('button',{name:'isolated linux',exact:true}).click();await expect(inspector).toContainText('Container isolated: running');await expect(inspector).toContainText('No declared data-plane endpoints.');await expect(inspector).not.toContainText('MATCHED_ENROLLED_ATTRIBUTES');await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();await page.screenshot({path:'test-results/multi-live.png',fullPage:true});
+      8 | });
+        at /Users/rklinkhammer/workspace/containerlab-workspace/tests/browser/multi.spec.ts:5:68
+
+    Error Context: test-results/multi-actual-multiple-endp-a036e-tion-and-disconnected-state/error-context.md
+
+  1 failed
+    tests/browser/multi.spec.ts:2:1 › actual multiple endpoint occurrences, parallel selection and disconnected state 
+  4 skipped
+  23 passed (59.9s)

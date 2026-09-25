@@ -5,7 +5,7 @@ PROFILE='RUNTIME-PAIR'
 try:
  PROFILE=open('/opt/clab-observation-profile').read().strip()
 except FileNotFoundError:pass
-if PROFILE not in ['RUNTIME-PAIR','SRL-PAIR']:raise ValueError('INVALID_PROFILE')
+if PROFILE not in ['RUNTIME-PAIR','SRL-PAIR','MULTI-ENDPOINT-V2']:raise ValueError('INVALID_PROFILE')
 def expected_kind(node):return 'nokia_srlinux' if PROFILE=='SRL-PAIR' and node=='left' else 'linux'
 def declared(node):return 'ethernet-1/1' if PROFILE=='SRL-PAIR' and node=='left' else 'eth1'
 class Reader:

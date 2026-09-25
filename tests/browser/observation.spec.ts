@@ -3,7 +3,7 @@ import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 test('actual runtime inspection retains declaration selection across stop and recovery',async({page})=>{
  test.skip(!process.env.CLAB_OBSERVATION_SESSION,'Explicit fresh deployed trial required');
- const s=JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_SESSION!,'utf8'));test.skip(s.profile==='SRL-PAIR','SRL has separate profile qualification');
+ const s=JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_SESSION!,'utf8'));test.skip(s.profile&&s.profile!=='RUNTIME-PAIR','Other profiles have separate qualification');
  const left=s.binding.nodes.find((n:any)=>n.node==='left').id;
  const guest=(...args:string[])=>execFileSync('limactl',['shell',s.vm,'sudo',...args],{timeout:20000,stdio:'pipe'});
  await page.goto('/');await page.getByRole('button',{name:'Runtime observations',exact:true}).click();

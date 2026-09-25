@@ -5,7 +5,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1];os.chdir(ROOT);R=pathlib.Path(o
 def run(args,**kw):return subprocess.run(args,check=True,**kw)
 def guest(vm,*args):return run(['limactl','shell',vm,*args])
 def setup():
- profile=os.environ.get('CLAB_OBSERVATION_PROFILE','RUNTIME-PAIR');assert profile in ['RUNTIME-PAIR','SRL-PAIR']
+ profile=os.environ.get('CLAB_OBSERVATION_PROFILE','RUNTIME-PAIR');assert profile in ['RUNTIME-PAIR','SRL-PAIR','MULTI-ENDPOINT-V2']
  s=json.loads(N.read_text());vm=s['vm'];assert s['createdFor']=='approved-bundle-qualification'
  guest(vm,'sudo','apt-get','install','-y','docker.io')
  guest(vm,'sudo','systemctl','start','docker')
@@ -25,8 +25,20 @@ def setup():
  guest(vm,'sudo','install','-m','644','/tmp/runtime.clab.yml','/opt/observation-slice/topology.clab.yml')
  env={**os.environ,'CLAB_OBSERVATION_PROFILE':profile,'CLAB_NATIVE_SESSION':str(N),'CLAB_OBSERVATION_GRAPH':str(R/'observation-graph.json')}
  run(['node','--input-type=module','-e',"import {load} from './backend/native-loader.ts';import{writeFileSync}from'node:fs';import{randomBytes}from'node:crypto';const g=await load(process.env.CLAB_OBSERVATION_PROFILE,randomBytes(16).toString('hex'));if(g.status!=='declarations_only')throw Error('DECLARATION_REJECTED');writeFileSync(process.env.CLAB_OBSERVATION_GRAPH,JSON.stringify(g));"],env=env)
- guest(vm,'sudo','containerlab','deploy','--topo','/opt/observation-slice/topology.clab.yml')
- raw=json.loads(subprocess.check_output(['limactl','shell',vm,'sudo','python3','/opt/clab-observer.py'],text=True));assert raw['ok'] and len(raw['rows'])==2
+ if profile=='MULTI-ENDPOINT-V2':
+  run(['node','--input-type=module','-e',"import{readFileSync,writeFileSync}from'node:fs';import{derivePlan}from'./contracts/enrollment.ts';writeFileSync(process.env.CLAB_OBSERVATION_GRAPH+'.plan',JSON.stringify(derivePlan(JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_GRAPH,'utf8')))));"],env=env)
+  run(['limactl','copy',str(R/'observation-graph.json.plan'),vm+':/tmp/plan.json'])
+  guest(vm,'sudo','install','-m','644','/tmp/plan.json','/opt/clab-observation-plan.json')
+  guest(vm,'sudo','cp','/opt/clab-observer.py','/opt/clab-observer-legacy.py')
+  run(['limactl','copy','native/observer/multi.py',vm+':/tmp/multi.py'])
+  guest(vm,'sudo','install','-m','755','/tmp/multi.py','/opt/clab-observer.py')
+ guest(vm,'sudo','containerlab','deploy' ,'--topo','/opt/observation-slice/topology.clab.yml')
+ raw=json.loads(subprocess.check_output(['limactl','shell',vm,'sudo','python3','/opt/clab-observer.py'],text=True));assert raw['ok']
+ if profile=='MULTI-ENDPOINT-V2':
+  (R/'initial-native.json').write_text(json.dumps(raw))
+  env['CLAB_ENROLLMENT_VM']=vm
+  run(['node','scripts/enroll-multi.ts'],env=env)
+  return
  assert all(r['interfaces']['status']=='complete' and len(r['interfaces']['items'])==1 for r in raw['rows']), 'Required native endpoint enrollment unavailable'
  nodes=sorted([{'node':r['node'],'id':r['id'],'endpoint':r['interfaces']} for r in raw['rows']],key=lambda x:x['node']);assert [n['node'] for n in nodes]==['left','right'] and len({n['id'] for n in nodes})==2
  graph=json.loads((R/'observation-graph.json').read_text());binding={'nodes':nodes,'sourceSha256':graph['provenance']['sourceSha256'],'deploymentId':hashlib.sha256(json.dumps([vm,profile,nodes,graph['provenance']['sourceSha256']],sort_keys=True).encode()).hexdigest()}
@@ -36,9 +48,11 @@ def stop():
  if not N.exists() or not P.exists():raise SystemExit('No owned observation session; no VM accessed')
  s=json.loads(N.read_text());vm=s['vm'];o=json.loads(P.read_text());assert s['createdFor']=='approved-bundle-qualification' and o['createdFor']=='runtime-observation-qualification' and o['vm']==vm
  # Only this explicitly-created session and fixed task lab are affected.
- guest(vm,'sudo','containerlab','destroy','--topo','/opt/observation-slice/topology.clab.yml','--cleanup')
- P.unlink(missing_ok=True);(R/'observation-graph.json').unlink(missing_ok=True)
- run(['python3','scripts/native-session.py','stop'])
+ try:
+  guest(vm,'sudo','containerlab','destroy','--topo','/opt/observation-slice/topology.clab.yml','--cleanup')
+ finally:
+  run(['python3','scripts/native-session.py','stop'])
+  P.unlink(missing_ok=True);(R/'observation-graph.json').unlink(missing_ok=True)
 if __name__=='__main__':
  if sys.argv[1:]==['create']:
   if P.exists():raise SystemExit('Existing observation manifest; refusing reuse')

@@ -1,0 +1,191 @@
+Continue from architecture A16 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Treat ../containerlab-investigation as read-only evidence.
+Preserve the sibling-directory arrangement, historical evidence
+and unrelated changes. Do not access, start, stop or modify
+pre-existing Lima VMs.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, README.md and:
+- artifacts/implementation/A16/RESULTS.md
+- artifacts/design/OBSERVATION_CONTRACT.md
+- The current architecture, decisions, readiness, backlog,
+  implementation plan and traceability.
+- experiments/EXP-021-srl-profile/PLAN.md
+- experiments/EXP-021-srl-profile/RESULTS.md
+- The implemented enrollment, observer, contracts and GUI.
+
+Inspect Git status and preserve staged and uncommitted work.
+Verify artifacts/design/COMPLETION.json before relying on the baseline.
+
+Implement the next bounded slice: native-derived enrollment and
+observation for multiple declared endpoint occurrences in explicitly
+approved fixture bundles.
+
+Purpose:
+Remove the current two-node/one-link limitation while retaining the
+qualified Linux and SR Linux association rules. Validate our application's
+integration, not Containerlab generally or universal corpus fidelity.
+
+1. Define the bounded enrollment contract first.
+   Specify independent expectations and explicit limits for nodes,
+   links, endpoint occurrences, interfaces and observation payloads.
+
+   Derive enrollment candidates from the accepted native-derived
+   declaration graph. Preserve source/bundle identity, declared node
+   identity, link occurrence identity and each endpoint's identity.
+
+   Keep declared endpoint occurrences distinct from observed interfaces.
+   Do not assume a node has only one interface or that every declared
+   endpoint can be associated with a runtime interface.
+
+   Define outcomes for:
+   - Parallel links between the same nodes.
+   - Multiple interfaces on one node.
+   - Disconnected nodes with no declared data-plane endpoints.
+   - Missing or ambiguous interface evidence.
+   - Unsupported kinds or endpoint roles.
+   - Partial enrollment and partial inspection failure.
+
+   Unsupported declarations must remain visible with explicit reasons;
+   never omit them or invent runtime peers.
+
+2. Preserve native authority.
+   Use native Containerlab getters, types and inspection evidence.
+   Do not parse topology semantics independently, calculate aliases,
+   recreate defaults/inheritance or infer runtime identity from labels
+   or display names alone.
+
+   Retain the qualified Linux literal-name and SR Linux native-alias
+   association rules. Limit runtime support to those qualified profiles;
+   do not generalize them to arbitrary kinds or special endpoints.
+
+   Bind observations to the explicitly enrolled deployment, source
+   revision, full container IDs and qualified namespace/interface
+   attributes. Replacements must not be adopted automatically.
+
+   A15 demonstrated exact name/MAC/index reuse. Continuity and qualified
+   peer identity remain unknown; matching attributes do not authorize
+   capture or mutation.
+
+3. Implement the smallest cohesive extension.
+   Replace fixed left/right and single-endpoint assumptions with bounded
+   collections and stable occurrence references where needed.
+
+   Prefer explicit reviewed profile policy and simple modules over a
+   plugin framework, discovery service, database or new daemon.
+
+   Version the contract deliberately. Preserve historical DTOs/evidence
+   and regression support for RUNTIME-PAIR and SRL-PAIR. Document any
+   session compatibility changes and require fresh enrollment where
+   necessary.
+
+   Fetch each enrolled node's native interface inventory once per
+   collection where practical, then associate its declared endpoints.
+   Do not multiply subprocess calls unnecessarily per endpoint.
+
+   Keep container state, native operational state, Linux supplemental
+   flags, association status and declaration data separate. Missing
+   SR Linux alias evidence must remain unresolved/unavailable rather
+   than being called proven interface deletion.
+
+4. Add one small independent acceptance fixture.
+   Create an approved synthetic bundle using only the already qualified
+   Linux and SR Linux kinds and immutable image pins.
+
+   Use the smallest topology that demonstrates:
+   - At least two distinct links between the same pair of nodes.
+   - Multiple declared interfaces on a node.
+   - One disconnected node.
+   - Both native literal-name and native-alias association.
+
+   Write expected nodes, link occurrences, endpoint identities,
+   declared names, native names/aliases and failure outcomes before
+   execution. Preserve original fixture bytes and hashes.
+   Do not deploy external corpus examples.
+
+5. Integrate the GUI.
+   Show observations for the selected declared node or link, with
+   explicit endpoint occurrence references and association provenance.
+   Parallel links must not overwrite or conflate one another.
+
+   A disconnected node must display its container observation without
+   invented data-plane endpoints. Partial failures must preserve valid
+   observations and all declarations.
+
+   Show timestamps, freshness, limits and specific safe reasons for
+   absent, unavailable, unresolved or unsupported observations.
+   Preserve selection/navigation across refresh.
+
+   Retain bounded polling, cancellation, non-overlap and rejection of
+   superseded responses. No GUI enrollment, deployment or mutation
+   controls are authorized.
+
+6. Qualify in fresh dedicated resources.
+   This task authorizes application changes and new dedicated VMs
+   deploying only the approved synthetic qualification fixtures.
+
+   Use separate task session directories. Never reuse an existing or
+   stopped trial. Ordinary builds/tests must not create VMs automatically.
+
+   Exercise:
+   - Initial multi-node/multi-endpoint enrollment and observation.
+   - Independent state changes on parallel links.
+   - Disconnected-node observation.
+   - Alias loss, missing interfaces and ambiguous associations.
+   - One-node inspection failure without losing other nodes' evidence.
+   - Node/interface replacement and outdated enrollment.
+   - Cancellation, stale data, output/time limits and maximum-size
+     contract rejection.
+
+   Perform mutations only through explicit qualification actions using
+   supported native/runtime tools. Preserve failed attempts and label
+   mocks separately from actual runtime evidence.
+
+   Run appropriate contract, integration and browser regressions for
+   the new fixture and both existing profiles. Use separate fresh trials
+   where destructive tests invalidate enrollment; never silently repair
+   or re-enroll replacements.
+
+7. Retain boundaries and publish evidence.
+   No privileged runtime socket may reach the browser or declaration
+   worker. Accept no browser-selected commands, VM names, daemon
+   addresses, paths or arbitrary targets.
+
+   Retain strict disclosure allowlists, safe rendering, finite
+   diagnostics and bounded execution/output/concurrency. Review the
+   total collection budget for the larger fixture rather than silently
+   increasing it. Document any justified limit change and test it.
+
+   Do not disclose raw configuration, credentials, private paths or
+   unrestricted native stderr. TT-01 remains active: login and multi-user
+   authorization remain out of scope.
+
+   Use port 4173; do not terminate unrelated listeners.
+   Destroy only task-created labs, collect cleanup evidence and stop
+   every new VM, including after failed qualification.
+
+   Update architecture decisions, contracts, implementation status,
+   traceability and handoff. Follow D-15 archival/publication rules and
+   verify the final completion manifest.
+
+   Keep historical Q-gate outcomes and the 177-case corpus denominator
+   unchanged unless new evidence satisfies their actual criteria.
+
+Do not implement arbitrary uploads, persistent private-source storage,
+general runtime discovery, new native kinds, terminals, capture,
+packet analysis or a traffic-testing framework. Do not claim peer
+identity, continuous interface identity or forwarding correctness.
+
+Complete the authorized slice rather than stopping at scaffolding.
+If a prerequisite is blocked, finish independent work and record
+precise limitations without weakening acceptance expectations.
+
+Finish with:
+- The new enrollment/observation contract and its explicit limits.
+- What the multi-endpoint fixture now displays and associates correctly.
+- How parallel links, disconnected nodes and partial failures behave.
+- Actual verification results, preserved failures and unrun checks.
+- Reproducible setup, preview, qualification and cleanup commands.
+- Confirmation that task labs are removed and all new VMs are stopped.
+- Remaining limitations and the smallest next gated implementation step.

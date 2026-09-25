@@ -1,0 +1,60 @@
+[
+  {
+    "test": "two endpoints use one native and one OS inventory",
+    "status": "PASS",
+    "kind": "mock"
+  },
+  {
+    "test": "duplicate",
+    "status": "PASS",
+    "kind": "mock"
+  },
+  {
+    "test": "oversize",
+    "status": "PASS",
+    "kind": "mock"
+  },
+  {
+    "test": "malformed",
+    "status": "PASS",
+    "kind": "mock"
+  },
+  {
+    "test": "alias-missing",
+    "status": "PASS",
+    "kind": "mock"
+  },
+  {
+    "test": "failed node and disconnected skip",
+    "status": "PASS",
+    "kind": "mock"
+  },
+  {
+    "test": "malformed",
+    "status": "PASS",
+    "kind": "substituted child process",
+    "seconds": 0.01,
+    "childrenReaped": true
+  },
+  {
+    "test": "output",
+    "status": "PASS",
+    "kind": "substituted child process",
+    "seconds": 0.01,
+    "childrenReaped": true
+  },
+  {
+    "test": "exit",
+    "status": "PASS",
+    "kind": "substituted child process",
+    "seconds": 0.01,
+    "childrenReaped": true
+  },
+  {
+    "test": "timeout",
+    "status": "PASS",
+    "kind": "substituted child process",
+    "seconds": 6.04,
+    "childrenReaped": true
+  }
+]

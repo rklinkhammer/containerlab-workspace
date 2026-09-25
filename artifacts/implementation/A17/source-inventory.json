@@ -1,0 +1,93 @@
+{
+  "revision": "A17",
+  "files": [
+    {
+      "path": "apps/web/src/declared.tsx",
+      "sha256": "34b2a55e56a1237a1a4e41344dc42bc2191f313a360b40d7d68bd77aab0358e2"
+    },
+    {
+      "path": "apps/web/src/observation.tsx",
+      "sha256": "89965b3852fb0dffe5a69aa197b8e08b7f635e0bd602ab9cff598f3a631ba209"
+    },
+    {
+      "path": "backend/observation.ts",
+      "sha256": "1eedb31124393c4b4b8d7b4a72ba2c907e539c56fba8b202a6fed84c11d3df84"
+    },
+    {
+      "path": "contracts/enrollment.ts",
+      "sha256": "519ec21e8ce13b5f234a57185e2c6da80bade96b82da383f520b7e85128b3077"
+    },
+    {
+      "path": "contracts/multi-observation.ts",
+      "sha256": "d2cdfe9e547f7ff7be12ce564e3da4fb50b8ce96f10587697ace4d8e6ff684d8"
+    },
+    {
+      "path": "contracts/observation.ts",
+      "sha256": "97fff6b8cdf9eca68a8cfb42ee2233df1e76a69a54d059327a5e48d9634686af"
+    },
+    {
+      "path": "fixtures/bundles/MULTI-ENDPOINT-V2/MULTI-ENDPOINT-V2.clab.yml",
+      "sha256": "af0a5dc66b3a332ad9ca04f0d783e6a25ec357a96556ace28a0b2c41f48644d2"
+    },
+    {
+      "path": "fixtures/bundles/MULTI-ENDPOINT/MULTI-ENDPOINT.clab.yml",
+      "sha256": "4d48983096d0cf8417adf72c519ca71e3301f81c7dd2188dc06dbede0c7ded12"
+    },
+    {
+      "path": "fixtures/bundles/catalog.json",
+      "sha256": "f2b723f47471a612f4de40a3c4fe2527446683e39fac466843e38e57374b5456"
+    },
+    {
+      "path": "native/observer/inspect.py",
+      "sha256": "d867bbcd1aa5090f46e2883424926712a83e41bed9c13e11be0ee345417bb987"
+    },
+    {
+      "path": "native/observer/multi.py",
+      "sha256": "7df662d7bfa5fbdd7ab4939529a037d1e852c338ed413148de79212eb4d63d26"
+    },
+    {
+      "path": "package.json",
+      "sha256": "00aa02bc8a842bbf927e402a4f58df920fd987cd359ff9335af976ac5f61f55e"
+    },
+    {
+      "path": "scripts/enroll-multi.ts",
+      "sha256": "42aed028e14dea5362052042394f73bb4942b8f3be9704ff8e96565a82e2a396"
+    },
+    {
+      "path": "scripts/observation-session.py",
+      "sha256": "254ca9689fbb68a6d03a34faf3d69bcbce733d2541cb5630b99d7c53f9385725"
+    },
+    {
+      "path": "tests/browser/interfaces.spec.ts",
+      "sha256": "f37359e54e15a65c4fe8763bc1fc00adc58421a6f91915860cbdd2bfb8a6922a"
+    },
+    {
+      "path": "tests/browser/multi.spec.ts",
+      "sha256": "f02aaf8e2aebcb7af9ce829b81f6c7a1917bef59be20193af1914e349e710038"
+    },
+    {
+      "path": "tests/browser/observation.spec.ts",
+      "sha256": "c693db06d360c926e98df139b750b2d95f61ff71aff77d10747ae4a58c42cc66"
+    },
+    {
+      "path": "tests/helpers/multi.ts",
+      "sha256": "d473061966baf24618c03ec2dc0bbe506bec1cc0bcdb1c1ecfac3520754622ef"
+    },
+    {
+      "path": "tests/integration/multi.test.ts",
+      "sha256": "5031a313abda7228bc086aa9a88ac202dc207d1e6ab7c6c57ccd6fcbab0fab86"
+    },
+    {
+      "path": "tests/integration/multi_faults.py",
+      "sha256": "77643a62a5ab69c8bacffef40f0a11877a5aa5d05179b36add9e8010ae5c90c5"
+    },
+    {
+      "path": "tests/integration/profile.test.ts",
+      "sha256": "d4fcaf1624cedaeab0787903ab41640328e1d3698a653b9489f00d540a05914f"
+    },
+    {
+      "path": "tests/multi.test.ts",
+      "sha256": "3e7f6197930ce9477c1d7cb0b8e0e6034f3afbc1fd42bc35ca44e27a5f63b880"
+    }
+  ]
+}

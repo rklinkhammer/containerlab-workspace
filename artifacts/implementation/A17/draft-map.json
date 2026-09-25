@@ -1,0 +1,42 @@
+[
+  {
+    "path": "artifacts/design/ARCHITECTURE.md",
+    "staged": "000-ARCHITECTURE.md"
+  },
+  {
+    "path": "artifacts/design/READINESS.md",
+    "staged": "001-READINESS.md"
+  },
+  {
+    "path": "artifacts/design/P1A_BACKLOG.md",
+    "staged": "002-P1A_BACKLOG.md"
+  },
+  {
+    "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+    "staged": "003-IMPLEMENTATION_PLAN.md"
+  },
+  {
+    "path": "artifacts/design/TRACEABILITY.md",
+    "staged": "004-TRACEABILITY.md"
+  },
+  {
+    "path": "artifacts/design/README.md",
+    "staged": "005-README.md"
+  },
+  {
+    "path": "artifacts/design/OBSERVATION_CONTRACT.md",
+    "staged": "006-OBSERVATION_CONTRACT.md"
+  },
+  {
+    "path": "artifacts/design/DECISIONS.md",
+    "staged": "007-DECISIONS.md"
+  },
+  {
+    "path": "IMPLEMENTATION_HANDOFF.md",
+    "staged": "008-IMPLEMENTATION_HANDOFF.md"
+  },
+  {
+    "path": "README.md",
+    "staged": "009-README.md"
+  }
+]

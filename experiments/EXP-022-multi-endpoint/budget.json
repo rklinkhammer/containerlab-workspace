@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "elapsedMs": 167.95,
+  "nativeAndLinuxCommandCount": 6,
+  "combinedSubprocessBytes": 18065,
+  "projectedBytes": 2393,
+  "nodes": 3,
+  "endpointOccurrences": 4,
+  "limits": {
+    "ms": 6000,
+    "bytes": 262144
+  }
+}

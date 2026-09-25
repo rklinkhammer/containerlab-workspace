@@ -1,0 +1,18 @@
+07:34:10 INFO Parsing & checking topology file=topology.clab.yml
+07:34:10 WARN Deprecation notice
+  notice=
+  │ You are using a deprecated SR Linux node type name. Consider using a new format with dashes. Example: ixr-d2l, ixr-h5-64d, etc.
+  │ Deprecated type format will be removed after January 2026
+ deprecated type=ixrd2
+07:34:10 INFO Parsing & checking topology file=topology.clab.yml
+07:34:10 WARN Deprecation notice
+  notice=
+  │ You are using a deprecated SR Linux node type name. Consider using a new format with dashes. Example: ixr-d2l, ixr-h5-64d, etc.
+  │ Deprecated type format will be removed after January 2026
+ deprecated type=ixrd2
+07:34:10 INFO Destroying lab name=observation-slice
+07:34:10 INFO Removed container name=clab-observation-slice-isolated
+07:34:10 INFO Removed container name=clab-observation-slice-client
+07:34:10 INFO Removed container name=clab-observation-slice-router
+07:34:10 INFO Removing host entries path=/etc/hosts
+07:34:10 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-observation-slice.conf

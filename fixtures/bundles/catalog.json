@@ -429,5 +429,31 @@
     "source": "independent authored EXP-021 SR Linux alias fixture",
     "context": "One SR Linux ixrd2 and one Linux node; native interface alias, no hooks or companion files",
     "bundleSha256": "96819bb3952429e6217d493a3d478a4c00743f80fbbf7328d3659068c174664c"
+  },
+  {
+    "id": "MULTI-ENDPOINT",
+    "entry": "MULTI-ENDPOINT.clab.yml",
+    "files": [
+      {
+        "path": "MULTI-ENDPOINT.clab.yml",
+        "sha256": "4d48983096d0cf8417adf72c519ca71e3301f81c7dd2188dc06dbede0c7ded12"
+      }
+    ],
+    "source": "fixtures/bundles/MULTI-ENDPOINT/MULTI-ENDPOINT.clab.yml",
+    "context": "Synthetic reviewed parallel links and disconnected node; immutable existing image pins",
+    "bundleSha256": "6fe3449a68f283dd1943f4856b29cf2d52000582f2b191b6325adda3c7e7b2d1"
+  },
+  {
+    "id": "MULTI-ENDPOINT-V2",
+    "entry": "MULTI-ENDPOINT-V2.clab.yml",
+    "files": [
+      {
+        "path": "MULTI-ENDPOINT-V2.clab.yml",
+        "sha256": "af0a5dc66b3a332ad9ca04f0d783e6a25ec357a96556ace28a0b2c41f48644d2"
+      }
+    ],
+    "source": "fixtures/bundles/MULTI-ENDPOINT-V2/MULTI-ENDPOINT-V2.clab.yml",
+    "context": "Corrected synthetic fixture: client is an ordinary node; original MULTI-ENDPOINT reserved host-token attempt retained",
+    "bundleSha256": "23496e9869c2b8187f4423ed01209337d5cf09916b34e1bc4109c64579316b34"
   }
 ]

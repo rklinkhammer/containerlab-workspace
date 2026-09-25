@@ -1,3 +1,4 @@
+import {parseMultiObservation,type MultiObservation} from './multi-observation.ts';
 import {z} from 'zod';
 const hash=z.string().regex(/^[a-f0-9]{64}$/);
 export const nativeCommit='5ae50094a3afd70e4e1674fe5385e64d8979da26';
@@ -79,7 +80,8 @@ export function associateStates(raw:any,b:Binding,sequence:number):StateObservat
   return {...e,administrativeState:s.administrativeState,carrier:s.carrier,supplementSource:s.source,supplementReason:s.reason};
  })});
 }
-export function parseCurrentObservation(x:unknown):StateObservation|InterfaceObservation|ProfileObservation{
+export function parseCurrentObservation(x:unknown):StateObservation|InterfaceObservation|ProfileObservation|MultiObservation{
+ if((x as any)?.contract==='observation/0.5')return parseMultiObservation(x);
  if((x as any)?.contract==='observation/0.4')return profileObservationSchema.parse(x);
  return (x as any)?.contract==='observation/0.2'?parseInterfaceObservation(x):stateObservationSchema.parse(x);
 }
