@@ -1,0 +1,30 @@
+[
+  {
+    "case": "offline-reconnect",
+    "pass": true
+  },
+  {
+    "case": "cancel-recover",
+    "iteration": 0,
+    "pass": true
+  },
+  {
+    "case": "cancel-recover",
+    "iteration": 1,
+    "pass": true
+  },
+  {
+    "case": "cancel-recover",
+    "iteration": 2,
+    "pass": true
+  },
+  {
+    "case": "timeout-recover",
+    "pass": true
+  },
+  {
+    "case": "active-backend-shutdown-restart",
+    "pass": true,
+    "ownedChildren": 2
+  }
+]

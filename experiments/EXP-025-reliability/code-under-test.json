@@ -1,0 +1,22 @@
+[
+  {
+    "path": "apps/web/src/observation.tsx",
+    "sha256": "b3818b72d446589ff643c6cfbd93742cee15624e299d3cd064b1951cd10630af"
+  },
+  {
+    "path": "backend/observation.ts",
+    "sha256": "4265a416eba00568b89fc9efcd21a23cda922cd6b490be4d5ce6b9db431d016e"
+  },
+  {
+    "path": "scripts/preview.mjs",
+    "sha256": "54c5e760b0111f43ec4d6fca3bcbd96c12cf9ed09acd1fd0206873a8a0ea4e0b"
+  },
+  {
+    "path": "experiments/EXP-025-reliability/run.mjs",
+    "sha256": "de37c29b0d707b777ecc3bc616bf75d1bd3e53e905f4daf374c8f1228071eb44"
+  },
+  {
+    "path": "experiments/EXP-025-reliability/expectations.json",
+    "sha256": "22e81d629fd42fe64b4dec1b7959f6266f4c79f2ba7152e864ba3b82c2eecf98"
+  }
+]

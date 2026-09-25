@@ -1,3 +1,9 @@
+# A20 reliability update
+
+A20 records a finite CAPACITY-MAX reliability trial: PASS, 328 healthy-window refresh attempts. The current observation/0.7 contract, five approved profiles and existing budgets remain unchanged. [Results](artifacts/implementation/A20/RESULTS.md) · [Explicit 30-minute trial and cleanup](experiments/EXP-025-reliability/README.md).
+
+Backend restart no longer requires the UI to wait for a sequence counter to catch up. Cancellation and shutdown reap owned transport process groups. This remains a selected-fixture read-only preview. The local setup/preview commands below remain current; prior EXP-024 commands reproduce historical capacity qualification, not the new sustained trial.
+
 # Containerlab topology preview
 
 The application displays synthetic fixtures, recorded native results/declarations, on-demand declarations from approved bundles and read-only observations of five explicitly enrolled synthetic runtime profiles. Containerlab is the topology and lifecycle authority. No GUI deployment, terminal, capture, packet analysis, arbitrary upload or discovery capability is enabled.

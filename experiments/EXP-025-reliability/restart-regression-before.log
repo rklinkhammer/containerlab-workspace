@@ -1,0 +1,85 @@
+
+> containerlab-synthetic-preview@0.1.0 build
+> npm run fixtures:native && npm run fixtures:declared && npm run typecheck && vite build
+
+
+> containerlab-synthetic-preview@0.1.0 fixtures:native
+> node scripts/project-native.ts
+
+Projected 58 verified native fixture records; no runtime executed.
+
+> containerlab-synthetic-preview@0.1.0 fixtures:declared
+> node scripts/project-declared.ts
+
+Projected 63 pinned declaration fixtures. No native execution.
+
+> containerlab-synthetic-preview@0.1.0 typecheck
+> tsc --noEmit
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 279 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.43 kB │ gzip:   0.30 kB
+dist/assets/index-CXowtmoG.css   23.55 kB │ gzip:   4.91 kB
+dist/assets/index-BgI7F5vQ.js   705.39 kB │ gzip: 179.03 kB
+
+[33m[MODULE_LEVEL_DIRECTIVE] [0mThe semantics of the module level directive "use client" in "node_modules/@xyflow/react/dist/esm/index.js" may not be preserved when bundling.
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/@xyflow/react/dist/esm/index.js:1:1 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m "use client"
+ [38;5;240m  │[0m ──────┬─────  
+ [38;5;240m  │[0m       ╰─────── module level directive may not be preserved
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+[38;5;246m───╯[0m
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 86ms
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test --grep backend sequence reset
+
+[WebServer] (node:71531) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:71532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/browser/observation.spec.ts:33:1 › backend sequence reset accepts a newer timestamp without discarding current selection (5.3s)
+
+
+  1) tests/browser/observation.spec.ts:33:1 › backend sequence reset accepts a newer timestamp without discarding current selection 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('region', { name: 'Runtime snapshot' })
+    Expected substring: "2026-09-25T18:26:44.010Z"
+    Received string:    "Deployment ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddLast observed: 2026-09-25T18:26:43.945Z · within 15-second freshness windowProfile: RUNTIME-PAIR · Contract: observation/0.2 · Native commit: 5ae50094a3afd70e4e1674fe5385e64d8979da26left: running · aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa · enrolled full IDright: running · bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb · enrolled full IDLink health: unknown. Container state does not establish connectivity or routing."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('region', { name: 'Runtime snapshot' }) with timeout 5000ms
+      - waiting for getByRole('region', { name: 'Runtime snapshot' })
+        14 × locator resolved to <section class="runtime-snapshot" aria-label="Runtime snapshot">…</section>
+           - unexpected value "Deployment ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddLast observed: 2026-09-25T18:26:43.945Z · within 15-second freshness windowProfile: RUNTIME-PAIR · Contract: observation/0.2 · Native commit: 5ae50094a3afd70e4e1674fe5385e64d8979da26left: running · aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa · enrolled full IDright: running · bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb · enrolled full IDLink health: unknown. Container state does not establish connectivity or routing."
+
+
+      36 |  await page.goto('/');await page.getByRole('button',{name:'Runtime observations',exact:true}).click();
+      37 |  const refresh=page.getByRole('button',{name:'Refresh runtime',exact:true}),region=page.getByRole('region',{name:'Runtime snapshot'});
+    > 38 |  await refresh.click();await expect(region).toBeVisible();sequence=1;await page.waitForTimeout(20);const response=page.waitForResponse(r=>r.url().endsWith('/api/observation/snapshot'));await refresh.click();const next=(await (await response).json()).snapshot;await expect(region).toContainText(next.observedAt);await expect(page.getByRole('status')).toContainText('Fresh');
+         |                                                                                                                                                                                                                                                                                         ^
+      39 | });
+      40 |
+        at /Users/rklinkhammer/workspace/containerlab-workspace/tests/browser/observation.spec.ts:38:281
+
+    Error Context: test-results/observation-backend-sequen-98aa4-iscarding-current-selection/error-context.md
+
+  1 failed
+    tests/browser/observation.spec.ts:33:1 › backend sequence reset accepts a newer timestamp without discarding current selection 

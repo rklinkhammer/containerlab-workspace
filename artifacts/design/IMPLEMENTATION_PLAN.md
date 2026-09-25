@@ -1,3 +1,11 @@
+# A20 current — finite reliability
+
+**Observed:** A20 records a finite CAPACITY-MAX reliability trial: PASS, 328 healthy-window refresh attempts. The current observation/0.7 contract, five approved profiles and existing budgets remain unchanged. [A20 evidence](../implementation/A20/RESULTS.md). Earlier current/next entries below are historical.
+
+**Inferred next:** Implement one explicitly approved user-owned local topology bundle using the existing declaration/enrollment/observation path. Define its companion files, source hashes, native kinds, dependency gaps and per-occurrence expectations before enabling it. Use a new dedicated trial VM and existing Linux/SRL association rules. Keep load/display acceptance separate from runtime capability; do not add generic upload, discovery or operational controls. A topology requiring a new kind or native version needs a separate bounded compatibility gate.
+
+## Historical A19 and earlier
+
 # Implementation handoff — architecture A19
 
 **A19 current — Implemented:** the five existing approved profiles share one native-derived bounded enrollment, collector and association path. Fresh sessions use enrollment/0.2, observation-session/0.2 and observation/0.7. Strict historical0.1–0.6 readers remain; duplicate fixed-pair runtime paths are removed. Incompatible sessions fail before runtime access. [A19 results](../implementation/A19/RESULTS.md) and [current observation contract](OBSERVATION_CONTRACT.md) define actual verification, migration and limitations. TT-01, historical Q statuses and177-case denominator are unchanged.

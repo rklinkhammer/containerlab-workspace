@@ -30,3 +30,10 @@ test('polling, failure, stale data, cancellation and recovery (transport control
  mode='hang';await refresh.click();await expect(page.getByRole('status')).toContainText('timed out',{timeout:14000});await expect(refresh).toBeEnabled();
 });
 test('observation routes expose no mutation and reject foreign browser origin',async({request})=>{expect((await request.post('/api/observation/snapshot')).status()).toBe(404);expect((await request.get('/api/observation/snapshot',{headers:{Origin:'https://example.invalid'}})).status()).toBe(403);});
+test('backend sequence reset accepts a newer timestamp without discarding current selection',async({page})=>{
+ let sequence=99;await page.route('**/api/observation/config',r=>r.fulfill({json:{graph,deploymentId:dep,pollMs:5000}}));
+ await page.route('**/api/observation/snapshot',r=>r.fulfill({json:{snapshot:data(sequence)}}));
+ await page.goto('/');await page.getByRole('button',{name:'Runtime observations',exact:true}).click();
+ const refresh=page.getByRole('button',{name:'Refresh runtime',exact:true}),region=page.getByRole('region',{name:'Runtime snapshot'});
+ await refresh.click();await expect(region).toBeVisible();sequence=1;await page.waitForTimeout(20);const response=page.waitForResponse(r=>r.url().endsWith('/api/observation/snapshot'));await refresh.click();const next=(await (await response).json()).snapshot;await expect(region).toContainText(next.observedAt);await expect(page.getByRole('status')).toContainText('Fresh');
+});

@@ -1,0 +1,8 @@
+{
+  "revision": "A20",
+  "archive": "artifacts/design/history/A19-before-A20/MANIFEST.json",
+  "archiveVerifiedFiles": 28,
+  "stagedReplacements": 12,
+  "wholeSetAtomic": false,
+  "method": "prior-hash guarded staged replacements; completion last"
+}

@@ -1,0 +1,128 @@
+{
+  "attempts": [
+    {
+      "attempt": "attempt-1790360904381",
+      "result": {
+        "pass": true,
+        "errors": [],
+        "completedAt": "2026-09-25T19:00:59.526Z"
+      },
+      "healthy": {
+        "pass": true,
+        "durationMs": 1800178,
+        "samples": 328
+      },
+      "healthyAttempts": 328,
+      "healthyFailures": [],
+      "hostMs": {
+        "count": 328,
+        "min": 468,
+        "median": 483.0,
+        "p95": 507,
+        "max": 538
+      },
+      "browserMs": {
+        "count": 328,
+        "min": 469,
+        "median": 484.0,
+        "p95": 509,
+        "max": 539
+      },
+      "faults": [
+        {
+          "case": "offline-reconnect",
+          "pass": true
+        },
+        {
+          "case": "cancel-recover",
+          "iteration": 0,
+          "pass": true
+        },
+        {
+          "case": "cancel-recover",
+          "iteration": 1,
+          "pass": true
+        },
+        {
+          "case": "cancel-recover",
+          "iteration": 2,
+          "pass": true
+        },
+        {
+          "case": "timeout-recover",
+          "pass": true
+        },
+        {
+          "case": "active-backend-shutdown-restart",
+          "pass": true,
+          "ownedChildren": 2
+        }
+      ],
+      "resources": {
+        "rssBytes": {
+          "stats": {
+            "count": 61,
+            "min": 79429632,
+            "median": 97353728,
+            "p95": 101187584,
+            "max": 108986368
+          },
+          "lastFiveMinusFirstFiveMedian": -14942208
+        },
+        "fd": {
+          "stats": {
+            "count": 61,
+            "min": 16,
+            "median": 16,
+            "p95": 18,
+            "max": 18
+          },
+          "lastFiveMinusFirstFiveMedian": -2
+        },
+        "heapBytes": {
+          "stats": {
+            "count": 61,
+            "min": 6802524,
+            "median": 9372404,
+            "p95": 11201556,
+            "max": 12218824
+          },
+          "lastFiveMinusFirstFiveMedian": 588272
+        }
+      },
+      "native": {
+        "before": {
+          "ms": {
+            "count": 20,
+            "min": 416.88208400000804,
+            "median": 424.63670999995884,
+            "p95": 474.7789400000215,
+            "max": 480.37521800000604
+          },
+          "maxCombinedBytes": 61928
+        },
+        "after": {
+          "ms": {
+            "count": 20,
+            "min": 415.55872699973406,
+            "median": 422.24934449996,
+            "p95": 434.72080600031404,
+            "max": 462.18478199989477
+          },
+          "maxCombinedBytes": 61928
+        }
+      },
+      "idle-before.json": {
+        "observers": [],
+        "scratchBytes": 0
+      },
+      "idle-after.json": {
+        "observers": [],
+        "scratchBytes": 0
+      },
+      "local-cleanup.json": {
+        "previewStopped": true
+      }
+    }
+  ]
+}

@@ -1,11 +1,7 @@
-# Implementation status — A19
+# Implementation status — A20
 
-**Observed:** active runtime enrollment/observation is consolidated for the five existing approved profiles. Current versions are enrollment/0.2, observation-session/0.2 and observation/0.7; old recordings retain strict readers. Incompatible sessions require fresh enrollment before runtime access.
+**Observed:** A20 records a finite CAPACITY-MAX reliability trial: PASS, 328 healthy-window refresh attempts. The current observation/0.7 contract, five approved profiles and existing budgets remain unchanged.
 
-[A19 results](A19/RESULTS.md) record62 contract tests,23 offline Chromium passes, five fresh runtime profiles,100 guest/100 host/50 browser measurements, pair/max native transitions and maximum process/browser fault checks. All predeclared budgets pass. Two test-selector failures are preserved and corrected; skipped/unrun checks remain explicit. All five task labs are removed and VMs stopped.
+[A20 results](A20/RESULTS.md) · [A19 history](A19/RESULTS.md) · [Commands](../../README.md)
 
-[Current commands](../../README.md) | [Contract and migration](../design/OBSERVATION_CONTRACT.md) | [Handoff](../../IMPLEMENTATION_HANDOFF.md) | [EXP-024](../../experiments/EXP-024-consolidation/RESULTS.md)
-
-Historical reports remain unchanged: [A18](A18/RESULTS.md), [A17](A17/RESULTS.md), [A16](A16/RESULTS.md), [A15](A15/RESULTS.md), [A14](A14/RESULTS.md), [A13](A13/RESULTS.md), [A12](A12/RESULTS.md), [A11](A11/RESULTS.md), [A10](A10/RESULTS.md), [A9](A9/RESULTS.md). The prior current summary is preserved in the D-15 A18-before-A19 archive.
-
-**Inferred next:** bounded sustained-refresh/recovery qualification of an existing approved profile before capability expansion. No universal fidelity, new operational capability or gate promotion; historical Q statuses and177-case denominator remain unchanged under TT-01.
+**Inferred next:** Implement one explicitly approved user-owned local topology bundle using the existing declaration/enrollment/observation path. Define its companion files, source hashes, native kinds, dependency gaps and per-occurrence expectations before enabling it. Use a new dedicated trial VM and existing Linux/SRL association rules. Keep load/display acceptance separate from runtime capability; do not add generic upload, discovery or operational controls. A topology requiring a new kind or native version needs a separate bounded compatibility gate.

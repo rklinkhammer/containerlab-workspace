@@ -1,3 +1,7 @@
+# A20 current
+
+D-25 below adds lifecycle clarification; older current entries retain historical scope.
+
 # Architectural decisions — A19
 
 **A19 current:** D-24 consolidates the active observer and requires fresh enrollment for observation/0.7. Earlier decision entries retain their original scope; the current [observation contract](OBSERVATION_CONTRACT.md) supersedes old active-version/setup statements.
@@ -271,3 +275,11 @@ Migration/rollback: explicit fresh enrollment for new profiles, old DTO readers 
 **Implemented:** graph/binding/profile checks and incompatible-marker rejection occur before runtime access, including expired old manifests. INCOMPATIBLE_SESSION is a finite safe fresh-enrollment reason; no auto-upgrade or re-enrollment. Per-node inventory batching, partial results, global deadline/output rejection, full-ID replacement refusal and unknown peer/continuity/health remain. GUI retains exact occurrence selection, provenance and historical/error state. [Contract](OBSERVATION_CONTRACT.md), [independent plan](../../experiments/EXP-024-consolidation/PLAN.md), [A19 evidence](../implementation/A19/RESULTS.md).
 
 **Risks and recovery:** version mismatch disables live observation, while recorded native/declaration previews remain available. Partial enrollment never licenses replacement adoption. Rollback disables live sessions and restores A18 source plus the D-15 predecessor snapshot; any restored live trial requires a new VM and A18 enrollment. No stored-source migration. Reopen for native upgrades, new kinds/roles, durable/shared runtime, operational targeting or changed identity/budget requirements. TT-01, historical Q gates and177 denominator unchanged. Maps B5/Q-05, scoped S-01/S-02/S-05/S-07 and D-15/S-08 publication, with no gate promotion.
+
+## D-25 — bounded restart-safe observation and owned transport teardown
+
+**Observed:** A19's process-local sequence comparison discarded fresh observations after restart; the before/after regression and EXP-025 record evidence. Selected request-generation plus timestamp ordering retains superseded/backwards response rejection without a persistence service or DTO migration. Cancellation/shutdown signal the owned detached transport group and await close; remote reader bounds remain unchanged.
+
+Alternatives: persist sequence globally (unnecessary storage); require page reload after backend restart (poor recovery); kill all SSH processes (unsafe unrelated scope). Clock rollback is a remaining timestamp limitation. Rollback restores A19 source and verified predecessor documents, disables live sessions and requires a fresh VM for any renewed trial. Reopen for durable/shared hosting, cross-clock observations or operational targeting.
+
+A20 records a finite CAPACITY-MAX reliability trial: PASS, 328 healthy-window refresh attempts. The current observation/0.7 contract, five approved profiles and existing budgets remain unchanged. Maps B5/Q-05 and scoped S-01/S-02/S-05/S-07; no historical gate promotion,177 denominator unchanged, TT-01 retained.

@@ -1,3 +1,11 @@
+# A20 lifecycle clarification
+
+Observation/0.7, enrollment/0.2 and observation-session/0.2 remain unchanged. Sequence is process-local, not a durable cursor. The UI rejects superseded request generations and backwards observation timestamps; a backend restart with a valid unchanged enrollment may restart the sequence. Clock rollback remains a timestamp-ordering limitation, not proof of continuity.
+
+Cancellation/transport timeout terminates owned local process groups and settles on child close. Preview SIGINT/SIGTERM stops accepting work, closes connections and cancels active observation transports. Remote native work remains independently bounded; the finite trial checks idle cleanup after the existing 9s transport plus 2s grace, not instantaneous remote cancellation. Polling schedules five seconds after completion; it is not a fixed-rate sampling clock.
+
+[A20 results](../implementation/A20/RESULTS.md) define observed scope. All prior identity, disclosure, freshness and resource limits below remain in effect.
+
 # A19 — one bounded native-derived observation path
 
 **Selected:** all five approved profiles use `enrollment/0.2`, session marker `observation-session/0.2` and newly emitted `observation/0.7`. Profiles are RUNTIME-PAIR, SRL-PAIR, MULTI-ENDPOINT-V2, CAPACITY-MEDIUM and CAPACITY-MAX. Native declaration `p1a/0.5` remains authoritative for declared objects. [D-24](DECISIONS.md), [migration plan](../../experiments/EXP-024-consolidation/PLAN.md), [results](../implementation/A19/RESULTS.md).

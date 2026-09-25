@@ -1,0 +1,119 @@
+Continue from architecture A19 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Implement and qualify the next bounded slice: sustained read-only
+observation, disconnect/reconnect, cancellation and teardown reliability.
+
+Read:
+- AGENTS.md
+- IMPLEMENTATION_HANDOFF.md
+- README.md
+- artifacts/design/OBSERVATION_CONTRACT.md
+- artifacts/design/P1A_BACKLOG.md
+- artifacts/design/IMPLEMENTATION_PLAN.md
+- artifacts/design/TRACEABILITY.md
+- artifacts/implementation/A19/RESULTS.md
+- experiments/EXP-024-consolidation/RESULTS.md
+
+Verify artifacts/design/COMPLETION.json and its predecessor manifest
+before relying on the baseline. Inspect Git status and preserve unrelated
+or staged changes. Treat ../containerlab-investigation as read-only.
+Preserve the sibling-directory arrangement.
+
+This task authorizes application fixes, test implementation and runtime
+qualification using a newly created dedicated VM. Deploy only the existing
+approved CAPACITY-MAX synthetic profile through the established explicit
+session workflow. Do not access or modify pre-existing VMs. Remove the
+task lab and stop the new VM after evidence collection, including failure
+paths.
+
+1. Define independent acceptance before execution.
+
+Create a new experiment plan and expectations. Target a 30-minute healthy
+observation run using the existing five-second polling cadence, followed
+by bounded recovery/fault phases. Fit execution within existing session
+leases; do not silently extend expiry or weaken limits.
+
+Retain:
+- One active collection.
+- Six-second guest collection deadline.
+- 256 KiB combined native output limit.
+- Nine-second transport and twelve-second browser deadlines.
+- Fifteen-second freshness policy.
+- Existing graph and interface limits.
+
+Specify sampling rules, missed/failed refresh accounting, warmup treatment,
+and numeric memory/process/file-descriptor/temporary-storage thresholds
+before running. Explain the basis for new resource thresholds.
+
+2. Exercise the real application path.
+
+Collect through the backend and browser, not only a direct collector loop.
+Measure native and host latency, browser completion, resource usage,
+child-process lifetime and retained temporary state.
+
+Verify stable graph/occurrence identity, preserved selection, timestamps,
+non-overlapping polling and explicitly historical stale observations.
+
+Retain every failed sample. Report healthy-run results separately from
+deliberately injected fault phases.
+
+3. Qualify recovery and shutdown.
+
+Cover:
+- Browser disconnect and reconnect.
+- Cancellation during an active collection.
+- Repeated bounded cancellation followed by successful refresh.
+- Backend interruption and restart against the same still-valid enrollment.
+- Collection timeout and recovery.
+- Expired or incompatible session rejection before runtime access.
+- Shutdown while collection is active and scoped child-process cleanup.
+
+Use real process/browser boundaries where feasible. Identify simulations
+and injected faults separately from native observations. Do not edit
+published session manifests to bypass expiry or identity checks.
+
+Keep replacement-resource refusal intact. Do not silently re-enroll,
+adopt replacement containers/interfaces, or infer continuous identity.
+
+4. Fix demonstrated application defects.
+
+Complete necessary reliability fixes rather than stopping at a failure
+report. Add independent regression tests. Preserve failed attempts and
+rerun affected acceptance after changes.
+
+Do not create a new collector, speculative service, database or framework.
+Do not broaden topology kinds or add discovery, arbitrary uploads,
+deployment controls, terminals, capture or packet analysis.
+
+TT-01 remains active: login and multi-user authorization are out of scope.
+Retain containment, disclosure allowlists, safe rendering, resource bounds,
+session compatibility and expiry.
+
+5. Verify and document.
+
+Run relevant contract, typecheck, build, integration and Chromium checks.
+Ordinary tests must not create VMs. Use preview port 4173 and do not
+terminate unrelated listeners.
+
+Record exact revisions, commands, durations, sample counts, resource
+measurements, failures, fixes, skipped checks and cleanup evidence.
+Do not interpret this finite trial as indefinite reliability or universal
+Containerlab fidelity.
+
+Update implementation status, contracts where necessary, decisions,
+traceability and handoff. Follow D-15 before replacing published design
+documents. Preserve historical Q-gate outcomes and the 177-case denominator;
+map new evidence to the applicable B5/Q-05/S gates without blanket passes.
+
+Finish with:
+- What passed and failed against the predeclared criteria.
+- Application changes and their regression evidence.
+- Actual resource behavior and remaining reliability limitations.
+- Reproducible preview, qualification and cleanup commands.
+- Confirmation that the task lab is removed and new VM stopped.
+- A recommendation for the next concrete user workflow, identifying its
+  minimum additional integration gates rather than another broad
+  qualification campaign.
+
+Do not integrate or modify containerlab-vrt during this slice.

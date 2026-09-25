@@ -4,14 +4,30 @@ import type {IncomingMessage,ServerResponse} from 'node:http';
 import {readObservationSession} from './observation-session.ts';
 function session(){return readObservationSession(process.env.CLAB_OBSERVATION_SESSION);}
 let active=false,sequence=0,lastStart=0;
-export function inspectNative(vm:string,signal?:AbortSignal):Promise<any>{return new Promise((resolve,reject)=>{
- if(signal?.aborted){reject(Error('CANCELLED'));return;}
- const p=spawn('limactl',['shell',vm,'sudo','python3','/opt/clab-observer.py'],{stdio:['ignore','pipe','pipe']});let size=0;const chunks:Buffer[]=[];let done=false;
- const finish=(code?:string,value?:unknown)=>{if(done)return;done=true;clearTimeout(timer);signal?.removeEventListener('abort',abort);if(code){p.kill('SIGKILL');reject(Error(code));}else resolve(value);};
- const abort=()=>finish('CANCELLED');const timer=setTimeout(()=>finish('INSPECTION_TIMEOUT'),9000);signal?.addEventListener('abort',abort,{once:true});
- p.stdout.on('data',(b:Buffer)=>{size+=b.length;if(size>262144)finish('OUTPUT_LIMIT');else chunks.push(b);});p.stderr.on('data',(b:Buffer)=>{size+=b.length;if(size>262144)finish('OUTPUT_LIMIT');});
- p.on('error',()=>finish('INSPECTION_FAILED'));p.on('close',code=>{if(code!==0){finish('INSPECTION_FAILED');return;}try{finish(undefined,JSON.parse(Buffer.concat(chunks).toString()));}catch{finish('MALFORMED_OBSERVATION');}});
-});}
+// Track only children created by this module; shutdown never enumerates unrelated PIDs.
+const running=new Map<Promise<any>,()=>void>();
+export async function stopObservations(){for(const cancel of running.values())cancel();await Promise.allSettled([...running.keys()]);}
+export function inspectNative(vm:string,signal?:AbortSignal):Promise<any>{
+ let cancel=()=>{};
+ const result=new Promise((resolve,reject)=>{
+  if(signal?.aborted){reject(Error('CANCELLED'));return;}
+  const p=spawn('limactl',['shell',vm,'sudo','python3','/opt/clab-observer.py'],{stdio:['ignore','pipe','pipe'],detached:true});
+  let size=0,failure:string|undefined;const chunks:Buffer[]=[];
+  const kill=(code:string)=>{if(failure)return;failure=code;if(p.pid){try{process.kill(-p.pid,'SIGKILL');}catch{p.kill('SIGKILL');}}};
+  const abort=()=>kill('CANCELLED');cancel=abort;
+  const timer=setTimeout(()=>kill('INSPECTION_TIMEOUT'),9000);signal?.addEventListener('abort',abort,{once:true});
+  p.stdout.on('data',(b:Buffer)=>{size+=b.length;if(size>262144)kill('OUTPUT_LIMIT');else if(!failure)chunks.push(b);});
+  p.stderr.on('data',(b:Buffer)=>{size+=b.length;if(size>262144)kill('OUTPUT_LIMIT');});
+  p.on('error',()=>{failure??='INSPECTION_FAILED';});
+  p.on('close',code=>{
+   clearTimeout(timer);signal?.removeEventListener('abort',abort);
+   if(failure||code!==0){reject(Error(failure??'INSPECTION_FAILED'));return;}
+   try{resolve(JSON.parse(Buffer.concat(chunks).toString()));}catch{reject(Error('MALFORMED_OBSERVATION'));}
+  });
+ });
+ running.set(result,()=>cancel());
+ void result.then(()=>running.delete(result),()=>running.delete(result));return result;
+}
 export async function observe(signal?:AbortSignal){
  const s=session();if(active)throw Error('BUSY');if(Date.now()-lastStart<1000)throw Error('RATE_LIMIT');active=true;lastStart=Date.now();
  try{const raw=await inspectNative(s.vm,signal);if(!raw.ok)throw Error(['INSPECTION_TIMEOUT','OUTPUT_LIMIT','ASSOCIATION_CONFLICT','BUSY'].includes(raw.code)?raw.code:'INSPECTION_FAILED');return associateMulti(raw,s.binding,++sequence);}finally{active=false;}
