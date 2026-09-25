@@ -1,4 +1,4 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import{associateInterfaces,parseInterfaceObservation}from'../contracts/observation.ts';
+import {test} from 'node:test';import assert from 'node:assert/strict';import{parseInterfaceObservation}from'../contracts/observation.ts';import{associateInterfaces}from'./helpers/legacy-association.ts';
 const info=(i:number)=>({status:'complete',reason:'NATIVE_INTERFACE_INVENTORY',namespace:(i?'f':'e').repeat(64),items:[{name:'eth1',index:i+2,mac:`02:00:00:00:00:0${i+1}`,type:'veth',operationalState:'up'}]});
 const b={deploymentId:'d'.repeat(64),sourceSha256:'c'.repeat(64),nodes:[{node:'left' as const,id:'a'.repeat(64),endpoint:info(0)},{node:'right' as const,id:'b'.repeat(64),endpoint:info(1)}]};
 const raw=()=>({ok:true,rows:b.nodes.map((n,i)=>({node:n.node,id:n.id,lab:'observation-slice',kind:'linux',purpose:'observation-slice-v1',state:'running',interfaces:info(i)}))});

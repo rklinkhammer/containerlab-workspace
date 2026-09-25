@@ -1,0 +1,14 @@
+[
+  {
+    "stage": "process-faults",
+    "exitCode": 0
+  },
+  {
+    "stage": "browser-faults",
+    "exitCode": 0
+  },
+  {
+    "stage": "native-transitions",
+    "exitCode": 0
+  }
+]

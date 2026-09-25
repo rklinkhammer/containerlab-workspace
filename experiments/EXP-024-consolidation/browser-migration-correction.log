@@ -1,0 +1,40 @@
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test --grep incompatible session explains
+
+[WebServer] (node:56991) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:56992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/browser/consolidation.spec.ts:14:1 › incompatible session explains fresh enrollment and recorded views remain available (mock) (5.3s)
+
+
+  1) tests/browser/consolidation.spec.ts:14:1 › incompatible session explains fresh enrollment and recorded views remain available (mock) 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: 'Link 1 · veth' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: 'Link 1 · veth' }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Link 1 · veth' })
+
+
+      13 |
+      14 | test('incompatible session explains fresh enrollment and recorded views remain available (mock)',async({page})=>{
+    > 15 |  await page.route('**/api/observation/config',r=>r.fulfill({status:422,json:{code:'INCOMPATIBLE_SESSION'}}));await page.goto('/');await page.getByRole('button',{name:'Runtime observations',exact:true}).click();await expect(page.getByRole('status')).toContainText('requires fresh enrollment');await expect(page.getByRole('button',{name:'Refresh runtime',exact:true})).toBeDisabled();await expect(page.getByRole('region',{name:'Runtime snapshot'})).toHaveCount(0);const recorded=page.getByRole('combobox',{name:'Recorded native fixture',exact:true});await expect(recorded).toBeEnabled();await recorded.selectOption({label:'Native F1 · partial'});await expect(page.getByRole('region',{name:'Runtime observation',exact:true})).toHaveCount(0);await expect(page.getByRole('button',{name:'Link 1 · veth',exact:false})).toBeVisible();
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+      16 | });
+      17 |
+        at /Users/rklinkhammer/workspace/containerlab-workspace/tests/browser/consolidation.spec.ts:15:813
+
+    Error Context: test-results/consolidation-incompatible-d03e0-iews-remain-available-mock-/error-context.md
+
+  1 failed
+    tests/browser/consolidation.spec.ts:14:1 › incompatible session explains fresh enrollment and recorded views remain available (mock) 

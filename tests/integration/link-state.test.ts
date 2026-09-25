@@ -10,7 +10,7 @@ test('controlled Linux flags and exact-attribute replacement never establish con
   ip('left','link','set','eth1','up');g=await snap('restored-up');assert.ok(g.endpoints.every(e=>e.administrativeState==='up'&&e.carrier==='up'));
   for(const n of ['left','right']){const r=JSON.parse(ip(n,'-j','-d','link','show','dev','eth1'))[0];evidence.push({stage:'unqualified-peer-hints',node:n,ifindex:r.ifindex,linkIndex:r.link_index,linkNetnsid:r.link_netnsid,conclusion:'numeric hints do not establish enrolled peer identity'});}
   ip('left','link','del','eth1');assert.ok((await snap('removed')).endpoints.every(e=>e.status==='absent'&&e.administrativeState==='unknown'));
-  const l=binding('left').endpoint.items[0],r=binding('right').endpoint.items[0];
+  const l=binding('left').endpoints[0].item,r=binding('right').endpoints[0].item;
   try{ip('left','link','add','name','eth1','index',String(l.index),'address',l.mac,'type','veth','peer','name','eth1','index',String(r.index),'address',r.mac,'netns',pid('right'));}
   catch{evidence.push({stage:'exact-index-recreation',result:'UNSUPPORTED_BY_TRIAL_COMMAND'});throw Error('Exact-attribute recreation unavailable; preserve attempt');}
   for(const n of ['left','right'])ip(n,'link','set','eth1','up');g=await snap('exact-attribute-recreation');assert.ok(g.endpoints.every(e=>e.status==='observed'&&e.continuity==='unknown'&&e.peer==='unknown'));assert.equal(g.linkHealth,'unknown');

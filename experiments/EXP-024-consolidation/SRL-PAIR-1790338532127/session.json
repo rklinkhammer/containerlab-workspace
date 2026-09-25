@@ -1,0 +1,199 @@
+{
+  "sessionFormat": "observation-session/0.2",
+  "vm": "clab-load-20260925-120833-exp016",
+  "expiresAt": "2026-09-25T13:12:56.156040+00:00",
+  "createdFor": "runtime-observation-qualification",
+  "profile": "SRL-PAIR",
+  "binding": {
+    "deploymentId": "2feef0f9347aaac9ec1d87759b24d0606eea5526030169035a84da240ca0c4b7",
+    "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+    "plan": {
+      "version": "enrollment/0.2",
+      "bundleId": "SRL-PAIR",
+      "bundleSha256": "96819bb3952429e6217d493a3d478a4c00743f80fbbf7328d3659068c174664c",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nodes": [
+        {
+          "nodeId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n0",
+          "node": "left",
+          "kind": "nokia_srlinux",
+          "supported": true
+        },
+        {
+          "nodeId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n1",
+          "node": "right",
+          "kind": "linux",
+          "supported": true
+        }
+      ],
+      "links": [
+        {
+          "linkId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:l0",
+          "occurrence": 0
+        }
+      ],
+      "endpoints": [
+        {
+          "endpointId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:l0:endpoint:0",
+          "linkId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:l0",
+          "position": 0,
+          "nodeId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n0",
+          "node": "left",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/1",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:l0:endpoint:1",
+          "linkId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:l0",
+          "position": 1,
+          "nodeId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n1",
+          "node": "right",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "nodeId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n0",
+        "node": "left",
+        "id": "28b79850e8f03ebc78d8edb1471c7719d7fc330cbb45509ed28c67a415146196",
+        "namespace": "de59d050d75c9fe6c0a04d41b7ecba7a7e406550df33561ad37aa4a9674df3e7",
+        "endpoints": [
+          {
+            "endpointId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:l0:endpoint:0",
+            "item": {
+              "name": "e1-1",
+              "alias": "ethernet-1/1",
+              "index": 8,
+              "mac": "aa:c1:ab:b6:0f:ec",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n1",
+        "node": "right",
+        "id": "0dc93ba27fb49c1fb3eb92b01336ac8de585f8f750410492d54fae94e9d44089",
+        "namespace": "fde030a995675af6422d5ff1de54d27283117393ebcc48cbdf54eb94d2329d74",
+        "endpoints": [
+          {
+            "endpointId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:l0:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 7,
+              "mac": "aa:c1:ab:d9:b3:c9",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "graph": {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "SRL-PAIR",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "outcomeSha256": "3b6fcde20211d850c9b6ee73c42d821b96929e89f0edc5cdabf87b7822c7f111",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "SRL-PAIR",
+      "bundleSha256": "96819bb3952429e6217d493a3d478a4c00743f80fbbf7328d3659068c174664c",
+      "entryFile": "SRL-PAIR.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "d218b78c7099cc02c00c51f8cb3737fe",
+      "completedAt": "2026-09-25T12:13:54.561Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n0",
+        "name": "left",
+        "kind": "nokia_srlinux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n1",
+        "name": "right",
+        "kind": "linux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n0",
+            "nodeLabel": "left",
+            "interface": "ethernet-1/1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n1",
+            "nodeLabel": "right",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:d0",
+        "ownerId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:d1",
+        "ownerId": "630e79159246769709a3709a46ee8eb18d9676ca091b0ea503add6578bf0e0b5:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  "nativeBinarySha256": "30e841ad0f443ad07f4c1189844f33447d31587b472b9062954bbeb65596b4d5"
+}

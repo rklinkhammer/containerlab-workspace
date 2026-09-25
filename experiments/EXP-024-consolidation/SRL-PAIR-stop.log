@@ -1,0 +1,7 @@
+time="2026-09-25T08:17:27-04:00" level=info msg="Sending SIGINT to hostagent process 53869"
+time="2026-09-25T08:17:27-04:00" level=info msg="Waiting for the host agent and the driver processes to shut down"
+time="2026-09-25T08:17:27-04:00" level=info msg="[hostagent] Received SIGINT, shutting down the host agent"
+time="2026-09-25T08:17:27-04:00" level=info msg="[hostagent] Shutting down the host agent"
+time="2026-09-25T08:17:27-04:00" level=info msg="[hostagent] Shutting down VZ"
+time="2026-09-25T08:17:57-04:00" level=info msg="Waiting for the instance to shut down"
+time="2026-09-25T08:17:58-04:00" level=info msg="The instance clab-load-20260925-120833-exp016 has shut down"

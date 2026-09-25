@@ -1,4 +1,22 @@
-# Dependency-ordered P1a backlog — A18
+# Dependency-ordered P1a backlog — A19
+
+**A19 current — Implemented:** the five existing approved profiles share one native-derived bounded enrollment, collector and association path. Fresh sessions use enrollment/0.2, observation-session/0.2 and observation/0.7. Strict historical0.1–0.6 readers remain; duplicate fixed-pair runtime paths are removed. Incompatible sessions fail before runtime access. [A19 results](../implementation/A19/RESULTS.md) and [current observation contract](OBSERVATION_CONTRACT.md) define actual verification, migration and limitations. TT-01, historical Q statuses and177-case denominator are unchanged.
+
+**Inferred next:** a finite sustained-refresh/recovery qualification of an existing approved profile, with predeclared budgets and fresh-session cleanup, before capability expansion. Peer/continuity/NOS health/forwarding remain unknown. No new kinds, discovery, operational controls or authorization work is implied.
+
+### Current dependency-ordered follow-up
+
+| Item | State | Acceptance / mapping |
+|---|---|---|
+| B5 consolidated observer | Implemented in A19 | Five approved profiles, explicit0.7 migration, historical readers; scoped Q-05/S-01/S-02/S-05/S-07 evidence |
+| B5 finite reliability trial | Proposed next; requires explicit runtime task | Predeclare duration/cadence/budgets, disconnect/reconnect/cancel and scoped cleanup; no adoption or new capabilities |
+| B3 broader native/context coverage | Independent remaining work | Preserve originals, specific native errors and177 denominator; Q-03/Q-04 unchanged |
+| Broader operational targeting | Blocked/unqualified | Peer/continuity/ownership/freshness evidence and explicitly authorized scope before B6/B7 |
+| Login/multi-user authorization | OUT_OF_SCOPE under TT-01 | Do not reintroduce as a dependency |
+
+The historical backlog below is superseded where it describes an already implemented next slice.
+
+## Historical design context (A18 and earlier)
 
 **A18 current — Observed:** selected approved capacity fixtures qualify3/2/4,5/8/16 and8/16/32 nodes/links/endpoint occurrences under unchanged6s/256KiB collection limits. Twenty guest and twenty host samples plus ten browser refreshes per fixture all meet predeclared thresholds. Maximum native collection448.6ms, host transport500.4ms, browser refresh521.0ms, combined native/Linux output61985 bytes. CAPACITY-MEDIUM/MAX use observation/0.6; prior profiles retain their DTOs. [A18 evidence](../implementation/A18/RESULTS.md). This is selected-fixture/local-hardware qualification, not arbitrary-topology or NOS-performance capacity. TT-01, historical Q outcomes and177 denominator unchanged. Earlier current/next statements below are historical. **Next, Inferred:** consolidate legacy pair collectors onto bounded native-derived enrollment with explicit fresh-session migration and regression evidence before broadening supported deployments.
 

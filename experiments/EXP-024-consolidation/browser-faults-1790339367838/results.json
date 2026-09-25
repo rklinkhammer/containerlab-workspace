@@ -1,0 +1,18 @@
+[
+  {
+    "stage": "one-node-failure",
+    "remainingPeerVisible": true
+  },
+  {
+    "stage": "timeout",
+    "lastTimestampPreserved": true
+  },
+  {
+    "stage": "oversize",
+    "lastTimestampPreserved": true
+  },
+  {
+    "stage": "recovery",
+    "fresh": true
+  }
+]

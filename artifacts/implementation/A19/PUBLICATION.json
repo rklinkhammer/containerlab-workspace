@@ -1,0 +1,16 @@
+{
+  "revision": "A19",
+  "predecessor": "A18",
+  "predecessorFilesVerified": 908,
+  "archiveFilesVerified": 28,
+  "stagedPublication": "Prior hashes guarded; staged under ignored .runtime/a19-publication; per-file replacement; completion written last",
+  "changedMarkdownLinks": "PASS",
+  "newVMs": 5,
+  "allTaskLabsRemoved": true,
+  "allNewVMsStopped": true,
+  "port4173Listener": false,
+  "fixtureAndDependencyChanges": false,
+  "historicalQGatePromotion": false,
+  "corpusDenominator": 177,
+  "crashAtomicityTested": false
+}

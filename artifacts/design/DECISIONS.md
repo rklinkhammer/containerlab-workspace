@@ -1,4 +1,6 @@
-# Architectural decisions — A17
+# Architectural decisions — A19
+
+**A19 current:** D-24 consolidates the active observer and requires fresh enrollment for observation/0.7. Earlier decision entries retain their original scope; the current [observation contract](OBSERVATION_CONTRACT.md) supersedes old active-version/setup statements.
 
 **A11 update:** D-02/D-03/D-10 on-demand bundle decision appended below; TT-01 remains active.
 
@@ -259,3 +261,13 @@ Alternatives: increasing deadlines/output without measurements weakens boundarie
 **Observed:** one-node process failure preserves peer data; global timeout/output failure rejects fresh publication and UI keeps historical state. Native mutations preserve absence/unavailable/replacement distinctions. Temporary fault shim is qualification-only and original CLI restoration is verified. No Containerlab fork or application fault route.
 
 Migration/rollback: explicit fresh enrollment for new profiles, old DTO readers retained; disable sessions and restore source plus archived A17 files. No persistent-data migration. Reopen for new shapes/kinds, sustained load, platform changes, shared hosting or operational actions. Next consolidate duplicate legacy active paths under separately defined migration/regression scope. Maps B5/Q-05 subset and S-01/S-02/S-05/S-07; no historical Q promotion.
+
+## D-24 — A19 single active observer and explicit fresh-session migration
+
+**Selected:** use the existing bounded native-derived collector/association for all five approved profiles, with enrollment/0.2, sessionFormat observation-session/0.2 and newly emitted observation/0.7. Move Reader/namespace into a small shared module; install only inspect.py. Remove active fixed left/right setup and reducers plus duplicate multi.py. Frozen old reducers survive only as test oracles; historical0.1–0.6 DTO validators remain strict readers. No plugin framework, service, discovery, native parser or alias conversion.
+
+**Problem:** A18's pair setup, collector and backend association duplicated identity/failure policy already represented by the bounded path. Extending separate versions would multiply regression surfaces. **Alternatives:** keep active pair paths (reject: duplicated invariants); silently reinterpret0.3/0.4 sessions (reject: changed graph/occurrence meanings and no reliable enrollment migration); drop old readers (reject: historical evidence must remain usable); universal profile/discovery (outside authorization). Version0.7 deliberately unifies new profiles without changing old recording meanings.
+
+**Implemented:** graph/binding/profile checks and incompatible-marker rejection occur before runtime access, including expired old manifests. INCOMPATIBLE_SESSION is a finite safe fresh-enrollment reason; no auto-upgrade or re-enrollment. Per-node inventory batching, partial results, global deadline/output rejection, full-ID replacement refusal and unknown peer/continuity/health remain. GUI retains exact occurrence selection, provenance and historical/error state. [Contract](OBSERVATION_CONTRACT.md), [independent plan](../../experiments/EXP-024-consolidation/PLAN.md), [A19 evidence](../implementation/A19/RESULTS.md).
+
+**Risks and recovery:** version mismatch disables live observation, while recorded native/declaration previews remain available. Partial enrollment never licenses replacement adoption. Rollback disables live sessions and restores A18 source plus the D-15 predecessor snapshot; any restored live trial requires a new VM and A18 enrollment. No stored-source migration. Reopen for native upgrades, new kinds/roles, durable/shared runtime, operational targeting or changed identity/budget requirements. TT-01, historical Q gates and177 denominator unchanged. Maps B5/Q-05, scoped S-01/S-02/S-05/S-07 and D-15/S-08 publication, with no gate promotion.

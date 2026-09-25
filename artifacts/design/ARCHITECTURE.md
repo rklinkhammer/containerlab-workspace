@@ -1,5 +1,27 @@
 # Containerlab visualization and capture architecture
 
+**A19 current — Implemented:** the five existing approved profiles share one native-derived bounded enrollment, collector and association path. Fresh sessions use enrollment/0.2, observation-session/0.2 and observation/0.7. Strict historical0.1–0.6 readers remain; duplicate fixed-pair runtime paths are removed. Incompatible sessions fail before runtime access. [A19 results](../implementation/A19/RESULTS.md) and [current observation contract](OBSERVATION_CONTRACT.md) define actual verification, migration and limitations. TT-01, historical Q statuses and177-case denominator are unchanged.
+
+**Inferred next:** a finite sustained-refresh/recovery qualification of an existing approved profile, with predeclared budgets and fresh-session cleanup, before capability expansion. Peer/continuity/NOS health/forwarding remain unknown. No new kinds, discovery, operational controls or authorization work is implied.
+
+### A19 active flow
+
+```mermaid
+flowchart LR
+  A[Approved bundle] --> B[Pinned native declaration worker]
+  B --> C[Validated graph and bounded enrollment plan]
+  C --> D[Explicit fresh task VM setup]
+  D --> E[One collector and shared bounded reader]
+  E --> F[One association path: observation/0.7]
+  F --> G[Read-only React inspectors]
+  H[Historical recordings] --> I[Strict versioned readers]
+  I --> G
+```
+
+The declaration worker remains socket-free. Fixed privileged observation is confined to the fresh task VM; the browser accepts no VM/path/command/daemon targets. Native/Linux inventories are fetched per connected node, not endpoint; disconnected nodes remain explicit. Full-ID/namespace/interface checks and partial/global failure distinctions remain. See D-24 and the current contract for exact bounds and no-adoption semantics. Historical source/architecture decisions below remain evidence; A19 supersedes their active runtime-version/setup statements.
+
+## Historical design context (A18 and earlier)
+
 **A18 current — Observed:** selected approved capacity fixtures qualify3/2/4,5/8/16 and8/16/32 nodes/links/endpoint occurrences under unchanged6s/256KiB collection limits. Twenty guest and twenty host samples plus ten browser refreshes per fixture all meet predeclared thresholds. Maximum native collection448.6ms, host transport500.4ms, browser refresh521.0ms, combined native/Linux output61985 bytes. CAPACITY-MEDIUM/MAX use observation/0.6; prior profiles retain their DTOs. [A18 evidence](../implementation/A18/RESULTS.md). This is selected-fixture/local-hardware qualification, not arbitrary-topology or NOS-performance capacity. TT-01, historical Q outcomes and177 denominator unchanged. Earlier current/next statements below are historical. **Next, Inferred:** consolidate legacy pair collectors onto bounded native-derived enrollment with explicit fresh-session migration and regression evidence before broadening supported deployments.
 
 

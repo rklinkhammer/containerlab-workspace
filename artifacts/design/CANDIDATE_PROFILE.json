@@ -82,16 +82,16 @@
     "source_ingestion_status": "APPROVED_BUNDLES_NATIVE_DECLARATION_LOADING_IMPLEMENTED; ARBITRARY_PRIVATE_SOURCES_OUT_OF_SCOPE"
   },
   "approved_observation_profiles": {
-    "revision": "A18",
-    "experiment": "EXP-023",
+    "revision": "A19",
+    "experiment": "EXP-024",
     "profiles": {
-      "RUNTIME-PAIR": "observation/0.3",
-      "SRL-PAIR": "observation/0.4",
-      "MULTI-ENDPOINT-V2": "observation/0.5",
-      "CAPACITY-MEDIUM": "observation/0.6",
-      "CAPACITY-MAX": "observation/0.6"
+      "RUNTIME-PAIR": "observation/0.7",
+      "SRL-PAIR": "observation/0.7",
+      "MULTI-ENDPOINT-V2": "observation/0.7",
+      "CAPACITY-MEDIUM": "observation/0.7",
+      "CAPACITY-MAX": "observation/0.7"
     },
-    "nativeDerivedEnrollment": "enrollment/0.1 for MULTI-ENDPOINT-V2 and CAPACITY-MEDIUM/MAX",
+    "nativeDerivedEnrollment": "enrollment/0.2 for all five approved profiles",
     "limits": {
       "nodes": 8,
       "links": 16,
@@ -102,6 +102,9 @@
     },
     "capacityAtMaximum": "SELECTED_8_NODE_16_LINK_32_OCCURRENCE_FIXTURE_OBSERVED; NOT_ARBITRARY_SHAPES",
     "nativeApiServerQualification": "UNCHANGED_NOT_BUILT",
-    "operationalCapabilities": "disabled"
+    "operationalCapabilities": "disabled",
+    "sessionFormat": "observation-session/0.2",
+    "historicalReaders": "observation/0.1 through0.6; original versions retained",
+    "migration": "fresh session only; INCOMPATIBLE_SESSION before runtime access"
   }
 }

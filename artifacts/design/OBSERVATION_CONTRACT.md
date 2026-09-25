@@ -1,56 +1,60 @@
-# A18 — bounded occurrence enrollment and observations
+# A19 — one bounded native-derived observation path
 
-**Selected / Observed:** MULTI-ENDPOINT-V2 uses enrollment/0.1 and observation/0.5. CAPACITY-MEDIUM and CAPACITY-MAX expand the explicit bundle allowlist and use observation/0.6 with the same field meanings and limits. Fresh sessions are required; old0.5 data remains accepted only for its original profile. Native declaration p1a/0.5 stays authoritative for declared objects. Existing RUNTIME-PAIR emits observation/0.3, SRL-PAIR0.4; prior parsers/recordings remain intact. Only explicit fresh local setup enrolls resources; no browser enrollment or mutation API. [A17 results](../implementation/A17/RESULTS.md), [pre-execution plan](../../experiments/EXP-022-multi-endpoint/PLAN.md), [expectations](../../experiments/EXP-022-multi-endpoint/expectations.json).
+**Selected:** all five approved profiles use `enrollment/0.2`, session marker `observation-session/0.2` and newly emitted `observation/0.7`. Profiles are RUNTIME-PAIR, SRL-PAIR, MULTI-ENDPOINT-V2, CAPACITY-MEDIUM and CAPACITY-MAX. Native declaration `p1a/0.5` remains authoritative for declared objects. [D-24](DECISIONS.md), [migration plan](../../experiments/EXP-024-consolidation/PLAN.md), [results](../implementation/A19/RESULTS.md).
 
-## Identity and authority
+## Single active path
 
-**Implemented:** derivePlan validates the accepted native graph, retaining bundle/source hashes, graph node IDs, link IDs and occurrences. Endpoint ID is the native-derived link ID plus endpoint position (`:endpoint:0` or `:endpoint:1`); this identifies a declared occurrence, not a durable kernel object. Parallel occurrences stay separate even if attributes coincide. Full container ID, namespace fingerprint and native name/index/MAC are fixed at enrollment. Source and bundle hashes must agree with the session graph before collection. The reviewed root-owned guest plan is installed by explicit setup, never accepted from the browser.
+Explicit fresh setup loads the approved bundle through the pinned native declaration worker, derives a bounded plan, installs the reviewed root-owned plan, deploys only the selected synthetic lab and enrolls actual resources. The browser cannot enroll or mutate resources. `native/observer/inspect.py` is the only installed collector; `reader.py` shares bounded subprocess collection and namespace fingerprinting. `contracts/enrollment.ts` derives the plan; `contracts/multi-observation.ts` enrolls and associates every profile; the filename does not denote a second runtime domain. Fixed left/right setup and association branches and the duplicate `multi.py` collector are removed.
 
-**Documented:** pinned native AddEndpoint/GetMappedInterfaceName sets SRL native aliases; the observer selects exact alias equality and does not calculate interface names. Linux uses literal equality. Native kind labels are checked against the accepted graph; labels/names locate candidates at enrollment, but cannot adopt replacements later. No arbitrary native kinds, special endpoint roles or general discovery are enabled. Native commit remains `5ae50094a3afd70e4e1674fe5385e64d8979da26`; immutable Alpine3.23.3 and SR Linux24.10.1 ARM64 pins are unchanged from A16. See [source ledger](../../experiments/EXP-022-multi-endpoint/source-ledger.json).
+**Documented:** pinned native commit `5ae50094a3afd70e4e1674fe5385e64d8979da26` remains the authority for native kinds, declarations and aliases. Linux association uses exact literal names; SR Linux uses exact native alias equality. No application alias conversion, YAML semantics or general discovery. Images/native pins and approved fixture bytes are unchanged. [Pinned source ledger](../../experiments/EXP-022-multi-endpoint/source-ledger.json).
 
-## Explicit bounds
+## Identity, partial evidence and limits
+
+Enrollment binds source and bundle hashes, graph node/link IDs, endpoint occurrence IDs, full container IDs, namespace fingerprints and native interface name/index/MAC. Occurrence IDs identify declared positions, not durable kernel objects. Parallel occurrences remain separate. Session graph, profile and recomputed plan must agree before runtime access. Before/after native container inventories guard replacement during collection. A disconnected node has a container observation and no invented data-plane endpoints.
+
+One native and one supplemental Linux interface inventory is fetched per connected node, never per occurrence. Native operational state and separately sourced Linux administrative/carrier facts remain distinct. Presence, matching attributes and container state do not establish NOS health or forwarding correctness. A15 demonstrated exact attribute reuse; peer identity, continuity and link health remain `unknown`.
 
 | Boundary | Limit |
 |---|---|
-| Enrollment | 8 nodes,16 links,32 endpoint occurrences |
-| Native/Linux inventory per node | 64 interfaces |
-| Raw combined subprocess output; public observation payload | 262144 bytes each |
-| Collection deadline | 6 seconds aggregate; transport9 seconds; browser12 seconds |
-| Concurrency / refresh | one collection; minimum1 second; optional5-second polling |
-| Freshness | 15 seconds; future timestamps also stale |
+| Enrollment | 8 nodes, 16 links, 32 endpoint occurrences |
+| Each native/Linux interface inventory | 64 interfaces |
+| Combined subprocess output; public DTO | 262144 bytes each |
+| Aggregate guest collection; host transport; browser | 6 seconds; 9 seconds; 12 seconds |
+| Concurrency / refresh | One collection; minimum 1 second; optional 5-second polling |
+| Freshness | 15 seconds; future timestamps are stale |
 
-**Observed:** the actual3-node/4-occurrence collection uses six commands: native container inventories before/after, one native interface inventory and one Linux inventory for each connected node. The disconnected node needs no interface command. [Budget measurement](../../experiments/EXP-022-multi-endpoint/budget.json):167.95ms,18065 combined subprocess bytes,2393 projected bytes. No budget increase. This does not establish performance at maximum bounds; schema acceptance at8/16/32 and rejection above bounds is tested separately. Global deadline/output errors fail the collection; the UI retains only explicitly historical prior observations.
+Global deadline/output failure rejects the entire collection. Individual node inventory failure preserves valid observations elsewhere and all declared occurrences. Strict allowlists exclude raw configuration, stderr, credentials, arbitrary paths/PIDs and daemon handles. Fixed privileged guest inspection is not a read-only daemon credential; browser and declaration worker receive no operational socket. TT-01 excludes login and multi-user authorization.
 
-## Outcomes and disclosure
+| Outcome | Required evidence / meaning |
+|---|---|
+| observed / MATCHED_ENROLLED_ATTRIBUTES | Full-ID, namespace and interface attributes match enrollment; continuity still unknown |
+| absent / MISSING_FROM_NATIVE_INVENTORY | Qualified Linux literal name absent from successful inventory in matching namespace |
+| unavailable / ALIAS_UNRESOLVED | SRL native alias not found; never infer deletion or calculate an alias |
+| unavailable | Stopped/absent container, missing namespace, failed/malformed inventory, in-flight change or ambiguous alias |
+| unresolved / NOT_ENROLLED or IDENTITY_CHANGED | Partial initial enrollment or changed namespace/interface; never auto-adopt |
+| unsupported | Explicit native-kind, role or unresolved-node reason; declarations remain visible |
 
-- `observed / MATCHED_ENROLLED_ATTRIBUTES`: native full-ID/namespace/interface attributes match; native operational state and separately sourced Linux flags may be shown. Attribute equality does not prove continuity.
-- `absent / MISSING_FROM_NATIVE_INVENTORY`: only qualified Linux literal association with a successful complete inventory in the matching namespace. Missing SRL alias is `unavailable / ALIAS_UNRESOLVED`, not proof of deletion.
-- `unavailable`: stopped/absent container, missing namespace, failed/malformed inventory, changed in-flight observation or ambiguous native alias. A failed node does not remove other nodes or declarations.
-- `unresolved / NOT_ENROLLED` or `IDENTITY_CHANGED`: partial initial enrollment or changed namespace/interface attributes; no automatic adoption.
-- `unsupported`: explicit native-kind, role or unresolved-node reason. Declared objects stay in the graph, including unsupported links with no endpoint projection. No invented peers.
+Full container replacement yields ASSOCIATION_CONFLICT. Stopping a veth-owning namespace may remove the peer interface while the peer container remains running; successful Linux inventory can then establish absence. No repair/re-enrollment after faults.
 
-Full container replacement rejects the collection with ASSOCIATION_CONFLICT. Unsupported/missing initial candidates remain explicit. A disconnected node has a container row and no invented data-plane endpoints. Per-node native inventory is fetched once, projected to occurrence results; Linux inventory is likewise fetched once. Observed interfaces remain attribute evidence separate from declared occurrences, not a second topology authority.
+## GUI, historical compatibility and migration
 
-Strict DTO allowlists exclude raw configuration, native stderr, arbitrary paths/PIDs, credentials and daemon handles. Finite reasons and bounds apply before browser disclosure. Linux admin flags/conditional carrier are supplemental kernel facts, not NOS health. Peer identity, continuity and link health remain unknown. Stopping a veth-owning namespace may remove the peer interface while its container remains running; that is evidence-backed absence, not loss of inspection.
+Node/link inspectors filter exact graph IDs and declared occurrences. Preserve selection, keyboard navigation, timestamps/provenance, stale labeling, bounded polling, cancellation, non-overlap and superseded-response rejection. New0.7 responses must match the selected graph, source/bundle and occurrence references. Failed refreshes never produce fresh evidence; any prior snapshot remains explicitly historical.
 
-## GUI and compatibility
+| Data | Compatibility policy |
+|---|---|
+| Historical observation/0.1–0.4 | Strict frozen validators in `observation-history.ts`; original meanings/recordings preserved |
+| Historical observation/0.5 | MULTI-ENDPOINT-V2 only; strict reader |
+| Historical observation/0.6 | CAPACITY-MEDIUM/MAX only; strict reader |
+| New observation/0.7 | All five approved profiles through the single active association path |
+| Old/unknown session format or enrollment version | INCOMPATIBLE_SESSION before any runtime call, even if also expired |
+| Current but expired/mismatched session | OBSERVATION_UNAVAILABLE; no runtime call |
 
-Node inspectors filter by native-derived node ID; link inspectors filter exact link occurrence ID. Endpoint rows use occurrence keys, with declared names, native names/aliases, association reasons, timestamp and provenance. Isolated nodes show container state and zero declared data-plane endpoints. Selection, keyboard access, bounded polling, stale/superseded response handling and cancellation remain. Bundle/graph references are checked on receipt of0.5 observations.
+`parseObservation` retains the original0.1 recording reader. The current endpoint renderer dispatches0.2–0.7; accepting historical data does not make it a fresh session. Frozen old association reducers exist only under `tests/helpers/legacy-association.ts` as test oracles; application modules do not import them. No legacy collector is installed or selected.
 
-The generic collector is enabled only for MULTI-ENDPOINT-V2, CAPACITY-MEDIUM and CAPACITY-MAX. Legacy pair collectors/contracts remain for compatibility, not templates for broader enrollment. Original MULTI-ENDPOINT remains an immutable on-demand declaration reference: `host` invokes a native special endpoint role. Its failed expectations and attempt are preserved, and V2 is a distinct bundle with `client`. No source repair or native semantic override.
+**Migration:** stop only a currently authorized owned trial, remove its transient session through scoped cleanup and create a new dedicated VM/session explicitly. Never access an old VM to migrate it, edit a manifest version, reuse a stopped trial or adopt replaced resources. A newly created session lasts one hour; its VM has the existing two-hour shutdown lease. Without a compatible live session, recorded native/declaration previews remain usable without a VM. An incompatible session displays a specific fresh-enrollment message with refresh unavailable.
 
-Migration: fresh session required for the new profile; do not mutate/reuse old manifests or stopped VMs. Rollback disables the observation session and restores application source through Git and only manifest-listed A16 documents from history/A16-before-A17. No persistent-data migration. Privileged observation stays in a dedicated VM; browser and native declaration worker receive no runtime socket. TT-01 excludes login/multi-user authorization. No capture, terminals, arbitrary uploads or deployment controls.
+**Rollback:** disable live sessions, restore A18 application source from Git and only manifest-listed predecessor documents from `history/A18-before-A19`. Reverify the restored completion manifest. Existing recordings are unchanged; no persistent-data migration exists. A18 runtime use would require its own fresh VM and enrollment using the restored A18 setup; do not reuse an A19 or earlier trial. Reopen on native upgrades, new kinds/roles, durable/shared environments or identity requirements for operations.
 
-## Qualification and remaining gates
+## Qualification scope
 
-**Observed:** contract/build/browser and fresh runtime evidence in A17; actual mutations include independent parallel-link state, missing/duplicate aliases, deletion/replacement, node restart, lab replacement and cancellation. Mocked one-node inspection errors, malicious text and process faults are labeled separately. Original failed attempts are retained. All task-created labs are removed and VMs stopped; no pre-existing VM accessed.
-
-**Unresolved / not qualified:** general capacity beyond the three measured fixtures, arbitrary bundles/kinds/special roles, atomic snapshots, continuous identity, qualified peers, NOS configuration/health and forwarding correctness. Historical Q outcomes and177 corpus denominator unchanged. B5/Q-05 and S-01/S-02/S-05/S-07 gain scoped application-integration evidence only.
-
-## A18 qualified capacity and failure envelope
-
-**Observed:** three approved fixtures satisfy predeclared normal budgets; largest is8 nodes/16 links/32 occurrences with one SRL router and seven Linux nodes including isolated. Twenty guest and twenty host samples plus ten browser samples per fixture. Full [A18 measurements and limitations](../implementation/A18/RESULTS.md). No resource-limit increase. This qualifies those concrete shapes/hardware, not every arbitrary graph within the schema maxima or8 SRL nodes.
-
-**Observed:** per-node injected native process failure/malformed output preserves other observations. Aggregate timeout/output failure rejects the whole collection; the UI retains the previous timestamp as historical until recovery. Maximum-size actual native alias, deletion/replacement and stop/restart semantics retain identity guards. Host transport deadline remains9s, separate from6s native aggregation/termination. Production CLI stays unchanged; fault substitution exists only in explicit qualification scripts and is restored by hash check.
-
-**Compatibility:**0.6 is reserved for CAPACITY-MEDIUM/MAX;0.5 remains the existing MULTI-ENDPOINT-V2 domain. Old client validators must reject unknown0.6 rather than silently reinterpret it. No persisted-source migration. Rollback disables sessions and restores Git source plus manifest-listed A17 design files from history/A17-before-A18. Historical files/DTOs preserved. No auth/peer/continuity/capture claims.
+[EXP-024](../../experiments/EXP-024-consolidation/RESULTS.md) separates actual native transitions, injected process faults, transport mocks and historical replay. Measured profiles/hardware do not establish every graph within the bounds, atomic snapshots, sustained service reliability, peer identity, continuous identity, NOS health or forwarding. Historical Q-gate outcomes and the 177-case denominator are unchanged. B5/Q-05 and S-01/S-02/S-05/S-07 receive scoped application integration evidence only; D-15/S-08 publication remains separate.

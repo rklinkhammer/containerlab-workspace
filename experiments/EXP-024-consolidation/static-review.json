@@ -1,0 +1,48 @@
+{
+  "activeLegacyReducerImports": false,
+  "duplicateCollectorRemoved": true,
+  "fixtureChanges": [],
+  "sourceLines": [
+    {
+      "path": "backend/observation.ts",
+      "beforeLines": 41,
+      "afterLines": 32
+    },
+    {
+      "path": "backend/observation-session.ts",
+      "beforeLines": 0,
+      "afterLines": 12
+    },
+    {
+      "path": "contracts/observation.ts",
+      "beforeLines": 130,
+      "afterLines": 8
+    },
+    {
+      "path": "contracts/observation-history.ts",
+      "beforeLines": 0,
+      "afterLines": 68
+    },
+    {
+      "path": "native/observer/inspect.py",
+      "beforeLines": 121,
+      "afterLines": 98
+    },
+    {
+      "path": "native/observer/multi.py",
+      "beforeLines": 98,
+      "afterLines": 0
+    },
+    {
+      "path": "native/observer/reader.py",
+      "beforeLines": 0,
+      "afterLines": 33
+    },
+    {
+      "path": "scripts/observation-session.py",
+      "beforeLines": 66,
+      "afterLines": 55
+    }
+  ],
+  "interpretation": "Counts include historical reader extraction; not a complexity or quality metric. Old reducers are test-only."
+}

@@ -1,0 +1,674 @@
+[
+  {
+    "profile": "RUNTIME-PAIR",
+    "nodes": [
+      {
+        "name": "left",
+        "kind": "linux",
+        "endpointCount": 1
+      },
+      {
+        "name": "right",
+        "kind": "linux",
+        "endpointCount": 1
+      }
+    ],
+    "links": [
+      {
+        "occurrence": 0,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "left",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "right",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      }
+    ],
+    "commands": 6
+  },
+  {
+    "profile": "SRL-PAIR",
+    "nodes": [
+      {
+        "name": "left",
+        "kind": "nokia_srlinux",
+        "endpointCount": 1
+      },
+      {
+        "name": "right",
+        "kind": "linux",
+        "endpointCount": 1
+      }
+    ],
+    "links": [
+      {
+        "occurrence": 0,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "left",
+            "declared": "ethernet-1/1",
+            "native": "e1-1",
+            "alias": "ethernet-1/1"
+          },
+          {
+            "position": 1,
+            "node": "right",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      }
+    ],
+    "commands": 6
+  },
+  {
+    "profile": "MULTI-ENDPOINT-V2",
+    "nodes": [
+      {
+        "name": "router",
+        "kind": "nokia_srlinux",
+        "endpointCount": 2
+      },
+      {
+        "name": "client",
+        "kind": "linux",
+        "endpointCount": 2
+      },
+      {
+        "name": "isolated",
+        "kind": "linux",
+        "endpointCount": 0
+      }
+    ],
+    "links": [
+      {
+        "occurrence": 0,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "router",
+            "declared": "ethernet-1/1",
+            "native": "e1-1",
+            "alias": "ethernet-1/1"
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 1,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "router",
+            "declared": "ethernet-1/2",
+            "native": "e1-2",
+            "alias": "ethernet-1/2"
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      }
+    ],
+    "commands": 6
+  },
+  {
+    "profile": "CAPACITY-MEDIUM",
+    "nodes": [
+      {
+        "name": "router",
+        "kind": "nokia_srlinux",
+        "endpointCount": 2
+      },
+      {
+        "name": "client",
+        "kind": "linux",
+        "endpointCount": 6
+      },
+      {
+        "name": "n2",
+        "kind": "linux",
+        "endpointCount": 4
+      },
+      {
+        "name": "n3",
+        "kind": "linux",
+        "endpointCount": 4
+      },
+      {
+        "name": "isolated",
+        "kind": "linux",
+        "endpointCount": 0
+      }
+    ],
+    "links": [
+      {
+        "occurrence": 0,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "router",
+            "declared": "ethernet-1/1",
+            "native": "e1-1",
+            "alias": "ethernet-1/1"
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 1,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "router",
+            "declared": "ethernet-1/2",
+            "native": "e1-2",
+            "alias": "ethernet-1/2"
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 2,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "client",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n2",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 3,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "client",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n2",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 4,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n2",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n3",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 5,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n2",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n3",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 6,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n3",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth5",
+            "native": "eth5",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 7,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n3",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth6",
+            "native": "eth6",
+            "alias": ""
+          }
+        ]
+      }
+    ],
+    "commands": 10
+  },
+  {
+    "profile": "CAPACITY-MAX",
+    "nodes": [
+      {
+        "name": "router",
+        "kind": "nokia_srlinux",
+        "endpointCount": 2
+      },
+      {
+        "name": "client",
+        "kind": "linux",
+        "endpointCount": 8
+      },
+      {
+        "name": "n2",
+        "kind": "linux",
+        "endpointCount": 4
+      },
+      {
+        "name": "n3",
+        "kind": "linux",
+        "endpointCount": 6
+      },
+      {
+        "name": "n4",
+        "kind": "linux",
+        "endpointCount": 4
+      },
+      {
+        "name": "n5",
+        "kind": "linux",
+        "endpointCount": 4
+      },
+      {
+        "name": "n6",
+        "kind": "linux",
+        "endpointCount": 4
+      },
+      {
+        "name": "isolated",
+        "kind": "linux",
+        "endpointCount": 0
+      }
+    ],
+    "links": [
+      {
+        "occurrence": 0,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "router",
+            "declared": "ethernet-1/1",
+            "native": "e1-1",
+            "alias": "ethernet-1/1"
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 1,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "router",
+            "declared": "ethernet-1/2",
+            "native": "e1-2",
+            "alias": "ethernet-1/2"
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 2,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "client",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n2",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 3,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "client",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n2",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 4,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n2",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n3",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 5,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n2",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n3",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 6,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n3",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n4",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 7,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n3",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n4",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 8,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n4",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n5",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 9,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n4",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n5",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 10,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n5",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n6",
+            "declared": "eth1",
+            "native": "eth1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 11,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n5",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n6",
+            "declared": "eth2",
+            "native": "eth2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 12,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n6",
+            "declared": "eth3",
+            "native": "eth3",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth5",
+            "native": "eth5",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 13,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "n6",
+            "declared": "eth4",
+            "native": "eth4",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "client",
+            "declared": "eth6",
+            "native": "eth6",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 14,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "client",
+            "declared": "eth7",
+            "native": "eth7",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n3",
+            "declared": "eth5",
+            "native": "eth5",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "occurrence": 15,
+        "endpoints": [
+          {
+            "position": 0,
+            "node": "client",
+            "declared": "eth8",
+            "native": "eth8",
+            "alias": ""
+          },
+          {
+            "position": 1,
+            "node": "n3",
+            "declared": "eth6",
+            "native": "eth6",
+            "alias": ""
+          }
+        ]
+      }
+    ],
+    "commands": 16
+  }
+]

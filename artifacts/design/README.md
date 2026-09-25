@@ -1,4 +1,12 @@
-# Architecture handoff — A18
+# Architecture handoff — A19
+
+**A19 current — Implemented:** the five existing approved profiles share one native-derived bounded enrollment, collector and association path. Fresh sessions use enrollment/0.2, observation-session/0.2 and observation/0.7. Strict historical0.1–0.6 readers remain; duplicate fixed-pair runtime paths are removed. Incompatible sessions fail before runtime access. [A19 results](../implementation/A19/RESULTS.md) and [current observation contract](OBSERVATION_CONTRACT.md) define actual verification, migration and limitations. TT-01, historical Q statuses and177-case denominator are unchanged.
+
+**Inferred next:** a finite sustained-refresh/recovery qualification of an existing approved profile, with predeclared budgets and fresh-session cleanup, before capability expansion. Peer/continuity/NOS health/forwarding remain unknown. No new kinds, discovery, operational controls or authorization work is implied.
+
+Current reading: [architecture](ARCHITECTURE.md), [D-24 decisions](DECISIONS.md), [observation contract](OBSERVATION_CONTRACT.md), [readiness](READINESS.md), [backlog](P1A_BACKLOG.md), [implementation plan](IMPLEMENTATION_PLAN.md), [traceability](TRACEABILITY.md), [verified completion](COMPLETION.json), [A19 results](../implementation/A19/RESULTS.md). [Predecessor archive](history/A18-before-A19/MANIFEST.json) preserves A18 and the exact executing brief.
+
+## Historical design context (A18 and earlier)
 
 **A18 current — Observed:** selected approved capacity fixtures qualify3/2/4,5/8/16 and8/16/32 nodes/links/endpoint occurrences under unchanged6s/256KiB collection limits. Twenty guest and twenty host samples plus ten browser refreshes per fixture all meet predeclared thresholds. Maximum native collection448.6ms, host transport500.4ms, browser refresh521.0ms, combined native/Linux output61985 bytes. CAPACITY-MEDIUM/MAX use observation/0.6; prior profiles retain their DTOs. [A18 evidence](../implementation/A18/RESULTS.md). This is selected-fixture/local-hardware qualification, not arbitrary-topology or NOS-performance capacity. TT-01, historical Q outcomes and177 denominator unchanged. Earlier current/next statements below are historical. **Next, Inferred:** consolidate legacy pair collectors onto bounded native-derived enrollment with explicit fresh-session migration and regression evidence before broadening supported deployments.
 

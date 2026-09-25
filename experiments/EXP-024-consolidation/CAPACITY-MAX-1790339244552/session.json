@@ -1,0 +1,1449 @@
+{
+  "sessionFormat": "observation-session/0.2",
+  "vm": "clab-load-20260925-122323-exp016",
+  "expiresAt": "2026-09-25T13:24:02.885432+00:00",
+  "createdFor": "runtime-observation-qualification",
+  "profile": "CAPACITY-MAX",
+  "binding": {
+    "deploymentId": "6621cb4ad4c43f6337e132450b3b313cb3fbfd13f256cf4561c7580e10aa47c6",
+    "sourceSha256": "4908b620d5f65ec804bbe1e5637aee38fe2849042b438e80ae20a45a02c93aa0",
+    "plan": {
+      "version": "enrollment/0.2",
+      "bundleId": "CAPACITY-MAX",
+      "bundleSha256": "8ee46e628dad347a7abab0eab07b9661929cbf9b8a9b2198902f1a9bd800d364",
+      "sourceSha256": "4908b620d5f65ec804bbe1e5637aee38fe2849042b438e80ae20a45a02c93aa0",
+      "nodes": [
+        {
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n1",
+          "node": "isolated",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+          "node": "n2",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+          "node": "n3",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+          "node": "n4",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+          "node": "n5",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+          "node": "n6",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n7",
+          "node": "router",
+          "kind": "nokia_srlinux",
+          "supported": true
+        }
+      ],
+      "links": [
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l0",
+          "occurrence": 0
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l1",
+          "occurrence": 1
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l2",
+          "occurrence": 2
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l3",
+          "occurrence": 3
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l4",
+          "occurrence": 4
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l5",
+          "occurrence": 5
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l6",
+          "occurrence": 6
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l7",
+          "occurrence": 7
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l8",
+          "occurrence": 8
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l9",
+          "occurrence": 9
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l10",
+          "occurrence": 10
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l11",
+          "occurrence": 11
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l12",
+          "occurrence": 12
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l13",
+          "occurrence": 13
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l14",
+          "occurrence": 14
+        },
+        {
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l15",
+          "occurrence": 15
+        }
+      ],
+      "endpoints": [
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l0:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l0",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n7",
+          "node": "router",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/1",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l0:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l0",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l1:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l1",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n7",
+          "node": "router",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/2",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l1:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l1",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth2",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l2:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l2",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth3",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l2:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l2",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+          "node": "n2",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l3:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l3",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth4",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l3:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l3",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+          "node": "n2",
+          "kind": "linux",
+          "declaredInterface": "eth2",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l4:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l4",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+          "node": "n2",
+          "kind": "linux",
+          "declaredInterface": "eth3",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l4:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l4",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+          "node": "n3",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l5:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l5",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+          "node": "n2",
+          "kind": "linux",
+          "declaredInterface": "eth4",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l5:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l5",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+          "node": "n3",
+          "kind": "linux",
+          "declaredInterface": "eth2",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l6:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l6",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+          "node": "n3",
+          "kind": "linux",
+          "declaredInterface": "eth3",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l6:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l6",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+          "node": "n4",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l7:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l7",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+          "node": "n3",
+          "kind": "linux",
+          "declaredInterface": "eth4",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l7:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l7",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+          "node": "n4",
+          "kind": "linux",
+          "declaredInterface": "eth2",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l8:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l8",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+          "node": "n4",
+          "kind": "linux",
+          "declaredInterface": "eth3",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l8:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l8",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+          "node": "n5",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l9:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l9",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+          "node": "n4",
+          "kind": "linux",
+          "declaredInterface": "eth4",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l9:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l9",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+          "node": "n5",
+          "kind": "linux",
+          "declaredInterface": "eth2",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l10:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l10",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+          "node": "n5",
+          "kind": "linux",
+          "declaredInterface": "eth3",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l10:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l10",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+          "node": "n6",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l11:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l11",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+          "node": "n5",
+          "kind": "linux",
+          "declaredInterface": "eth4",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l11:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l11",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+          "node": "n6",
+          "kind": "linux",
+          "declaredInterface": "eth2",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l12:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l12",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+          "node": "n6",
+          "kind": "linux",
+          "declaredInterface": "eth3",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l12:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l12",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth5",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l13:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l13",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+          "node": "n6",
+          "kind": "linux",
+          "declaredInterface": "eth4",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l13:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l13",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth6",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l14:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l14",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth7",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l14:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l14",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+          "node": "n3",
+          "kind": "linux",
+          "declaredInterface": "eth5",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l15:endpoint:0",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l15",
+          "position": 0,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+          "node": "client",
+          "kind": "linux",
+          "declaredInterface": "eth8",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l15:endpoint:1",
+          "linkId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l15",
+          "position": 1,
+          "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+          "node": "n3",
+          "kind": "linux",
+          "declaredInterface": "eth6",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+        "node": "client",
+        "id": "d29a2ea0d2d4fe7f58f4e51c0f328bddb51c799d42881f791975f37fea77cf7e",
+        "namespace": "62ec7e80cd47747388c9c017e4593802dd5145607415e91829e0f4496975f561",
+        "endpoints": [
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l0:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 16,
+              "mac": "aa:c1:ab:84:b6:86",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l1:endpoint:1",
+            "item": {
+              "name": "eth2",
+              "alias": "",
+              "index": 22,
+              "mac": "aa:c1:ab:db:68:4e",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l2:endpoint:0",
+            "item": {
+              "name": "eth3",
+              "alias": "",
+              "index": 23,
+              "mac": "aa:c1:ab:90:01:dc",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l3:endpoint:0",
+            "item": {
+              "name": "eth4",
+              "alias": "",
+              "index": 33,
+              "mac": "aa:c1:ab:63:64:40",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l12:endpoint:1",
+            "item": {
+              "name": "eth5",
+              "alias": "",
+              "index": 35,
+              "mac": "aa:c1:ab:e4:dd:ca",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l13:endpoint:1",
+            "item": {
+              "name": "eth6",
+              "alias": "",
+              "index": 39,
+              "mac": "aa:c1:ab:49:4f:26",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l14:endpoint:0",
+            "item": {
+              "name": "eth7",
+              "alias": "",
+              "index": 41,
+              "mac": "aa:c1:ab:04:27:f1",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l15:endpoint:0",
+            "item": {
+              "name": "eth8",
+              "alias": "",
+              "index": 43,
+              "mac": "aa:c1:ab:a8:57:54",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n1",
+        "node": "isolated",
+        "id": "9177808d9a83d678f04eb7736a8931b0e68c952f7f2a6b5457850091309ba0c7",
+        "namespace": "1f4d523eb6ca704a855f83900267036b663d206eec0fba92923e7ad0a818b705",
+        "endpoints": []
+      },
+      {
+        "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+        "node": "n2",
+        "id": "46e8d358d60bfc408364f6f7515c791166074dc649abc4b07598ab2c848026b2",
+        "namespace": "3af0741bb85aa8dc4282353e883d70c1150caacfa12829ea1f7ed6e88d0bbc2d",
+        "endpoints": [
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l2:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 24,
+              "mac": "aa:c1:ab:86:30:8c",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l3:endpoint:1",
+            "item": {
+              "name": "eth2",
+              "alias": "",
+              "index": 34,
+              "mac": "aa:c1:ab:89:49:35",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l4:endpoint:0",
+            "item": {
+              "name": "eth3",
+              "alias": "",
+              "index": 19,
+              "mac": "aa:c1:ab:72:ee:cd",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l5:endpoint:0",
+            "item": {
+              "name": "eth4",
+              "alias": "",
+              "index": 37,
+              "mac": "aa:c1:ab:e8:17:c0",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+        "node": "n3",
+        "id": "93a5a0c08c1ef50cac7f43e4f3428ac824d6ac4ce22e6901eeab3621ae7da484",
+        "namespace": "d19927a336b4f1f78d457e57322ae386e539b6e17f849cd6f1d72fa8a7e00ac3",
+        "endpoints": [
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l4:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 20,
+              "mac": "aa:c1:ab:f8:28:6a",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l5:endpoint:1",
+            "item": {
+              "name": "eth2",
+              "alias": "",
+              "index": 38,
+              "mac": "aa:c1:ab:82:e4:34",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l6:endpoint:0",
+            "item": {
+              "name": "eth3",
+              "alias": "",
+              "index": 13,
+              "mac": "aa:c1:ab:90:cb:c7",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l7:endpoint:0",
+            "item": {
+              "name": "eth4",
+              "alias": "",
+              "index": 27,
+              "mac": "aa:c1:ab:11:95:54",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l14:endpoint:1",
+            "item": {
+              "name": "eth5",
+              "alias": "",
+              "index": 42,
+              "mac": "aa:c1:ab:3b:2d:f8",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l15:endpoint:1",
+            "item": {
+              "name": "eth6",
+              "alias": "",
+              "index": 44,
+              "mac": "aa:c1:ab:16:4d:76",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+        "node": "n4",
+        "id": "9808c09b885ce2230f4133937d157c9ca5630bc63ac259f886d8a37c5377ba82",
+        "namespace": "fc2f7ad3e1490590c77310347e61e8436af99eba0e7d8e35da2a8126675ab1fc",
+        "endpoints": [
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l6:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 14,
+              "mac": "aa:c1:ab:8c:1e:61",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l7:endpoint:1",
+            "item": {
+              "name": "eth2",
+              "alias": "",
+              "index": 28,
+              "mac": "aa:c1:ab:bf:b1:4d",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l8:endpoint:0",
+            "item": {
+              "name": "eth3",
+              "alias": "",
+              "index": 25,
+              "mac": "aa:c1:ab:0b:9b:19",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l9:endpoint:0",
+            "item": {
+              "name": "eth4",
+              "alias": "",
+              "index": 31,
+              "mac": "aa:c1:ab:ef:3b:97",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+        "node": "n5",
+        "id": "072b359aba9e0d189d9d7d00b11361f8241b0088987aedc47e0357a90cd461b9",
+        "namespace": "33a957ca0f7bbea17dd9dcb7b3549a572dec0ddac42f567945c930a39190fb24",
+        "endpoints": [
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l8:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 26,
+              "mac": "aa:c1:ab:fe:20:b7",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l9:endpoint:1",
+            "item": {
+              "name": "eth2",
+              "alias": "",
+              "index": 32,
+              "mac": "aa:c1:ab:1a:05:a3",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l10:endpoint:0",
+            "item": {
+              "name": "eth3",
+              "alias": "",
+              "index": 17,
+              "mac": "aa:c1:ab:49:86:72",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l11:endpoint:0",
+            "item": {
+              "name": "eth4",
+              "alias": "",
+              "index": 29,
+              "mac": "aa:c1:ab:f8:f3:c8",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+        "node": "n6",
+        "id": "e9cf48fdc018a0c162b756ad9b54932da8086421fd926998a7b057d8bef08f64",
+        "namespace": "03c9b74ccd63a50fbd15d20b52a62507ced957a5a0e93cdd798c6b689c3214b1",
+        "endpoints": [
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l10:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 18,
+              "mac": "aa:c1:ab:01:3a:06",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l11:endpoint:1",
+            "item": {
+              "name": "eth2",
+              "alias": "",
+              "index": 30,
+              "mac": "aa:c1:ab:b7:05:f7",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l12:endpoint:0",
+            "item": {
+              "name": "eth3",
+              "alias": "",
+              "index": 36,
+              "mac": "aa:c1:ab:c9:06:5c",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l13:endpoint:0",
+            "item": {
+              "name": "eth4",
+              "alias": "",
+              "index": 40,
+              "mac": "aa:c1:ab:be:81:84",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n7",
+        "node": "router",
+        "id": "1d9b3b9fb77c7f504d8f233aae7a848296aa9daf525209942be130909b1950fb",
+        "namespace": "a34277bb308f050c0f40aaa2f6e379138bb2c78bb603b819511b508359507b41",
+        "endpoints": [
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l0:endpoint:0",
+            "item": {
+              "name": "e1-1",
+              "alias": "ethernet-1/1",
+              "index": 15,
+              "mac": "aa:c1:ab:71:11:4a",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l1:endpoint:0",
+            "item": {
+              "name": "e1-2",
+              "alias": "ethernet-1/2",
+              "index": 21,
+              "mac": "aa:c1:ab:9b:db:4d",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "graph": {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "CAPACITY-MAX",
+      "sourceSha256": "4908b620d5f65ec804bbe1e5637aee38fe2849042b438e80ae20a45a02c93aa0",
+      "outcomeSha256": "b09f30cb7c0574a73ab0b40f6272cbd45bf6af5308a595256ee9a0e2b41d3fc9",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "CAPACITY-MAX",
+      "bundleSha256": "8ee46e628dad347a7abab0eab07b9661929cbf9b8a9b2198902f1a9bd800d364",
+      "entryFile": "CAPACITY-MAX.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "4997fa91973005bcbc59e2f4d471e443",
+      "completedAt": "2026-09-25T12:24:12.321Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+        "name": "client",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n1",
+        "name": "isolated",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+        "name": "n2",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+        "name": "n3",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+        "name": "n4",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+        "name": "n5",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+        "name": "n6",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n7",
+        "name": "router",
+        "kind": "nokia_srlinux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n7",
+            "nodeLabel": "router",
+            "interface": "ethernet-1/1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+            "nodeLabel": "client",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l1",
+        "occurrence": 1,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n7",
+            "nodeLabel": "router",
+            "interface": "ethernet-1/2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+            "nodeLabel": "client",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l2",
+        "occurrence": 2,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+            "nodeLabel": "client",
+            "interface": "eth3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+            "nodeLabel": "n2",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l3",
+        "occurrence": 3,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+            "nodeLabel": "client",
+            "interface": "eth4",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+            "nodeLabel": "n2",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l4",
+        "occurrence": 4,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+            "nodeLabel": "n2",
+            "interface": "eth3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+            "nodeLabel": "n3",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l5",
+        "occurrence": 5,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+            "nodeLabel": "n2",
+            "interface": "eth4",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+            "nodeLabel": "n3",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l6",
+        "occurrence": 6,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+            "nodeLabel": "n3",
+            "interface": "eth3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+            "nodeLabel": "n4",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l7",
+        "occurrence": 7,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+            "nodeLabel": "n3",
+            "interface": "eth4",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+            "nodeLabel": "n4",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l8",
+        "occurrence": 8,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+            "nodeLabel": "n4",
+            "interface": "eth3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+            "nodeLabel": "n5",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l9",
+        "occurrence": 9,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+            "nodeLabel": "n4",
+            "interface": "eth4",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+            "nodeLabel": "n5",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l10",
+        "occurrence": 10,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+            "nodeLabel": "n5",
+            "interface": "eth3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+            "nodeLabel": "n6",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l11",
+        "occurrence": 11,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+            "nodeLabel": "n5",
+            "interface": "eth4",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+            "nodeLabel": "n6",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l12",
+        "occurrence": 12,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+            "nodeLabel": "n6",
+            "interface": "eth3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+            "nodeLabel": "client",
+            "interface": "eth5",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l13",
+        "occurrence": 13,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+            "nodeLabel": "n6",
+            "interface": "eth4",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+            "nodeLabel": "client",
+            "interface": "eth6",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l14",
+        "occurrence": 14,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+            "nodeLabel": "client",
+            "interface": "eth7",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+            "nodeLabel": "n3",
+            "interface": "eth5",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:l15",
+        "occurrence": 15,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+            "nodeLabel": "client",
+            "interface": "eth8",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+            "nodeLabel": "n3",
+            "interface": "eth6",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:d0",
+        "ownerId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:d1",
+        "ownerId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:d2",
+        "ownerId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n2",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 3",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:d3",
+        "ownerId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n3",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 4",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:d4",
+        "ownerId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n4",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 5",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:d5",
+        "ownerId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n5",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 6",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:d6",
+        "ownerId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n6",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 7",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:d7",
+        "ownerId": "7ca1afad9912725e7f7b50b4008252d89d48fc5193a5aa24ec23429e483d24d6:n7",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 8",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  "nativeBinarySha256": "30e841ad0f443ad07f4c1189844f33447d31587b472b9062954bbeb65596b4d5"
+}

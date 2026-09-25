@@ -1,4 +1,4 @@
-import{test}from'node:test';import assert from'node:assert/strict';import{associateProfile,profileObservationSchema}from'../contracts/observation.ts';
+import{test}from'node:test';import assert from'node:assert/strict';import{profileObservationSchema}from'../contracts/observation.ts';import{associateProfile}from'./helpers/legacy-association.ts';
 const info=(i:number)=>({status:'complete',namespace:(i?'f':'e').repeat(64),items:[{name:i?'eth1':'e1-1',alias:i?'':'ethernet-1/1',type:'veth',index:i+7,mac:`02:00:00:00:00:0${i+1}`,operationalState:'up'}]});
 const binding={deploymentId:'d'.repeat(64),sourceSha256:'c'.repeat(64),nodes:[{node:'left' as const,id:'a'.repeat(64),endpoint:info(0)},{node:'right' as const,id:'b'.repeat(64),endpoint:info(1)}]};
 const raw=()=>({ok:true,rows:binding.nodes.map((n,i)=>({node:n.node,id:n.id,kind:i?'linux':'nokia_srlinux',state:'running',lab:'observation-slice',purpose:'observation-slice-v1',interfaces:info(i),linux:{administrativeState:'up',carrier:'up',source:'linux_netlink_flags',reason:'MATCHED_NATIVE_ATTRIBUTES'}}))});

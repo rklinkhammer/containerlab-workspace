@@ -1,0 +1,51 @@
+{
+  "profile": "SRL-PAIR",
+  "warmup": {
+    "refreshMs": 264.356084,
+    "sequence": 1
+  },
+  "samples": [
+    {
+      "refreshMs": 220.5356670000001,
+      "sequence": 2
+    },
+    {
+      "refreshMs": 205.4614160000001,
+      "sequence": 3
+    },
+    {
+      "refreshMs": 204.33100000000013,
+      "sequence": 4
+    },
+    {
+      "refreshMs": 214.40854200000012,
+      "sequence": 5
+    },
+    {
+      "refreshMs": 220.0684999999994,
+      "sequence": 6
+    },
+    {
+      "refreshMs": 208.29795800000102,
+      "sequence": 7
+    },
+    {
+      "refreshMs": 200.70125000000007,
+      "sequence": 8
+    },
+    {
+      "refreshMs": 213.9208749999998,
+      "sequence": 9
+    },
+    {
+      "refreshMs": 205.49054199999955,
+      "sequence": 10
+    },
+    {
+      "refreshMs": 221.26137500000004,
+      "sequence": 11
+    }
+  ],
+  "maxMainThreadIntervalMs": 31.19999998807907,
+  "intervalSamples": 847
+}

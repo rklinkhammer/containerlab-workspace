@@ -1,0 +1,49 @@
+{
+  "profile": "MULTI-ENDPOINT-V2",
+  "warmup": {
+    "refreshMs": 314.410292,
+    "sequence": 1
+  },
+  "samples": [
+    {
+      "refreshMs": 251.9265829999997,
+      "sequence": 2
+    },
+    {
+      "refreshMs": 245.65233399999988,
+      "sequence": 3
+    },
+    {
+      "refreshMs": 236.3175000000001,
+      "sequence": 4
+    },
+    {
+      "refreshMs": 241.16399999999976,
+      "sequence": 5
+    },
+    {
+      "refreshMs": 238.18637500000023,
+      "sequence": 6
+    },
+    {
+      "refreshMs": 244.9865000000009,
+      "sequence": 7
+    },
+    {
+      "refreshMs": 242.31537500000013,
+      "sequence": 8
+    },
+    {
+      "refreshMs": 241.6025840000002,
+      "sequence": 9
+    },
+    {
+      "refreshMs": 239.36620800000128,
+      "sequence": 10
+    },
+    {
+      "refreshMs": 245.88195799999994,
+      "sequence": 11
+    }
+  ]
+}

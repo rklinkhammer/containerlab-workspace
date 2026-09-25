@@ -1,0 +1,206 @@
+Continue from architecture A18 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Treat ../containerlab-investigation as read-only evidence.
+Preserve the sibling-directory arrangement, historical evidence,
+and staged or unrelated changes. Do not access, start, stop or
+modify pre-existing Lima VMs, including stopped previous trials.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, README.md and:
+- artifacts/design/OBSERVATION_CONTRACT.md
+- artifacts/design/READINESS.md
+- artifacts/design/P1A_BACKLOG.md
+- artifacts/design/IMPLEMENTATION_PLAN.md
+- artifacts/implementation/A18/RESULTS.md
+- experiments/EXP-023-capacity/RESULTS.md
+- experiments/EXP-023-capacity/MEASUREMENTS.json
+- The enrollment, collectors, session setup, backend contracts
+  and GUI implementations.
+
+Inspect Git status and verify artifacts/design/COMPLETION.json
+before relying on the baseline.
+
+Implement the next bounded slice: consolidate active runtime
+enrollment and observation onto the bounded native-derived path,
+removing duplicated fixed-pair collection and association logic.
+
+Purpose:
+Reduce implementation complexity while preserving the behavior
+qualified in A18. This is a compatibility and maintainability
+improvement, not authorization to expand operational capabilities.
+
+This task authorizes focused application changes and qualification
+in newly created dedicated VMs deploying only existing approved
+synthetic fixtures. Ordinary builds/tests must not create VMs.
+
+1. Define the migration and acceptance contract first.
+
+   Inventory the active legacy and bounded paths, including:
+   - RUNTIME-PAIR
+   - SRL-PAIR
+   - MULTI-ENDPOINT-V2
+   - CAPACITY-MEDIUM
+   - CAPACITY-MAX
+
+   Identify shared behavior, intentional profile differences and
+   duplicated assumptions before changing code.
+
+   Write independent acceptance expectations for source/bundle
+   identity, native kinds, declared endpoint occurrences, observed
+   interfaces, failure reasons and resource limits.
+
+   Distinguish historical DTO readers from active collection code.
+   Preserve existing recordings and their original contract versions.
+   Do not rewrite old evidence to resemble the new implementation.
+
+2. Implement one cohesive bounded collection path.
+
+   Derive enrollment from the accepted native declaration graph for
+   every approved runtime profile. Remove active assumptions that
+   nodes must be named left/right or have exactly one interface.
+
+   Share the bounded subprocess reader, native inventories,
+   supplemental Linux inventory and association logic through simple
+   modules. Avoid a plugin framework, new service or discovery layer.
+
+   Preserve reviewed profile policy:
+   - Linux literal-name association.
+   - SR Linux exact native-alias association.
+   - Explicit unsupported kinds/roles.
+   - Distinct parallel endpoint occurrences.
+   - Disconnected-node container observations.
+   - Partial enrollment and partial inspection failure.
+
+   Fetch inventories per node, not per endpoint. Do not reimplement
+   Containerlab YAML semantics, defaults, inheritance or alias mapping.
+
+3. Make compatibility explicit.
+
+   Choose and document a deliberate contract-version policy for
+   newly enrolled sessions. If existing version meanings cannot
+   accommodate consolidation cleanly, introduce a new version.
+
+   Retain strict historical DTO readers for recorded evidence.
+   Historical compatibility code must not remain a second active
+   runtime collection path without a documented reason.
+
+   Require fresh enrollment for migrated runtime sessions. Detect
+   incompatible manifests before making runtime calls and report a
+   specific safe reason. Do not silently upgrade manifests, reuse
+   stopped trials, adopt replacements or re-enroll after faults.
+
+   Document rollback and how recorded-only evidence remains usable
+   when no compatible live session is available.
+
+4. Preserve identity and failure semantics.
+
+   Bind observations to source/bundle identity, declared occurrence
+   IDs, full container IDs and enrolled namespace/interface attributes.
+
+   Preserve:
+   - Linux absence only from successful matching inventory.
+   - Missing SR Linux alias as unavailable/unresolved evidence.
+   - Ambiguous association as an explicit failure.
+   - Namespace/interface changes without automatic adoption.
+   - Full container replacement rejection.
+   - Valid observations from unaffected nodes during local failures.
+   - Whole-collection rejection on aggregate deadline/output failure.
+
+   A15 demonstrated exact attribute reuse. Peer identity, interface
+   continuity, NOS health and forwarding correctness remain unknown.
+
+   Stopping a namespace may remove its veth peer while the peer
+   container remains running; do not misclassify that behavior.
+
+5. Keep the GUI behavior stable.
+
+   Preserve exact node/link occurrence filtering, parallel-link
+   distinction, disconnected-node state and explicit provenance.
+
+   Retain keyboard navigation, selection across refresh, timestamps,
+   freshness, safe text rendering, bounded polling, cancellation,
+   non-overlap and rejection of superseded responses.
+
+   Incompatible sessions and failed refreshes must not appear as
+   fresh observations. Do not add unrelated visual polish or new
+   operational controls.
+
+6. Qualify the consolidation independently.
+
+   Run appropriate contract, static, integration and browser checks.
+   Include:
+   - Historical DTO acceptance and malformed-data rejection.
+   - Fresh-session enrollment for all five approved profiles.
+   - Incompatible-session rejection before runtime access.
+   - Independent Linux/SRL association expectations.
+   - Parallel links, disconnected nodes and maximum-size bounds.
+   - Partial failures, alias loss/ambiguity and identity changes.
+   - Timeout, output limits, cancellation, overlap and recovery.
+   - Malicious text and disclosure allowlists.
+
+   Use separate fresh trials when destructive tests invalidate
+   enrollment. Never repair or re-enroll replacements to make a
+   regression pass.
+
+   Recheck baseline and maximum-size performance against A18's
+   predeclared thresholds. Preserve sample counts and comparisons
+   where practical; record methodological changes before execution.
+   Do not raise budgets to accommodate the refactor.
+
+   Label actual native transitions, injected process failures,
+   mocked outputs and recorded-data replay separately. Never change
+   independent expectations merely to match implementation.
+
+7. Retain containment and resource limits.
+
+   Keep the existing limits:
+   - Eight nodes, sixteen links, thirty-two endpoint occurrences.
+   - Sixty-four interfaces per node.
+   - Six-second aggregate collection and 256 KiB combined output.
+   - Existing host/browser deadlines and one active collection.
+
+   No privileged runtime socket may reach the browser or declaration
+   worker. Accept no browser-selected commands, paths, VMs, daemon
+   addresses or arbitrary targets.
+
+   TT-01 remains active: login and multi-user ownership authorization
+   remain out of scope. Retain containment, disclosure allowlists,
+   finite diagnostics and safe rendering.
+
+   Use port 4173; do not terminate unrelated listeners.
+   Use new session and evidence directories. Do not overwrite
+   historical qualification results.
+
+   Destroy only task-created labs, verify task containers and
+   management networks are removed, and stop every new VM,
+   including after failed qualification.
+
+8. Publish the consolidated implementation and migration guidance.
+
+   Update affected architecture, observation/enrollment contracts,
+   decisions, readiness, backlog, traceability, implementation results,
+   README and handoff.
+
+   Follow D-15 archival/publication rules before replacing published
+   documents. Verify the final completion manifest.
+
+   Keep historical Q-gate outcomes and the 177-case corpus denominator
+   unchanged unless new evidence satisfies their actual criteria.
+
+Do not introduce new native kinds, arbitrary uploads, persistent
+private-source storage, general discovery, terminals, capture,
+packet analysis or deployment controls.
+
+Complete the consolidation rather than stopping at an inventory
+or partial refactor. Continue independent work if a prerequisite
+is blocked, recording exact limitations.
+
+Finish with:
+- Which duplicated active paths were removed or retained, and why.
+- The current contract and fresh-session migration behavior.
+- Historical recording compatibility and rollback instructions.
+- Actual verification and performance results.
+- Preserved failures and separately identified unrun checks.
+- Reproducible setup, preview, qualification and cleanup commands.
+- Confirmation that task labs are removed and all new VMs stopped.
+- Remaining limitations and the smallest next gated step.

@@ -1,0 +1,52 @@
+[
+  {
+    "path": "artifacts/design/ARCHITECTURE.md",
+    "sha256": "0bf252f8f636548c2e4d92f88393003b2deb7f438d14d7207b49294197e0965a",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/DECISIONS.md",
+    "sha256": "e4ef919cb3bc3a24c04f569e4f4656f47d7ecc5e1d3e975f4530d5f20750991f",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+    "sha256": "d2676701390244ad1e2635f6bdc0999965cc75894b99475daa8c2c0a2e803bb4",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/TRACEABILITY.md",
+    "sha256": "ce4a7d593afb21db7696995927344a6256d2aa8c309935fb7b1cbf4b3645342a",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/READINESS.md",
+    "sha256": "a0ad6152fb6babb91d27eb71e02a97fafc3cf0686bb175f6f24d192b42cd755e",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/P1A_CONTRACT.md",
+    "sha256": "b55b3dfeda7c19f5520947d1d024eade5bd3baa64f9bf13cc4a89c1921b9f702",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/README.md",
+    "sha256": "8719e5d77b91ff3e4b7fa678c42ea43e5d625a0b887c6f4dceb24c61f93ec567",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/P1A_BACKLOG.md",
+    "sha256": "05a266f1fe3843117c44e082315d9f8c3e8ab6e637365d61d6e7edbc32a23aac",
+    "new": false
+  },
+  {
+    "path": "IMPLEMENTATION_HANDOFF.md",
+    "sha256": "f8ad0166352a81f43592f583b86ab0be660f463e23c00ef0001bd81f43e21165",
+    "new": false
+  },
+  {
+    "path": "artifacts/design/IMPLEMENTATION_BRIEF.md",
+    "sha256": "c2c362aaa6e00682acabb8cfdfe24457748e67ecd60e95ecc40cb5f5b28b8ee3",
+    "new": true
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "profile": "CAPACITY-MEDIUM",
+  "warmup": {
+    "refreshMs": 393.521125,
+    "sequence": 1
+  },
+  "samples": [
+    {
+      "refreshMs": 322.8470829999999,
+      "sequence": 2
+    },
+    {
+      "refreshMs": 341.824834,
+      "sequence": 3
+    },
+    {
+      "refreshMs": 336.8607919999995,
+      "sequence": 4
+    },
+    {
+      "refreshMs": 334.09366600000067,
+      "sequence": 5
+    },
+    {
+      "refreshMs": 327.1082500000002,
+      "sequence": 6
+    },
+    {
+      "refreshMs": 321.9244170000002,
+      "sequence": 7
+    },
+    {
+      "refreshMs": 431.7927500000005,
+      "sequence": 8
+    },
+    {
+      "refreshMs": 333.085833000001,
+      "sequence": 9
+    },
+    {
+      "refreshMs": 326.7712499999998,
+      "sequence": 10
+    },
+    {
+      "refreshMs": 329.7333749999998,
+      "sequence": 11
+    }
+  ],
+  "maxMainThreadIntervalMs": 35,
+  "intervalSamples": 937
+}

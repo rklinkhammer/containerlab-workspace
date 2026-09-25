@@ -1,4 +1,4 @@
-import {test}from'node:test';import assert from'node:assert/strict';import{associateStates,stateObservationSchema}from'../contracts/observation.ts';
+import {test}from'node:test';import assert from'node:assert/strict';import{stateObservationSchema}from'../contracts/observation.ts';import{associateStates}from'./helpers/legacy-association.ts';
 const ns='e'.repeat(64),item={name:'eth1',index:7,mac:'02:00:00:00:00:01',type:'veth',operationalState:'up'};
 const b={deploymentId:'d'.repeat(64),sourceSha256:'c'.repeat(64),nodes:['left','right'].map((node,i)=>({node:node as 'left'|'right',id:(i?'b':'a').repeat(64),endpoint:{status:'complete',namespace:ns,items:[item]}}))};
 const raw=()=>({ok:true,rows:b.nodes.map(n=>({node:n.node,id:n.id,lab:'observation-slice',kind:'linux',purpose:'observation-slice-v1',state:'running',interfaces:structuredClone(n.endpoint),linux:{administrativeState:'up',carrier:'up',source:'linux_netlink_flags',reason:'MATCHED_NATIVE_ATTRIBUTES'}}))});

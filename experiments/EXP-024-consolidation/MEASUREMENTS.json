@@ -1,0 +1,231 @@
+{
+  "scope": "Selected synthetic profiles on recorded local hardware; no general SLO or arbitrary topology capacity claim",
+  "warmupsExcluded": true,
+  "fixtures": [
+    {
+      "profile": "RUNTIME-PAIR",
+      "nodes": 2,
+      "links": 1,
+      "occurrences": 2,
+      "nativeLinuxCommands": 6,
+      "guestMs": {
+        "n": 20,
+        "median": 152.01824650000617,
+        "p95_nearest_rank": 156.94649900001423,
+        "maximum": 159.41936600000872
+      },
+      "combinedBytes": {
+        "n": 20,
+        "median": 10021.0,
+        "p95_nearest_rank": 10021,
+        "maximum": 10021
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 211.89516600000036,
+        "p95_nearest_rank": 239.35983300000225,
+        "maximum": 270.9359999999979
+      },
+      "dtoValidationMs": {
+        "n": 20,
+        "median": 0.18835399999989022,
+        "p95_nearest_rank": 0.3482500000000073,
+        "maximum": 0.4284170000000813
+      },
+      "dtoBytes": {
+        "n": 20,
+        "median": 2732.0,
+        "p95_nearest_rank": 2732,
+        "maximum": 2732
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 227.18041699999992,
+        "p95_nearest_rank": 230.330750000001,
+        "maximum": 230.330750000001
+      },
+      "maxBrowserIntervalMs": 30,
+      "acceptance": "PASS"
+    },
+    {
+      "profile": "SRL-PAIR",
+      "nodes": 2,
+      "links": 1,
+      "occurrences": 2,
+      "nativeLinuxCommands": 6,
+      "guestMs": {
+        "n": 20,
+        "median": 142.2131605000061,
+        "p95_nearest_rank": 148.07263799997372,
+        "maximum": 148.84481900003266
+      },
+      "combinedBytes": {
+        "n": 20,
+        "median": 13750.0,
+        "p95_nearest_rank": 13765,
+        "maximum": 13773
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 193.7292084999999,
+        "p95_nearest_rank": 198.44024999999965,
+        "maximum": 202.23912500000006
+      },
+      "dtoValidationMs": {
+        "n": 20,
+        "median": 0.19250000000101863,
+        "p95_nearest_rank": 0.3681249999999636,
+        "maximum": 0.4232499999998254
+      },
+      "dtoBytes": {
+        "n": 20,
+        "median": 2764.0,
+        "p95_nearest_rank": 2764,
+        "maximum": 2764
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 211.1094165000004,
+        "p95_nearest_rank": 221.26137500000004,
+        "maximum": 221.26137500000004
+      },
+      "maxBrowserIntervalMs": 31.19999998807907,
+      "acceptance": "PASS"
+    },
+    {
+      "profile": "MULTI-ENDPOINT-V2",
+      "nodes": 3,
+      "links": 2,
+      "occurrences": 4,
+      "nativeLinuxCommands": 6,
+      "guestMs": {
+        "n": 20,
+        "median": 166.97423100001174,
+        "p95_nearest_rank": 173.95975300001965,
+        "maximum": 174.33021600004395
+      },
+      "combinedBytes": {
+        "n": 20,
+        "median": 18065.0,
+        "p95_nearest_rank": 18088,
+        "maximum": 18095
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 218.33616699999993,
+        "p95_nearest_rank": 221.8612499999981,
+        "maximum": 225.21458299999995
+      },
+      "dtoValidationMs": {
+        "n": 20,
+        "median": 0.21599999999943975,
+        "p95_nearest_rank": 0.48841700000002675,
+        "maximum": 0.5698749999999109
+      },
+      "dtoBytes": {
+        "n": 20,
+        "median": 4713.0,
+        "p95_nearest_rank": 4713,
+        "maximum": 4713
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 241.95897950000017,
+        "p95_nearest_rank": 251.9265829999997,
+        "maximum": 251.9265829999997
+      },
+      "maxBrowserIntervalMs": 38.19999998807907,
+      "acceptance": "PASS"
+    },
+    {
+      "profile": "CAPACITY-MEDIUM",
+      "nodes": 5,
+      "links": 8,
+      "occurrences": 16,
+      "nativeLinuxCommands": 10,
+      "guestMs": {
+        "n": 20,
+        "median": 254.7281880000014,
+        "p95_nearest_rank": 276.3325509999959,
+        "maximum": 291.8854000000124
+      },
+      "combinedBytes": {
+        "n": 20,
+        "median": 36217.0,
+        "p95_nearest_rank": 36232,
+        "maximum": 36232
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 303.00410399999964,
+        "p95_nearest_rank": 308.69616700000006,
+        "maximum": 323.0017090000001
+      },
+      "dtoValidationMs": {
+        "n": 20,
+        "median": 0.3609580000002097,
+        "p95_nearest_rank": 0.7449579999999969,
+        "maximum": 0.9550000000017462
+      },
+      "dtoBytes": {
+        "n": 20,
+        "median": 15121.0,
+        "p95_nearest_rank": 15121,
+        "maximum": 15121
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 331.4096040000004,
+        "p95_nearest_rank": 431.7927500000005,
+        "maximum": 431.7927500000005
+      },
+      "maxBrowserIntervalMs": 35,
+      "acceptance": "PASS"
+    },
+    {
+      "profile": "CAPACITY-MAX",
+      "nodes": 8,
+      "links": 16,
+      "occurrences": 32,
+      "nativeLinuxCommands": 16,
+      "guestMs": {
+        "n": 20,
+        "median": 444.62230500001,
+        "p95_nearest_rank": 450.92028500002357,
+        "maximum": 452.85975199999484
+      },
+      "combinedBytes": {
+        "n": 20,
+        "median": 61883.0,
+        "p95_nearest_rank": 61898,
+        "maximum": 61906
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 498.89841700000215,
+        "p95_nearest_rank": 504.67983300000014,
+        "maximum": 508.6952079999992
+      },
+      "dtoValidationMs": {
+        "n": 20,
+        "median": 0.5501044999982696,
+        "p95_nearest_rank": 0.644124999998894,
+        "maximum": 1.0042499999999563
+      },
+      "dtoBytes": {
+        "n": 20,
+        "median": 29086.0,
+        "p95_nearest_rank": 29086,
+        "maximum": 29086
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 521.1367499999997,
+        "p95_nearest_rank": 543.6733330000006,
+        "maximum": 543.6733330000006
+      },
+      "maxBrowserIntervalMs": 30.19999998807907,
+      "acceptance": "PASS"
+    }
+  ]
+}

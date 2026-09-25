@@ -1,0 +1,134 @@
+[
+  {
+    "profile": "MULTI-ENDPOINT-V2",
+    "A18": {
+      "guestMs": {
+        "n": 20,
+        "median": 167.91342550000365,
+        "p95_nearest_rank": 171.97151799999233,
+        "maximum": 177.3493970000004
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 231.524729499999,
+        "p95_nearest_rank": 259.56025,
+        "maximum": 260.800792
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 242.72793749999937,
+        "p95_nearest_rank": 274.8075410000001,
+        "maximum": 274.8075410000001
+      }
+    },
+    "A19": {
+      "guestMs": {
+        "n": 20,
+        "median": 166.97423100001174,
+        "p95_nearest_rank": 173.95975300001965,
+        "maximum": 174.33021600004395
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 218.33616699999993,
+        "p95_nearest_rank": 221.8612499999981,
+        "maximum": 225.21458299999995
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 241.95897950000017,
+        "p95_nearest_rank": 251.9265829999997,
+        "maximum": 251.9265829999997
+      }
+    },
+    "interpretation": "Same sample counts and thresholds; descriptive separate runs, not a controlled causal benchmark"
+  },
+  {
+    "profile": "CAPACITY-MEDIUM",
+    "A18": {
+      "guestMs": {
+        "n": 20,
+        "median": 263.01089800000454,
+        "p95_nearest_rank": 271.7160159999992,
+        "maximum": 274.02187600000616
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 324.13652099999854,
+        "p95_nearest_rank": 340.9003329999996,
+        "maximum": 345.8428750000003
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 346.4252290000004,
+        "p95_nearest_rank": 386.6149580000001,
+        "maximum": 386.6149580000001
+      }
+    },
+    "A19": {
+      "guestMs": {
+        "n": 20,
+        "median": 254.7281880000014,
+        "p95_nearest_rank": 276.3325509999959,
+        "maximum": 291.8854000000124
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 303.00410399999964,
+        "p95_nearest_rank": 308.69616700000006,
+        "maximum": 323.0017090000001
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 331.4096040000004,
+        "p95_nearest_rank": 431.7927500000005,
+        "maximum": 431.7927500000005
+      }
+    },
+    "interpretation": "Same sample counts and thresholds; descriptive separate runs, not a controlled causal benchmark"
+  },
+  {
+    "profile": "CAPACITY-MAX",
+    "A18": {
+      "guestMs": {
+        "n": 20,
+        "median": 432.8938785000105,
+        "p95_nearest_rank": 443.6915819999854,
+        "maximum": 448.5606849999897
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 482.29643749999923,
+        "p95_nearest_rank": 488.0794999999998,
+        "maximum": 500.36299999999756
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 503.2780834999994,
+        "p95_nearest_rank": 520.9537499999997,
+        "maximum": 520.9537499999997
+      }
+    },
+    "A19": {
+      "guestMs": {
+        "n": 20,
+        "median": 444.62230500001,
+        "p95_nearest_rank": 450.92028500002357,
+        "maximum": 452.85975199999484
+      },
+      "hostTransportMs": {
+        "n": 20,
+        "median": 498.89841700000215,
+        "p95_nearest_rank": 504.67983300000014,
+        "maximum": 508.6952079999992
+      },
+      "browserRefreshMs": {
+        "n": 10,
+        "median": 521.1367499999997,
+        "p95_nearest_rank": 543.6733330000006,
+        "maximum": 543.6733330000006
+      }
+    },
+    "interpretation": "Same sample counts and thresholds; descriptive separate runs, not a controlled causal benchmark"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "cpuCount": "16",
+  "memoryBytes": "68719476736",
+  "arch": "arm64",
+  "node": "v26.8.1",
+  "npm": "11.19.0",
+  "lima": "limactl version 2.2.0",
+  "recipe": {
+    "path": "experiments/EXP-016-on-demand/lima.yaml",
+    "sha256": "30203d80772f6f28f52681eb738fb64297f24ca2d5c7714bd8a98366806bc79e"
+  },
+  "scope": "At most two task VMs concurrently; no controlled contention or soak claim"
+}

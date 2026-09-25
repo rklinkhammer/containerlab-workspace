@@ -1,0 +1,8 @@
+{
+  "comparison": "A18 Git HEAD versus shared A19 reader; Python AST ignores location/formatting",
+  "baselineCommit": "07a5df7a500432dff8192e0889d6df7b3e2e3cb6",
+  "identical": {
+    "Reader": true,
+    "namespace": true
+  }
+}

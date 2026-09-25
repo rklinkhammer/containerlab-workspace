@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/rklinkhammer/workspace/containerlab-workspace/experiments/EXP-024-consolidation/measure.py", line 8, in <module>
+    with (exp/(p+'-browser.log')).open('w') as f:subprocess.run(['npm','run','test:browser','--','--grep-invert','actual runtime inspection retains declaration selection|capacity live refresh samples'],env=env,check=True,stdout=f,stderr=subprocess.STDOUT)
+                                                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['npm', 'run', 'test:browser', '--', '--grep-invert', 'actual runtime inspection retains declaration selection|capacity live refresh samples']' returned non-zero exit status 1.

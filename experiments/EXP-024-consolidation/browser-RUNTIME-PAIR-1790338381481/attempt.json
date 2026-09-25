@@ -1,0 +1,49 @@
+{
+  "profile": "RUNTIME-PAIR",
+  "warmup": {
+    "refreshMs": 284.575208,
+    "sequence": 1
+  },
+  "samples": [
+    {
+      "refreshMs": 227.84341699999982,
+      "sequence": 2
+    },
+    {
+      "refreshMs": 209.13495799999964,
+      "sequence": 3
+    },
+    {
+      "refreshMs": 229.02141699999993,
+      "sequence": 4
+    },
+    {
+      "refreshMs": 221.97737499999948,
+      "sequence": 5
+    },
+    {
+      "refreshMs": 226.51741700000002,
+      "sequence": 6
+    },
+    {
+      "refreshMs": 219.55170800000087,
+      "sequence": 7
+    },
+    {
+      "refreshMs": 230.330750000001,
+      "sequence": 8
+    },
+    {
+      "refreshMs": 215.9091669999998,
+      "sequence": 9
+    },
+    {
+      "refreshMs": 227.93845800000054,
+      "sequence": 10
+    },
+    {
+      "refreshMs": 228.58762500000012,
+      "sequence": 11
+    }
+  ]
+}

@@ -1,0 +1,718 @@
+{
+  "warmup": {
+    "elapsedMs": 170.83894799998234,
+    "combinedBytes": 18081,
+    "projectedBytes": 2393,
+    "commands": [
+      {
+        "category": "native",
+        "elapsedMs": 38.374371999964296
+      },
+      {
+        "category": "native",
+        "elapsedMs": 44.86073499998611
+      },
+      {
+        "category": "linux",
+        "elapsedMs": 2.528111000003719
+      },
+      {
+        "category": "native",
+        "elapsedMs": 42.354509000006146
+      },
+      {
+        "category": "linux",
+        "elapsedMs": 2.5333610000188855
+      },
+      {
+        "category": "native",
+        "elapsedMs": 39.45597699998871
+      }
+    ],
+    "nodes": 3,
+    "occurrences": 4,
+    "ok": true
+  },
+  "samples": [
+    {
+      "elapsedMs": 173.95975300001965,
+      "combinedBytes": 18065,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 39.88370000001851
+        },
+        {
+          "category": "native",
+          "elapsedMs": 47.062072000017
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 1.384973999961403
+        },
+        {
+          "category": "native",
+          "elapsedMs": 42.675690000010036
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.8380320000565007
+        },
+        {
+          "category": "native",
+          "elapsedMs": 39.522529000009854
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 170.50484000003507,
+      "combinedBytes": 18051,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 39.87425100001474
+        },
+        {
+          "category": "native",
+          "elapsedMs": 44.91360100001884
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.5775299999963863
+        },
+        {
+          "category": "native",
+          "elapsedMs": 42.30215400002635
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.4399440000024697
+        },
+        {
+          "category": "native",
+          "elapsedMs": 37.8416029999471
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 165.55728100001943,
+      "combinedBytes": 18073,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 37.88615399997752
+        },
+        {
+          "category": "native",
+          "elapsedMs": 44.6454830000107
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.5059469999746398
+        },
+        {
+          "category": "native",
+          "elapsedMs": 40.39214199997332
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.3964860000091903
+        },
+        {
+          "category": "native",
+          "elapsedMs": 37.23510399998986
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 165.68973599999026,
+      "combinedBytes": 18065,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 39.09139500001402
+        },
+        {
+          "category": "native",
+          "elapsedMs": 43.12511099999483
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.70128299996486
+        },
+        {
+          "category": "native",
+          "elapsedMs": 41.13421199997447
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.520156000002771
+        },
+        {
+          "category": "native",
+          "elapsedMs": 36.53336400003582
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 174.33021600004395,
+      "combinedBytes": 18065,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 39.95562299996891
+        },
+        {
+          "category": "native",
+          "elapsedMs": 46.05769900001633
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.5736989999813886
+        },
+        {
+          "category": "native",
+          "elapsedMs": 43.73983699997552
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.5934910000273703
+        },
+        {
+          "category": "native",
+          "elapsedMs": 38.85660999998208
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 170.16228599999295,
+      "combinedBytes": 18088,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 38.12235899999905
+        },
+        {
+          "category": "native",
+          "elapsedMs": 44.8512780000101
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 1.5249360000098022
+        },
+        {
+          "category": "native",
+          "elapsedMs": 42.835502000002634
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.838411000027463
+        },
+        {
+          "category": "native",
+          "elapsedMs": 39.448708999998416
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 170.08311500001128,
+      "combinedBytes": 18080,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 37.889323000001696
+        },
+        {
+          "category": "native",
+          "elapsedMs": 46.97652400000152
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.7101600000492
+        },
+        {
+          "category": "native",
+          "elapsedMs": 41.29578300000958
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.7057849999891914
+        },
+        {
+          "category": "native",
+          "elapsedMs": 38.00036600000567
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 173.35898300001418,
+      "combinedBytes": 18058,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 39.11973100002797
+        },
+        {
+          "category": "native",
+          "elapsedMs": 44.47421999998369
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.625576000014007
+        },
+        {
+          "category": "native",
+          "elapsedMs": 44.15821500003858
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.7521200000251156
+        },
+        {
+          "category": "native",
+          "elapsedMs": 39.69248900000366
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 169.3975910000063,
+      "combinedBytes": 18073,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 38.561814999980015
+        },
+        {
+          "category": "native",
+          "elapsedMs": 47.60647900002368
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.535243000011178
+        },
+        {
+          "category": "native",
+          "elapsedMs": 39.43074300002536
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.7292460000012397
+        },
+        {
+          "category": "native",
+          "elapsedMs": 37.93901500000629
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 171.85345199999347,
+      "combinedBytes": 18065,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 39.03941300001179
+        },
+        {
+          "category": "native",
+          "elapsedMs": 47.1564830000375
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.5563270000361626
+        },
+        {
+          "category": "native",
+          "elapsedMs": 41.04114900002287
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.4118659999885494
+        },
+        {
+          "category": "native",
+          "elapsedMs": 39.00512100000242
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 166.01833800001486,
+      "combinedBytes": 18065,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 38.15328299998555
+        },
+        {
+          "category": "native",
+          "elapsedMs": 42.241841000020486
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 1.4870200000132172
+        },
+        {
+          "category": "native",
+          "elapsedMs": 42.288847999998325
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.758621999987554
+        },
+        {
+          "category": "native",
+          "elapsedMs": 38.53742199999033
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 169.05176699998492,
+      "combinedBytes": 18080,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 37.93825399998241
+        },
+        {
+          "category": "native",
+          "elapsedMs": 43.840089999946485
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.597995999963132
+        },
+        {
+          "category": "native",
+          "elapsedMs": 44.62751799997022
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.5548280000293744
+        },
+        {
+          "category": "native",
+          "elapsedMs": 37.004449999983535
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 157.6115500000128,
+      "combinedBytes": 18073,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 37.293793999992886
+        },
+        {
+          "category": "native",
+          "elapsedMs": 40.688093999960984
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.3693269999967015
+        },
+        {
+          "category": "native",
+          "elapsedMs": 38.22218300001623
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 1.2748930000157088
+        },
+        {
+          "category": "native",
+          "elapsedMs": 37.22462700000051
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 165.8088689999886,
+      "combinedBytes": 18073,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 37.3842609999997
+        },
+        {
+          "category": "native",
+          "elapsedMs": 45.62421600002153
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.3909939999953167
+        },
+        {
+          "category": "native",
+          "elapsedMs": 40.73343599998225
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.6011209999978746
+        },
+        {
+          "category": "native",
+          "elapsedMs": 36.58841599997231
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 167.93012400000862,
+      "combinedBytes": 18073,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 39.74088799998299
+        },
+        {
+          "category": "native",
+          "elapsedMs": 43.306864999976824
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.61291499998606
+        },
+        {
+          "category": "native",
+          "elapsedMs": 41.55350499996757
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 1.416104999975687
+        },
+        {
+          "category": "native",
+          "elapsedMs": 38.763755000047695
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 164.87319799995248,
+      "combinedBytes": 18065,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 37.08006900001237
+        },
+        {
+          "category": "native",
+          "elapsedMs": 47.17380699997875
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.4653710000279716
+        },
+        {
+          "category": "native",
+          "elapsedMs": 40.53174699998863
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 1.2689360000308625
+        },
+        {
+          "category": "native",
+          "elapsedMs": 35.85367600004474
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 164.31776199999604,
+      "combinedBytes": 18095,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 38.972146999981305
+        },
+        {
+          "category": "native",
+          "elapsedMs": 41.78615000000718
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.598874000000251
+        },
+        {
+          "category": "native",
+          "elapsedMs": 40.25954200000115
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.4974979999683455
+        },
+        {
+          "category": "native",
+          "elapsedMs": 37.68750199998294
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 160.1844340000298,
+      "combinedBytes": 18058,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 37.411545999987084
+        },
+        {
+          "category": "native",
+          "elapsedMs": 42.27008099996965
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.372995000030187
+        },
+        {
+          "category": "native",
+          "elapsedMs": 39.71529099999316
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.3177030000169907
+        },
+        {
+          "category": "native",
+          "elapsedMs": 35.620725999990555
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 165.05677700001797,
+      "combinedBytes": 18065,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 38.30828200000269
+        },
+        {
+          "category": "native",
+          "elapsedMs": 43.621450999978606
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.648084000043127
+        },
+        {
+          "category": "native",
+          "elapsedMs": 40.85940700002766
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.46212199999718
+        },
+        {
+          "category": "native",
+          "elapsedMs": 36.66450600002236
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    },
+    {
+      "elapsedMs": 160.81469499999912,
+      "combinedBytes": 18065,
+      "projectedBytes": 2393,
+      "commands": [
+        {
+          "category": "native",
+          "elapsedMs": 36.819347999994534
+        },
+        {
+          "category": "native",
+          "elapsedMs": 42.54635799998141
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.4896660000308657
+        },
+        {
+          "category": "native",
+          "elapsedMs": 39.69585400000142
+        },
+        {
+          "category": "linux",
+          "elapsedMs": 2.580832999967697
+        },
+        {
+          "category": "native",
+          "elapsedMs": 36.18417100000215
+        }
+      ],
+      "nodes": 3,
+      "occurrences": 4,
+      "ok": true
+    }
+  ]
+}

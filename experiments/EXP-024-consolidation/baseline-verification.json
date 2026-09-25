@@ -1,0 +1,8 @@
+{
+  "revision": "A18",
+  "completionSha256": "adb0d1f80cba14bdef8b89c2775ac76ca6209030ff29ca67507061bf1bc78d36",
+  "verifiedFileCount": 908,
+  "mismatches": [],
+  "checkedUtc": "2026-09-25T12:27:13.118937+00:00",
+  "scope": "Published A18 documents/evidence; intentional new application source changes have separate A19 inventory"
+}

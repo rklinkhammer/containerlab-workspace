@@ -1,5 +1,5 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';
-import {associate,parseObservation} from '../contracts/observation.ts';
+import{parseObservation}from'../contracts/observation.ts';import{associate}from'./helpers/legacy-association.ts';
 const b={deploymentId:'d'.repeat(64),sourceSha256:'e'.repeat(64),nodes:[{node:'left' as const,id:'a'.repeat(64)},{node:'right' as const,id:'b'.repeat(64)}]};
 const raw=()=>({ok:true,rows:b.nodes.map(n=>({node:n.node,id:n.id,lab:'observation-slice',kind:'linux',purpose:'observation-slice-v1',state:'running',SECRET:'never project'}))});
 test('observations associate full resource IDs and expose only approved fields',()=>{const g=associate(raw(),b,1);assert.equal(g.linkHealth,'unknown');assert.equal(g.nodes[0].state,'running');assert.ok(!JSON.stringify(g).includes('SECRET'));assert.throws(()=>parseObservation({...g,extra:'secret'}));});
