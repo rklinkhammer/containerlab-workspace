@@ -8,7 +8,7 @@ export function projectDeclaredBody(s:any,revision:string,rejection:DeclaredGrap
  const nodeIds=new Map<string,string>();
  g.nodes=s.nodes.map((n:any,i:number)=>{const id=`${revision}:n${i}`;if(nodeIds.has(n.id))throw Error('Duplicate source node');nodeIds.set(n.id,id);return{id,name:n.id,kind:n.kind||null,kindState:n.kind_state};});
  g.links=s.links.map((l:any,i:number)=>{if(l.id!==i)throw Error('Invalid occurrence');return {id:`${revision}:l${i}`,occurrence:i,type:l.type??'unknown',state:l.state,externalRole:l.external_role??'',endpoints:l.endpoints.map((e:any)=>({nodeId:nodeIds.get(e.node)??null,nodeLabel:e.node,interface:e.interface,referenceState:e.reference_state,interfaceState:e.interface_state}))};});
- const nodeKinds=new Set(['bind','volume','startup-config','license','image']);
+ const nodeKinds=new Set(['bind','volume','startup-config','license','image','env-file','identity-file']);
  // Omit every raw reference. Labels reveal category and ordinal, never paths, URL credentials or config values.
  g.dependencies=[...s.dependencies].sort((a,b)=>JSON.stringify([a.owner,a.kind,a.reference]).localeCompare(JSON.stringify([b.owner,b.kind,b.reference]))).map((d:any,i:number)=>{
   if(d.state!=='unresolved'||d.reason!=='NOT_CHECKED_DISPLAY_ONLY')throw Error('Unchecked dependency promoted');

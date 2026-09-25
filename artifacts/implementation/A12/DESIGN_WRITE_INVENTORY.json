@@ -1,0 +1,83 @@
+{
+  "revision": "A12",
+  "writes": [
+    {
+      "path": "artifacts/implementation/A12/RESULTS.md",
+      "staged": "000-RESULTS.md",
+      "sha256": "97cab8d32d371a15e415925a79ed4c0f8d5ebeb8ad6da0c1d359608748a2da41",
+      "previousSha256": null
+    },
+    {
+      "path": "experiments/EXP-017-coverage/RESULTS.md",
+      "staged": "001-RESULTS.md",
+      "sha256": "2bed1e9ffe569ac53238c45bb334fe6f7bf92042d350a89a1bfe7a1c32311ac8",
+      "previousSha256": null
+    },
+    {
+      "path": "artifacts/design/ARCHITECTURE.md",
+      "staged": "002-ARCHITECTURE.md",
+      "sha256": "2c3ccc118e7800fe536d3909c7a369a514ebde51b06c3b511979279ed450a618",
+      "previousSha256": "5193d83479793340c01f1fdbbed339fd351a1d8f3ae3a9593b24a84a426996a7"
+    },
+    {
+      "path": "artifacts/design/READINESS.md",
+      "staged": "003-READINESS.md",
+      "sha256": "34485ecc4bd2fd1d96940038d4c5bfc350e42939e6790be2c62127c64c2b24f3",
+      "previousSha256": "ea5a3cfc8e1299005410ce2acce9275e54b1213d1f57c6857a696989bf8c5782"
+    },
+    {
+      "path": "artifacts/design/P1A_BACKLOG.md",
+      "staged": "004-P1A_BACKLOG.md",
+      "sha256": "bb3530b578952ad3c5cbe0a0efe2110a2e58c9221023ae9db9d275df984082f7",
+      "previousSha256": "01405d4641e1b65e441786dff24a4a935443b1b99b0846451086b30f9dad842f"
+    },
+    {
+      "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "staged": "005-IMPLEMENTATION_PLAN.md",
+      "sha256": "05b6f0d2228c982a24da5a555c4de145096fe57a0ba05d8fe445930db514c0d8",
+      "previousSha256": "881f5549fbebfce5fbfc73ddbca511e065831c4add744c236904ea6da342996e"
+    },
+    {
+      "path": "artifacts/design/TRACEABILITY.md",
+      "staged": "006-TRACEABILITY.md",
+      "sha256": "7804485fa9fb2cbab391a73e9b538eebbf2cb9474705ba1d99e349c85b912da5",
+      "previousSha256": "369b3c505526bed26b197daffe1b78ecad21e8ef32e29f89a89922733e27ac8c"
+    },
+    {
+      "path": "artifacts/design/README.md",
+      "staged": "007-README.md",
+      "sha256": "1c268615f294734c71595c0dc8011d5c8ecfdfbc86ba449562e0178678bdf9d1",
+      "previousSha256": "ce19c8e0dd44b666fd1c013ca752fe6dbb334bcb219e7c800f67f5b416187657"
+    },
+    {
+      "path": "artifacts/design/DECISIONS.md",
+      "staged": "008-DECISIONS.md",
+      "sha256": "c33b34e3ec3530098530a12adec876e463ecac4c437e699c48eb76a7ecb80648",
+      "previousSha256": "870b8278bb77a901cfa711839f2fd231626cb1dbfa3a68b0d12ef9acb3f4de85"
+    },
+    {
+      "path": "artifacts/design/ON_DEMAND_CONTRACT.md",
+      "staged": "009-ON_DEMAND_CONTRACT.md",
+      "sha256": "9a3f2dbba8775fee586c18abd6d6d44f74e85280241ac9f50533fe9f3dedbb84",
+      "previousSha256": "138d6f1e73dff9b91e4b338bc279394809c66eeb9ed391671342eb7c3050a808"
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.md",
+      "staged": "010-IMPLEMENTATION_HANDOFF.md",
+      "sha256": "2dc460a9c2b7b6d4c3aa91b0229363ef6edf5e258b50eb4906089d8fa6915e73",
+      "previousSha256": "de622f0e7af2d49c1c25ad612efdea28612f433774af8170ceb70f66ed457533"
+    },
+    {
+      "path": "artifacts/implementation/RESULTS.md",
+      "staged": "011-RESULTS.md",
+      "sha256": "2bab15ede0fd32ec9340512824f48e02445013c655cfeba44fb8732ed5884cc3",
+      "previousSha256": "1f8c94151314162fe945b90a52462c9bc1a42d7d329f1b39121c7b8f32deb940"
+    },
+    {
+      "path": "README.md",
+      "staged": "012-README.md",
+      "sha256": "e2f74904ffa67d5e83560319b37224fd3e4324eccae583fb9c4b09f5afba4d93",
+      "previousSha256": "cf2db92fd2ba86faacd2b57e4cdb0db86fe15502a01d3e63ebae3264247507c4"
+    }
+  ]
+}

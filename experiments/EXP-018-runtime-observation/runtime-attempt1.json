@@ -1,0 +1,91 @@
+[
+  {
+    "stage": "initial",
+    "snapshot": {
+      "contract": "observation/0.1",
+      "deploymentId": "11f6e6a3d605886600c34bd5126134db80ccf0181a919ba060b3c2acf0884b88",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 1,
+      "observedAt": "2026-09-25T07:36:15.889Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0b6d6e4dafd2d1026f0acdbdf08991fbe8c9d7f05c36fe3c4fe79cf259ba354f",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "9a339a3466709add1292fb80f53244d75c79d820e245c01b616cc716cfd2da33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "inspection-prerequisite-unavailable",
+    "result": "expected INSPECTION_FAILED; no absence snapshot"
+  },
+  {
+    "stage": "recovered",
+    "snapshot": {
+      "contract": "observation/0.1",
+      "deploymentId": "11f6e6a3d605886600c34bd5126134db80ccf0181a919ba060b3c2acf0884b88",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 2,
+      "observedAt": "2026-09-25T07:36:18.392Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0b6d6e4dafd2d1026f0acdbdf08991fbe8c9d7f05c36fe3c4fe79cf259ba354f",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "9a339a3466709add1292fb80f53244d75c79d820e245c01b616cc716cfd2da33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "cancel",
+    "result": "CANCELLED"
+  },
+  {
+    "stage": "after-cancel",
+    "snapshot": {
+      "contract": "observation/0.1",
+      "deploymentId": "11f6e6a3d605886600c34bd5126134db80ccf0181a919ba060b3c2acf0884b88",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 3,
+      "observedAt": "2026-09-25T07:36:20.731Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0b6d6e4dafd2d1026f0acdbdf08991fbe8c9d7f05c36fe3c4fe79cf259ba354f",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "9a339a3466709add1292fb80f53244d75c79d820e245c01b616cc716cfd2da33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ]
+    }
+  }
+]

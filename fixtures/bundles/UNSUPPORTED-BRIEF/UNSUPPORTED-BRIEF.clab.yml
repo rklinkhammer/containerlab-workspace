@@ -1,0 +1,6 @@
+name: unsupported-brief
+topology:
+  nodes:
+    a: {kind: linux, image: alpine:3}
+  links:
+    - endpoints: ["a:eth1", "invalid"]

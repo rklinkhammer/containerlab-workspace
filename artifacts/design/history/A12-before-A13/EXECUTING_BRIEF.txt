@@ -1,0 +1,140 @@
+Continue from architecture A12 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Treat ../containerlab-investigation as read-only evidence.
+Preserve the sibling-directory arrangement and unrelated changes.
+Do not access, start, stop or modify pre-existing Lima VMs.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, README.md,
+artifacts/implementation/A12/RESULTS.md and the current architecture,
+decisions, contracts, readiness, backlog and implementation plan.
+Inspect Git status and verify artifacts/design/COMPLETION.json
+before relying on the baseline.
+
+Purpose:
+Validate our application's faithful topology representation and
+runtime integration with Containerlab. Do not turn this into a
+general validation program for Containerlab or indefinitely expand
+parsing fixtures at the expense of runtime integration.
+
+Containerlab remains authoritative for topology parsing, native
+semantics and lifecycle. Our application provides projection,
+presentation, monitoring and coordination around native interfaces.
+
+Implement the next bounded slice: read-only runtime inspection
+and state synchronization for one controlled lab.
+
+1. Establish the entry criteria.
+   Assess whether A12 provides sufficient topology fidelity for
+   this selected runtime slice. Identify only blockers that affect
+   its nodes, links, identifiers or required observations.
+   Keep universal 177-case fidelity separate and unchanged.
+   Do not require universal corpus completion before proceeding.
+
+2. Select the native observation interface.
+   Inspect pinned native CLI/API capabilities and existing evidence.
+   Choose the smallest supported interface that supplies the required
+   observations. Explain its version alignment, available fields,
+   limitations and polling/event behavior.
+   Do not introduce speculative services or duplicate native lifecycle
+   management. If polling is sufficient, use bounded polling.
+
+3. Define the observation contract and independent expectations
+   before implementation.
+   Keep declared topology and runtime observations separate.
+   Define stable lab/node association, execution or deployment identity,
+   observation timestamps, freshness and source/version provenance.
+   Distinguish observed state, unavailable information, stale data,
+   failed inspection and confirmed absence.
+   Do not infer link health from node/container health.
+   Unsupported native observations must remain explicitly unknown.
+   Never associate a recreated resource using its display name alone.
+
+4. Implement the smallest useful application integration.
+   Display the selected lab's actual native observations alongside
+   its declared graph, with clear state labels and last-observed time.
+   Include refresh, bounded periodic synchronization and visible
+   inspection errors. Prevent overlapping requests and stale responses
+   from overwriting newer observations.
+   Preserve graph selection and navigation during refresh.
+   Keep operational controls unavailable in the GUI.
+
+5. Qualify against a controlled runtime.
+   This task authorizes creating a new dedicated VM and deploying
+   one small synthetic lab using native Containerlab commands.
+   Use approved, pinned public images and a topology selected to
+   exercise the observation contract with minimal resources.
+   Record resource identities, versions and independent expectations.
+   Do not deploy external corpus examples or execute their hooks.
+
+   Exercise:
+   - Successful association of declared and observed resources.
+   - A controlled node stop/start.
+   - Inspection failure or temporary loss of connectivity.
+   - Stale-state indication and recovery.
+   - Lab removal and recreation with reused display names.
+   - Rejection of incorrect or ambiguous resource associations.
+   - Cancellation, bounded polling and cleanup.
+
+   Lab lifecycle changes are qualification actions performed through
+   native tools, not new application deployment controls.
+
+6. Preserve the existing boundaries.
+   The declaration-loading worker must remain isolated and must not
+   receive a privileged runtime socket.
+   Give the observation path only the access needed for the selected
+   native inspection mechanism; document its privilege boundary.
+   Keep disclosure allowlists, safe errors/rendering and resource
+   limits. Do not return raw configuration, credentials or unrestricted
+   native output to the browser.
+
+   TT-01 remains active: login and multi-user ownership authorization
+   are out of scope. Do not reintroduce them as prerequisites.
+
+7. Verify and report by stage.
+   Separate:
+   - Native topology loading outcomes.
+   - Adapter/projection fidelity.
+   - Runtime association and observation correctness.
+   - GUI rendering and synchronization.
+   - Containment, limits and cleanup.
+   - Deployment prerequisites encountered during qualification.
+
+   A correctly displayed native rejection can pass an application
+   test while the input remains rejected. A rendered graph does not
+   establish operational network correctness.
+   Do not claim routing, traffic forwarding or link health unless
+   specifically observed and tested.
+
+   Run relevant contract, integration and browser regression tests.
+   Record actual results and unrun checks separately. Preserve failed
+   attempts; never alter expectations merely to match implementation.
+
+Use port 4173. Do not terminate unrelated processes if occupied.
+Ordinary builds/tests must not create VMs or deploy labs automatically.
+Use the explicit fresh-session workflow for runtime qualification.
+
+Do not implement arbitrary uploads, persistent private-source storage,
+GUI deployment controls, terminals, capture or packet analysis.
+If a runtime prerequisite is unavailable, complete independent
+implementation and tests, but do not present mocks as runtime evidence.
+
+Destroy only the task-created lab, collect cleanup evidence, and stop
+the newly created VM. Do not reuse a stopped trial VM.
+
+Update the architecture, decisions, observation contract, implementation
+status, traceability and handoff. Follow D-15 archival/publication rules
+before replacing published design documents. Keep historical Q-gate
+statuses unchanged unless their actual acceptance criteria are met.
+
+Finish with:
+- What the GUI now observes from an actual running lab.
+- Which displayed states are directly observed versus unknown/inferred.
+- Evidence for resource association, freshness and recovery.
+- Actual test results and separately identified unrun checks.
+- Reproducible setup, preview, qualification and cleanup commands.
+- Confirmation that the task lab is removed and the new VM is stopped.
+- Remaining architectural blockers and the smallest next runtime slice.
+
+Complete this bounded integration rather than stopping at research,
+scaffolding or additional synthetic topology polish.

@@ -78,7 +78,10 @@ func main() {
 				dependency(n, "volume", v)
 			}
 		}
-		for k, v := range map[string]string{"startup-config": t.GetNodeStartupConfig(n), "license": t.GetNodeLicense(n), "image": t.GetNodeImage(n)} {
+		for _, v := range t.GetNodeEnvFiles(n) {
+			dependency(n, "env-file", v)
+		}
+		for k, v := range map[string]string{"identity-file": t.GetNodeIdentityFile(n), "startup-config": t.GetNodeStartupConfig(n), "license": t.GetNodeLicense(n), "image": t.GetNodeImage(n)} {
 			if v != "" {
 				dependency(n, k, v)
 			}
@@ -109,8 +112,13 @@ func main() {
 			}
 			eps = append(eps, M{"node": e.Node, "interface": e.Iface, "reference_state": ref, "interface_state": "declared_unresolved_alias"})
 		}
+		linkType := raw.GetType()
 		switch r := raw.(type) {
 		case *L.LinkVEthRaw:
+			for _, e := range r.Endpoints {
+				ep(e)
+			}
+		case *L.LinkVEthStitchedRaw:
 			for _, e := range r.Endpoints {
 				ep(e)
 			}
@@ -129,6 +137,7 @@ func main() {
 			external = "management-endpoint"
 			dependency(fmt.Sprint(i), external, r.HostInterface)
 		case *L.LinkVxlanRaw:
+			linkType = r.LinkType // Native parsed discriminator; GetType returns vxlan for both variants.
 			ep(&r.Endpoint)
 			external = "remote"
 			dependency(fmt.Sprint(i), "remote", r.Remote)
@@ -139,7 +148,7 @@ func main() {
 			state = "unsupported"
 			diags = append(diags, M{"owner": fmt.Sprint(i), "code": "UNSUPPORTED_NATIVE_LINK_TYPE"})
 		}
-		links = append(links, M{"id": i, "type": raw.GetType(), "state": state, "endpoints": eps, "external_role": external})
+		links = append(links, M{"id": i, "type": linkType, "state": state, "endpoints": eps, "external_role": external})
 	}
 	out["nodes"] = nodes
 	out["links"] = links
@@ -160,7 +169,13 @@ func safeError(raw string) M {
 	if len(m) > 1 {
 		fmt.Sscan(m[1], &line)
 	}
-	if strings.Contains(raw, "kind_code_name") {
+	if strings.Contains(raw, "invalid link endpoint format") {
+		code = "SCHEMA_ERROR"
+		message = "Native link endpoint requires node:interface format; inspect topology.links.endpoints."
+	} else if strings.Contains(raw, "cannot unmarshal !!str") && strings.Contains(raw, "types.NodeDefinition") {
+		code = "SCHEMA_ERROR"
+		message = "Native node definition must be a mapping; inspect topology.nodes indentation."
+	} else if strings.Contains(raw, "kind_code_name") {
 		code = "TEMPLATE_ERROR"
 		message = "Native template function kind_code_name is undefined; documentation context is required."
 	} else if strings.Contains(raw, "template:") || strings.Contains(raw, "failed to execute template") {

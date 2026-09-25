@@ -1,0 +1,10 @@
+{
+  "name": "clab-load-20260925-071042-exp016",
+  "status": "Stopped",
+  "vmType": "vz",
+  "arch": "aarch64",
+  "cpus": 8,
+  "memory": 17179869184,
+  "disk": 53687091200,
+  "limaVersion": "2.2.0"
+}

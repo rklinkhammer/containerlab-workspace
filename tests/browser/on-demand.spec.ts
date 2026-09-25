@@ -33,3 +33,19 @@ test('UI cancellation discards stale responses (transport mock)',async({page})=>
  await page.route('**/api/native/cancel',r=>r.fulfill({json:{cancelRequested:true}}));
  await page.goto('/');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();await page.getByRole('button',{name:'Load native declarations',exact:true}).click();await page.getByRole('button',{name:'Cancel load',exact:true}).click();await expect(page.getByRole('status')).toContainText('Cancellation requested');await expect(page.getByRole('region',{name:'Declared topology preview'})).toHaveCount(0);
 });
+
+test('expanded approved cases expose native objects and scoped dependency evidence',async({page})=>{
+ test.skip(!process.env.CLAB_NATIVE_SESSION,'Requires explicitly created dedicated VM');
+ const {readFileSync}=await import('node:fs');
+ const cases={...JSON.parse(readFileSync('experiments/EXP-017-coverage/expectations.json','utf8')),...JSON.parse(readFileSync('experiments/EXP-017-coverage/native-dispositions.json','utf8'))};
+ await page.goto('/');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
+ for(const [id,e] of Object.entries(cases) as [string,any][]){
+  await page.getByLabel('Approved bundle').selectOption(id);await page.getByRole('button',{name:'Load native declarations',exact:true}).click();
+  await expect(page.getByRole('status')).toContainText('completed');
+  const region=page.getByRole('region',{name:'Declared topology preview'});
+  if(e.status==='rejected'){await expect(region.getByText(e.message,{exact:false})).toBeVisible();continue;}
+  for(const [name] of e.nodes)await expect(region.getByRole('button',{name:name+' ',exact:false}).first()).toBeVisible();
+  for(const [i,l] of e.links.entries())await expect(region.getByRole('button',{name:`Link ${i+1} · ${l[0]}`,exact:false})).toBeVisible();
+  for(const [label,state] of e.dependencyChecks)await expect(region.getByRole('listitem').filter({hasText:label})).toContainText(state.replaceAll('_',' '));
+ }
+});

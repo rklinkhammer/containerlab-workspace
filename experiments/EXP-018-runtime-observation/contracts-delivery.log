@@ -1,0 +1,74 @@
+
+> containerlab-synthetic-preview@0.1.0 test
+> node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts tests/observation.test.ts
+
+✔ independent expected files retain their published hashes (0.869709ms)
+✔ F1 retains independent node, link occurrence and alias expectations (not native execution) (3.805084ms)
+✔ F2 is diagnostic-only, with no raw source or synthetic secret in browser fixture (0.180583ms)
+✔ F3 missing input never produces invented nodes (0.126917ms)
+✔ F4 external roles remain distinct and explicitly unresolved (0.21875ms)
+✔ F5 duplicate declarations survive as two occurrence identities with rejection (0.173416ms)
+✔ unknown fields at every boundary are rejected, never stripped silently (1.655125ms)
+✔ IDs are unique and revision-scoped; all references must resolve (1.578333ms)
+✔ redacted/unavailable values cannot carry data; unknowns require reasons (0.544958ms)
+✔ F6 text/node/response bounds reject rather than truncate graph data (1.494042ms)
+✔ operational capabilities and foreign session fields are rejected, not authenticated (0.8895ms)
+✔ safe errors do not echo malformed data, native diagnostics or secrets (0.151ms)
+✔ same immutable synthetic revision has stable IDs and output (0.184375ms)
+✔ 63 declaration fixtures and all pinned source/evidence hashes verify (8.476959ms)
+✔ independent declaration object/dependency expectations remain intact (0.916ms)
+✔ specific reviewed errors identify template/schema rejection without raw native errors (0.182542ms)
+✔ contract rejects disclosure, forged resolution, invalid references, duplicate IDs and budgets (3.722ms)
+✔ adapter omits hostile raw dependency strings and unreviewed configuration (5.621208ms)
+✔ display text stays text in schema, with bounds rather than HTML interpretation (0.165625ms)
+✔ live contract separates executed provenance and stable bundle IDs from recorded evidence (10.506584ms)
+✔ worker provenance, cleanup, output and error disclosure fail closed (0.413417ms)
+✔ reviewed dependency assessments are bounded bundle membership, never resolution (1.368375ms)
+✔ 58 recorded fixtures validate; source hashes and evidence pin match retained bytes (7.470917ms)
+✔ native F1 matches independent kinds, counts and alias; source tokens are not invented (0.554708ms)
+✔ native F4 roles survive endpoint ordering and F5 preserves accepted duplicate occurrences (0.236042ms)
+✔ F7 independent single-ended requirement never invents a peer (1.159791ms)
+✔ rejections remain diagnostic-only and original/context identities stay separate (0.2145ms)
+✔ native DTO rejects unknown fields, bad references, invented origins and capabilities (2.37275ms)
+✔ projection ignores unreviewed native attributes and fails closed on unsupported arity (1.591667ms)
+✔ projection treats native display strings as text and does not turn them into IDs or URLs (0.38ms)
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+file:///Users/rklinkhammer/workspace/containerlab-workspace/tests/observation.test.ts:13
+ const trial=JSON.parse(readFileSync('experiments/EXP-018-runtime-observation/qualified-session.json','utf8'));
+ const g=parseLiveGraph(JSON.stringify(trial.graph));assert.deepEqual(g.nodes.map(n=>[n.name,n.kind]),[['left','linux'],['right','linux']]);assert.deepEqual(g.links.map(l=>[l.type,l.endpoints.map(e=>[e.nodeLabel,e.interface])]),[['veth',[['left','eth1'],['right','eth1']]]);assert.equal(g.provenance.sourceSha256,trial.binding.sourceSha256);
+                                                                                                                                                                                                                                                                                ^
+});
+
+SyntaxError [ERR_INVALID_TYPESCRIPT_SYNTAX]: Expected ',', got ')'
+    at parseTypeScript (node:internal/modules/typescript:61:36)
+    at processTypeScriptCode (node:internal/modules/typescript:129:37)
+    at Object.stripTypeScriptModuleTypes (node:internal/modules/typescript:172:22)
+    at stripTypeScriptModuleTypes (node:internal/modules/esm/translators:35:49)
+    at ModuleLoader.<anonymous> (node:internal/modules/esm/translators:684:29)
+    at #translate (node:internal/modules/esm/loader:441:20)
+    at afterLoad (node:internal/modules/esm/loader:509:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:514:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:567:36)
+    at afterResolve (node:internal/modules/esm/loader:614:52) {
+  code: 'ERR_INVALID_TYPESCRIPT_SYNTAX'
+}
+
+Node.js v26.8.1
+✖ tests/observation.test.ts (66.312542ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 30
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 125.176167
+
+✖ failing tests:
+
+test at tests/observation.test.ts:1:1
+✖ tests/observation.test.ts (66.312542ms)
+  'test failed'

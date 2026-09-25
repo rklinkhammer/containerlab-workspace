@@ -1,0 +1,181 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C252",
+    "sourceSha256": "f6ad8b3d9e2693f88bfc632d41f631e513743e35199d84f3590eabc429db09f7",
+    "outcomeSha256": "2b51198295f30645c68f15d2ba9979b94955004fb84606d956c166ce5b32bd54",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C252",
+    "bundleSha256": "8b22cfe60bf90e320debe9fd803f66068a78a4c4f33203aa18ba692369341a12",
+    "entryFile": "C252.clab.yml",
+    "fileCount": 5,
+    "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+    "jobId": "740b19f6a2b3c8341077bd74d6e34b8b",
+    "completedAt": "2026-09-25T07:13:01.570Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n0",
+      "name": "bng1",
+      "kind": "veesix_osvbng",
+      "kindState": "native_getter"
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n1",
+      "name": "corerouter1",
+      "kind": "linux",
+      "kindState": "native_getter"
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n2",
+      "name": "subscribers",
+      "kind": "linux",
+      "kindState": "native_getter"
+    }
+  ],
+  "links": [
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:l0",
+      "occurrence": 0,
+      "type": "veth",
+      "state": "declared",
+      "externalRole": "",
+      "endpoints": [
+        {
+          "nodeId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n2",
+          "nodeLabel": "subscribers",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        },
+        {
+          "nodeId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n0",
+          "nodeLabel": "bng1",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:l1",
+      "occurrence": 1,
+      "type": "veth",
+      "state": "declared",
+      "externalRole": "",
+      "endpoints": [
+        {
+          "nodeId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n0",
+          "nodeLabel": "bng1",
+          "interface": "eth2",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        },
+        {
+          "nodeId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n1",
+          "nodeLabel": "corerouter1",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:d0",
+      "ownerId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n0",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 1",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:d1",
+      "ownerId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n0",
+      "ownerType": "node",
+      "kind": "startup-config",
+      "label": "BNG startup configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "present_in_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:d2",
+      "ownerId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n1",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "FRR daemon configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "present_in_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:d3",
+      "ownerId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n1",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "FRR routing configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "present_in_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:d4",
+      "ownerId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n1",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 5",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:d5",
+      "ownerId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n2",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "Subscriber configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "present_in_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:d6",
+      "ownerId": "49d1d935f0c553c4435d69f93bc626b6029e315798d20621f70dca1f41fbd72f:n2",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 7",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

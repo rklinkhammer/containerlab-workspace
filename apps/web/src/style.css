@@ -3,3 +3,5 @@
 .native-picker{display:block;margin:22px 0;color:#cee1df;font-size:12px}.native-picker select{display:block;width:100%;margin-top:8px;padding:8px;background:#fff;color:#243e48;border:1px solid #99b9b4;border-radius:5px}.single-ended{display:block;margin:12px 8px 6px;padding:6px;background:#fff5da;border:1px dashed #997327;border-radius:4px;color:#594311;font-size:11px}.provenance{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;padding:12px 16px;background:#fff;border:1px solid #cfdbd9;border-radius:6px}.provenance dd{overflow-wrap:anywhere}
 
 .loader-controls{display:flex;flex-wrap:wrap;align-items:end;gap:10px;margin:16px 0}.loader-controls label{display:flex;flex-direction:column;gap:6px;max-width:100%}.loader-controls select,.loader-controls button{font:inherit;border:1px solid #b8ccca;border-radius:5px;padding:8px;max-width:100%;background:#fff;color:#243e48}.loader-controls button:disabled{opacity:.55}.loader-controls select{font-size:13px}
+
+.runtime-snapshot { overflow-wrap: anywhere; }

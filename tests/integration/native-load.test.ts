@@ -20,5 +20,5 @@ test('approved native bundles match independent expectations and stable recorded
   if(id==='F2')assert.match(g.diagnostics[0].message,/Line 12.*x-unknown/);
  }
  const again=await load('F1',randomBytes(16).toString('hex'));assert.equal(again.revision,results[0].revision);assert.deepEqual(again.nodes,results[0].nodes);assert.deepEqual(again.dependencies,results[0].dependencies);assert.notEqual(again.provenance.jobId,results[0].provenance.jobId);
- writeFileSync('experiments/EXP-016-on-demand/live-results.json',JSON.stringify(results,null,2)+'\n');
+ writeFileSync(process.env.NATIVE_RESULTS_PATH??'test-results/native-regression.json',JSON.stringify(results,null,2)+'\n');
 });

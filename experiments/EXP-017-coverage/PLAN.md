@@ -1,0 +1,11 @@
+# EXP-017 approved coverage expansion — pre-execution plan
+
+**Documented source selection:** pinned Containerlab 5ae50094a3afd70e4e1674fe5385e64d8979da26 and unchanged corpus manifest. Original 177-case denominator and all historical results remain unchanged.
+
+Select 14 additional bundles: C002 (bridge node, three alias-bearing links); C068/C069 (host endpoints and unavailable license); C218/C416 (native schema rejection); C252 (four available pinned local companions); C258 (absolute placeholder bind stays unchecked); C314 (macvlan host prerequisite); C324 (missing kinds and two absent relative bind assets); C368 (remote startup configs, no fetch); CTX-C162 (separate documented kind derivative, absent startup file); C332 (environment-file category, context rejection if native requires files); LINK-FAMILIES (independent authored veth-stitch, vxlan, vxlan-stitch, host, mgmt-net, dummy declarations); UNSUPPORTED-BRIEF (independent malformed brief conversion retained explicitly).
+
+The 12 corpus/context bundles are not all new corpus successes: derivatives never substitute for originals. Two synthetic controls qualify categories beyond this corpus sample. All local companions for C252 come from its pinned lab example subtree, with byte hashes and layouts retained. Placeholder, external and private assets are not fabricated. Documentation macros are not repaired in originals.
+
+**Independent expectations:** expectations.json records exact node/kind pairs, link type/endpoint occurrences and rejection codes/messages from manually reviewed YAML/native type definitions before runtime. Dependency reviews bind exact native reference hashes to manually reviewed labels and explicitly scoped bundle paths. File presence is only verified bundle membership, never runtime satisfaction. Unreviewed references remain unchecked. All inventory remains partial.
+
+**Qualification:** fresh dedicated VM via explicit native-session create, no containers or deployment, no pre-existing VM access. Independent integration checks include all new cases and old regression cases; browser visits every added bundle and checks object labels plus errors. Run supervisor boundary regressions, contract/static/build/browser suites. Preserve each attempt separately. Stop task VM after collection; preview uses 4173 and does not terminate unrelated occupants.

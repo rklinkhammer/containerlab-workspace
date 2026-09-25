@@ -1,0 +1,447 @@
+{
+  "source": "experiments/EXP-010-readiness-static/failure-disposition.csv",
+  "sha256": "27897b338005eac11effbbd3e7813ab84bd4afdf0a8265af6c8dc14b8be6c482",
+  "denominator": 177,
+  "failures": [
+    {
+      "id": "C088",
+      "category": "native_schema_rejection",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C088.json",
+      "original_sha256": "b2e1a58db41432e5d31cb610521498e72bc1b3b0431b404b0104820f346cc4b5",
+      "next_action": "Retain original; inspect syntax/version and separate correction"
+    },
+    {
+      "id": "C112",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C112.json",
+      "original_sha256": "e7580dffcab8ffe712dc9ceb04e740b4f6fed73b0ff10716355d2db1bc5aaaf1",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C113",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C113.json",
+      "original_sha256": "6d0055c6a9295a3ca6c9dd1e1fd67f96f475377f3fe85b5a64493a9c69e1140c",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C140",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C140.json",
+      "original_sha256": "efed48ecd47118d74ce776ae19d66119bf9c87adc42e2714576e6ba233b4795b",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C141",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C141.json",
+      "original_sha256": "36e30648396bc9324c4dabb039b7773cfa78d69ad1f1d0a66788c177a2ae7c32",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C150",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C150.json",
+      "original_sha256": "5d376d802fb5fb7eaecc14809bbc592bf6697d38f22e84374dc9b1afa255a894",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C155",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C155.json",
+      "original_sha256": "d56e06e185bd75d5227d56420f8ae8f4183cba962158045918873377979b900d",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C159",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C159.json",
+      "original_sha256": "658655c1d554f393c62850fb35b30ae8a44dc27dc986e3aa7a9f996b1840e0d9",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C162",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C162.json",
+      "original_sha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C163",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C163.json",
+      "original_sha256": "ec6a1d7cbd401ed13ab573d51c801ab2d1bf57ac09b777fceaad80f74abbf728",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C164",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C164.json",
+      "original_sha256": "82e3bef60e00abadd82f300397495f9f01a0133786361487db18b5b5a52b8980",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C166",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C166.json",
+      "original_sha256": "20142045a38c4c48465797c350291d5d0340d08da11154237670f3fbb1ca1825",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C167",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C167.json",
+      "original_sha256": "bb54f84a3a8764f0019e7155cfcf80e6ba200626a4be918ca6d1eea5126903f5",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C168",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C168.json",
+      "original_sha256": "b2a7978ba2e809ca8a516c31059bf1993d80e394e950c444370c4044f0c81f8a",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C171",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C171.json",
+      "original_sha256": "6bf572cf6eb3b96dcb708b5188de1c71d98f463e47456a62636301a700e209ff",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C172",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C172.json",
+      "original_sha256": "5c804d00fc8d16ad5c71ff139209bcb4524ef6cec656a2671c99f39412b544ee",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C173",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C173.json",
+      "original_sha256": "f32a735e80ef104a6bc3e44d67b892323ded129eef8605f17d6fec6edf13d812",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C174",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C174.json",
+      "original_sha256": "04821b7d1e09a924a34bf5d415a53e08d3054894abe761c6eabc078d23633f40",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C175",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C175.json",
+      "original_sha256": "ec1f418ab25cf54c28fef4dd3d4c8167d80a1b6798f5c5adcca89f54a8b754c8",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C176",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C176.json",
+      "original_sha256": "890ce0850fc82987742e6a9791b08444c39ae5dfc1522196e2b0aad0025938f6",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C201",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C201.json",
+      "original_sha256": "6d005204938f1dcc81381e8258a8a1a8ba9e96e41ed6dc3a7b5f0839ba4c526b",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C202",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C202.json",
+      "original_sha256": "ac189f02a4aad582465b6131c2bbcbcbae147d93268490c5bceb68c6e01a0e7c",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C204",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C204.json",
+      "original_sha256": "f5b9368bcef9d217dbd79682caa37de9d4badd9de529ec7f6fb3637232342b0e",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C205",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C205.json",
+      "original_sha256": "b08a47641bb783dc88f50094cc1f3a8aad3f30cb5f077793d9fd6e56a474d973",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C206",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C206.json",
+      "original_sha256": "7d6b62e312385fef60d431c018539f25a106ce5d374afed9af6a2b5ec568c25e",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C217",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C217.json",
+      "original_sha256": "47f7018bf1ac05ca12892273ae5e9095553fce7891dfb96dcb0f66d7282e18a8",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C218",
+      "category": "native_schema_rejection",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C218.json",
+      "original_sha256": "dea8acafda19d9fcb7b4507e168efac65081004c9dfebce9209f6446e06f5165",
+      "next_action": "Retain original; inspect syntax/version and separate correction"
+    },
+    {
+      "id": "C221",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C221.json",
+      "original_sha256": "f261e65242945007d39e44f22c7fd0d60a025113903f960b8dde384ca88329e4",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C226",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C226.json",
+      "original_sha256": "127c53050d76294118eacc79963da184bea5b2352af90b9c3b4915ae9a68e253",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C227",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C227.json",
+      "original_sha256": "4e53641c85986bbd8293a026385679dedb4cf7d214e70594e2ea9e1b239c9b56",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C228",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C228.json",
+      "original_sha256": "f5e5002f6605b8d189d1593ca9bfac52f986c7eea17df2de8d9b4acb6a3e1dd6",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C248",
+      "category": "external_resource_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C248.json",
+      "original_sha256": "03ce2143bab2899077e7bac758721625e9ca69afe3bafc09afb32a059dfb18cc",
+      "next_action": "Resolve legitimate immutable input; no automatic retrieval"
+    },
+    {
+      "id": "C252",
+      "category": "missing_static_file",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C252.json",
+      "original_sha256": "f6ad8b3d9e2693f88bfc632d41f631e513743e35199d84f3590eabc429db09f7",
+      "next_action": "Pin referenced file/layout or mark placeholder unavailable"
+    },
+    {
+      "id": "C258",
+      "category": "missing_static_file",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C258.json",
+      "original_sha256": "7fd19abf509cd7946743aa2ff5c643b9db1b8d6406073504ea75363415de441d",
+      "next_action": "Pin referenced file/layout or mark placeholder unavailable"
+    },
+    {
+      "id": "C276",
+      "category": "external_resource_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C276.json",
+      "original_sha256": "b892b1d538589398851ef276fdd2e201a813d606b945443a28549945b44c99bd",
+      "next_action": "Resolve legitimate immutable input; no automatic retrieval"
+    },
+    {
+      "id": "C290",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C290.json",
+      "original_sha256": "227a4704fb8318e4198aea24c433048a7cd96b3904848ce6e622a8ba801a1631",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C291",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C291.json",
+      "original_sha256": "dced2d748f0defb2da737d6a571cea2dd750b71ff073be30f4cfb28f53e9f71e",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C292",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C292.json",
+      "original_sha256": "eaf0a3ab6bd6b52de8f32ac59d189e2d28a04e0c7f6e73c4e29e0cc15199f575",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C293",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C293.json",
+      "original_sha256": "dfd31a25fe546ab89a47a5347ef365d5248204ada76115aa79b74e273d7544c6",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C294",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C294.json",
+      "original_sha256": "38edd7091d48019109355c22afab01965e32486b408da677f55d885bee75120d",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C295",
+      "category": "documentation_macro_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C295.json",
+      "original_sha256": "8e02c791d0d0303e000d134d7b0282e6a3e1dd1359858694208f660cdee9a3eb",
+      "next_action": "Review pinned frontmatter derivative; native validation NOT_RUN"
+    },
+    {
+      "id": "C310",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C310.json",
+      "original_sha256": "c31f40d96dc50686c48b7ab548a7c94d7d30c8734032f24f11d4942856c1ebdb",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C314",
+      "category": "host_interface_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C314.json",
+      "original_sha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091",
+      "next_action": "Fresh isolated host prerequisite trial; no operational host lookup"
+    },
+    {
+      "id": "C316",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C316.json",
+      "original_sha256": "affaa77e08168edef646e439b543957e41462c8ae975f51e96f8ae265ec967e4",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C324",
+      "category": "missing_static_file",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C324.json",
+      "original_sha256": "083b0318d39b16195274449c9c6859afc3d0046fc5f8546aeb032dfd496f1577",
+      "next_action": "Pin referenced file/layout or mark placeholder unavailable"
+    },
+    {
+      "id": "C325",
+      "category": "missing_static_file",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C325.json",
+      "original_sha256": "e43e5b86f058ac08f44327e706437ae952ca3005a6381804837fc9de48fbc237",
+      "next_action": "Pin referenced file/layout or mark placeholder unavailable"
+    },
+    {
+      "id": "C326",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C326.json",
+      "original_sha256": "2634d4fea4e80714267ac1db5a0d116dc231b6d7540fc905d84eefa7ead93500",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C368",
+      "category": "external_resource_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C368.json",
+      "original_sha256": "3923bdba86b6e1287d55617e801829d40485556ede6775b7b516522b23a05ee1",
+      "next_action": "Resolve legitimate immutable input; no automatic retrieval"
+    },
+    {
+      "id": "C398",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C398.json",
+      "original_sha256": "4412cf610d4c2b1d57f258f53058d84ec2ac1aae6fc6856bda44e8c81cde4660",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C399",
+      "category": "missing_static_file",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C399.json",
+      "original_sha256": "fe983b657ebb13cbf2c96b875eee53b82779d6516d1a411d9c51306cf8e82477",
+      "next_action": "Pin referenced file/layout or mark placeholder unavailable"
+    },
+    {
+      "id": "C400",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C400.json",
+      "original_sha256": "1ac42b2cc8d66b18527caa02ca5f51b88b0d5e022509216b6ff7ce08b4ac078b",
+      "next_action": "Identify documented kind/default input; do not guess"
+    },
+    {
+      "id": "C413",
+      "category": "host_interface_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C413.json",
+      "original_sha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091",
+      "next_action": "Fresh isolated host prerequisite trial; no operational host lookup"
+    },
+    {
+      "id": "C416",
+      "category": "native_schema_rejection",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C416.json",
+      "original_sha256": "f5cbc29c3ed78ebe20291f81615ba2e5476ff71c7a8b005226bcbb1894077198",
+      "next_action": "Retain original; inspect syntax/version and separate correction"
+    },
+    {
+      "id": "C423",
+      "category": "missing_kind_context",
+      "classification": "Inferred from recorded native diagnostic",
+      "evidence": "artifacts/qualification/static/C423.json",
+      "original_sha256": "6d0055c6a9295a3ca6c9dd1e1fd67f96f475377f3fe85b5a64493a9c69e1140c",
+      "next_action": "Identify documented kind/default input; do not guess"
+    }
+  ],
+  "categories": {
+    "native_schema_rejection": 3,
+    "missing_kind_context": 13,
+    "documentation_macro_context": 28,
+    "external_resource_context": 3,
+    "missing_static_file": 5,
+    "host_interface_context": 2
+  }
+}

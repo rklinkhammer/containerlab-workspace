@@ -1,0 +1,39 @@
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test tests/browser/observation.spec.ts
+
+[WebServer] (node:65041) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:65042) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  1 tests/browser/observation.spec.ts:4:1 › actual runtime inspection retains declaration selection across stop and recovery
+  ✘  2 tests/browser/observation.spec.ts:22:1 › polling, failure, stale data, cancellation and recovery (transport control) (8.4s)
+(node:65112) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 tests/browser/observation.spec.ts:32:1 › observation routes expose no mutation and reject foreign browser origin (20ms)
+
+
+  1) tests/browser/observation.spec.ts:22:1 › polling, failure, stale data, cancellation and recovery (transport control) 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      27 |  mode='delay';await refresh.click();await expect(refresh).toBeDisabled();await page.getByRole('button',{name:'Cancel inspection'}).click();await expect(page.getByRole('status')).toContainText('cancelled');await page.waitForTimeout(1200);await expect(page.getByRole('status')).toContainText('cancelled');
+      28 |  mode='ok';await page.getByRole('checkbox',{name:'Poll every 5 seconds'}).check();const before=count;await expect.poll(()=>count,{timeout:7000}).toBe(before+1);await page.getByRole('checkbox',{name:'Poll every 5 seconds'}).uncheck();await expect(page.getByRole('status')).toContainText('Stale');
+    > 29 |  mode='fresh';await refresh.click();await expect(page.getByRole('status')).toContainText('Fresh runtime observation.');await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
+         |                                                                                                                                                                                                                                                             ^
+      30 |  mode='hang';await refresh.click();await expect(page.getByRole('status')).toContainText('timed out',{timeout:14000});await expect(refresh).toBeEnabled();
+      31 | });
+      32 | test('observation routes expose no mutation and reject foreign browser origin',async({request})=>{expect((await request.post('/api/observation/snapshot')).status()).toBe(404);expect((await request.get('/api/observation/snapshot',{headers:{Origin:'https://example.invalid'}})).status()).toBe(403);});
+        at /Users/rklinkhammer/workspace/containerlab-workspace/tests/browser/observation.spec.ts:29:253
+
+    Error Context: test-results/observation-polling-failur-feb43-recovery-transport-control-/error-context.md
+
+  1 failed
+    tests/browser/observation.spec.ts:22:1 › polling, failure, stale data, cancellation and recovery (transport control) 
+  1 skipped
+  1 passed (9.3s)

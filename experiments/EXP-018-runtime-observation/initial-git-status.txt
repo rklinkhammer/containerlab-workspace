@@ -1,0 +1,41 @@
+ M IMPLEMENTATION_HANDOFF.md
+ M README.md
+ M apps/web/src/declared.tsx
+ M artifacts/design/ARCHITECTURE.md
+ M artifacts/design/COMPLETION.json
+ M artifacts/design/DECISIONS.md
+ M artifacts/design/IMPLEMENTATION_PLAN.md
+ M artifacts/design/ON_DEMAND_CONTRACT.md
+ M artifacts/design/P1A_BACKLOG.md
+ M artifacts/design/READINESS.md
+ M artifacts/design/README.md
+ M artifacts/design/TRACEABILITY.md
+ M artifacts/implementation/RESULTS.md
+ M backend/native-loader.ts
+ M contracts/live-graph.ts
+ M contracts/project-declared.ts
+ M fixtures/bundles/catalog.json
+ M native/worker/main.go
+ M package.json
+ M tests/browser/on-demand.spec.ts
+ M tests/integration/native-load.test.ts
+ M tests/live.test.ts
+?? artifacts/design/history/A11-before-A12/
+?? artifacts/implementation/A12/
+?? experiments/EXP-017-coverage/
+?? experiments/EXP-018-runtime-observation/
+?? fixtures/bundles/C002/
+?? fixtures/bundles/C068/
+?? fixtures/bundles/C069/
+?? fixtures/bundles/C218/
+?? fixtures/bundles/C252/
+?? fixtures/bundles/C258/
+?? fixtures/bundles/C314/
+?? fixtures/bundles/C324/
+?? fixtures/bundles/C332/
+?? fixtures/bundles/C368/
+?? fixtures/bundles/C416/
+?? fixtures/bundles/CTX-C162/
+?? fixtures/bundles/LINK-FAMILIES/
+?? fixtures/bundles/UNSUPPORTED-BRIEF/
+?? tests/integration/coverage.test.ts

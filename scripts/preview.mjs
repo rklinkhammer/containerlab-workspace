@@ -1,4 +1,5 @@
 // Loopback preview plus approved-bundle native load API; no uploads or operational routes.
+import {observationAPI} from '../backend/observation.ts';
 import {nativeAPI} from '../backend/native-api.ts';
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
@@ -11,6 +12,7 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=
 createServer(async(req,res)=>{
   res.setHeader('Content-Security-Policy',csp);res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Cache-Control','no-store');res.setHeader('Referrer-Policy','no-referrer');
   if(await nativeAPI(req,res,port))return;
+  if(await observationAPI(req,res,port))return;
   if(!['GET','HEAD'].includes(req.method)){res.writeHead(405).end();return;}
   try{
     const pathname=decodeURIComponent(new URL(req.url,'http://127.0.0.1').pathname);

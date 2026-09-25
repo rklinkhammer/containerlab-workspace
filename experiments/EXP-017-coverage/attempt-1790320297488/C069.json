@@ -1,0 +1,111 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C069",
+    "sourceSha256": "a00607f0e575fd61235f67f297f49a35fbf151e453fe7b894bdd536cb306f69a",
+    "outcomeSha256": "74309580b184544d13b3cacc94474797c245575ca76899a2be0347b5df9def88",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C069",
+    "bundleSha256": "3239bfa388bf78b066c56776adeaedecf58021b65d9bba087b8911c2b9b97c75",
+    "entryFile": "C069.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "dcf46eecc05cd7ee17a214efaf99c759126cf447330accbbbf575095a3edb851",
+    "jobId": "a6183f2f53074afbcff3d53749078520",
+    "completedAt": "2026-09-25T07:11:37.873Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:n0",
+      "name": "vmx",
+      "kind": "juniper_vmx",
+      "kindState": "native_getter"
+    }
+  ],
+  "links": [
+    {
+      "id": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:l0",
+      "occurrence": 0,
+      "type": "host",
+      "state": "declared",
+      "externalRole": "host-endpoint",
+      "endpoints": [
+        {
+          "nodeId": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:n0",
+          "nodeLabel": "vmx",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    },
+    {
+      "id": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:l1",
+      "occurrence": 1,
+      "type": "host",
+      "state": "declared",
+      "externalRole": "host-endpoint",
+      "endpoints": [
+        {
+          "nodeId": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:n0",
+          "nodeLabel": "vmx",
+          "interface": "eth2",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:d0",
+      "ownerId": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:l0",
+      "ownerType": "link",
+      "kind": "host-endpoint",
+      "label": "host-endpoint reference 1",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:d1",
+      "ownerId": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:l1",
+      "ownerType": "link",
+      "kind": "host-endpoint",
+      "label": "host-endpoint reference 2",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:d2",
+      "ownerId": "c896d41001d04a74352477f4ce2767de8506d3bce86004fc9d114728f7d60ad3:n0",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 3",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

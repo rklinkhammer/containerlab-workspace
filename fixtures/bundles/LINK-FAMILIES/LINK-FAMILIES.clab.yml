@@ -1,0 +1,27 @@
+name: link-families
+topology:
+  defaults: {kind: linux, image: alpine:3}
+  nodes:
+    a: {}
+    b: {}
+    isolated: {}
+  links:
+    - type: veth-stitch
+      endpoints: [{node: a, interface: eth1}, {node: b, interface: eth1}]
+    - type: vxlan
+      endpoint: {node: a, interface: eth2}
+      remote: 192.0.2.1
+      vni: 100
+      parent-interface: parent0
+    - type: vxlan-stitch
+      endpoint: {node: b, interface: eth2}
+      remote: 192.0.2.2
+      vni: 101
+    - type: host
+      endpoint: {node: a, interface: eth3}
+      host-interface: host0
+    - type: mgmt-net
+      endpoint: {node: b, interface: eth3}
+      host-interface: mgmt0
+    - type: dummy
+      endpoint: {node: isolated, interface: dummy0}

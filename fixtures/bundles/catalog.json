@@ -36,7 +36,15 @@
     ],
     "source": "experiments/EXP-015-display-only/input/CTX-C168.clab.yml",
     "context": "single-file; external prerequisites unresolved",
-    "bundleSha256": "a69f13da6785c430a1cea038133ad8f04b5c2eb2c5d001da482a9596d31df198"
+    "bundleSha256": "a69f13da6785c430a1cea038133ad8f04b5c2eb2c5d001da482a9596d31df198",
+    "dependencyReviews": [
+      {
+        "kind": "bind",
+        "referenceSha256": "57b2b3708dac96a0fe6372166eda1e1b8d254ac9ca6ec061d25f6a03df4ff280",
+        "label": "Interface mapping",
+        "bundlePath": "mymapping.json"
+      }
+    ]
   },
   {
     "id": "D1",
@@ -119,5 +127,294 @@
     "source": "independent authored bundle; same topology bytes in missing/context variants",
     "context": "deliberately absent subtemplate",
     "bundleSha256": "be2b80d4cd42509b8091c50448a10655c45fb141c566df3e6cfd0d05c93db33c"
+  },
+  {
+    "id": "C002",
+    "entry": "C002.clab.yml",
+    "files": [
+      {
+        "path": "C002.clab.yml",
+        "sha256": "250d4a848019a0b1e4a8bb87635bd698b9448bca32971643f4c711da216349f3"
+      }
+    ],
+    "source": "../containerlab-investigation/work/containerlab/lab-examples/br01/br01.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "a951dd26a2a771c18e11e8ee8364506d10267d77f2ac369ff2a1da906e034c58"
+  },
+  {
+    "id": "C068",
+    "entry": "C068.clab.yml",
+    "files": [
+      {
+        "path": "C068.clab.yml",
+        "sha256": "b0d579e5a51caf7a3f4da679084a0bd7ba65885910304a8a02b2d50295b32da3"
+      }
+    ],
+    "source": "../containerlab-investigation/work/containerlab/lab-examples/vxlan01/vxlan-sros.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "81114dc07a5d04ad0c9f05b3355a150148ff87b1d7e0810589f0e4342887101c",
+    "dependencyReviews": [
+      {
+        "kind": "license",
+        "referenceSha256": "f5ad477a83c98fcbf35b0e97af641749cdbf313a00700de00755b7743043a520",
+        "label": "SR OS license",
+        "bundlePath": "license-sros20.txt"
+      }
+    ]
+  },
+  {
+    "id": "C069",
+    "entry": "C069.clab.yml",
+    "files": [
+      {
+        "path": "C069.clab.yml",
+        "sha256": "a00607f0e575fd61235f67f297f49a35fbf151e453fe7b894bdd536cb306f69a"
+      }
+    ],
+    "source": "../containerlab-investigation/work/containerlab/lab-examples/vxlan01/vxlan-vmx.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "3239bfa388bf78b066c56776adeaedecf58021b65d9bba087b8911c2b9b97c75"
+  },
+  {
+    "id": "C218",
+    "entry": "C218.clab.yml",
+    "files": [
+      {
+        "path": "C218.clab.yml",
+        "sha256": "dea8acafda19d9fcb7b4507e168efac65081004c9dfebce9209f6446e06f5165"
+      }
+    ],
+    "source": "../containerlab-investigation/artifacts/corpus/inline/C218.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "aaaf988595be5191cca2ac60129de1f7b0efd4c94a2fd83af356d7ad1fe38357"
+  },
+  {
+    "id": "C252",
+    "entry": "C252.clab.yml",
+    "files": [
+      {
+        "path": "C252.clab.yml",
+        "sha256": "f6ad8b3d9e2693f88bfc632d41f631e513743e35199d84f3590eabc429db09f7"
+      },
+      {
+        "path": "bng1/osvbng.yaml",
+        "sha256": "1f9e1525f6e58bfd2b2c8761e23f12f629cdebf3d332da31afd187b4e0204d01"
+      },
+      {
+        "path": "corerouter1/daemons",
+        "sha256": "a8a8dafa7769dc0d982def9ca267884783bdbedafc00b2a6689aa32a25460f1d"
+      },
+      {
+        "path": "corerouter1/frr.conf",
+        "sha256": "e7c0ef9563662378b6c62fae03684a8211f549847060982812b139963599e518"
+      },
+      {
+        "path": "subscribers/config.json",
+        "sha256": "102dab529ab6713d483b4e51c937d6b4d55f240ca9782cae4f68d428d36f979d"
+      }
+    ],
+    "source": "../containerlab-investigation/artifacts/corpus/inline/C252.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "8b22cfe60bf90e320debe9fd803f66068a78a4c4f33203aa18ba692369341a12",
+    "dependencyReviews": [
+      {
+        "kind": "startup-config",
+        "referenceSha256": "4421213dea73ebfcff603f6d404b0669400052a39c89970bf1aaad91cdaeba8c",
+        "label": "BNG startup configuration",
+        "bundlePath": "bng1/osvbng.yaml"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "66e8120baf056d93cce977d48f1e7cc45a3d31f9c59dae1c759f47a38165f79e",
+        "label": "FRR daemon configuration",
+        "bundlePath": "corerouter1/daemons"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "e174dac34ba094d42879ddf5a054fb48c73f4ad096965fa023fcde309ff8c73c",
+        "label": "FRR routing configuration",
+        "bundlePath": "corerouter1/frr.conf"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "30324dd6c52af23f2f4aa3c92b042203eaaa2ea46bc2f762dea5c72ca1e7df84",
+        "label": "Subscriber configuration",
+        "bundlePath": "subscribers/config.json"
+      }
+    ]
+  },
+  {
+    "id": "C258",
+    "entry": "C258.clab.yml",
+    "files": [
+      {
+        "path": "C258.clab.yml",
+        "sha256": "7fd19abf509cd7946743aa2ff5c643b9db1b8d6406073504ea75363415de441d"
+      }
+    ],
+    "source": "../containerlab-investigation/artifacts/corpus/inline/C258.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "6b603797bb84194af4b23faaea6d142efc88142b9410fc6ff4431d6876fcffe2",
+    "dependencyReviews": [
+      {
+        "kind": "bind",
+        "referenceSha256": "b928149eae79b2595372fddce501668b4f93b5afe46f831abe1427d04b94cd49",
+        "label": "External switch configuration placeholder",
+        "bundlePath": null
+      }
+    ]
+  },
+  {
+    "id": "C314",
+    "entry": "C314.clab.yml",
+    "files": [
+      {
+        "path": "C314.clab.yml",
+        "sha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091"
+      }
+    ],
+    "source": "../containerlab-investigation/artifacts/corpus/inline/C314.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "3477b8ba7cf665debc5fa99469a33c84bf2725e760e1200a5c6fbd24ec2dfa95"
+  },
+  {
+    "id": "C324",
+    "entry": "C324.clab.yml",
+    "files": [
+      {
+        "path": "C324.clab.yml",
+        "sha256": "083b0318d39b16195274449c9c6859afc3d0046fc5f8546aeb032dfd496f1577"
+      }
+    ],
+    "source": "../containerlab-investigation/artifacts/corpus/inline/C324.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "58a083d9994b83225743f31ff650df8b459d176666c5e121d5993670aa95515e",
+    "dependencyReviews": [
+      {
+        "kind": "bind",
+        "referenceSha256": "f288b6f748c3223213ef574715b8b6525b4d35256278268cc2eb88757fa7340d",
+        "label": "Node n1 configuration",
+        "bundlePath": "cfgs/n1/conf"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "120b0e5710ca73d372d7027ad4b5496778dde68ee743056a6d503d55721c287e",
+        "label": "Node n2 configuration",
+        "bundlePath": "cfgs/n2/conf"
+      }
+    ]
+  },
+  {
+    "id": "C368",
+    "entry": "C368.clab.yml",
+    "files": [
+      {
+        "path": "C368.clab.yml",
+        "sha256": "3923bdba86b6e1287d55617e801829d40485556ede6775b7b516522b23a05ee1"
+      }
+    ],
+    "source": "../containerlab-investigation/artifacts/corpus/inline/C368.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "0cf07f7d10b7bbeb7a5c926a5a176081d23f691928bcfe9a68300832c0d323f4",
+    "dependencyReviews": [
+      {
+        "kind": "startup-config",
+        "referenceSha256": "e44380635ad5905743aa2c4812a624080dfe04c947f1993bbad9492e5dc98bde",
+        "label": "Router 1 remote startup configuration",
+        "bundlePath": null
+      },
+      {
+        "kind": "startup-config",
+        "referenceSha256": "85cbb74354b82b5a7fb7b5d9805f573447c0c90423a001f8defb6f867ec10f89",
+        "label": "Router 2 remote startup configuration",
+        "bundlePath": null
+      }
+    ]
+  },
+  {
+    "id": "C416",
+    "entry": "C416.clab.yml",
+    "files": [
+      {
+        "path": "C416.clab.yml",
+        "sha256": "f5cbc29c3ed78ebe20291f81615ba2e5476ff71c7a8b005226bcbb1894077198"
+      }
+    ],
+    "source": "../containerlab-investigation/artifacts/corpus/inline/C416.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "9e0f7291e0b3ed4208537c53258496437c5f2c58540c312b02248106f0628b95"
+  },
+  {
+    "id": "C332",
+    "entry": "C332.clab.yml",
+    "files": [
+      {
+        "path": "C332.clab.yml",
+        "sha256": "d2db0298f5c58e0f2791589f25600de8a9ebbb32cd88cb61c2a107861b6aa2a6"
+      }
+    ],
+    "source": "../containerlab-investigation/artifacts/corpus/inline/C332.clab.yml",
+    "context": "Original pinned corpus YAML; external dependencies remain unchecked.",
+    "bundleSha256": "37207898f6267eb22fefb4a29b45c1bea5f140f960072952f36e89471695ddfa"
+  },
+  {
+    "id": "CTX-C162",
+    "entry": "CTX-C162.clab.yml",
+    "files": [
+      {
+        "path": "CTX-C162.clab.yml",
+        "sha256": "e8ead1273155724f69751a471552329622b6b40c10e4ed9d91affd287a5fb438"
+      }
+    ],
+    "source": "experiments/EXP-010-readiness-static/context/CTX-C162.clab.yml",
+    "context": "Documentation-context derivative of C162; original remains unchanged.",
+    "bundleSha256": "f3810c791fa9debbf8a19281cc79bc5062954f6cd6638d11a0707a4c182fc1bf",
+    "dependencyReviews": [
+      {
+        "kind": "startup-config",
+        "referenceSha256": "3d4709f79e6f4e02a4e07c3e636c219176b5a7b224992e396b60a64a36e6edfa",
+        "label": "VSR startup configuration",
+        "bundlePath": "myconfig.conf"
+      }
+    ]
+  },
+  {
+    "id": "LINK-FAMILIES",
+    "entry": "LINK-FAMILIES.clab.yml",
+    "files": [
+      {
+        "path": "LINK-FAMILIES.clab.yml",
+        "sha256": "55bd491061c0e8f21a31c62065f4b22a553a83694ce40ffce94721b90d2ef360"
+      }
+    ],
+    "source": "independent authored acceptance control",
+    "context": "Synthetic native link category control",
+    "bundleSha256": "96f42d5c83fafd994e00bf622d17601840d91830266317a7bb6aa77833162523"
+  },
+  {
+    "id": "UNSUPPORTED-BRIEF",
+    "entry": "UNSUPPORTED-BRIEF.clab.yml",
+    "files": [
+      {
+        "path": "UNSUPPORTED-BRIEF.clab.yml",
+        "sha256": "9c09aa4130b494e6c0852d776a106b29c82ba08d4edd91249eb0087fc9e92a41"
+      }
+    ],
+    "source": "independent authored acceptance control",
+    "context": "Synthetic native link category control",
+    "bundleSha256": "73a7abcca1390044598994391641b516a8f61ca84e3564f52c3d145771e2deec"
+  },
+  {
+    "id": "RUNTIME-PAIR",
+    "entry": "RUNTIME-PAIR.clab.yml",
+    "files": [
+      {
+        "path": "RUNTIME-PAIR.clab.yml",
+        "sha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b"
+      }
+    ],
+    "source": "independent authored EXP-018 runtime fixture",
+    "context": "Two Linux nodes, one declared veth; no hooks or companion files",
+    "bundleSha256": "640571e307a557760cb15a20fa651d3cb329d175ee142bca5b9bd4cd3931b348"
   }
 ]

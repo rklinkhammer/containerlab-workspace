@@ -1,0 +1,142 @@
+[
+  {
+    "id": "C002",
+    "files": [
+      {
+        "path": "C002.clab.yml",
+        "source": "../containerlab-investigation/work/containerlab/lab-examples/br01/br01.clab.yml",
+        "sha256": "250d4a848019a0b1e4a8bb87635bd698b9448bca32971643f4c711da216349f3"
+      }
+    ]
+  },
+  {
+    "id": "C068",
+    "files": [
+      {
+        "path": "C068.clab.yml",
+        "source": "../containerlab-investigation/work/containerlab/lab-examples/vxlan01/vxlan-sros.clab.yml",
+        "sha256": "b0d579e5a51caf7a3f4da679084a0bd7ba65885910304a8a02b2d50295b32da3"
+      }
+    ]
+  },
+  {
+    "id": "C069",
+    "files": [
+      {
+        "path": "C069.clab.yml",
+        "source": "../containerlab-investigation/work/containerlab/lab-examples/vxlan01/vxlan-vmx.clab.yml",
+        "sha256": "a00607f0e575fd61235f67f297f49a35fbf151e453fe7b894bdd536cb306f69a"
+      }
+    ]
+  },
+  {
+    "id": "C218",
+    "files": [
+      {
+        "path": "C218.clab.yml",
+        "source": "../containerlab-investigation/artifacts/corpus/inline/C218.clab.yml",
+        "sha256": "dea8acafda19d9fcb7b4507e168efac65081004c9dfebce9209f6446e06f5165"
+      }
+    ]
+  },
+  {
+    "id": "C252",
+    "files": [
+      {
+        "path": "C252.clab.yml",
+        "source": "../containerlab-investigation/artifacts/corpus/inline/C252.clab.yml",
+        "sha256": "f6ad8b3d9e2693f88bfc632d41f631e513743e35199d84f3590eabc429db09f7"
+      },
+      {
+        "path": "bng1/osvbng.yaml",
+        "source": "lab-examples/osvbng01/bng1/osvbng.yaml",
+        "sha256": "1f9e1525f6e58bfd2b2c8761e23f12f629cdebf3d332da31afd187b4e0204d01"
+      },
+      {
+        "path": "corerouter1/daemons",
+        "source": "lab-examples/osvbng01/corerouter1/daemons",
+        "sha256": "a8a8dafa7769dc0d982def9ca267884783bdbedafc00b2a6689aa32a25460f1d"
+      },
+      {
+        "path": "corerouter1/frr.conf",
+        "source": "lab-examples/osvbng01/corerouter1/frr.conf",
+        "sha256": "e7c0ef9563662378b6c62fae03684a8211f549847060982812b139963599e518"
+      },
+      {
+        "path": "subscribers/config.json",
+        "source": "lab-examples/osvbng01/subscribers/config.json",
+        "sha256": "102dab529ab6713d483b4e51c937d6b4d55f240ca9782cae4f68d428d36f979d"
+      }
+    ]
+  },
+  {
+    "id": "C258",
+    "files": [
+      {
+        "path": "C258.clab.yml",
+        "source": "../containerlab-investigation/artifacts/corpus/inline/C258.clab.yml",
+        "sha256": "7fd19abf509cd7946743aa2ff5c643b9db1b8d6406073504ea75363415de441d"
+      }
+    ]
+  },
+  {
+    "id": "C314",
+    "files": [
+      {
+        "path": "C314.clab.yml",
+        "source": "../containerlab-investigation/artifacts/corpus/inline/C314.clab.yml",
+        "sha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091"
+      }
+    ]
+  },
+  {
+    "id": "C324",
+    "files": [
+      {
+        "path": "C324.clab.yml",
+        "source": "../containerlab-investigation/artifacts/corpus/inline/C324.clab.yml",
+        "sha256": "083b0318d39b16195274449c9c6859afc3d0046fc5f8546aeb032dfd496f1577"
+      }
+    ]
+  },
+  {
+    "id": "C368",
+    "files": [
+      {
+        "path": "C368.clab.yml",
+        "source": "../containerlab-investigation/artifacts/corpus/inline/C368.clab.yml",
+        "sha256": "3923bdba86b6e1287d55617e801829d40485556ede6775b7b516522b23a05ee1"
+      }
+    ]
+  },
+  {
+    "id": "C416",
+    "files": [
+      {
+        "path": "C416.clab.yml",
+        "source": "../containerlab-investigation/artifacts/corpus/inline/C416.clab.yml",
+        "sha256": "f5cbc29c3ed78ebe20291f81615ba2e5476ff71c7a8b005226bcbb1894077198"
+      }
+    ]
+  },
+  {
+    "id": "C332",
+    "files": [
+      {
+        "path": "C332.clab.yml",
+        "source": "../containerlab-investigation/artifacts/corpus/inline/C332.clab.yml",
+        "sha256": "d2db0298f5c58e0f2791589f25600de8a9ebbb32cd88cb61c2a107861b6aa2a6"
+      }
+    ]
+  },
+  {
+    "id": "CTX-C162",
+    "files": [
+      {
+        "path": "CTX-C162.clab.yml",
+        "source": "experiments/EXP-010-readiness-static/context/CTX-C162.clab.yml",
+        "sha256": "e8ead1273155724f69751a471552329622b6b40c10e4ed9d91affd287a5fb438"
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "links/link.go",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "sha256": "ddb7b4643e688272c49c471e5efd3a0dfbddd3a170c986a013bdfe1b6cd91d8a"
+  },
+  {
+    "path": "links/link_brief.go",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "sha256": "8e660565dc7ee5d66aeba8cb5e331ca31d8833c640e793542c8f3fc639e3a39b"
+  },
+  {
+    "path": "links/link_veth_stitched.go",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "sha256": "6db3af3fd90cee43ef2b54eee535a11b3c42c1b01e473bd9a8615daf1bfd0726"
+  },
+  {
+    "path": "links/link_vxlan.go",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "sha256": "1bc891900959be3461df06422cc8fe4f374eec490f283eca8010ab63a39381a2"
+  },
+  {
+    "path": "types/topology.go",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "sha256": "471a6447ae6560c7de1dbb45f0f57fa05108870f81eecf761d62afa324915526"
+  },
+  {
+    "path": "core/topology.go",
+    "commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "sha256": "875d0091b3be156abc22bb75d4d6544b75ce474d945d8bae027ba72af4c178c3"
+  }
+]

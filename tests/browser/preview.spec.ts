@@ -11,7 +11,7 @@ test('F1 graph, parallel occurrences and keyboard-accessible inspectors',async({
  for(const label of ['Live inspection','Terminal','Capture','Packet analysis'])await expect(page.getByRole('button',{name:label})).toBeDisabled();
  expect(errors).toEqual([]);
  expect(await page.evaluate(()=>getComputedStyle(document.querySelector('.react-flow__viewport')!).transform)).not.toBe('none');
- await page.screenshot({path:'artifacts/implementation/preview-desktop.png',fullPage:true});
+ await page.screenshot({path:'test-results/preview-desktop.png',fullPage:true});
 });
 test('special endpoints preserve roles; duplicate occurrences remain rejected',async({page})=>{
  await page.goto('/');await page.getByRole('button',{name:/Special endpoints/}).click();await expect(page.locator('.react-flow__node')).toHaveCount(3);
@@ -46,7 +46,7 @@ test('narrow viewport exposes object list and inspector without page overflow',a
  await page.setViewportSize({width:390,height:844});await page.goto('/');
  await page.getByRole('region',{name:'Accessible object list'}).getByRole('button',{name:/isolated/}).click();await expect(page.getByRole('complementary')).toContainText('Disconnected node');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
- await page.screenshot({path:'artifacts/implementation/preview-mobile.png',fullPage:true});
+ await page.screenshot({path:'test-results/preview-mobile.png',fullPage:true});
 });
 test('recorded native single-ended link has no fabricated peer and keyboard inspector',async({page})=>{
  await page.goto('/');await page.getByLabel('Recorded native fixture').selectOption('N-F7');
@@ -54,7 +54,7 @@ test('recorded native single-ended link has no fabricated peer and keyboard insp
  await expect(page.getByLabel('Native evidence')).toContainText('F7');await expect(page.locator('.scope')).toContainText('Recorded EXP-013');
  const single=page.getByRole('button',{name:'Single-ended dummy'});await single.focus();await page.keyboard.press('Enter');
  const inspector=page.getByRole('complementary');await expect(inspector).toContainText('no peer endpoint');await expect(inspector.locator('.endpoint')).toHaveCount(1);await expect(inspector).toContainText('dummy1');await expect(inspector).toContainText('field coordinates unresolved');
- await page.screenshot({path:'artifacts/implementation/native-preview.png',fullPage:true});
+ await page.screenshot({path:'test-results/native-preview.png',fullPage:true});
 });
 test('native preview preserves parallel links, aliases, source roles and rejected inputs',async({page})=>{
  await page.goto('/');const picker=page.getByLabel('Recorded native fixture');await picker.selectOption('N-F1');
@@ -69,5 +69,5 @@ test('recorded native evidence remains readable at narrow width',async({page})=>
  await page.getByRole('region',{name:'Accessible object list'}).getByRole('button',{name:/Link 1/}).click();await expect(page.getByRole('complementary')).toContainText('dummy1');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await expect(page.locator('.react-flow__handle')).toHaveCount(0);
- await page.screenshot({path:'artifacts/implementation/native-preview-mobile.png',fullPage:true});
+ await page.screenshot({path:'test-results/native-preview-mobile.png',fullPage:true});
 });

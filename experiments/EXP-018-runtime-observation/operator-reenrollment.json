@@ -1,0 +1,5 @@
+{
+  "purpose": "Explicit test operator enrollment for final browser regression after replacement rejection was established; application does not auto-enroll",
+  "previousDeployment": "13587d1d5d1fd78efea96c37d2626e780a2ff574c8f14925776091942ea7aa8a",
+  "newDeployment": "0fe9f6ee153776cad1be2d8c898950485b08a128a6248c400723ea386ecabffe"
+}

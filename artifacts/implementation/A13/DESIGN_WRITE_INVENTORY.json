@@ -1,0 +1,83 @@
+{
+  "revision": "A13",
+  "writes": [
+    {
+      "path": "artifacts/design/OBSERVATION_CONTRACT.md",
+      "staged": "000-OBSERVATION_CONTRACT.md",
+      "sha256": "378597712989fc76535c2d20ec891da12f9a468eef262c4c4468ef4941314b3a",
+      "previousSha256": null
+    },
+    {
+      "path": "artifacts/implementation/A13/RESULTS.md",
+      "staged": "001-RESULTS.md",
+      "sha256": "c4510951e618d40cf8580966507ac47d00468104fc942f521f915e818c4045d4",
+      "previousSha256": null
+    },
+    {
+      "path": "experiments/EXP-018-runtime-observation/RESULTS.md",
+      "staged": "002-RESULTS.md",
+      "sha256": "eef9eb4f36e3ae51564ddc45bf8c642f060c72d7a3a3d1eb27dee14be637920c",
+      "previousSha256": null
+    },
+    {
+      "path": "artifacts/design/ARCHITECTURE.md",
+      "staged": "003-ARCHITECTURE.md",
+      "sha256": "04c743818e19719806b9a5943df9654497a0a43d51eecbf1589cac1dd43ac292",
+      "previousSha256": "2c3ccc118e7800fe536d3909c7a369a514ebde51b06c3b511979279ed450a618"
+    },
+    {
+      "path": "artifacts/design/READINESS.md",
+      "staged": "004-READINESS.md",
+      "sha256": "c2fc3f2784738ff0df2702184e84e0bd73a7879eb7b80e43dd9a6eb8377f156b",
+      "previousSha256": "34485ecc4bd2fd1d96940038d4c5bfc350e42939e6790be2c62127c64c2b24f3"
+    },
+    {
+      "path": "artifacts/design/P1A_BACKLOG.md",
+      "staged": "005-P1A_BACKLOG.md",
+      "sha256": "86019aca972e0f9c9febdbe45d18d1b0b3b440a679df81cc7ad4b980d8e2f396",
+      "previousSha256": "bb3530b578952ad3c5cbe0a0efe2110a2e58c9221023ae9db9d275df984082f7"
+    },
+    {
+      "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "staged": "006-IMPLEMENTATION_PLAN.md",
+      "sha256": "43360e82bc4195f0734b28a1321a8c3227394b4e9f947b73183883ea7eee0149",
+      "previousSha256": "05b6f0d2228c982a24da5a555c4de145096fe57a0ba05d8fe445930db514c0d8"
+    },
+    {
+      "path": "artifacts/design/TRACEABILITY.md",
+      "staged": "007-TRACEABILITY.md",
+      "sha256": "118139630c4e2cf2ad0de92111cf5a4e71aeaad23ef818986bef841b918cc6c2",
+      "previousSha256": "7804485fa9fb2cbab391a73e9b538eebbf2cb9474705ba1d99e349c85b912da5"
+    },
+    {
+      "path": "artifacts/design/README.md",
+      "staged": "008-README.md",
+      "sha256": "54e92229287b863d65a724761a693d7ba821dd7b0a5eeb5863c32ba8eb082674",
+      "previousSha256": "1c268615f294734c71595c0dc8011d5c8ecfdfbc86ba449562e0178678bdf9d1"
+    },
+    {
+      "path": "artifacts/design/DECISIONS.md",
+      "staged": "009-DECISIONS.md",
+      "sha256": "8c5ef153e12cb47f7317bf3673d1242a9dcc817ff14ee025a0d5062bee16a8d6",
+      "previousSha256": "c33b34e3ec3530098530a12adec876e463ecac4c437e699c48eb76a7ecb80648"
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.md",
+      "staged": "010-IMPLEMENTATION_HANDOFF.md",
+      "sha256": "1235942ceafa8320b13cbde15572402215ce959eaecd4fa75da167f230cdd3d7",
+      "previousSha256": "2dc460a9c2b7b6d4c3aa91b0229363ef6edf5e258b50eb4906089d8fa6915e73"
+    },
+    {
+      "path": "artifacts/implementation/RESULTS.md",
+      "staged": "011-RESULTS.md",
+      "sha256": "c5395b3c2ab7d9e8182647020764c89fda858986ed64ee4adea55080f2049782",
+      "previousSha256": "2bab15ede0fd32ec9340512824f48e02445013c655cfeba44fb8732ed5884cc3"
+    },
+    {
+      "path": "README.md",
+      "staged": "012-README.md",
+      "sha256": "0568755f4cfb069bdfa2eb4cd6e2e553f2c0d250cdf013c11ed8202b4baacef0",
+      "previousSha256": "e2f74904ffa67d5e83560319b37224fd3e4324eccae583fb9c4b09f5afba4d93"
+    }
+  ]
+}

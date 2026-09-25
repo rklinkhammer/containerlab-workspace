@@ -1,0 +1,122 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C068",
+    "sourceSha256": "b0d579e5a51caf7a3f4da679084a0bd7ba65885910304a8a02b2d50295b32da3",
+    "outcomeSha256": "7007a53fb162ecc249646117a2ad60decd3e59fd181e45a2f388391e1904e7c7",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C068",
+    "bundleSha256": "81114dc07a5d04ad0c9f05b3355a150148ff87b1d7e0810589f0e4342887101c",
+    "entryFile": "C068.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+    "jobId": "a30d84078a64e0b9b040dfa20c21238a",
+    "completedAt": "2026-09-25T07:13:01.343Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:n0",
+      "name": "sros",
+      "kind": "nokia_sros",
+      "kindState": "native_getter"
+    }
+  ],
+  "links": [
+    {
+      "id": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:l0",
+      "occurrence": 0,
+      "type": "host",
+      "state": "declared",
+      "externalRole": "host-endpoint",
+      "endpoints": [
+        {
+          "nodeId": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:n0",
+          "nodeLabel": "sros",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    },
+    {
+      "id": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:l1",
+      "occurrence": 1,
+      "type": "host",
+      "state": "declared",
+      "externalRole": "host-endpoint",
+      "endpoints": [
+        {
+          "nodeId": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:n0",
+          "nodeLabel": "sros",
+          "interface": "eth2",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:d0",
+      "ownerId": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:l0",
+      "ownerType": "link",
+      "kind": "host-endpoint",
+      "label": "host-endpoint reference 1",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:d1",
+      "ownerId": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:l1",
+      "ownerType": "link",
+      "kind": "host-endpoint",
+      "label": "host-endpoint reference 2",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:d2",
+      "ownerId": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:n0",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 3",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:d3",
+      "ownerId": "fdafb3caff6a34e0d884025fa1bbc171de34b305a4165d0309674ab4fec263db:n0",
+      "ownerType": "node",
+      "kind": "license",
+      "label": "SR OS license",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "absent_from_bundle",
+      "basis": "verified_bundle_inventory"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

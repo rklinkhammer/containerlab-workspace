@@ -1,0 +1,923 @@
+[
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "F1",
+      "sourceSha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911",
+      "outcomeSha256": "6a680d94c08bde8bb75ac74018e8d1b1ba0f0c802b8f6b90df95b9d2db28ddd8",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "F1",
+      "bundleSha256": "c58a22fdc9842ee070004384dcc0fd820123a3e14a0b31cf12f33937bde754f2",
+      "entryFile": "F1.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "066ce2f31ab5a6fb3eb7d0b5ffe7f8f7",
+      "completedAt": "2026-09-25T07:13:03.060Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n0",
+        "name": "isolated",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n1",
+        "name": "left",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n2",
+        "name": "right",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n3",
+        "name": "srl",
+        "kind": "nokia_srlinux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n1",
+            "nodeLabel": "left",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n2",
+            "nodeLabel": "right",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:l1",
+        "occurrence": 1,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n1",
+            "nodeLabel": "left",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n2",
+            "nodeLabel": "right",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:l2",
+        "occurrence": 2,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n3",
+            "nodeLabel": "srl",
+            "interface": "ethernet-1/1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n1",
+            "nodeLabel": "left",
+            "interface": "eth3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:d0",
+        "ownerId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:d1",
+        "ownerId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:d2",
+        "ownerId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n2",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 3",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:d3",
+        "ownerId": "8bc0bb7f2b8aca3d120a21d5f815d36bde0d14f6161bfd5def468042b97a0ac3:n3",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 4",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "f2fbb8530d70440e8d238da321a0f7ab55c3e1ff95a6f14d5fac9c4e232009b3",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "F7",
+      "sourceSha256": "614c345a6bd15cca1d0fb8ce072254ee21257fdb0c316af6441fda83ffbf56ef",
+      "outcomeSha256": "055142112c0e2eb1c1c8777e2a509e7db7b52470c886d28cf96e815feae5c3fe",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "F7",
+      "bundleSha256": "aac5ab156acbcb0e7d8d47751e84aee4d0d5ccc5c4555c3e82d56c91f82aebca",
+      "entryFile": "F7.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "e847d069fc90583ac87be75eb27ec1fa",
+      "completedAt": "2026-09-25T07:13:03.177Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "f2fbb8530d70440e8d238da321a0f7ab55c3e1ff95a6f14d5fac9c4e232009b3:n0",
+        "name": "n1",
+        "kind": "linux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "f2fbb8530d70440e8d238da321a0f7ab55c3e1ff95a6f14d5fac9c4e232009b3:l0",
+        "occurrence": 0,
+        "type": "dummy",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "f2fbb8530d70440e8d238da321a0f7ab55c3e1ff95a6f14d5fac9c4e232009b3:n0",
+            "nodeLabel": "n1",
+            "interface": "dummy1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "f2fbb8530d70440e8d238da321a0f7ab55c3e1ff95a6f14d5fac9c4e232009b3:d0",
+        "ownerId": "f2fbb8530d70440e8d238da321a0f7ab55c3e1ff95a6f14d5fac9c4e232009b3:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "CTX-C168",
+      "sourceSha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591",
+      "outcomeSha256": "8d721fb721d1825723d1009f36857b906dad6300ad729925d2890937c073bb96",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "CTX-C168",
+      "bundleSha256": "a69f13da6785c430a1cea038133ad8f04b5c2eb2c5d001da482a9596d31df198",
+      "entryFile": "CTX-C168.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "61a72849d53b2218eb33eed3128cb475",
+      "completedAt": "2026-09-25T07:13:03.292Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:n0",
+        "name": "ceos1",
+        "kind": "arista_ceos",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:n1",
+        "name": "ceos2",
+        "kind": "arista_ceos",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:n0",
+            "nodeLabel": "ceos1",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:n1",
+            "nodeLabel": "ceos2",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:d0",
+        "ownerId": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:n0",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "Interface mapping",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "absent_from_bundle",
+        "basis": "verified_bundle_inventory"
+      },
+      {
+        "id": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:d1",
+        "ownerId": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:d2",
+        "ownerId": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:n1",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "Interface mapping",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "absent_from_bundle",
+        "basis": "verified_bundle_inventory"
+      },
+      {
+        "id": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:d3",
+        "ownerId": "3a4d1dc749a94d49645ef591e6d4420e1bdf2abd2cb19c957a911792930a854d:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 4",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "D1",
+      "sourceSha256": "ebf9373308571245c4f6df3f1e5d54fd541e2266ef3c236355f6e8305b789b23",
+      "outcomeSha256": "458e8cf0753eeedfb124e4f34010da1d5cc8c04511a5d08ddd3327641ebc9387",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "D1",
+      "bundleSha256": "5ad3e21a90652e92e84bba8bc0d25650e4db3c2ada74e4686bbae98a5a03512e",
+      "entryFile": "D1.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "afc5a9084b3730d4a9d263b95e11ee40",
+      "completedAt": "2026-09-25T07:13:03.408Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n0",
+        "name": "a",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n1",
+        "name": "b",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n2",
+        "name": "isolated",
+        "kind": "linux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n0",
+            "nodeLabel": "a",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n1",
+            "nodeLabel": "b",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:l1",
+        "occurrence": 1,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n0",
+            "nodeLabel": "a",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n1",
+            "nodeLabel": "b",
+            "interface": "eth2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:l2",
+        "occurrence": 2,
+        "type": "macvlan",
+        "state": "declared",
+        "externalRole": "host-interface",
+        "endpoints": [
+          {
+            "nodeId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n0",
+            "nodeLabel": "a",
+            "interface": "eth3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d0",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:l2",
+        "ownerType": "link",
+        "kind": "host-interface",
+        "label": "host-interface reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d1",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n0",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "bind reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d2",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 3",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d3",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n0",
+        "ownerType": "node",
+        "kind": "license",
+        "label": "license reference 4",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d4",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n0",
+        "ownerType": "node",
+        "kind": "startup-config",
+        "label": "startup-config reference 5",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d5",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n1",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "bind reference 6",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d6",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 7",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d7",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n2",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "bind reference 8",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:d8",
+        "ownerId": "00e32956027f18385b949ef5a42ff177901ea740b6f5fc9b1a6d704e82af2b82:n2",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 9",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "ca25872e361913e767cc63816a383d9420d120c509e8b0430301cf233b71001d",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "D2",
+      "sourceSha256": "c1ecbd16ddf95683a954d0c9a15bee8bc2b2ebacb79db759fb200af46cb92267",
+      "outcomeSha256": "945bd944f399920b6f18d52b4cfb9f3366d931b63ceb81c59832bc14816919d8",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "D2",
+      "bundleSha256": "84c48c07d2832d2570743f404d937c27dd77b9fddfdfb7355e7a33fdde79ddc9",
+      "entryFile": "D2.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "c307a72735c91f384dd78969b0b04cb5",
+      "completedAt": "2026-09-25T07:13:03.517Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "ca25872e361913e767cc63816a383d9420d120c509e8b0430301cf233b71001d:n0",
+        "name": "a",
+        "kind": "linux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "ca25872e361913e767cc63816a383d9420d120c509e8b0430301cf233b71001d:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "ca25872e361913e767cc63816a383d9420d120c509e8b0430301cf233b71001d:n0",
+            "nodeLabel": "a",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": null,
+            "nodeLabel": "absent",
+            "interface": "eth1",
+            "referenceState": "unresolved",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "ca25872e361913e767cc63816a383d9420d120c509e8b0430301cf233b71001d:d0",
+        "ownerId": "ca25872e361913e767cc63816a383d9420d120c509e8b0430301cf233b71001d:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [
+      {
+        "code": "ENDPOINT_NODE_UNRESOLVED",
+        "message": "An endpoint names an undeclared node; the reference is retained without creating a node.",
+        "stage": "projection",
+        "objectId": "ca25872e361913e767cc63816a383d9420d120c509e8b0430301cf233b71001d:l0"
+      }
+    ],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "9123669ce565e2cf85660874454c01fa8a3e05af22fed3181946b6e45eddac89",
+    "status": "rejected",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "C162",
+      "sourceSha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b",
+      "outcomeSha256": "c94e88e052b751a06a6d01fcef80f068cbaefb0fbc49143d88dadbd025de3d57",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "C162",
+      "bundleSha256": "031ff4ae5b4a51fb19915e03262b51fab7406521b7a3888179189cf0224ba9b0",
+      "entryFile": "C162.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "5a17d6b5213d2f0199fbd02dbfdf5a29",
+      "completedAt": "2026-09-25T07:13:03.623Z",
+      "cleanup": "complete"
+    },
+    "nodes": [],
+    "links": [],
+    "dependencies": [],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [
+      {
+        "code": "TEMPLATE_ERROR",
+        "message": "Line 5: Native template function kind_code_name is undefined; documentation context is required.",
+        "stage": "load",
+        "objectId": null
+      }
+    ],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "77aa21ee74ac3d56dd86167fce11b5521066f6ec3a2356aa40a1a2f0d8097add",
+    "status": "rejected",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "F2",
+      "sourceSha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01",
+      "outcomeSha256": "3f0add4330129aa3d5f35d76cd93108a182944b3d5daa64e26e3d693ea616928",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "F2",
+      "bundleSha256": "ae902aed7039d1ba89771de458d04e2ce2b1728ade75e4d0ede857f6fcbe5a46",
+      "entryFile": "F2.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "4c3d48c4444bf9509f33adb2a4c2f774",
+      "completedAt": "2026-09-25T07:13:03.735Z",
+      "cleanup": "complete"
+    },
+    "nodes": [],
+    "links": [],
+    "dependencies": [],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [
+      {
+        "code": "SCHEMA_ERROR",
+        "message": "Line 12: Native schema rejects node field x-unknown.",
+        "stage": "load",
+        "objectId": null
+      }
+    ],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "BUNDLE-CONTEXT",
+      "sourceSha256": "1cf465220ecbea901fbb8eb63bed3cd2f5764e23edd8f204c697add1a45bdbfe",
+      "outcomeSha256": "2c7dfa70c5ac0a1d1803e4c3baa59051975e3e48be0d84753d2c69e3311fd1b5",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "BUNDLE-CONTEXT",
+      "bundleSha256": "dbea4eb289dcaaf88ddcf31be51f930989409b11ffe051190b715cf1de9e9fbb",
+      "entryFile": "topology.clab.yml",
+      "fileCount": 2,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "c36b383a1f951ec918014f9248df2200",
+      "completedAt": "2026-09-25T07:13:03.841Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:n0",
+        "name": "isolated",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:n1",
+        "name": "left",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:n2",
+        "name": "right",
+        "kind": "linux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:n1",
+            "nodeLabel": "left",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:n2",
+            "nodeLabel": "right",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:d0",
+        "ownerId": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:d1",
+        "ownerId": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:d2",
+        "ownerId": "917ac0860494f72d1f70130ef22f19ca456ac97fd5320b4d06a29b8534ab4194:n2",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 3",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "d47e0f2f411b46e57afee8ad1047cbc07083c42efb1efc876f686fdd0ca855ab",
+    "status": "rejected",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "BUNDLE-MISSING",
+      "sourceSha256": "1cf465220ecbea901fbb8eb63bed3cd2f5764e23edd8f204c697add1a45bdbfe",
+      "outcomeSha256": "c0e4329b49c2b34debb438c3c4f221317bdb3434a45785898a204b3ca721053a",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "BUNDLE-MISSING",
+      "bundleSha256": "be2b80d4cd42509b8091c50448a10655c45fb141c566df3e6cfd0d05c93db33c",
+      "entryFile": "topology.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "2da46783222f278bee3ae4f3c30ab1f0",
+      "completedAt": "2026-09-25T07:13:03.949Z",
+      "cleanup": "complete"
+    },
+    "nodes": [],
+    "links": [],
+    "dependencies": [],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [
+      {
+        "code": "TEMPLATE_ERROR",
+        "message": "Line 7: Native template could not execute; a required template or variable context is missing or invalid.",
+        "stage": "load",
+        "objectId": null
+      }
+    ],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "0b6ff51758011469538b1b3ea812eec13568e26eba39969b3b0bc4781a97d550",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "CTX-C162",
+    "sourceSha256": "e8ead1273155724f69751a471552329622b6b40c10e4ed9d91affd287a5fb438",
+    "outcomeSha256": "9423a538563e1a0ca8b68693e062c9fc9e3b6cb581397a5253b793a35d4b8515",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "CTX-C162",
+    "bundleSha256": "f3810c791fa9debbf8a19281cc79bc5062954f6cd6638d11a0707a4c182fc1bf",
+    "entryFile": "CTX-C162.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+    "jobId": "f1024489195e9973d2bd0137f17544c4",
+    "completedAt": "2026-09-25T07:13:02.127Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "0b6ff51758011469538b1b3ea812eec13568e26eba39969b3b0bc4781a97d550:n0",
+      "name": "vsr",
+      "kind": "6wind_vsr",
+      "kindState": "native_getter"
+    }
+  ],
+  "links": [],
+  "dependencies": [
+    {
+      "id": "0b6ff51758011469538b1b3ea812eec13568e26eba39969b3b0bc4781a97d550:d0",
+      "ownerId": "0b6ff51758011469538b1b3ea812eec13568e26eba39969b3b0bc4781a97d550:n0",
+      "ownerType": "node",
+      "kind": "startup-config",
+      "label": "VSR startup configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "absent_from_bundle",
+      "basis": "verified_bundle_inventory"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

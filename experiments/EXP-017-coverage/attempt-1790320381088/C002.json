@@ -1,0 +1,166 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C002",
+    "sourceSha256": "250d4a848019a0b1e4a8bb87635bd698b9448bca32971643f4c711da216349f3",
+    "outcomeSha256": "4631b051c591bf21a771c23a72e997586139eddf0775648f57b78cb08a8f50d6",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C002",
+    "bundleSha256": "a951dd26a2a771c18e11e8ee8364506d10267d77f2ac369ff2a1da906e034c58",
+    "entryFile": "C002.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+    "jobId": "6ca91f45acf2a03885b0d9424d703123",
+    "completedAt": "2026-09-25T07:13:01.230Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n0",
+      "name": "br-clab",
+      "kind": "bridge",
+      "kindState": "native_getter"
+    },
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n1",
+      "name": "srl1",
+      "kind": "nokia_srlinux",
+      "kindState": "native_getter"
+    },
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n2",
+      "name": "srl2",
+      "kind": "nokia_srlinux",
+      "kindState": "native_getter"
+    },
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n3",
+      "name": "srl3",
+      "kind": "nokia_srlinux",
+      "kindState": "native_getter"
+    }
+  ],
+  "links": [
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:l0",
+      "occurrence": 0,
+      "type": "veth",
+      "state": "declared",
+      "externalRole": "",
+      "endpoints": [
+        {
+          "nodeId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n1",
+          "nodeLabel": "srl1",
+          "interface": "e1-1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        },
+        {
+          "nodeId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n0",
+          "nodeLabel": "br-clab",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    },
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:l1",
+      "occurrence": 1,
+      "type": "veth",
+      "state": "declared",
+      "externalRole": "",
+      "endpoints": [
+        {
+          "nodeId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n2",
+          "nodeLabel": "srl2",
+          "interface": "e1-1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        },
+        {
+          "nodeId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n0",
+          "nodeLabel": "br-clab",
+          "interface": "eth2",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    },
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:l2",
+      "occurrence": 2,
+      "type": "veth",
+      "state": "declared",
+      "externalRole": "",
+      "endpoints": [
+        {
+          "nodeId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n3",
+          "nodeLabel": "srl3",
+          "interface": "e1-1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        },
+        {
+          "nodeId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n0",
+          "nodeLabel": "br-clab",
+          "interface": "eth3",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:d0",
+      "ownerId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n1",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 1",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:d1",
+      "ownerId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n2",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 2",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:d2",
+      "ownerId": "c13e3d0eb61e1fd3da6ad3f2c7e94ecd1ce527bd6e3e153ddf5f5f8686a82813:n3",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 3",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

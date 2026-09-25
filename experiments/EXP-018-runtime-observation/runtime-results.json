@@ -1,0 +1,143 @@
+[
+  {
+    "stage": "initial",
+    "snapshot": {
+      "contract": "observation/0.1",
+      "deploymentId": "13587d1d5d1fd78efea96c37d2626e780a2ff574c8f14925776091942ea7aa8a",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 1,
+      "observedAt": "2026-09-25T07:37:33.434Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "3aca4ec55cf881c14942eb13662897fa5be14ea4a5966490aa2ee6f69c6462c9",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "15bbec6825340e0bbbd99ce5a2802f7ac557c2bac01c6cf85cd699fe587b388e",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "inspection-prerequisite-unavailable",
+    "result": "expected INSPECTION_FAILED; no absence snapshot"
+  },
+  {
+    "stage": "recovered",
+    "snapshot": {
+      "contract": "observation/0.1",
+      "deploymentId": "13587d1d5d1fd78efea96c37d2626e780a2ff574c8f14925776091942ea7aa8a",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 2,
+      "observedAt": "2026-09-25T07:37:35.918Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "3aca4ec55cf881c14942eb13662897fa5be14ea4a5966490aa2ee6f69c6462c9",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "15bbec6825340e0bbbd99ce5a2802f7ac557c2bac01c6cf85cd699fe587b388e",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "cancel",
+    "result": "CANCELLED"
+  },
+  {
+    "stage": "after-cancel",
+    "snapshot": {
+      "contract": "observation/0.1",
+      "deploymentId": "13587d1d5d1fd78efea96c37d2626e780a2ff574c8f14925776091942ea7aa8a",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 3,
+      "observedAt": "2026-09-25T07:37:38.241Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "3aca4ec55cf881c14942eb13662897fa5be14ea4a5966490aa2ee6f69c6462c9",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "15bbec6825340e0bbbd99ce5a2802f7ac557c2bac01c6cf85cd699fe587b388e",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "destroyed",
+    "snapshot": {
+      "contract": "observation/0.1",
+      "deploymentId": "13587d1d5d1fd78efea96c37d2626e780a2ff574c8f14925776091942ea7aa8a",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 4,
+      "observedAt": "2026-09-25T07:37:39.731Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "3aca4ec55cf881c14942eb13662897fa5be14ea4a5966490aa2ee6f69c6462c9",
+          "state": "absent",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "15bbec6825340e0bbbd99ce5a2802f7ac557c2bac01c6cf85cd699fe587b388e",
+          "state": "absent",
+          "association": "enrolled_full_id"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "recreated-allowlisted-native-identities",
+    "rows": [
+      {
+        "id": "eb149af896c6ee4e050d02986d8ddfae6c94f139b9d9fc6e8284c2deb399c570",
+        "node": "left",
+        "state": "running",
+        "lab": "observation-slice",
+        "kind": "linux",
+        "purpose": "observation-slice-v1"
+      },
+      {
+        "id": "4ec59b35b3c0b525d7acf454addcd58f6e17e3a570a93f457463b8b870341e6f",
+        "node": "right",
+        "state": "running",
+        "lab": "observation-slice",
+        "kind": "linux",
+        "purpose": "observation-slice-v1"
+      }
+    ]
+  },
+  {
+    "stage": "recreated",
+    "result": "ASSOCIATION_CONFLICT; no automatic re-enrollment"
+  }
+]

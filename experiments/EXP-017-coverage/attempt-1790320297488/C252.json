@@ -1,0 +1,181 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C252",
+    "sourceSha256": "f6ad8b3d9e2693f88bfc632d41f631e513743e35199d84f3590eabc429db09f7",
+    "outcomeSha256": "e91610950f4c0fa381e2eb2c966335e089684caaeb63751343fc18a36be00f9a",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C252",
+    "bundleSha256": "8b22cfe60bf90e320debe9fd803f66068a78a4c4f33203aa18ba692369341a12",
+    "entryFile": "C252.clab.yml",
+    "fileCount": 5,
+    "workerSha256": "dcf46eecc05cd7ee17a214efaf99c759126cf447330accbbbf575095a3edb851",
+    "jobId": "ebe8651554ba68ba558800c573ba9379",
+    "completedAt": "2026-09-25T07:11:37.985Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n0",
+      "name": "bng1",
+      "kind": "veesix_osvbng",
+      "kindState": "native_getter"
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n1",
+      "name": "corerouter1",
+      "kind": "linux",
+      "kindState": "native_getter"
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n2",
+      "name": "subscribers",
+      "kind": "linux",
+      "kindState": "native_getter"
+    }
+  ],
+  "links": [
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:l0",
+      "occurrence": 0,
+      "type": "veth",
+      "state": "declared",
+      "externalRole": "",
+      "endpoints": [
+        {
+          "nodeId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n2",
+          "nodeLabel": "subscribers",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        },
+        {
+          "nodeId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n0",
+          "nodeLabel": "bng1",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:l1",
+      "occurrence": 1,
+      "type": "veth",
+      "state": "declared",
+      "externalRole": "",
+      "endpoints": [
+        {
+          "nodeId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n0",
+          "nodeLabel": "bng1",
+          "interface": "eth2",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        },
+        {
+          "nodeId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n1",
+          "nodeLabel": "corerouter1",
+          "interface": "eth1",
+          "referenceState": "declared",
+          "interfaceState": "declared_unresolved_alias"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:d0",
+      "ownerId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n0",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 1",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:d1",
+      "ownerId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n0",
+      "ownerType": "node",
+      "kind": "startup-config",
+      "label": "BNG startup configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "present_in_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:d2",
+      "ownerId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n1",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "FRR daemon configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "present_in_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:d3",
+      "ownerId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n1",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "FRR routing configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "present_in_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:d4",
+      "ownerId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n1",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 5",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:d5",
+      "ownerId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n2",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "Subscriber configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "present_in_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:d6",
+      "ownerId": "b71f52111aa0a0d30774f9e0ebc07cf751c53b7106166398030a4e48ae6b3fd8:n2",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 7",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "vm": "clab-load-20260925-073014-exp016",
+  "expiresAt": "2026-09-25T08:30:52.620666+00:00",
+  "createdFor": "runtime-observation-qualification",
+  "binding": {
+    "nodes": [
+      {
+        "node": "left",
+        "id": "eb149af896c6ee4e050d02986d8ddfae6c94f139b9d9fc6e8284c2deb399c570"
+      },
+      {
+        "node": "right",
+        "id": "4ec59b35b3c0b525d7acf454addcd58f6e17e3a570a93f457463b8b870341e6f"
+      }
+    ],
+    "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+    "deploymentId": "0fe9f6ee153776cad1be2d8c898950485b08a128a6248c400723ea386ecabffe"
+  },
+  "graph": {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "RUNTIME-PAIR",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "outcomeSha256": "6ba4d6dec0d897c9a4d1b52a1dee3fa79c299999e88e2e0d8a9767fe494d53bf",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "RUNTIME-PAIR",
+      "bundleSha256": "640571e307a557760cb15a20fa651d3cb329d175ee142bca5b9bd4cd3931b348",
+      "entryFile": "RUNTIME-PAIR.clab.yml",
+      "fileCount": 1,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "54ea8ebcb3fe61a3392af4d4c934c63c",
+      "completedAt": "2026-09-25T07:33:35.717Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n0",
+        "name": "left",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n1",
+        "name": "right",
+        "kind": "linux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n0",
+            "nodeLabel": "left",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n1",
+            "nodeLabel": "right",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:d0",
+        "ownerId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 1",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:d1",
+        "ownerId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  "nativeBinarySha256": "30e841ad0f443ad07f4c1189844f33447d31587b472b9062954bbeb65596b4d5"
+}

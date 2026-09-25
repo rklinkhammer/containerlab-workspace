@@ -1,0 +1,14 @@
+{
+  "UNSUPPORTED-BRIEF": {
+    "status": "rejected",
+    "code": "SCHEMA_ERROR",
+    "message": "Native link endpoint requires node:interface format",
+    "basis": "Documented: pinned links/link.go UnmarshalYAML calls ToTypeSpecificRawLink before returning; invalid brief cannot reach projection. Original graph expectation is UNSATISFIABLE under native authority, retained unchanged."
+  },
+  "C416": {
+    "status": "rejected",
+    "code": "SCHEMA_ERROR",
+    "message": "Native node definition must be a mapping",
+    "basis": "Same original rejection requirement with more specific safe message; pinned native error identifies scalar NodeDefinition at lines 6/7."
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "path": "cmd/inspect.go",
+    "sha256": "2369454eb32223f1749fc1724373a138168c2983956c3d84963acdbb7ecf2c2f"
+  },
+  {
+    "path": "runtime/generic_container.go",
+    "sha256": "f8abf145d417d8d4173244628d219de9aa4db0f21202045abc19fc1f61eb2fec"
+  }
+]

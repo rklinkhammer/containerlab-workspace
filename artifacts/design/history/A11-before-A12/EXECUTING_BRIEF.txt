@@ -1,0 +1,97 @@
+Continue from architecture A11 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Treat ../containerlab-investigation as read-only evidence.
+Preserve the sibling-directory arrangement and unrelated changes.
+Do not access, start, stop or modify pre-existing Lima VMs.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, README.md and:
+
+- artifacts/implementation/A11/RESULTS.md
+- artifacts/design/ON_DEMAND_CONTRACT.md
+- artifacts/design/READINESS.md
+- artifacts/design/P1A_BACKLOG.md
+- artifacts/design/IMPLEMENTATION_PLAN.md
+- experiments/EXP-016-on-demand/RESULTS.md
+- fixtures/bundles/catalog.json
+
+Verify artifacts/design/COMPLETION.json before relying on the
+baseline. Inspect Git status and preserve existing staged work.
+
+Implement the next bounded slice: expand approved native bundle
+coverage and improve declared-link/dependency representation.
+
+This authorizes application changes and qualification in a newly
+created dedicated VM. Stop that VM after evidence collection.
+Do not deploy labs or containers.
+
+1. Select an evidence-backed coverage batch.
+   Inventory remaining corpus failures and unsupported native link
+   or dependency categories. Select a small representative batch,
+   approximately 10–20 additional cases, based on coverage gaps.
+   State the selection rationale and independent acceptance expectations
+   before execution. Keep the full 177-case denominator unchanged.
+
+2. Build reproducible approved bundles.
+   Preserve original YAML bytes, IDs and hashes. Inventory all required
+   local companion files, template variables and subtemplates from
+   pinned sources. Preserve intended relative layouts.
+   Keep documentation-context derivatives separately identified.
+   Do not guess missing values, fabricate assets, fetch remote resources
+   during loading or silently repair original inputs.
+
+3. Extend native-derived projection where necessary.
+   Use pinned Containerlab types/getters for additional link and
+   dependency categories. Do not reimplement topology semantics.
+   Preserve every declared occurrence, including unsupported shapes,
+   disconnected nodes, parallel links and external/dangling references.
+   Unsupported objects must remain explicit rather than disappearing.
+   Distinguish unchecked dependencies from evidence-confirmed missing
+   or present files; presence alone does not mean deployment readiness.
+   Keep dependency-inventory completeness explicit.
+
+4. Make results understandable in the application.
+   Add approved bundles to the on-demand selector.
+   Show useful reviewed dependency labels and specific failure messages
+   associated with input identity, stage and line/field context when
+   available. Do not disclose arbitrary paths, URL credentials, raw
+   configuration or native stderr.
+   Keep declared, resolved, recorded and newly executed evidence distinct.
+   Version contracts deliberately if their meaning changes.
+
+5. Qualify the expanded slice.
+   Compare native outcomes and displayed objects against independent
+   expectations, not merely counts or previous implementation output.
+   Preserve failed attempts and classify each outcome:
+   native loading, projection, rendering and external prerequisites.
+   Exercise containment, limits, cancellation and cleanup for any changed
+   worker boundary. Run relevant contract, integration and browser tests.
+   Never change expectations merely to match code.
+
+Use port 4173. Do not terminate unrelated processes if it is occupied.
+Ordinary builds/tests must not create VMs automatically. Runtime trials
+must use the explicit fresh-session workflow; never reuse stopped trials.
+
+TT-01 remains active: login and multi-user ownership authorization are
+out of scope. Retain filesystem/network/process containment, disclosure
+allowlists, safe rendering and resource limits.
+
+Do not implement arbitrary uploads, persistent private-source storage,
+deployment, live inspection, terminals, capture or packet analysis.
+Do not turn a selected coverage improvement into a universal fidelity
+or deployment-readiness claim.
+
+Update affected architecture decisions, contracts, implementation status,
+traceability and handoff. Follow D-15 archival/publication rules before
+replacing published documents. Keep historical Q-gate statuses unchanged
+unless new evidence satisfies their actual acceptance criteria.
+
+Complete the selected slice rather than stopping at research or
+scaffolding. Finish with:
+
+- Newly covered cases and capabilities.
+- Per-case failures, exact safe reasons and remaining context gaps.
+- Actual test results and separately identified unrun checks.
+- Setup, preview and cleanup commands.
+- Confirmation that the new VM is stopped.
+- The smallest next gated implementation step.

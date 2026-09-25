@@ -1,0 +1,44 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "a9e38eae24336c347867e2b85422f225bb653956aa4683588e0072a64465c8ab",
+  "status": "rejected",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C218",
+    "sourceSha256": "dea8acafda19d9fcb7b4507e168efac65081004c9dfebce9209f6446e06f5165",
+    "outcomeSha256": "0cbd4ffd70fabf86411982f197e9102fb7190b707afc5c85b424f6d792f1224f",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C218",
+    "bundleSha256": "aaaf988595be5191cca2ac60129de1f7b0efd4c94a2fd83af356d7ad1fe38357",
+    "entryFile": "C218.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "dcf46eecc05cd7ee17a214efaf99c759126cf447330accbbbf575095a3edb851",
+    "jobId": "82fcdb3dfdca995fa04d07f85fdf7efa",
+    "completedAt": "2026-09-25T07:11:38.799Z",
+    "cleanup": "complete"
+  },
+  "nodes": [],
+  "links": [],
+  "dependencies": [],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [
+    {
+      "code": "SCHEMA_ERROR",
+      "message": "Line 9: Native schema rejects node field mgmt_ipv6.",
+      "stage": "load",
+      "objectId": null
+    }
+  ],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

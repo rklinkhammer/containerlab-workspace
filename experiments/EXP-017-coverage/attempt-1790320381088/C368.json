@@ -1,0 +1,95 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C368",
+    "sourceSha256": "3923bdba86b6e1287d55617e801829d40485556ede6775b7b516522b23a05ee1",
+    "outcomeSha256": "1565f3ef706aaca470953d35f1a9a0d5e3997f40acfddcaff50968f1738c2552",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C368",
+    "bundleSha256": "0cf07f7d10b7bbeb7a5c926a5a176081d23f691928bcfe9a68300832c0d323f4",
+    "entryFile": "C368.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+    "jobId": "4eea4a2f8e243b1020b614a89f384942",
+    "completedAt": "2026-09-25T07:13:02.012Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:n0",
+      "name": "router1",
+      "kind": "nokia_srlinux",
+      "kindState": "native_getter"
+    },
+    {
+      "id": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:n1",
+      "name": "router2",
+      "kind": "nokia_srlinux",
+      "kindState": "native_getter"
+    }
+  ],
+  "links": [],
+  "dependencies": [
+    {
+      "id": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:d0",
+      "ownerId": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:n0",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 1",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:d1",
+      "ownerId": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:n0",
+      "ownerType": "node",
+      "kind": "startup-config",
+      "label": "Router 1 remote startup configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:d2",
+      "ownerId": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:n1",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 3",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:d3",
+      "ownerId": "9eb215ec9e04a9cef4de477cb82115035fead936d8a8dc92929942e4bfe2fe49:n1",
+      "ownerType": "node",
+      "kind": "startup-config",
+      "label": "Router 2 remote startup configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

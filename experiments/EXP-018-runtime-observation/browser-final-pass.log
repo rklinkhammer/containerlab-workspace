@@ -1,0 +1,17 @@
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test tests/browser/observation.spec.ts
+
+[WebServer] (node:65538) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:65554) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  1 tests/browser/observation.spec.ts:4:1 › actual runtime inspection retains declaration selection across stop and recovery
+  ✓  2 tests/browser/observation.spec.ts:22:1 › polling, failure, stale data, cancellation and recovery (transport control) (20.0s)
+  ✓  3 tests/browser/observation.spec.ts:32:1 › observation routes expose no mutation and reject foreign browser origin (24ms)
+
+  1 skipped
+  2 passed (20.7s)

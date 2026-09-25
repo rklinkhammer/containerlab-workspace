@@ -1,0 +1,347 @@
+[
+  {
+    "path": "apps/web/src/declared.tsx",
+    "sha256": "9446dfaf121e3a0146836fbb7370a4958897e459f5eae637ace79297dc34250c",
+    "bytes": 6220
+  },
+  {
+    "path": "apps/web/src/env.d.ts",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "bytes": 38
+  },
+  {
+    "path": "apps/web/src/fixtures.ts",
+    "sha256": "282b988e45e8bc84d452ead12fe1d7807bebeb913287f4bc68dbe97e347edf90",
+    "bytes": 4656
+  },
+  {
+    "path": "apps/web/src/generated/declared-fixtures.json",
+    "sha256": "e64cccb7b84cf7f5a350d62b8cc8f1ecd6e1476e9b208976dc201ef0257ec5c0",
+    "bytes": 141470
+  },
+  {
+    "path": "apps/web/src/generated/native-fixtures.json",
+    "sha256": "5a67e18a12ea6cc649bf99b058e3c302cc89872db76068372e3a93bcdd07a32a",
+    "bytes": 134044
+  },
+  {
+    "path": "apps/web/src/main.tsx",
+    "sha256": "f5258b4eeb78b26ab69201c8d8dcafc1d71f6dbef44dc06746298d2a4f5b2ca6",
+    "bytes": 13638
+  },
+  {
+    "path": "apps/web/src/on-demand.tsx",
+    "sha256": "e47ce71bdfe1f38608bdf1ceba3f091db24a29fcec02c65f50689782aa5a7f94",
+    "bytes": 3902
+  },
+  {
+    "path": "apps/web/src/style.css",
+    "sha256": "84b13a17f333111c979aeb0a1f976cac4d1435f065f4ac463423cd716e204ada",
+    "bytes": 8169
+  },
+  {
+    "path": "backend/native-api.ts",
+    "sha256": "dae67cb559ad577fd90ef51ee7269f028017d271f97eaa80b44b7aa0b9be5323",
+    "bytes": 3002
+  },
+  {
+    "path": "backend/native-loader.ts",
+    "sha256": "872401ebb3a9283d3ba034d2543ae5c67b528772977a37fdb0c465015eebe538",
+    "bytes": 7383
+  },
+  {
+    "path": "contracts/declared-graph.ts",
+    "sha256": "a9654db113ca520be1dbd3ef1631d3b9844340bb52b84582285aa23e043e5d9f",
+    "bytes": 4177
+  },
+  {
+    "path": "contracts/graph.ts",
+    "sha256": "be554d9bdf36ba7c53793b1dc46d7b51db236ca46d7ad42f0afe7c7b02984c1d",
+    "bytes": 5726
+  },
+  {
+    "path": "contracts/live-graph.ts",
+    "sha256": "22080513d68421918acec8f2bcb9e2b2121dcaa0c5e802b6170217debc0a75b3",
+    "bytes": 1890
+  },
+  {
+    "path": "contracts/native-graph.ts",
+    "sha256": "808298c25511b6f51c3ed67467034ff9563be440c85298d5c99a514c1fd3eecf",
+    "bytes": 4487
+  },
+  {
+    "path": "contracts/project-declared.ts",
+    "sha256": "d49b5b3a6712defdfdd894fe0a28c295585346468edf114da0408ff173cde28d",
+    "bytes": 3731
+  },
+  {
+    "path": "contracts/project-native.ts",
+    "sha256": "9162576172eb090bedf6a641020c985d2839d62caac37fbec8657186257e6c41",
+    "bytes": 3288
+  },
+  {
+    "path": "fixtures/bundles/BUNDLE-CONTEXT/clab_templates/nodes.gotmpl",
+    "sha256": "0c06d396e3555f7ce7fdf91f98b2b4ab3c8d05580dd49d0cd258049e67137580",
+    "bytes": 75
+  },
+  {
+    "path": "fixtures/bundles/BUNDLE-CONTEXT/topology.clab.yml",
+    "sha256": "1cf465220ecbea901fbb8eb63bed3cd2f5764e23edd8f204c697add1a45bdbfe",
+    "bytes": 171
+  },
+  {
+    "path": "fixtures/bundles/BUNDLE-MISSING/topology.clab.yml",
+    "sha256": "1cf465220ecbea901fbb8eb63bed3cd2f5764e23edd8f204c697add1a45bdbfe",
+    "bytes": 171
+  },
+  {
+    "path": "fixtures/bundles/C002/C002.clab.yml",
+    "sha256": "250d4a848019a0b1e4a8bb87635bd698b9448bca32971643f4c711da216349f3",
+    "bytes": 541
+  },
+  {
+    "path": "fixtures/bundles/C068/C068.clab.yml",
+    "sha256": "b0d579e5a51caf7a3f4da679084a0bd7ba65885910304a8a02b2d50295b32da3",
+    "bytes": 496
+  },
+  {
+    "path": "fixtures/bundles/C069/C069.clab.yml",
+    "sha256": "a00607f0e575fd61235f67f297f49a35fbf151e453fe7b894bdd536cb306f69a",
+    "bytes": 474
+  },
+  {
+    "path": "fixtures/bundles/C162/C162.clab.yml",
+    "sha256": "f81e3fb790e26d223df251e10b8a36563af5f2eefbd85ffa2c142f2c4c3df59b",
+    "bytes": 113
+  },
+  {
+    "path": "fixtures/bundles/C218/C218.clab.yml",
+    "sha256": "dea8acafda19d9fcb7b4507e168efac65081004c9dfebce9209f6446e06f5165",
+    "bytes": 1171
+  },
+  {
+    "path": "fixtures/bundles/C252/C252.clab.yml",
+    "sha256": "f6ad8b3d9e2693f88bfc632d41f631e513743e35199d84f3590eabc429db09f7",
+    "bytes": 590
+  },
+  {
+    "path": "fixtures/bundles/C252/bng1/osvbng.yaml",
+    "sha256": "1f9e1525f6e58bfd2b2c8761e23f12f629cdebf3d332da31afd187b4e0204d01",
+    "bytes": 2780
+  },
+  {
+    "path": "fixtures/bundles/C252/corerouter1/daemons",
+    "sha256": "a8a8dafa7769dc0d982def9ca267884783bdbedafc00b2a6689aa32a25460f1d",
+    "bytes": 264
+  },
+  {
+    "path": "fixtures/bundles/C252/corerouter1/frr.conf",
+    "sha256": "e7c0ef9563662378b6c62fae03684a8211f549847060982812b139963599e518",
+    "bytes": 587
+  },
+  {
+    "path": "fixtures/bundles/C252/subscribers/config.json",
+    "sha256": "102dab529ab6713d483b4e51c937d6b4d55f240ca9782cae4f68d428d36f979d",
+    "bytes": 769
+  },
+  {
+    "path": "fixtures/bundles/C258/C258.clab.yml",
+    "sha256": "7fd19abf509cd7946743aa2ff5c643b9db1b8d6406073504ea75363415de441d",
+    "bytes": 174
+  },
+  {
+    "path": "fixtures/bundles/C314/C314.clab.yml",
+    "sha256": "2a2f207f179942f07fafb76a44bebe0be700b894cf123f4778015c36ac7ac091",
+    "bytes": 139
+  },
+  {
+    "path": "fixtures/bundles/C324/C324.clab.yml",
+    "sha256": "083b0318d39b16195274449c9c6859afc3d0046fc5f8546aeb032dfd496f1577",
+    "bytes": 131
+  },
+  {
+    "path": "fixtures/bundles/C332/C332.clab.yml",
+    "sha256": "d2db0298f5c58e0f2791589f25600de8a9ebbb32cd88cb61c2a107861b6aa2a6",
+    "bytes": 256
+  },
+  {
+    "path": "fixtures/bundles/C368/C368.clab.yml",
+    "sha256": "3923bdba86b6e1287d55617e801829d40485556ede6775b7b516522b23a05ee1",
+    "bytes": 313
+  },
+  {
+    "path": "fixtures/bundles/C416/C416.clab.yml",
+    "sha256": "f5cbc29c3ed78ebe20291f81615ba2e5476ff71c7a8b005226bcbb1894077198",
+    "bytes": 365
+  },
+  {
+    "path": "fixtures/bundles/CTX-C162/CTX-C162.clab.yml",
+    "sha256": "e8ead1273155724f69751a471552329622b6b40c10e4ed9d91affd287a5fb438",
+    "bytes": 100
+  },
+  {
+    "path": "fixtures/bundles/CTX-C168/CTX-C168.clab.yml",
+    "sha256": "2756437438c725cbfdfbf52dc3bee7d9717d662e488aa00cd6cba954f2424591",
+    "bytes": 423
+  },
+  {
+    "path": "fixtures/bundles/D1/D1.clab.yml",
+    "sha256": "ebf9373308571245c4f6df3f1e5d54fd541e2266ef3c236355f6e8305b789b23",
+    "bytes": 405
+  },
+  {
+    "path": "fixtures/bundles/D2/D2.clab.yml",
+    "sha256": "c1ecbd16ddf95683a954d0c9a15bee8bc2b2ebacb79db759fb200af46cb92267",
+    "bytes": 127
+  },
+  {
+    "path": "fixtures/bundles/F1/F1.clab.yml",
+    "sha256": "c66a474ca9a9a4cba7de16c29dcc995219854418dc48e1b0ef13841c5aa50911",
+    "bytes": 485
+  },
+  {
+    "path": "fixtures/bundles/F2/F2.clab.yml",
+    "sha256": "0cc94c3bb55a72190b7b486b636d3d6d2688d9f324fc254316fe6719b06e5a01",
+    "bytes": 325
+  },
+  {
+    "path": "fixtures/bundles/F7/F7.clab.yml",
+    "sha256": "614c345a6bd15cca1d0fb8ce072254ee21257fdb0c316af6441fda83ffbf56ef",
+    "bytes": 183
+  },
+  {
+    "path": "fixtures/bundles/LINK-FAMILIES/LINK-FAMILIES.clab.yml",
+    "sha256": "55bd491061c0e8f21a31c62065f4b22a553a83694ce40ffce94721b90d2ef360",
+    "bytes": 715
+  },
+  {
+    "path": "fixtures/bundles/UNSUPPORTED-BRIEF/UNSUPPORTED-BRIEF.clab.yml",
+    "sha256": "9c09aa4130b494e6c0852d776a106b29c82ba08d4edd91249eb0087fc9e92a41",
+    "bytes": 129
+  },
+  {
+    "path": "fixtures/bundles/catalog.json",
+    "sha256": "ab39188b1ea5369030121eb787bdc8a3a3c324e2ebfc6107c8404bf581de936c",
+    "bytes": 14192
+  },
+  {
+    "path": "index.html",
+    "sha256": "306d851d3849116073ed1f4628d702433a96705bb60c36d01fd351f33db32128",
+    "bytes": 340
+  },
+  {
+    "path": "native/worker/install.sh",
+    "sha256": "a28a63d71c7ee426355929abfc0a1d8f72a98c386377b569dc562aa6638bb857",
+    "bytes": 676
+  },
+  {
+    "path": "native/worker/main.go",
+    "sha256": "7b373b634920fee21ac24fd3c489bf90f75cdccc992b0bdb617ce016efd44f68",
+    "bytes": 6361
+  },
+  {
+    "path": "native/worker/runner.py",
+    "sha256": "d901241466e9aa60d00b2271007265e6074f15c16b5912f4b427fdd18787eb59",
+    "bytes": 7182
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "1815d43125823948b065d1d8fdee86fef8eba65aa077fe5e59a08fc7e1ee7fd3",
+    "bytes": 51032
+  },
+  {
+    "path": "package.json",
+    "sha256": "f00ef9881c1f6c50747392d14d61d4132b15e5aea914b644a1a4d838aa4d0de4",
+    "bytes": 1204
+  },
+  {
+    "path": "playwright.config.ts",
+    "sha256": "dbe72d7859d30e8a2cbcda048d427fa1e41794f15fe467107fa7703ab60243ce",
+    "bytes": 450
+  },
+  {
+    "path": "scripts/declared-fixture-pins.json",
+    "sha256": "db5ca69d2a95e1e21e71b23c2b47cf0c31cf1bdfe55f62a535511900470306b1",
+    "bytes": 23372
+  },
+  {
+    "path": "scripts/native-fixture-pins.json",
+    "sha256": "8170b3d45884391c22a828d37ae984c059cc529dea9a5df5ad365a221fbd5eba",
+    "bytes": 13266
+  },
+  {
+    "path": "scripts/native-session.py",
+    "sha256": "d748c11780c708c88befdd0ead222bf8ee3489df1cee3af006af598f43e5e4c8",
+    "bytes": 2886
+  },
+  {
+    "path": "scripts/preview.mjs",
+    "sha256": "793abf548bde4096a5824d3105ca835766915d977aa21c1b1b09d76cf309a6cb",
+    "bytes": 1764
+  },
+  {
+    "path": "scripts/project-declared.ts",
+    "sha256": "b97fe301253d629c3d845f440a58e2f004dc967c2150110508254678fdaa7bfa",
+    "bytes": 1524
+  },
+  {
+    "path": "scripts/project-native.ts",
+    "sha256": "a70482436c4f3f73c6d0190a958c78b7cd79886f934b1c4ecf469af1c14ded2b",
+    "bytes": 2009
+  },
+  {
+    "path": "tests/browser/declared.spec.ts",
+    "sha256": "4ebb2512cc3ea7ff83e9a8e1d6a0a82f02ddb7942e97c1fee836070743cc1cde",
+    "bytes": 3774
+  },
+  {
+    "path": "tests/browser/on-demand.spec.ts",
+    "sha256": "e3a0a1f24d33d69dbba5d20d0c17f6172d9e1a4a33b03d1d2d97668380c9cd7f",
+    "bytes": 5862
+  },
+  {
+    "path": "tests/browser/preview.spec.ts",
+    "sha256": "875d2a78a1a6274d6105163e8e33790703c8861974fa7319a14fe4ad0bd940d8",
+    "bytes": 8256
+  },
+  {
+    "path": "tests/contract.test.ts",
+    "sha256": "5dae99837531c43673e7fe48787167c105256feaba525f5c6bafc9c829959a18",
+    "bytes": 5849
+  },
+  {
+    "path": "tests/declared.test.ts",
+    "sha256": "e9ed4f56a92a92b99140056550ce4de970e7c66e1011d4775f3e53042c03ce91",
+    "bytes": 4356
+  },
+  {
+    "path": "tests/integration/coverage.test.ts",
+    "sha256": "968baf97908dc8745de3003455ac7440e9342b578ba49dbf76094e631fa92341",
+    "bytes": 1807
+  },
+  {
+    "path": "tests/integration/native-load.test.ts",
+    "sha256": "4773bd81e590beb8d2e29d41ed2c0b85df1aee82542e84c6547564bacff4ca68",
+    "bytes": 2423
+  },
+  {
+    "path": "tests/integration/worker_qualification.py",
+    "sha256": "4d86c9e0d929e25e99e56f793536da4bd57d5b397244af0b5b881c2d010ac170",
+    "bytes": 5199
+  },
+  {
+    "path": "tests/live.test.ts",
+    "sha256": "1bda977fbb093a75507152092f2484c5428a434301dfbae2349f55f41a33a60b",
+    "bytes": 3345
+  },
+  {
+    "path": "tests/native.test.ts",
+    "sha256": "73db01a0b9725785827a8ae81a50be965a0c19cc698f7f09a6fe2d92196d6042",
+    "bytes": 5374
+  },
+  {
+    "path": "tsconfig.json",
+    "sha256": "52d4371127410f4e61ffb688e5f7bee65b2c6a8e8864207192c1b7289f9ed402",
+    "bytes": 539
+  }
+]

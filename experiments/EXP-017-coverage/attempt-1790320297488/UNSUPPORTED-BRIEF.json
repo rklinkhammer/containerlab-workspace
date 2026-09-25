@@ -1,0 +1,44 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "3c1cd201edccfc32608f9a99982db00baf95b5d44b5542634faa90d56bd7b567",
+  "status": "rejected",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "UNSUPPORTED-BRIEF",
+    "sourceSha256": "9c09aa4130b494e6c0852d776a106b29c82ba08d4edd91249eb0087fc9e92a41",
+    "outcomeSha256": "b7e3ae245fb715a833aeec5ed33108c97ec8c36e35c3a47cfcfdcb67b30371bf",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "UNSUPPORTED-BRIEF",
+    "bundleSha256": "73a7abcca1390044598994391641b516a8f61ca84e3564f52c3d145771e2deec",
+    "entryFile": "UNSUPPORTED-BRIEF.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "dcf46eecc05cd7ee17a214efaf99c759126cf447330accbbbf575095a3edb851",
+    "jobId": "00cf622815c6be337f9d8af1a49bd38c",
+    "completedAt": "2026-09-25T07:11:39.141Z",
+    "cleanup": "complete"
+  },
+  "nodes": [],
+  "links": [],
+  "dependencies": [],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [
+    {
+      "code": "LOAD_ERROR",
+      "message": "Native loading failed; input or companion context could not be read.",
+      "stage": "load",
+      "objectId": null
+    }
+  ],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

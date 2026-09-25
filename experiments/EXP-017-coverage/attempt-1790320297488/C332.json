@@ -1,0 +1,85 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C332",
+    "sourceSha256": "d2db0298f5c58e0f2791589f25600de8a9ebbb32cd88cb61c2a107861b6aa2a6",
+    "outcomeSha256": "0a07f2d40f212cbff73365e0723fce092b44c8d157576cb52cd474971ea422c2",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C332",
+    "bundleSha256": "37207898f6267eb22fefb4a29b45c1bea5f140f960072952f36e89471695ddfa",
+    "entryFile": "C332.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "dcf46eecc05cd7ee17a214efaf99c759126cf447330accbbbf575095a3edb851",
+    "jobId": "a571069dc8d2c44bcba20852afff7002",
+    "completedAt": "2026-09-25T07:11:38.684Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4:n0",
+      "name": "node1",
+      "kind": null,
+      "kindState": "unresolved"
+    }
+  ],
+  "links": [],
+  "dependencies": [
+    {
+      "id": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4:d0",
+      "ownerId": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4:n0",
+      "ownerType": "node",
+      "kind": "env-file",
+      "label": "env-file reference 1",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4:d1",
+      "ownerId": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4:n0",
+      "ownerType": "node",
+      "kind": "env-file",
+      "label": "env-file reference 2",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4:d2",
+      "ownerId": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4:n0",
+      "ownerType": "node",
+      "kind": "env-file",
+      "label": "env-file reference 3",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [
+    {
+      "code": "KIND_UNRESOLVED",
+      "message": "Native kind is unspecified; no kind was guessed.",
+      "stage": "projection",
+      "objectId": "8327febff860989fa8a03efd2aa9bef03e03128726da969efa1b5a881abc3bd4:n0"
+    }
+  ],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

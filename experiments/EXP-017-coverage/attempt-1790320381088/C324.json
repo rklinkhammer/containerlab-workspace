@@ -1,0 +1,86 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C324",
+    "sourceSha256": "083b0318d39b16195274449c9c6859afc3d0046fc5f8546aeb032dfd496f1577",
+    "outcomeSha256": "00cd502302e52c3371dcbecfad4601bb6f479fd9ea3aa24c2995b5b44ee20f04",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C324",
+    "bundleSha256": "58a083d9994b83225743f31ff650df8b459d176666c5e121d5993670aa95515e",
+    "entryFile": "C324.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+    "jobId": "f04ec827606c4f2e8ae027e04200719a",
+    "completedAt": "2026-09-25T07:13:01.901Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984:n0",
+      "name": "n1",
+      "kind": null,
+      "kindState": "unresolved"
+    },
+    {
+      "id": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984:n1",
+      "name": "n2",
+      "kind": null,
+      "kindState": "unresolved"
+    }
+  ],
+  "links": [],
+  "dependencies": [
+    {
+      "id": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984:d0",
+      "ownerId": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984:n0",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "Node n1 configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "absent_from_bundle",
+      "basis": "verified_bundle_inventory"
+    },
+    {
+      "id": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984:d1",
+      "ownerId": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984:n1",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "Node n2 configuration",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "absent_from_bundle",
+      "basis": "verified_bundle_inventory"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [
+    {
+      "code": "KIND_UNRESOLVED",
+      "message": "Native kind is unspecified; no kind was guessed.",
+      "stage": "projection",
+      "objectId": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984:n0"
+    },
+    {
+      "code": "KIND_UNRESOLVED",
+      "message": "Native kind is unspecified; no kind was guessed.",
+      "stage": "projection",
+      "objectId": "0a5d56ef51a1160947e46eb90d635d57baf50d4e77c6b41f09e34687b19ad984:n1"
+    }
+  ],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

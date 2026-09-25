@@ -1,0 +1,14 @@
+topology:
+  defaults:
+    env-files:
+      - envfiles/defaults
+      - /home/user/clab/default-env
+  kinds:
+    nokia_srlinux:
+      env-files:
+        - envfiles/common
+        - ~/spines
+  nodes:
+    node1:
+      env-files:
+        - /home/user/somefile

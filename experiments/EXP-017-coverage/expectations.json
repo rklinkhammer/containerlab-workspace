@@ -1,0 +1,413 @@
+{
+  "C002": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "br-clab",
+        "bridge"
+      ],
+      [
+        "srl1",
+        "nokia_srlinux"
+      ],
+      [
+        "srl2",
+        "nokia_srlinux"
+      ],
+      [
+        "srl3",
+        "nokia_srlinux"
+      ]
+    ],
+    "links": [
+      [
+        "veth",
+        [
+          [
+            "srl1",
+            "e1-1"
+          ],
+          [
+            "br-clab",
+            "eth1"
+          ]
+        ]
+      ],
+      [
+        "veth",
+        [
+          [
+            "srl2",
+            "e1-1"
+          ],
+          [
+            "br-clab",
+            "eth2"
+          ]
+        ]
+      ],
+      [
+        "veth",
+        [
+          [
+            "srl3",
+            "e1-1"
+          ],
+          [
+            "br-clab",
+            "eth3"
+          ]
+        ]
+      ]
+    ],
+    "dependencyChecks": []
+  },
+  "C068": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "sros",
+        "nokia_sros"
+      ]
+    ],
+    "links": [
+      [
+        "host",
+        [
+          [
+            "sros",
+            "eth1"
+          ]
+        ]
+      ],
+      [
+        "host",
+        [
+          [
+            "sros",
+            "eth2"
+          ]
+        ]
+      ]
+    ],
+    "dependencyChecks": [
+      [
+        "SR OS license",
+        "absent_from_bundle"
+      ]
+    ]
+  },
+  "C069": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "vmx",
+        "juniper_vmx"
+      ]
+    ],
+    "links": [
+      [
+        "host",
+        [
+          [
+            "vmx",
+            "eth1"
+          ]
+        ]
+      ],
+      [
+        "host",
+        [
+          [
+            "vmx",
+            "eth2"
+          ]
+        ]
+      ]
+    ],
+    "dependencyChecks": []
+  },
+  "C252": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "bng1",
+        "veesix_osvbng"
+      ],
+      [
+        "corerouter1",
+        "linux"
+      ],
+      [
+        "subscribers",
+        "linux"
+      ]
+    ],
+    "links": [
+      [
+        "veth",
+        [
+          [
+            "subscribers",
+            "eth1"
+          ],
+          [
+            "bng1",
+            "eth1"
+          ]
+        ]
+      ],
+      [
+        "veth",
+        [
+          [
+            "bng1",
+            "eth2"
+          ],
+          [
+            "corerouter1",
+            "eth1"
+          ]
+        ]
+      ]
+    ],
+    "dependencyChecks": [
+      [
+        "BNG startup configuration",
+        "present_in_bundle"
+      ],
+      [
+        "FRR daemon configuration",
+        "present_in_bundle"
+      ],
+      [
+        "FRR routing configuration",
+        "present_in_bundle"
+      ],
+      [
+        "Subscriber configuration",
+        "present_in_bundle"
+      ]
+    ]
+  },
+  "C258": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "node1",
+        "cisco_cat9kv"
+      ]
+    ],
+    "links": [],
+    "dependencyChecks": [
+      [
+        "External switch configuration placeholder",
+        "not_checked"
+      ]
+    ]
+  },
+  "C314": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "l1",
+        "linux"
+      ]
+    ],
+    "links": [
+      [
+        "macvlan",
+        [
+          [
+            "l1",
+            "eth1"
+          ]
+        ]
+      ]
+    ],
+    "dependencyChecks": []
+  },
+  "C324": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "n1",
+        null
+      ],
+      [
+        "n2",
+        null
+      ]
+    ],
+    "links": [],
+    "dependencyChecks": [
+      [
+        "Node n1 configuration",
+        "absent_from_bundle"
+      ],
+      [
+        "Node n2 configuration",
+        "absent_from_bundle"
+      ]
+    ]
+  },
+  "C368": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "router1",
+        "nokia_srlinux"
+      ],
+      [
+        "router2",
+        "nokia_srlinux"
+      ]
+    ],
+    "links": [],
+    "dependencyChecks": [
+      [
+        "Router 1 remote startup configuration",
+        "not_checked"
+      ],
+      [
+        "Router 2 remote startup configuration",
+        "not_checked"
+      ]
+    ]
+  },
+  "CTX-C162": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "vsr",
+        "6wind_vsr"
+      ]
+    ],
+    "links": [],
+    "dependencyChecks": [
+      [
+        "VSR startup configuration",
+        "absent_from_bundle"
+      ]
+    ]
+  },
+  "C332": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "node1",
+        null
+      ]
+    ],
+    "links": [],
+    "dependencyChecks": [],
+    "dependencyKinds": {
+      "env-file": 3
+    }
+  },
+  "C218": {
+    "status": "rejected",
+    "code": "SCHEMA_ERROR",
+    "message": "mgmt_ipv6"
+  },
+  "C416": {
+    "status": "rejected",
+    "code": "SCHEMA_ERROR",
+    "message": "Native schema rejected the input shape."
+  },
+  "LINK-FAMILIES": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "a",
+        "linux"
+      ],
+      [
+        "b",
+        "linux"
+      ],
+      [
+        "isolated",
+        "linux"
+      ]
+    ],
+    "links": [
+      [
+        "veth-stitch",
+        [
+          [
+            "a",
+            "eth1"
+          ],
+          [
+            "b",
+            "eth1"
+          ]
+        ]
+      ],
+      [
+        "vxlan",
+        [
+          [
+            "a",
+            "eth2"
+          ]
+        ]
+      ],
+      [
+        "vxlan-stitch",
+        [
+          [
+            "b",
+            "eth2"
+          ]
+        ]
+      ],
+      [
+        "host",
+        [
+          [
+            "a",
+            "eth3"
+          ]
+        ]
+      ],
+      [
+        "mgmt-net",
+        [
+          [
+            "b",
+            "eth3"
+          ]
+        ]
+      ],
+      [
+        "dummy",
+        [
+          [
+            "isolated",
+            "dummy0"
+          ]
+        ]
+      ]
+    ],
+    "dependencyChecks": []
+  },
+  "UNSUPPORTED-BRIEF": {
+    "status": "declarations_only",
+    "nodes": [
+      [
+        "a",
+        "linux"
+      ]
+    ],
+    "links": [
+      [
+        "unknown",
+        []
+      ]
+    ],
+    "dependencyChecks": [],
+    "diagnostic": "LINK_CONVERSION_ERROR"
+  }
+}

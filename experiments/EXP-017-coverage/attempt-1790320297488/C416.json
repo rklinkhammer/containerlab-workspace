@@ -1,0 +1,44 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "c5fe3af8fd090a90dc3262c9ef0bb3109d97511796397f786ee34ca4e10d2279",
+  "status": "rejected",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C416",
+    "sourceSha256": "f5cbc29c3ed78ebe20291f81615ba2e5476ff71c7a8b005226bcbb1894077198",
+    "outcomeSha256": "21d6f86b64d167972e77a2c2666d0157b2786fec2a8b2a63e1e234cd1c8e6e47",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C416",
+    "bundleSha256": "9e0f7291e0b3ed4208537c53258496437c5f2c58540c312b02248106f0628b95",
+    "entryFile": "C416.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "dcf46eecc05cd7ee17a214efaf99c759126cf447330accbbbf575095a3edb851",
+    "jobId": "1b97a93e6199adcedb856953f22d647c",
+    "completedAt": "2026-09-25T07:11:38.910Z",
+    "cleanup": "complete"
+  },
+  "nodes": [],
+  "links": [],
+  "dependencies": [],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [
+    {
+      "code": "SCHEMA_ERROR",
+      "message": "Line 6: Native schema rejected the input shape.",
+      "stage": "load",
+      "objectId": null
+    }
+  ],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

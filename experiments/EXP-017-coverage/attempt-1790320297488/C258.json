@@ -1,0 +1,67 @@
+{
+  "contract": "p1a/0.5",
+  "profile": "native-approved-bundle-v2",
+  "revision": "7e3e361ae8515100c419bc8a2d910dd4d53832374e237434d94de41f3afe9102",
+  "status": "declarations_only",
+  "deployment": "NOT_RUN",
+  "operations": "disabled",
+  "provenance": {
+    "sourceId": "C258",
+    "sourceSha256": "7fd19abf509cd7946743aa2ff5c643b9db1b8d6406073504ea75363415de441d",
+    "outcomeSha256": "0e17bba4e16c24fa7bf8c27e387761c68574a537c81f8c11a4f7d0e8ef1e4eeb",
+    "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+    "evidence": "executed",
+    "fieldCoordinates": null,
+    "bundleId": "C258",
+    "bundleSha256": "6b603797bb84194af4b23faaea6d142efc88142b9410fc6ff4431d6876fcffe2",
+    "entryFile": "C258.clab.yml",
+    "fileCount": 1,
+    "workerSha256": "dcf46eecc05cd7ee17a214efaf99c759126cf447330accbbbf575095a3edb851",
+    "jobId": "96ebd0e41b7ac46797ea8780bf34fc79",
+    "completedAt": "2026-09-25T07:11:38.098Z",
+    "cleanup": "complete"
+  },
+  "nodes": [
+    {
+      "id": "7e3e361ae8515100c419bc8a2d910dd4d53832374e237434d94de41f3afe9102:n0",
+      "name": "node1",
+      "kind": "cisco_cat9kv",
+      "kindState": "native_getter"
+    }
+  ],
+  "links": [],
+  "dependencies": [
+    {
+      "id": "7e3e361ae8515100c419bc8a2d910dd4d53832374e237434d94de41f3afe9102:d0",
+      "ownerId": "7e3e361ae8515100c419bc8a2d910dd4d53832374e237434d94de41f3afe9102:n0",
+      "ownerType": "node",
+      "kind": "bind",
+      "label": "External switch configuration placeholder",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    },
+    {
+      "id": "7e3e361ae8515100c419bc8a2d910dd4d53832374e237434d94de41f3afe9102:d1",
+      "ownerId": "7e3e361ae8515100c419bc8a2d910dd4d53832374e237434d94de41f3afe9102:n0",
+      "ownerType": "node",
+      "kind": "image",
+      "label": "image reference 2",
+      "state": "unresolved",
+      "reason": "NOT_CHECKED_DISPLAY_ONLY",
+      "availability": "not_checked",
+      "basis": "not_checked"
+    }
+  ],
+  "dependencyInventory": "partial",
+  "fieldProvenance": "unresolved",
+  "diagnostics": [],
+  "limits": {
+    "nodes": 100,
+    "links": 200,
+    "dependencies": 1000,
+    "textBytes": 4096,
+    "responseBytes": 2097152
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "revision": "A13",
+  "baseline": "A12 verified 470 manifest files before work",
+  "predecessorDocumentsVerified": 25,
+  "approvedBundlesVerified": 24,
+  "brokenLinks": [],
+  "historicalDrift": [],
+  "vmStopped": true,
+  "labRemoved": true,
+  "sessionManifestsAbsent": true,
+  "wholeSetAtomicity": false,
+  "publication": "verified archive, staged per-file replacement, completion last"
+}

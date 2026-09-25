@@ -1,0 +1,6 @@
+name: vsr_lab
+topology:
+  nodes:
+    vsr:
+      kind: 6wind_vsr
+      startup-config: myconfig.conf

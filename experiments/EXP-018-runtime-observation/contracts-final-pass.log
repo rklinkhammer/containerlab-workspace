@@ -1,0 +1,47 @@
+
+> containerlab-synthetic-preview@0.1.0 test
+> node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts tests/observation.test.ts
+
+✔ independent expected files retain their published hashes (0.818708ms)
+✔ F1 retains independent node, link occurrence and alias expectations (not native execution) (3.653333ms)
+✔ F2 is diagnostic-only, with no raw source or synthetic secret in browser fixture (0.156666ms)
+✔ F3 missing input never produces invented nodes (0.121708ms)
+✔ F4 external roles remain distinct and explicitly unresolved (0.208292ms)
+✔ F5 duplicate declarations survive as two occurrence identities with rejection (0.167584ms)
+✔ unknown fields at every boundary are rejected, never stripped silently (1.697708ms)
+✔ IDs are unique and revision-scoped; all references must resolve (1.618541ms)
+✔ redacted/unavailable values cannot carry data; unknowns require reasons (0.547208ms)
+✔ F6 text/node/response bounds reject rather than truncate graph data (1.816333ms)
+✔ operational capabilities and foreign session fields are rejected, not authenticated (0.930958ms)
+✔ safe errors do not echo malformed data, native diagnostics or secrets (0.176708ms)
+✔ same immutable synthetic revision has stable IDs and output (0.179958ms)
+✔ 63 declaration fixtures and all pinned source/evidence hashes verify (7.861792ms)
+✔ independent declaration object/dependency expectations remain intact (0.983209ms)
+✔ specific reviewed errors identify template/schema rejection without raw native errors (0.243375ms)
+✔ contract rejects disclosure, forged resolution, invalid references, duplicate IDs and budgets (3.851584ms)
+✔ adapter omits hostile raw dependency strings and unreviewed configuration (5.825917ms)
+✔ display text stays text in schema, with bounds rather than HTML interpretation (0.142167ms)
+✔ live contract separates executed provenance and stable bundle IDs from recorded evidence (10.940875ms)
+✔ worker provenance, cleanup, output and error disclosure fail closed (0.42275ms)
+✔ reviewed dependency assessments are bounded bundle membership, never resolution (1.183125ms)
+✔ 58 recorded fixtures validate; source hashes and evidence pin match retained bytes (7.582125ms)
+✔ native F1 matches independent kinds, counts and alias; source tokens are not invented (0.549167ms)
+✔ native F4 roles survive endpoint ordering and F5 preserves accepted duplicate occurrences (0.218708ms)
+✔ F7 independent single-ended requirement never invents a peer (0.984417ms)
+✔ rejections remain diagnostic-only and original/context identities stay separate (0.178833ms)
+✔ native DTO rejects unknown fields, bad references, invented origins and capabilities (2.366875ms)
+✔ projection ignores unreviewed native attributes and fails closed on unsupported arity (1.334416ms)
+✔ projection treats native display strings as text and does not turn them into IDs or URLs (0.34125ms)
+✔ observations associate full resource IDs and expose only approved fields (2.995208ms)
+✔ same-name replacement, duplicate, foreign lab, wrong purpose or kind cannot associate (0.2ms)
+✔ only successful empty inspection establishes absence; failed or malformed output does not (0.553917ms)
+✔ observation schema rejects duplicate identities, arbitrary state and forged link health (0.330291ms)
+✔ executed trial declarations retain the independent two-node and endpoint expectations (8.171292ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 130.574917

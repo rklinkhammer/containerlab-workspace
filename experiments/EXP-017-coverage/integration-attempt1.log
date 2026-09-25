@@ -1,0 +1,77 @@
+✔ C002 (127.986417ms)
+✔ C068 (127.514875ms)
+✔ C069 (126.539375ms)
+✔ C252 (112.086125ms)
+✔ C258 (113.548041ms)
+✔ C314 (129.667084ms)
+✔ C324 (112.457375ms)
+✔ C368 (110.043125ms)
+✔ CTX-C162 (115.312583ms)
+✔ C332 (118.246ms)
+✔ C218 (114.10075ms)
+✔ C416 (111.253916ms)
+✖ LINK-FAMILIES (111.646958ms)
+✖ UNSUPPORTED-BRIEF (119.951292ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 12
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1746.977208
+
+✖ failing tests:
+
+test at tests/integration/coverage.test.ts:9:2
+✖ LINK-FAMILIES (111.646958ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      [
+        'veth-stitch',
+        [
+          [
+  ...
+      [
+  +     'vxlan',
+  -     'vxlan-stitch',
+        [
+          [
+            'b',
+            'eth2'
+          ]
+  
+      at TestContext.<anonymous> (file:///Users/rklinkhammer/workspace/containerlab-workspace/tests/integration/coverage.test.ts:16:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ [ 'veth-stitch', [Array] ], [ 'vxlan', [Array] ], [ 'vxlan', [Array] ], [ 'host', [Array] ], [ 'mgmt-net', [Array] ], [ 'dummy', [Array] ] ],
+    expected: [ [ 'veth-stitch', [Array] ], [ 'vxlan', [Array] ], [ 'vxlan-stitch', [Array] ], [ 'host', [Array] ], [ 'mgmt-net', [Array] ], [ 'dummy', [Array] ] ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration/coverage.test.ts:9:2
+✖ UNSUPPORTED-BRIEF (119.951292ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'rejected'
+  - 'declarations_only'
+  
+      at TestContext.<anonymous> (file:///Users/rklinkhammer/workspace/containerlab-workspace/tests/integration/coverage.test.ts:13:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'rejected',
+    expected: 'declarations_only',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
