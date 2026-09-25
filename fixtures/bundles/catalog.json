@@ -416,5 +416,18 @@
     "source": "independent authored EXP-018 runtime fixture",
     "context": "Two Linux nodes, one declared veth; no hooks or companion files",
     "bundleSha256": "640571e307a557760cb15a20fa651d3cb329d175ee142bca5b9bd4cd3931b348"
+  },
+  {
+    "id": "SRL-PAIR",
+    "entry": "SRL-PAIR.clab.yml",
+    "files": [
+      {
+        "path": "SRL-PAIR.clab.yml",
+        "sha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12"
+      }
+    ],
+    "source": "independent authored EXP-021 SR Linux alias fixture",
+    "context": "One SR Linux ixrd2 and one Linux node; native interface alias, no hooks or companion files",
+    "bundleSha256": "96819bb3952429e6217d493a3d478a4c00743f80fbbf7328d3659068c174664c"
   }
 ]

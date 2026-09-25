@@ -1,0 +1,530 @@
+[
+  {
+    "stage": "initial",
+    "snapshot": {
+      "contract": "observation/0.3",
+      "deploymentId": "6f31391539f9164cb3a6f7ac22768efd73d020d34042f051ac77335098d44b49",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 1,
+      "observedAt": "2026-09-25T11:05:44.343Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8075db6c9050656eb6248753f5519cce4764413cf70b2ca0c8045481d3f4461d",
+          "index": 8,
+          "mac": "aa:c1:ab:b2:fa:c4",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "3a3f2b70a1f51758f828017356705816c39b42e1e8e56644a4ea704b2df23eb1",
+          "index": 7,
+          "mac": "aa:c1:ab:34:18:7d",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "left-admin-down",
+    "snapshot": {
+      "contract": "observation/0.3",
+      "deploymentId": "6f31391539f9164cb3a6f7ac22768efd73d020d34042f051ac77335098d44b49",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 2,
+      "observedAt": "2026-09-25T11:05:45.741Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8075db6c9050656eb6248753f5519cce4764413cf70b2ca0c8045481d3f4461d",
+          "index": 8,
+          "mac": "aa:c1:ab:b2:fa:c4",
+          "operationalState": "down",
+          "administrativeState": "down",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "3a3f2b70a1f51758f828017356705816c39b42e1e8e56644a4ea704b2df23eb1",
+          "index": 7,
+          "mac": "aa:c1:ab:34:18:7d",
+          "operationalState": "down",
+          "administrativeState": "up",
+          "carrier": "down",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "restored-up",
+    "snapshot": {
+      "contract": "observation/0.3",
+      "deploymentId": "6f31391539f9164cb3a6f7ac22768efd73d020d34042f051ac77335098d44b49",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 3,
+      "observedAt": "2026-09-25T11:05:47.137Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8075db6c9050656eb6248753f5519cce4764413cf70b2ca0c8045481d3f4461d",
+          "index": 8,
+          "mac": "aa:c1:ab:b2:fa:c4",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "3a3f2b70a1f51758f828017356705816c39b42e1e8e56644a4ea704b2df23eb1",
+          "index": 7,
+          "mac": "aa:c1:ab:34:18:7d",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "unqualified-peer-hints",
+    "node": "left",
+    "ifindex": 8,
+    "linkIndex": 7,
+    "linkNetnsid": 1,
+    "conclusion": "numeric hints do not establish enrolled peer identity"
+  },
+  {
+    "stage": "unqualified-peer-hints",
+    "node": "right",
+    "ifindex": 7,
+    "linkIndex": 8,
+    "linkNetnsid": 1,
+    "conclusion": "numeric hints do not establish enrolled peer identity"
+  },
+  {
+    "stage": "removed",
+    "snapshot": {
+      "contract": "observation/0.3",
+      "deploymentId": "6f31391539f9164cb3a6f7ac22768efd73d020d34042f051ac77335098d44b49",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 4,
+      "observedAt": "2026-09-25T11:05:48.694Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "declaredInterface": "eth1",
+          "status": "absent",
+          "reason": "MISSING_FROM_NATIVE_INVENTORY",
+          "namespaceFingerprint": "8075db6c9050656eb6248753f5519cce4764413cf70b2ca0c8045481d3f4461d",
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "declaredInterface": "eth1",
+          "status": "absent",
+          "reason": "MISSING_FROM_NATIVE_INVENTORY",
+          "namespaceFingerprint": "3a3f2b70a1f51758f828017356705816c39b42e1e8e56644a4ea704b2df23eb1",
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "exact-attribute-recreation",
+    "snapshot": {
+      "contract": "observation/0.3",
+      "deploymentId": "6f31391539f9164cb3a6f7ac22768efd73d020d34042f051ac77335098d44b49",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 5,
+      "observedAt": "2026-09-25T11:05:50.295Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8075db6c9050656eb6248753f5519cce4764413cf70b2ca0c8045481d3f4461d",
+          "index": 8,
+          "mac": "aa:c1:ab:b2:fa:c4",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "3a3f2b70a1f51758f828017356705816c39b42e1e8e56644a4ea704b2df23eb1",
+          "index": 7,
+          "mac": "aa:c1:ab:34:18:7d",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "left-stopped",
+    "snapshot": {
+      "contract": "observation/0.3",
+      "deploymentId": "6f31391539f9164cb3a6f7ac22768efd73d020d34042f051ac77335098d44b49",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 6,
+      "observedAt": "2026-09-25T11:05:52.690Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "state": "exited",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "declaredInterface": "eth1",
+          "status": "unavailable",
+          "reason": "NODE_NOT_RUNNING",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "declaredInterface": "eth1",
+          "status": "absent",
+          "reason": "MISSING_FROM_NATIVE_INVENTORY",
+          "namespaceFingerprint": "3a3f2b70a1f51758f828017356705816c39b42e1e8e56644a4ea704b2df23eb1",
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "left-restarted",
+    "snapshot": {
+      "contract": "observation/0.3",
+      "deploymentId": "6f31391539f9164cb3a6f7ac22768efd73d020d34042f051ac77335098d44b49",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 7,
+      "observedAt": "2026-09-25T11:05:54.103Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "declaredInterface": "eth1",
+          "status": "unresolved",
+          "reason": "IDENTITY_CHANGED",
+          "namespaceFingerprint": "937fc5e9c9a873075629c943a4ec4de7aa07a0cba3ad7c4672aa863187d97ba0",
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "declaredInterface": "eth1",
+          "status": "absent",
+          "reason": "MISSING_FROM_NATIVE_INVENTORY",
+          "namespaceFingerprint": "3a3f2b70a1f51758f828017356705816c39b42e1e8e56644a4ea704b2df23eb1",
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "cancellation",
+    "result": "CANCELLED"
+  },
+  {
+    "stage": "lab-removed",
+    "snapshot": {
+      "contract": "observation/0.3",
+      "deploymentId": "6f31391539f9164cb3a6f7ac22768efd73d020d34042f051ac77335098d44b49",
+      "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 8,
+      "observedAt": "2026-09-25T11:05:56.696Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "state": "absent",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "state": "absent",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0a286e4f87a515a3242490f8091b0ad39a76bfbc5d93e9e4d653fdd271378f85",
+          "declaredInterface": "eth1",
+          "status": "unavailable",
+          "reason": "CONTAINER_ABSENT",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED"
+        },
+        {
+          "node": "right",
+          "containerId": "b49765426b684827125caee8d5e3cc22b66050723d05033e5804e013700c7aa6",
+          "declaredInterface": "eth1",
+          "status": "unavailable",
+          "reason": "CONTAINER_ABSENT",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "lab-recreated",
+    "result": "ASSOCIATION_CONFLICT"
+  }
+]

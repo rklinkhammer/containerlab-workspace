@@ -1,0 +1,25 @@
+{
+  "revision": "A16",
+  "baselineVerifiedFiles": 618,
+  "archiveVerifiedFiles": 27,
+  "stagedWritesVerified": 13,
+  "brokenLinks": [],
+  "cleanup": [
+    {
+      "vm": "clab-load-20260925-105845-exp016",
+      "labRemoved": true,
+      "status": "Stopped",
+      "taskManifestsAbsent": true
+    },
+    {
+      "vm": "clab-load-20260925-110301-exp016",
+      "labRemoved": true,
+      "status": "Stopped",
+      "taskManifestsAbsent": true,
+      "preexistingManifestsUnchanged": true
+    }
+  ],
+  "preexistingManifestsUnchanged": true,
+  "wholeSetAtomicity": false,
+  "publication": "verified archive, staged per-file publication, completion last"
+}

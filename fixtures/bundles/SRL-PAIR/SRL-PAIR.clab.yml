@@ -1,0 +1,19 @@
+name: observation-slice
+mgmt:
+  network: observation-slice-mgmt
+  ipv4-subnet: 172.31.249.0/24
+  ipv6-subnet: ""
+topology:
+  defaults:
+    kind: linux
+    image: alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+    labels:
+      preview-purpose: observation-slice-v1
+  nodes:
+    left:
+      kind: nokia_srlinux
+      type: ixrd2
+      image: ghcr.io/nokia/srlinux:24.10.1@sha256:a595760959c5a81dbec949a45be1398d72cabb17f48ebd48ab58cdec00ccbeea
+    right: {}
+  links:
+    - endpoints: ["left:ethernet-1/1", "right:eth1"]

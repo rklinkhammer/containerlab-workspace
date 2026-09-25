@@ -1,0 +1,640 @@
+[
+  {
+    "stage": "initial",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 1,
+      "observedAt": "2026-09-25T11:03:38.129Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "166a261f6f2afe9cc2383b4f3ac3dd0c51369df48031ca7d6b1286eb21bd542a",
+          "index": 7,
+          "mac": "aa:c1:ab:0e:f2:81",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "e1-1",
+          "nativeAlias": "ethernet-1/1",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+          "index": 8,
+          "mac": "aa:c1:ab:ef:67:ce",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "eth1",
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "left-down",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 2,
+      "observedAt": "2026-09-25T11:03:39.544Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "166a261f6f2afe9cc2383b4f3ac3dd0c51369df48031ca7d6b1286eb21bd542a",
+          "index": 7,
+          "mac": "aa:c1:ab:0e:f2:81",
+          "operationalState": "down",
+          "administrativeState": "down",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "e1-1",
+          "nativeAlias": "ethernet-1/1",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+          "index": 8,
+          "mac": "aa:c1:ab:ef:67:ce",
+          "operationalState": "down",
+          "administrativeState": "up",
+          "carrier": "down",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "eth1",
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "left-up",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 3,
+      "observedAt": "2026-09-25T11:03:40.930Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "166a261f6f2afe9cc2383b4f3ac3dd0c51369df48031ca7d6b1286eb21bd542a",
+          "index": 7,
+          "mac": "aa:c1:ab:0e:f2:81",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "e1-1",
+          "nativeAlias": "ethernet-1/1",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+          "index": 8,
+          "mac": "aa:c1:ab:ef:67:ce",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "eth1",
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "alias-missing",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 4,
+      "observedAt": "2026-09-25T11:03:42.318Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "unavailable",
+          "reason": "ALIAS_UNRESOLVED",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+          "index": 8,
+          "mac": "aa:c1:ab:ef:67:ce",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "eth1",
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "same-interface-alias-restored",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 5,
+      "observedAt": "2026-09-25T11:03:43.708Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "166a261f6f2afe9cc2383b4f3ac3dd0c51369df48031ca7d6b1286eb21bd542a",
+          "index": 7,
+          "mac": "aa:c1:ab:0e:f2:81",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "e1-1",
+          "nativeAlias": "ethernet-1/1",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "observed",
+          "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+          "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+          "index": 8,
+          "mac": "aa:c1:ab:ef:67:ce",
+          "operationalState": "up",
+          "administrativeState": "up",
+          "carrier": "up",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "linux_netlink_flags",
+          "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+          "observedInterface": "eth1",
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "interface-removed",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 6,
+      "observedAt": "2026-09-25T11:03:45.100Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "unavailable",
+          "reason": "ALIAS_UNRESOLVED",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "absent",
+          "reason": "MISSING_FROM_NATIVE_INVENTORY",
+          "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "node-stopped",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 7,
+      "observedAt": "2026-09-25T11:03:46.483Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "exited",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "unavailable",
+          "reason": "NODE_NOT_RUNNING",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "absent",
+          "reason": "MISSING_FROM_NATIVE_INVENTORY",
+          "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "node-restarted",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 8,
+      "observedAt": "2026-09-25T11:03:47.868Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "running",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "running",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "unavailable",
+          "reason": "ALIAS_UNRESOLVED",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "absent",
+          "reason": "MISSING_FROM_NATIVE_INVENTORY",
+          "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "cancel",
+    "result": "CANCELLED"
+  },
+  {
+    "stage": "lab-removed",
+    "snapshot": {
+      "contract": "observation/0.4",
+      "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+      "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "sequence": 9,
+      "observedAt": "2026-09-25T11:03:50.512Z",
+      "freshForMs": 15000,
+      "linkHealth": "unknown",
+      "nodes": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "state": "absent",
+          "association": "enrolled_full_id"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "state": "absent",
+          "association": "enrolled_full_id"
+        }
+      ],
+      "endpoints": [
+        {
+          "node": "left",
+          "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+          "declaredInterface": "ethernet-1/1",
+          "status": "unavailable",
+          "reason": "CONTAINER_ABSENT",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "nokia_srlinux"
+        },
+        {
+          "node": "right",
+          "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+          "declaredInterface": "eth1",
+          "status": "unavailable",
+          "reason": "CONTAINER_ABSENT",
+          "namespaceFingerprint": null,
+          "index": null,
+          "mac": null,
+          "operationalState": "unknown",
+          "administrativeState": "unknown",
+          "carrier": "unknown",
+          "peer": "unknown",
+          "continuity": "unknown",
+          "supplementSource": "unavailable",
+          "supplementReason": "NOT_ASSOCIATED",
+          "observedInterface": null,
+          "nativeAlias": "",
+          "kind": "linux"
+        }
+      ],
+      "profile": "SRL-PAIR"
+    }
+  },
+  {
+    "stage": "lab-recreated",
+    "result": "ASSOCIATION_CONFLICT"
+  }
+]

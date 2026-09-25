@@ -5,6 +5,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1];os.chdir(ROOT);R=pathlib.Path(o
 def run(args,**kw):return subprocess.run(args,check=True,**kw)
 def guest(vm,*args):return run(['limactl','shell',vm,*args])
 def setup():
+ profile=os.environ.get('CLAB_OBSERVATION_PROFILE','RUNTIME-PAIR');assert profile in ['RUNTIME-PAIR','SRL-PAIR']
  s=json.loads(N.read_text());vm=s['vm'];assert s['createdFor']=='approved-bundle-qualification'
  guest(vm,'sudo','apt-get','install','-y','docker.io')
  guest(vm,'sudo','systemctl','start','docker')
@@ -12,22 +13,25 @@ def setup():
  guest(vm,'sudo','install','-m','755','/tmp/exp016/containerlab','/usr/local/bin/containerlab')
  run(['limactl','copy','native/observer/inspect.py',vm+':/tmp/observer.py'])
  guest(vm,'sudo','install','-m','755','/tmp/observer.py','/opt/clab-observer.py')
+ (R/'profile.txt').write_text(profile+'\n')
+ run(['limactl','copy',str(R/'profile.txt'),vm+':/tmp/profile.txt'])
+ guest(vm,'sudo','install','-m','644','/tmp/profile.txt','/opt/clab-observation-profile')
  # Refresh only the newly created VM's approved public catalog before declaration load.
  run(['limactl','copy','-r','fixtures/bundles',vm+':/tmp/exp018-bundles'])
  guest(vm,'sudo','cp','-r','/tmp/exp018-bundles/.','/opt/clab-loader/bundles/')
  guest(vm,'sudo','chown','-R','root:root','/opt/clab-loader/bundles')
  guest(vm,'sudo','mkdir','-p','/opt/observation-slice')
- run(['limactl','copy','fixtures/bundles/RUNTIME-PAIR/RUNTIME-PAIR.clab.yml',vm+':/tmp/runtime.clab.yml'])
+ run(['limactl','copy','fixtures/bundles/'+profile+'/'+profile+'.clab.yml',vm+':/tmp/runtime.clab.yml'])
  guest(vm,'sudo','install','-m','644','/tmp/runtime.clab.yml','/opt/observation-slice/topology.clab.yml')
- env={**os.environ,'CLAB_NATIVE_SESSION':str(N),'CLAB_OBSERVATION_GRAPH':str(R/'observation-graph.json')}
- run(['node','--input-type=module','-e',"import {load} from './backend/native-loader.ts';import{writeFileSync}from'node:fs';import{randomBytes}from'node:crypto';const g=await load('RUNTIME-PAIR',randomBytes(16).toString('hex'));if(g.status!=='declarations_only')throw Error('DECLARATION_REJECTED');writeFileSync(process.env.CLAB_OBSERVATION_GRAPH,JSON.stringify(g));"],env=env)
+ env={**os.environ,'CLAB_OBSERVATION_PROFILE':profile,'CLAB_NATIVE_SESSION':str(N),'CLAB_OBSERVATION_GRAPH':str(R/'observation-graph.json')}
+ run(['node','--input-type=module','-e',"import {load} from './backend/native-loader.ts';import{writeFileSync}from'node:fs';import{randomBytes}from'node:crypto';const g=await load(process.env.CLAB_OBSERVATION_PROFILE,randomBytes(16).toString('hex'));if(g.status!=='declarations_only')throw Error('DECLARATION_REJECTED');writeFileSync(process.env.CLAB_OBSERVATION_GRAPH,JSON.stringify(g));"],env=env)
  guest(vm,'sudo','containerlab','deploy','--topo','/opt/observation-slice/topology.clab.yml')
  raw=json.loads(subprocess.check_output(['limactl','shell',vm,'sudo','python3','/opt/clab-observer.py'],text=True));assert raw['ok'] and len(raw['rows'])==2
  assert all(r['interfaces']['status']=='complete' and len(r['interfaces']['items'])==1 for r in raw['rows']), 'Required native endpoint enrollment unavailable'
  nodes=sorted([{'node':r['node'],'id':r['id'],'endpoint':r['interfaces']} for r in raw['rows']],key=lambda x:x['node']);assert [n['node'] for n in nodes]==['left','right'] and len({n['id'] for n in nodes})==2
- graph=json.loads((R/'observation-graph.json').read_text());binding={'nodes':nodes,'sourceSha256':graph['provenance']['sourceSha256'],'deploymentId':hashlib.sha256(json.dumps([vm,nodes,graph['provenance']['sourceSha256']],sort_keys=True).encode()).hexdigest()}
+ graph=json.loads((R/'observation-graph.json').read_text());binding={'nodes':nodes,'sourceSha256':graph['provenance']['sourceSha256'],'deploymentId':hashlib.sha256(json.dumps([vm,profile,nodes,graph['provenance']['sourceSha256']],sort_keys=True).encode()).hexdigest()}
  binary=subprocess.check_output(['limactl','shell',vm,'sha256sum','/usr/local/bin/containerlab'],text=True).split()[0]
- P.write_text(json.dumps({'vm':vm,'expiresAt':s['expiresAt'],'createdFor':'runtime-observation-qualification','binding':binding,'graph':graph,'nativeBinarySha256':binary},indent=2)+'\n')
+ P.write_text(json.dumps({'vm':vm,'expiresAt':s['expiresAt'],'createdFor':'runtime-observation-qualification','profile':profile,'binding':binding,'graph':graph,'nativeBinarySha256':binary},indent=2)+'\n')
 def stop():
  if not N.exists() or not P.exists():raise SystemExit('No owned observation session; no VM accessed')
  s=json.loads(N.read_text());vm=s['vm'];o=json.loads(P.read_text());assert s['createdFor']=='approved-bundle-qualification' and o['createdFor']=='runtime-observation-qualification' and o['vm']==vm

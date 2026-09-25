@@ -1,12 +1,12 @@
 import {readFileSync} from 'node:fs';
 import {spawn} from 'node:child_process';
-import {associateStates,type Binding} from '../contracts/observation.ts';
+import {associateStates,associateProfile,type Binding} from '../contracts/observation.ts';
 import {parseLiveGraph} from '../contracts/live-graph.ts';
 import type {IncomingMessage,ServerResponse} from 'node:http';
 function session(){
  try{const s=JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_SESSION??'','utf8'));
  if(s.createdFor!=='runtime-observation-qualification'||!/^clab-load-[0-9-]+-exp016$/.test(s.vm)||!(Date.parse(s.expiresAt)>Date.now()))throw Error();
- const graph=parseLiveGraph(JSON.stringify(s.graph));if(graph.provenance.sourceSha256!==s.binding.sourceSha256||graph.provenance.bundleId!=='RUNTIME-PAIR')throw Error();
+ const graph=parseLiveGraph(JSON.stringify(s.graph));if(graph.provenance.sourceSha256!==s.binding.sourceSha256||!['RUNTIME-PAIR','SRL-PAIR'].includes(graph.provenance.bundleId)||graph.provenance.bundleId!==(s.profile??'RUNTIME-PAIR'))throw Error();
  return {...s,graph};}catch{throw Error('OBSERVATION_UNAVAILABLE');}
 }
 let active=false,sequence=0,lastStart=0;
@@ -20,7 +20,7 @@ export function inspectNative(vm:string,signal?:AbortSignal):Promise<any>{return
 });}
 export async function observe(signal?:AbortSignal){
  const s=session();if(active)throw Error('BUSY');if(Date.now()-lastStart<1000)throw Error('RATE_LIMIT');active=true;lastStart=Date.now();
- try{const raw=await inspectNative(s.vm,signal);if(!raw.ok)throw Error(['INSPECTION_TIMEOUT','OUTPUT_LIMIT','ASSOCIATION_CONFLICT','BUSY'].includes(raw.code)?raw.code:'INSPECTION_FAILED');return associateStates(raw,s.binding as Binding,++sequence);}finally{active=false;}
+ try{const raw=await inspectNative(s.vm,signal);if(!raw.ok)throw Error(['INSPECTION_TIMEOUT','OUTPUT_LIMIT','ASSOCIATION_CONFLICT','BUSY'].includes(raw.code)?raw.code:'INSPECTION_FAILED');return s.profile==='SRL-PAIR'?associateProfile(raw,s.binding as Binding,++sequence):associateStates(raw,s.binding as Binding,++sequence);}finally{active=false;}
 }
 const messages:Record<string,string>={OBSERVATION_UNAVAILABLE:'No active runtime observation session.',INSPECTION_FAILED:'Native inspection failed; absence is not established.',INSPECTION_TIMEOUT:'Native inspection exceeded its time limit.',OUTPUT_LIMIT:'Inspection output exceeded its limit.',MALFORMED_OBSERVATION:'Native observation could not be accepted.',ASSOCIATION_CONFLICT:'Runtime identity differs from the enrolled deployment; no replacement was associated.',BUSY:'An inspection is already running.',RATE_LIMIT:'Refresh is rate limited.',CANCELLED:'Inspection cancelled.'};
 export async function observationAPI(req:IncomingMessage,res:ServerResponse,port:number){
@@ -30,7 +30,7 @@ export async function observationAPI(req:IncomingMessage,res:ServerResponse,port
  if(req.headers.host!==host||req.headers.origin&&req.headers.origin!==`http://${host}`){send(403,{code:'ORIGIN_DENIED'});return true;}
  if(req.method!=='GET'||!['/api/observation/config','/api/observation/snapshot'].includes(req.url)){send(404,{code:'ROUTE_DENIED'});return true;}
  try{
-  if(req.url.endsWith('/config')){const s=session();send(200,{graph:s.graph,deploymentId:s.binding.deploymentId,pollMs:5000});return true;}
+  if(req.url.endsWith('/config')){const s=session();send(200,{graph:s.graph,deploymentId:s.binding.deploymentId,profile:s.profile??'RUNTIME-PAIR',pollMs:5000});return true;}
   const ctrl=new AbortController();let finished=false;res.on('close',()=>{if(!finished)ctrl.abort();});
   try{const snapshot=await observe(ctrl.signal);finished=true;send(200,{snapshot});}finally{finished=true;}
  }catch(e){const code=e instanceof Error&&messages[e.message]?e.message:'MALFORMED_OBSERVATION';send(422,{code,message:messages[code]});}

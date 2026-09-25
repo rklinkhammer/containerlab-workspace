@@ -1,0 +1,21 @@
+{
+  "tag": "24.10.1",
+  "indexDigest": "sha256:c628b07feaa2435bc5a3aaa48c9ebcafb58be902c66874f6f1fd8bf0221ece03",
+  "arm64Digest": "sha256:a595760959c5a81dbec949a45be1398d72cabb17f48ebd48ab58cdec00ccbeea",
+  "manifest": {
+    "schemaVersion": 2,
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "config": {
+      "mediaType": "application/vnd.docker.container.image.v1+json",
+      "size": 892,
+      "digest": "sha256:54974f8f551f708332349652beb1bb3ba6a7e806b1f9a3928fb33de4160191b2"
+    },
+    "layers": [
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 630053174,
+        "digest": "sha256:08f6aba865218e87a7dd3d93143faa62ec2df5530a034e2737238190a9cb64b9"
+      }
+    ]
+  }
+}

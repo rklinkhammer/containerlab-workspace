@@ -1,0 +1,61 @@
+
+> containerlab-synthetic-preview@0.1.0 test
+> node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts tests/observation.test.ts tests/interfaces.test.ts tests/link-state.test.ts tests/profile.test.ts
+
+✔ independent expected files retain their published hashes (2.364292ms)
+✔ F1 retains independent node, link occurrence and alias expectations (not native execution) (4.16075ms)
+✔ F2 is diagnostic-only, with no raw source or synthetic secret in browser fixture (0.185083ms)
+✔ F3 missing input never produces invented nodes (0.13275ms)
+✔ F4 external roles remain distinct and explicitly unresolved (0.234292ms)
+✔ F5 duplicate declarations survive as two occurrence identities with rejection (0.178708ms)
+✔ unknown fields at every boundary are rejected, never stripped silently (1.827833ms)
+✔ IDs are unique and revision-scoped; all references must resolve (2.026875ms)
+✔ redacted/unavailable values cannot carry data; unknowns require reasons (0.742ms)
+✔ F6 text/node/response bounds reject rather than truncate graph data (1.774375ms)
+✔ operational capabilities and foreign session fields are rejected, not authenticated (1.222667ms)
+✔ safe errors do not echo malformed data, native diagnostics or secrets (0.256333ms)
+✔ same immutable synthetic revision has stable IDs and output (0.226625ms)
+✔ 63 declaration fixtures and all pinned source/evidence hashes verify (17.386916ms)
+✔ independent declaration object/dependency expectations remain intact (1.118208ms)
+✔ specific reviewed errors identify template/schema rejection without raw native errors (0.208625ms)
+✔ contract rejects disclosure, forged resolution, invalid references, duplicate IDs and budgets (3.722042ms)
+✔ adapter omits hostile raw dependency strings and unreviewed configuration (5.788708ms)
+✔ display text stays text in schema, with bounds rather than HTML interpretation (0.157ms)
+✔ interface association retains native operational state but never infers admin, carrier or continuity (4.225333ms)
+✔ changed namespace, index or MAC cannot inherit old interface observation (0.375708ms)
+✔ complete absence, partial failure, stopped namespace and container absence remain distinct (0.286291ms)
+✔ duplicates, foreign IDs, unknown fields and invented health fail closed (0.815083ms)
+✔ Linux flags are separate from native operstate and never prove peer or continuity (4.877125ms)
+✔ partial Linux failure preserves native evidence and the other endpoint (0.264667ms)
+✔ changed enrolled attributes withhold even successful supplemental facts (0.226625ms)
+✔ exact tuple reuse cannot upgrade continuity (0.340542ms)
+✔ invented carrier, peer, source, raw fields or unassociated state are rejected (0.92ms)
+✔ live contract separates executed provenance and stable bundle IDs from recorded evidence (11.913291ms)
+✔ worker provenance, cleanup, output and error disclosure fail closed (0.398417ms)
+✔ reviewed dependency assessments are bounded bundle membership, never resolution (1.187333ms)
+✔ 58 recorded fixtures validate; source hashes and evidence pin match retained bytes (17.124ms)
+✔ native F1 matches independent kinds, counts and alias; source tokens are not invented (0.531666ms)
+✔ native F4 roles survive endpoint ordering and F5 preserves accepted duplicate occurrences (0.220667ms)
+✔ F7 independent single-ended requirement never invents a peer (1.286792ms)
+✔ rejections remain diagnostic-only and original/context identities stay separate (0.209375ms)
+✔ native DTO rejects unknown fields, bad references, invented origins and capabilities (2.369208ms)
+✔ projection ignores unreviewed native attributes and fails closed on unsupported arity (1.315458ms)
+✔ projection treats native display strings as text and does not turn them into IDs or URLs (0.327083ms)
+✔ observations associate full resource IDs and expose only approved fields (3.038834ms)
+✔ same-name replacement, duplicate, foreign lab, wrong purpose or kind cannot associate (0.201167ms)
+✔ only successful empty inspection establishes absence; failed or malformed output does not (0.542375ms)
+✔ observation schema rejects duplicate identities, arbitrary state and forged link health (0.317333ms)
+✔ executed trial declarations retain the independent two-node and endpoint expectations (8.564792ms)
+✔ SRL alias is native evidence separate from declaration and actual interface (3.567ms)
+✔ no guessed alias or substitute Linux kind (0.197292ms)
+✔ changed name, index or namespace remains unresolved (0.393541ms)
+✔ missing alias does not prove interface deletion and leaves peer visible (0.191208ms)
+✔ profile DTO rejects arbitrary kinds, aliases, properties, peers and conflicting identities (1.261916ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 163.301292

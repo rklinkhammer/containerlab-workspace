@@ -79,6 +79,50 @@ export function associateStates(raw:any,b:Binding,sequence:number):StateObservat
   return {...e,administrativeState:s.administrativeState,carrier:s.carrier,supplementSource:s.source,supplementReason:s.reason};
  })});
 }
-export function parseCurrentObservation(x:unknown):StateObservation|InterfaceObservation{
+export function parseCurrentObservation(x:unknown):StateObservation|InterfaceObservation|ProfileObservation{
+ if((x as any)?.contract==='observation/0.4')return profileObservationSchema.parse(x);
  return (x as any)?.contract==='observation/0.2'?parseInterfaceObservation(x):stateObservationSchema.parse(x);
+}
+
+// One explicitly reviewed additional profile. No alias conversion rules.
+const srlEndpointSchema=stateEndpointSchema.extend({declaredInterface:z.enum(['eth1','ethernet-1/1']),observedInterface:z.string().regex(/^[A-Za-z0-9_.-]{1,15}$/).nullable(),nativeAlias:z.enum(['','ethernet-1/1']),kind:z.enum(['linux','nokia_srlinux']),reason:z.enum([...endpointSchema.shape.reason.options,'ALIAS_UNRESOLVED'])});
+export const profileObservationSchema=z.strictObject({...stateObservationSchema.shape,contract:z.literal('observation/0.4'),profile:z.literal('SRL-PAIR'),endpoints:z.array(srlEndpointSchema).length(2)}).superRefine((g,c)=>{
+ const issue=(message:string)=>c.addIssue({code:'custom',message});
+ if(new Set(g.nodes.map(n=>n.node)).size!==2||new Set(g.nodes.map(n=>n.containerId)).size!==2||new Set(g.endpoints.map(e=>e.node)).size!==2)issue('Duplicate identity');
+ for(const e of g.endpoints){
+  const n=g.nodes.find(n=>n.node===e.node);if(!n||n.containerId!==e.containerId)issue('Foreign endpoint');
+  if(e.kind!==(e.node==='left'?'nokia_srlinux':'linux')||e.declaredInterface!==(e.node==='left'?'ethernet-1/1':'eth1'))issue('Profile mismatch');
+  if(e.status==='observed'&&(n?.state!=='running'||e.reason!=='MATCHED_ENROLLED_ATTRIBUTES'||!e.namespaceFingerprint||!e.index||!e.mac||!e.observedInterface))issue('Unproven endpoint');
+  if(e.status==='observed'&&e.node==='left'&&e.nativeAlias!==e.declaredInterface)issue('Alias not established');
+  if(e.status==='observed'&&e.node==='right'&&e.observedInterface!=='eth1')issue('Literal endpoint mismatch');
+  if(e.status==='absent'&&(e.node==='left'||e.reason!=='MISSING_FROM_NATIVE_INVENTORY'||e.index!==null||e.mac!==null||e.namespaceFingerprint===null))issue('Unproven absence');
+  if(e.status==='unresolved'&&!['IDENTITY_CHANGED','NOT_ENROLLED'].includes(e.reason))issue('Invalid unresolved reason');
+  if(e.status==='unavailable'&&!['CONTAINER_ABSENT','NODE_NOT_RUNNING','NAMESPACE_UNAVAILABLE','OBSERVATION_CHANGED','INTERFACE_INSPECTION_UNAVAILABLE','MALFORMED_INTERFACES','AMBIGUOUS_INTERFACE','ALIAS_UNRESOLVED'].includes(e.reason))issue('Invalid unavailable reason');
+  if(e.status!=='observed'&&(e.operationalState!=='unknown'||e.administrativeState!=='unknown'||e.carrier!=='unknown'))issue('Unassociated state');
+  const qualified=e.status==='observed'&&e.supplementSource==='linux_netlink_flags'&&e.supplementReason==='MATCHED_NATIVE_ATTRIBUTES';
+  if(!qualified&&(e.supplementSource!=='unavailable'||e.administrativeState!=='unknown'||e.carrier!=='unknown'||e.supplementReason==='MATCHED_NATIVE_ATTRIBUTES'))issue('Unqualified supplement');
+  if(qualified&&e.administrativeState==='unknown'||e.administrativeState!=='up'&&e.carrier!=='unknown')issue('Unsupported carrier/admin state');
+ }
+});
+export type ProfileObservation=z.infer<typeof profileObservationSchema>;
+export function associateProfile(raw:any,b:Binding,sequence:number):ProfileObservation{
+ if(raw?.ok!==true||!Array.isArray(raw.rows)||raw.rows.length>16)throw Error('MALFORMED_OBSERVATION');const seen=new Set();
+ for(const r of raw.rows){const n=b.nodes.find(n=>n.node===r.node);if(!n||seen.has(r.node)||r.id!==n.id||r.lab!=='observation-slice'||r.purpose!=='observation-slice-v1'||r.kind!==(r.node==='left'?'nokia_srlinux':'linux'))throw Error('ASSOCIATION_CONFLICT');seen.add(r.node);}
+ const nodes=b.nodes.map(n=>({node:n.node,containerId:n.id,state:raw.rows.find((r:any)=>r.node===n.node)?.state??'absent',association:'enrolled_full_id'}));
+ const endpoints=b.nodes.map(n=>{
+  const row=raw.rows.find((r:any)=>r.node===n.node),info=row?.interfaces,declaredInterface=n.node==='left'?'ethernet-1/1':'eth1';
+  const e:any={node:n.node,containerId:n.id,kind:n.node==='left'?'nokia_srlinux':'linux',declaredInterface,observedInterface:null,nativeAlias:'',status:'unavailable',reason:'CONTAINER_ABSENT',namespaceFingerprint:null,index:null,mac:null,operationalState:'unknown',administrativeState:'unknown',carrier:'unknown',peer:'unknown',continuity:'unknown',supplementSource:'unavailable',supplementReason:'NOT_ASSOCIATED'};
+  if(!row)return e;if(!info||!['complete','unavailable'].includes(info.status)||!Array.isArray(info.items))throw Error('MALFORMED_OBSERVATION');
+  if(info.status==='unavailable'){e.reason=info.reason;return e;}
+  if(row.state!=='running'||!/^[a-f0-9]{64}$/.test(info.namespace)||info.items.length>1)throw Error('MALFORMED_OBSERVATION');e.namespaceFingerprint=info.namespace;
+  const old=(n as any).endpoint;if(old?.namespace&&old.namespace!==info.namespace){e.status='unresolved';e.reason='IDENTITY_CHANGED';return e;}
+  if(!info.items.length){if(n.node==='left'){e.reason='ALIAS_UNRESOLVED';return e;}e.status='absent';e.reason='MISSING_FROM_NATIVE_INVENTORY';return e;}
+  const item=info.items[0];if(item.type!=='veth'||n.node==='left'&&item.alias!==declaredInterface||n.node==='right'&&item.name!=='eth1')throw Error('ASSOCIATION_CONFLICT');
+  e.observedInterface=item.name;e.nativeAlias=n.node==='left'?item.alias:'';e.index=item.index;e.mac=item.mac;
+  if(old?.status!=='complete'||old.items?.length!==1){e.status='unresolved';e.reason='NOT_ENROLLED';return e;}
+  if(old.namespace!==info.namespace||old.items[0].name!==item.name||n.node==='left'&&old.items[0].alias!==item.alias||old.items[0].index!==item.index||old.items[0].mac!==item.mac){e.status='unresolved';e.reason='IDENTITY_CHANGED';return e;}
+  e.status='observed';e.reason='MATCHED_ENROLLED_ATTRIBUTES';e.operationalState=item.operationalState;
+  const s=row.linux;if(s){e.administrativeState=s.administrativeState;e.carrier=s.carrier;e.supplementSource=s.source;e.supplementReason=s.reason;}else e.supplementReason='SUPPLEMENT_UNAVAILABLE';return e;
+ });
+ return profileObservationSchema.parse({contract:'observation/0.4',profile:'SRL-PAIR',deploymentId:b.deploymentId,sourceSha256:b.sourceSha256,nativeCommit,sequence,observedAt:new Date().toISOString(),freshForMs:15000,linkHealth:'unknown',nodes,endpoints});
 }

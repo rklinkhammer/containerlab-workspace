@@ -1,0 +1,37 @@
+[
+  {
+    "case": "valid",
+    "status": "PASS",
+    "type": "mock"
+  },
+  {
+    "case": "missing",
+    "status": "PASS",
+    "type": "mock"
+  },
+  {
+    "case": "wrong",
+    "status": "PASS",
+    "type": "mock"
+  },
+  {
+    "case": "duplicate",
+    "status": "PASS",
+    "type": "mock"
+  },
+  {
+    "case": "hostile-name",
+    "status": "PASS",
+    "type": "mock"
+  },
+  {
+    "case": "malformed",
+    "status": "PASS",
+    "type": "mock"
+  },
+  {
+    "case": "partial-failure",
+    "status": "PASS",
+    "type": "mock"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "nodes/srl/srl.go",
+    "sha256": "454ec13de5773c50bbee749b35a54f1af5035132d3c333fb93e3467544a5f7f4"
+  },
+  {
+    "path": "nodes/default_node.go",
+    "sha256": "3abb1cb6d7e00412b3d414337c94096baea6014bc3d71f94e3d11ae0f7a17bb1"
+  },
+  {
+    "path": "core/list.go",
+    "sha256": "747bd0432c79349bcee8f4a93602c406c98db04f4f57aa11a6575efb0a9d979d"
+  },
+  {
+    "path": "links/link.go",
+    "sha256": "ddb7b4643e688272c49c471e5efd3a0dfbddd3a170c986a013bdfe1b6cd91d8a"
+  },
+  {
+    "path": "docs/manual/kinds/srl.md",
+    "sha256": "6fb6939ff597f6e3d487bd5254e25671cbb95318ce53f3b17dfd9295f5a74ba2"
+  }
+]

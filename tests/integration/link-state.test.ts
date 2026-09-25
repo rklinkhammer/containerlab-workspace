@@ -1,7 +1,7 @@
 import{test}from'node:test';import assert from'node:assert/strict';import{readFileSync,writeFileSync,mkdirSync}from'node:fs';import{execFileSync}from'node:child_process';import{observe}from'../../backend/observation.ts';
 const wait=()=>new Promise(r=>setTimeout(r,1100));
 test('controlled Linux flags and exact-attribute replacement never establish continuity',async()=>{
- assert.ok(process.env.CLAB_OBSERVATION_SESSION);const s=JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_SESSION!,'utf8'));const dir='experiments/EXP-020-link-state/attempt-'+Date.now();mkdirSync(dir);const evidence:any[]=[];
+ assert.ok(process.env.CLAB_OBSERVATION_SESSION);const s=JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_SESSION!,'utf8'));const dir=(process.env.CLAB_EVIDENCE_DIR??'experiments/EXP-020-link-state')+'/attempt-'+Date.now();mkdirSync(dir);const evidence:any[]=[];
  const guest=(...a:string[])=>execFileSync('limactl',['shell',s.vm,'sudo',...a],{timeout:60000,stdio:'pipe'}).toString();const binding=(n:string)=>s.binding.nodes.find((x:any)=>x.node===n);const pid=(n:string)=>guest('docker','inspect','--format','{{.State.Pid}}',binding(n).id).trim();const ip=(n:string,...a:string[])=>guest('nsenter','-t',pid(n),'-n','ip',...a);
  const snap=async(stage:string)=>{await wait();const x=await observe();evidence.push({stage,snapshot:x});return x;};
  try{

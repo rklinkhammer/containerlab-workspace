@@ -1,0 +1,167 @@
+Continue from architecture A15 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Treat ../containerlab-investigation as read-only evidence.
+Preserve the sibling-directory arrangement, historical evidence
+and unrelated changes. Do not access, start, stop or modify
+pre-existing Lima VMs.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, README.md and:
+- artifacts/implementation/A15/RESULTS.md
+- artifacts/design/OBSERVATION_CONTRACT.md
+- The current architecture, decisions, readiness, backlog,
+  implementation plan and traceability.
+- experiments/EXP-020-link-state/PLAN.md
+- experiments/EXP-020-link-state/RESULTS.md
+- The implemented native observer, association contracts and GUI.
+
+Inspect Git status and preserve existing staged and uncommitted work.
+Verify artifacts/design/COMPLETION.json before relying on the baseline.
+
+Execute the next bounded slice: qualify runtime observation for one
+additional native Containerlab kind and its interface naming or alias
+behavior, then implement only the supported extension.
+
+Purpose:
+Validate our application's faithful integration with another native
+kind. Do not expand into general Containerlab validation, broad corpus
+testing or a custom topology/alias interpretation layer.
+
+1. Select one evidence-backed profile.
+   Inspect pinned native kinds, interface APIs and existing evidence.
+   Select a small profile that adds meaningful coverage beyond the
+   current generic Linux eth1 veth pair.
+
+   Prefer a supported kind with an available, legally usable image,
+   modest resource requirements and documented interface behavior.
+   Record the native kind, immutable image/version, expected interface
+   names or aliases, runtime requirements and selection rationale.
+
+   Do not substitute a generic Linux container and claim that another
+   kind was qualified. If the preferred profile has unavailable image,
+   license or runtime prerequisites, record the blocker and assess one
+   practical alternative without broadening the experiment.
+
+2. Define the association contract before implementation.
+   Write independent expectations for:
+   - Declared nodes and endpoint occurrences.
+   - Native interface names and aliases.
+   - Runtime container or namespace identity.
+   - Which interface actually corresponds to each declared endpoint.
+   - Available operational, administrative and carrier observations.
+   - Explicit absent, unavailable, unresolved and stale outcomes.
+
+   Use native getters, types or supported inspection mechanisms.
+   Do not infer aliases through string substitution, guess namespace
+   placement or independently reimplement topology semantics.
+
+   Preserve full container/deployment/source identity.
+   A15 demonstrated exact name/MAC/index reuse: matching attributes
+   do not establish continuous identity. Keep continuity unknown.
+   Do not infer runtime peer identity from declared adjacency or an
+   unqualified peer index.
+
+3. Implement the smallest supported extension.
+   This task authorizes minimal application changes needed for the
+   selected approved profile, including reviewed fixture enrollment,
+   native observation, association and existing node/link inspectors.
+
+   Replace hardcoded assumptions only where the selected profile
+   requires it. Prefer explicit reviewed profile data over a speculative
+   plugin framework, discovery service or generalized adapter system.
+
+   Keep Containerlab declarations authoritative and separate from
+   runtime observations. Preserve original YAML bytes, IDs and hashes.
+   Do not silently repair inputs or introduce arbitrary uploads.
+
+   Version contracts deliberately if their meaning changes.
+   Preserve the existing RUNTIME-PAIR profile and recorded evidence.
+   Show the profile, evidence source, association basis, freshness and
+   specific safe reasons for unavailable or unresolved information.
+
+   Linux supplemental flags must remain labeled Linux evidence.
+   Enable them only where namespace/interface association is qualified.
+   Unsupported fields remain unknown; they are not failures to conceal.
+
+4. Qualify in fresh dedicated resources.
+   This task authorizes new dedicated VMs and only the smallest
+   synthetic lab required for the selected profile.
+   Do not deploy external corpus examples.
+
+   Use separate task session directories and immutable pins.
+   Never reuse an existing or stopped trial. Ordinary builds/tests
+   must not create VMs or deploy labs automatically.
+
+   Exercise, where supported:
+   - Initial declaration-to-runtime endpoint association.
+   - Native interface naming and alias behavior.
+   - A controlled interface down/up transition.
+   - Node stop/start and namespace or container replacement.
+   - Missing interfaces and inspection unavailability.
+   - Incorrect, ambiguous and outdated associations.
+   - Partial failure, stale observations, cancellation and limits.
+
+   Write expectations before execution, preserve failed attempts and
+   distinguish actual runtime evidence from mocks.
+   If a transition is unsupported, record the exact limitation and
+   continue independent checks.
+
+   Perform mutations only as explicit qualification actions through
+   supported native/runtime tools. Add no GUI mutation controls.
+   Use separate fresh trials where destructive tests invalidate the
+   original enrollment; do not silently adopt replacements.
+
+5. Retain privilege and disclosure boundaries.
+   No privileged runtime socket may reach the browser or declaration
+   worker. Accept no browser-selected commands, VM names, daemon
+   addresses, paths or arbitrary inspection targets.
+
+   Keep fixed reviewed operations, strict disclosure allowlists,
+   safe text rendering, finite diagnostics and bounded execution,
+   output, concurrency and cleanup.
+
+   Do not expose raw configuration, credentials, private paths or
+   unrestricted native stderr. Document any additional privilege
+   required by the selected kind.
+
+   TT-01 remains active: login and multi-user authorization are
+   out of scope. Retain containment and identity compatibility checks.
+
+6. Verify and publish.
+   Run relevant contract, integration and browser regressions for
+   both the existing Linux profile and the new profile.
+   Compare independent semantics, not merely counts or current output.
+   Never change expectations just to match implementation.
+
+   Preserve selection and navigation during refresh. Retain bounded
+   polling, cancellation and rejection of superseded responses.
+
+   Use port 4173; do not terminate unrelated listeners.
+   Destroy only task-created labs, collect cleanup evidence and stop
+   every new VM, including after failed qualification.
+
+   Update architecture decisions, observation contracts, profile
+   support, implementation status, traceability and handoff.
+   Follow D-15 archival/publication rules before replacing published
+   documents. Verify the completion manifest after publication.
+
+   Keep historical Q-gate outcomes and the 177-case corpus denominator
+   unchanged unless evidence satisfies their actual acceptance criteria.
+
+Do not implement capture, terminals, packet analysis, GUI lifecycle
+controls, arbitrary uploads, persistent private-source storage or a
+traffic-testing framework. Do not claim universal kind support or
+forwarding correctness from this selected profile.
+
+Complete the bounded slice where prerequisites permit. Where blocked,
+deliver precise evidence, independent tests and a concrete handoff
+without pretending the profile is qualified.
+
+Finish with:
+- The selected kind, image pin and selection rationale.
+- A capability matrix comparing the existing and new profiles.
+- What now renders and associates correctly, with explicit limitations.
+- Actual test results, preserved failures and separately listed unrun checks.
+- Reproducible setup, preview, qualification and cleanup commands.
+- Confirmation that task labs are removed and all new VMs are stopped.
+- The smallest next gated implementation step.

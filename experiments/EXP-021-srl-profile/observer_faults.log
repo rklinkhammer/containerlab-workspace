@@ -1,0 +1,26 @@
+[
+  {
+    "test": "malformed",
+    "status": "PASS",
+    "seconds": 0.01,
+    "childrenReaped": true
+  },
+  {
+    "test": "output",
+    "status": "PASS",
+    "seconds": 0.01,
+    "childrenReaped": true
+  },
+  {
+    "test": "exit",
+    "status": "PASS",
+    "seconds": 0.01,
+    "childrenReaped": true
+  },
+  {
+    "test": "timeout",
+    "status": "PASS",
+    "seconds": 6.01,
+    "childrenReaped": true
+  }
+]

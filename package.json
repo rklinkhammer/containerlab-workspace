@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
-    "test": "node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts tests/observation.test.ts tests/interfaces.test.ts tests/link-state.test.ts",
+    "test": "node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts tests/observation.test.ts tests/interfaces.test.ts tests/link-state.test.ts tests/profile.test.ts",
     "build": "npm run fixtures:native && npm run fixtures:declared && npm run typecheck && vite build",
     "preview": "node scripts/preview.mjs",
     "test:browser": "playwright test",
@@ -20,7 +20,8 @@
     "test:native:coverage": "node --test tests/integration/coverage.test.ts",
     "test:runtime": "node --test tests/integration/observation.test.ts",
     "test:interfaces": "node --test tests/integration/interfaces.test.ts",
-    "test:link-state": "node --test tests/integration/link-state.test.ts"
+    "test:link-state": "node --test tests/integration/link-state.test.ts",
+    "test:profile": "node --test tests/integration/profile.test.ts"
   },
   "dependencies": {
     "@xyflow/react": "12.10.2",

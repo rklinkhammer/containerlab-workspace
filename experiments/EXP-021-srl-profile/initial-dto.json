@@ -1,0 +1,67 @@
+{
+  "contract": "observation/0.4",
+  "deploymentId": "b614544ae615acf7a94f180897bd72dd76ef662268867e894a239b737c634c90",
+  "sourceSha256": "b3475debc476a156e75e845621658c27408710b0c0cc0587bd32ee63e3669b12",
+  "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+  "sequence": 1,
+  "observedAt": "2026-09-25T11:00:58.803Z",
+  "freshForMs": 15000,
+  "linkHealth": "unknown",
+  "nodes": [
+    {
+      "node": "left",
+      "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+      "state": "running",
+      "association": "enrolled_full_id"
+    },
+    {
+      "node": "right",
+      "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+      "state": "running",
+      "association": "enrolled_full_id"
+    }
+  ],
+  "endpoints": [
+    {
+      "node": "left",
+      "containerId": "0edbfe083c883ff8666d84a09dc6357b198ad9c23e092cf2499b81be55edb6fc",
+      "declaredInterface": "ethernet-1/1",
+      "status": "observed",
+      "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+      "namespaceFingerprint": "166a261f6f2afe9cc2383b4f3ac3dd0c51369df48031ca7d6b1286eb21bd542a",
+      "index": 7,
+      "mac": "aa:c1:ab:0e:f2:81",
+      "operationalState": "up",
+      "administrativeState": "up",
+      "carrier": "up",
+      "peer": "unknown",
+      "continuity": "unknown",
+      "supplementSource": "linux_netlink_flags",
+      "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+      "observedInterface": "e1-1",
+      "nativeAlias": "ethernet-1/1",
+      "kind": "nokia_srlinux"
+    },
+    {
+      "node": "right",
+      "containerId": "80c32a57906dd41e7c8ebc7d2923ef4d6f70fc11f65d800d14ddec1b263ede33",
+      "declaredInterface": "eth1",
+      "status": "observed",
+      "reason": "MATCHED_ENROLLED_ATTRIBUTES",
+      "namespaceFingerprint": "8d3dd6f22853b1f44cf36eff0f0cf744cb9c92624d6143c4e7c325abe95b7f70",
+      "index": 8,
+      "mac": "aa:c1:ab:ef:67:ce",
+      "operationalState": "up",
+      "administrativeState": "up",
+      "carrier": "up",
+      "peer": "unknown",
+      "continuity": "unknown",
+      "supplementSource": "linux_netlink_flags",
+      "supplementReason": "MATCHED_NATIVE_ATTRIBUTES",
+      "observedInterface": "eth1",
+      "nativeAlias": "",
+      "kind": "linux"
+    }
+  ],
+  "profile": "SRL-PAIR"
+}

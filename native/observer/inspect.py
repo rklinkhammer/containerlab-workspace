@@ -1,6 +1,13 @@
 """Fixed native inventory/interface reads. No user targets, paths or commands."""
 import json,subprocess,selectors,os,time,signal,sys,re,fcntl,hashlib
 LAB='observation-slice'
+PROFILE='RUNTIME-PAIR'
+try:
+ PROFILE=open('/opt/clab-observation-profile').read().strip()
+except FileNotFoundError:pass
+if PROFILE not in ['RUNTIME-PAIR','SRL-PAIR']:raise ValueError('INVALID_PROFILE')
+def expected_kind(node):return 'nokia_srlinux' if PROFILE=='SRL-PAIR' and node=='left' else 'linux'
+def declared(node):return 'ethernet-1/1' if PROFILE=='SRL-PAIR' and node=='left' else 'eth1'
 class Reader:
  def __init__(self):self.start=time.monotonic();self.size=0
  def read(self,args):return self.command(['/usr/local/bin/containerlab']+args)
@@ -38,8 +45,8 @@ def inventory(reader):
  rows=raw.get(LAB,[]);out=[];seen=set()
  for row in rows:
   labels=row.get('Labels',{});id=row.get('ID','');node=labels.get('clab-node-name','');state=row.get('State','')
-  if not re.fullmatch('[a-f0-9]{64}',id) or node not in ['left','right'] or node in seen or labels.get('containerlab')!=LAB or labels.get('clab-node-kind')!='linux' or labels.get('preview-purpose')!='observation-slice-v1':raise ValueError('ASSOCIATION_CONFLICT')
-  seen.add(node);out.append({'id':id,'node':node,'state':state if state in ['running','exited','paused','created','restarting','dead','removing'] else 'unknown','lab':LAB,'kind':'linux','purpose':'observation-slice-v1','pid':row.get('Pid'),'namespace':namespace(row) if state=='running' else None})
+  if not re.fullmatch('[a-f0-9]{64}',id) or node not in ['left','right'] or node in seen or labels.get('containerlab')!=LAB or labels.get('clab-node-kind')!=expected_kind(node) or labels.get('preview-purpose')!='observation-slice-v1':raise ValueError('ASSOCIATION_CONFLICT')
+  seen.add(node);out.append({'id':id,'node':node,'state':state if state in ['running','exited','paused','created','restarting','dead','removing'] else 'unknown','lab':LAB,'kind':expected_kind(node),'purpose':'observation-slice-v1','pid':row.get('Pid'),'namespace':namespace(row) if state=='running' else None})
  return out
 def interface(reader,row):
  empty={'status':'unavailable','reason':'NODE_NOT_RUNNING','namespace':row['namespace'],'items':[]}
@@ -52,11 +59,15 @@ def interface(reader,row):
   if not isinstance(items,list) or len(items)>64:raise ValueError('MALFORMED_INTERFACES')
   selected=[]
   for item in items:
-   if item.get('name')!='eth1':continue
+   if declared(row['node'])=='ethernet-1/1':
+    if item.get('alias')!=declared(row['node']):continue
+   elif item.get('name')!='eth1':continue
+   if not isinstance(item.get('name'),str) or not re.fullmatch('[A-Za-z0-9_.-]{1,15}',item['name']):raise ValueError('MALFORMED_INTERFACES')
    if not isinstance(item.get('ifindex'),int) or item['ifindex']<=0 or not re.fullmatch('[a-fA-F0-9]{2}(:[a-fA-F0-9]{2}){5}',item.get('mac','')) or item.get('type')!='veth':raise ValueError('MALFORMED_INTERFACES')
    state=item.get('state');state=state if state in ['up','down','unknown','lowerlayerdown','dormant','notpresent','testing'] else 'unknown'
-   selected.append({'name':'eth1','index':item['ifindex'],'mac':item['mac'].lower(),'type':'veth','operationalState':state})
+   selected.append({'name':item['name'],'alias':item.get('alias','') if declared(row['node'])=='ethernet-1/1' else '', 'index':item['ifindex'],'mac':item['mac'].lower(),'type':'veth','operationalState':state})
   if len(selected)>1:raise ValueError('AMBIGUOUS_INTERFACE')
+  if not selected and declared(row['node'])=='ethernet-1/1':return {**empty,'reason':'ALIAS_UNRESOLVED'}
   return {'status':'complete','reason':'NATIVE_INTERFACE_INVENTORY','namespace':row['namespace'],'items':selected}
  except Exception as e:
   if str(e) in ['INSPECTION_TIMEOUT','OUTPUT_LIMIT']:raise
@@ -69,10 +80,11 @@ def linux_state(reader,row):
  try:
   pid=row.get('pid')
   if type(pid)!=int or pid<=0:raise ValueError('SUPPLEMENT_UNAVAILABLE')
-  raw=reader.command(['/usr/bin/nsenter','-t',str(pid),'-n','/usr/sbin/ip','-j','-d','link','show','dev','eth1'])
+  native=info['items'][0]
+  raw=reader.command(['/usr/bin/nsenter','-t',str(pid),'-n','/usr/sbin/ip','-j','-d','link','show','dev',native['name']])
   if not isinstance(raw,list) or len(raw)!=1 or not isinstance(raw[0],dict):raise ValueError('MALFORMED_SUPPLEMENT')
   x=raw[0];native=info['items'][0]
-  if x.get('ifname')!='eth1' or x.get('ifindex')!=native['index'] or x.get('address')!=native['mac'] or x.get('linkinfo',{}).get('info_kind')!='veth':raise ValueError('SUPPLEMENT_IDENTITY_MISMATCH')
+  if x.get('ifname')!=native['name'] or x.get('ifindex')!=native['index'] or x.get('address')!=native['mac'] or x.get('linkinfo',{}).get('info_kind')!='veth':raise ValueError('SUPPLEMENT_IDENTITY_MISMATCH')
   flags=x.get('flags')
   if not isinstance(flags,list) or len(flags)>64 or any(not isinstance(f,str) or len(f)>64 for f in flags):raise ValueError('MALFORMED_SUPPLEMENT')
   admin='up' if 'UP' in flags else 'down'

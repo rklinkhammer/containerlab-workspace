@@ -1,7 +1,7 @@
 """Synthetic Linux JSON seams; not actual namespace/race evidence."""
 import importlib.util,json,copy
 spec=importlib.util.spec_from_file_location('observer','/opt/clab-observer.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
-row={'pid':1,'interfaces':{'status':'complete','items':[{'index':8,'mac':'02:00:00:00:00:01'}]}}
+row={'pid':1,'interfaces':{'status':'complete','items':[{'name':'eth1','index':8,'mac':'02:00:00:00:00:01'}]}}
 base={'ifname':'eth1','ifindex':8,'address':'02:00:00:00:00:01','flags':['UP','LOWER_UP'],'linkinfo':{'info_kind':'veth'},'link_index':99,'link_netnsid':0,'private':'SECRET_CANARY'}
 results=[]
 for name,edit,admin,carrier,reason in [

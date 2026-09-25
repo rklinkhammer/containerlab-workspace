@@ -1,8 +1,8 @@
 import React,{useEffect,useRef,useState} from 'react';
 import {DeclaredView} from './declared.tsx';
 import {parseLiveGraph,type LiveGraph} from '../../../contracts/live-graph.ts';
-import {parseCurrentObservation as parseObservation,type StateObservation, type InterfaceObservation} from '../../../contracts/observation.ts';
-type Observation=StateObservation|InterfaceObservation;
+import {parseCurrentObservation as parseObservation,type ProfileObservation,type StateObservation, type InterfaceObservation} from '../../../contracts/observation.ts';
+type Observation=StateObservation|InterfaceObservation|ProfileObservation;
 export function RuntimeObservation(){
  const [graph,setGraph]=useState<LiveGraph|null>(null),[deployment,setDeployment]=useState(''),[snapshot,setSnapshot]=useState<Observation|null>(null),[error,setError]=useState(''),[busy,setBusy]=useState(false),[poll,setPoll]=useState(false),[now,setNow]=useState(Date.now());
  const current=useRef<AbortController|null>(null),generation=useRef(0),latest=useRef(0);
@@ -25,7 +25,7 @@ export function RuntimeObservation(){
  const stale=!!snapshot&&(now-Date.parse(snapshot.observedAt)>snapshot.freshForMs||now<Date.parse(snapshot.observedAt));
  return <section aria-label="Runtime observation"><div className="loader-controls"><button disabled={!graph||busy} onClick={()=>void refresh()}>Refresh runtime</button><button disabled={!busy} onClick={cancel}>Cancel inspection</button><label><input type="checkbox" disabled={!graph} checked={poll} onChange={e=>setPoll(e.target.checked)}/> Poll every 5 seconds</label></div>
  <p role="status">{busy?'Inspecting runtime…':error||(!snapshot?'No runtime observation yet.':stale?'Stale runtime observation.':'Fresh runtime observation.')}</p>
- {snapshot&&<section className="runtime-snapshot" aria-label="Runtime snapshot"><p>Deployment {snapshot.deploymentId}</p><p>Last observed: {snapshot.observedAt} · {stale?'stale':'within 15-second freshness window'}{error?' · last successful observation; current state unavailable':''}</p><p>Contract: {snapshot.contract} · Native commit: {snapshot.nativeCommit}</p><ul>{snapshot.nodes.map(n=><li key={n.node}>{n.node}: <strong>{n.state}</strong> · {n.containerId} · enrolled full ID</li>)}</ul><p>Link health: unknown. Container state does not establish connectivity or routing.</p></section>}
+ {snapshot&&<section className="runtime-snapshot" aria-label="Runtime snapshot"><p>Deployment {snapshot.deploymentId}</p><p>Last observed: {snapshot.observedAt} · {stale?'stale':'within 15-second freshness window'}{error?' · last successful observation; current state unavailable':''}</p><p>Profile: {'profile' in snapshot?snapshot.profile:'RUNTIME-PAIR'} · Contract: {snapshot.contract} · Native commit: {snapshot.nativeCommit}</p><ul>{snapshot.nodes.map(n=><li key={n.node}>{n.node}: <strong>{n.state}</strong> · {n.containerId} · enrolled full ID</li>)}</ul><p>Link health: unknown. Container state does not establish connectivity or routing.</p></section>}
  {graph&&<DeclaredView g={graph} observation={snapshot} observationStale={stale||!!error}/>}
  </section>;
 }
