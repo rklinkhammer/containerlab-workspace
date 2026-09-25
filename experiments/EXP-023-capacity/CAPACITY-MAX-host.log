@@ -1,0 +1,5 @@
+
+> containerlab-synthetic-preview@0.1.0 test:capacity
+> node tests/integration/capacity-measure.ts
+
+PASS CAPACITY-MAX: 20 independently checked host samples

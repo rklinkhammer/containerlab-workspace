@@ -1,0 +1,13 @@
+
+> containerlab-synthetic-preview@0.1.0 test:capacity:transitions
+> node --test tests/integration/capacity-transitions.test.ts
+
+✔ actual bounded multi endpoint transitions and outdated enrollment (29336.987709ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 29436.686333

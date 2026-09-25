@@ -1,0 +1,13 @@
+
+> containerlab-synthetic-preview@0.1.0 test:capacity:faults
+> node --test tests/integration/capacity-faults.ts
+
+✔ capacity maximum: injected process faults retain partial evidence and enforce global limits (31385.396042ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 31485.856459

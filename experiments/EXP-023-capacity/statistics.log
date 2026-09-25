@@ -1,0 +1,137 @@
+[
+  {
+    "profile": "MULTI-ENDPOINT-V2",
+    "nodes": 3,
+    "links": 2,
+    "occurrences": 4,
+    "nativeLinuxCommands": 6,
+    "guestMs": {
+      "n": 20,
+      "median": 167.91342550000365,
+      "p95_nearest_rank": 171.97151799999233,
+      "maximum": 177.3493970000004
+    },
+    "combinedBytes": {
+      "n": 20,
+      "median": 18089.0,
+      "p95_nearest_rank": 18112,
+      "maximum": 18112
+    },
+    "hostTransportMs": {
+      "n": 20,
+      "median": 231.524729499999,
+      "p95_nearest_rank": 259.56025,
+      "maximum": 260.800792
+    },
+    "dtoValidationMs": {
+      "n": 20,
+      "median": 0.22975000000087675,
+      "p95_nearest_rank": 0.5554999999999382,
+      "maximum": 0.7621670000003178
+    },
+    "dtoBytes": {
+      "n": 20,
+      "median": 4713.0,
+      "p95_nearest_rank": 4713,
+      "maximum": 4713
+    },
+    "browserRefreshMs": {
+      "n": 10,
+      "median": 242.72793749999937,
+      "p95_nearest_rank": 274.8075410000001,
+      "maximum": 274.8075410000001
+    },
+    "maxBrowserIntervalMs": 32.19999998807907,
+    "acceptance": "PASS"
+  },
+  {
+    "profile": "CAPACITY-MEDIUM",
+    "nodes": 5,
+    "links": 8,
+    "occurrences": 16,
+    "nativeLinuxCommands": 10,
+    "guestMs": {
+      "n": 20,
+      "median": 263.01089800000454,
+      "p95_nearest_rank": 271.7160159999992,
+      "maximum": 274.02187600000616
+    },
+    "combinedBytes": {
+      "n": 20,
+      "median": 36232.5,
+      "p95_nearest_rank": 36265,
+      "maximum": 36265
+    },
+    "hostTransportMs": {
+      "n": 20,
+      "median": 324.13652099999854,
+      "p95_nearest_rank": 340.9003329999996,
+      "maximum": 345.8428750000003
+    },
+    "dtoValidationMs": {
+      "n": 20,
+      "median": 0.38999950000015815,
+      "p95_nearest_rank": 0.547458999999435,
+      "maximum": 0.6667910000001029
+    },
+    "dtoBytes": {
+      "n": 20,
+      "median": 15121.0,
+      "p95_nearest_rank": 15121,
+      "maximum": 15121
+    },
+    "browserRefreshMs": {
+      "n": 10,
+      "median": 346.4252290000004,
+      "p95_nearest_rank": 386.6149580000001,
+      "maximum": 386.6149580000001
+    },
+    "maxBrowserIntervalMs": 33,
+    "acceptance": "PASS"
+  },
+  {
+    "profile": "CAPACITY-MAX",
+    "nodes": 8,
+    "links": 16,
+    "occurrences": 32,
+    "nativeLinuxCommands": 16,
+    "guestMs": {
+      "n": 20,
+      "median": 432.8938785000105,
+      "p95_nearest_rank": 443.6915819999854,
+      "maximum": 448.5606849999897
+    },
+    "combinedBytes": {
+      "n": 20,
+      "median": 61962.0,
+      "p95_nearest_rank": 61985,
+      "maximum": 61985
+    },
+    "hostTransportMs": {
+      "n": 20,
+      "median": 482.29643749999923,
+      "p95_nearest_rank": 488.0794999999998,
+      "maximum": 500.36299999999756
+    },
+    "dtoValidationMs": {
+      "n": 20,
+      "median": 0.4727915000003122,
+      "p95_nearest_rank": 0.7605419999999867,
+      "maximum": 0.8833749999998872
+    },
+    "dtoBytes": {
+      "n": 20,
+      "median": 29086.0,
+      "p95_nearest_rank": 29086,
+      "maximum": 29086
+    },
+    "browserRefreshMs": {
+      "n": 10,
+      "median": 503.2780834999994,
+      "p95_nearest_rank": 520.9537499999997,
+      "maximum": 520.9537499999997
+    },
+    "maxBrowserIntervalMs": 30.599999994039536,
+    "acceptance": "PASS"
+  }
+]

@@ -8,7 +8,7 @@ def plan():
   raw=f.read(262145)
  if len(raw.encode())>262144:raise ValueError('OUTPUT_LIMIT')
  p=json.loads(raw)
- if p.get('version')!='enrollment/0.1' or p.get('bundleId')!='MULTI-ENDPOINT-V2' or len(p['nodes'])>8 or len(p['links'])>16 or len(p['endpoints'])>32:raise ValueError('INVALID_REQUEST')
+ if p.get('version')!='enrollment/0.1' or p.get('bundleId') not in ['MULTI-ENDPOINT-V2','CAPACITY-MEDIUM','CAPACITY-MAX'] or len(p['nodes'])>8 or len(p['links'])>16 or len(p['endpoints'])>32:raise ValueError('INVALID_REQUEST')
  if len({n['node'] for n in p['nodes']})!=len(p['nodes']):raise ValueError('INVALID_REQUEST')
  for n in p['nodes']:
   if not re.fullmatch('[A-Za-z0-9_-]{1,64}',n['node']) or n['supported']!=(n['kind'] in ['linux','nokia_srlinux']):raise ValueError('INVALID_REQUEST')

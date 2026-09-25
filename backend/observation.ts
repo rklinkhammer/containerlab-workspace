@@ -8,8 +8,8 @@ import type {IncomingMessage,ServerResponse} from 'node:http';
 function session(){
  try{const s=JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_SESSION??'','utf8'));
  if(s.createdFor!=='runtime-observation-qualification'||!/^clab-load-[0-9-]+-exp016$/.test(s.vm)||!(Date.parse(s.expiresAt)>Date.now()))throw Error();
- const graph=parseLiveGraph(JSON.stringify(s.graph));if(graph.provenance.sourceSha256!==s.binding.sourceSha256||!['RUNTIME-PAIR','SRL-PAIR','MULTI-ENDPOINT-V2'].includes(graph.provenance.bundleId)||graph.provenance.bundleId!==(s.profile??'RUNTIME-PAIR'))throw Error();
- if(s.profile==='MULTI-ENDPOINT-V2'){const b=bindingSchema.parse(s.binding);if(JSON.stringify(b.plan)!==JSON.stringify(derivePlan(graph)))throw Error();}
+ const graph=parseLiveGraph(JSON.stringify(s.graph));if(graph.provenance.sourceSha256!==s.binding.sourceSha256||!['RUNTIME-PAIR','SRL-PAIR','MULTI-ENDPOINT-V2','CAPACITY-MEDIUM','CAPACITY-MAX'].includes(graph.provenance.bundleId)||graph.provenance.bundleId!==(s.profile??'RUNTIME-PAIR'))throw Error();
+ if(['MULTI-ENDPOINT-V2','CAPACITY-MEDIUM','CAPACITY-MAX'].includes(s.profile)){const b=bindingSchema.parse(s.binding);if(JSON.stringify(b.plan)!==JSON.stringify(derivePlan(graph)))throw Error();}
  return {...s,graph};}catch{throw Error('OBSERVATION_UNAVAILABLE');}
 }
 let active=false,sequence=0,lastStart=0;
@@ -23,7 +23,7 @@ export function inspectNative(vm:string,signal?:AbortSignal):Promise<any>{return
 });}
 export async function observe(signal?:AbortSignal){
  const s=session();if(active)throw Error('BUSY');if(Date.now()-lastStart<1000)throw Error('RATE_LIMIT');active=true;lastStart=Date.now();
- try{const raw=await inspectNative(s.vm,signal);if(!raw.ok)throw Error(['INSPECTION_TIMEOUT','OUTPUT_LIMIT','ASSOCIATION_CONFLICT','BUSY'].includes(raw.code)?raw.code:'INSPECTION_FAILED');return s.profile==='MULTI-ENDPOINT-V2'?associateMulti(raw,s.binding,++sequence):s.profile==='SRL-PAIR'?associateProfile(raw,s.binding as Binding,++sequence):associateStates(raw,s.binding as Binding,++sequence);}finally{active=false;}
+ try{const raw=await inspectNative(s.vm,signal);if(!raw.ok)throw Error(['INSPECTION_TIMEOUT','OUTPUT_LIMIT','ASSOCIATION_CONFLICT','BUSY'].includes(raw.code)?raw.code:'INSPECTION_FAILED');return ['MULTI-ENDPOINT-V2','CAPACITY-MEDIUM','CAPACITY-MAX'].includes(s.profile)?associateMulti(raw,s.binding,++sequence):s.profile==='SRL-PAIR'?associateProfile(raw,s.binding as Binding,++sequence):associateStates(raw,s.binding as Binding,++sequence);}finally{active=false;}
 }
 const messages:Record<string,string>={OBSERVATION_UNAVAILABLE:'No active runtime observation session.',INSPECTION_FAILED:'Native inspection failed; absence is not established.',INSPECTION_TIMEOUT:'Native inspection exceeded its time limit.',OUTPUT_LIMIT:'Inspection output exceeded its limit.',MALFORMED_OBSERVATION:'Native observation could not be accepted.',ASSOCIATION_CONFLICT:'Runtime identity differs from the enrolled deployment; no replacement was associated.',BUSY:'An inspection is already running.',RATE_LIMIT:'Refresh is rate limited.',CANCELLED:'Inspection cancelled.'};
 export async function observationAPI(req:IncomingMessage,res:ServerResponse,port:number){

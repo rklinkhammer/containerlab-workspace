@@ -1,0 +1,21 @@
+{
+  "revision": "A18",
+  "changes": [
+    {
+      "path": "artifacts/implementation/A18/RESULTS.md",
+      "previousPublishedSha256": "6e1362eb8fdf5e6790769bce5b0cfaa7f06a3a8d9f983fef150fe25f2b462d76",
+      "reason": "Finalize reproducible evidence-directory instructions; prevent historical output overwrite"
+    },
+    {
+      "path": "artifacts/implementation/RESULTS.md",
+      "previousPublishedSha256": "3fd5e6a9f7efc1181504e805c09ef1be12cb5d49161d1b6475c0c3dbb25cf590",
+      "reason": "Finalize reproducible evidence-directory instructions; prevent historical output overwrite"
+    },
+    {
+      "path": "README.md",
+      "previousPublishedSha256": "acb9232864f3c6ffd94f71e4dcc0320af946bd651d64c6188030d76c0e3b18b2",
+      "reason": "Finalize reproducible evidence-directory instructions; prevent historical output overwrite"
+    }
+  ],
+  "scope": "Same task final verification; no application behavior or limits changed after runtime qualification"
+}

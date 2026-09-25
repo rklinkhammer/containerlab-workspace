@@ -1,0 +1,81 @@
+{
+  "revision": "A18",
+  "files": [
+    {
+      "path": "apps/web/src/observation.tsx",
+      "sha256": "477a3063de594b878d267a6afbe0a41eb758301a1b6fb5b6e63c00657c79d0c9"
+    },
+    {
+      "path": "backend/observation.ts",
+      "sha256": "9f7e9e04251cfb4b5a8529041cc175ffadbb3c014ce6be23e6451c0f65a6e5d5"
+    },
+    {
+      "path": "contracts/enrollment.ts",
+      "sha256": "fafe2e861f71a6d9a84d8a0e16832268a683c443daa48b5b5853a7614a5d0911"
+    },
+    {
+      "path": "contracts/multi-observation.ts",
+      "sha256": "8e66ea7cab957bdb2b4a44f61bb663f2282b61194d37b249002029ad1296bdd3"
+    },
+    {
+      "path": "contracts/observation.ts",
+      "sha256": "baabb80d63672568c11ea8886eb313be17ee5982c8945c68d8acd7fc2e4addc3"
+    },
+    {
+      "path": "fixtures/bundles/CAPACITY-MAX/CAPACITY-MAX.clab.yml",
+      "sha256": "4908b620d5f65ec804bbe1e5637aee38fe2849042b438e80ae20a45a02c93aa0"
+    },
+    {
+      "path": "fixtures/bundles/CAPACITY-MEDIUM/CAPACITY-MEDIUM.clab.yml",
+      "sha256": "3cb67d703633524d37b077d5470328d0a5bfb6b05eb1c44bc0a4a8f565c9ded2"
+    },
+    {
+      "path": "fixtures/bundles/catalog.json",
+      "sha256": "8bbd5652a98eef82fc2dee3ff2d9e886687b0727e2f2d5c15c3d1ac7c0820a20"
+    },
+    {
+      "path": "native/observer/inspect.py",
+      "sha256": "6864b69962249d85e83c8dd45151ec123ce99456f51589728293c9403c7124d2"
+    },
+    {
+      "path": "native/observer/multi.py",
+      "sha256": "7d05ab9349739c5f1b4d31207aa79796e54348c46d2e86538fc7bf3cdd9ecf8b"
+    },
+    {
+      "path": "package.json",
+      "sha256": "f8597429a60d60421364da20044f8c131700d5c41b24044638e662b222a7ce73"
+    },
+    {
+      "path": "scripts/enroll-multi.ts",
+      "sha256": "d980ff1d90c334bdf989d691db6152931aa64ce364de0f712021d8b67c82f271"
+    },
+    {
+      "path": "scripts/observation-session.py",
+      "sha256": "dd17cb31b26a9e0dfd43633d76144e6c8f789362481c167ba7295807677cf5c6"
+    },
+    {
+      "path": "tests/browser/capacity-faults.spec.ts",
+      "sha256": "76ffb3271677b3cd86331eeac7f4468105d1e9fe506eeeaf6f741f154d161bad"
+    },
+    {
+      "path": "tests/browser/capacity.spec.ts",
+      "sha256": "b83fba69b3e4e8447e30c42b8b4123cfd3c5b1e5800061944a2ac3e836506176"
+    },
+    {
+      "path": "tests/capacity.test.ts",
+      "sha256": "214fde56ee732638fc31f59e7ac8acc84e33cc8a0759ea06bca9aca5ea11382c"
+    },
+    {
+      "path": "tests/integration/capacity-faults.ts",
+      "sha256": "8594d9b5ed60e91c85c3cf9140a30ff12e6571644f1de40d9638aef1db76e54b"
+    },
+    {
+      "path": "tests/integration/capacity-measure.ts",
+      "sha256": "b6a576691ae4cac29d5420302f9ca3ac603e07a0768d6f72e1f8f1487aab7569"
+    },
+    {
+      "path": "tests/integration/capacity-transitions.test.ts",
+      "sha256": "df692e339010f43cbee2c53adea92560f70a670346379e95ee53462cae42fd03"
+    }
+  ]
+}

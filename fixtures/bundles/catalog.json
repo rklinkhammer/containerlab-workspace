@@ -455,5 +455,31 @@
     "source": "fixtures/bundles/MULTI-ENDPOINT-V2/MULTI-ENDPOINT-V2.clab.yml",
     "context": "Corrected synthetic fixture: client is an ordinary node; original MULTI-ENDPOINT reserved host-token attempt retained",
     "bundleSha256": "23496e9869c2b8187f4423ed01209337d5cf09916b34e1bc4109c64579316b34"
+  },
+  {
+    "id": "CAPACITY-MEDIUM",
+    "entry": "CAPACITY-MEDIUM.clab.yml",
+    "files": [
+      {
+        "path": "CAPACITY-MEDIUM.clab.yml",
+        "sha256": "3cb67d703633524d37b077d5470328d0a5bfb6b05eb1c44bc0a4a8f565c9ded2"
+      }
+    ],
+    "source": "fixtures/bundles/CAPACITY-MEDIUM/CAPACITY-MEDIUM.clab.yml",
+    "context": "Synthetic capacity qualification; qualified native kinds and immutable pins only",
+    "bundleSha256": "4d78c43654d63bfc3c315a70a56de569d43b8639a14a4c12d8a87671dd0237b9"
+  },
+  {
+    "id": "CAPACITY-MAX",
+    "entry": "CAPACITY-MAX.clab.yml",
+    "files": [
+      {
+        "path": "CAPACITY-MAX.clab.yml",
+        "sha256": "4908b620d5f65ec804bbe1e5637aee38fe2849042b438e80ae20a45a02c93aa0"
+      }
+    ],
+    "source": "fixtures/bundles/CAPACITY-MAX/CAPACITY-MAX.clab.yml",
+    "context": "Synthetic capacity qualification; qualified native kinds and immutable pins only",
+    "bundleSha256": "8ee46e628dad347a7abab0eab07b9661929cbf9b8a9b2198902f1a9bd800d364"
   }
 ]

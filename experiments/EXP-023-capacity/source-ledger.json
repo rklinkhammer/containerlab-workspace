@@ -1,0 +1,18 @@
+{
+  "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+  "ports": "ethernet-1/1 and ethernet-1/2 only; same ports observed in EXP-022",
+  "files": [
+    {
+      "path": "nodes/srl/srl.go",
+      "sha256": "454ec13de5773c50bbee749b35a54f1af5035132d3c333fb93e3467544a5f7f4"
+    },
+    {
+      "path": "nodes/default_node.go",
+      "sha256": "3abb1cb6d7e00412b3d414337c94096baea6014bc3d71f94e3d11ae0f7a17bb1"
+    },
+    {
+      "path": "core/list.go",
+      "sha256": "747bd0432c79349bcee8f4a93602c406c98db04f4f57aa11a6575efb0a9d979d"
+    }
+  ]
+}

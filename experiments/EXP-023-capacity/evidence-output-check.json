@@ -1,0 +1,5 @@
+{
+  "check": "Existing historical output refused before any subprocess/VM call",
+  "result": "PASS",
+  "scope": "Offline guard test; alternate output-root runtime trial NOT_RUN"
+}

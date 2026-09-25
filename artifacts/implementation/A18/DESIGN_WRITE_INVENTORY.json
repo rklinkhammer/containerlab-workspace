@@ -1,0 +1,89 @@
+{
+  "revision": "A18",
+  "writes": [
+    {
+      "path": "artifacts/design/ARCHITECTURE.md",
+      "staged": "000-ARCHITECTURE.md",
+      "sha256": "f7e21395c5e48efcc4fb33407ba35a615ba011cecd845ce64c487dbae02ff0cd",
+      "previousSha256": "bf7baa9a50f5a0829f73b0200459d64d632fd517f83084a0aa6ebe902d8f78ff"
+    },
+    {
+      "path": "artifacts/design/READINESS.md",
+      "staged": "001-READINESS.md",
+      "sha256": "db3235a2e86f0d975dc34455fb0607986eed038eab117d4395b9f5facba5c9ea",
+      "previousSha256": "0679895f36b7880602a6d47b26b291d87fe24e04a7008e043f9b259190f8188e"
+    },
+    {
+      "path": "artifacts/design/P1A_BACKLOG.md",
+      "staged": "002-P1A_BACKLOG.md",
+      "sha256": "cf46860eba0af52e442a464b870079b1157969086b5bb63b98ff53b3588be735",
+      "previousSha256": "79dec0690998176fc839e6f0bfc58a181905effb6d57771945c6508525b12cea"
+    },
+    {
+      "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "staged": "003-IMPLEMENTATION_PLAN.md",
+      "sha256": "97e9dc588ea8c005de41c65d9027f5d683bf1446f8c47c0c7c52ec7bd8d2e144",
+      "previousSha256": "be18b9ecfa16fb40b3fe6a7a988b54554feb4ed59a1be780479f49829093c0db"
+    },
+    {
+      "path": "artifacts/design/TRACEABILITY.md",
+      "staged": "004-TRACEABILITY.md",
+      "sha256": "a8ff39d000a828d4d16a929eddc126314bc761061ebb5624657910441c5c68cf",
+      "previousSha256": "299006c2b893db8d0956ce438a4503111b576ddd07f89081bb9129b7b4d47b96"
+    },
+    {
+      "path": "artifacts/design/README.md",
+      "staged": "005-README.md",
+      "sha256": "6c0c06aa0a12c09f57283f04c017244e9b287193fe6c3ebcdab0f3fb9d991000",
+      "previousSha256": "8290635a16260374efd055b25f267fd4c733540613c84f6ae9905760112430b0"
+    },
+    {
+      "path": "artifacts/implementation/A18/RESULTS.md",
+      "staged": "006-RESULTS.md",
+      "sha256": "236b9deb39b1e23871528d5265d2a11e268ffb79771cc342a4ba0e6f325151d3",
+      "previousSha256": null
+    },
+    {
+      "path": "artifacts/implementation/RESULTS.md",
+      "staged": "007-RESULTS.md",
+      "sha256": "e25bee7d7c4cd29487b139adaf7320b8e5445c9a5f9ef19a54beeb6a39d1117e",
+      "previousSha256": "be8a044e58de2cbcad61b4d69fe1e4274f741f65d2a98017e3a5c4e811392d9e"
+    },
+    {
+      "path": "artifacts/design/OBSERVATION_CONTRACT.md",
+      "staged": "008-OBSERVATION_CONTRACT.md",
+      "sha256": "4fd134b77af3a93353445e556291e7f64b668d7af1efe02ff5bc51ad9f8de30a",
+      "previousSha256": "39735b3284a536217fa6d564087b5c4faa1d19732ab03e4042dc1fee39754118"
+    },
+    {
+      "path": "artifacts/design/DECISIONS.md",
+      "staged": "009-DECISIONS.md",
+      "sha256": "249d81447d64a6c767e9c3c2c91e898544ea6664148146dd425401e5cf9745e8",
+      "previousSha256": "5906df187a6da2f34c52bb2374ce4b2974a465ce13b30bb7537d98060cce6247"
+    },
+    {
+      "path": "artifacts/design/CANDIDATE_PROFILE.json",
+      "staged": "010-CANDIDATE_PROFILE.json",
+      "sha256": "6f3ccffaec7a943d5aa923684f231a9f62e4ea151b4921e15715e452396557d2",
+      "previousSha256": "ec60699f8de29d583cd3fc0c090042500c8212486566b0c2ba953ab2c2a12e21"
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.md",
+      "staged": "011-IMPLEMENTATION_HANDOFF.md",
+      "sha256": "2a1b25674b35bc47d89c653fd38485a7cd91dc8ccf8bf77be020b3a36e366984",
+      "previousSha256": "554cf98dc00c2a82b22a6df09a51b8dbeb553e58b01966d9d23216c8caa322b5"
+    },
+    {
+      "path": "README.md",
+      "staged": "012-README.md",
+      "sha256": "40b160c0948ed75e8655785e3cdf9bd29b55d890f887b6fd7ccfea5ebc68f4ce",
+      "previousSha256": "ebf760e773144e82c1f6b3a205c2e17f79e2660ccccef8264e4502baa32a47e0"
+    },
+    {
+      "path": "experiments/EXP-023-capacity/RESULTS.md",
+      "staged": "013-RESULTS.md",
+      "sha256": "e5467e8a12d1ce4f51a6b5bac3509d525ce71942d83de22a9669f1b5d71c93fb",
+      "previousSha256": null
+    }
+  ]
+}

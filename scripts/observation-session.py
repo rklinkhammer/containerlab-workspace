@@ -5,7 +5,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1];os.chdir(ROOT);R=pathlib.Path(o
 def run(args,**kw):return subprocess.run(args,check=True,**kw)
 def guest(vm,*args):return run(['limactl','shell',vm,*args])
 def setup():
- profile=os.environ.get('CLAB_OBSERVATION_PROFILE','RUNTIME-PAIR');assert profile in ['RUNTIME-PAIR','SRL-PAIR','MULTI-ENDPOINT-V2']
+ profile=os.environ.get('CLAB_OBSERVATION_PROFILE','RUNTIME-PAIR');assert profile in ['RUNTIME-PAIR','SRL-PAIR','MULTI-ENDPOINT-V2','CAPACITY-MEDIUM','CAPACITY-MAX']
  s=json.loads(N.read_text());vm=s['vm'];assert s['createdFor']=='approved-bundle-qualification'
  guest(vm,'sudo','apt-get','install','-y','docker.io')
  guest(vm,'sudo','systemctl','start','docker')
@@ -25,7 +25,7 @@ def setup():
  guest(vm,'sudo','install','-m','644','/tmp/runtime.clab.yml','/opt/observation-slice/topology.clab.yml')
  env={**os.environ,'CLAB_OBSERVATION_PROFILE':profile,'CLAB_NATIVE_SESSION':str(N),'CLAB_OBSERVATION_GRAPH':str(R/'observation-graph.json')}
  run(['node','--input-type=module','-e',"import {load} from './backend/native-loader.ts';import{writeFileSync}from'node:fs';import{randomBytes}from'node:crypto';const g=await load(process.env.CLAB_OBSERVATION_PROFILE,randomBytes(16).toString('hex'));if(g.status!=='declarations_only')throw Error('DECLARATION_REJECTED');writeFileSync(process.env.CLAB_OBSERVATION_GRAPH,JSON.stringify(g));"],env=env)
- if profile=='MULTI-ENDPOINT-V2':
+ if profile in ['MULTI-ENDPOINT-V2','CAPACITY-MEDIUM','CAPACITY-MAX']:
   run(['node','--input-type=module','-e',"import{readFileSync,writeFileSync}from'node:fs';import{derivePlan}from'./contracts/enrollment.ts';writeFileSync(process.env.CLAB_OBSERVATION_GRAPH+'.plan',JSON.stringify(derivePlan(JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_GRAPH,'utf8')))));"],env=env)
   run(['limactl','copy',str(R/'observation-graph.json.plan'),vm+':/tmp/plan.json'])
   guest(vm,'sudo','install','-m','644','/tmp/plan.json','/opt/clab-observation-plan.json')
@@ -34,7 +34,7 @@ def setup():
   guest(vm,'sudo','install','-m','755','/tmp/multi.py','/opt/clab-observer.py')
  guest(vm,'sudo','containerlab','deploy' ,'--topo','/opt/observation-slice/topology.clab.yml')
  raw=json.loads(subprocess.check_output(['limactl','shell',vm,'sudo','python3','/opt/clab-observer.py'],text=True));assert raw['ok']
- if profile=='MULTI-ENDPOINT-V2':
+ if profile in ['MULTI-ENDPOINT-V2','CAPACITY-MEDIUM','CAPACITY-MAX']:
   (R/'initial-native.json').write_text(json.dumps(raw))
   env['CLAB_ENROLLMENT_VM']=vm
   run(['node','scripts/enroll-multi.ts'],env=env)

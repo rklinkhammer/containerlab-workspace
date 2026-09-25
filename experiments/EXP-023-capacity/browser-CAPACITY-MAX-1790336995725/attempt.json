@@ -1,0 +1,49 @@
+{
+  "profile": "CAPACITY-MAX",
+  "warmup": {
+    "refreshMs": 553.9645,
+    "sequence": 1
+  },
+  "samples": [
+    {
+      "refreshMs": 498.4825420000002,
+      "sequence": 2
+    },
+    {
+      "refreshMs": 500.2834170000001,
+      "sequence": 3
+    },
+    {
+      "refreshMs": 520.9537499999997,
+      "sequence": 4
+    },
+    {
+      "refreshMs": 505.6906249999993,
+      "sequence": 5
+    },
+    {
+      "refreshMs": 505.4417919999996,
+      "sequence": 6
+    },
+    {
+      "refreshMs": 501.1143749999992,
+      "sequence": 7
+    },
+    {
+      "refreshMs": 510.1462499999998,
+      "sequence": 8
+    },
+    {
+      "refreshMs": 496.92570799999885,
+      "sequence": 9
+    },
+    {
+      "refreshMs": 497.6036670000012,
+      "sequence": 10
+    },
+    {
+      "refreshMs": 508.63287500000297,
+      "sequence": 11
+    }
+  ]
+}

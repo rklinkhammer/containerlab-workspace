@@ -1,0 +1,11 @@
+{
+  "node": "v26.8.1",
+  "npm": "11.19.0",
+  "hostMemoryBytes": "68719476736",
+  "hostCPUs": "16",
+  "guestResources": {
+    "cpu": 8,
+    "memoryGiB": 16
+  },
+  "note": "One measured lab at a time; another new task VM may provision concurrently on the host. No controlled background-load benchmark."
+}

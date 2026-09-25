@@ -81,7 +81,7 @@ export function associateStates(raw:any,b:Binding,sequence:number):StateObservat
  })});
 }
 export function parseCurrentObservation(x:unknown):StateObservation|InterfaceObservation|ProfileObservation|MultiObservation{
- if((x as any)?.contract==='observation/0.5')return parseMultiObservation(x);
+ if(['observation/0.5','observation/0.6'].includes((x as any)?.contract))return parseMultiObservation(x);
  if((x as any)?.contract==='observation/0.4')return profileObservationSchema.parse(x);
  return (x as any)?.contract==='observation/0.2'?parseInterfaceObservation(x):stateObservationSchema.parse(x);
 }
