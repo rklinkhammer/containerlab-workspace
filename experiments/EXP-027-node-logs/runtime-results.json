@@ -1,0 +1,49 @@
+{
+  "vm": "clab-load-20260925-204127-exp016",
+  "results": [
+    {
+      "name": "generic native enrollment and current observation",
+      "outcome": "PASS",
+      "nodes": 2,
+      "links": 1,
+      "endpoints": 2
+    },
+    {
+      "name": "initial bounded tail",
+      "outcome": "PASS",
+      "bytes": 0,
+      "truncated": false
+    },
+    {
+      "name": "actual native-bound container log retrieval",
+      "outcome": "PASS",
+      "containsIndependentMarker": true
+    },
+    {
+      "name": "deployment identity refusal",
+      "outcome": "PASS"
+    },
+    {
+      "name": "cancel before transport",
+      "outcome": "PASS"
+    },
+    {
+      "name": "cancel active local transport",
+      "outcome": "PASS"
+    },
+    {
+      "name": "recovery after cancellation",
+      "outcome": "PASS"
+    },
+    {
+      "name": "actual output truncation",
+      "outcome": "PASS",
+      "bytes": 65533
+    },
+    {
+      "name": "ready for live GUI",
+      "outcome": "PASS",
+      "nodeId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:n0"
+    }
+  ]
+}

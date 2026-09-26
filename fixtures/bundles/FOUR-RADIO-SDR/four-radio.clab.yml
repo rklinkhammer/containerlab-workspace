@@ -1,0 +1,123 @@
+name: four-radio-sdr
+prefix: clab
+mgmt:
+  network: four-radio-sdr-mgmt
+  ipv4-subnet: 172.31.79.0/24
+topology:
+  nodes:
+    radio1:
+      kind: linux
+      image: containerlab-vrt-app:local
+      memory: 67108864b
+      privileged: false
+      restart-policy: no
+      cap-add:
+        - NET_ADMIN
+      cmd: radio --config /etc/containerlab-vrt/radio1.json
+      binds:
+        - radio1.json:/etc/containerlab-vrt/radio1.json:ro
+      exec:
+        - ip link set dev eth1 mtu 9000
+        - ip address replace 10.79.0.10/24 dev eth1
+        - ip link set dev eth1 up
+    radio2:
+      kind: linux
+      image: containerlab-vrt-app:local
+      memory: 67108864b
+      privileged: false
+      restart-policy: no
+      cap-add:
+        - NET_ADMIN
+      cmd: radio --config /etc/containerlab-vrt/radio2.json
+      binds:
+        - radio2.json:/etc/containerlab-vrt/radio2.json:ro
+      exec:
+        - ip link set dev eth1 mtu 9000
+        - ip address replace 10.79.0.11/24 dev eth1
+        - ip link set dev eth1 up
+    radio3:
+      kind: linux
+      image: containerlab-vrt-app:local
+      memory: 67108864b
+      privileged: false
+      restart-policy: no
+      cap-add:
+        - NET_ADMIN
+      cmd: radio --config /etc/containerlab-vrt/radio3.json
+      binds:
+        - radio3.json:/etc/containerlab-vrt/radio3.json:ro
+      exec:
+        - ip link set dev eth1 mtu 9000
+        - ip address replace 10.79.0.12/24 dev eth1
+        - ip link set dev eth1 up
+    radio4:
+      kind: linux
+      image: containerlab-vrt-app:local
+      memory: 67108864b
+      privileged: false
+      restart-policy: no
+      cap-add:
+        - NET_ADMIN
+      cmd: radio --config /etc/containerlab-vrt/radio4.json
+      binds:
+        - radio4.json:/etc/containerlab-vrt/radio4.json:ro
+      exec:
+        - ip link set dev eth1 mtu 9000
+        - ip address replace 10.79.0.13/24 dev eth1
+        - ip link set dev eth1 up
+    processor:
+      kind: linux
+      image: containerlab-vrt-app:local
+      memory: 67108864b
+      privileged: false
+      restart-policy: no
+      cap-add:
+        - NET_ADMIN
+      cmd: processor --config /etc/containerlab-vrt/processor.json
+      binds:
+        - processor.json:/etc/containerlab-vrt/processor.json:ro
+      exec:
+        - ip link set dev eth1 mtu 9000
+        - ip address replace 10.79.0.14/24 dev eth1
+        - ip link set dev eth1 up
+    detector:
+      kind: linux
+      image: containerlab-vrt-app:local
+      memory: 67108864b
+      privileged: false
+      restart-policy: no
+      cap-add:
+        - NET_ADMIN
+      cmd: detector --config /etc/containerlab-vrt/detector.json
+      binds:
+        - detector.json:/etc/containerlab-vrt/detector.json:ro
+      exec:
+        - ip link set dev eth1 mtu 9000
+        - ip address replace 10.79.0.15/24 dev eth1
+        - ip link set dev eth1 up
+    recorder:
+      kind: linux
+      image: containerlab-vrt-app:local
+      memory: 67108864b
+      privileged: false
+      restart-policy: no
+      cmd: recorder --interface eth1 --metrics /run/containerlab-vrt/recorder.json
+      cap-add:
+        - NET_ADMIN
+        - NET_RAW
+      exec:
+        - ip link set dev eth1 mtu 9000
+        - ip link set dev eth1 up
+    switch1:
+      kind: nokia_srlinux
+      type: ixr-d2
+      image: ghcr.io/nokia/srlinux:25.10.1@sha256:bc8112667b5a87bee5039ade65b504ac2ef35511210d0675db6c7b0754e8cc4c
+      startup-config: srlinux.cli
+  links:
+    - endpoints: ["switch1:ethernet-1/1", "radio1:eth1"]
+    - endpoints: ["switch1:ethernet-1/2", "radio2:eth1"]
+    - endpoints: ["switch1:ethernet-1/3", "radio3:eth1"]
+    - endpoints: ["switch1:ethernet-1/4", "radio4:eth1"]
+    - endpoints: ["switch1:ethernet-1/5", "processor:eth1"]
+    - endpoints: ["switch1:ethernet-1/6", "detector:eth1"]
+    - endpoints: ["switch1:ethernet-1/7", "recorder:eth1"]

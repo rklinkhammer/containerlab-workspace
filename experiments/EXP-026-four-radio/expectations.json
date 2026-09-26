@@ -1,0 +1,162 @@
+{
+  "profile": "FOUR-RADIO-SDR",
+  "labName": "four-radio-sdr",
+  "nodes": [
+    {
+      "name": "radio1",
+      "kind": "linux"
+    },
+    {
+      "name": "radio2",
+      "kind": "linux"
+    },
+    {
+      "name": "radio3",
+      "kind": "linux"
+    },
+    {
+      "name": "radio4",
+      "kind": "linux"
+    },
+    {
+      "name": "processor",
+      "kind": "linux"
+    },
+    {
+      "name": "detector",
+      "kind": "linux"
+    },
+    {
+      "name": "recorder",
+      "kind": "linux"
+    },
+    {
+      "name": "switch1",
+      "kind": "nokia_srlinux",
+      "type": "ixr-d2"
+    }
+  ],
+  "links": [
+    {
+      "occurrence": 0,
+      "endpoints": [
+        {
+          "node": "switch1",
+          "declared": "ethernet-1/1",
+          "native": "e1-1",
+          "alias": "ethernet-1/1"
+        },
+        {
+          "node": "radio1",
+          "declared": "eth1",
+          "native": "eth1",
+          "alias": ""
+        }
+      ]
+    },
+    {
+      "occurrence": 1,
+      "endpoints": [
+        {
+          "node": "switch1",
+          "declared": "ethernet-1/2",
+          "native": "e1-2",
+          "alias": "ethernet-1/2"
+        },
+        {
+          "node": "radio2",
+          "declared": "eth1",
+          "native": "eth1",
+          "alias": ""
+        }
+      ]
+    },
+    {
+      "occurrence": 2,
+      "endpoints": [
+        {
+          "node": "switch1",
+          "declared": "ethernet-1/3",
+          "native": "e1-3",
+          "alias": "ethernet-1/3"
+        },
+        {
+          "node": "radio3",
+          "declared": "eth1",
+          "native": "eth1",
+          "alias": ""
+        }
+      ]
+    },
+    {
+      "occurrence": 3,
+      "endpoints": [
+        {
+          "node": "switch1",
+          "declared": "ethernet-1/4",
+          "native": "e1-4",
+          "alias": "ethernet-1/4"
+        },
+        {
+          "node": "radio4",
+          "declared": "eth1",
+          "native": "eth1",
+          "alias": ""
+        }
+      ]
+    },
+    {
+      "occurrence": 4,
+      "endpoints": [
+        {
+          "node": "switch1",
+          "declared": "ethernet-1/5",
+          "native": "e1-5",
+          "alias": "ethernet-1/5"
+        },
+        {
+          "node": "processor",
+          "declared": "eth1",
+          "native": "eth1",
+          "alias": ""
+        }
+      ]
+    },
+    {
+      "occurrence": 5,
+      "endpoints": [
+        {
+          "node": "switch1",
+          "declared": "ethernet-1/6",
+          "native": "e1-6",
+          "alias": "ethernet-1/6"
+        },
+        {
+          "node": "detector",
+          "declared": "eth1",
+          "native": "eth1",
+          "alias": ""
+        }
+      ]
+    },
+    {
+      "occurrence": 6,
+      "endpoints": [
+        {
+          "node": "switch1",
+          "declared": "ethernet-1/7",
+          "native": "e1-7",
+          "alias": "ethernet-1/7"
+        },
+        {
+          "node": "recorder",
+          "declared": "eth1",
+          "native": "eth1",
+          "alias": ""
+        }
+      ]
+    }
+  ],
+  "srlImage": "ghcr.io/nokia/srlinux:25.10.1@sha256:bc8112667b5a87bee5039ade65b504ac2ef35511210d0675db6c7b0754e8cc4c",
+  "appImage": "containerlab-vrt-app:local"
+}

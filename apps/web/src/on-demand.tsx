@@ -1,7 +1,7 @@
 import React,{useEffect,useRef,useState} from 'react';
 import {parseLiveGraph,type LiveGraph} from '../../../contracts/live-graph.ts';
 import {DeclaredView} from './declared.tsx';
-type Bundle={id:string;entryFile:string;bundleSha256:string;fileCount:number;context:string};
+type Bundle={id:string;displayName?:string;entryFile:string;bundleSha256:string;fileCount:number;context:string;companionInventory?:{name:string;sha256:string}[]};
 export function OnDemand(){
  const [catalog,setCatalog]=useState<Bundle[]>([]),[available,setAvailable]=useState(false),[selected,setSelected]=useState('F1');
  const [graph,setGraph]=useState<LiveGraph|null>(null),[message,setMessage]=useState('Checking approved worker session…'),[busy,setBusy]=useState(false);
@@ -22,9 +22,9 @@ export function OnDemand(){
  async function cancel(){const a=active.current;if(!a)return;setMessage('Cancelling the native worker…');try{await fetch('/api/native/cancel',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jobId:a.id})});}catch{}finally{a.abort.abort();if(active.current===a){active.current=null;setBusy(false);setMessage('Cancellation requested; no stale result will be displayed.');}}}
  const bundle=catalog.find(b=>b.id===selected);
  return <section aria-label="On-demand bundle loader"><div className="scope"><strong>Executed on demand</strong><span>Approved fixture bundles only. No deployment, full resolution or arbitrary upload.</span></div>
-  <div className="loader-controls"><label>Approved bundle <select aria-label="Approved bundle" disabled={busy} value={selected} onChange={e=>{setSelected(e.target.value);setGraph(null);}}>{catalog.map(b=><option key={b.id} value={b.id}>{b.id} · {b.fileCount} files</option>)}</select></label>
+  <div className="loader-controls"><label>Approved bundle <select aria-label="Approved bundle" disabled={busy} value={selected} onChange={e=>{setSelected(e.target.value);setGraph(null);}}>{catalog.map(b=><option key={b.id} value={b.id}>{b.displayName??b.id} · {b.fileCount} files</option>)}</select></label>
   <button disabled={!available||busy} onClick={()=>void load()}>Load native declarations</button><button disabled={!busy} onClick={()=>void cancel()}>Cancel load</button></div>
   {bundle&&<dl className="provenance"><dt>Entry file</dt><dd>{bundle.entryFile}</dd><dt>Bundle hash</dt><dd>{bundle.bundleSha256}</dd><dt>Context</dt><dd>{bundle.context}</dd></dl>}
-  <p role="status">{message}</p>{graph&&<DeclaredView key={graph.provenance.jobId} g={graph}/>}
+  <p role="status">{message}</p>{bundle?.companionInventory&&<section aria-label="Approved companion inventory"><h3>Approved bundle files</h3><ul>{bundle.companionInventory.map(f=><li key={f.name}>{f.name} · SHA-256 {f.sha256}</li>)}</ul><p>Loading declarations does not deploy or attach to a lab. Runtime observations require a separately enrolled session. SDR application health is not assessed.</p></section>}{graph&&<DeclaredView key={graph.provenance.jobId} g={graph}/>}
  </section>;
 }

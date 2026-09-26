@@ -1,0 +1,33 @@
+{
+  "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+  "sources": [
+    {
+      "path": "runtime/runtime.go",
+      "sha256": "9673640d705289d1a6608b7b70f6f9ef2c373e148ed964b2ffd637e2b1e8b2dd"
+    },
+    {
+      "path": "runtime/generic_container.go",
+      "sha256": "f8abf145d417d8d4173244628d219de9aa4db0f21202045abc19fc1f61eb2fec"
+    },
+    {
+      "path": "nodes/generic_vm/generic_vm.go",
+      "sha256": "105d7d3391eccd56f3b65fbb4f69f8518ff823ad843e1e8eb35ff33bdcb2452f"
+    },
+    {
+      "path": "docs/manual/kinds/generic_vm.md",
+      "sha256": "c89200cde313eb3f29f9d8418bea4cd60e338da2f5c7dc6803fbf461a729eae3"
+    },
+    {
+      "path": "docs/manual/kinds/srl.md",
+      "sha256": "6fb6939ff597f6e3d487bd5254e25671cbb95318ce53f3b17dfd9295f5a74ba2"
+    },
+    {
+      "path": "docs/manual/gui/vsc-extension.md",
+      "sha256": "decec4a6f89ed539e7731e77bb42060b35360186830d9642064311d68bd895d3"
+    }
+  ],
+  "stateFixtures": 12,
+  "outcome": "PASS",
+  "runtimeDiscovery": "NOT_RUN",
+  "note": "Synthetic contract examples, not native qualification"
+}

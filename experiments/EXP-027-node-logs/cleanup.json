@@ -1,0 +1,10 @@
+{
+  "vm": "clab-load-20260925-204127-exp016",
+  "status": "Stopped",
+  "lab": "observation-slice",
+  "labRemoved": true,
+  "replacementContainerRemoved": true,
+  "nativeSessionRemoved": true,
+  "observationSessionRemoved": true,
+  "preExistingVMsAccessed": false
+}

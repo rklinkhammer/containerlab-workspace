@@ -1,0 +1,183 @@
+Continue from architecture A20 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Implement the first real user workflow:
+
+Select the four-radio SDR bundle, display its unchanged native-derived
+topology, and inspect an explicitly enrolled deployment. Keep network
+observations separate from SDR application health.
+
+The authoritative application project is:
+/Users/rklinkhammer/workspace/containerlab-vrt
+
+Its topology is:
+generated/four-radio.clab.yml
+
+Treat containerlab-vrt and ../containerlab-investigation as read-only.
+Preserve the sibling-directory arrangement and unrelated/staged changes.
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, README.md and:
+- artifacts/design/OBSERVATION_CONTRACT.md
+- artifacts/design/ON_DEMAND_CONTRACT.md
+- artifacts/design/P1A_BACKLOG.md
+- artifacts/implementation/A20/RESULTS.md
+- contracts/enrollment.ts
+- native/observer/inspect.py
+
+Also inspect containerlab-vrt’s README.md, IMPLEMENTATION.md,
+Dockerfile, build scripts, dependency manifests, generated topology,
+generated/manifest.json and referenced companion files.
+
+Verify artifacts/design/COMPLETION.json before relying on A20.
+
+This task authorizes application implementation and runtime qualification
+in a newly created dedicated VM. Build and deploy only the reviewed
+four-radio lab and its required images there. Do not access, start,
+stop or modify pre-existing VMs. Remove the task lab and stop the new
+VM after evidence collection, including failure paths.
+
+1. Establish independent acceptance and source provenance.
+
+Before execution, record expectations directly from the authoritative
+topology and companion files:
+- Eight nodes: radio1–radio4, processor, detector, recorder and switch1.
+- Seven links and fourteen endpoint occurrences.
+- Linux application interfaces eth1.
+- Switch interfaces ethernet-1/1 through ethernet-1/7, preserving their
+  exact declared associations.
+- Original lab name, node kinds, switch type and image references.
+
+Verify generated output hashes and generator freshness without modifying
+the source project. Record repository/submodule revisions and dirty state.
+Do not regenerate, repair or silently substitute source inputs.
+
+2. Create an approved, reproducible bundle.
+
+Snapshot exact topology bytes and required companions into an explicitly
+identified approved bundle in containerlab-workspace:
+- radio1.json through radio4.json
+- processor.json
+- detector.json
+- srlinux.cli
+
+Preserve relative paths, source identity and hashes. Keep the existing
+generated manifest as provenance and add the application’s bundle
+inventory separately.
+
+Enforce existing containment, symlink/path rejection, disclosure and
+resource limits. Native declaration loading must not execute topology
+hooks, deploy containers, fetch dependencies or receive a runtime socket.
+
+3. Generalize enrollment only as needed for this deployment.
+
+Remove assumptions that every approved deployment is named
+observation-slice, uses its fixed container prefix, or contains the
+qualification-only preview-purpose label.
+
+Bind the approved topology to its actual native deployment identity,
+native labels, full container IDs and qualified interface attributes.
+Derive names and associations from native evidence; do not implement
+a competing naming or topology parser.
+
+Do not rename this lab, inject labels into its original YAML or weaken
+replacement refusal to accommodate it. Retain the existing five profiles
+and historical recordings as regressions.
+
+Version enrollment/session contracts deliberately if their meaning changes.
+Reject incompatible sessions before runtime access and document fresh
+enrollment requirements. Do not modify old session manifests.
+
+4. Prepare and qualify the actual runtime.
+
+Use the existing reviewed Containerlab version and the topology’s pinned
+SR Linux 25.10.1 image. Qualify its native interface/alias observations;
+do not inherit acceptance from the earlier 24.10.1 profile.
+
+Build containerlab-vrt-app:local from a recorded source snapshot inside
+the same new Linux environment used for deployment. Preserve the tag
+required by the topology and record the resulting immutable image ID.
+Verify actual VRT source provenance rather than trusting historical labels.
+
+Inspect deployment effects before executing the topology’s reviewed
+startup commands. Never execute them merely to display declarations.
+
+Classify application build/startup failures separately from declaration,
+projection, rendering and runtime-association failures. Do not replace
+the SDR applications with generic Linux placeholders or modify
+containerlab-vrt to force a successful result.
+
+Continue independent GUI implementation and declaration qualification if
+the application image or runtime is blocked. Record exact blockers.
+
+5. Complete the GUI workflow.
+
+Add a clearly named four-radio SDR option to the approved bundle selector.
+Display its actual native-derived graph, source/bundle identity, companion
+inventory, native version and actionable sanitized diagnostics.
+
+Provide the smallest integration needed to view this explicitly enrolled
+runtime session. A successful declaration load must not imply that a lab
+is deployed or automatically attach to a same-name deployment.
+
+For each node/link, show qualified container and interface observations,
+declared versus observed interface names, timestamps, freshness and
+association outcomes. Preserve selection during refresh and recovery.
+
+Use existing read-only controls and polling. No GUI deployment or VM
+management is required for this acceptance target; setup/enrollment may
+remain an explicit documented command.
+
+6. Keep network state and SDR health distinct.
+
+Container running, interface up or carrier present does not establish:
+- radio readiness or streaming,
+- successful VRT control,
+- processor loss-free operation,
+- correct detections,
+- complete recorder capture,
+- packet forwarding.
+
+Do not infer or display those application-health claims. SDR metrics,
+logs, terminals, capture and TShark analysis are later capabilities.
+
+7. Verify the acceptance target independently.
+
+Run appropriate contract, integration, build and Chromium tests covering:
+- All eight correct nodes and seven exact link associations.
+- Fourteen distinct endpoint occurrences and native SR Linux aliases.
+- Preserved source/companion hashes and explicit missing-context failures.
+- Declaration loading without runtime access.
+- No-session, healthy, stale, failed-refresh and recovery states.
+- Wrong-lab/same-name replacement refusal without automatic adoption.
+- Cancellation, resource limits and cleanup for changed boundaries.
+- Safe rendering, disclosure allowlists and keyboard selection.
+- Regression compatibility for existing approved profiles and recordings.
+
+Use port 4173. Do not terminate unrelated listeners. Ordinary tests must
+not create VMs. Retain failed attempts and distinguish real runtime tests
+from mocks. Do not repeat the 30-minute soak unless changes introduce a
+specific sustained-behavior concern.
+
+TT-01 remains active: login and multi-user ownership authorization are
+out of scope. Retain containment, session compatibility/expiry, source
+preservation, safe rendering and resource limits.
+
+Do not implement arbitrary uploads, lab discovery, topology editing,
+persistent private-source storage, deployment controls, terminals,
+SDR monitoring, capture or packet analysis during this slice.
+
+Update affected architecture, contracts, decisions, traceability,
+implementation status and handoff. Follow D-15 before replacing published
+documents. Preserve historical Q-gate outcomes and the 177-case denominator.
+
+Finish with:
+- Whether the actual four-radio bundle loads and renders correctly.
+- Whether its actual deployment can be enrolled and observed.
+- Exact test results, failures and separately identified unrun checks.
+- Reproducible macOS/guest setup, image-build, enrollment, preview and
+  cleanup commands, with terminal locations clearly labeled.
+- Confirmation that the task lab is removed and the new VM is stopped.
+- Remaining application/runtime blockers.
+- The smallest next step toward SDR application-health monitoring.
+
+Complete this bounded workflow rather than stopping at scaffolding.

@@ -6,7 +6,7 @@ import {parseLiveGraph} from '../contracts/live-graph.ts';
 import type {DeclaredGraph} from '../contracts/declared-graph.ts';
 const hash=(s:string)=>createHash('sha256').update(s).digest('hex');
 const records: any[]=JSON.parse(readFileSync(new URL('../fixtures/bundles/catalog.json',import.meta.url),'utf8'));
-export const bundles=records.map(r=>({id:r.id,entryFile:r.entry,sourceSha256:r.files.find((f:any)=>f.path===r.entry).sha256,bundleSha256:r.bundleSha256,fileCount:r.files.length,context:r.context}));
+export const bundles=records.map(r=>({id:r.id,entryFile:r.entry,sourceSha256:r.files.find((f:any)=>f.path===r.entry).sha256,bundleSha256:r.bundleSha256,fileCount:r.files.length,context:r.context,displayName:r.displayName??r.id,companionInventory:r.files.map((f:any)=>({name:f.path,sha256:f.sha256}))}));
 type Session={vm:string;session:string;expiresAt:string;workerSha256:string;createdFor:string};
 function session():Session{
  const path=process.env.CLAB_NATIVE_SESSION;if(!path)throw Error('WORKER_UNAVAILABLE');

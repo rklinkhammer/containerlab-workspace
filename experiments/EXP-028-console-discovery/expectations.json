@@ -1,0 +1,14 @@
+[
+ {"id":"SC01","question":"No runtime selected","facts":{},"expected":"unchecked"},
+ {"id":"SC02","question":"Documentation mentions port5000","facts":{"documentationHint":true},"expected":"unchecked"},
+ {"id":"SC03","question":"TCP port responds, protocol unknown","facts":{"openPort":true},"expected":"unchecked"},
+ {"id":"SC04","question":"Container shell exists","facts":{"shellAvailable":true},"expected":"unchecked"},
+ {"id":"SC05","question":"Runtime matched but no qualified adapter","facts":{"identity":"matched"},"expected":"unsupported"},
+ {"id":"SC06","question":"Adapter reports one console with complete current evidence","facts":{"identity":"matched","adapter":true,"result":"present","fresh":true},"expected":"available"},
+ {"id":"SC07","question":"Adapter confirms exhaustive inventory empty","facts":{"identity":"matched","adapter":true,"result":"empty","complete":true,"fresh":true},"expected":"absent"},
+ {"id":"SC08","question":"Partial empty inventory","facts":{"identity":"matched","adapter":true,"result":"empty","complete":false,"fresh":true},"expected":"unchecked"},
+ {"id":"SC09","question":"Connection refused or discovery fails","facts":{"identity":"matched","adapter":true,"result":"error","fresh":true},"expected":"unavailable"},
+ {"id":"SC10","question":"Old positive evidence","facts":{"identity":"matched","adapter":true,"result":"present","fresh":false},"expected":"stale"},
+ {"id":"SC11","question":"Same-name replacement, regardless of positive claim","facts":{"identity":"conflict","adapter":true,"result":"present","fresh":true},"expected":"conflict"},
+ {"id":"SC12","question":"Unverified identity with positive claim","facts":{"adapter":true,"result":"present","fresh":true},"expected":"unchecked"}
+]

@@ -1,4 +1,4 @@
-import{test}from'node:test';import assert from'node:assert/strict';import{readFileSync}from'node:fs';import{derivePlan,bindingSchema,planSchema}from'../contracts/enrollment.ts';import{enroll,associateMulti,parseMultiObservation}from'../contracts/multi-observation.ts';
+import{test}from'node:test';import assert from'node:assert/strict';import{readFileSync}from'node:fs';import{derivePlan,bindingSchema,planSchema}from'../contracts/legacy/enrollment.ts';import{enroll,associateMulti,parseMultiObservation}from'../contracts/legacy/multi-observation.ts';
 const expected=JSON.parse(readFileSync('experiments/EXP-022-multi-endpoint/expectations.json','utf8'));
 import{fixture}from'./helpers/multi.ts';
 

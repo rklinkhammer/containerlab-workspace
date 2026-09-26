@@ -1,0 +1,192 @@
+{
+  "revision": "A22-before-A23",
+  "createdUtc": "2026-09-25T20:52:13.591877+00:00",
+  "files": [
+    {
+      "source_path": "GUI_COMPARISON.md",
+      "archive_name": "000-GUI_COMPARISON.md",
+      "sha256": "969cf836f65e2bf68eed376a2d6b068e4856cac660b96393f3ef73902977b072",
+      "bytes": 11153
+    },
+    {
+      "source_path": "GUI_DIRECTION_PROMPT.md",
+      "archive_name": "001-GUI_DIRECTION_PROMPT.md",
+      "sha256": "00d948bd0013d1d9d0c51dfdaa73c9a7d0cca168c490870625fcd8a85513bbdb",
+      "bytes": 13749
+    },
+    {
+      "source_path": "IMPLEMENTATION_HANDOFF.md",
+      "archive_name": "002-IMPLEMENTATION_HANDOFF.md",
+      "sha256": "e461feca245503872ebff82cba9e358ad300a6743a25e36b75f717f8f281f8e8",
+      "bytes": 3844
+    },
+    {
+      "source_path": "README.md",
+      "archive_name": "003-README.md",
+      "sha256": "2434f963f7863d1e8c6ec3d7e49b20f6406dbe99fd08d3efb59441acb35fdad4",
+      "bytes": 10045
+    },
+    {
+      "source_path": "artifacts/design/ARCHITECTURE.md",
+      "archive_name": "004-ARCHITECTURE.md",
+      "sha256": "f25a3a69d9bf5da0445f6cfb718d4c727d934a2a6bdde78fbd864f15bd7d1657",
+      "bytes": 69339
+    },
+    {
+      "source_path": "artifacts/design/CANDIDATE_PROFILE.json",
+      "archive_name": "005-CANDIDATE_PROFILE.json",
+      "sha256": "e3b8812c48d44cc3092ba9c69b23b4235b7c4e97ad70599ae85b99ed73a11e0d",
+      "bytes": 4669
+    },
+    {
+      "source_path": "artifacts/design/COMPLETION.json",
+      "archive_name": "006-COMPLETION.json",
+      "sha256": "2c9ee9985aa1bac03deb0d21d760388a1195167da48bbd7240adddaa98e76b27",
+      "bytes": 256731
+    },
+    {
+      "source_path": "artifacts/design/DECISIONS.md",
+      "archive_name": "007-DECISIONS.md",
+      "sha256": "ef7e34a0567a80407355ac33b0653a72d51c0d8a0cd300bee3e1a06fb6b1e0c8",
+      "bytes": 54031
+    },
+    {
+      "source_path": "artifacts/design/DECLARED_PREVIEW_BRIEF.md",
+      "archive_name": "008-DECLARED_PREVIEW_BRIEF.md",
+      "sha256": "68af43294e35d03631ed6cd82dd984873814b5d87502d4f85df38000c2345a78",
+      "bytes": 403
+    },
+    {
+      "source_path": "artifacts/design/DECLARED_PREVIEW_CONTRACT.md",
+      "archive_name": "009-DECLARED_PREVIEW_CONTRACT.md",
+      "sha256": "5bbc56c578a1ff0a5791241fa70a53d68b2009d3f0492479986ce88e323cb555",
+      "bytes": 1562
+    },
+    {
+      "source_path": "artifacts/design/GUI_CONTRACT.md",
+      "archive_name": "010-GUI_CONTRACT.md",
+      "sha256": "2c6711141bb8c09b8c280c0a3227848b4e242e59d810c3a4080d2d89c28814a5",
+      "bytes": 3060
+    },
+    {
+      "source_path": "artifacts/design/IMPLEMENTATION_BRIEF.md",
+      "archive_name": "011-IMPLEMENTATION_BRIEF.md",
+      "sha256": "c2c362aaa6e00682acabb8cfdfe24457748e67ecd60e95ecc40cb5f5b28b8ee3",
+      "bytes": 2788
+    },
+    {
+      "source_path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+      "archive_name": "012-IMPLEMENTATION_PLAN.md",
+      "sha256": "b4388616714ac9238cb1f1acc572959c3aaf8c2c9856504441d09c0a78b3061c",
+      "bytes": 43423
+    },
+    {
+      "source_path": "artifacts/design/NATIVE_PREVIEW_BRIEF.md",
+      "archive_name": "013-NATIVE_PREVIEW_BRIEF.md",
+      "sha256": "f70d8066a138b21213f3e5f83af08fd7cd2e055b7125f313102577bf79340687",
+      "bytes": 548
+    },
+    {
+      "source_path": "artifacts/design/OBSERVATION_CONTRACT.md",
+      "archive_name": "014-OBSERVATION_CONTRACT.md",
+      "sha256": "69a7d75048cfd018327581313d2df14f1a4b923aba08c1d894a09af1249fd8c3",
+      "bytes": 11541
+    },
+    {
+      "source_path": "artifacts/design/ON_DEMAND_BRIEF.md",
+      "archive_name": "015-ON_DEMAND_BRIEF.md",
+      "sha256": "8e2907835b545061f32deab896c134b7cfc627fc2b4bafbd8f183a70ed456515",
+      "bytes": 442
+    },
+    {
+      "source_path": "artifacts/design/ON_DEMAND_CONTRACT.md",
+      "archive_name": "016-ON_DEMAND_CONTRACT.md",
+      "sha256": "3321bc886818e9875587d0f92637fff55a68e4e2c8f62b420fba76b7113b4fa9",
+      "bytes": 4847
+    },
+    {
+      "source_path": "artifacts/design/P1A_BACKLOG.md",
+      "archive_name": "017-P1A_BACKLOG.md",
+      "sha256": "db01c4a81ca6f57c377717cc2aef708d2f06dc1bb12a15ee0dbeea0fcf26238c",
+      "bytes": 20090
+    },
+    {
+      "source_path": "artifacts/design/P1A_CONTRACT.md",
+      "archive_name": "018-P1A_CONTRACT.md",
+      "sha256": "b5e31ddee7edddbb3ad59a9e45d473d9c1409e1eed7ab216b1c3ae2cea42154a",
+      "bytes": 10259
+    },
+    {
+      "source_path": "artifacts/design/R2_NEXT_BRIEF.md",
+      "archive_name": "019-R2_NEXT_BRIEF.md",
+      "sha256": "7f3892c6b48fe1b6c7f3d37e34f9186f9ad7e8d05930d03e776331c8db7cab90",
+      "bytes": 514
+    },
+    {
+      "source_path": "artifacts/design/READINESS.md",
+      "archive_name": "020-READINESS.md",
+      "sha256": "ef0b45ed24eb95cbe4d7f83b3dc2099c16f74b576e0449cb0b3db329884330f5",
+      "bytes": 26533
+    },
+    {
+      "source_path": "artifacts/design/READINESS_BRIEF.md",
+      "archive_name": "021-READINESS_BRIEF.md",
+      "sha256": "b6c61a9b3be888da38d582209a9437ec2e76c38dfd4ac9c7708acce1e65105f5",
+      "bytes": 2322
+    },
+    {
+      "source_path": "artifacts/design/README.md",
+      "archive_name": "022-README.md",
+      "sha256": "40eccd278e65671f7d170883762031651bb87f7e3dfc0a888b7d5f0670b3a3a3",
+      "bytes": 14905
+    },
+    {
+      "source_path": "artifacts/design/RISK_REDUCTION_BRIEF.md",
+      "archive_name": "023-RISK_REDUCTION_BRIEF.md",
+      "sha256": "1e719ce4e7754512fae4e188bf006225d96ea9d581094ddba7106a729d0ed195",
+      "bytes": 1040
+    },
+    {
+      "source_path": "artifacts/design/RUNTIME_QUALIFICATION_PLAN.md",
+      "archive_name": "024-RUNTIME_QUALIFICATION_PLAN.md",
+      "sha256": "b3acc43a0249b61554bf03e54fff509afec02cf3bd1f0c3da6a5877742c278af",
+      "bytes": 7214
+    },
+    {
+      "source_path": "artifacts/design/TEST_PROFILE.md",
+      "archive_name": "025-TEST_PROFILE.md",
+      "sha256": "3c1bdd63c7ea485367edd75330962b52cc798870b723eea57135de2364a8602c",
+      "bytes": 2572
+    },
+    {
+      "source_path": "artifacts/design/TRACEABILITY.md",
+      "archive_name": "026-TRACEABILITY.md",
+      "sha256": "82a3e555ec3c3e88798cb97d54099063e2e568ac79ee39452eb2897f4208b4a5",
+      "bytes": 33865
+    },
+    {
+      "source_path": "artifacts/design/TRUSTED_TEST_BRIEF.md",
+      "archive_name": "027-TRUSTED_TEST_BRIEF.md",
+      "sha256": "72e27c49a682a1abb74e2aced291d7e297cb08bd8b3b8ca7c7f5a4ba0a535b66",
+      "bytes": 900
+    },
+    {
+      "source_path": "artifacts/implementation/DESIGN_WRITE_INVENTORY.json",
+      "archive_name": "028-DESIGN_WRITE_INVENTORY.json",
+      "sha256": "cae888f7a2b2948e7e268fc967399e6722ac0c83ec91e43977627c3770cecb25",
+      "bytes": 3599
+    },
+    {
+      "source_path": "artifacts/implementation/RESULTS.md",
+      "archive_name": "029-RESULTS.md",
+      "sha256": "ba2aaf0cb7d4746fe20ffcb54902a09b31f7de05921a63c58f0ff0bb8e2c1760",
+      "bytes": 1455
+    },
+    {
+      "source_path": "experiments/EXP-027-node-logs/EXECUTING_BRIEF.txt",
+      "archive_name": "030-EXECUTING_BRIEF.txt",
+      "sha256": "6b95883161e27d93c522b438383f4632a05e6baac7cd49670d8a96746528cf8c",
+      "bytes": 2488
+    }
+  ]
+}

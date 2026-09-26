@@ -1,29 +1,39 @@
 """Reviewed graph-derived plan; fixed commands, bounded inventories, no alias conversion."""
 import json,re,fcntl,sys
 from reader import Reader,namespace
-LAB='observation-slice'
 UNKNOWN={'administrativeState':'unknown','carrier':'unknown','source':'unavailable','reason':'NOT_ASSOCIATED'}
 def plan():
  with open('/opt/clab-observation-plan.json') as f:
   raw=f.read(262145)
  if len(raw.encode())>262144:raise ValueError('OUTPUT_LIMIT')
  p=json.loads(raw)
- if p.get('version')!='enrollment/0.2' or p.get('bundleId') not in ['RUNTIME-PAIR','SRL-PAIR','MULTI-ENDPOINT-V2','CAPACITY-MEDIUM','CAPACITY-MAX'] or len(p['nodes'])>8 or len(p['links'])>16 or len(p['endpoints'])>32:raise ValueError('INVALID_REQUEST')
+ if p.get('version')!='enrollment/0.3' or not re.fullmatch('[A-Za-z0-9_-]{1,96}',p.get('bundleId','')) or len(p['nodes'])>8 or len(p['links'])>16 or len(p['endpoints'])>32:raise ValueError('INVALID_REQUEST')
  if len({n['node'] for n in p['nodes']})!=len(p['nodes']):raise ValueError('INVALID_REQUEST')
  for n in p['nodes']:
   if not re.fullmatch('[A-Za-z0-9_-]{1,64}',n['node']) or n['supported']!=(n['kind'] in ['linux','nokia_srlinux']):raise ValueError('INVALID_REQUEST')
+ d=p.get('deployment',{})
+ if d.get('version')!='deployment/0.2' or not re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.-]{0,127}',d.get('labName','')) or d.get('sourceSha256')!=p.get('sourceSha256') or d.get('bundleSha256')!=p.get('bundleSha256') or d.get('bundleId')!=p.get('bundleId') or len(d.get('containers',[]))!=len(p['nodes']):raise ValueError('INVALID_REQUEST')
+ for field in ['node','name','id']:
+  if len({c.get(field) for c in d['containers']})!=len(d['containers']):raise ValueError('INVALID_REQUEST')
+ for c in d['containers']:
+  if not re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.-]{0,127}',c.get('name','')) or not re.fullmatch('[a-f0-9]{64}',c.get('id','')) or not any(n['node']==c.get('node') and n['kind']==c.get('kind') for n in p['nodes']):raise ValueError('INVALID_REQUEST')
  return p
 def inventory(reader,p):
  raw=reader.read(['inspect','--all','--details'])
  if not isinstance(raw,dict) or any(not isinstance(v,list) for v in raw.values()) or sum(len(v) for v in raw.values())>16:raise ValueError('MALFORMED_OBSERVATION')
  out=[];seen=set()
- for r in raw.get(LAB,[]):
+ for r in raw.get(p['deployment']['labName'],[]):
   labels=r.get('Labels',{});name=labels.get('clab-node-name');n=next((n for n in p['nodes'] if n['node']==name),None)
-  if not n or name in seen or not re.fullmatch('[a-f0-9]{64}',r.get('ID','')) or labels.get('containerlab')!=LAB or labels.get('clab-node-kind')!=n['kind'] or labels.get('preview-purpose')!='observation-slice-v1':raise ValueError('ASSOCIATION_CONFLICT')
+  if not n or name in seen or not re.fullmatch('[a-f0-9]{64}',r.get('ID','')) or labels.get('containerlab')!=p['deployment']['labName'] or labels.get('clab-node-kind')!=n['kind']:raise ValueError('ASSOCIATION_CONFLICT')
+  native_names=r.get('Names',[])
+  if not isinstance(native_names,list) or len(native_names)!=1 or not isinstance(native_names[0],str):raise ValueError('ASSOCIATION_CONFLICT')
+  native_name=native_names[0].removeprefix('/')
+  if not re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.-]{0,127}',native_name):raise ValueError('ASSOCIATION_CONFLICT')
+  if not any(c['node']==name and c['kind']==n['kind'] and c['id']==r['ID'] and c['name']==native_name for c in p['deployment']['containers']):raise ValueError('ASSOCIATION_CONFLICT')
   seen.add(name)
   if not n['supported']:continue
   state=r.get('State');state=state if state in ['running','exited','paused','created','restarting','dead','removing'] else 'unknown'
-  out.append({'node':name,'id':r['ID'],'kind':n['kind'],'state':state,'namespace':namespace(r) if state=='running' else None,'pid':r.get('Pid')})
+  out.append({'node':name,'id':r['ID'],'kind':n['kind'],'state':state,'namespace':namespace(r) if state=='running' else None,'pid':r.get('Pid'),'containerName':native_name,'labName':p['deployment']['labName']})
  return out
 def unavailable(e,reason):return {'endpointId':e['endpointId'],'status':'unavailable','reason':reason,'items':[],'linux':dict(UNKNOWN)}
 def supplement(native,items):
@@ -42,7 +52,7 @@ def interfaces(reader,row,es):
  if row['state']!='running':return [unavailable(e,'NODE_NOT_RUNNING') for e in es]
  if not row['namespace']:return [unavailable(e,'NAMESPACE_UNAVAILABLE') for e in es]
  try:
-  name='clab-'+LAB+'-'+row['node'];raw=reader.read(['inspect','interfaces','--name',LAB,'--node',name,'--format','json'])
+  name=row['containerName'];raw=reader.read(['inspect','interfaces','--name',row['labName'],'--node',name,'--format','json'])
   if not isinstance(raw,list) or len(raw)!=1 or raw[0].get('name')!=name:raise ValueError('INTERFACE_INSPECTION_UNAVAILABLE')
   items=raw[0].get('interfaces')
   if not isinstance(items,list) or len(items)>64 or any(not isinstance(i,dict) for i in items):raise ValueError('MALFORMED_INTERFACES')
@@ -86,8 +96,9 @@ def inspect():
   for row in before:
    last=next(r for r in after if r['node']==row['node'])
    if (row['state'],row['namespace'])!=(last['state'],last['namespace']):row['endpoints']=[unavailable(e,'OBSERVATION_CHANGED') for e in row['endpoints']];row['namespace']=None
-   row['state']=last['state'];row.pop('pid')
+   row['state']=last['state'];row.pop('pid');row.pop('containerName');row.pop('labName')
   result={'ok':True,'rows':before}
+  result['labName']=p['deployment']['labName']
   if len(json.dumps(result).encode())>262144:raise ValueError('OUTPUT_LIMIT')
   return result
  finally:lock.close()

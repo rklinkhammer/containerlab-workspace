@@ -1,0 +1,10 @@
+# Next qualification plan
+
+1. Pin a freely distributable generic_vm Ubuntu candidate: immutable vrnetlab source commit, reviewed launcher/build inputs, Ubuntu qcow2 checksum and final container image digest. Record architecture and license/provenance. No unpinned image or proprietary guest is needed for the first candidate.
+2. Inspect the pinned launcher for authoritative serial-to-chardev/socket mapping. Do not infer from an exposed TCP port, labels alone or banner strings. Define an image-specific adapter with default unsupported for all other images. Preserve native kinds and current observation capability limits; qualify generic_vm identity separately instead of declaring it a Linux node.
+3. Verify virtualization feasibility for the host/fresh guest architecture before allocating the trial. If incompatible, record the exact requirement; do not silently emulate or restart an old VM. Use a new dedicated VM with no host mounts and finite lease.
+4. Deploy one reviewed positive node and one controlled negative listener fixture. Identify full IDs, pinned image identity and source/bundle. Read-only inspect serial backing. Positive must name the intended serial device; ordinary TCP listener and SSH/shell must not become serial consoles.
+5. Test exhaustive absence, partial inventory, timeout, oversized/malformed output, unsupported image, stopped node, expired snapshot, identity replacement and cancellation/cleanup. Do not log credentials or console content. Preserve failures and independent expectations.
+6. Clean up the exact task lab and stop the new VM. Report live and synthetic results separately. No xterm.js connection, terminal input, capture or Lua execution in this discovery trial.
+
+Only after positive discovery qualification: specify and qualify transport/session limits, exclusive/busy consoles, Telnet handling, origin checks, resize where supported, reconnect policy, output backpressure and xterm escape/link/clipboard policy. Discovery success alone must not enable Connect.

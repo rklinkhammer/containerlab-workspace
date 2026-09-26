@@ -1,0 +1,1 @@
+Execute GUI_DIRECTION_PROMPT.md. Subsequent user changes: link PCAP, TShark and Lua settings; per-node logs and serial console if present. User approved layout revision 3 with “approve layout”, then requested “continue with next step”. Publish the coherent bounded result. No runtime operations.

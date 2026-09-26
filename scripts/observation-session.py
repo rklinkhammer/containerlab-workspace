@@ -24,10 +24,11 @@ def setup():
  guest(vm,'sudo','install','-m','644','/tmp/runtime.clab.yml','/opt/observation-slice/topology.clab.yml')
  env={**os.environ,'CLAB_OBSERVATION_PROFILE':profile,'CLAB_NATIVE_SESSION':str(N),'CLAB_OBSERVATION_GRAPH':str(R/'observation-graph.json')}
  run(['node','--input-type=module','-e',"import {load} from './backend/native-loader.ts';import{writeFileSync}from'node:fs';import{randomBytes}from'node:crypto';const g=await load(process.env.CLAB_OBSERVATION_PROFILE,randomBytes(16).toString('hex'));if(g.status!=='declarations_only')throw Error('DECLARATION_REJECTED');writeFileSync(process.env.CLAB_OBSERVATION_GRAPH,JSON.stringify(g));"],env=env)
- run(['node','--input-type=module','-e',"import{readFileSync,writeFileSync}from'node:fs';import{derivePlan}from'./contracts/enrollment.ts';writeFileSync(process.env.CLAB_OBSERVATION_GRAPH+'.plan',JSON.stringify(derivePlan(JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_GRAPH,'utf8')))));"],env=env)
+ guest(vm,'sudo','containerlab','deploy','--topo','/opt/observation-slice/topology.clab.yml')
+ (R/'native-inventory.json').write_text(subprocess.check_output(['limactl','shell',vm,'sudo','containerlab','inspect','--all','--details'],text=True))
+ run(['node','--input-type=module','-e',"import{readFileSync,writeFileSync}from'node:fs';import{dirname,join}from'node:path';import{derivePlan}from'./contracts/enrollment.ts';import{enrollDeployment}from'./contracts/deployment.ts';const file=process.env.CLAB_OBSERVATION_GRAPH,d=dirname(file),g=JSON.parse(readFileSync(file)),inventory=JSON.parse(readFileSync(join(d,'native-inventory.json')));const deployment=enrollDeployment(g,inventory,'observation-slice');writeFileSync(join(d,'deployment.json'),JSON.stringify(deployment));writeFileSync(file+'.plan',JSON.stringify({...derivePlan(g),deployment}));"],env=env)
  run(['limactl','copy',str(R/'observation-graph.json.plan'),vm+':/tmp/plan.json'])
  guest(vm,'sudo','install','-m','644','/tmp/plan.json','/opt/clab-observation-plan.json')
- guest(vm,'sudo','containerlab','deploy' ,'--topo','/opt/observation-slice/topology.clab.yml')
  raw=json.loads(subprocess.check_output(['limactl','shell',vm,'sudo','python3','/opt/clab-observer.py'],text=True));assert raw['ok']
  (R/'initial-native.json').write_text(json.dumps(raw))
  env['CLAB_ENROLLMENT_VM']=vm

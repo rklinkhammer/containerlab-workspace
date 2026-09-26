@@ -1,0 +1,25 @@
+{
+  "limits": {
+    "capture_bytes": 67108864,
+    "capture_seconds": 60,
+    "control_queue": 64,
+    "data_queue": 256,
+    "log_bytes": 8388608,
+    "memory_bytes_per_application": 67108864,
+    "retry_count": 8,
+    "status_connections": 4,
+    "status_request_bytes": 1024,
+    "status_response_bytes": 4096
+  },
+  "maximum_frequency_error_hz": 244.140625,
+  "role": "detector",
+  "schema": 1,
+  "spectrum": {
+    "bind": "0.0.0.0",
+    "fft_size": 2048,
+    "overlap_samples": 0,
+    "port": 18600,
+    "schema": 1,
+    "window": "rectangular"
+  }
+}

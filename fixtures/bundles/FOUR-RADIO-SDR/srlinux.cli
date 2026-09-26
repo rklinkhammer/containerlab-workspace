@@ -1,0 +1,51 @@
+set / interface ethernet-1/1 admin-state enable
+set / interface ethernet-1/1 mtu 9014
+set / interface ethernet-1/1 subinterface 0 type bridged
+set / interface ethernet-1/1 subinterface 0 admin-state enable
+set / interface ethernet-1/1 subinterface 0 l2-mtu 9000
+set / interface ethernet-1/2 admin-state enable
+set / interface ethernet-1/2 mtu 9014
+set / interface ethernet-1/2 subinterface 0 type bridged
+set / interface ethernet-1/2 subinterface 0 admin-state enable
+set / interface ethernet-1/2 subinterface 0 l2-mtu 9000
+set / interface ethernet-1/3 admin-state enable
+set / interface ethernet-1/3 mtu 9014
+set / interface ethernet-1/3 subinterface 0 type bridged
+set / interface ethernet-1/3 subinterface 0 admin-state enable
+set / interface ethernet-1/3 subinterface 0 l2-mtu 9000
+set / interface ethernet-1/4 admin-state enable
+set / interface ethernet-1/4 mtu 9014
+set / interface ethernet-1/4 subinterface 0 type bridged
+set / interface ethernet-1/4 subinterface 0 admin-state enable
+set / interface ethernet-1/4 subinterface 0 l2-mtu 9000
+set / interface ethernet-1/5 admin-state enable
+set / interface ethernet-1/5 mtu 9014
+set / interface ethernet-1/5 subinterface 0 type bridged
+set / interface ethernet-1/5 subinterface 0 admin-state enable
+set / interface ethernet-1/5 subinterface 0 l2-mtu 9000
+set / interface ethernet-1/6 admin-state enable
+set / interface ethernet-1/6 mtu 9014
+set / interface ethernet-1/6 subinterface 0 type bridged
+set / interface ethernet-1/6 subinterface 0 admin-state enable
+set / interface ethernet-1/6 subinterface 0 l2-mtu 9000
+set / interface ethernet-1/7 admin-state enable
+set / interface ethernet-1/7 mtu 9014
+set / interface ethernet-1/7 subinterface 0 type local-mirror-dest
+set / interface ethernet-1/7 subinterface 0 admin-state enable
+set / network-instance app type mac-vrf
+set / network-instance app admin-state enable
+set / network-instance app interface ethernet-1/1.0
+set / network-instance app interface ethernet-1/2.0
+set / network-instance app interface ethernet-1/3.0
+set / network-instance app interface ethernet-1/4.0
+set / network-instance app interface ethernet-1/5.0
+set / network-instance app interface ethernet-1/6.0
+set / interface ethernet-1/7 subinterface 0 local-mirror-destination admin-state enable
+set / system mirroring mirroring-instance capture admin-state enable
+set / system mirroring mirroring-instance capture mirror-destination local ethernet-1/7.0
+set / system mirroring mirroring-instance capture mirror-source interface ethernet-1/1 direction ingress-only
+set / system mirroring mirroring-instance capture mirror-source interface ethernet-1/2 direction ingress-only
+set / system mirroring mirroring-instance capture mirror-source interface ethernet-1/3 direction ingress-only
+set / system mirroring mirroring-instance capture mirror-source interface ethernet-1/4 direction ingress-only
+set / system mirroring mirroring-instance capture mirror-source interface ethernet-1/5 direction ingress-only
+set / system mirroring mirroring-instance capture mirror-source interface ethernet-1/6 direction ingress-only

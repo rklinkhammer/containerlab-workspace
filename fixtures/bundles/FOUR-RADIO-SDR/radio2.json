@@ -1,0 +1,50 @@
+{
+  "application": {
+    "interface": "eth1",
+    "mtu": 9000
+  },
+  "control": {
+    "bind": "0.0.0.0"
+  },
+  "defaults": {
+    "amplitude": 0.25,
+    "bandwidth_hz": 800000,
+    "burst_samples": 262144,
+    "center_hz": 100000000,
+    "gain_db_q7": 0,
+    "sample_rate_hz": 1000000,
+    "samples_per_packet": 1024
+  },
+  "iq_destination": {
+    "host": "10.79.0.14",
+    "port": 18502
+  },
+  "limits": {
+    "capture_bytes": 67108864,
+    "capture_seconds": 60,
+    "control_queue": 64,
+    "data_queue": 256,
+    "log_bytes": 8388608,
+    "memory_bytes_per_application": 67108864,
+    "retry_count": 8,
+    "status_connections": 4,
+    "status_request_bytes": 1024,
+    "status_response_bytes": 4096
+  },
+  "radio": {
+    "address": "10.79.0.11/24",
+    "control_port": 18402,
+    "id": "radio2",
+    "iq_port": 18502,
+    "phase_millidegrees": 45000,
+    "sid": 2,
+    "signal_hz": 100100000,
+    "status_port": 18702
+  },
+  "role": "radio",
+  "schema": 1,
+  "status": {
+    "bind": "0.0.0.0",
+    "port": 18702
+  }
+}

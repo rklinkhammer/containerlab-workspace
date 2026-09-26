@@ -1,3 +1,4 @@
+import type {MultiObservation as LegacyMulti} from '../../../contracts/legacy/multi-observation.ts';
 import type {MultiObservation} from '../../../contracts/multi-observation.ts';
 import React,{useMemo,useState} from 'react';
 import {ReactFlow,Background,Controls,BaseEdge,getBezierPath,type EdgeProps,type Node,type Edge} from '@xyflow/react';
@@ -6,7 +7,7 @@ import type {LiveGraph} from '../../../contracts/live-graph.ts';
 import type {DeclaredGraph} from '../../../contracts/declared-graph.ts';
 function DeclaredEdge(props:EdgeProps){const [path,x,y]=getBezierPath({...props,curvature:0.2+Number(props.data?.occurrence??0)*0.12});return <BaseEdge id={props.id} path={path} label={props.label} labelX={x} labelY={y} style={props.style}/>;}
 const edgeTypes={declared:DeclaredEdge};
-export function DeclaredView({g,observation=null,observationStale=false}:{g:DeclaredGraph|LiveGraph;observation?:InterfaceObservation|StateObservation|ProfileObservation|MultiObservation|null;observationStale?:boolean}){
+export function DeclaredView({g,observation=null,observationStale=false}:{g:DeclaredGraph|LiveGraph;observation?:InterfaceObservation|StateObservation|ProfileObservation|MultiObservation|LegacyMulti|null;observationStale?:boolean}){
  const [selected,setSelected]=useState<string|null>(null);
  const node=g.nodes.find(n=>n.id===selected),link=g.links.find(l=>l.id===selected);
  const graph=useMemo(()=>{

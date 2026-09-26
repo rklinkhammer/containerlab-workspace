@@ -1,0 +1,11 @@
+{
+  "vm": "clab-load-20260925-204127-exp016",
+  "nativeBinarySha256": "30e841ad0f443ad07f4c1189844f33447d31587b472b9062954bbeb65596b4d5",
+  "sourceSha256": "ee881ab8da9e1c9288de7ed6b16b6701b8436656cd633edd6e63fac6dfc74d2b",
+  "bundleSha256": "640571e307a557760cb15a20fa651d3cb329d175ee142bca5b9bd4cd3931b348",
+  "sessionFormat": "observation-session/0.4",
+  "enrollment": "enrollment/0.3",
+  "deployment": "deployment/0.2",
+  "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+  "logWorkerSha256": "8608e9f43eb55bb89c07858126a901ac52497893c3417bc3fcfe99222fa2d82a"
+}

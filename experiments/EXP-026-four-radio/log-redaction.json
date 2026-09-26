@@ -1,0 +1,6 @@
+{
+  "file": "create.log",
+  "rule": "host home directory replaced by <HOME>; original remains ignored/private",
+  "originalSha256": "df654937139604da880986e440da85ad3584d9db939f2f5b7c7cc0870bdb59e2",
+  "publishedSha256": "83d22878e9da4f80cac258a020c2182b28a5fa44725e3fc61a0a55fe7f87dd0f"
+}

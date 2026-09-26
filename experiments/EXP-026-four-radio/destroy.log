@@ -1,0 +1,15 @@
+15:31:19 INFO Parsing & checking topology file=four-radio.clab.yml
+15:31:19 INFO Parsing & checking topology file=four-radio.clab.yml
+15:31:19 INFO Destroying lab name=four-radio-sdr
+15:31:19 ERRO container "clab-four-radio-sdr-recorder" exited; container output:
+recorder: packet socket reported a terminal error
+15:31:19 INFO Removed container name=clab-four-radio-sdr-recorder
+15:31:19 INFO Removed container name=clab-four-radio-sdr-radio3
+15:31:19 INFO Removed container name=clab-four-radio-sdr-switch1
+15:31:19 INFO Removed container name=clab-four-radio-sdr-radio4
+15:31:19 INFO Removed container name=clab-four-radio-sdr-detector
+15:31:19 INFO Removed container name=clab-four-radio-sdr-radio1
+15:31:19 INFO Removed container name=clab-four-radio-sdr-processor
+15:31:19 INFO Removed container name=clab-four-radio-sdr-radio2
+15:31:19 INFO Removing host entries path=/etc/hosts
+15:31:19 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-four-radio-sdr.conf

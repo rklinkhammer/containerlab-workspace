@@ -1,0 +1,34 @@
+
+Running 4 tests using 1 worker
+
+(node:18783) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/workbench.spec.ts:4:1 › lab chooser first; exact handles, synchronized table selection, search and safe offline runtime (387ms)
+  ✓  2 tests/browser/workbench.spec.ts:5:1 › matched replay overlay refresh/failure/cancel/recovery preserves selection; stale and identity mismatch explicit (1.3s)
+  ✓  3 tests/browser/workbench.spec.ts:9:1 › keyboard selection, recorded disclosure, reduced-motion mobile reflow and local layout persistence (217ms)
+  ✘  4 tests/browser/workbench.spec.ts:10:1 › selected link capture drafts are occurrence-scoped, inert and include Lua settings (30.0s)
+
+
+  1) tests/browser/workbench.spec.ts:10:1 › selected link capture drafts are occurrence-scoped, inert and include Lua settings 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Capture endpoint', { exact: true })
+
+
+      11 |  await open(page);await page.getByRole('button',{name:'Inspect switch1 ethernet-1/3',exact:true}).click();await page.getByRole('button',{name:'Capture & TShark',exact:true}).click();
+      12 |  await page.getByLabel('PCAP storage filename',{exact:true}).fill('../private.pcap');await expect(page.getByRole('alert')).toContainText('no directory path');await page.getByLabel('PCAP storage filename',{exact:true}).fill('trial.pcap');await expect(page.getByRole('alert')).toHaveCount(0);
+    > 13 |  await page.getByLabel('Capture endpoint',{exact:true}).selectOption('1');await page.getByLabel('Capture filter (BPF)',{exact:true}).fill('udp');await page.getByLabel('TShark display filter',{exact:true}).fill('udp.port == 5000');await page.getByLabel('Include Lua settings').check();await page.getByLabel('Lua script reference').fill('reviewed.lua');await page.getByLabel('Lua script arguments').fill('<script>alert(1)</script>');await expect(page.getByRole('button',{name:'Start capture — unavailable'})).toBeDisabled();
+         |                                                         ^
+      14 |  await page.getByRole('button',{name:'Inspect switch1 ethernet-1/2',exact:true}).click();await expect(page.getByLabel('PCAP storage filename',{exact:true})).toHaveValue('');await page.getByRole('button',{name:'Inspect switch1 ethernet-1/3',exact:true}).click();await expect(page.getByLabel('PCAP storage filename',{exact:true})).toHaveValue('trial.pcap');await expect(page.getByLabel('Lua script arguments')).toHaveValue('<script>alert(1)</script>');
+      15 |  await page.screenshot({path:'artifacts/gui/GUI-1/capture-desktop.png',fullPage:true});await page.setViewportSize({width:390,height:844});await page.getByLabel('PCAP storage filename',{exact:true}).scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();await page.screenshot({path:'artifacts/gui/GUI-1/capture-mobile.png',fullPage:true});
+      16 |  await page.getByRole('button',{name:'Reset capture draft'}).click();await expect(page.getByLabel('PCAP storage filename',{exact:true})).toHaveValue('');await expect(page.getByLabel('Include Lua settings')).not.toBeChecked();
+        at /Users/rklinkhammer/workspace/containerlab-workspace/tests/browser/workbench.spec.ts:13:57
+
+    Error Context: test-results/workbench-selected-link-ca-94e40-rt-and-include-Lua-settings/error-context.md
+
+  1 failed
+    tests/browser/workbench.spec.ts:10:1 › selected link capture drafts are occurrence-scoped, inert and include Lua settings 
+  3 passed (32.3s)

@@ -1,0 +1,11 @@
+[WebServer] (node:97138) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:97139) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/four-radio.spec.ts:3:1 › four-radio actual declaration, inventory and explicitly enrolled runtime (2.6s)
+  ✓  2 tests/browser/four-radio.spec.ts:11:1 › four-radio stale, failure, identity conflict, recovery and cancellation keep selected occurrence (replay/mock) (1.4s)
+
+  2 passed (4.7s)

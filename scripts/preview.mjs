@@ -1,4 +1,5 @@
 // Loopback preview plus approved-bundle native load API; no uploads or operational routes.
+import {nodeLogsAPI,stopNodeLogs} from '../backend/node-logs.ts';
 import {observationAPI,stopObservations} from '../backend/observation.ts';
 import {nativeAPI} from '../backend/native-api.ts';
 import { createServer } from 'node:http';
@@ -12,6 +13,7 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=
 const server=createServer(async(req,res)=>{
   res.setHeader('Content-Security-Policy',csp);res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Cache-Control','no-store');res.setHeader('Referrer-Policy','no-referrer');
   if(await nativeAPI(req,res,port))return;
+  if(await nodeLogsAPI(req,res,port))return;
   if(await observationAPI(req,res,port))return;
   if(!['GET','HEAD'].includes(req.method)){res.writeHead(405).end();return;}
   try{
@@ -26,7 +28,7 @@ let stopping=false;
 async function shutdown(){
  if(stopping)return;stopping=true;
  server.close();server.closeAllConnections();
- await stopObservations();
+ await Promise.all([stopObservations(),stopNodeLogs()]);
 }
 process.on('SIGTERM',()=>void shutdown());
 process.on('SIGINT',()=>void shutdown());

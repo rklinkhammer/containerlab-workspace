@@ -481,5 +481,95 @@
     "source": "fixtures/bundles/CAPACITY-MAX/CAPACITY-MAX.clab.yml",
     "context": "Synthetic capacity qualification; qualified native kinds and immutable pins only",
     "bundleSha256": "8ee46e628dad347a7abab0eab07b9661929cbf9b8a9b2198902f1a9bd800d364"
+  },
+  {
+    "id": "FOUR-RADIO-SDR",
+    "entry": "four-radio.clab.yml",
+    "files": [
+      {
+        "path": "detector.json",
+        "sha256": "e209f6d64d2052ea5c7fef85a552c9f2b63f268b272a8a49ed27521c778cf06e"
+      },
+      {
+        "path": "four-radio.clab.yml",
+        "sha256": "e0908bfc60b753dcd7366176c63c8caa59bfc219d9701b2d030a6fda40f9dc01"
+      },
+      {
+        "path": "manifest.json",
+        "sha256": "ea66c58f565de6cd53416e889ba953d71489d6fc580d7996a9eb1feb7abf8c9f"
+      },
+      {
+        "path": "processor.json",
+        "sha256": "7aaa8146b1124f8beb0b6f41239d02adfd983bd2b6ee34157b9f8519d28c7a6d"
+      },
+      {
+        "path": "radio1.json",
+        "sha256": "7b20bef7f65a49a3a39f118fc81659f128cf25450382c253e329a37590c81dee"
+      },
+      {
+        "path": "radio2.json",
+        "sha256": "4dcdc95e643afaf1f02692b2b8bdc90bcec023223d3977e03941687a04eda543"
+      },
+      {
+        "path": "radio3.json",
+        "sha256": "49238f0cffb8ed7e9d70cce6e4b3f494543171d9b5341fd516bd7ebfda6552a7"
+      },
+      {
+        "path": "radio4.json",
+        "sha256": "5dffcb37f73716a6a1539ff4e5e05eeb78da65b0f9c973e7bcb31e2fe0798bd1"
+      },
+      {
+        "path": "srlinux.cli",
+        "sha256": "d645daeed713ab8d8db3416177440de0e8a5f965c23f18964bb10913ef13de57"
+      }
+    ],
+    "source": "../containerlab-vrt/generated/four-radio.clab.yml",
+    "context": "Four-radio SDR - unchanged approved bundle; network observation only; SDR health not assessed",
+    "dependencyReviews": [
+      {
+        "kind": "bind",
+        "referenceSha256": "e7b3d018e4f75e750ebdd96be6c75b7327a0e0b829f7a802b953e4fe81f284c6",
+        "label": "radio1 application configuration",
+        "bundlePath": "radio1.json"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "0655a6bcb69df579e836196fec1571a85a1cb9fe07417df5dd03fcd60fad3ec3",
+        "label": "radio2 application configuration",
+        "bundlePath": "radio2.json"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "803984f21dd5894bc850dfedbef3b023fa410d9d8d36a5f283285db12df8e606",
+        "label": "radio3 application configuration",
+        "bundlePath": "radio3.json"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "08bc705ad9f60bc31d76745382c68f5dfec732cc24774ee0c7372f9607c8485e",
+        "label": "radio4 application configuration",
+        "bundlePath": "radio4.json"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "a9a930998beb9d4692f3113c287161afac9d3bd28143b70852405ce45f61e74b",
+        "label": "processor application configuration",
+        "bundlePath": "processor.json"
+      },
+      {
+        "kind": "bind",
+        "referenceSha256": "8205456954895c67ce17a0cff99a74bcec1aefdbe4df8e7df706a01bd9de4dea",
+        "label": "detector application configuration",
+        "bundlePath": "detector.json"
+      },
+      {
+        "kind": "startup-config",
+        "referenceSha256": "f62f068c2b0a2e7208b295d6a416cf7a1cbef8cc0a30456ad657daf906b269a8",
+        "label": "SR Linux startup configuration",
+        "bundlePath": "srlinux.cli"
+      }
+    ],
+    "bundleSha256": "d40fe4909c81e2a500623877fb478754eb21a7892dc0a9d607c2881c1ece18af",
+    "displayName": "Four-radio SDR"
   }
 ]

@@ -1,0 +1,121 @@
+{
+  "application": {
+    "address": "10.79.0.14/24",
+    "interface": "eth1",
+    "mtu": 9000
+  },
+  "limits": {
+    "capture_bytes": 67108864,
+    "capture_seconds": 60,
+    "control_queue": 64,
+    "data_queue": 256,
+    "log_bytes": 8388608,
+    "memory_bytes_per_application": 67108864,
+    "retry_count": 8,
+    "status_connections": 4,
+    "status_request_bytes": 1024,
+    "status_response_bytes": 4096
+  },
+  "radios": [
+    {
+      "control": {
+        "host": "10.79.0.10",
+        "port": 18401
+      },
+      "id": "radio1",
+      "iq": {
+        "bind": "0.0.0.0",
+        "port": 18501
+      },
+      "settings": {
+        "bandwidth_hz": 800000,
+        "center_hz": 100000000,
+        "gain_db_q7": 0,
+        "sample_rate_hz": 1000000
+      },
+      "sid": 1,
+      "status": {
+        "host": "radio1",
+        "port": 18701
+      }
+    },
+    {
+      "control": {
+        "host": "10.79.0.11",
+        "port": 18402
+      },
+      "id": "radio2",
+      "iq": {
+        "bind": "0.0.0.0",
+        "port": 18502
+      },
+      "settings": {
+        "bandwidth_hz": 800000,
+        "center_hz": 100000000,
+        "gain_db_q7": 0,
+        "sample_rate_hz": 1000000
+      },
+      "sid": 2,
+      "status": {
+        "host": "radio2",
+        "port": 18702
+      }
+    },
+    {
+      "control": {
+        "host": "10.79.0.12",
+        "port": 18403
+      },
+      "id": "radio3",
+      "iq": {
+        "bind": "0.0.0.0",
+        "port": 18503
+      },
+      "settings": {
+        "bandwidth_hz": 800000,
+        "center_hz": 100000000,
+        "gain_db_q7": 0,
+        "sample_rate_hz": 1000000
+      },
+      "sid": 3,
+      "status": {
+        "host": "radio3",
+        "port": 18703
+      }
+    },
+    {
+      "control": {
+        "host": "10.79.0.13",
+        "port": 18404
+      },
+      "id": "radio4",
+      "iq": {
+        "bind": "0.0.0.0",
+        "port": 18504
+      },
+      "settings": {
+        "bandwidth_hz": 800000,
+        "center_hz": 100000000,
+        "gain_db_q7": 0,
+        "sample_rate_hz": 1000000
+      },
+      "sid": 4,
+      "status": {
+        "host": "radio4",
+        "port": 18704
+      }
+    }
+  ],
+  "role": "processor",
+  "schema": 1,
+  "spectrum": {
+    "destination": {
+      "host": "10.79.0.15",
+      "port": 18600
+    },
+    "fft_size": 2048,
+    "overlap_samples": 0,
+    "schema": 1,
+    "window": "rectangular"
+  }
+}

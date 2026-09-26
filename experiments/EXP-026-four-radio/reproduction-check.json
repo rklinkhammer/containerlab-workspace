@@ -1,0 +1,6 @@
+{
+  "refusePriorEvidenceBeforeVmCreation": "PASS",
+  "pythonCompilation": "PASS",
+  "newEvidenceDirectoryDefault": "session/evidence",
+  "postTrialHelperRuntimeRerun": false
+}

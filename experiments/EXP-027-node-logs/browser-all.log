@@ -1,0 +1,56 @@
+
+> containerlab-synthetic-preview@0.1.0 test:browser
+> playwright test
+
+
+Running 44 tests using 1 worker
+
+(node:26590) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -   1 tests/browser/capacity-faults.spec.ts:2:1 › maximum-size GUI retains historical evidence on actual injected collection failures
+  -   2 tests/browser/capacity.spec.ts:2:1 › capacity live refresh samples preserve occurrence selection and responsiveness
+  -   3 tests/browser/consolidation-faults.spec.ts:2:1 › maximum-size GUI retains historical evidence on actual injected collection failures
+  -   4 tests/browser/consolidation.spec.ts:2:1 › consolidated live refresh samples preserve occurrence selection and responsiveness
+  ✓   5 tests/browser/consolidation.spec.ts:14:1 › incompatible session explains fresh enrollment and recorded views remain available (mock) (269ms)
+  ✓   6 tests/browser/declared.spec.ts:2:1 › declared missing-bind topology renders with explicit unresolved dependencies (288ms)
+  ✓   7 tests/browser/declared.spec.ts:13:1 › declarations preserve single-ended, dangling, parallel and external occurrences (210ms)
+  ✓   8 tests/browser/declared.spec.ts:24:1 › specific errors and keyboard navigation work at narrow width (212ms)
+  ✓   9 tests/browser/declared.spec.ts:36:1 › declared labels render hostile text without creating HTML or requests (152ms)
+  -  10 tests/browser/four-radio.spec.ts:3:1 › four-radio actual declaration, inventory and explicitly enrolled runtime
+  ✓  11 tests/browser/four-radio.spec.ts:11:1 › four-radio stale, failure, identity conflict, recovery and cancellation keep selected occurrence (replay/mock) (1.4s)
+  -  12 tests/browser/interfaces.spec.ts:2:1 › actual endpoint inspector follows native operational down/up without claiming link health
+  ✓  13 tests/browser/interfaces.spec.ts:10:1 › endpoint absence and unresolved replacements retain declared links (transport mock) (386ms)
+  ✓  14 tests/browser/link-state.spec.ts:2:1 › administrative, carrier and operational facts render independently with provenance (transport mock) (320ms)
+  -  15 tests/browser/multi.spec.ts:2:1 › actual multiple endpoint occurrences, parallel selection and disconnected state
+  ✓  16 tests/browser/multi.spec.ts:11:1 › multi occurrence partial failures, hostile text, stale and superseded responses (mock) (1.8s)
+  -  17 tests/browser/node-logs-live.spec.ts:2:1 › fresh qualified runtime supplies node logs to approved inspector
+  ✓  18 tests/browser/node-logs.spec.ts:3:1 › logs load and follow safely; errors clear output, selection cancels and isolates, recovery works (1.4s)
+  -  19 tests/browser/observation.spec.ts:4:1 › actual runtime inspection retains declaration selection across stop and recovery
+  ✓  20 tests/browser/observation.spec.ts:22:1 › polling, failure, stale data, cancellation and recovery (transport control) (19.9s)
+  ✓  21 tests/browser/observation.spec.ts:32:1 › observation routes expose no mutation and reject foreign browser origin (17ms)
+  ✓  22 tests/browser/observation.spec.ts:33:1 › backend sequence reset accepts a newer timestamp without discarding current selection (310ms)
+  ✓  23 tests/browser/on-demand.spec.ts:2:1 › on-demand view clearly reports an unavailable worker without a session (246ms)
+  -  24 tests/browser/on-demand.spec.ts:7:1 › actual native load renders declarations and live bundle provenance
+  -  25 tests/browser/on-demand.spec.ts:17:1 › actual native schema and missing-template errors remain specific
+  ✓  26 tests/browser/on-demand.spec.ts:23:1 › local API rejects arbitrary bundle/path payloads and cross-origin execution (6ms)
+  ✓  27 tests/browser/on-demand.spec.ts:30:1 › UI cancellation discards stale responses (transport mock) (285ms)
+  -  28 tests/browser/on-demand.spec.ts:37:1 › expanded approved cases expose native objects and scoped dependency evidence
+  ✓  29 tests/browser/preview.spec.ts:2:1 › F1 graph, parallel occurrences and keyboard-accessible inspectors (284ms)
+  ✓  30 tests/browser/preview.spec.ts:16:1 › special endpoints preserve roles; duplicate occurrences remain rejected (252ms)
+  ✓  31 tests/browser/preview.spec.ts:21:1 › rejection and missing-input views never fabricate graph nodes (199ms)
+  ✓  32 tests/browser/preview.spec.ts:25:1 › hostile display text stays inert; CSP blocks inline scripts and network (200ms)
+  ✓  33 tests/browser/preview.spec.ts:36:1 › bounded long text has explicit truncation; over-limit graph rejected (227ms)
+  ✓  34 tests/browser/preview.spec.ts:41:1 › loopback static server denies mutation, source files and traversal (5ms)
+  ✓  35 tests/browser/preview.spec.ts:45:1 › narrow viewport exposes object list and inspector without page overflow (241ms)
+  ✓  36 tests/browser/preview.spec.ts:51:1 › recorded native single-ended link has no fabricated peer and keyboard inspector (253ms)
+  ✓  37 tests/browser/preview.spec.ts:59:1 › native preview preserves parallel links, aliases, source roles and rejected inputs (245ms)
+  ✓  38 tests/browser/preview.spec.ts:67:1 › recorded native evidence remains readable at narrow width (227ms)
+  -  39 tests/browser/profile.spec.ts:2:1 › actual SR Linux profile preserves declared alias and native name in inspectors
+  ✓  40 tests/browser/workbench.spec.ts:4:1 › lab chooser first; exact handles, synchronized table selection, search and safe offline runtime (363ms)
+  ✓  41 tests/browser/workbench.spec.ts:5:1 › matched replay overlay refresh/failure/cancel/recovery preserves selection; stale and identity mismatch explicit (1.3s)
+  ✓  42 tests/browser/workbench.spec.ts:9:1 › keyboard selection, recorded disclosure, reduced-motion mobile reflow and local layout persistence (218ms)
+  ✓  43 tests/browser/workbench.spec.ts:10:1 › selected link capture drafts are occurrence-scoped, inert and include Lua settings (558ms)
+  ✓  44 tests/browser/workbench.spec.ts:18:1 › node log and serial views preserve unknown capability and do not imply runtime access (346ms)
+
+  13 skipped
+  31 passed (33.1s)

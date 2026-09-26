@@ -1,3 +1,4 @@
+import {Workbench} from './workbench/Workbench';
 import React, { useState, useMemo } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ReactFlow, Background, Controls, Handle, Position, type NodeProps, type Node, type Edge } from '@xyflow/react';
@@ -87,4 +88,4 @@ function App(){
       <footer>Containerlab remains the topology authority.<span>{active==='runtime'?'Native + Linux observations · Read-only':active==='on-demand'?'Contract p1a/0.5 · On-demand native evidence':declared?'Contract p1a/0.3 · Declared, not resolved':native?'Contract p1a/0.2 · Recorded native evidence':'Contract p1a/0.1 · Synthetic expectations'}</span></footer>
     </main></div>;
 }
-createRoot(document.getElementById('root')!).render(<App/>);
+createRoot(document.getElementById('root')!).render(new URLSearchParams(location.search).get('view')==='evidence'?<App/>:<Workbench/>);

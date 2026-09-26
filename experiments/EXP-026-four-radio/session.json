@@ -1,0 +1,943 @@
+{
+  "sessionFormat": "observation-session/0.3",
+  "vm": "clab-load-20260925-192051-exp016",
+  "expiresAt": "2026-09-25T20:21:53.457950+00:00",
+  "createdFor": "runtime-observation-qualification",
+  "profile": "FOUR-RADIO-SDR",
+  "binding": {
+    "deploymentId": "2db27fc4382d2cba828710294ebe8c2a1af2f69d3cab3d1fa996166ea8e212f3",
+    "sourceSha256": "e0908bfc60b753dcd7366176c63c8caa59bfc219d9701b2d030a6fda40f9dc01",
+    "plan": {
+      "version": "enrollment/0.2",
+      "bundleId": "FOUR-RADIO-SDR",
+      "bundleSha256": "d40fe4909c81e2a500623877fb478754eb21a7892dc0a9d607c2881c1ece18af",
+      "sourceSha256": "e0908bfc60b753dcd7366176c63c8caa59bfc219d9701b2d030a6fda40f9dc01",
+      "nodes": [
+        {
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n0",
+          "node": "detector",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n1",
+          "node": "processor",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n2",
+          "node": "radio1",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n3",
+          "node": "radio2",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n4",
+          "node": "radio3",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n5",
+          "node": "radio4",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n6",
+          "node": "recorder",
+          "kind": "linux",
+          "supported": true
+        },
+        {
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+          "node": "switch1",
+          "kind": "nokia_srlinux",
+          "supported": true
+        }
+      ],
+      "links": [
+        {
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l0",
+          "occurrence": 0
+        },
+        {
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l1",
+          "occurrence": 1
+        },
+        {
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l2",
+          "occurrence": 2
+        },
+        {
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l3",
+          "occurrence": 3
+        },
+        {
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l4",
+          "occurrence": 4
+        },
+        {
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l5",
+          "occurrence": 5
+        },
+        {
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l6",
+          "occurrence": 6
+        }
+      ],
+      "endpoints": [
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l0:endpoint:0",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l0",
+          "position": 0,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+          "node": "switch1",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/1",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l0:endpoint:1",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l0",
+          "position": 1,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n2",
+          "node": "radio1",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l1:endpoint:0",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l1",
+          "position": 0,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+          "node": "switch1",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/2",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l1:endpoint:1",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l1",
+          "position": 1,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n3",
+          "node": "radio2",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l2:endpoint:0",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l2",
+          "position": 0,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+          "node": "switch1",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/3",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l2:endpoint:1",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l2",
+          "position": 1,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n4",
+          "node": "radio3",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l3:endpoint:0",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l3",
+          "position": 0,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+          "node": "switch1",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/4",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l3:endpoint:1",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l3",
+          "position": 1,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n5",
+          "node": "radio4",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l4:endpoint:0",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l4",
+          "position": 0,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+          "node": "switch1",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/5",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l4:endpoint:1",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l4",
+          "position": 1,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n1",
+          "node": "processor",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l5:endpoint:0",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l5",
+          "position": 0,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+          "node": "switch1",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/6",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l5:endpoint:1",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l5",
+          "position": 1,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n0",
+          "node": "detector",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l6:endpoint:0",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l6",
+          "position": 0,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+          "node": "switch1",
+          "kind": "nokia_srlinux",
+          "declaredInterface": "ethernet-1/7",
+          "mode": "native_alias",
+          "reason": "QUALIFIED_PROFILE"
+        },
+        {
+          "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l6:endpoint:1",
+          "linkId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l6",
+          "position": 1,
+          "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n6",
+          "node": "recorder",
+          "kind": "linux",
+          "declaredInterface": "eth1",
+          "mode": "literal",
+          "reason": "QUALIFIED_PROFILE"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n0",
+        "node": "detector",
+        "id": "7534a5dba5736d359a824cb422f41fa4ba98b0f22bdac3ac4d1a2f688ab740ed",
+        "namespace": "5ec112fe696e2aa1374c531f34ed8d2db35f73d7d672f637b4c932c49f7d91ad",
+        "endpoints": [
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l5:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 25,
+              "mac": "aa:c1:ab:92:42:53",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n1",
+        "node": "processor",
+        "id": "21161c4271af0e6420a279b2b7300f6db9ea8f2a512975ebd1092ed14f7979eb",
+        "namespace": "daa0600000a1742dc69552c52889250d4d6f26f69f13f8bc78ab6092f7e3a196",
+        "endpoints": [
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l4:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 21,
+              "mac": "aa:c1:ab:06:de:06",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n2",
+        "node": "radio1",
+        "id": "26f6042efc7e3e2972be5b9108116c20436166d7eff6afb8e716cd08b0870b90",
+        "namespace": "6b93c7a3475bd245d8c915799226fd466f11aa6ec826a3243c9d1888e2dd5db4",
+        "endpoints": [
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l0:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 28,
+              "mac": "aa:c1:ab:7d:ce:cb",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n3",
+        "node": "radio2",
+        "id": "b1743e58f30dc2d3da792d09649931b58a37f7297c12cdac95aa58bcd486723a",
+        "namespace": "86a33d10caf100bd57551edc869244ef3ab4dbdb681e998768eb7b24bab8d738",
+        "endpoints": [
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l1:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 31,
+              "mac": "aa:c1:ab:a2:6a:9f",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n4",
+        "node": "radio3",
+        "id": "503fe359f4b05be10bcab74eee73a78e4db1dd94b97b06ce07c298b1ac87a82c",
+        "namespace": "bffac5013d173cfedd3123a70c82a5e3d281587b38788a8aa73439896989b8b5",
+        "endpoints": [
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l2:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 23,
+              "mac": "aa:c1:ab:c3:1b:4e",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n5",
+        "node": "radio4",
+        "id": "720ea851bb4162641468c09c273d5ca1875e2a43104dba740c561f7f9d08fe42",
+        "namespace": "161ad72d8d4b13851c9400298cedf7010213e8ec4aceca04f7f583f1bec4928f",
+        "endpoints": [
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l3:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 27,
+              "mac": "aa:c1:ab:b5:52:60",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n6",
+        "node": "recorder",
+        "id": "46850aad8b9525aef7dd95e2963e583a8945e4fd3f9a41c25b846d30aa602392",
+        "namespace": "ed90a69ff7f190da456c65231216c09bd5868b956f6197f3257c714ec4fbce4e",
+        "endpoints": [
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l6:endpoint:1",
+            "item": {
+              "name": "eth1",
+              "alias": "",
+              "index": 34,
+              "mac": "aa:c1:ab:65:d4:47",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+        "node": "switch1",
+        "id": "ab74e47616e7736271a3cb1266854e9ae6b57f1d0c7aeba93231d6722aea2f2d",
+        "namespace": "db38b95e2101acfbf603f35864f0efc0037ac76f1e93bc2f843db289a1a328c6",
+        "endpoints": [
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l0:endpoint:0",
+            "item": {
+              "name": "e1-1",
+              "alias": "ethernet-1/1",
+              "index": 29,
+              "mac": "aa:c1:ab:aa:c6:14",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l1:endpoint:0",
+            "item": {
+              "name": "e1-2",
+              "alias": "ethernet-1/2",
+              "index": 32,
+              "mac": "aa:c1:ab:0c:da:42",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l2:endpoint:0",
+            "item": {
+              "name": "e1-3",
+              "alias": "ethernet-1/3",
+              "index": 22,
+              "mac": "aa:c1:ab:ee:62:67",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l3:endpoint:0",
+            "item": {
+              "name": "e1-4",
+              "alias": "ethernet-1/4",
+              "index": 26,
+              "mac": "aa:c1:ab:9c:56:ec",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l4:endpoint:0",
+            "item": {
+              "name": "e1-5",
+              "alias": "ethernet-1/5",
+              "index": 20,
+              "mac": "aa:c1:ab:51:57:55",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l5:endpoint:0",
+            "item": {
+              "name": "e1-6",
+              "alias": "ethernet-1/6",
+              "index": 24,
+              "mac": "aa:c1:ab:2d:2e:62",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          },
+          {
+            "endpointId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l6:endpoint:0",
+            "item": {
+              "name": "e1-7",
+              "alias": "ethernet-1/7",
+              "index": 33,
+              "mac": "aa:c1:ab:99:c5:22",
+              "type": "veth",
+              "operationalState": "up"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "graph": {
+    "contract": "p1a/0.5",
+    "profile": "native-approved-bundle-v2",
+    "revision": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741",
+    "status": "declarations_only",
+    "deployment": "NOT_RUN",
+    "operations": "disabled",
+    "provenance": {
+      "sourceId": "FOUR-RADIO-SDR",
+      "sourceSha256": "e0908bfc60b753dcd7366176c63c8caa59bfc219d9701b2d030a6fda40f9dc01",
+      "outcomeSha256": "a3e723b4bdaa0880c3becfd89c1780d7ffc6e1b10bd0f9eaa228b267903a62f0",
+      "nativeCommit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+      "evidence": "executed",
+      "fieldCoordinates": null,
+      "bundleId": "FOUR-RADIO-SDR",
+      "bundleSha256": "d40fe4909c81e2a500623877fb478754eb21a7892dc0a9d607c2881c1ece18af",
+      "entryFile": "four-radio.clab.yml",
+      "fileCount": 9,
+      "workerSha256": "5ddad4b3746ba97cd0168ba1ca7ed74a451ad0af047b05b6a236a05d46df5de1",
+      "jobId": "ac1d3e3ed4809cbe83baeeff43e4a962",
+      "completedAt": "2026-09-25T19:24:04.954Z",
+      "cleanup": "complete"
+    },
+    "nodes": [
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n0",
+        "name": "detector",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n1",
+        "name": "processor",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n2",
+        "name": "radio1",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n3",
+        "name": "radio2",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n4",
+        "name": "radio3",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n5",
+        "name": "radio4",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n6",
+        "name": "recorder",
+        "kind": "linux",
+        "kindState": "native_getter"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+        "name": "switch1",
+        "kind": "nokia_srlinux",
+        "kindState": "native_getter"
+      }
+    ],
+    "links": [
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l0",
+        "occurrence": 0,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+            "nodeLabel": "switch1",
+            "interface": "ethernet-1/1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n2",
+            "nodeLabel": "radio1",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l1",
+        "occurrence": 1,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+            "nodeLabel": "switch1",
+            "interface": "ethernet-1/2",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n3",
+            "nodeLabel": "radio2",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l2",
+        "occurrence": 2,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+            "nodeLabel": "switch1",
+            "interface": "ethernet-1/3",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n4",
+            "nodeLabel": "radio3",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l3",
+        "occurrence": 3,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+            "nodeLabel": "switch1",
+            "interface": "ethernet-1/4",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n5",
+            "nodeLabel": "radio4",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l4",
+        "occurrence": 4,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+            "nodeLabel": "switch1",
+            "interface": "ethernet-1/5",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n1",
+            "nodeLabel": "processor",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l5",
+        "occurrence": 5,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+            "nodeLabel": "switch1",
+            "interface": "ethernet-1/6",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n0",
+            "nodeLabel": "detector",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:l6",
+        "occurrence": 6,
+        "type": "veth",
+        "state": "declared",
+        "externalRole": "",
+        "endpoints": [
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+            "nodeLabel": "switch1",
+            "interface": "ethernet-1/7",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          },
+          {
+            "nodeId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n6",
+            "nodeLabel": "recorder",
+            "interface": "eth1",
+            "referenceState": "declared",
+            "interfaceState": "declared_unresolved_alias"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d0",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n0",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "detector application configuration",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "present_in_bundle",
+        "basis": "verified_bundle_inventory"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d1",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n0",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 2",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d2",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n1",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "processor application configuration",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "present_in_bundle",
+        "basis": "verified_bundle_inventory"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d3",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n1",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 4",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d4",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n2",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "radio1 application configuration",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "present_in_bundle",
+        "basis": "verified_bundle_inventory"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d5",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n2",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 6",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d6",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n3",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "radio2 application configuration",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "present_in_bundle",
+        "basis": "verified_bundle_inventory"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d7",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n3",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 8",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d8",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n4",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "radio3 application configuration",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "present_in_bundle",
+        "basis": "verified_bundle_inventory"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d9",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n4",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 10",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d10",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n5",
+        "ownerType": "node",
+        "kind": "bind",
+        "label": "radio4 application configuration",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "present_in_bundle",
+        "basis": "verified_bundle_inventory"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d11",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n5",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 12",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d12",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n6",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 13",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d13",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+        "ownerType": "node",
+        "kind": "image",
+        "label": "image reference 14",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "not_checked",
+        "basis": "not_checked"
+      },
+      {
+        "id": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:d14",
+        "ownerId": "897ed5af5cf17e688ebaaa776367f5dba171ba6ad0f40e3184f6cb0eef5e5741:n7",
+        "ownerType": "node",
+        "kind": "startup-config",
+        "label": "SR Linux startup configuration",
+        "state": "unresolved",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "availability": "present_in_bundle",
+        "basis": "verified_bundle_inventory"
+      }
+    ],
+    "dependencyInventory": "partial",
+    "fieldProvenance": "unresolved",
+    "diagnostics": [],
+    "limits": {
+      "nodes": 100,
+      "links": 200,
+      "dependencies": 1000,
+      "textBytes": 4096,
+      "responseBytes": 2097152
+    }
+  },
+  "nativeBinarySha256": "30e841ad0f443ad07f4c1189844f33447d31587b472b9062954bbeb65596b4d5",
+  "deployment": {
+    "version": "deployment/0.1",
+    "labName": "four-radio-sdr",
+    "sourceSha256": "e0908bfc60b753dcd7366176c63c8caa59bfc219d9701b2d030a6fda40f9dc01",
+    "containers": [
+      {
+        "node": "detector",
+        "kind": "linux",
+        "name": "clab-four-radio-sdr-detector",
+        "id": "7534a5dba5736d359a824cb422f41fa4ba98b0f22bdac3ac4d1a2f688ab740ed"
+      },
+      {
+        "node": "processor",
+        "kind": "linux",
+        "name": "clab-four-radio-sdr-processor",
+        "id": "21161c4271af0e6420a279b2b7300f6db9ea8f2a512975ebd1092ed14f7979eb"
+      },
+      {
+        "node": "radio1",
+        "kind": "linux",
+        "name": "clab-four-radio-sdr-radio1",
+        "id": "26f6042efc7e3e2972be5b9108116c20436166d7eff6afb8e716cd08b0870b90"
+      },
+      {
+        "node": "radio2",
+        "kind": "linux",
+        "name": "clab-four-radio-sdr-radio2",
+        "id": "b1743e58f30dc2d3da792d09649931b58a37f7297c12cdac95aa58bcd486723a"
+      },
+      {
+        "node": "radio3",
+        "kind": "linux",
+        "name": "clab-four-radio-sdr-radio3",
+        "id": "503fe359f4b05be10bcab74eee73a78e4db1dd94b97b06ce07c298b1ac87a82c"
+      },
+      {
+        "node": "radio4",
+        "kind": "linux",
+        "name": "clab-four-radio-sdr-radio4",
+        "id": "720ea851bb4162641468c09c273d5ca1875e2a43104dba740c561f7f9d08fe42"
+      },
+      {
+        "node": "recorder",
+        "kind": "linux",
+        "name": "clab-four-radio-sdr-recorder",
+        "id": "46850aad8b9525aef7dd95e2963e583a8945e4fd3f9a41c25b846d30aa602392"
+      },
+      {
+        "node": "switch1",
+        "kind": "nokia_srlinux",
+        "name": "clab-four-radio-sdr-switch1",
+        "id": "ab74e47616e7736271a3cb1266854e9ae6b57f1d0c7aeba93231d6722aea2f2d"
+      }
+    ]
+  }
+}

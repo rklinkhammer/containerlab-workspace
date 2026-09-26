@@ -1,0 +1,13 @@
+
+Running 6 tests using 1 worker
+
+(node:24601) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/node-logs.spec.ts:3:1 › logs load and follow safely; errors clear output, selection cancels and isolates, recovery works (1.5s)
+  ✓  2 tests/browser/workbench.spec.ts:4:1 › lab chooser first; exact handles, synchronized table selection, search and safe offline runtime (367ms)
+  ✓  3 tests/browser/workbench.spec.ts:5:1 › matched replay overlay refresh/failure/cancel/recovery preserves selection; stale and identity mismatch explicit (1.3s)
+  ✓  4 tests/browser/workbench.spec.ts:9:1 › keyboard selection, recorded disclosure, reduced-motion mobile reflow and local layout persistence (215ms)
+  ✓  5 tests/browser/workbench.spec.ts:10:1 › selected link capture drafts are occurrence-scoped, inert and include Lua settings (566ms)
+  ✓  6 tests/browser/workbench.spec.ts:18:1 › node log and serial views preserve unknown capability and do not imply runtime access (348ms)
+
+  6 passed (4.7s)

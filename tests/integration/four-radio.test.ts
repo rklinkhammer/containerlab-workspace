@@ -1,0 +1,8 @@
+import{test}from'node:test';import assert from'node:assert/strict';import{readFileSync,writeFileSync}from'node:fs';import{observe}from'../../backend/observation.ts';
+const wait=(n:number)=>new Promise(r=>setTimeout(r,n));
+test('explicit actual four-radio runtime, cancellation and recovery', {skip:!process.env.CLAB_FOUR_RADIO_TRIAL,timeout:60000},async()=>{
+ const s=JSON.parse(readFileSync(process.env.CLAB_OBSERVATION_SESSION!,'utf8'));assert.equal(s.profile,'FOUR-RADIO-SDR');const expected=JSON.parse(readFileSync('experiments/EXP-026-four-radio/expectations.json','utf8')),samples=[];
+ for(let i=0;i<20;i++){const start=Date.now(),snapshot=await observe();assert.equal(snapshot.contract,'observation/0.9');assert.equal(snapshot.nodes.length,8);assert.equal(snapshot.nodes.filter(n=>n.state==='running').length,8);assert.equal(snapshot.endpoints.length,14);for(const l of expected.links)for(const [position,e]of l.endpoints.entries()){const a=snapshot.endpoints.find(a=>a.linkId===s.binding.plan.links[l.occurrence].linkId&&a.position===position)!;assert.deepEqual([a.node,a.declaredInterface,a.observedInterface,a.nativeAlias,a.status],[e.node,e.declared,e.native,e.alias,'observed']);}samples.push({elapsedMs:Date.now()-start,snapshot});await wait(1100);}
+ const c=new AbortController(),pending=observe(c.signal);setTimeout(()=>c.abort(),10);await assert.rejects(()=>pending,/CANCELLED/);await wait(6500);const recovery=await observe();assert.equal(recovery.endpoints.filter(e=>e.status==='observed').length,14);
+ writeFileSync((process.env.CLAB_FOUR_RADIO_EVIDENCE??'experiments/EXP-026-four-radio')+'/runtime-results.json',JSON.stringify({samples,cancellation:'CANCELLED',recovery},null,2)+'\n');
+});

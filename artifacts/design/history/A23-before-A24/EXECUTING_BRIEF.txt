@@ -1,0 +1,1 @@
+User: continue with next. A23 handoff next scope: specify native serial-console capability discovery for exact enrolled nodes before adding transport. Task interpretation and acceptance: experiments/EXP-028-console-discovery/PLAN.md. No runtime operations in this discovery-design slice.

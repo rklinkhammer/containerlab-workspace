@@ -1,0 +1,3808 @@
+{
+  "projectHead": "842c538877e347ea67304f04eecd4e341afe8f08",
+  "projectStatus": "",
+  "vrtHead": "51853ba29703f51aceb2cfefe5a12a65a8e1110f",
+  "vrtStatus": "",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "adc5abb87b204f4c20934f1b5a0c5035b05aaf9ad591307a9f9936998680908e"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "b737fe3bec3d61f999e6b0692d823c771784251be4cd71e2939fcdfb29ca62a3"
+    },
+    {
+      "path": ".gitmodules",
+      "sha256": "93df51c2e7478f63ad27bfd646bb863f8e7342978be1b20bfc9f016677ad6110"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "b7535c0c0261eecae297c205c95efa89f2cb5221cce6c47c17ae6462d823534e"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "1c13fa71e07800fb529c7f8088d8a5cd97fe64eb3843cae43b6c3d7133007630"
+    },
+    {
+      "path": "IMPLEMEMTATION.md",
+      "sha256": "ad3fddd505b7eab57cdb1a8c9e4d3020168393c79bab8b5a51b8435b107cf935"
+    },
+    {
+      "path": "IMPLEMENTATION.md",
+      "sha256": "561416944afe75842ff42507a3f4004b40a957e681493bb7c795b1accde6032d"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1233852fa4706a3eb3416a8ad3d8f4b74e66c7b68d76fb75c3eaa7730561834f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "009653ee3d4a4cdd7d9dbb088c6a98ba77cc55c9bb96f5dcd1c45dbcc78792a5"
+    },
+    {
+      "path": "apps/detector.cpp",
+      "sha256": "d1a5e4fdd5901de83f8ec2c0556340fb0d42d3256f1f8595948b1e9b5272a339"
+    },
+    {
+      "path": "apps/processor.cpp",
+      "sha256": "40609d77e9d946a3cc9a340ec8f96c8c458ef7d5a50d2465dd228785fd4d9625"
+    },
+    {
+      "path": "apps/radio.cpp",
+      "sha256": "3c61ca016cd7cec37ac84964ca7161daee37e2b72ec18ddc04f557361f1cc7de"
+    },
+    {
+      "path": "apps/recorder.cpp",
+      "sha256": "4b0b1671a1558cd52930f3572eb284a9813838451dc2b6b84894d7d5e7cbda4a"
+    },
+    {
+      "path": "apps/udp_pipeline.cpp",
+      "sha256": "f1a49422d2c60696d737ffd706154ac9f821b6a1b9484b796e910dd1305fa54a"
+    },
+    {
+      "path": "apps/udp_pipeline.hpp",
+      "sha256": "d21da9f6d712e1ed0e73001923a54e7f5e7b9780075395cbe07010756c3979fc"
+    },
+    {
+      "path": "artifacts/environment/lima-clab-vrt-20260925-145115.yaml",
+      "sha256": "06e8f8a04af6e0de2b6616200229e1b7fa6338cdd4c88e9a56d0addce2aebf8a"
+    },
+    {
+      "path": "artifacts/review/REVIEW-20260925.md",
+      "sha256": "d1633c081a363f8f7a718d181f573a85f097cd71eb76bae86ed79f9f40f75b82"
+    },
+    {
+      "path": "artifacts/review/cleanup-20260925.log",
+      "sha256": "f1c3caefc06a3820d074644bd50df1e28623ea51fd2d97df7ee18a84423804db"
+    },
+    {
+      "path": "artifacts/review/ctest-macos-20260925.log",
+      "sha256": "0763ac2b4155a9d5f6d013f42912b6f64763aad61dd00b9c8bb98e3e0576dfbe"
+    },
+    {
+      "path": "artifacts/review/vm-cleanup-20260925.json",
+      "sha256": "661bc0e8ea1473f43564cb768669889478c505b873cf7de900ca351913f3ad3d"
+    },
+    {
+      "path": "config/lab.json",
+      "sha256": "a5abc3a94926c4ae022a492602b438f252fb20341f53fa7c6ad50c6b6c254a07"
+    },
+    {
+      "path": "container/DEPENDENCIES.md",
+      "sha256": "1cee7a5d95e85948c8312ad70b5feee3b341ace529f75485f9e94fa3a22eaee8"
+    },
+    {
+      "path": "container/dependencies.env",
+      "sha256": "981c252b4bcfc2583ceabef41555bc177ec299a6d4a4dee36063ab58769e86e2"
+    },
+    {
+      "path": "docs/MACOS.md",
+      "sha256": "e4b138147bea012a6375639bbd000ec9a466e563930985c1a4748db8b11bef9f"
+    },
+    {
+      "path": "include/sdr/processor_controller.hpp",
+      "sha256": "6f3597fa4f033b85bef6a0935d0d74459d81dbb7d58caa01993ccb67c03d0d48"
+    },
+    {
+      "path": "include/sdr/radio_services.hpp",
+      "sha256": "9cd631d0d8f242e19cefe3e91e82b48d74df19452e43ce0f81ee3e3813272931"
+    },
+    {
+      "path": "include/sdr/radio_transport.hpp",
+      "sha256": "301e654b3c945608ead7f03fcf708cd0efe56f22d7889c05302116f763b01806"
+    },
+    {
+      "path": "include/sdr/recorder.hpp",
+      "sha256": "9122f70c65af09219775b5137a10451260f26f54b831581e53873ba20aa59985"
+    },
+    {
+      "path": "include/sdr/soapy_virtual_device.hpp",
+      "sha256": "fd2f27c5b9a02ac506a9c5216c1bdac0dbfdcf33ad3c553aee7d85a1e7c4f387"
+    },
+    {
+      "path": "include/sdr/spectrum.hpp",
+      "sha256": "000124b0e7088efa8b5b1add70acf9a9a0f75e028844b926ebd8176022c3d1d5"
+    },
+    {
+      "path": "include/sdr/status.hpp",
+      "sha256": "54dd039b49fe924adea326f3fabcb2fa93eb520d8783890c4c4950dbca7d3a9e"
+    },
+    {
+      "path": "include/sdr/time.hpp",
+      "sha256": "def7b1d141d45bd0792ddc7b6396dd753c87336b9db5419c3c077881d4dea86f"
+    },
+    {
+      "path": "include/sdr/virtual_radio.hpp",
+      "sha256": "d60ec8cb7ca7e015234ae25558bdd0867e1243faeeda7b4d5cb7deab518818d0"
+    },
+    {
+      "path": "include/sdr/vrt_radio_adapter.hpp",
+      "sha256": "4087f6bdc89e3b0e3b791d558b794cc39629cdee1e623ddfb0d3e45e6bb1072d"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "sha256": "475992191448d37ffe397dd001f845e0eed353c292e2599f8e36c6f5b95b63cb"
+    },
+    {
+      "path": "scripts/build-image.sh",
+      "sha256": "d5baf7724ba44264b0f045565d823eb881393a9f4c0cbd1887e49fa8c15f68bc"
+    },
+    {
+      "path": "scripts/capture.sh",
+      "sha256": "7fdb0fb1e48150dd8e19c09333ae7ff7c89650ada6c51a551d2903862ee6c525"
+    },
+    {
+      "path": "scripts/deploy.sh",
+      "sha256": "1c642ae586278d5305b89e5063f9b0e5b61f5285dd122c908914568c575a33ee"
+    },
+    {
+      "path": "scripts/destroy.sh",
+      "sha256": "14211a01f1cd7b577a2d48a0a8d40a9742ffe2f59351ee31f1670a40647e4cee"
+    },
+    {
+      "path": "scripts/generate_config.py",
+      "sha256": "79ccf89da5d4036754c993dbbe50792a71e4f22879ad453c5e8acda5a0f3aa99"
+    },
+    {
+      "path": "scripts/inspect.sh",
+      "sha256": "63bfe9577f00c2932e91be721df34d65c4439bab23f2f68d1a20079d4a61dee5"
+    },
+    {
+      "path": "scripts/migrate_vrt_profile.py",
+      "sha256": "81e8f1c4ee064887e5cc01763f23621b046054f7eb6375cfe73f27a55081ef8e"
+    },
+    {
+      "path": "scripts/runtime-common.sh",
+      "sha256": "3959e4776a3a7691b6ee21d83a2b459c7c32a236a14dd69426b48b9037a8d63e"
+    },
+    {
+      "path": "scripts/status_probe.py",
+      "sha256": "3e778c6f99ce2f90d0ffb9863f842ffe4d290350b722dc0cc1d6716091e9a0ed"
+    },
+    {
+      "path": "src/processor_controller.cpp",
+      "sha256": "4523ef99ee30c7f7191623b64a663125c63ddd0221983333f7bb117c06fc08ee"
+    },
+    {
+      "path": "src/radio_services.cpp",
+      "sha256": "e5a86f7f7b6442b2290bb52d5d10183ba6a3397723fb61738c95249b3a2ff50c"
+    },
+    {
+      "path": "src/radio_transport.cpp",
+      "sha256": "344298ac9be6c2b817f61f912aed076390b3bbfb3203067de7a2bcf7c13ba068"
+    },
+    {
+      "path": "src/recorder.cpp",
+      "sha256": "91349ac12240871caec5919f8d66f60b2e0138a0c030d885c6f3ca0fa75a3c25"
+    },
+    {
+      "path": "src/soapy_virtual_device.cpp",
+      "sha256": "eb706b648dab9e57773168bdb46d03f213f946b671c9f96d9f3dff108f0164b1"
+    },
+    {
+      "path": "src/spectrum.cpp",
+      "sha256": "6aebf305ce3962713321500bc7657098cf506d31f1c4a2829f8c70cd2f4911b0"
+    },
+    {
+      "path": "src/status.cpp",
+      "sha256": "6896f9fe4e1290e2582e3f510d5391f001084ba848da6cd69bbcdd00922ad079"
+    },
+    {
+      "path": "src/virtual_radio.cpp",
+      "sha256": "3dae483b945cfb2338878eed3ed1b3888bf276592bca74c236173678c8211b9d"
+    },
+    {
+      "path": "src/vrt_radio_adapter.cpp",
+      "sha256": "4f7291e9dbbbb6a8265da583ccc3c900cfa2eee7aa0fc6672bf10c1f2cb71c6a"
+    },
+    {
+      "path": "tests/golden/p17-pre-rename-manifest.json",
+      "sha256": "23aa990935f4864162c0565e5014cc9e5e352cf51703f1fada3db815874962b7"
+    },
+    {
+      "path": "tests/golden/p17-pre-rename-vectors.txt",
+      "sha256": "2783c2def0d55eeba3d2c9ba185e892e2e37d8cdc0870a3276d8951b7102940a"
+    },
+    {
+      "path": "tests/p17_golden_vectors_tests.cpp",
+      "sha256": "d9d67f0d139aebb6924f6b2d6be597b40c55b638b9ff54039ce9adbc5bd3e080"
+    },
+    {
+      "path": "tests/processor_controller_tests.cpp",
+      "sha256": "3972b3c592d0fad32bc9bc3a881fafc112a1372cc36a0843aececae76395aebe"
+    },
+    {
+      "path": "tests/radio_services_tests.cpp",
+      "sha256": "ed06789749dcf75f0df5d56f3139a1342bdcc4e64eff4d388f8f45a8e6ce0ba0"
+    },
+    {
+      "path": "tests/radio_transport_tests.cpp",
+      "sha256": "868a6e133fe84dd69d0cbffac4ea3140f9d59b79eebc02fd45d10760bb83151f"
+    },
+    {
+      "path": "tests/recorder_tests.cpp",
+      "sha256": "9b1dea3ac33d5c1970ed506f43b4c470f733db2237d50bfa0282eeab392cf994"
+    },
+    {
+      "path": "tests/sdr_core_tests.cpp",
+      "sha256": "3941d4ce396666f06aabc312fd7957c5642da0bd272d8a1e237314dd7907bc44"
+    },
+    {
+      "path": "tests/soapy_virtual_device_tests.cpp",
+      "sha256": "16398b8a126494bfc113fcfe058af5096bfb3b0db569a8195810efed6411b128"
+    },
+    {
+      "path": "tests/status_tests.cpp",
+      "sha256": "a5b379bd435652277d17bdd9c327473462a25e9015eae6e3e6a891e8bc312408"
+    },
+    {
+      "path": "tests/test_generate_config.py",
+      "sha256": "bf9eed33610f2f974134840e4e57dd85382a138446fed8a5ff7787f20b081afd"
+    },
+    {
+      "path": "tests/udp_integration_tests.cpp",
+      "sha256": "deb475af3246ca4aba3109661df8ba1be71d6460651e3631df3a408e21a6acc3"
+    },
+    {
+      "path": "tests/udp_pipeline_tests.cpp",
+      "sha256": "6cf73a30aeac529d262a06c94a17f04193822e529108f1fac82b2ceb6a8bb8fc"
+    },
+    {
+      "path": "tests/vrt_radio_adapter_tests.cpp",
+      "sha256": "04e4b78f6bd1c1acf8e2f411c3e079f22074f06aab2b45a37de3bd1b8f3954b9"
+    },
+    {
+      "path": "tests/vrt_runtime_retention_tests.cpp",
+      "sha256": "2acbe5f64858e10a36fac148a8ab1467bd843f0d4b29aca489775b95e7bd8531"
+    },
+    {
+      "path": "tools/capture_p17_golden.cpp",
+      "sha256": "86ab5a76fbebf0530e985f45cb2bb7e1a6de90d9288580d024b169290d64e3e2"
+    },
+    {
+      "path": "third_party/vrt_framework/.github/workflows/build.yml",
+      "sha256": "74b76ec61c0d2707fcd610293e6f9596dde4dfe10ec1ecb8c5649a303e1205e5"
+    },
+    {
+      "path": "third_party/vrt_framework/.gitignore",
+      "sha256": "698518124d2615d7d68b496131d6fb716da753c6fe82f380118074fc673e4e31"
+    },
+    {
+      "path": "third_party/vrt_framework/CMakeLists.txt",
+      "sha256": "c3d490035cac88b7893d240056e5bd258011299490f89a2ba5145bdba0ccb82c"
+    },
+    {
+      "path": "third_party/vrt_framework/CMakePresets.json",
+      "sha256": "82c705437e91fcba155bb887d584ef478d827fed157772fff3d5d703b687a976"
+    },
+    {
+      "path": "third_party/vrt_framework/LICENSE",
+      "sha256": "78a2a3ebc6342b388d1c6c62f0bc8158d1c7ec633fdee78ec8b2b85f46fb2019"
+    },
+    {
+      "path": "third_party/vrt_framework/README.md",
+      "sha256": "4124079bce9049003eaca8579932bbaac5472e5ce6b4b94e4198641aae03d72e"
+    },
+    {
+      "path": "third_party/vrt_framework/VITA49.2_High_Performance_Framework_Architect_Prompt.md",
+      "sha256": "2c099f29b0187de444f6872d0b71f05b9d0ffe05a52962e36003e9c77b77dbed"
+    },
+    {
+      "path": "third_party/vrt_framework/adapters/posix_udp/CMakeLists.txt",
+      "sha256": "9ec899e5ec76018865ec1a2daf1465d51b42f60d89804ea7c754c37ce5fa1cf9"
+    },
+    {
+      "path": "third_party/vrt_framework/adapters/posix_udp/socket.cpp",
+      "sha256": "3f0b0ef6960c56e9e159018d09fef11f23f94330078e51ac9712b728a223f6bd"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/CMakeLists.txt",
+      "sha256": "7b247f5630f15108267e087d518639496f4beb63b0b3ad889ef9a63d98089e9b"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/allocation.cpp",
+      "sha256": "250e0678af3d37d1aa0c2f01d7d9d684b77df6305f03360dd6933aa7469812f2"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/allocation.hpp",
+      "sha256": "b643807d55a049d398775854247e449fb24ec3d304d4b45dcc3b4d95aa71290d"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/analyze.py",
+      "sha256": "042b10a8191725e594c985ad7bcefd77e506c979f95f8868f0ad94574e46b541"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/analyze_receiver.py",
+      "sha256": "ad8f412797791a6a36aa09c1ea3f027bdd3fd32cf56f6d27f6f2aa7b7aef1c12"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/capture.hpp",
+      "sha256": "398e4433e82e2abae74b49086eff3fe46b0aaf03584d509b52b5fa2955e85c83"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/capture_host.py",
+      "sha256": "7767811055cc5d4e6aaf7df8309ff19bb3f7db30d98af7ed2bc0bd5dbcc50bf1"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/main.cpp",
+      "sha256": "5b210fc84598fbed2840c00d8da7834df91befbb79d4c7b4e500bd5394d5f224"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/payload_source.hpp",
+      "sha256": "ffbbb8670c272e2725cc4085eb150e2f1fe38b25ff41f7e77d158ee17c4b6fb3"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/peer_capture.hpp",
+      "sha256": "9d2de2362a172b8d77085277c401a6b44669f0d8173bfa146ce06d4a58c481fd"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/receiver_cli.hpp",
+      "sha256": "99faea80379cae1a492f6804ba92d41836d15bc956a73e735123bf1b7524856e"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/receiver_core.hpp",
+      "sha256": "15eadfe825a7017be39c06d53eb0455141d1e6ec21661e1d9d462ef2bfa87221"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/receiver_main.cpp",
+      "sha256": "7590be742bb26d7ff9480973cef6cf67f6e31f2cdfeb4db54646b0a033b31f8e"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/replay_main.cpp",
+      "sha256": "964956c38c91ea0f0bf974eda24035bce87c58aec0f8384236fa120daf5b6c3a"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/replay_wire.hpp",
+      "sha256": "b08a3f170cb0c2f878d11e7a6084372427ae884148ab35585980bb2577b9a323"
+    },
+    {
+      "path": "third_party/vrt_framework/bench/run_receiver_replay.py",
+      "sha256": "4393b710032e559238025b9ee8d58f4a6a71c483b87b8a35dd207047f5f61c4f"
+    },
+    {
+      "path": "third_party/vrt_framework/cmake/cxx23_probe.cpp",
+      "sha256": "44713798e3207e4def280f92ea69665283fe84b076c2fde03cf67d29202e94d6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/architecture_prompt_review.md",
+      "sha256": "b733938f81c145e320480355e7bcc6655cf72c43d635dd93a9e621148bd60684"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/fixtures/check_architecture_fixtures.py",
+      "sha256": "f31bf599f5b4ce7cddf82f954b80d3de7e8b10cb018ee8f0aee7726b505c7cf4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/frequency_scan_example_implementation_prompt.md",
+      "sha256": "b23f867047aeccbe6c14a882fc97043c1f1f1f5b75ca5461f4d9e22be96cb4fc"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M0-integration.md",
+      "sha256": "b69b872a8758f6f7b731bd165864ab07407ec8306dd4873ef9c432f72ebef1af"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M1-integration.md",
+      "sha256": "f3caf8e8a10eceda8ac09fd8b4019694a9895358aab1dceac56a3b2353d47354"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M2-integration.md",
+      "sha256": "13d518ce4073d4d9265920cf613132a3bed953b65c2c8216f5218100760cfc6c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M3-integration.md",
+      "sha256": "2d7bfe7a980946d8d612d6febc4c3cb8640eaa20031b00318bccb13818ec4af8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M4-inputs.md",
+      "sha256": "e1ecc339a6e0510f798248682d83aecb3688add8422da3482df42d8564d010e8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M4-integration.md",
+      "sha256": "11695bac1e1b687b0a297a413bfbf992b70565a85ea0a54223a8f404830cd76c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M5-integration.md",
+      "sha256": "f64b528a86438de8b10fee236dec8ce67c5b918725d3a2fa19ca156153e77fc2"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M5-operational-scope.md",
+      "sha256": "f16a99ce3ec122140f82fb4a9b8d225492315b322e3015e6783621f270fa2ca7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/M5-operational-verification.md",
+      "sha256": "458a73be8dd86566eadd97a2e7b881c9f46181abff41eebb64f745a3ef5f881f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P00-implementation.md",
+      "sha256": "bbbb2aae99ff760607dfad6b7cdd67b2e8352c3a7ba8148c3901fe8eb2ac9c7c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P00-verification.md",
+      "sha256": "1ee5ad55de701f766f5f3d0ab35815229f958af365f06610e6181a8a6a8c8b0b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P01-implementation.md",
+      "sha256": "91bf37faa5bfed5fb05e3c7fe32de674fa1987d4de9f13dcd3658621c20eba42"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P01-verification.md",
+      "sha256": "f8a14b397e07162b526767851fab9f495bdf07ecdbc8e2355df97ff39b38e919"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P02-implementation.md",
+      "sha256": "7535513d07e766e70bec093a9107364f25ce19163e3f3afa776bc2fbaf5204ac"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P02-verification.md",
+      "sha256": "993d086d64b74cfdb3a067af7427d134fe9564e0fee31bfba9af7bea6dcabf9d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P03-implementation.md",
+      "sha256": "142a1c41b3b1c80785ae4eedf669508ef5b8861af4d188bc006d3da74cfd32e2"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P03-verification.md",
+      "sha256": "68dc63b84fd6631e9c35fc72561478ce4685e63b98927a24eee6313a3238e626"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P04-implementation.md",
+      "sha256": "953c1b0bba83aa2c5e711e3fd210fefa3e23de2357af47a246f5405ea1b4860b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P04-verification.md",
+      "sha256": "2189a13ea2f3589104cc3ceb4b955adbb32de115a833ee57d98138f95a0bbe99"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P05-implementation.md",
+      "sha256": "19c817266749d3c4a865a74f129d4b5217ef94058b186e9f7a58ab4aeeb822cc"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P05-verification.md",
+      "sha256": "8175f641135beb3ad5e5bf9d7c6d7ede06eb7c0be2017846d9900f12700079d6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P06-implementation.md",
+      "sha256": "4d7bd24875374ce0a68d50d551e9f754bfb13ca8ed43a6497ff5c527e9adaa05"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P06-outcomes-implementation.md",
+      "sha256": "a4aeee133b6a749bfccdfc372773553a32fa794ffff3d50cffe078b6ece44a6e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P06-verification.md",
+      "sha256": "efc5f3dc0de4c0cbbfdb7545eb1042ce108082757e9329169e2be5e0c53ea2a6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P07-controller-implementation.md",
+      "sha256": "7ae7baa59a25413496aa9de216b182c6363ef897370f769a46b474d5e5aa02ff"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P07-decision.md",
+      "sha256": "241a1f221e1887b9811ae19d1c8622437ff803c5a1a9dfb62d8b15b70acc26c9"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P07-implementation.md",
+      "sha256": "3100272d454c84bf911a230c61fa8487afff5e7f74b8d2b7dc01e262c35f4c47"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P07-verification.md",
+      "sha256": "8b505e91b519592cec60828efdba181969d2aa670c524e4bfe2c37bc992f6a71"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P08-implementation.md",
+      "sha256": "58fa12b1324100dffbbcbdfcb9582fd475ae71685afa8603c87d993ef8c388cd"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P08-verification.md",
+      "sha256": "3e242981de2535f1eb859e5755b28bdf531972565537a1d74e1466ae546e33db"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P09-implementation.md",
+      "sha256": "4eae559f767531355910c8418196de7dd2fd8e34c0e64e2253f721f263e70f5f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P09-verification.md",
+      "sha256": "901def885a427558a9358152c1735752608531701026115a83264ce105bad8cf"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P10-implementation.md",
+      "sha256": "1ec90dc7161eeddf168a26a6ef3755036a613ec64331f7e3e81a030083912929"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P10-lab-implementation.md",
+      "sha256": "9e8e3ecb0462913b45088ca944d045423751afc9c2ea48f73e3dd01432abfff3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P10-source-implementation.md",
+      "sha256": "fdd5fc862b9c4ee1c0948758b9560377fec68ef2bdad4fce17acc202fcc96702"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P10-verification.md",
+      "sha256": "117a433657d7ba1c89af68e03b9d239cb24b42a4874f16070dc0caf0496a504d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P11-implementation.md",
+      "sha256": "980bc94e40f1bfcbfb67b750eece5db81dc40d8077e533aed75485a7a6cf3f1b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P11-preparation.md",
+      "sha256": "08842950eaee053266bb519fc8ff7e9da9d0b665998295bd2ff764b1cd9ea041"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P11-transactions-implementation.md",
+      "sha256": "b116f03de2c2ffd4c3c253339dbb21f381fbce99e180fc3fce7302c5e6a729d3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P11-verification.md",
+      "sha256": "49fc0d79d4ff60603d4b8f745002c60616e5d8819f871b5730c942ac34b1dea4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P12-contracts.md",
+      "sha256": "7a3ffd292e1c0bf99a716066e25ec20803e6810b2a48c14b91fe8a65f030e3fc"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P12-implementation.md",
+      "sha256": "a3b2f938736a848b611b3c2508cb457cee838dc657251c9541833042019ea814"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P12-verification.md",
+      "sha256": "d298d3d3621425f52e8049a5a10fc6fe19c7e09f579d4897360572551c3c2274"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-capture-remediation.md",
+      "sha256": "c9138562a479eb519ca372f7597362ffa86e060770022c0d7ad80b6482b3a9ab"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-hooks-implementation.md",
+      "sha256": "a3cf6d8eb13c2811bcdb6d24d93ffee725d9eb1a5f649c3c1d4869c0b9faee8d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-implementation.md",
+      "sha256": "a9d7552e33c9d119e25ad7567197f024e91fb7b23cdcf9f3873b377fb8572e1f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-measurement-verification.md",
+      "sha256": "8d2e05a507b47e72e60df3e6176988dbfee3534e00b339f66a607e49b670cc7c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-payload-comparison-implementation.md",
+      "sha256": "1d4910460404edfa94ed6d55db6cba750faabe91149069f66ae878817fc7c206"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-payload-comparison.md",
+      "sha256": "a6474ef54a554e4388957fc87b393049ce025e7969b09f055c145aae3692f7dc"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-payload-verification.md",
+      "sha256": "966730d16289d923450ec42588abfac7d0043c6562304395f7920f5202b0a2f2"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-preparation.md",
+      "sha256": "032294c2acb5ccb89eed528e192e0896b5ac5e18a2a3fc89161967d410cbd81f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-receiver-analysis.md",
+      "sha256": "5451b71f649cefc4c55962fcc525946713325164f4bae74156c81ce7ccec1695"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-receiver-implementation.md",
+      "sha256": "1be8a7628e9109f9d9c1b0ab671ccb17c2d5915ab4773a3773a9dd3ebaf55983"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-receiver-performance-model.md",
+      "sha256": "8203b86d423711ba9faa3cf060ec9a59b233586a7533bd359e2668cfa5006922"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-receiver-validation.md",
+      "sha256": "8b9dc4e24c6f9604f33f5d5f63595d8c74f49faded9598867e5561b11ca5dde0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-receiver-verification.md",
+      "sha256": "3a364b446257a9c3ff97d79de225dfca4f0ce8d55a22998ac551f935140ea71f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-remediation-verification.md",
+      "sha256": "569ad5098d4f26133634cd2a89c75a6430bd5fdb21627ab39d3252bd989ae13d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-retention-remediation.md",
+      "sha256": "d184d4e944629a29b67be3e6b77067931b3d6f7da54b2fcafc46b115ae283101"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-runtime-remediation.md",
+      "sha256": "7ee504e8696f42e09464bcc5ad360799a512adc5155b1c46b984d96312555d3a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P13-verification.md",
+      "sha256": "9ba26b9b6c8e7762f314cb50062659536be94f756f80eb961a802f40931829e5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-array-cif-implementation.md",
+      "sha256": "d2c742a49a2a04c09f9f0e723674e8e6e2373098ee104f1450696d125fc0960f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-array-cif-verification.md",
+      "sha256": "413c4f408ac477837a9ae16612d5cf2100aa1150148dc6a771ee031735b30417"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif1-fixed-implementation.md",
+      "sha256": "82ff3893e15f189abf8da688ddd6ce5d721ce1e0ba7e08b941fedafc92514a66"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif1-fixed-verification.md",
+      "sha256": "d59d114c9817f410fe2c8551d1ecd18bc35300a4394d2ea2569d4e426d15cf06"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif1-structures-implementation.md",
+      "sha256": "f7cb049cd8362855c98e6905803f3a87437c28ba214f887d5ac171f2474e0c16"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif1-structures-verification.md",
+      "sha256": "f622e062966b5cc8ffac6d83cf26fb95a02541b2612f9b6cb5bdb686aa862a6c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif123-readiness.md",
+      "sha256": "b6b490ef35966a3784c17f2e100b0a7b28abda4d30bf2667998f1dce51894d3d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif2-implementation.md",
+      "sha256": "f4259bc31df83ce83cdee2642995a76373bc3a6e669c2828b309dc6f62334bc1"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif2-verification.md",
+      "sha256": "1604967981d3a95159baae952ae1e0a97151ffe78d10d8666f475de5238fc43c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif3-implementation.md",
+      "sha256": "143befd8ceead4d01b51d77b8b8ec8a8c6061b4775cf01e71eb5138adf6750a5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif3-verification.md",
+      "sha256": "b7f3ee9f66fbe0d1dc20c76bd02aa79c4c95fa90c6cd5a21ae1befa17430a238"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif7-contract-proposal.md",
+      "sha256": "4ec2043317a58cfb50e92f50c8c3ff83940920d8fbce3707c870499252bb1551"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif7-implementation.md",
+      "sha256": "438351446d058bc616d74952c5b730e5836c7aad26b9fac2cd75c404756dd3f3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-cif7-verification.md",
+      "sha256": "4e6261950e7c5a00d77f76ab0461a610ddf61acf8474566f2b2741007b64b19c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-coverage.md",
+      "sha256": "462242dbca8610df6549a0edeaee7de27c16ce02233627c49bcde3ec055ffde2"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-decisions.md",
+      "sha256": "62e8bddf5daf905fb20f02ba0cfcaeb2654651c1a0e6fa3f0245215aa2714fac"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-extensions-verification.md",
+      "sha256": "e6fee3555062999ca1c82574351298adeac950dfe5fd1e97a671c0c68e9bbbc7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-ieee-reference-readiness.md",
+      "sha256": "a79e148aa785a21eb8dbcbc46fc2a769b73f16fb32892d3dc03b0726d904c242"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-ieee-verification.md",
+      "sha256": "3166ec9c8aec6dd5879cb379e414367b8d7f163418688b2f211051e4d91418d6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-implementation.md",
+      "sha256": "76b90b5b8799cb907e624291f432b87fc92d85e94087f6e876a9664373ecc187"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-next-readiness.md",
+      "sha256": "90ff802cdd67df03c179dedaea6a3b4fa7a8e1c1127f99d6d42c8c20df1b033f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-numeric-verification.md",
+      "sha256": "6177e09aa9fd9c68d3f12c1c6b4a46c657e966df544909870f15f620aefa77b7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-raw-samples-verification.md",
+      "sha256": "0fff0b5fefd5592548f68d033695ef1996b7ce9e27b00a1542b4eca4e9886a76"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-remaining-contract-readiness.md",
+      "sha256": "34e26b22daf6ea3f33fb3e60bc536868082b8a456ab597f5842170d09cd32dd8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-sample-adapters-implementation.md",
+      "sha256": "bb24bbe94d65a4c3e59053b8a3f651b6cdead7be9d7f22007e5dac3debd7cb2f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-sample-descriptors-verification.md",
+      "sha256": "f829108eedb6828ef078409007065ffe989c77c0080d483bab1068a6cea08dad"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-sample-readiness.md",
+      "sha256": "cd70c7044889998d1d53a93d3cbb5068ad96d29f2544b9180f9c68379c2040ba"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-samples-extensions-implementation.md",
+      "sha256": "5b81931b49532b1e757d98b92fe0e2187ed95ce41a5d73f487c57f1b4073ae6b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-structured-implementation.md",
+      "sha256": "c470eebf45ec05fca72587e3c2b3a3a4554d7ddaf43c47cf51174c3bdcd10a69"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-structured-verification.md",
+      "sha256": "0a459fe82069b1db3895eb37ed714d6a014adf96f8015a3cd605f485502b9d8c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-temporal-contract-readiness.md",
+      "sha256": "ababa0d7fd2ac8cf7a2ac99f589d3292a520cefbefb1f750a6183537c0a6dce1"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P14-verification.md",
+      "sha256": "a8d52aa717d7e5a0400f52b3cfe50a899553c7fb4b0c737c613881c14002684f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P15-readiness.md",
+      "sha256": "8dae1436246c05245fe8d5012f7a99f684495876d6d6193c91002dbe17f0712d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P15-verification.md",
+      "sha256": "1edb590bbc5e717f4b7981dabc003513b8cb51a878599c4343126badaa6fa81a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P16-contract.md",
+      "sha256": "64b1852e7368dff552382c50f395191f435f8a5a3d0686111485bd21c886d4f6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P16-core-implementation.md",
+      "sha256": "16e3512c50830292564124c10b5896b573805da4e883ce418d4092c2bdea3350"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P16-coverage.md",
+      "sha256": "13d0dd64d51334fcf6ff1fb45f660fdd71e66ced42ec0777a17d4293f9b27cff"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P16-example-implementation.md",
+      "sha256": "d1419b7f62ea940e8112202d3692095a2c6bf977d6e5a6c01f18e01a4269a0c7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P16-integration.md",
+      "sha256": "c200572b650bce67b32a97000beb6701576ef9c1a0ea7dbff68e713c289ee658"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P16-status.md",
+      "sha256": "14cd964d7b074821b6381925f43a958e35a43ccd6eaf062dba4260d3fef4aab3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P16-udp-readiness.md",
+      "sha256": "f459be9e427b5336f9dfabb3ab95608a6b247e5073975298633523f7cc802a00"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P16-verification.md",
+      "sha256": "a4b467727516d0081456bca763f59cbbbcf8a443a5df05a19d12f5b63ea82383"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P17-graphx-profile.md",
+      "sha256": "2acbdebcb924c796cc65ef334f7c38906dfcc98adfeb75884209d1cd34b92ad8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/P17-sdr-profile.md",
+      "sha256": "3b9c0f62484f6b4e2fad9ec0f3f1e5bb6b444e25eb7595808c8cb5d4ffd94ab1"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M3/LastTest.log",
+      "sha256": "0d89d2f7c91760b591802a07e3ab097a19c9ce79eb018fb775123482b55fc2e3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M3/source.sha256",
+      "sha256": "ad48c8588f68186134cfc49b3ae62fbcef6c75f2daf98f6861e033ab50b8a979"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M4-preparation/host.json",
+      "sha256": "8760876105891c8e2ac82608d6a7995ea5466b3560c0fdf3c17a53b36f52290a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M4-remediation/LastTest.log",
+      "sha256": "5e7d4b231c05240e27dda1935abb6890dcf7e526e4666318b026cfe5b09951c6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M4-remediation/source.sha256",
+      "sha256": "cec82bb9749f278dc1094a273e5425939b983a3496218bfed7597bb43953a5a8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M4/LastTest.log",
+      "sha256": "983255202ab045a5e8cd610fa58bc8cd84e834167cc88507d19108c7d867dd80"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M4/source.sha256",
+      "sha256": "d3bdecc07fef2430b7fa652bc3882f37ac7ac49ac35135bddec44dbf6eddd496"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M5-operational-scope/commands-and-results.txt",
+      "sha256": "d9b253634da7e57ebbdcc89a8a2af619f13a1d87379078ff555722d7637710a0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M5-operational-scope/manifest-check.json",
+      "sha256": "b200701005876402813b41d4403f2a46774a6a507d750eeb29fcf9dfb093753a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M5-operational-scope/probe-source.txt",
+      "sha256": "28c3854e138562f8de701f8da8f2805a62ce009aa75dcda338af27c657091e7c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M5-operational/exclusion.cpp",
+      "sha256": "e86968ca6683f435dd29331aa2a6de8134984760871e031dffc3036f4c2ceca7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M5-operational/exclusion.log",
+      "sha256": "eddc21deccb8d7d9bbfa78368174ceb7da70a315223560a4d1d840c3b67c1a41"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M5-operational/manifest-check.txt",
+      "sha256": "7fee781e5526d2cfa6f90a0b2129db651e382449da6c0593e4c8780226d539b0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/M5-operational/targeted-release.log",
+      "sha256": "2f5517529ff13c8758902b9f2b108af943f4caaadb3f04c464620742a98b5fde"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-payload/LastTest.log",
+      "sha256": "4b0f5f2710a6f610d893dca444a6f14625f15d59e90ee430d5423586765232d5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-payload/comparison.json",
+      "sha256": "91affd0daa4cb36df75e3da3fae5311ff75259b43894cf829ead6e2176773d25"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-payload/source.sha256",
+      "sha256": "b400b6a6ce06a2eb14f69a8755d8ca15f54710d40c41d497e923b4cc3435b00a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/host.json",
+      "sha256": "d41607a915bb4361f74e9c708f20e0e724cd4b2ac8ea3b306b6fd36285bd3d6a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/index.json",
+      "sha256": "bfa31c0750d34c30fdf15308da190f9a22403fcabc9856a0ea0aed61fa000b08"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/manifest-recheck.json",
+      "sha256": "10e7ac62632f038a406b8b50c30d4da05c075824472760091ab4e3328eb622fb"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/manifest.json",
+      "sha256": "7f960620d596d59cb46bd64680eccbe4e444b17ffb4b9afe0ca74a5806e7c32a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/p13-receiver-verifier-manifest.txt",
+      "sha256": "3d579a0caf3859c1b97a2c89f2c3ff32c5ca7c3c62545ca3e8e8357311dd2661"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-1000000-trial-1-independent.json",
+      "sha256": "a06be2d81cca0a0490c0390552e93b11dffead8b83d9fe2f873e16db5d27fa45"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-1000000-trial-2-independent.json",
+      "sha256": "d9053c767b4539231c732c58b5af2f5b0ef62f84351f2f45c0c023ef7dbdbe61"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-2000000-trial-1-independent.json",
+      "sha256": "8de4c2c7da92ead1447ff7303c51c0da8f46a012a4442250a12d2126bec1b4eb"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-2000000-trial-2-independent.json",
+      "sha256": "62764bd97b33c55cb58bee494df599c938d7a965742d08d1d32bb486454382a6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-250000-trial-1-independent.json",
+      "sha256": "39855fd42f8139be04216fbc05381c07f2b41ed9791ca18cb1fb3ae25366eaa4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-250000-trial-2-independent.json",
+      "sha256": "6bb7473dd55a1f2b035b8b0b7234dab410bed0a18e38187a8bc35c6882020f25"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-4000000-trial-1-independent.json",
+      "sha256": "b7f9989eea2a9dc7d55d374bc5b19405a99c7a0cb5a9a83d6069f927efa95e51"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-4000000-trial-2-independent.json",
+      "sha256": "cb2fc9e697e3b8e123c3b8bb527cbbd8e1b2200899b1e2fc8d0f030ce572b9c4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-500000-trial-1-independent.json",
+      "sha256": "0a7b29da34a6f30215e96bd033a4e5b9c8ede9119ac96ab3009002cf6e141082"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/rate-500000-trial-2-independent.json",
+      "sha256": "28366c3c3758928a55542db14aeaafcc7e752d6cb6b374d727d197529c7b99ba"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/release-tests.log",
+      "sha256": "9cbb9c9a676c6f141d356a63f74e194d1d56180c11f46fb24586b8eda701c3fe"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/results.json",
+      "sha256": "42754cf0766e0451ca6ce409388ed830fefc8b12a0a0eed1aadf59944f24e00e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P13-receiver/sweep-execution.json",
+      "sha256": "ea79d0d7cddd839d1b703a87b8b3097b4c3eb3bf4a038f9e41a894c6d2a5e2e6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/LastTest-release.log",
+      "sha256": "3e0bd2a093df428b656d0405a456d968994981b3304b9afb747e21a9065049b9"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/build-asan-ubsan.log",
+      "sha256": "0ab3f2ef21415d7dcdf25d6dd9d1905372efd022630d41bf4b3c346fca42e3cd"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/build-release-provisional.log",
+      "sha256": "47b8c522712a81b13c76296c17dc0baadd9109f0b9ba08242a49a6360bd3bf1a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/build-release.log",
+      "sha256": "ba4047a867147808817dfaa456362014016b4395afb6684a75d3e859b53b26c8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/configure-release-provisional.log",
+      "sha256": "5a22cb37f939bc75c117ba49ddd17d01359421725c0bbf5bf740cb4602b4cd2a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/configure-release.log",
+      "sha256": "5a22cb37f939bc75c117ba49ddd17d01359421725c0bbf5bf740cb4602b4cd2a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/direct-release.txt",
+      "sha256": "e79165bc9b07e7864408863be9f9000f75047dd1f1b35ae0a5163e887a21e0a1"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/manifest.json",
+      "sha256": "5f2e2987fdb544b5dbb2ea8d84b6df65a170f36806254ebd88c6153ca57132eb"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/provisional-asan-stale-fixture.log",
+      "sha256": "950279e4a136e41f0cb423c7108667c1cdee8b7f88c8cfc3d722abcc498ad38c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/sizes.txt",
+      "sha256": "39b603d5fbfa4a3f26c7a95fc6cccd92bb8705703f799c74123721d315073989"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/source.sha256",
+      "sha256": "2f415bc8f25fd38e1fdfdc85474c2104e6d6f002a354b52caf5e33343db25e22"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/targeted-asan.log",
+      "sha256": "3cdb34d2d21e8bdb83e284a598a30e1bb9abff7f0132c5a3775cf098d4b50134"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/test-asan-ubsan.log",
+      "sha256": "c75a88dd2cdf399e6a765370cd9e0c02df39a4a7dea58f7bef74b6af8a7da4ea"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/test-release-provisional.log",
+      "sha256": "aa6f953ca66677aa0baf1a9bc6ca86d2348ef442935f831e125b69f6221714cf"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/test-release.log",
+      "sha256": "2270f21ccde0f692102343904410708293d6d1949dffa241cbaaa6786178ed7f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-fixed/verifier.sha256",
+      "sha256": "4742f361bf6df8fc929a53c2f647cd5edc4d59d398db0abf32cbb553fe8df73d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures-samples-before-native-view-fix/LastTest-udp-release.log",
+      "sha256": "98502234afc20566e14d58cd71328394dbe00fcc215a4b1be3aa1a2d2b4f0c89"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures-samples-before-native-view-fix/build-udp-release.log",
+      "sha256": "6ea02afef9f0ee5d6d26df9a4ab15815ca4ed663c05c959b48e83b07d494a223"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures-samples-before-native-view-fix/configure-udp-release.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures-samples-before-native-view-fix/freeze-udp-release.json",
+      "sha256": "885758c54985f6408472006de9dd25fac0cee35f6fd58850e444e1fbb464f00c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures-samples-before-native-view-fix/manifest-udp-release.json",
+      "sha256": "d344ec405a301cfe791e83d39373dfd9e163f8ae093ebcb75845ae2527d44299"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures-samples-before-native-view-fix/test-udp-release.log",
+      "sha256": "a2f0db0ca3a179e150348ec32873d329f93ccecfd2c263d6488842757c2dd55b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures/build-asan-ubsan-provisional.log",
+      "sha256": "60d9a55898924504aaa06e1833667aeef2e17eacc6f71d7ace763d3370c3f78c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures/configure-asan-ubsan-provisional.log",
+      "sha256": "cb991a27671afb82452dd2446851f81af4eecf0d902c3cfdaaf1879839c5e6c0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures/direct-optimized.log",
+      "sha256": "bef4716b43bbe53a3956b8f2df2ecb0c3dac7403fad1c1634f3ebfe173ded068"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures/native-view-reproducer.cpp",
+      "sha256": "39919e3f510e0e0c29806dbdf19463d7f25b0f4c41e82066013e538f7483a621"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures/native-view-ubsan-failure.log",
+      "sha256": "18a57a11cd32b75753935b8b412babb90bd7183f62e0722ff3dbb3161852546a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures/source-provisional.sha256",
+      "sha256": "17d6771a594a6c6ffb72b3f081e6e5d4b91486b40821a79fc1425910ffbd09f4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures/test-asan-ubsan-provisional.log",
+      "sha256": "f68c63e3c9561649098e79e7bfe6cdd85ba3cd4dad4bcc173eab14f0b5d9549b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif1-structures/verifier-provisional.sha256",
+      "sha256": "0db42f901179d8e4780049c36c11476a2951308bd97ebefc4b35e1fdc37822e4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/LastTest-release.log",
+      "sha256": "5aa92fb18484c6e7780280619931ab15b858d3505cc0ac4648149f72ead95688"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/build-asan-ubsan.log",
+      "sha256": "3d15e16fa12a7baad6d6b8b4d265b9a64e5d9abe17f4c4db350c0c0afdca2ac5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/build-release.log",
+      "sha256": "37a47a3f85f6f8f4b73210015eaa221db1a0cfd30c06ed4e6bfd1bf0ae3a479d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/configure-asan-ubsan.log",
+      "sha256": "cb991a27671afb82452dd2446851f81af4eecf0d902c3cfdaaf1879839c5e6c0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/configure-release.log",
+      "sha256": "5a22cb37f939bc75c117ba49ddd17d01359421725c0bbf5bf740cb4602b4cd2a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/manifest.json",
+      "sha256": "ec773babc063d8859a84c61e80d898554d6cc5eac45a00b7b0fe143e2850e40d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/sizes.txt",
+      "sha256": "5306b2dd1c195f606c2f2070d87f9acdb0a14cea6c203a31d8cf6fe6b7527c52"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/source.sha256",
+      "sha256": "f7fd38182015d2780397ecc8c6259d70d236184881370e95890d2c4499ce939d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/test-asan-ubsan.log",
+      "sha256": "bffe51e8ce1e387ec518a738272f410ed93791220e726a46956cd861a3d52ee6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/test-release.log",
+      "sha256": "2e3d6b76b5a18d83b582efc26e4a72d2d193c7bc30ff695ae38229576852d93b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif2/verifier.sha256",
+      "sha256": "029c1a012679cf302f615aae20fb1686d7cdeb3601b5474d479055f750930099"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/LastTest-release.log",
+      "sha256": "78e7537358c43c6419c68d78e19abe3d6e1acfb8d3db732b2c51ef353da51f44"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/build-asan-ubsan.log",
+      "sha256": "7a71509feeb2187decf6fee8d83a177c9c0cf9cce077b20c1c691055d1a5dab6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/build-release-before-added-binding-cases.log",
+      "sha256": "914cbe27ae7044c4ed79303f25de85fd3af0a6886c487561eaf4d22d8973af63"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/build-release.log",
+      "sha256": "68c4855ff15dbdbeb381235c63e3611c6c16c38f19dc23cc73dd97f51c54f147"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/configure-asan-ubsan.log",
+      "sha256": "cb991a27671afb82452dd2446851f81af4eecf0d902c3cfdaaf1879839c5e6c0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/configure-release.log",
+      "sha256": "5a22cb37f939bc75c117ba49ddd17d01359421725c0bbf5bf740cb4602b4cd2a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/manifest.json",
+      "sha256": "2735db3c4901c66b6e9333e1ce847d3b24f64b8b46a90d15171d56233fba0bf5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/rebuild-duration-asan-ubsan.log",
+      "sha256": "68c4855ff15dbdbeb381235c63e3611c6c16c38f19dc23cc73dd97f51c54f147"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/sizes.txt",
+      "sha256": "e8deb03b136fb37078fe2de5800204645135aca323a21653c992d60cd027a389"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/source.sha256",
+      "sha256": "28739e12448032933d4aaf8046aac7cfbc86519a367c78b1a69ed609329c68e4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/test-asan-ubsan-provisional.log",
+      "sha256": "4cf9581180fe2f2250301bc51bc7a8289edf84441d9a7568b09f6f25b936c804"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/test-asan-ubsan.log",
+      "sha256": "9a378c0bd2184b61fa11493b6d8008b40034e6808b9a393d1a8e815b5197457b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/test-release-before-added-binding-cases.log",
+      "sha256": "2978312e47d29a81cc15f8570d022495869043b489f98c76a259c1e2e9e94c07"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/test-release.log",
+      "sha256": "64a282b571173f5272d8451a031068b7fb3f2ed4cb31ee5bac5ff6da82345d74"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif3/verifier.sha256",
+      "sha256": "967427231712d4e135767fbc733d137ea4aec0d5a5b780d0302d8ccb32ca5982"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/LastTest-release.log",
+      "sha256": "4b6d6fd5ad7c280cd8c5abe9d2f06330a5ee53f8482f134bac1d6df414cb716c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/build-asan-ubsan.log",
+      "sha256": "6448ef7a7fc91b9f163e7c233c04ad55fa555a69189323bec55273e543d6c55c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/build-release.log",
+      "sha256": "d77be064abb920ae9c1e6c269648d182a851a56c84c8fe86bda624065ab066f3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/configure-asan-ubsan.log",
+      "sha256": "cb991a27671afb82452dd2446851f81af4eecf0d902c3cfdaaf1879839c5e6c0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/configure-release.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/manifest.json",
+      "sha256": "3f2ece0297c13f1fd28b157a4cc183fed6ebc9a9b2e2d27448c58d86d6c91fbb"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/sizes.txt",
+      "sha256": "db4573e2b3c2f73cf10f3b2cff5e9bae4b3f5a1ba4d73a9f28468cb672f20bfa"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/source.sha256",
+      "sha256": "31e4777d6497fdef688df468612eaa5565fea86d68cfe9b5bb48f5f74fd1ea0d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/test-asan-ubsan.log",
+      "sha256": "7b39b568ce9a8dfd66308cd33cc6d8334dec4f5ed542c11ff98429d7abdc0627"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/test-release.log",
+      "sha256": "b286288ee32e6b187d483d0f9dd947ed887e0a801cb1276d83afb27292d4e8db"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-cif7/verifier.sha256",
+      "sha256": "662b538b02fd0f9292de421b8defc22119426eb8138cd56057036d839fd0fe01"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-extensions/build-asan-ubsan.log",
+      "sha256": "f113f3810662462bdd9cfb35c78cd7f80fc7415daa1003e15d0457fb62095cac"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-extensions/configure-asan-ubsan.log",
+      "sha256": "76d010fddf6986758243c31c585d714230c9ab188808288efba563035cfef0cf"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-extensions/integrated-companion.sha256",
+      "sha256": "2d02fe9be8029939a21698d9b82cb0e0243c86b06505fc8d3ed0ce60ba26775e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-extensions/rebuild-unit-asan-ubsan.log",
+      "sha256": "c499b77d925dacd1c09006116c1367a5665df701937134520b8e36402bc54800"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-extensions/source-and-verifier.sha256",
+      "sha256": "ee791d425a9cfa411e9cc6475e3efd0af163052d3db3b387a8dca48b6e9976d3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-extensions/test-asan-ubsan-provisional.log",
+      "sha256": "94edcb2ea871623ed59cc6c0110ad051a465c599e7156733d62d0d799bc535f0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-extensions/test-asan-ubsan.log",
+      "sha256": "aa86aca04761601722801e00f87c0cfd53e2cb173606122f82ea81629645f796"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/LastTest-asan-ubsan.log",
+      "sha256": "ccfa51283764405e9b9ef313b1591a3cbd066c116ab190de350d87b026ee24dc"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/LastTest-udp-release.log",
+      "sha256": "b1f766599b71d73931979861566dd83f46f69c4197bb969084db1156298e67ac"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/build-asan-ubsan.log",
+      "sha256": "0754073fa9663e240602e32b9bb916aeb0788d8033f7146ed656fe5098848c96"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/build-udp-release.log",
+      "sha256": "e688ba7920399bb1007d8d5a731afb6a21256f6d418ca54f06d1ac59e174d760"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/configure-asan-ubsan.log",
+      "sha256": "cb991a27671afb82452dd2446851f81af4eecf0d902c3cfdaaf1879839c5e6c0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/configure-udp-release.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/freeze-udp-release.json",
+      "sha256": "885758c54985f6408472006de9dd25fac0cee35f6fd58850e444e1fbb464f00c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/manifest-udp-release.json",
+      "sha256": "a51ab41e36b09d0a1362de5e57b5725df676842f81c85d0f96c570aad6bf803c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/sizes.txt",
+      "sha256": "55e830b558fba9e6ef7d40ebf229c60b115237e9e126d1e920245afc3574b072"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/test-asan-ubsan.log",
+      "sha256": "1d92544c33f976d3db31e71f70490f958ff9e7d87d7a4f365e10efb9f5b9aa6a"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/test-udp-release.log",
+      "sha256": "f6847fad98f3a3dbec53f0262aa84d9693c4a960fa6f37776712462ecdec8c71"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-final-local/verifier-source.sha256",
+      "sha256": "57d8c346302064e0583e1d28329d60624a32d2c1a62a90d351d256e950116682"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-samples-extensions/LastTest-release.log",
+      "sha256": "4336ecec37f00bbb72ce5c239b514a21e07d6fcceb9dc8652a0a5148dd05516c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-samples-extensions/build-release-provisional.log",
+      "sha256": "6c942d40f9ea97dce4e8d3ec23ec2537d44eeacb64b978da88a9bcf1c4da8a17"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-samples-extensions/build-release.log",
+      "sha256": "c499b77d925dacd1c09006116c1367a5665df701937134520b8e36402bc54800"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-samples-extensions/configure-release.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-samples-extensions/manifest.json",
+      "sha256": "3500cf084799abc8bf79fc6e3da3198bad1e4a07541e2a496fc5a85c61cf43d8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-samples-extensions/test-release-provisional.log",
+      "sha256": "20005c794810cdd79d15b3e44f2eb2d82ed64527c96d89f2e4ffe1f92f496b1b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-samples-extensions/test-release.log",
+      "sha256": "714f51f79b88bbf8a0340b55b6956e91eed52590ce47c5c236a55e999631192e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-scalars/build-release-initial-failure.log",
+      "sha256": "8597f2cb3bf21b2a9fb63da67f2ae9bb1136d332a9c428b1ac42c9102bf3b2c1"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-scalars/build-release.log",
+      "sha256": "26bb1b5cf86bc6ec8ec3ea4fcbf2ff9d716b2e35f4f8f75c5223494de1470172"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-scalars/configure-release.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-scalars/manifest.json",
+      "sha256": "978f3d0e5373041c80296970ff992b232c32ad1f7bfb887f1b84682c7a51b119"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-scalars/test-release.log",
+      "sha256": "e01cff1b84b0b00a43971cf8cbb27256945e844d70929b887ca44337096d42dc"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-structured/build-release.log",
+      "sha256": "6ca03eb2f5efe2eda715ef5afccdbc98324d3e1c9aa405cdf99cd0ca0ee6b771"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-structured/configure-release.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-structured/manifest.json",
+      "sha256": "f263520554df0f4b399b93809571f105215ed8e4f2ac351fa1a7f08e54314f1b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14-structured/test-release.log",
+      "sha256": "994951eafc5bc0dbebe81e1c4834f81088ef58158f9f4a3144111259ad9a632e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14/scalar-full-asan.log",
+      "sha256": "5ea1a93e6ce374a2b55df51bc7801a4db4ccde89653da9952e91cb830d1c5c65"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14/scalar-targeted-asan.log",
+      "sha256": "077a4808e9dae9cad1df9d3b1ea02fe62c2f83607545fceeedd2f4d40a27e82b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14/structured-full-asan.log",
+      "sha256": "a254ece914275eb988d7e14ef4f34277df91ca4294377120994e1a17583714c7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14/structured-sizes.txt",
+      "sha256": "39b603d5fbfa4a3f26c7a95fc6cccd92bb8705703f799c74123721d315073989"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14/structured-source.sha256",
+      "sha256": "8f43a603199cb864c4cfa7efe55906f57d09e7ba4c070c38129d79acf0036200"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14/structured-targeted-asan.log",
+      "sha256": "f88a8f7392f5a2d7c4a9c92849a3a9f6ec4a49ebb45e1e06f209542df57bb169"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P14/structured-verifier.sha256",
+      "sha256": "877ba21a906e3b5439bde2f54c00f1634a92fa8c3e98930bb37efc66d17e35e3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-contract/approval-sources.json",
+      "sha256": "aacd03759745763f4dea746d5779e06e4065e8f51528d9df7a4790921e14eadf"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-contract/recovery-addendum.json",
+      "sha256": "4e67d67e6e9ec3b3c174fafe3c70358e797653d67636580c279ed3416b528978"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-final/build-final.log",
+      "sha256": "8c35b1682f73592d30612d7b0fabdb384fcfff35cb5a076cb48b85b1368aa794"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-final/build.log",
+      "sha256": "7e4f45f7f885b9dd2b9b07d4551c5909e594e9abc551edd8d4f388f95a0cc785"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-final/configure.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-final/source-manifest.json",
+      "sha256": "b7ccf1ae9e6e25f1cbf62c9dd414a253bc4e955b2c35724b38c6055685d2fcb7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-final/test.log",
+      "sha256": "7147e01522e6bb370e64b092a03cc502c74ed6e8c7e6e0083a893c08d1b9a8d4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-integration/build.log",
+      "sha256": "2ba813724393146f6d94dc31c60495ab02c96d896174b694e8629aa9382be37c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-integration/configure.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-integration/test.log",
+      "sha256": "f7577a2c969bf067efca976f590462724ccb4415b78953d0817f220dfc35f942"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/LastTest-asan.log",
+      "sha256": "0c2a6366a0ccaa9b592d001046df1faca9b139e1020cca9e444013a1a8e96544"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/build-asan.log",
+      "sha256": "8a8fd43cc5cc3978d430690e133be5b1afc504b8c8ee551ede174abf603ccfe5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/build.log",
+      "sha256": "c50ee546a4e18cf50215296c56f8dffeb51934094be20bebf5bd9c157875062e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/configure-asan.log",
+      "sha256": "76d010fddf6986758243c31c585d714230c9ab188808288efba563035cfef0cf"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/configure.log",
+      "sha256": "85591e7a3a2bd92f89c0647c9fa196b3983d3f7c7605be75e1e74654c4b67463"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/counter-direct-asan.log",
+      "sha256": "583ee7877d6be53c94109d1a38b67e03b8cf1fbb7692082037f23e36110d4439"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/deferred-direct-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/results.json",
+      "sha256": "af02395cd3d708a41724f2bd874640abb2e94a27f804d61aa2064ef5cd5da1ff"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/source-manifest.json",
+      "sha256": "2dbc4a1ab7de158ec5862af8f54461ed26dbb4ff7daaa11e79efd6d61ac65d0d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/source.json",
+      "sha256": "dbeabb17934a2ae56fb17aaf9c665b474448a369ccceec5b886bf8b68cf27cee"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/test-asan.log",
+      "sha256": "0c7e697b72c20f95e2a1094434ac79a5d54641855f4cede31679f9cbf5d9f818"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core-repaired/test.log",
+      "sha256": "184d6e351154fc6ef02f2f7a30cc41b446ce8d84ba12840b49c3ce1e04f7fd56"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/developer-results.json",
+      "sha256": "a93b5fe7b9e1b07fe90a536d2e4a30b6b149c927757bcd6a00ae990785b76892"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/size-commands.txt",
+      "sha256": "58d64b4da96d031d21f20c28600334119e1349ec5d43d1eab04bf85b088df2ed"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/size-probe-source.txt",
+      "sha256": "ce506f426849e6d1368a816942f70ebea529a9fdbbe2ea42ceafae19e3f53bdc"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/sizes-after-validation-evidence.txt",
+      "sha256": "15d9a486bebf96576771dc0e302f986c315245633d9db519aae784b8183550ca"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/sizes-before.txt",
+      "sha256": "91dfd0e6bfdabcdc0c8a62500dc739c3b38f1729520156a9695e7bdd5c0ba577"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/sizes-current.txt",
+      "sha256": "15d9a486bebf96576771dc0e302f986c315245633d9db519aae784b8183550ca"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/source-approved-core-before-named-cancel.sha256.json",
+      "sha256": "09ab1363d4aa225b3850115f311425600469f4468784bad1fd6bd2af863567d3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/source-before-validation-evidence.sha256.json",
+      "sha256": "ff87fdb913d51c0c8f0d99fd75830000292387cc3bd1ce92e87aaefbdb09f934"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/source-first-boundary-repair-rejected.sha256.json",
+      "sha256": "16505b811fc1fc24385061a6dacd43c08528bb10974ed25c192a4f331c1f2c51"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/source-initial-rejected.sha256.json",
+      "sha256": "3491cacfdb7e2ad76963be22ffe6a52fb7968e55cc570eef3be6e2d35384a711"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-core/source.sha256.json",
+      "sha256": "4631fb640ff0ff93011401a33b17eb9bcf3ed8c0ad85c80376acaa0e132a9981"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-core/build-asan.log",
+      "sha256": "f11200fab567a60903277530df7e56554a1df35c4261354d0122845c225886d1"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-core/configure-asan.log",
+      "sha256": "cb991a27671afb82452dd2446851f81af4eecf0d902c3cfdaaf1879839c5e6c0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-core/manifest-check.json",
+      "sha256": "8454867b453afa9898b6d4f46f3a47f751387f22902e422f36652e685ac8a3c5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-core/source.json",
+      "sha256": "0a325fa1cfba92518039f0585ede83e52524fb2865a3333e3aedab8fb1e6136b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-core/test-asan.log",
+      "sha256": "7a8c445385ae83f13a3b32ae5f21b0c05da6eecd426bddc63320bc71c05c1d1f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/LastTest-asan.log",
+      "sha256": "091cee7e89feb8e433ed79eb98b29b0125477fe1e845e97763a8343ad589408c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/build-asan-final.log",
+      "sha256": "8c35b1682f73592d30612d7b0fabdb384fcfff35cb5a076cb48b85b1368aa794"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/build-asan.log",
+      "sha256": "b219c0313ae7e9911964b1ad6b76c993be7e640641bc2aa75d4a29546dac65b6"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/configure-asan-final.log",
+      "sha256": "1f2dd5438d71a23294be2c9c60481c9a2478dce448420c335909bc020cd8d4e4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/configure-asan.log",
+      "sha256": "1f2dd5438d71a23294be2c9c60481c9a2478dce448420c335909bc020cd8d4e4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/process-combined/combined.log",
+      "sha256": "c408a2bda3eea97c3b4b862b55fa7d2c7e042243f5067e2dd7aa3052454da012"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/process-combined/continuous.log",
+      "sha256": "faf2da4832a698938c71f423ddc43a9d428c51af813fdf1aeaae56ac52adf591"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/process-combined/repeated.log",
+      "sha256": "1a7d2427f4b526db5ffc1b89c725768abe511574a4f4758717c5e3a70ff1868f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/process-remote/controllee.log",
+      "sha256": "68fd396e7fd250a2c7eacfc06574fe6f9f6eb78e8ed1715eee408bb69aa135f4"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/process-remote/controller.log",
+      "sha256": "33fce144d0e169a0868b1053758d617d9c213c67c4dfbbcbab5e089652aef15b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/process-timeout/timeout.log",
+      "sha256": "8f9e123aaa33b23e5c758cbe7179089539bfd4642f70b173e38753ffa4d1af50"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/results.json",
+      "sha256": "9c58ddf51e9a852b268272819793662e202f517e5b5c848e45a4206c6db07daf"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/source-before-process-lock.json",
+      "sha256": "16aef7b0a8f116e040e8085637e3c0beec35795656fe20d404e747fa97eef0f2"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/source.json",
+      "sha256": "ea9322116ffff1945cea5361b9e70f7a925a5538cadb90d509562620ca501392"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/test-asan.log",
+      "sha256": "27da1444511c08f916679e3cda042e5f66cf43c681b1927eb5910e2042e7d66e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final-integration/test-registration-change.json",
+      "sha256": "3b337e9d18d779aa43a446a7fcf18758ad1c92a831dff4096e748695e3d17c06"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/LastTest-release.log",
+      "sha256": "3f94688a094646c03fa41a68471bae6927d5d5f9bbbc96df50a9af4ec6ac6970"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/build-core-only-final.log",
+      "sha256": "8c35b1682f73592d30612d7b0fabdb384fcfff35cb5a076cb48b85b1368aa794"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/build-core-only.log",
+      "sha256": "dd2617af2d217b5159b1cfb60a08171de070321e18d8a82cce6a2200a7b457d0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/build-release-final.log",
+      "sha256": "a55706a6f63227598d479855f722a6ef75526fb55e24a117b3fb4c1576ef211e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/build-release.log",
+      "sha256": "18bd1d2872083082105d4811a3efd5290223fb65fbbc23bbbe4c011e34ea83ec"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/build-tsan.log",
+      "sha256": "9a6211b76e13babaf83480ad719960350ff8e406a268f9b5564867bb1271f655"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/configure-release-final.log",
+      "sha256": "5137756f60b7d3841064254f9f29b6d433b5512e201d52972eaf5e192edd6934"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/configure-release.log",
+      "sha256": "5137756f60b7d3841064254f9f29b6d433b5512e201d52972eaf5e192edd6934"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/core-only.json",
+      "sha256": "c1571cc2083e297b26295d10d6ccf218e168625086273819c8bd7d8e418e0632"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/documentation-closure.json",
+      "sha256": "f3369e1fe57d7962f9c95adecac72fed539fa130184671170f269ac39bfa72ee"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/process-remote-port-collision.log",
+      "sha256": "b0bc95a2d670112b5d127ebdd0d33d0e838c1967afd9a5581d6dceadbef2d9c3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/registration-change.json",
+      "sha256": "8d4a0a905e50f53748c520955f7ec54421e47ea4b7d73f9d39dc7facc9470eb2"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/results.json",
+      "sha256": "caeac0ea639a10d301c0cbe786b1769a3831da8c7feacde4bb284ed662634079"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/source-manifest-first.json",
+      "sha256": "9f9795283e1caac99390258c9fc63e01ea17679ed4a94f09437d22792bee9747"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/source-manifest.json",
+      "sha256": "3cef80eb1348d185804ff8e74d38be76a75be1f6d65d09193ae2a28b3b8bcc30"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/test-core-only.log",
+      "sha256": "aa5a81c7c45af269b582ebf6f5da224c6c84929d6f5201f1959f5dfee83f0e37"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/test-release-first.log",
+      "sha256": "b9d14eae2da06e35897574615f66884daa90ea117eeffbe00b5b23d9bf788151"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/test-release.log",
+      "sha256": "eaee900a63c304fdd8a26cbc83eb17d93de97d9cad57b209b5a9fc77aa803e3d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-final/test-tsan.log",
+      "sha256": "603f5331f4ecaaee306bebd9d897750ddad23911fecf8571be4da3cf840e5ab0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-helper/scene-asan.log",
+      "sha256": "fb8d1ece67bb2e3202c116d7ed9c0a8113b9507b224425100061476ba3804f44"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-helper/source.sha256",
+      "sha256": "9f58d53b60b2b6b543dcf3f0a73844504c09fcdd3c2f952bba726851bb1ff553"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-helper/sweep-asan.log",
+      "sha256": "53e7b934a38b36b5369d4123e6af839864483a559e63698fcc2db0e54de5dd99"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/direct-results.json",
+      "sha256": "67a9e2fea7c4829c3cb66426fc37b8f893b76ece41bb1dd9c6baf083c515361d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/endpoint-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/owned-budget-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/process-combined/combined.log",
+      "sha256": "ff24e100112e07187898c9ae9bb997fdce6acdf5f2c3e5b83289f649f8fe27a7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/process-combined/continuous.log",
+      "sha256": "c9c09b399bc34d70d4e2ca56c9197215a6059ecbec49bc661f18000c79104034"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/process-combined/repeated.log",
+      "sha256": "b8763964cad5143be25af1191726112749a0af2e29400a156d9d46473b3c4ff3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/process-remote/controllee.log",
+      "sha256": "780308bf093e2f709bba7b9eadd88667f5f39b865399c708beeaa2c0d287e56b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/process-remote/controller.log",
+      "sha256": "2ab0d564c62d47d0e6ddaaaee716749ae6579f5372c475f1f1b7e1fdf0cfe562"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/process-timeout/timeout.log",
+      "sha256": "7c01e196af43bdb107cc6255b517a7da7cdcad996caa4713384070bbd00af5dd"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/rejection-asan.log",
+      "sha256": "67ad471a6aaefde0cf3b1ca04e1360d1a43ab3e3aec5367d482fd6bb156cb28f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/rf-lifecycle-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/rf-lifecycle-initial-failure.log",
+      "sha256": "f9cde637e1c0b2164800e84a5b64193df6eed42fca2e0f46bff0e25aaffec385"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/scene-runtime-allocation-release.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/scene-runtime-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-integration/validation-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-kernel/kernel-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-kernel/results.json",
+      "sha256": "76a3f0edeb69fee6650b484c5bda9b62fd2a2cc8c8a13a9b677a350c860fac50"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-kernel/source.sha256",
+      "sha256": "93b20e8c83b9e1a11292eb48d6bd0b4cfc58689b4e199593ef06d539f7fc7fff"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-kernel/wire-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/budget-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/deferred-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/deferred-repair2-case0.log",
+      "sha256": "8de7a621c4798f2f43bb387b8aeb0094513cbaa0a2134bd8b682a2ac7e11731d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/deferred-repair2-case1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/deferred-repair2-case2.log",
+      "sha256": "ec0211d5f0d18f6f85b859957782cf2831e473bea1be31f3100963d756b51b98"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/deferred-repair2-case3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/deferred-repair2-case4.log",
+      "sha256": "19cef36c7c73ca6486e2d20947fa2fac86e974818ab69761fd6b87aa5a05a8b1"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/public-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/public-initial-failure.log",
+      "sha256": "74d781dd9dc7642829563bb1e2ef982bfc23cce714c5914ea62cfe666fa467ce"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-public/remote-asan.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-tsan/build.log",
+      "sha256": "93aaa75bb9620ed68d85b4df993f94689d10d3f0806ffb1cfef5183e56c207b3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-tsan/configure.log",
+      "sha256": "693da3b720a1ef31b58c8cf3da76e71e22a394b26afe03b677bb9c4fa56030c7"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P16-tsan/test.log",
+      "sha256": "21c3af4e6f597bfc78c031dc299e955532d99665dcc590c0c3bc6673592b64cd"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/linux-arm64-debug-build.log",
+      "sha256": "096b84854ac8e2efc87bf3210c686bf6d740d27a740b0156284a35ebb67872fe"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/linux-arm64-debug-test.log",
+      "sha256": "675e4b6e68a9c6cc14eb2a9fb2fc88f05157e27750aca005a3dcefb2f2f10927"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/linux-arm64-release-build.log",
+      "sha256": "645878591ad9a5996927325c543576abeaf9b74a499ba0741b9e9f15d2fd5b57"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/linux-arm64-release-test.log",
+      "sha256": "9c859be948ab88faeb51739f1d29d54768e07b256a1846f8c83bb880bab784a8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/macos-arm64-asan-ubsan-build.log",
+      "sha256": "9b916addf9706721351a1e6c5a4cb1edc8a979f367e592c851541f2155264eac"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/macos-arm64-asan-ubsan-test.log",
+      "sha256": "39dd66a7439c54c2899f5afc3e2158593400e89ec4232306a64a3988e3ce2c68"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/macos-arm64-debug-build.log",
+      "sha256": "71aec935a8d17f2af75f56cd113fa989a42e0d0bac030a746559535320d356d8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/macos-arm64-debug-test.log",
+      "sha256": "0de59056466486e6349ed299658d5ac66ea786783b50ca2eb3004531a1ea9d62"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/macos-arm64-release-build.log",
+      "sha256": "c071280c19c96c4b38ba46f7df9bd0120b35277c2ff3f806f38d45cfe7868fc0"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/macos-arm64-release-test.log",
+      "sha256": "d2a6796643374330c17356b18ed2abe7f0960905fc60de17783c340ee1a0895b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/macos-arm64-tsan-build.log",
+      "sha256": "fa1c3747fc23a6c11a9dffc6be20b8842bde2ba793bc7aed04628e79b4c0be32"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/macos-arm64-tsan-test.log",
+      "sha256": "9c358e7fb30e14c81e5b40718f897ad9f952756ee52d306a7b7bffff2b34d3ff"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/results.json",
+      "sha256": "f9ac7923a9df42667b61279ecd9ca1f2169d363bbb2017fbb65a2440e30947e1"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/source.json",
+      "sha256": "5b2c49fab0ddce842b3ac48f33ad58e3a6cbddf51acd0eda79db068243b4694f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/linux-arm64-debug-build.log.gz",
+      "sha256": "48be87d609ca8e2a7ffe82b9066fa1db21fd621acf80e380773e867c6bc85c53"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/linux-arm64-debug-test.log",
+      "sha256": "0e2fed862c5855236c37ced31cba09538518cee3a39846ee83cc680663db9d16"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/linux-arm64-release-build.log.gz",
+      "sha256": "8fd52f9362eba7bd6b635693360d5677a3ca56a8cc668e814a79cc28fbda6e84"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/linux-arm64-release-test.log",
+      "sha256": "b455d2cae403a0ce953a35ee8fab06d0c7db40d7628a35e10283cb63e946bde2"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/macos-arm64-asan-ubsan-build.log.gz",
+      "sha256": "bb5cb4b124e23e5f7e96a6d62b0bb2709b0a5a05e8a51538375f2b678c391f6d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/macos-arm64-asan-ubsan-test.log",
+      "sha256": "d3e3434584926ce2bf981cb81bb525672367a9c4d5c5fcdcbfc946b62cf3507f"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/macos-arm64-debug-build.log.gz",
+      "sha256": "bb754e412549b8983336ab41889164d7b90912413c31ced51354edf8a34b9d25"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/macos-arm64-debug-test.log",
+      "sha256": "8890589f7837342b67e755c12030a9d5f7b01d5b95246274acf5229c38f2bd1e"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/macos-arm64-release-build.log.gz",
+      "sha256": "ca180356f387b80647058e34f9f9f95d0d347f5ba698a69ccfc1ecdada00217d"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/macos-arm64-release-test.log",
+      "sha256": "95807f11d9076f85440a0a2ecb765e07a9229231d4eae446a2c945226fed1eb2"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/macos-arm64-tsan-build.log.gz",
+      "sha256": "720852e9d108a607f8b4e9ea90c03c3351cfb7cee50ea6c52c21044120214b13"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/macos-arm64-tsan-test.log",
+      "sha256": "3fa8fad8424d36c7d21380b46c5ecdab34771af551594a6e9178704a541b2b84"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/reproducer-delayed.log",
+      "sha256": "dea0ef9bdc34d0a6f64e8e82a07da2eb9073ddefabf9f0badea9f8043a58de85"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/reproducer-on-time.log",
+      "sha256": "fba304a10b2daacbd7f1d12b73e0473040146e087004f804b406c956fda84b88"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/results.json",
+      "sha256": "879f2c03a4a0d95a8027c0d05e724add0c9a25a06a7611ad37bbc8607248a889"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/start-epoch/source.json",
+      "sha256": "f656a0f6d37395506b94f7e568256c8af2a411c36f44547fea9c5ec9386196b3"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/artifacts/P17/tsan-before-clock-fix.log",
+      "sha256": "89905a73e99e10f63199e33d1ca7a086dc06c0c7a70b0177eb46817f6af09997"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/contracts.md",
+      "sha256": "0cbcc41b457ac7cf8631e0cb691c143e1dab90c9dad9980da45d1d633d489780"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/drafts/P07-blocked/README.md",
+      "sha256": "5f163657705ff8869f41b32339efecbea9d720a46c341a8852e31e5823a82aac"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/drafts/P07-blocked/backend.hpp.txt",
+      "sha256": "468a52192832bfec6436239f6734bb4848a7fd83996f5c2c9916a7fe9ca8508b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/drafts/P07-blocked/engine.hpp.txt",
+      "sha256": "bcbfa41f5f8540808a4990239b8d8a0aadd14958a275e33393502e3fb019c8a8"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/drafts/P07-blocked/retention.hpp.txt",
+      "sha256": "a2a361a48d168c845a538a315bb6c2581e3ce29d5242b4534e7cc4b4188e41e5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/graphx-migration-audit.md",
+      "sha256": "46ed9f9451081082f409cce87b9266105dafca05285e992b1b1bd0ce1f865de5"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/scenario-evidence.md",
+      "sha256": "9b5934879b4a243d1dc8952d5157549971904fc1f51b5ec0ff47e7317380589c"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/implementation/status.md",
+      "sha256": "0186f168be8dffb59516aacd28c52e45eba2afc400417451b9091a22fd0829fb"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/iq_generator_profile_proposal.md",
+      "sha256": "e815556a8d6482ac2e329240d74b49c7e7592b79882ca3bcbd65261b0287de57"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/vita49_architecture_fixtures.json",
+      "sha256": "1fe7974f23c378cdb5f4238795c2472c4d65205bae7b1d576c2684fb64c82f3b"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/vita49_framework_architecture.md",
+      "sha256": "3339d220a379c3f7c38d9540966c9849fa793f79d4263cb5fe15748e2c207846"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/vita49_implementation_plan.md",
+      "sha256": "9b86faa82f0041b761c12b3519610c2315f74e0f7465c7c07d98cbe50bab7430"
+    },
+    {
+      "path": "third_party/vrt_framework/docs/vita49_protocol_design.md",
+      "sha256": "d98e4a7d1ed4bba310efcb59f991877c5497c65afaeb5e998da34bcafd8d90c4"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/include/vita/codec/array_cif.hpp",
+      "sha256": "8de2137c2855acd1553bf317eac57b40fcc25438aa9430f46458dbb781860f72"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/include/vita/codec/layout.hpp",
+      "sha256": "71eede1eafbca3342da4d2640df506e500eb04979b0905c70a81f2ff544b70b6"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/layout-resolver.patch",
+      "sha256": "b4a1dd34ceeea576afb1cfc658e2c35f43e6bc2c0695faf443e2a7d2986c005c"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/manifest.sha256",
+      "sha256": "e8eb25838bdf0239f115d22fbdc4c366a30d88fb801f1d461c7e12c0586b0de1"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/report.md",
+      "sha256": "be1ccfc1ea6cf215f1551d561843577db9eeb9b06b04bf4cb25f19ef66275d6a"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/shadow-base.sha256",
+      "sha256": "ecdd2182fa7dd91a099355a0ad7a63c6ca4d92ebd869a70efcd9eed90fc66119"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/tests/array_cif.cpp",
+      "sha256": "ac775e4d9dfdafac151fd28c5f50bc41cfda6911c3595db2bb6b60a14f36e67a"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/verification/contract.cpp",
+      "sha256": "ecbae2d22635c493326cf5e1915245e3cd9782cfb4f0fd4e1d2df21b6320ce40"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-array-cif/verification/report.md",
+      "sha256": "c2600501ec7095c437ca7ed23203752a6c1c1c2ee1e9e427f84f5a330fcd1ed0"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-extensions/include/vita/codec/extensions.hpp",
+      "sha256": "6686b70e79498c218b3946652266b7e6ea71275aaec9093efbfe37a2dc1c4b82"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-extensions/manifest.sha256",
+      "sha256": "941126e96355d676539c812edfb217d27d632e586c49ede0b3f88c75889a27f4"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-extensions/report.md",
+      "sha256": "169d8abc5b40863bf87bbeebb013bf3a918994102a2d5c3949dd59353eef4003"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-extensions/tests/registry.cpp",
+      "sha256": "165060ecd30e97c0bfc871291793da2a6461a6e0b0777637f8e0d0c0f61e804c"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-extensions/verification/contract.cpp",
+      "sha256": "4ccd970740f9a81f31aced08f6c598329d6584318848d32f90193dc42f2ab60c"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-extensions/verification/manifest.sha256",
+      "sha256": "9690be0d870c4269b26daf891eb921adf5cdd235af2680ee3b5fc49622a732db"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-extensions/verification/report.md",
+      "sha256": "3ad0d018c59c7c2dff63b3d408e9c4b1f7db5720bf92d4b243fb4a76a6d96640"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-descriptors/include/vita/codec/sample_descriptors.hpp",
+      "sha256": "fe2135fcc877698d9e7dcfe99a418ec8ba761a08d85506cf4fe43fc3e513c730"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-descriptors/include/vita/codec/segmented_samples.hpp",
+      "sha256": "92290bd5e884343d9db2d47fb982d59df3806bebd791cf4a22aae7e69a3cd62d"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-descriptors/manifest.sha256",
+      "sha256": "bac206302ed48207bb45d6181d7bf8b5c9248a31dbc102014c008025fc3592e3"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-descriptors/report.md",
+      "sha256": "f080cbe5f44de9dda608b9ba6c685623eb870d673619eebebb4473bb8bf5ce45"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-descriptors/tests/descriptors.cpp",
+      "sha256": "124f86552995347eb0b51364205039ed06bc9c63580aa4ec069db523efcedfd5"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-descriptors/verification/contract.cpp",
+      "sha256": "dda4b93c36b95fcd5b4bffd1f0676217066ba0c3094701908c989fd8d10b0f86"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-descriptors/verification/independent.cpp",
+      "sha256": "f14daec615cb4a4ba8aeb7fbfa5a64b435d1bdc539bdad33f6385191d1372b67"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-descriptors/verification/report.md",
+      "sha256": "813363338f47cedbb4fab940c3a647ea2bab7240c450dd393b0ed08f71aa04e5"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-ieee/include/vita/codec/ieee_samples.hpp",
+      "sha256": "1288e659b6131ab10ba0a808f05544d9f4286de3a3e1a28e0a08dcff538faef9"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-ieee/manifest.sha256",
+      "sha256": "4cb8ba0dfe37bee25a457dfeb81cfe7fa0732af03d531cabaddbf1fbbaeea4d5"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-ieee/report.md",
+      "sha256": "def8ad254d1c244467a39433fc422ace47f557d02766a7380a3ebe2dff39c504"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-ieee/tests/ieee_samples.cpp",
+      "sha256": "4d4275a4c719d512fba5681815d6921c5a2c81d0af4d47ba13a9f36e10ad6173"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-ieee/tests/oracle.cpp",
+      "sha256": "78f269403c7647f6a8d56357964764abeef7c53563d2e1a6025c0a693c445805"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-ieee/tests/run_oracle.py",
+      "sha256": "1a841c04dfc1dd1b90c29ed7cff417047d467464d134b56308283492dc2d691e"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-ieee/verification/contract.cpp",
+      "sha256": "cbe46929492e78998deeb892038e2c89fea2c7b29112dfab551214d51b10e5c8"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-ieee/verification/report.md",
+      "sha256": "d8d2f358dc31a7419d0828b320faec88d1b62d7dbd1ab7e27fac26526fd3a1f0"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/include/vita/codec/numeric_samples.hpp",
+      "sha256": "359f28ff1edb2d0ea926604b020da6f7c9f1216c24561b047a8f46dfa9cc69a4"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/manifest.sha256",
+      "sha256": "830cca40f317bb1776c076a18744b24c44afc53d616a5eb5377b3da51c429a89"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/report.md",
+      "sha256": "36c4a44c61e28927c2d2ec527fe0a7e61e154c5a9913c327c43836679ce88b9d"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/tests/numeric_samples.cpp",
+      "sha256": "ad6e43d1a0fc0cde726ec7794c3438be32ea4590f51cec42e584ca14bf711e41"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/verification/boundaries.cpp",
+      "sha256": "f89c790967df9bcc379c4c351ca91ceca33445196321be0cff80b1d42c0986d5"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/verification/driver.cpp",
+      "sha256": "70d7b9f0a35f98051061aa4b0b853659d53a80ba18bf7fd7ccf90031403afbe3"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/verification/manifest.sha256",
+      "sha256": "abedd5a4bddf357556e2e68f2a75cc781f4686dcda452a24de1c8fc82b3a3ee6"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/verification/oracle-asan.json",
+      "sha256": "c4c2afa67a190d6ac239b4fd08340b3ca5d48c936318de1361bfbf1cada8854f"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/verification/oracle-optimized.json",
+      "sha256": "c4c2afa67a190d6ac239b4fd08340b3ca5d48c936318de1361bfbf1cada8854f"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/verification/oracle.py",
+      "sha256": "48ef6504bef1f8ff95437f247a9b669e2f464707feb95bbca42b0a0b16019207"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-sample-numeric/verification/report.md",
+      "sha256": "4492e6ccfc56a3f0c65ca162c2602baf7724ceddf51fa43d3a6d33abc967d1a7"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-samples/include/vita/codec/general_samples.hpp",
+      "sha256": "9017770d341547de041a93f11a47a2815cd65ee30bb558cace73429f0ce47597"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-samples/manifest.sha256",
+      "sha256": "719f3035478b6078d3fd8b7e2208642e70491ddff60b11f530c853c399377f8c"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-samples/report.md",
+      "sha256": "c9a88be425947610c3fddbaa33eb3874c284f3658beda2809065711d9feb0a54"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-samples/tests/raw_samples.cpp",
+      "sha256": "2212ec16a69ef3e5879be233f6a14aee11dbf483caf8058c3879dbcb8c786614"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-samples/verification/contract.cpp",
+      "sha256": "127a2af832f8ff9727a6821143c09a4815929469e30b7ed21a048b178fb54bc3"
+    },
+    {
+      "path": "third_party/vrt_framework/drafts/P14-samples/verification/report.md",
+      "sha256": "683e1241f3e697865401414bdef8e84a2c37ad8347d3c099dbfe24abf7e8fcf6"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/CMakeLists.txt",
+      "sha256": "98d33c44d444107ac54055a6664052a30ffccd9d4d44b0c1fa6be832337dda76"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/combined.cpp",
+      "sha256": "4a63cfea2086e9543814d0cc565acacf683368c4cdadf52f2156b5969578b086"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/controllee.cpp",
+      "sha256": "8c1aa7f302d8221c7679d02980a2bc6eae1aa973f9935e4be8768dde8cf5164b"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/controller.cpp",
+      "sha256": "e99bf34c050c3d2e7648bb09a5d37c3a5ea1829ea87565497b542ce4c02e4a81"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/CMakeLists.txt",
+      "sha256": "07ede835098378b0b2f503e0f8d8680a976518a6b3afc2b7df8218cbdc8e6a87"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/PORTING.md",
+      "sha256": "8e6445ae66269e1c3bbe3be3c2824a248c6be98559a8033ddf187091679bc319"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/README.md",
+      "sha256": "686d16accdb79b6b1c91bab77ed17544cd43a82b01aa9340aca837ae11c49b0e"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/application.hpp",
+      "sha256": "b7bfa9117b12f30500b441d6417e62a119981ba8a3dd74711906a2415e12712d"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/endpoint_options.hpp",
+      "sha256": "00a25ac3a98c5473f0ce6fb9dd620da2a13ee3753eeda74f94b6692c9d1f1a81"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/main.cpp",
+      "sha256": "144f55a154b3d032290f9e7dba37e6b7184c80a3caffa7644974d8d4f7b88b57"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/options.hpp",
+      "sha256": "156fc4a464987f7f0d9c686bd020817a6d4dd552bfbe0b8404acf18e345463c7"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/run_pair.py",
+      "sha256": "9d0706785f0ace8102ff8aac4ea6c2a0b9019290f8980a2475b2d5d6311ae658"
+    },
+    {
+      "path": "third_party/vrt_framework/examples/frequency_scan/virtual_tuner.hpp",
+      "sha256": "5fc26107943bc148160967f361918e04734faa4b89269d1afc8287e11da7ebab"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/CMakeLists.txt",
+      "sha256": "c1a99fff5997f3ef875edc8a6052258668ce4e94e7c020cfb06068c194c17d9b"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/P14-generic-capacity-report.md",
+      "sha256": "8d35ff51d56cbbdf11bb8ab61214ede4d9ac392641f259c1ad4f8b2f1751551a"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/P14-generic-capacity.sha256",
+      "sha256": "b78cf54233f5038a24310cd5e3fe042a9805b08fabe9dd7616092a6423d379cc"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/capacity.cpp",
+      "sha256": "d330b5872406f6336ddbc0f557e8a7b824b7468e08c19dc2a6bfb6c5e504ae7f"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/SHA256SUMS",
+      "sha256": "e7d0bda9493e61b865b98744fd538f45b1de3f2a8629de26d5db5e5e00fdb8fd"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/ack.bin",
+      "sha256": "fe561f0f77fea248868d111fbf3e3f1abc1c8adea20f577ec5e14f75616dce58"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/all_cif.bin",
+      "sha256": "8f549ca9e4622c1bba5b97d0eca32a4deba3cc362a644df1c27cc518269628a5"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/cancel.bin",
+      "sha256": "8cedc0bca55c1283af9039a1c2217a8492f2880d6b983254ccae7a9b34406d68"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/cif7.bin",
+      "sha256": "5505678d6e663ca210ef9933a0c62a8426a6caf56366002a303284dc64492d4f"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/data.bin",
+      "sha256": "568f99afb8082b1fc73c1fcc4ea39d1b6b20fa45bc55ad40f94cca8b7918412e"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/empty.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/execute.bin",
+      "sha256": "5e0f1594bd41d9db66e87a5580dcfad3c1ee20e7803c89ee1e189f03eed19a2b"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/oversized.bin",
+      "sha256": "4d6b6d37624c963719a387f80c4b9cf3867e0b8144fd074d0accd02cd5c750da"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/query.bin",
+      "sha256": "0863c2583e11e2c4e3170e0b1b5e6c60d0066db8a1dc69cfa2e2f47838c418c0"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/short.bin",
+      "sha256": "d83d4cfbe8859bed247dfcee0d30aac95203bbbcd72586b0ffbfe101df74b00d"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/unsupported_context.bin",
+      "sha256": "ebc5c89cde0b009729ee3cde30a66d33ec3076d257eba08b0086c44535ad58d2"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/uuid_truncated.bin",
+      "sha256": "33f6710b4065ea0ca841949c4d5e487d821301e24e536c20859c6c54b08eb590"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/wide_context.bin",
+      "sha256": "11ac231e94fbc44aea9868e78388a454a649f5ca2bc57abe111d2c5ef7bae39a"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/corpus/wide_query_attrs.bin",
+      "sha256": "456e9881435253248f2e63d7e33acd81db0ac51fc4ed537fef926859e1240f5c"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/libfuzzer.cpp",
+      "sha256": "8041a102494f85da837ff18e8797cef495274d3135af5d3f5e90e499b078e1cd"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/packet_target.hpp",
+      "sha256": "12528eda4c679c45f527071d0de94fdbbc7de8cc5da2a9bc4a1a864f569ebbe4"
+    },
+    {
+      "path": "third_party/vrt_framework/fuzz/replay.cpp",
+      "sha256": "3e762994f87010f2c8f7c4a33a619ddc3816244f30023ff39bddb27d6dad8952"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/adapters/loopback/loopback.hpp",
+      "sha256": "e3725c5102f0a7ae0f056fb93fd679acd35dab144c890acbfab62df827088ffc"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/adapters/posix_udp/factory.hpp",
+      "sha256": "84233551a819e37490dbf20d08f6879ff38fdc4f045b29fc0811714182a84599"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/adapters/posix_udp/socket.hpp",
+      "sha256": "8a51f36db007513c9f41da8a4088c46c43cb786d0a3719c90fb18c90c9f1e0b4"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/adapters/posix_udp/udp.hpp",
+      "sha256": "634fb5490a07ab465c393197a5664cf278a174d54f5d559cb728062c91832840"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/array_cif.hpp",
+      "sha256": "8de2137c2855acd1553bf317eac57b40fcc25438aa9430f46458dbb781860f72"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/cif1_structured.hpp",
+      "sha256": "13abc039152a14c17ee64824018dd1bf97bb0f44d07cd32200574069c2e41f7a"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/extensions.hpp",
+      "sha256": "6686b70e79498c218b3946652266b7e6ea71275aaec9093efbfe37a2dc1c4b82"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/general_samples.hpp",
+      "sha256": "9017770d341547de041a93f11a47a2815cd65ee30bb558cace73429f0ce47597"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/ieee_samples.hpp",
+      "sha256": "1288e659b6131ab10ba0a808f05544d9f4286de3a3e1a28e0a08dcff538faef9"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/layout.hpp",
+      "sha256": "71eede1eafbca3342da4d2640df506e500eb04979b0905c70a81f2ff544b70b6"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/numeric_samples.hpp",
+      "sha256": "359f28ff1edb2d0ea926604b020da6f7c9f1216c24561b047a8f46dfa9cc69a4"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/packet.hpp",
+      "sha256": "3c1bf82ac4e24b7366d300abb287494420350bf49c22bfb6e7a682f8e5cb522f"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/prologue.hpp",
+      "sha256": "9f84b53e42b28ee21303541141a0bb4dafa63101cb1f2c12ae145b4b3c9d5e13"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/sample_descriptors.hpp",
+      "sha256": "fe2135fcc877698d9e7dcfe99a418ec8ba761a08d85506cf4fe43fc3e513c730"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/samples.hpp",
+      "sha256": "3db37f96f7f61603aaa6f909959172adaa3c7a583d1fb5f3da021ffbf3f80298"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/scalar.hpp",
+      "sha256": "f2781c343bccad479fedf387a34fc30eda32a11baef57805b1052f276e002e5f"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/segmented_samples.hpp",
+      "sha256": "92290bd5e884343d9db2d47fb982d59df3806bebd791cf4a22aae7e69a3cd62d"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/structured.hpp",
+      "sha256": "3562fb66f1095ee7a33a89ec3f42ba191f1ab60f20b21a39efb117ac8383c413"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/codec/wire.hpp",
+      "sha256": "3289e63b481e774b444132e57a5bb9a7ee9bfe442180ac53cc625d587772a646"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/core/bytes.hpp",
+      "sha256": "ed9510455f242e53a3f0f9316890fdea1de5a4f8cd7f9dfeb41e28bed9d77277"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/core/capacity_policy.hpp",
+      "sha256": "c7090fadba63f24786de0de12c2cda91c0069124db1b7b934949ee88a5c530eb"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/core/error.hpp",
+      "sha256": "54719931c279e0032b93af83fd09de349a398550967db32fb6d77698bd91af74"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/core/fixed_vector.hpp",
+      "sha256": "9add4a941546a64ae088f55985554e74a886221c3501e23d94a1b088b91a2eaf"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/core/version.hpp",
+      "sha256": "7d0a8c6896e0eb4d76d233b021cdd34731282ced6882a580e907c58a09636ab9"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/fields/arena.hpp",
+      "sha256": "bc5fe3ae55e50508fbe695bf1cc1ffc194cf755243a3877a5064084d15fb72c4"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/fields/cif1.hpp",
+      "sha256": "9dec442873f27e422251eb5ed8a708bbbc1351defc539493178a16f7d091a253"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/fields/cif1_structured.hpp",
+      "sha256": "70b7713a069b0b72a4385568b58ad6b09db686071db0b558c41cdb38678e5438"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/fields/cif2.hpp",
+      "sha256": "113e028afeab07abc040dad5bd03c6ec1af76f3f1895ed44ef8af1babc43cf27"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/fields/cif3.hpp",
+      "sha256": "05f51c5d92d81654007f39310864e582b28a1e188dddb60241169560b0cc77d6"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/fields/packet.hpp",
+      "sha256": "3909b29af0a5f1075fbcc7a3f3baa5e0772a31e9ea4ee3bb9f847b4deb3cb780"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/fields/structured.hpp",
+      "sha256": "1ed9b635e1b89211023ca62bb937fefb701d95f0a4c87673de0a17bcb28a4782"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/fields/types.hpp",
+      "sha256": "ea237902e2e84ea5d10af8fb7e1377d72158862f991375a443260ed2cc287502"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/memory/envelope.hpp",
+      "sha256": "5ede1e74572f0bea379019596176dac7cd31e98beec7b2c09690669a2511eeb1"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/memory/memory.hpp",
+      "sha256": "9d932caebbe321a6c83b641692677333d0049e8a728e98a0a794b2e634a7e32c"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/memory/pool.hpp",
+      "sha256": "62bc0de8e852809af10007d0ac4e2eb944207d5efc611135273fecb433e6cdb7"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/profiles/iq/frequency_scan.hpp",
+      "sha256": "e85dd2ac0389be0c4d0b7a10cbc1c14a4ec04f67cb71f6293b6b68bb46c81ef6"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/profiles/iq/lab.hpp",
+      "sha256": "587c16a9dab2e2d1b6ac4e17178656bcb5a2f2453dbabd7d729d087e14106197"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/profiles/iq/profile.hpp",
+      "sha256": "ff21d31a6319a3c7b40d404b2e987bbe5aa8a74033f89eced0d4590ef43369e0"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/profiles/iq/sdr.hpp",
+      "sha256": "f5c9c6589234f45ce5305f3ce2748cd545b8f421fb1adf52a8ba1dd503175d17"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/profiles/iq/source.hpp",
+      "sha256": "d4c52382c5325e7566afd7f2cf5f189e843a6c44ee8a1bd04bd893855c0cba01"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/budget/loopback.hpp",
+      "sha256": "be79298527d02902e84874af72e33d92a117a5b76e2378e18b6a80592087b3a0"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/completion/ticket.hpp",
+      "sha256": "e7dc8211935e6c102c60ff9145dfe2686c1b13d4ebe9ec517ca92c849b5c5bbb"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/context/budget.hpp",
+      "sha256": "3c1d1469e8fde9cbef9812dc0f1f9b1b01df5e7c491b714a94db39002acb3999"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/context/publisher.hpp",
+      "sha256": "540093c8414ceaf4b7a2d98a07f4f586e9f1ddaf3b96c9f6a18c067577a9f1fc"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/context/receiver.hpp",
+      "sha256": "bf2d64846db594edd1e66d3a89cfdb5b1b744ed34b0f8c5d7c4625c4faf1bad1"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/context/revisions.hpp",
+      "sha256": "90ed96feb0c64fc91db3304a7f231dbcf53313489842d28d8ae1d633c6a6b765"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/execution/admission.hpp",
+      "sha256": "66cc03f6fb3ab2716c967fa00aaaf343a9170376e6ec56ac1b6b40675fd45be7"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/execution/arena.hpp",
+      "sha256": "ed33dbd7a3917f296f568aff824e2c2b9c0f086550bb58bacd185a6b498e345a"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/execution/budget.hpp",
+      "sha256": "e88ab308442a7088e823003775445ecb267605f916f32cf2ff8ee30f8081b18f"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/execution/executor.hpp",
+      "sha256": "354e99cc3c6f17906f5c24bb72409d9da0dff6362373cd5eb783108891631fcf"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/execution/operation.hpp",
+      "sha256": "8c3cc067511769f582d615978d79e3daa7c3c346bde5ef2cc449631b22887eec"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/public/config.hpp",
+      "sha256": "cf35c7027576de225923ba6bf3f7600b8762a95f9613af62b1ab4c6f0d193c3d"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/public/runtime.hpp",
+      "sha256": "e99d29484285a40d298d0a415d57987e339bcb251ec381abee4b92c0d4d8719a"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/state/contracts.hpp",
+      "sha256": "ce7567ebafb4ff27d797ba8a1927cfff08761c999cfb51483a19c74abf75f252"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/stream/counters.hpp",
+      "sha256": "f8c9deabec3ebc4e5be0aa128f80855b5714523090d6f7d1011bd500261ad85f"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/stream/routing.hpp",
+      "sha256": "2cad32559a39b2cb544e1dc3b79236a691b225ae98d359ddff30c98d928c1eb3"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/timing/clock.hpp",
+      "sha256": "837bd42668bb93bd051f43f2b47e75a076d4225b5cc3d6cd7fa843e262debd52"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/timing/sample_timeline.hpp",
+      "sha256": "3fe07bad5ee65a63690be0b1d9f99dcc22930eb57cbcc618a9fba81b8980d08e"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/timing/scheduling.hpp",
+      "sha256": "74dc772739b2c188f20bb01d22d45e45833248566fc2043ad3cfaf0d007ff201"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/timing/time.hpp",
+      "sha256": "3015ec14a5d16ee5dd68d86fdf793d3bb016802e83a842c989160d9ee8dfa285"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/backend.hpp",
+      "sha256": "8267239e4b4f78e24e8bcbbea5a79f9947f2a4e005880e221a270d275ea53e0b"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/cam.hpp",
+      "sha256": "1ccf93ea79d1023c61217c3a21b7c895c210394a4b79434f93a0778b786dea7e"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/cancellation.hpp",
+      "sha256": "dada981916ca9b08471b2b1a0b594f7e7ce28d79d8b13a08f552e06d92da18f5"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/controller.hpp",
+      "sha256": "cd0b722e6f56ef174cc334f1bccb9afadf8af286d793445dd118c8ce1ebce390"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/engine.hpp",
+      "sha256": "ca4a95528c8fd42ed3cb625265772c99a6b09ccc65c5978e0693e667684e3f6b"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/manager.hpp",
+      "sha256": "c2c74e1d281e6400f071699bab11097dc2bcb8d41c3763e9330ed8eee9d3f80c"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/outcomes.hpp",
+      "sha256": "2479cd1f0341dc6ee1093471de8458b0b27c3c366ba15f760e3c76e491a58c40"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/retention.hpp",
+      "sha256": "565d8257b72a5ec7646e28846db99c0a548fa2e150754c65d35198946ffef345"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transaction/trace.hpp",
+      "sha256": "98e3f71b817ec5ccb1926541b5fad77ffb5e7b78a40982617570ae24a617d8a8"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transport/binding.hpp",
+      "sha256": "ac1c82c381a5b6e4f83e251f26c291f4ca1c676cff14c39e10d16b35ecdefc57"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transport/framing.hpp",
+      "sha256": "b301edcfec8b22f70672e892ad1e83b6d889086f09273bbc25c95a5bbd98af74"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transport/stream_framer.hpp",
+      "sha256": "f476778351420cb56deb4185614c5f0e891f156e90044ab36b5d83ba38b6b80b"
+    },
+    {
+      "path": "third_party/vrt_framework/include/vita/runtime/transport/types.hpp",
+      "sha256": "af12faf53e6581985add7ff75f8c20eefac950e972d64fd85cb7541bbe6c1411"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/compile/core_a.cpp",
+      "sha256": "058432859acbeceb07f2310f38ce20baefe4f494d68d6faf0de0b34e8a381c0e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/compile/core_b.cpp",
+      "sha256": "b028534d4ddcc288378ad25da72a12b3508e732afeb3c0f1f3810799e4ab80e2"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/compile/public_headers.py",
+      "sha256": "12766e3912c7ac2bdfb2e9e3a472fe13d29f1ab73b71ffdec98571dfa2e5ff4b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/integration/P05/CMakeLists.txt",
+      "sha256": "6067b2c9128eff54c0a8383117f32f8e206275c0697552a798eead612dba2f30"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/integration/P05/chain.cpp",
+      "sha256": "355f4bb964ecce62591d3bf9df87905d395238f61650bcfd0c442d976749f821"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/integration/P06/CMakeLists.txt",
+      "sha256": "42c4cab3a1432934eb994e65e9e60a8a40ab9f735a95b7b1d42972166a151675"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/integration/P06/chain.cpp",
+      "sha256": "36a8ea383296cfbe063f613105aab5dbb3b2152aaaf3fcf69f0c3473512aafb1"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/integration/P07/CMakeLists.txt",
+      "sha256": "e48cc4fe0891784e5e55a6d72d1475a89ff07b1aed5f2381ed3c2fb4f1fbf0a2"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/integration/P07/chain.cpp",
+      "sha256": "9452465861a19e37aa795b3ec8df025ba6416d359d87e6539bc002cf9a30694a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/integration/P09/CMakeLists.txt",
+      "sha256": "3a35fb8ee490611f6ae9317db41dd4d77e3f216abf32d385d216f8dd4d6519fd"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/integration/P09/effects.cpp",
+      "sha256": "8e267cca3e47cb982c63f37628ca5852815f54103859103da22dd3392188b01b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P01/CMakeLists.txt",
+      "sha256": "4778e4e2d2c4d1728322893f054dae2b4bac8ebbdc3fb0536134d5b5984b3d7e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P01/semantics.cpp",
+      "sha256": "dd44e9af9cebf3f6bc7c9e01cf9c3395c36df1df415947fc3a88e4c0a19eb559"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P02/CMakeLists.txt",
+      "sha256": "8fb3822714f855dc34f102acf0a0dfe379cbb87f19c9dc67469aca34900b0d31"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P02/ack_timing.cpp",
+      "sha256": "42ef6b4499c65eda5af322380aa176a0e27e83ae62b6dfdce660bc7a094f893d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P02/codec.cpp",
+      "sha256": "920898a21a0f4b03f943e1f0054ab3dd6ce74eddf585abf1190629020b32a350"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P02/other_tu.cpp",
+      "sha256": "ef338ccfeab3d6b85ac4f097ed80dcd32aa56e3113e0a662d222ccbe6ecd842e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P02/prologue.cpp",
+      "sha256": "5ae660e3f01948bb1c900a5e6080ba2ceab96513079ab8b3729fd5c7d3da24b9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P03/CMakeLists.txt",
+      "sha256": "abc7b358a1c85ce62efff473b77394514064c14844850a8e149e0f8a952314b9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P03/memory.cpp",
+      "sha256": "c4337ac405b7d3e7f6af44c0c25d58ecdabe53d1014fc60bb8531abaafcda8ee"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P04/CMakeLists.txt",
+      "sha256": "459c63e5238e57def227560026786a4c250676bb2a245f49d3d1e54b6647df63"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P04/runtime.cpp",
+      "sha256": "339f23fba6382e881d453f9907608687b27f7d55a765e5a3d302df1e0bd335d9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P05/CMakeLists.txt",
+      "sha256": "545459a97f0bc362c2775a553bbf3cd938557fa685e291696354deb95f547877"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P05/budget.cpp",
+      "sha256": "fc38297fe036fe2d56cf4367f31d8063e1f16f9271fc18c31ceb2f550a54bc2f"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P05/isolation.cpp",
+      "sha256": "882ba197345336fb94ccf31f5c191aa06f4b098ba1f304c7a68cbc3c61776d7c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P05/loopback.cpp",
+      "sha256": "d795de6c2e3897b0baf1fe34d0edcb84fbacac4bdb7e3f27ba0a853d606eb8a7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P05/support.hpp",
+      "sha256": "58aaf62bb91e993f1c709d4d8390402541c0f72ec65c0dd4c092792c0667f331"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P06/CMakeLists.txt",
+      "sha256": "ca8438c0229199006718c82b2351a344508c8237f56ecd607c3fe19f310fbd55"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P06/engine.cpp",
+      "sha256": "75b5fd3179f19be4486fd425b6cad6287a9368e68f5c65c24a2fb115df90084c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P06/outcomes.cpp",
+      "sha256": "ec2af230258bdd74eec520551f4da79f113738d8aa7161b25cff37f07c1dd698"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P07/CMakeLists.txt",
+      "sha256": "247b70b11858ae277adae6010491f0f6232b339105a8e052aae2c348a3fe0100"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P07/controller.cpp",
+      "sha256": "985ce272affe07c2d4334c800d449dbe58d4b83d8a0689445d127b2cf9d4d819"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P07/support.hpp",
+      "sha256": "2cd4264cb8b2a5c14bf283e83366b77715c0a9b560b18e9179b9b76cfa3a2cdc"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P07/timing.cpp",
+      "sha256": "53288cfd46c272e53d598489ce4ec6597750ac098add587574f45720a8cc9868"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P07/transactions.cpp",
+      "sha256": "4890277fc4d093994ed8cb6d4a932d3b7ab63ea8c96655375990d77dd2f2182e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P08/CMakeLists.txt",
+      "sha256": "79359409258ac5ba9b75edc90b22069a696e9881aa3f5c9c7b9df7cd30d56290"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P08/timing.cpp",
+      "sha256": "9346744dc0d3677fe917436253da33b2136c0471067cf1b7d50c46f754d4d73c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P09/CMakeLists.txt",
+      "sha256": "8a999cee1e629930f6d9d99fca1a43700e81ff6ef77a8b00c7a2b653c65df8f2"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P09/context.cpp",
+      "sha256": "f2a94b0507955bd03f809c2b651115933c7b042d23389554782ae6112e51e8bb"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P09/receiver.cpp",
+      "sha256": "8c44b694d1182c8063988b1bc583df7a36dfb697d49d5e21b630b3fe6b5dc1ef"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P10/CMakeLists.txt",
+      "sha256": "2cb87d350078a8466bcab315c3e0432fec9f80b5db7881e6a95e4cb54b0131d1"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P10/budget.cpp",
+      "sha256": "79f2d9cbc529f8e03f33dd283ed7610d5259f63898022e1a8eadc9929d981e9d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P10/lab.cpp",
+      "sha256": "f3a573e8f1ead7ebf56e6aa9b84399911f564421f238dc806e22fd1fe561f461"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P10/runtime.cpp",
+      "sha256": "d48c14e69d72bb47a330391744fd67debdcc06f789ad1301dd57d66174a3d91d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P10/source.cpp",
+      "sha256": "3edda084d1979f5231ef79a0ba617d2449eafe8d28e5a1e24988186d34c88872"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P11/CMakeLists.txt",
+      "sha256": "47aa9e2c025a0513775d5135360887508aba4bcbdba5e0ec9526e62c68b17ed5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P11/runtime.cpp",
+      "sha256": "851d1702a5192697c6a44128fe2e801c331a399fcef451bf841044e4f4f45e9a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P11/transactions.cpp",
+      "sha256": "81e9b5d05d8e127ea36e970f4bb66138836b785fd51f460b9ab1b05cfbe5eeee"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P12/CMakeLists.txt",
+      "sha256": "b3c929e0fae2235f81d597a2fa87c526abecbe6f06c458c26bac8023bac72230"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P12/adapter.cpp",
+      "sha256": "f1ba5c93d7d7269e327d64071e5d359cc70f5dc7b00481ca71ff74c34ba38bcd"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P12/binding.cpp",
+      "sha256": "705cdf0f855f0b5c44d1a5b34718601ef39e10dbb0116cf87aad9935ab4b9d03"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P12/runtime_binding.cpp",
+      "sha256": "9933685d1265b9ef8d256b3f1a6ffbaca9d9d53a6b94958e368a75cbe283ea59"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P12/socket.cpp",
+      "sha256": "8415650e2596ee847c4db75c993dd6ac612d5004385ff1d7de7b232bc45634e3"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P13/CMakeLists.txt",
+      "sha256": "aede97fc4999fe2c403b81726d9795eea82cc579cf942786622b64a27571a62c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P13/allocation_probe.cpp",
+      "sha256": "587f2509900526423f9905104c0c94df75a142cb5f9a90d703262232e853208e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P13/hooks.cpp",
+      "sha256": "415def4d47bf37f524bb8ba2d564876676c1ecfa92ef8f48e9eb1b880cd9a335"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P13/payload_modes.cpp",
+      "sha256": "cd4a60029750fa3d0b1fdfcfda7b9403b0b067c6ddbbc2b54239477d7f794ce5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P13/peer_capture.cpp",
+      "sha256": "e27288629c8e492da0e62bf67d9e72b6a712a50f94cae6cf42c5696f67ee8d74"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P13/receiver_analysis_test.py",
+      "sha256": "4a91b07329c0fbfadca6a1ae12aa529cc05e7ff6105f49e20f786ac4530524f5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P13/retention_occupancy.cpp",
+      "sha256": "dcb8aaf320823bfea2df06ca5781869d19d3e3492a6a88f48c5fa2d0c43f4091"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/CMakeLists.txt",
+      "sha256": "a596ef6a0644a9d6208fa6ae53a8fd2cf8d2a8b9586a915395768fc0a5c42a50"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/array_cif.cpp",
+      "sha256": "ac775e4d9dfdafac151fd28c5f50bc41cfda6911c3595db2bb6b60a14f36e67a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/cif1_fixed.cpp",
+      "sha256": "b5420d2bb2b07821ceae6529c145773edda2e386a34b392111fcf2aabf7f6590"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/cif1_structure_bounds.cpp",
+      "sha256": "08b7e20347e09b3e2618c5520280d54eb03873c78eb193f92be4efbdcb76394d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/cif1_structures.cpp",
+      "sha256": "3a152294a585e8be7fc33a066245b1b4942f576b2b2f3b2390f23882dfe29b54"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/cif2_identifiers.cpp",
+      "sha256": "dd14756a44f8999b2d69e2809522fb947eb32f2f2904760f3725c57718ca4868"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/cif2_uuid.cpp",
+      "sha256": "5254e6746b3dcbb1e4f71a89236529c7061095c721366503380721ca0406eda1"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/cif3.cpp",
+      "sha256": "b36c04a7972e5e581cba174f19477bf58e62ea4a4c0c76bdf1601796bfe7e6d7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/cif7.cpp",
+      "sha256": "2cbc7938026cd491e2d3af98e9780ad4c2b4a8e41403c270401d634e77604030"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/cif7_bounds.cpp",
+      "sha256": "d18713b5cb4dc885cd2402debb91c0cec98b7c49ec684f1d93bf6237846f47da"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/extensions.cpp",
+      "sha256": "95e96ed9a1e07f4f71b1a8fb61436f72284fc6ed9413aa72243d9f7b536ae52e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/ieee_samples.cpp",
+      "sha256": "4d4275a4c719d512fba5681815d6921c5a2c81d0af4d47ba13a9f36e10ad6173"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/numeric_samples.cpp",
+      "sha256": "ad6e43d1a0fc0cde726ec7794c3438be32ea4590f51cec42e584ca14bf711e41"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/public_usage.cpp",
+      "sha256": "ad992c5811722ca301193a23791e91de2b0368a8eb309069f24a961dbd2072e6"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/raw_samples.cpp",
+      "sha256": "2212ec16a69ef3e5879be233f6a14aee11dbf483caf8058c3879dbcb8c786614"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/sample_descriptors.cpp",
+      "sha256": "124f86552995347eb0b51364205039ed06bc9c63580aa4ec069db523efcedfd5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/scalars.cpp",
+      "sha256": "265b59d74b2db0fc19835ef2d7f6dcad0003c2c70b51411ce544a86b34482f8b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/structured_wire.cpp",
+      "sha256": "c20a3ff343875ef05abdd699834261c6fb7db1517b818917d5b857e1bcf00c1c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P14/structures.cpp",
+      "sha256": "019c9bcfb07b0865e5e666c3ecd9e2df703f9ec1f7412ed495fe3f7cb46daf3d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/CMakeLists.txt",
+      "sha256": "27e8afff8ab13d71a90df314cf644862daca20152e4fb805868da72644eca867"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/binding.cpp",
+      "sha256": "7790e24c64dc0c80cdcafb42b397576f5969d81ec824190c25dc9ed4a0f6463c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/budget.cpp",
+      "sha256": "a087de3c2bc1aa6cdec7276d36433f3e984e396e482f07b95943877392de41af"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/core.cpp",
+      "sha256": "f8019e6876af07d947bf690e96e8cc8bf7371be2ffb451ae9476753a5575f509"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/held_counts.cpp",
+      "sha256": "bb54ccbc4feb4111bea561269203b0d49794714a430a61cefc5a51137b9fc064"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/remote.cpp",
+      "sha256": "c1e6f41d65a5f2163afa1e4289a1d897c9c3e302307fe61917d668142abb4aa6"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/scene_scan.cpp",
+      "sha256": "edcf7f6c9ea9671dac89599b5b1f965daaa90a2250171a54cbd7c3199afedacf"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/scene_scan_endpoint.cpp",
+      "sha256": "f37eb65c4cc504b90a2766b99596c2280ac4814f2f6678d5386e98dc791389a6"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P16/scene_scan_options.cpp",
+      "sha256": "706fa1654ef738a00a6e3b2b32ea500036d67a9fdd21c1586f5e5493aa4467db"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/CMakeLists.txt",
+      "sha256": "4661d02db143ca0c484796481bd252b15d5c7919675e6ac1db1774370578394e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/atomic.cpp",
+      "sha256": "edcc7f0481b5fca30613600a8e08f61b57558bd37a6c2ac7558786785a974901"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/bursts.cpp",
+      "sha256": "62ac12a1d0c28eeaf137bf7ec3b5542cef4f11cb6d32bfc83397b1dfece1623e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/capabilities.cpp",
+      "sha256": "f202130199043abbb1233cb27ebef988502f812078e31dcfbd1d93cd62e6ef73"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/capability_duplicates.cpp",
+      "sha256": "42f9798d483538d9ef3cb2660f312eafda174721c1d1dbe3144a09e541f94e0b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/graphx_profile.cpp",
+      "sha256": "c6d11393fb01100a1976fa5e298e10b91ab4c65518b67ab017867921138940d8"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/graphx_runtime.cpp",
+      "sha256": "e058ee79a7337dacddd62520efb5d8a0190e595c2c35ec11d1f180510c524b48"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/remote.cpp",
+      "sha256": "5a82a26d43fb00d7e78659bb41b5f98e14f6e7a5a6080d2dd5d0d2d73e3b6ea0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/replay.cpp",
+      "sha256": "471ff4c5139edeeeb4899df7cbdbbf12d770c6014710a77bdf16842c2c7b1615"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/sdr_profile.cpp",
+      "sha256": "c6d11393fb01100a1976fa5e298e10b91ab4c65518b67ab017867921138940d8"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/sdr_runtime.cpp",
+      "sha256": "e058ee79a7337dacddd62520efb5d8a0190e595c2c35ec11d1f180510c524b48"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/start_epoch.cpp",
+      "sha256": "fbd34e0cc3e70ab01a229bf558e73d3dbce28b902ccaabdcde66c8c5a83a1a79"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/unit/P17/stream_framer.cpp",
+      "sha256": "61acc6aa65a4140f71e0d8a550724168168cb8ab90d2691f80f24eda2841ed7f"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P00/CMakeLists.txt",
+      "sha256": "5c346af88445c4ba6bb76e0f361b74828fe9c7e7db11d09d189de0e46c976a74"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P00/check_bad_library.py",
+      "sha256": "c6553f75f75588d7535493a42da429ca8b2bc5f3a70a40f14550cb617dafcc49"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P00/check_core_only.py",
+      "sha256": "b94dc5853226b62290bd30b5c8a49407f3a3da1fb7601eba78fb6b9523dd3ba7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P00/features.cpp",
+      "sha256": "2d3e5ab72f4f7ae5c70b1f465b29ddcf6931aea9f1ab2c4b2e156765d7ff224e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P00/main.cpp",
+      "sha256": "cbb028e087f73732b67f1ec7f0875fbf710bf9958c8e798daef58bb3c2b33def"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P00/policies.hpp",
+      "sha256": "c29df6d901f3c6ed03d0a9f3060a9bc5011d7f6ca0f1d6fc7c84b6ccc9e908fe"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P00/policy_a.cpp",
+      "sha256": "8baacbdf8a5c93992a07e08dda84b08ed8b800d8d965a954565b44459c1e441b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P00/policy_b.cpp",
+      "sha256": "66da362d1b79cf0e92f86e11338ec66ac56f2979cdaaa47d7109f523c1307900"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P01/CMakeLists.txt",
+      "sha256": "a4dd076adc2e41112f75cbf63dca82b48c4a4c2389a4e7f9cdc8f6ba87474014"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P01/allocation_contract.cpp",
+      "sha256": "6e4130ce039af40ad4e251c9e2ff46d662edd0e310133ccd00b9ded161d8fbbe"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P01/core_contract.cpp",
+      "sha256": "252c68906ae0efd16dc9b65fef9b080d6404e9b61ba78c34349cf6300e12c28a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P01/semantic_contract.cpp",
+      "sha256": "96582047ceddd63e9e49564bc374bcf84dfb3f32e5ae030a4f6fb29572245a02"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P02/CMakeLists.txt",
+      "sha256": "7510c5df43fa9c6ee421c7b5840c619fd0226e65a495f6ad071e37893d7c28e8"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P02/other_tu.cpp",
+      "sha256": "b3149325131dd0d77fb85edebd312af678518de2258d8d60ac66719be01b9e07"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P02/packet_contract.cpp",
+      "sha256": "ff31c5485b7098319dc52ea8c381cc60331433718d44b7280a7b34b9fa691379"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P02/prologue_contract.cpp",
+      "sha256": "7538b92934b354e7a973fe15cbf7af0d9c9189bcc87e9383e26e724d4d7ba02a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P02/sample_contract.cpp",
+      "sha256": "03a906cccddd3ea055f9b979747992f8dbfc8543e07c1ae09e3f1ff8b41e765c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P02/vectors.hpp",
+      "sha256": "7bf62f901c81978a585c2bde3e847e1e4ba01202714931e45d6a141106404467"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P02/wire_contract.cpp",
+      "sha256": "c594de9722c4a74ee76dc9f61233f7ef29d05fd76fced3fa25d5066290ce62c4"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P03/CMakeLists.txt",
+      "sha256": "d2cf8e1c2892b5d559fc146037c3dc61b444fbd98416553220a23a7693fec5d6"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P03/edge_contract.cpp",
+      "sha256": "a6335cf62a24d5f8861772e050e3aae8a4474d36b1f2e65798fe5849918bbe1a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P03/envelope_contract.cpp",
+      "sha256": "759f21ed66e3aa45671b63e4778fbf89f7810d34646830f53f2788ebcc0e6e59"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P03/pool_contract.cpp",
+      "sha256": "adc183201354bf76d567e7e11a540f0b82eda36ab3a6d875f0aa23d6e7bc28dd"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P04/CMakeLists.txt",
+      "sha256": "8eee1976e79bbf5bf7510f8e66d63cd928426a379fe9b8e3120a0950923263eb"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P04/admission_executor_contract.cpp",
+      "sha256": "b966366438d2c97326e4ca3cc35a9383474ed46301f2381e974e62639a5a20bd"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P04/coupled_admission_contract.cpp",
+      "sha256": "4dfa605aed1384edb504f7ca7cd819f923131f07d44876792af0ff06bec06689"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P04/quiescence_budget_contract.cpp",
+      "sha256": "7b91c2ad58583654ecae055978ff7fc340da416750cbb30e18d557ad629f378d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P04/ticket_contract.cpp",
+      "sha256": "840588a9c4ccf068dce1a0b159153f50560b43ca9ad5fb4decef7982f1ff82ff"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P05/CMakeLists.txt",
+      "sha256": "46655b9057cad9875aa7a2d7acaf532be1475a5e7ca05d480fc8712be4e10524"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P05/budget_contract.cpp",
+      "sha256": "81bd899704d82879b2890fe153b3d57b8c17577bc381a8c41869f4395b2b8a31"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P05/faults_contract.cpp",
+      "sha256": "2a1baeefa9441c82fff02da8e3fc3868ddab3bc13bb6e9d1ed7b11139e19698d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P05/loopback_integration.cpp",
+      "sha256": "32dd53bf292d0eefebf90efb680bee0f1e168462cf93bce0c48301d87abcb9df"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P05/routes_contract.cpp",
+      "sha256": "cfda8f7d438fd36e57ca0a57462be9c944cf161fa72c02522c425e59eb2e7854"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/CMakeLists.txt",
+      "sha256": "ca672000ab4e5cbd071c9b2022ec31b8e13b81f0f665ccc6bf52611e1d5fbe94"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/admission_contract.cpp",
+      "sha256": "cd4bc0b1ab8f0897cef11bf7d3573ecc7d9f582904081dc9a756c12a3d9ac97d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/allocation_contract.cpp",
+      "sha256": "610274429324f0e25485ee6922f8c48b10d46b5a67d0d4681bc4ece0030221e5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/async_contract.cpp",
+      "sha256": "b24b8d18d6730628499b2a9eb36d7b865993a834043b5666f7755378fc904de7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/cam_contract.cpp",
+      "sha256": "974200527544292fcb3e683adf6bef67fd7bb5269232f01ed119d300e0678090"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/controller_contract.cpp",
+      "sha256": "1d5ead3adb109717888e445053d93eeee6ef2f81ee3405c6fbf99cf4263d32ad"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/engine_factors.cpp",
+      "sha256": "f68b23b7914de2061f2cc22280dcdce6358003e599938d198d438a1be7d168f7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/outcome_contract.cpp",
+      "sha256": "e540eaadac2b2ee0897bad3b7961516af7441773c2cedc573d92484bd3fc58a1"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/query_contract.cpp",
+      "sha256": "0beeca0c1652e6516e7e003a34a325a7df1c914df61d954674cd38365b4c2643"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/scenario_contract.cpp",
+      "sha256": "71b2a70a4cdda82b5da4678477c1b2ba0b739dea8f323d1045a9911537f9084a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/sink.hpp",
+      "sha256": "d664abe6041dd1d02ed8018986227c2076d8495612aab72d77133e020d50c888"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P06/timing_contract.cpp",
+      "sha256": "a327ab1c4cfffe75ce76589559b36ff4ca621345e7c3238579f777892a0d2f15"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/CMakeLists.txt",
+      "sha256": "60902502976db79f2d59d68b0217d7989d7c5e2f667592e49a6a796f2d0a976e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/admission_contract.cpp",
+      "sha256": "ab88349b541088f23576ca01fd3668510f25c0b365107ed457608e887b7abfdb"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/controller_contract.cpp",
+      "sha256": "a7aabe00cfccc0da117d980db3c8d5b96ff08b60956ad6573b0945823742c399"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/guard_race.cpp",
+      "sha256": "80462e4e115332c3b199be21ccfa1c6d2c6a647d9bbadf132679ca6ea587a331"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/key_contract.cpp",
+      "sha256": "c30ab828de8c0175801b32a3fe00f69d1f31bc8c4145befc436eaacc287d71a0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/manager_contract.cpp",
+      "sha256": "a7c80dca90becfc9e2613592dbbacba1b6d823804de0f5ee4aeb45d7f87dd1b0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/packets.hpp",
+      "sha256": "ce31ea996eed883d3f73b08743923d235f4cbfddae632ec9e9079fba90e7f375"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/retention_contract.cpp",
+      "sha256": "c8e2739629689c77b5b39ecca9169410fa60347c7050d3344b25652bcb188f51"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P07/timed_cancel.cpp",
+      "sha256": "db53c3221fbcff67f45a7611183ab87097343034f7407b24803dca66379c4b6d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P08/CMakeLists.txt",
+      "sha256": "56dbc0fb0ec47c551f131f6ae560fb7c88add0c77e734fe29c1bd9dd5422071a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P08/clock_contract.cpp",
+      "sha256": "1ed3c4a347bb7bdfcb96a1cc720092d08817033d5392f643c71dadcb087dd26a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P08/scheduling_contract.cpp",
+      "sha256": "91aa8b4f9bcfe72a30e17cec76c0b34b14978d0488d749b55d24363b7f9ca969"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P08/timeline_contract.cpp",
+      "sha256": "6fb8c30eab9b49f37100c1a3e721a4bf1e31abec3b4cf94f65922c4139992d63"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/CMakeLists.txt",
+      "sha256": "7bf17736e2c4016019f87d63743b9d33ba484dc39d61f2b397cf11e4fa846ff7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/allocation_contract.cpp",
+      "sha256": "ff22617266f0a7ca675ef8ff6a76c94af4eb5a4f6c035891eea2082f42751dd9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/budget_contract.cpp",
+      "sha256": "351ef6e7088b3928236710218a72f945a524622f40bf953d76601717f5e1a86b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/context_wire.cpp",
+      "sha256": "bf0ee276a59b68d68242639be9b5fbfbd44eb0565c7d524f89de75c62c7470d0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/effects_contract.cpp",
+      "sha256": "54a5edeb3e703a4d239de020120a221fb7b56e7f73089344dd1ff8a75afc7ca0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/history_contract.cpp",
+      "sha256": "3cbc118a79d8300cda959a6c3fe12efc642ad26e3cfc2783f9f92178b72a3f3c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/publisher_contract.cpp",
+      "sha256": "075c3e45564f4c3987b09502dc830fa0f557f2e04a0b9610e188119c3c802ed1"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/receiver_contract.cpp",
+      "sha256": "11302d9e2c6fd902d80e389cad18ecf20b3a11c8b4689abc191476b72adc72f9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P09/revision_contract.cpp",
+      "sha256": "ffc7ef43c6def2af88c3bcede712797fe903e802a4a047c1bf501ec02f6e78eb"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/CMakeLists.txt",
+      "sha256": "309875a560894bc240396f7f4961efa90ec6671ac3e11122b86865c8df879ae2"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/allocation_contract.cpp",
+      "sha256": "cf4e13668c43340d0f5aedfb4b2fe42e80d090b825d08bb509d54d07de5a13f9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/callback_contract.cpp",
+      "sha256": "4cf4470235d68f54684b4ede9a47119cd664fc86ba3b70ce6ed8a34ebb825a5b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/canonical_oracle.hpp",
+      "sha256": "f44b474c209b72ddcebcf98ea9678b28f549811aee5b85e7c12c12cbccfb281b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/clock_scenarios.cpp",
+      "sha256": "08cec085813cb330b2906f32030672ceceabb7f329c55e034f38a546ce8da387"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/credit_contract.cpp",
+      "sha256": "9f36f9b8b2caa22e46fa0af80fa7f433c46b1130c62cf4b985ce113d711eb53f"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/mapping_contract.cpp",
+      "sha256": "b540afa84370bd02a9677817236fdd9684b34af437047184522d3e6abed163e3"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/ownership_contract.cpp",
+      "sha256": "d78cef33f0fccaa3115ba6d405c3dab80b650111fc30522bd49b986f38c6cb94"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/pacing_contract.cpp",
+      "sha256": "9e81466fe3da7e599fc3faf5bad126a2aba70d68f689eacbd7c24626b224eee9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/packetization_contract.cpp",
+      "sha256": "04f2ed79455d072875e9aea24e4c85327869f9261bbe042127e7664600326a79"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/provider_contract.cpp",
+      "sha256": "4c40856cbeb495a7fde114dd3f5059164152d165f5761f2aa5a514d0b53178cb"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/rate_contract.cpp",
+      "sha256": "3417b80e5e260b3cebba8cf84855ef1b4335ee4d1fd9ea1ccc3fb5fb691776b9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/reference_contract.cpp",
+      "sha256": "510aa0a212bc20c877ad9b3a1716c5a758271f69157515423140764fafc2cc83"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/runtime_fixture.hpp",
+      "sha256": "b264057d66c0aac4ac93746632ac9e76150ae50c1435ed87c56f580b26a56042"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/source_contract.cpp",
+      "sha256": "ec0b738d60cee11cbe978c8427a359401256f0dd7380e0571f970aa8f6955446"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P10/wait_contract.cpp",
+      "sha256": "aff603dfc46d885f6dce7446ff45194d30b2de20431900adf9204f8042c6d285"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/CMakeLists.txt",
+      "sha256": "2f5dbc86fb89070b9fec0134e9b80f359f593efc8e7cba4b3aadd825b1479662"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/allocation_contract.cpp",
+      "sha256": "15c85d442f1d48ce7b7fb2076d9829f1aa97ee9110769f3c790b93a047e7a585"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/banks_contract.cpp",
+      "sha256": "31e0c9ff33340392fdd88c885aa90e238cfe892bb1d721a43d12a673133726d6"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/continuity_contract.cpp",
+      "sha256": "76f1109830610e89eb1b68d437e773d410820c1392c4eb20f22bc45377ba5f09"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/engine_contract.cpp",
+      "sha256": "53d1b59bd621ea68710a3b6da9a21d35b5930fafa43c9560c1e9b400bcd056fe"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/late_contract.cpp",
+      "sha256": "515a5109cfb42748e8d7068a558b441e32e72ddec0699be0555d18dacbb76fbe"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/lease_contract.cpp",
+      "sha256": "053eef91ca0a5d1a90b6dae2593ef7d3e8dd56a81ebbde32688ffd0e719d4692"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/manager_contract.cpp",
+      "sha256": "c5c40f971c7d1657dab5452251299a16357504e1e9fafb3ff385d3e59f199743"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/recovery_contract.cpp",
+      "sha256": "a9b4bf566c179212c76d06b1a9a9440f305c1cdaf3fcb829ccb828523f627d5b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/scenarios.cpp",
+      "sha256": "312b2cc9fd8f58c70e77f176ee7caa5a0f02f85833454ece3242e4aafda5514a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/shutdown_contract.cpp",
+      "sha256": "0f2d3438917b3d84391ff11fb57c8f23b5c8ce73d31823a7b5ab85552336154c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P11/timed_contract.cpp",
+      "sha256": "ae7a46a9991bfd0759e94fc8f57d6a824a547fe7a98c2c89da10f34a9c2613e8"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/CMakeLists.txt",
+      "sha256": "942a62a8c6fb69d674590b62fdb5fdcc0d834476853bae065750ac057ebfa0f0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/allocation_contract.cpp",
+      "sha256": "2941f4f3c732d2613b44e6aaf687b745a17676132199a56f975d8a98c1b827c2"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/callback_contract.cpp",
+      "sha256": "74ae7004e35314804eb0c47f2ffb1efc52906acce0f4b360c30a8389504f9481"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/cycle_contract.cpp",
+      "sha256": "b50aa509a1b34b5ef8be3da97a6e0b48e892b444f388e3f6b7c3bbe6ae9c66a5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/factory_contract.cpp",
+      "sha256": "e86a826ab2c6c1cf4514542eae500877b8bf0af039271e52766aea6c87191154"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/fixture.hpp",
+      "sha256": "5512dd12a036e930ae0b6b2175a9fe1165fcae110f2941a67b85b06115cd8c4a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/framing_contract.cpp",
+      "sha256": "b57a92c6a070680b7bf2e1816d542115ce56e4db8f5743ee6f417a27a5396b2c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/isolation_contract.cpp",
+      "sha256": "aae9668832e87c478a5d220bd7a145915de56b3263d8be4ac34fbadba89ab0d7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/mtu_contract.cpp",
+      "sha256": "5886553e41cc8bfc14097dc8b0dccdf77adbfc0c6d1ca43b9ca4ebfa89b694c5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/peer.hpp",
+      "sha256": "2e5d4ae1b8b2f9d70edcbe6cbacffae6b25ab6f97dd72cfa30dba12c00605a97"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/receive_contract.cpp",
+      "sha256": "f270ee0bf6a864c495d4d2b49df1a7b1913e823a634f8e798cabe1833620f2fa"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/runtime_contract.cpp",
+      "sha256": "fa8fec65c276df21049ee96220ea5d169ee23c1d050a68954aff6b0a9f33291b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/rx_isolation.cpp",
+      "sha256": "7667cc78ba7d745f8a2a438c2b8265622156d567293b6bfdc8ad50bed4c93578"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/socket_contract.cpp",
+      "sha256": "33a25ce21b0030d17a4d8b8f273db033478bf35422ebc44877dc17a421c2f431"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P12/syscall_contract.cpp",
+      "sha256": "d5706a9987cb5c9e01bf15a81be063301351184576d4989c9fbd36aee8e99530"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/CMakeLists.txt",
+      "sha256": "ceabcb798acd94fbc434093fc3a24af4904be76498c3e1ba737fa1d5b5ce7640"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/allocation_probe.cpp",
+      "sha256": "15eec4163b9b28645ddecf5328aa74389fc46d4529fecb8911f57b8bebfad2d2"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/analyzer_contract.py",
+      "sha256": "df07015f4c533cbc0dbb44c7ee7d9c64cf432e58a64d8813460e94783680063a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/duplicate_capture_contract.py",
+      "sha256": "4268a622005028b80bd2f69c94dacac0770c4a7c5d5dfc55fc23b8b10ac918d3"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/ingress_contract.cpp",
+      "sha256": "da91a29e08d34c6b572bacd6563f010ad035f5af6f21eabdb670fd74190a3bb6"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/late_capture_contract.cpp",
+      "sha256": "52cbec67836dee8e769fd07ef637ffa0180a2e9476cef8b5b5c09594092caba8"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/oracle_contract.py",
+      "sha256": "98ebad07a9dae6d4344087b82a16cba623ff12928e7d69327d44597d5a36822a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/payload_contract.cpp",
+      "sha256": "427a64dda6fd98034a43554a6a3238765523ad134fa1998dec68d8d789658f11"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/payload_runtime_contract.cpp",
+      "sha256": "f005c11d8199d8afacb9db8bd71cbad58683bb1bedc9b34fe28dc455b1f60d9c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/pressure_contract.cpp",
+      "sha256": "2cdfbcda282f575052f1c80e44830c0d2fcdafc66684e78b2d9f24a925bcb796"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/receiver_analysis_contract.py",
+      "sha256": "d8bbe704891e0b8c7edf3235b5648adf0dbcbd7e45c742966c2e220cecb063bf"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/receiver_core_contract.cpp",
+      "sha256": "948079a872cb93940b672f53612aebb09811f7cda1d88dce05e7ebc9a1198c9e"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/receiver_raw_oracle.py",
+      "sha256": "b9f49781c6516fc9e812cc2135bb5e1c7dc9800dbddd770d96d93686cd3f1810"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/receiver_wire_contract.cpp",
+      "sha256": "36dea687ac2d591d967aed6b85604c4ecacd38d55b33fd6f9fcb85ef61ce25fe"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/retention_index_contract.cpp",
+      "sha256": "7017bb03b468de3d19b01ddf1392c1a6a9de86d3c6ce051854268d7007040f71"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/ring_contract.cpp",
+      "sha256": "545777aae3bc446fd2c7da7c05b1b4c9e8c80f79e621686d12ddc90ddfe01e91"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/runtime_trace.cpp",
+      "sha256": "3859e0005aad5f735452a5f6975f1b30fcdca204d2cada34e371c0515e7cbd0b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/trace_contract.cpp",
+      "sha256": "d0c58d29d7f3d8959ba0f84d9b92d8ceba55a6305bba581bf829636dc74c7548"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P13/verify_run.py",
+      "sha256": "f95c76eb43162ed7296b6fc99bed6860e71e4dd5b7d4f9e18559c05c5e0a71f0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/CMakeLists.txt",
+      "sha256": "78bd9f093715e3976a0339de4773d7cff61d45c1ba01c4ed329966e876471f2d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/allocation_contract.cpp",
+      "sha256": "7f786ffe80b155d91372ed439272dfa358a8ae96a9044a9987392338b4e91137"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/array_cif_contract.cpp",
+      "sha256": "ecbae2d22635c493326cf5e1915245e3cd9782cfb4f0fd4e1d2df21b6320ce40"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif1_boundary_contract.cpp",
+      "sha256": "e78d02623403000bdc069c11ec5944df2facb9c8394b7ef5561ef99b021d056d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif1_fixed_contract.cpp",
+      "sha256": "a4225355d15ab4473c4da41b81936e38f840a047c52b2fd2430f1def9c651c76"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif1_structures_bounds_contract.cpp",
+      "sha256": "0b9968d480a2d38eae8245c5f10f16fe17c7df94f432adf9aff716928f1808b0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif1_structures_native_contract.cpp",
+      "sha256": "a7836cb1c14eb0f750d8c50e8a238d123de1c72d66f3a31ca486d26595208b0b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif1_structures_profile_contract.cpp",
+      "sha256": "abac143fec295d110502c18db09532df6a1cd169c62b00dc5b538c54f9ed80c4"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif1_structures_time_contract.cpp",
+      "sha256": "4dace58d089af7c942a13bb46665d1f1504fa9388af82444fab6e3569a9460ce"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif1_structures_wire_contract.cpp",
+      "sha256": "a70a9590be38c10e1d14fc2339f84dbf1a8a1e5d89cfb72a93b6123e3da4f77a"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif2_boundaries_contract.cpp",
+      "sha256": "9522fb9db7e6c48c8e36a29c4a95a401fa3144c51470d9a37b677aff4ab15e4c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif2_native_contract.cpp",
+      "sha256": "58f99f88dee487322cd01e6c9212834f6bd8b80a5302a528afbcbf7d0f58566f"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif2_wire_contract.cpp",
+      "sha256": "b958de7c24973d4275bd8f94a41ad8e1939a56bf68f5f4a94ccb20c167656944"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif3_allocation_contract.cpp",
+      "sha256": "e22710584e565b26ccde7f5918acf09ff86131c3e10af8e81c825a49bc61981f"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif3_details_contract.cpp",
+      "sha256": "dfcfb0e3b3eb2d61b23c97b89f81327b529c07d85d29f62e72b107b1a657d116"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif3_duration_contract.cpp",
+      "sha256": "3b14a6dc8629854db1aa1d9dac91375c7c557ccb5b1b3e2d5bc5ac86601d7b13"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif3_scalar_contract.cpp",
+      "sha256": "9798a1df4c67b9e056723376d51503c0a67e91d7fbcbf82df791eb8d941ece6b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif7_bounds_contract.cpp",
+      "sha256": "dd40231cec73d44b0cecaad72420b040c88b93f45ced295aef106f9051262959"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif7_native_contract.cpp",
+      "sha256": "a6a22c2d4fcce7d2d4f7ac79afae9c962e8bee27bc68361ab3b480ff3cd19808"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif7_profile_contract.cpp",
+      "sha256": "97985fe192b87d60b9eb04c0d312130367668015033f924c55d6a9853f619469"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/cif7_wire_contract.cpp",
+      "sha256": "350e52bdb261b7b015ad212281f2aa974eed4e40f50aa977da7a303b9d391fa2"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/extensions_contract.cpp",
+      "sha256": "fc25bc4ea51caaaaa8e5623664b5d60d6ce519d760e399af6fc26272b63a06ca"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/ieee_contract.cpp",
+      "sha256": "5fb3692b65839a4713386fea2e4b5c400fe4c702ad767a428e565c71e52c7ef5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/ieee_oracle.cpp",
+      "sha256": "cbe46929492e78998deeb892038e2c89fea2c7b29112dfab551214d51b10e5c8"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/native_allocation_contract.cpp",
+      "sha256": "6e464dad6e327afecd97a1b551b7ce44342cdf43e806b9a5e1dc5cbf378eb2ba"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/native_contract.cpp",
+      "sha256": "fce2a5c826c981371e39e53df0ac693712bc07c1631499d3b5b486355abebbb2"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/numeric_boundaries.cpp",
+      "sha256": "f89c790967df9bcc379c4c351ca91ceca33445196321be0cff80b1d42c0986d5"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/numeric_driver.cpp",
+      "sha256": "70d7b9f0a35f98051061aa4b0b853659d53a80ba18bf7fd7ccf90031403afbe3"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/numeric_oracle.py",
+      "sha256": "48ef6504bef1f8ff95437f247a9b669e2f464707feb95bbca42b0a0b16019207"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/raw_samples_contract.cpp",
+      "sha256": "127a2af832f8ff9727a6821143c09a4815929469e30b7ed21a048b178fb54bc3"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/run_ieee_oracle.py",
+      "sha256": "68a8f75334511ed3b65ca8e94da1a5dc2494df6533987a5da7df772f0d01b01f"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/sample_descriptors_contract.cpp",
+      "sha256": "dda4b93c36b95fcd5b4bffd1f0676217066ba0c3094701908c989fd8d10b0f86"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/scalar_contract.cpp",
+      "sha256": "e50ba538c449c0c4f33a90547c9067837e9d8b982538127dbcd6985be3e132db"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/segmented_samples_contract.cpp",
+      "sha256": "f14daec615cb4a4ba8aeb7fbfa5a64b435d1bdc539bdad33f6385191d1372b67"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/structured_fuzz_contract.cpp",
+      "sha256": "ded16e58db0e0886cb214a73451531ab2da5535f10e37e6bf0fb42239f42c5af"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/structured_limits_contract.cpp",
+      "sha256": "a001f1fdd6d6457fb171deab24743ac14d987af40423814af9e0a79dd91e7f38"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P14/structured_wire_contract.cpp",
+      "sha256": "24a1333482304af537d56027c21328687bec31e2f776e8ad0e54adca54e4485b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/CMakeLists.txt",
+      "sha256": "bea41c3c5b92d5e0f5d0d96cb55e2a1f7d0120d6b62084575ed4606e74aa8183"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/budget_contract.cpp",
+      "sha256": "2bc4e35814ac56096a5da764c6736632b0a53ce856624767bb47ebb39a157af7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/counter_contract.cpp",
+      "sha256": "a1fa765ac95a862296981009298e5c41783e0ac5c265b303ec06e96c8e1db976"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/deferred_contract.cpp",
+      "sha256": "0d46b45f8ae87b3d62d5e4be94ea22ad2378130fd57ae9afe3adb7abeb9eda85"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/endpoint_contract.cpp",
+      "sha256": "b69ae279f5dd49250ffb052f68b4ac225effaa386d9dac52cfda0ae773522347"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/kernel_contract.cpp",
+      "sha256": "1fbb9221ab8ab131d1e72145f24a88c2bfd0b33d74b08d8b6ac6576946e93ad0"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/owned_budget_contract.cpp",
+      "sha256": "abb588bf81fbf4105576c1a7f40c1e1c373bcc275bfd2b2c71a543017a30ff18"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/process_contract.py",
+      "sha256": "af4528f4e5da387d90410d2531f0f101e27768051465884ba20837e3dc20d02c"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/public_contract.cpp",
+      "sha256": "51cdce2d56961db8f81bc1ba4bd6cafcae8870353c6415660e4261ab9a04819d"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/rejection_contract.cpp",
+      "sha256": "2fbdc149141eba37dc9ae9bdec06d39e3ee9065e2100ea119d284928ceb5450f"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/remote_contract.cpp",
+      "sha256": "9de62940c06ab4d1b85e84eee88ab52138076e5981882b81e7473f5f4839389b"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/rf_lifecycle_contract.cpp",
+      "sha256": "1d85f2ca70535b5ad09e92c786d2a960765be38fa0ff3a4625ff98a7e650f443"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/scene_contract.cpp",
+      "sha256": "d5bf815e8378eb009f36a1e4e618c62c08c95bf55189d763cd5dae5d3c2a0de7"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/scene_runtime_contract.cpp",
+      "sha256": "d108ed5b028330e379923ef7ef5784531c9c905ab3ca67d5297067038b7b48d9"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/sweep_contract.cpp",
+      "sha256": "5e592275eb37c0c911555f32c1fe2c0e1c88528134dfe938fa7f96b2b0d75bf8"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/validation_contract.cpp",
+      "sha256": "9045e2c36d58d1befefdb6280bd5717ee6150b04f8a361f63f8fe714f1c372a3"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P16/wire_contract.cpp",
+      "sha256": "eb6d7ce4d4c2ec1e82e624374110a52bdf497071c40cbb7e45b0a3692d3c4989"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P17/CMakeLists.txt",
+      "sha256": "9ab7b3808ff031c8dc12faf016bd3207f11446a601e4bd6c0cdd28b679473938"
+    },
+    {
+      "path": "third_party/vrt_framework/tests/verification/P17/wire_contract.cpp",
+      "sha256": "507f5a1f29d45e902130973080a50201e0d912b31b64982f112cb38fd400a05b"
+    },
+    {
+      "path": "generated/detector.json",
+      "sha256": "e209f6d64d2052ea5c7fef85a552c9f2b63f268b272a8a49ed27521c778cf06e"
+    },
+    {
+      "path": "generated/four-radio.clab.yml",
+      "sha256": "e0908bfc60b753dcd7366176c63c8caa59bfc219d9701b2d030a6fda40f9dc01"
+    },
+    {
+      "path": "generated/processor.json",
+      "sha256": "7aaa8146b1124f8beb0b6f41239d02adfd983bd2b6ee34157b9f8519d28c7a6d"
+    },
+    {
+      "path": "generated/radio1.json",
+      "sha256": "7b20bef7f65a49a3a39f118fc81659f128cf25450382c253e329a37590c81dee"
+    },
+    {
+      "path": "generated/radio2.json",
+      "sha256": "4dcdc95e643afaf1f02692b2b8bdc90bcec023223d3977e03941687a04eda543"
+    },
+    {
+      "path": "generated/radio3.json",
+      "sha256": "49238f0cffb8ed7e9d70cce6e4b3f494543171d9b5341fd516bd7ebfda6552a7"
+    },
+    {
+      "path": "generated/radio4.json",
+      "sha256": "5dffcb37f73716a6a1539ff4e5e05eeb78da65b0f9c973e7bcb31e2fe0798bd1"
+    },
+    {
+      "path": "generated/srlinux.cli",
+      "sha256": "d645daeed713ab8d8db3416177440de0e8a5f965c23f18964bb10913ef13de57"
+    },
+    {
+      "path": "generated/manifest.json",
+      "sha256": "ea66c58f565de6cd53416e889ba953d71489d6fc580d7996a9eb1feb7abf8c9f"
+    }
+  ]
+}

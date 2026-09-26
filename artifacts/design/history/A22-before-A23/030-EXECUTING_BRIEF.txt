@@ -1,0 +1,50 @@
+Continue from architecture A22 in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Read AGENTS.md, IMPLEMENTATION_HANDOFF.md, the current design
+documents, and artifacts/implementation/A22/RESULTS.md.
+Verify artifacts/design/COMPLETION.json before proceeding.
+Preserve existing changes and the sibling-directory arrangement.
+Treat the investigation, GraphX and containerlab-vrt siblings as
+read-only evidence.
+
+Implement the next bounded slice: generic per-node log viewing.
+
+1. Define the log contract and independent acceptance expectations:
+   exact enrolled node identity, availability, bounded initial tail,
+   follow/stop, cancellation, truncation, disconnect and failure states.
+   Inspect pinned native interfaces before choosing the transport.
+   Do not introduce an arbitrary command execution interface.
+
+2. Qualify A22’s generic enrollment, deployment, session and observation
+   contracts before enabling log transport. This task authorizes a
+   newly created dedicated VM and a minimal explicitly inventoried
+   test lab. Never access or reuse pre-existing VMs. Preserve failed
+   attempts, clean up the task-owned lab and stop the new VM afterward.
+
+3. Implement bounded log retrieval and follow/stop in the approved
+   node inspector. Bind requests to the exact enrolled runtime identity.
+   Cancel streams and clear previous output on node/session changes.
+   Handle unsupported or unavailable log sources explicitly.
+
+4. Keep all production behavior generic. Four-radio is only an example.
+   Do not hardcode its names, counts, images, roles or application behavior.
+   Do not add serial-console transport, capture, Lua execution or
+   application-health inference in this slice.
+
+5. Verify identity mismatch and replacement refusal, output limits,
+   hostile text, cancellation, switching nodes, disconnect and recovery.
+   Separate mocked, actual runtime and unrun checks. Preserve historical
+   Q-gate outcomes and the177-case corpus denominator.
+
+Retain TT-01, containment, disclosure controls and resource limits.
+Use port4173 without terminating unrelated processes. Ordinary tests
+must not create VMs automatically.
+
+Preserve the approved GUI-1 revision3 layout; request another visual
+review only for material layout changes. Follow D-15 when updating the
+published design set.
+
+Complete the bounded implementation. Report what works, actual test
+results, remaining limitations, reproducible commands, VM cleanup
+status and the smallest next gated step.

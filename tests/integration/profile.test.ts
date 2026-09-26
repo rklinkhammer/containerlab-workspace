@@ -5,7 +5,7 @@ test('actual SRL aliases, transitions, failures and replacement preserve identit
  const guest=(...a:string[])=>execFileSync('limactl',['shell',s.vm,'sudo',...a],{timeout:180000,stdio:'pipe'}).toString();const left=s.binding.nodes.find((n:any)=>n.node==='left').id;const pid=()=>guest('docker','inspect','--format','{{.State.Pid}}',left).trim();const ip=(...a:string[])=>guest('nsenter','-t',pid(),'-n','ip',...a);
  const snap=async(stage:string)=>{await wait();const g:any=await observe();evidence.push({stage,snapshot:g});return g;};
  try{
-  let g=await snap('initial');assert.equal(g.contract,'observation/0.7');assert.equal(g.endpoints[0].observedInterface,'e1-1');assert.equal(g.endpoints[0].nativeAlias,'ethernet-1/1');assert.equal(g.endpoints[0].kind,'nokia_srlinux');assert.ok(g.endpoints.every((e:any)=>e.status==='observed'));
+  let g=await snap('initial');assert.equal(g.contract,'observation/0.9');assert.equal(g.endpoints[0].observedInterface,'e1-1');assert.equal(g.endpoints[0].nativeAlias,'ethernet-1/1');assert.equal(g.endpoints[0].kind,'nokia_srlinux');assert.ok(g.endpoints.every((e:any)=>e.status==='observed'));
   ip('link','set','e1-1','down');g=await snap('left-down');assert.equal(g.endpoints[0].administrativeState,'down');assert.equal(g.endpoints[0].carrier,'unknown');assert.equal(g.endpoints[1].status,'observed');
   ip('link','set','e1-1','up');g=await snap('left-up');assert.equal(g.endpoints[0].administrativeState,'up');
   ip('link','set','e1-1','alias','qualification-wrong-alias');g=await snap('alias-missing');assert.equal(g.endpoints[0].reason,'ALIAS_UNRESOLVED');assert.equal(g.endpoints[0].status,'unavailable');assert.equal(g.endpoints[1].status,'observed');

@@ -1,4 +1,4 @@
-import{readFileSync}from'node:fs';import{derivePlan}from'../../contracts/enrollment.ts';import{enroll}from'../../contracts/multi-observation.ts';
+import{readFileSync}from'node:fs';import{derivePlan}from'../../contracts/legacy/enrollment.ts';import{enroll}from'../../contracts/legacy/multi-observation.ts';
 const expected=JSON.parse(readFileSync('experiments/EXP-022-multi-endpoint/expectations.json','utf8'));
 export function fixture(){
  const g=structuredClone(JSON.parse(readFileSync('experiments/EXP-021-srl-profile/srl-session.json','utf8')).graph);g.provenance.bundleId='MULTI-ENDPOINT-V2';g.dependencies=[];g.diagnostics=[];

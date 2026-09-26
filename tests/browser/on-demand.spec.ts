@@ -1,12 +1,12 @@
 import {test,expect} from '@playwright/test';
 test('on-demand view clearly reports an unavailable worker without a session',async({page})=>{
  test.skip(!!process.env.CLAB_NATIVE_SESSION,'Live session has separate tests');
- await page.goto('/');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
+ await page.goto('/?view=evidence');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
  await expect(page.getByRole('status')).toContainText('No active dedicated worker session');await expect(page.getByRole('button',{name:'Load native declarations',exact:true})).toBeDisabled();
 });
 test('actual native load renders declarations and live bundle provenance',async({page})=>{
  test.skip(!process.env.CLAB_NATIVE_SESSION,'Requires explicitly created dedicated VM');
- await page.goto('/');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
+ await page.goto('/?view=evidence');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
  await page.getByLabel('Approved bundle').selectOption('CTX-C168');await page.getByRole('button',{name:'Load native declarations',exact:true}).click();
  await expect(page.getByRole('status')).toContainText('completed');await expect(page.getByText('2 nodes / 1 link occurrences')).toBeVisible();await expect(page.getByText(/On-demand native execution/)).toBeVisible();
  await expect(page.getByRole('button',{name:'Live inspection'})).toBeDisabled();
@@ -16,7 +16,7 @@ test('actual native load renders declarations and live bundle provenance',async(
 });
 test('actual native schema and missing-template errors remain specific',async({page})=>{
  test.skip(!process.env.CLAB_NATIVE_SESSION,'Requires explicitly created dedicated VM');
- await page.goto('/');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
+ await page.goto('/?view=evidence');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
  await page.getByLabel('Approved bundle').selectOption('F2');await page.getByRole('button',{name:'Load native declarations',exact:true}).click();await expect(page.getByText(/Line 12: Native schema rejects node field x-unknown/)).toBeVisible();
  await page.getByLabel('Approved bundle').selectOption('BUNDLE-MISSING');await page.getByRole('button',{name:'Load native declarations',exact:true}).click();await expect(page.getByText(/required template or variable context is missing/)).toBeVisible();
 });
@@ -31,14 +31,14 @@ test('UI cancellation discards stale responses (transport mock)',async({page})=>
  await page.route('**/api/native/catalog',r=>r.fulfill({json:{available:true,bundles:[{id:'F1',entryFile:'F1.clab.yml',fileCount:1,bundleSha256:'a'.repeat(64),context:'test'}]}}));
  await page.route('**/api/native/load',async r=>{await new Promise(resolve=>setTimeout(resolve,800));await r.fulfill({json:{graph:{malformed:true}}}).catch(()=>{});});
  await page.route('**/api/native/cancel',r=>r.fulfill({json:{cancelRequested:true}}));
- await page.goto('/');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();await page.getByRole('button',{name:'Load native declarations',exact:true}).click();await page.getByRole('button',{name:'Cancel load',exact:true}).click();await expect(page.getByRole('status')).toContainText('Cancellation requested');await expect(page.getByRole('region',{name:'Declared topology preview'})).toHaveCount(0);
+ await page.goto('/?view=evidence');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();await page.getByRole('button',{name:'Load native declarations',exact:true}).click();await page.getByRole('button',{name:'Cancel load',exact:true}).click();await expect(page.getByRole('status')).toContainText('Cancellation requested');await expect(page.getByRole('region',{name:'Declared topology preview'})).toHaveCount(0);
 });
 
 test('expanded approved cases expose native objects and scoped dependency evidence',async({page})=>{
  test.skip(!process.env.CLAB_NATIVE_SESSION,'Requires explicitly created dedicated VM');
  const {readFileSync}=await import('node:fs');
  const cases={...JSON.parse(readFileSync('experiments/EXP-017-coverage/expectations.json','utf8')),...JSON.parse(readFileSync('experiments/EXP-017-coverage/native-dispositions.json','utf8'))};
- await page.goto('/');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
+ await page.goto('/?view=evidence');await page.getByRole('button',{name:'On-demand native loading',exact:true}).click();
  for(const [id,e] of Object.entries(cases) as [string,any][]){
   await page.getByLabel('Approved bundle').selectOption(id);await page.getByRole('button',{name:'Load native declarations',exact:true}).click();
   await expect(page.getByRole('status')).toContainText('completed');

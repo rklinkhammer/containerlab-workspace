@@ -1,0 +1,100 @@
+[
+  {
+    "path": "IMPLEMENTATION_HANDOFF.md",
+    "sha256": "2feec60fc63d69a5c1c9c9486e6deebc6c8165c8c89a394c0d25e48266505b00",
+    "new": false,
+    "publishedSha256": "bef868bfc63ae0c2d1fd5b38173d1aa5a490a901cb2e8e6403cc477743114dd6",
+    "bytes": 2142
+  },
+  {
+    "path": "README.md",
+    "sha256": "50a36d8ae6bee8a10181fff5d9f7ec276becd8250b75a8021edc52c9b4572754",
+    "new": false,
+    "publishedSha256": "c5c1533221dcae656b8eeb387e028d0458191ec47b9c6c7c1214f3c93392b7e8",
+    "bytes": 9618
+  },
+  {
+    "path": "artifacts/design/ARCHITECTURE.md",
+    "sha256": "68a97e8766b611b730d94e18ac7ec9e54aeb0bd48e3808f3f8ac772d8d128f46",
+    "new": false,
+    "publishedSha256": "8aab601b6e2f0ddd4ad18e8cf7f779aa68805e0dc96cae595f6044c7bd839c83",
+    "bytes": 67762
+  },
+  {
+    "path": "artifacts/design/CANDIDATE_PROFILE.json",
+    "sha256": "6dad5b349124c4c7f06a3bbaf3975c58b4943f5a0aec856214a50e3df5716294",
+    "new": false,
+    "publishedSha256": "4d530d07f2abb4f019eae32de7f64552e37661f971eac7196cc4ed3fb898004b",
+    "bytes": 4395
+  },
+  {
+    "path": "artifacts/design/DECISIONS.md",
+    "sha256": "dbab0d3e7e4f2f698b33594800d8313656d24fad13efa766c15c02788c79e761",
+    "new": false,
+    "publishedSha256": "c588ff93d9c868048e70da3a69c1843757f8692bb505b4f7427905526eae7bf9",
+    "bytes": 52661
+  },
+  {
+    "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+    "sha256": "4ce3e50074c71add7a15bf23067b69ea299190f65496d7c5ff89abff19c2b363",
+    "new": false,
+    "publishedSha256": "c67e34fc6544a7fe95020014ea3ac223ce6430d8d64f79caeafced0480915095",
+    "bytes": 40884
+  },
+  {
+    "path": "artifacts/design/OBSERVATION_CONTRACT.md",
+    "sha256": "9c204dedd9ef786f15dfb8f851b4a799d30143fa4c1138aa532255e5a4197d6f",
+    "new": false,
+    "publishedSha256": "5fc275b5ce914c5baa83ea887c7b4d8c84b4a7dd110d0c7c231b0b8b64583b23",
+    "bytes": 10475
+  },
+  {
+    "path": "artifacts/design/ON_DEMAND_CONTRACT.md",
+    "sha256": "9a3f2dbba8775fee586c18abd6d6d44f74e85280241ac9f50533fe9f3dedbb84",
+    "new": false,
+    "publishedSha256": "3321bc886818e9875587d0f92637fff55a68e4e2c8f62b420fba76b7113b4fa9",
+    "bytes": 4847
+  },
+  {
+    "path": "artifacts/design/P1A_BACKLOG.md",
+    "sha256": "624ca90d15d8b2b0e5de0bdfb2796c344ee20024632ee7b32e4bb43dd50800cb",
+    "new": false,
+    "publishedSha256": "73b3a5b6c7948e3e80e7db77aaa453734b46152c3be866e3b842a6e7bb0818d5",
+    "bytes": 17551
+  },
+  {
+    "path": "artifacts/design/READINESS.md",
+    "sha256": "0b81bd8f147cb4efaa54c57ff6b7d14d35c1ae16e95b41190a03270ee778d5fc",
+    "new": false,
+    "publishedSha256": "a23c6ffa168f1d7786550a01f3da3b8ff4dbc8d6958da4b578ea9456f5c97748",
+    "bytes": 24956
+  },
+  {
+    "path": "artifacts/design/README.md",
+    "sha256": "374a8f776034db29e90c06b16efb39090993ac9f74ef0b7964f625a2f7ce2a9e",
+    "new": false,
+    "publishedSha256": "78745628f92f5dda01c259f79a9114fac2df00fcb3f0bf2c8e68a479d6d0823a",
+    "bytes": 13328
+  },
+  {
+    "path": "artifacts/design/TRACEABILITY.md",
+    "sha256": "eefd4f2a2c3b8fcd0d1e544d20785d490546ec5babadfebee32a7e91f3b39868",
+    "new": false,
+    "publishedSha256": "160b185c328214eb4ff09a9b2b778d8a0f1acba5c33750f31e4db939ab9e3874",
+    "bytes": 32029
+  },
+  {
+    "path": "artifacts/implementation/A21/RESULTS.md",
+    "sha256": null,
+    "new": true,
+    "publishedSha256": "4d2d6c33e64d72551c499cc9f023365ae1fb6c79617f5a21f9be26dab7f16f5b",
+    "bytes": 6492
+  },
+  {
+    "path": "artifacts/implementation/RESULTS.md",
+    "sha256": "1abc2f2fb43817732ff2d3a233a5e907f5f74553400113b39745cda8e3801303",
+    "new": false,
+    "publishedSha256": "20242b1a39f93e1c37411c7b937904ff5d3ed9e28d25b4504e47a1b3e69cfa9d",
+    "bytes": 907
+  }
+]
