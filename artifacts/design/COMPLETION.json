@@ -1,9 +1,9 @@
 {
-  "revision": "A25",
-  "status": "gui_phase1_reconciled_phase2_approved_bundle_navigation",
-  "published_utc": "2026-09-26T02:03:42.295591+00:00",
-  "predecessor_snapshot": "artifacts/design/history/A24-before-A25/MANIFEST.json",
-  "predecessor_manifest_sha256": "da9c218ff03b5ec980e5d438d0817373b5ce814798401b3cdbee9f0752849d68",
+  "revision": "A26",
+  "status": "gui_phase3_bounded_log_workflow",
+  "published_utc": "2026-09-26T02:09:41.745540+00:00",
+  "predecessor_snapshot": "artifacts/design/history/A25-before-A26/MANIFEST.json",
+  "predecessor_manifest_sha256": "3e248b5d51a2db70cc2e987ae660d14e009de4d12209c9096423be8ffc7689c7",
   "file_paths_relative_to": "workspace root",
   "files": [
     {
@@ -28,13 +28,13 @@
     },
     {
       "path": "IMPLEMENTATION_HANDOFF.md",
-      "sha256": "3188ae8ba58229c81f73e008d633fea8e3a1d56b7c19d15fbf3f3abad4f1ff03",
-      "bytes": 8897
+      "sha256": "667df957441766733d01622b90688f91d783091b026597c6c22204b630dcc1cc",
+      "bytes": 10718
     },
     {
       "path": "README.md",
-      "sha256": "9febed706249926f6c9d011b1c3a073e3a61bc5230efb1388048ef638148ec16",
-      "bytes": 12691
+      "sha256": "b48967f5ab812a9f9564cdacb6aea0991a1a0cb9bbc091cabbf404a1a491555f",
+      "bytes": 14512
     },
     {
       "path": "apps/web/src/declared.tsx",
@@ -98,13 +98,18 @@
     },
     {
       "path": "apps/web/src/workbench/NodeLogs.tsx",
-      "sha256": "5375d344bfa3d4dae0fb6df93eb0726538f940b02cf7fb2486ec681aac359aba",
-      "bytes": 3854
+      "sha256": "7bfdf19e3a9c4ce7501c069e4f80f5279b5a79015bc3bb08760c273116628276",
+      "bytes": 5539
     },
     {
       "path": "apps/web/src/workbench/Workbench.tsx",
-      "sha256": "77e1b573260e826929ab203aa67f9d6ca207d36031671de8bbbcb01e17642ad1",
-      "bytes": 20040
+      "sha256": "640013a1421300f94d140913799b0c2e3cbc86391344684ec54fcabde3d88e4a",
+      "bytes": 20067
+    },
+    {
+      "path": "apps/web/src/workbench/log-view.ts",
+      "sha256": "168cb3ea9d0a5d5217e44382f7693db19c557e43def91528ef00fba0455e68bd",
+      "bytes": 504
     },
     {
       "path": "apps/web/src/workbench/model.ts",
@@ -118,8 +123,8 @@
     },
     {
       "path": "artifacts/design/ARCHITECTURE.md",
-      "sha256": "984e45bdd4e7f29ccadce66cce5e4b0e1a6039e2ed7bf143b6d741a16359c0d3",
-      "bytes": 73993
+      "sha256": "fb62c7065ea91e0fb2f55901c70eb13e88ae7c0f06019e376a0307ed4dd79cc0",
+      "bytes": 75814
     },
     {
       "path": "artifacts/design/CANDIDATE_PROFILE.json",
@@ -128,8 +133,8 @@
     },
     {
       "path": "artifacts/design/DECISIONS.md",
-      "sha256": "65f2702c7b6197d02546d4db1ee9abf42ca89b71e3bd7a6b021faef6527eb3e8",
-      "bytes": 58511
+      "sha256": "b96fd0965e89104005ea5b98393d204750b34a478dc2b5ddf7c2ab32e1004906",
+      "bytes": 60007
     },
     {
       "path": "artifacts/design/DECLARED_PREVIEW_BRIEF.md",
@@ -143,8 +148,8 @@
     },
     {
       "path": "artifacts/design/GUI_CONTINUATION.md",
-      "sha256": "b58df0486934c98e63713e932845376334b11ac2328378fa08971731eb219420",
-      "bytes": 4323
+      "sha256": "20f2ccd29d0415fca35b82203f329923bf44c8771a116bcaec0a827b6825ac77",
+      "bytes": 4986
     },
     {
       "path": "artifacts/design/GUI_CONTRACT.md",
@@ -158,8 +163,8 @@
     },
     {
       "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
-      "sha256": "c147d84296dd0ecb68f22061678945b0a3b603b5966202d5b15a4ad172a9248e",
-      "bytes": 48919
+      "sha256": "093ca4a2b2b4a858f2c38224518f7ee409ad13e3c27939754b10ca44983bc7db",
+      "bytes": 50740
     },
     {
       "path": "artifacts/design/NATIVE_PREVIEW_BRIEF.md",
@@ -168,8 +173,8 @@
     },
     {
       "path": "artifacts/design/NODE_LOG_CONTRACT.md",
-      "sha256": "1bc6307e89795ab68a3d120ff44923d29231281ea82c77bd25a14950df4562f2",
-      "bytes": 2888
+      "sha256": "5abeb52cc5dd23ea40666c62744b750c3faa2ca9077ddc2a786cbd8144ac001e",
+      "bytes": 4255
     },
     {
       "path": "artifacts/design/OBSERVATION_CONTRACT.md",
@@ -188,8 +193,8 @@
     },
     {
       "path": "artifacts/design/P1A_BACKLOG.md",
-      "sha256": "3f765c47d5e837ed1b464238c65c0c9755b3c130733d2da820b2f0cc2f7200b8",
-      "bytes": 25586
+      "sha256": "4dd0137dc130d6b294c2b48eff36c5af80f97a7198cef4e752245559110c889b",
+      "bytes": 27407
     },
     {
       "path": "artifacts/design/P1A_CONTRACT.md",
@@ -203,8 +208,8 @@
     },
     {
       "path": "artifacts/design/READINESS.md",
-      "sha256": "9155f4550c70f4669299386fab3a09ea2a257cb227e6c3b6b460fe2be114f2e0",
-      "bytes": 31187
+      "sha256": "7fae665e0b4c3ce4f416e99de28c283da0d824d5a73427b00096bc0a73339416",
+      "bytes": 33008
     },
     {
       "path": "artifacts/design/READINESS_BRIEF.md",
@@ -213,8 +218,8 @@
     },
     {
       "path": "artifacts/design/README.md",
-      "sha256": "3c9a630bed2b745e4a297b3ea04307b8a949411722298a8b72c33e27f4eb8fd5",
-      "bytes": 19559
+      "sha256": "04bffd0b32c7252bcbe92e43e76cad1ac618b0ea57afb718ed98c4cbe1ffd369",
+      "bytes": 21380
     },
     {
       "path": "artifacts/design/RISK_REDUCTION_BRIEF.md",
@@ -238,8 +243,8 @@
     },
     {
       "path": "artifacts/design/TRACEABILITY.md",
-      "sha256": "73e2258527fbc0af5ed26f6b091db9cb89667d8d8aaf0977e2666c294cde3884",
-      "bytes": 39116
+      "sha256": "030cac0426de476ce83e38dfdceb82cbf1cb499f9ce30d33297dbab9b18978b9",
+      "bytes": 40937
     },
     {
       "path": "artifacts/design/TRUSTED_TEST_BRIEF.md",
@@ -1597,6 +1602,171 @@
       "bytes": 7087
     },
     {
+      "path": "artifacts/design/history/A25-before-A26/000-IMPLEMENTATION_HANDOFF.md",
+      "sha256": "3188ae8ba58229c81f73e008d633fea8e3a1d56b7c19d15fbf3f3abad4f1ff03",
+      "bytes": 8897
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/001-README.md",
+      "sha256": "9febed706249926f6c9d011b1c3a073e3a61bc5230efb1388048ef638148ec16",
+      "bytes": 12691
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/002-ARCHITECTURE.md",
+      "sha256": "984e45bdd4e7f29ccadce66cce5e4b0e1a6039e2ed7bf143b6d741a16359c0d3",
+      "bytes": 73993
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/003-CANDIDATE_PROFILE.json",
+      "sha256": "4e4b45ccba844640b983e5b8cc883e5bc8bebe565a7ff8b6a8a4d584759564a4",
+      "bytes": 4857
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/004-COMPLETION.json",
+      "sha256": "1b488c202ddeadc705c7ac156182598dc78fb8869f60001645c565f88f982d1b",
+      "bytes": 286479
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/005-DECISIONS.md",
+      "sha256": "65f2702c7b6197d02546d4db1ee9abf42ca89b71e3bd7a6b021faef6527eb3e8",
+      "bytes": 58511
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/006-DECLARED_PREVIEW_BRIEF.md",
+      "sha256": "68af43294e35d03631ed6cd82dd984873814b5d87502d4f85df38000c2345a78",
+      "bytes": 403
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/007-DECLARED_PREVIEW_CONTRACT.md",
+      "sha256": "5bbc56c578a1ff0a5791241fa70a53d68b2009d3f0492479986ce88e323cb555",
+      "bytes": 1562
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/008-GUI_CONTINUATION.md",
+      "sha256": "b58df0486934c98e63713e932845376334b11ac2328378fa08971731eb219420",
+      "bytes": 4323
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/009-GUI_CONTRACT.md",
+      "sha256": "97e96c1ed4fb19ab004759bbe1611534743c3f18cffb312808411265bfcb6eac",
+      "bytes": 3903
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/010-IMPLEMENTATION_BRIEF.md",
+      "sha256": "c2c362aaa6e00682acabb8cfdfe24457748e67ecd60e95ecc40cb5f5b28b8ee3",
+      "bytes": 2788
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/011-IMPLEMENTATION_PLAN.md",
+      "sha256": "c147d84296dd0ecb68f22061678945b0a3b603b5966202d5b15a4ad172a9248e",
+      "bytes": 48919
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/012-NATIVE_PREVIEW_BRIEF.md",
+      "sha256": "f70d8066a138b21213f3e5f83af08fd7cd2e055b7125f313102577bf79340687",
+      "bytes": 548
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/013-NODE_LOG_CONTRACT.md",
+      "sha256": "1bc6307e89795ab68a3d120ff44923d29231281ea82c77bd25a14950df4562f2",
+      "bytes": 2888
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/014-OBSERVATION_CONTRACT.md",
+      "sha256": "1af0ee1a1686416fadd809395da97e675629bcc0ba4f7417fa137e88db9af54f",
+      "bytes": 12115
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/015-ON_DEMAND_BRIEF.md",
+      "sha256": "8e2907835b545061f32deab896c134b7cfc627fc2b4bafbd8f183a70ed456515",
+      "bytes": 442
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/016-ON_DEMAND_CONTRACT.md",
+      "sha256": "3321bc886818e9875587d0f92637fff55a68e4e2c8f62b420fba76b7113b4fa9",
+      "bytes": 4847
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/017-P1A_BACKLOG.md",
+      "sha256": "3f765c47d5e837ed1b464238c65c0c9755b3c130733d2da820b2f0cc2f7200b8",
+      "bytes": 25586
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/018-P1A_CONTRACT.md",
+      "sha256": "b5e31ddee7edddbb3ad59a9e45d473d9c1409e1eed7ab216b1c3ae2cea42154a",
+      "bytes": 10259
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/019-R2_NEXT_BRIEF.md",
+      "sha256": "7f3892c6b48fe1b6c7f3d37e34f9186f9ad7e8d05930d03e776331c8db7cab90",
+      "bytes": 514
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/020-READINESS.md",
+      "sha256": "9155f4550c70f4669299386fab3a09ea2a257cb227e6c3b6b460fe2be114f2e0",
+      "bytes": 31187
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/021-READINESS_BRIEF.md",
+      "sha256": "b6c61a9b3be888da38d582209a9437ec2e76c38dfd4ac9c7708acce1e65105f5",
+      "bytes": 2322
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/022-README.md",
+      "sha256": "3c9a630bed2b745e4a297b3ea04307b8a949411722298a8b72c33e27f4eb8fd5",
+      "bytes": 19559
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/023-RISK_REDUCTION_BRIEF.md",
+      "sha256": "1e719ce4e7754512fae4e188bf006225d96ea9d581094ddba7106a729d0ed195",
+      "bytes": 1040
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/024-RUNTIME_QUALIFICATION_PLAN.md",
+      "sha256": "b3acc43a0249b61554bf03e54fff509afec02cf3bd1f0c3da6a5877742c278af",
+      "bytes": 7214
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/025-SERIAL_CONSOLE_CONTRACT.md",
+      "sha256": "278e77a08deb76b5aafc909b1ad243524a75c26e9816d12b31a74e76fd72d809",
+      "bytes": 2793
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/026-TEST_PROFILE.md",
+      "sha256": "3c1bdd63c7ea485367edd75330962b52cc798870b723eea57135de2364a8602c",
+      "bytes": 2572
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/027-TRACEABILITY.md",
+      "sha256": "73e2258527fbc0af5ed26f6b091db9cb89667d8d8aaf0977e2666c294cde3884",
+      "bytes": 39116
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/028-TRUSTED_TEST_BRIEF.md",
+      "sha256": "72e27c49a682a1abb74e2aced291d7e297cb08bd8b3b8ca7c7f5a4ba0a535b66",
+      "bytes": 900
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/029-DESIGN_WRITE_INVENTORY.json",
+      "sha256": "e138a365b8e612205ee83fa54f2374da008dd63bfbfb89e092db45aa4c9b8ebc",
+      "bytes": 2793
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/030-RESULTS.md",
+      "sha256": "2f05895cd929552dfe5523caf260a3b668de00316d8e6f0a1d593d1148b1f7cc",
+      "bytes": 3058
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/031-EXECUTING_BRIEF.txt",
+      "sha256": "93aeba00cac8baac878f5e99ac5590c7d2412e2769559311a8ce7bd6e46467cc",
+      "bytes": 451
+    },
+    {
+      "path": "artifacts/design/history/A25-before-A26/MANIFEST.json",
+      "sha256": "3e248b5d51a2db70cc2e987ae660d14e009de4d12209c9096423be8ffc7689c7",
+      "bytes": 7312
+    },
+    {
       "path": "artifacts/gui/GUI-1/ACCEPTANCE.md",
       "sha256": "9fb60e32334510ff4856652475ce117382848a58f9247b9821b8421c61252b21",
       "bytes": 3167
@@ -2352,6 +2522,21 @@
       "bytes": 2538
     },
     {
+      "path": "artifacts/implementation/A26/DESIGN_WRITE_INVENTORY.json",
+      "sha256": "ca27a34dd95ceda9d4a809549ad7c2ad8b883639dad188744c17c3c7cad528cf",
+      "bytes": 3105
+    },
+    {
+      "path": "artifacts/implementation/A26/PUBLICATION.json",
+      "sha256": "951d2d0adcb09c9529d5c881fed0b833817a900d87668f63f013cd89703a701d",
+      "bytes": 198
+    },
+    {
+      "path": "artifacts/implementation/A26/RESULTS.md",
+      "sha256": "74347717a95b43c706de1c3f670b99063db2c3b827d64e7929547dd84c167583",
+      "bytes": 2635
+    },
+    {
       "path": "artifacts/implementation/A9/RESULTS.md",
       "sha256": "30ad41b3bcb8648be451768c616086b9f630c4e6f88cf17ee66144d10ec015fd",
       "bytes": 5308
@@ -2383,13 +2568,13 @@
     },
     {
       "path": "artifacts/implementation/DESIGN_WRITE_INVENTORY.json",
-      "sha256": "e138a365b8e612205ee83fa54f2374da008dd63bfbfb89e092db45aa4c9b8ebc",
-      "bytes": 2793
+      "sha256": "ca27a34dd95ceda9d4a809549ad7c2ad8b883639dad188744c17c3c7cad528cf",
+      "bytes": 3105
     },
     {
       "path": "artifacts/implementation/RESULTS.md",
-      "sha256": "2f05895cd929552dfe5523caf260a3b668de00316d8e6f0a1d593d1148b1f7cc",
-      "bytes": 3058
+      "sha256": "ca51a37dcfc716c47ae460c30622f0856108fb847b4213a6cb87d8b180fe2805",
+      "bytes": 4879
     },
     {
       "path": "artifacts/implementation/SOURCE_INVENTORY.json",
@@ -7237,6 +7422,61 @@
       "bytes": 7825
     },
     {
+      "path": "experiments/EXP-030-log-workflow/EXECUTING_BRIEF.txt",
+      "sha256": "93aeba00cac8baac878f5e99ac5590c7d2412e2769559311a8ce7bd6e46467cc",
+      "bytes": 451
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/PLAN.md",
+      "sha256": "8a63ca0e4fe7a872e5429f591400dddafc6d94e61b51c97764b64ef6d119cfac",
+      "bytes": 1300
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/baseline.json",
+      "sha256": "92cc1a05f2ad39fc9f800a0c61ef47502877efb43b6f86c0cc0959a2930631a5",
+      "bytes": 94
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/browser-initial.log",
+      "sha256": "571abd189066b2fab1533c338c615329d705f0edf92f42bc0352b06534d9bc39",
+      "bytes": 2388
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/browser.log",
+      "sha256": "08f4cd058a374a7560eb1194b110f11fac9dee88315857c56b42f637a1a4239b",
+      "bytes": 2529
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/build.log",
+      "sha256": "4e8266660e30ff492b7c74211995de235b85bcd8c7aa1779d7f33076c3ad06a7",
+      "bytes": 1920
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/native-static.log",
+      "sha256": "881d73a5b17aa9326b23fd03dc8aa78ae0dfb261955ed6a4d24ea6c21a7a5bb5",
+      "bytes": 104
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/publish.py",
+      "sha256": "ae9d82d99621a8d3bb3541997e6b9672698bae43db7822eb36a73a0fd9502bee",
+      "bytes": 3027
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/stage.py",
+      "sha256": "026ea30ea5d6811033383cf8d37ae358eac624d8bd4d678ca6f50fa72c2f7523",
+      "bytes": 9302
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/typecheck.log",
+      "sha256": "46572b97d97ad997f355cd21952d0772a525d4688f39d37a0f2da2c9b0d3c310",
+      "bytes": 66
+    },
+    {
+      "path": "experiments/EXP-030-log-workflow/unit.log",
+      "sha256": "753fac5034465051fd3090360e4adc01fe4206e835eca57d9a973a3a713efbfa",
+      "bytes": 7946
+    },
+    {
       "path": "native/observer/inspect.py",
       "sha256": "63b12417e3a715877710950ece2071ddc8999b5be0666ed60b4eff603eaec942",
       "bytes": 8500
@@ -7362,6 +7602,11 @@
       "bytes": 2128
     },
     {
+      "path": "tests/browser/log-workflow.spec.ts",
+      "sha256": "83507340750d8024201bc4c0d43d3de01bdd9fb5d9c9fd821407555fd27cc9bf",
+      "bytes": 6058
+    },
+    {
       "path": "tests/browser/multi.spec.ts",
       "sha256": "46ee0e7114c273393a0d05378a0ba4c106d989ad3a942ec35169e578bc2e9cef",
       "bytes": 4480
@@ -7378,8 +7623,8 @@
     },
     {
       "path": "tests/browser/node-logs.spec.ts",
-      "sha256": "3da0adc6613135d2aab21c38b5e6fa967b7ccc700f90a3be71d68fca2909b3bc",
-      "bytes": 2802
+      "sha256": "6e2364cd10b474a819efb5d6f00a15fb105262e18524a9ba265d2f34a1529e15",
+      "bytes": 3096
     },
     {
       "path": "tests/browser/observation.spec.ts",
@@ -7578,8 +7823,8 @@
     },
     {
       "path": "tests/node-logs.test.ts",
-      "sha256": "5e97ff2cfdfc3a2d6d90bca75eb1987cfdc909b41c2dab20b923ea9bb2362d75",
-      "bytes": 3144
+      "sha256": "3c4e12860571e6c225df9d3ccc4487e2a36b51616bce1e54575b844322c130ed",
+      "bytes": 3825
     },
     {
       "path": "tests/observation-cleanup.test.ts",

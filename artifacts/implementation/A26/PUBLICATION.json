@@ -1,0 +1,7 @@
+{
+  "revision": "A26",
+  "archived_files": 32,
+  "staged_replacements": 13,
+  "whole_set_atomic": false,
+  "method": "verified full snapshot, prior-hash guards, per-file replace, completion last"
+}

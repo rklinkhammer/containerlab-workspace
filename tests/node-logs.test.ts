@@ -7,3 +7,11 @@ test('transport enforces malformed/output/timeout/cancellation boundaries with a
  writeFileSync(join(dir,'limactl'),`#!${process.execPath}\nconst mode=process.env.LOG_TEST_MODE;if(mode==='bad')process.stdout.write('not json');else if(mode==='big')process.stdout.write('x'.repeat(600000));else if(mode==='wait')setTimeout(()=>{},30000);else console.log(JSON.stringify({ok:true,text:'test',truncated:false}));`,{mode:0o700});process.env.PATH=dir+':'+old;
  try{assert.equal((await logTransport('fake',[],new AbortController().signal)).text,'test');process.env.LOG_TEST_MODE='bad';await assert.rejects(logTransport('fake',[],new AbortController().signal),/MALFORMED_LOGS/);process.env.LOG_TEST_MODE='big';await assert.rejects(logTransport('fake',[],new AbortController().signal),/OUTPUT_LIMIT/);process.env.LOG_TEST_MODE='wait';const c=new AbortController(),p=logTransport('fake',[],c.signal);c.abort();await assert.rejects(p,/CANCELLED/);await assert.rejects(logTransport('fake',[],new AbortController().signal),/INSPECTION_TIMEOUT/);await stopNodeLogs();}finally{process.env.PATH=old;delete process.env.LOG_TEST_MODE;rmSync(dir,{recursive:true,force:true});}
 });
+
+import {logView} from '../apps/web/src/workbench/log-view.ts';
+test('local tail then literal filter preserves bounds and does not interpret regex or markup',()=>{
+ const text=Array.from({length:100},(_,i)=>`line ${i} ${i===99?'[WARN] <script>.*':''}`).join('\n')+'\n';
+ const v=logView(text,25,'[warn]');assert.equal(v.fetched,100);assert.equal(v.window,25);assert.equal(v.matched,1);assert.equal(v.text,'line 99 [WARN] <script>.*');
+ assert.equal(logView(text,25,'line 0').matched,0);assert.equal(logView(text,100,'line 0').matched,1);
+ assert.equal(logView(text,25,'.*').matched,1);assert.equal(logView('',25,'').fetched,0);assert.equal(logView('one\n\n',25,'').fetched,2);
+});

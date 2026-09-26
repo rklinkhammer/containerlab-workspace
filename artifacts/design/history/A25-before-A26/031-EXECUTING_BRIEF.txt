@@ -1,0 +1,2 @@
+User: continue with phase 3
+Continue GUI_CONTINUATION from verified A25: audit existing bounded node-log workflow and implement remaining availability/filter/tail/follow/recovery gaps. Preserve exact runtime identity, cancellation, safe rendering, approved layout and TT-01. No new source types, capture, serial transport or sibling edits. Local and replayed browser qualification only unless a changed native boundary demands fresh runtime evidence.
