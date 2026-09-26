@@ -1,0 +1,1 @@
+User: continue with phase 5. Qualify integrated approved GUI workflow on the supported Linux profile in a fresh dedicated VM. Preserve siblings, unrelated changes, historical gates and177 denominator. No pre-existing VM access. Remove task lab and stop VM. Serial/QEMU remains separate Phase6.

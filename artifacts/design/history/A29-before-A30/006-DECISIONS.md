@@ -375,13 +375,3 @@ Risks: image/version-specific launch conventions, incomplete inventories, serial
 **Inferred readiness:** selected Linux capture workflow is ready for Phase5 integrated GUI qualification, while general profile coverage remains partial. B6/B7, R4 and scoped S-01/S-02/S-05/S-07; historical Q outcomes and177 denominator unchanged. TT-01 remains active. No current runtime-health or losslessness inference from captured bytes.
 
 **Unresolved / recovery:** only current in-memory PCAP, first100 frames and one reviewed synthetic Lua module. No imports, persistence, user-protocol module, broader kinds/capacity or crash-recovery claim. Disable the new session capability and restore matching code/documents through Git/D-15; no database migration. Reopen for retention, artifact libraries, wider disclosure, arbitrary code, tool versions or shared hosting.
-
-## D-35 — Selected-profile integrated acceptance before serial expansion
-
-**Observed:** EXP-034/A30 qualifies the existing composition of native loading, runtime observation, logs and capture/reanalysis in one unmocked browser scenario. No production code or DTO change was necessary. B4/B5/B6/B7 plus scoped disclosure/cancellation/identity controls are exercised together; historical Q gates,177 denominator and TT-01 remain unchanged.
-
-**Scope decision / Inferred:** accept Phase5 for the explicitly inventoried Linux RUNTIME-PAIR/reviewed synthetic Lua profile. Do not equate that with four-radio application readiness, all-kind fidelity, production release or serial support. Broader examples remain independent qualifications, preserving Containerlab as authority and preventing fixture-specific GUI logic.
-
-**Recovery and limitations:** actual capability withdrawal was observed through denied analysis/download; the user then explicitly disconnected and reconnected after restoring configuration. This is not a background revocation or auto-reconnect guarantee. Cancellation during capture recovered after bounded guest completion. Live identity replacement, crash/power-loss and long soak were not rerun. Evidence/scripts are additive; rollback documents only via D-15 if needed, with no application/data migration.
-
-**Next gate:** Phase6 guest/image/launcher and virtualization feasibility, then true serial backing discovery with negative listener controls; transport only after discovery. The second QEMU-detector four-radio variant must preserve the original and requires separately scoped sibling changes. Reopen integration acceptance for changed native/tool/script pins, contracts, runtime kinds or newly enabled operational features.

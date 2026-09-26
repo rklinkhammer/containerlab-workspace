@@ -1,17 +1,3 @@
-# A30 — Phase 5 integrated GUI acceptance
-
-**Observed:** A29's 1,823 file hashes and predecessor snapshot verified; complete33-file D-15 archive retained. One unmocked browser session exercised actual native declarations, exact runtime enrollment/observation, per-node stdout logs with follow/stop, selected-endpoint capture, reviewed Lua filtering, same-PCAP reanalysis and byte-identical download, invalid-filter retention, capability-withdrawal refusal, disconnect during capture and successful reconnect/new capture. Node/view changes cleared prior evidence. No production source changes were needed.
-
-**Observed verification:** 85 unit/contract tests, six native static checks, build/typecheck,19 replay browser tests and one54.7-second integrated live browser scenario passed. The integrated test is skipped in the ordinary replay invocation and ran separately with explicit opt-in; it does not provision VMs automatically. Desktop/mobile screenshots were inspected and the mobile width check passed. This is not an accessibility-conformance audit. Actual capture contained2,234 bytes with distinct sequence7/8 frame sets; reanalysis/download preserved hash, bytes and original expiry.
-
-**Observed cleanup:** finite synthetic traffic completed, task-owned lab removed, no capture/reanalysis scratch remained, and fresh VM `clab-load-20260926-130336-exp016` is stopped. No pre-existing VM or sibling workspace was accessed for runtime or modified. GUI-1 revision3 layout remains unchanged. Historical Q gates,177-case denominator and TT-01 unchanged.
-
-**Readiness / next:** Phase5 passes for the selected Linux RUNTIME-PAIR profile and reviewed synthetic Lua module. It does not qualify every native kind, four-radio/VITA application behavior, arbitrary scripts, production hosting or serial consoles. Next is Phase6a: pin a freely distributable guest image and launcher, verify host/guest architecture and virtualization feasibility, then qualify authoritative serial backing/discovery before any xterm transport. The second generated QEMU-detector four-radio configuration remains separate from the original container-only fixture and follows that platform qualification. No sibling fixture changes or Phase6 runtime work were performed here.
-
-See artifacts/implementation/A30/RESULTS.md, artifacts/design/GUI_CONTINUATION.md and experiments/EXP-034-integrated-gui/README.md (workspace-relative). Existing serial discovery criteria remain in experiments/EXP-028-console-discovery/RUNTIME_PLAN.md. Preview uses port4173; ordinary checks never create VMs. Live use requires a new explicitly created session.
-
-## Historical baseline (retained)
-
 # A29 — Phase 4 managed PCAP reanalysis
 
 **Observed:** A28's 1,742 manifest files and predecessor snapshot verified before work; full D-15 archive retained. The link inspector can reanalyze its current managed PCAP with a new display filter or reviewed Lua choice, without recapture. The request supplies only artifact ID/hash, a distinct analysis job ID and reviewed analysis options. The server supplies the retained bytes; identity, original capture metadata, download bytes and five-minute expiry remain unchanged. Cancellation keeps a valid original artifact. Displayed analysis identifies its applied filter and analysis time.
@@ -140,23 +126,15 @@ Current evidence: artifacts/implementation/A22/RESULTS.md (workspace-relative); 
 
 ## Historical A19 and earlier
 
-# Dependency-ordered P1a backlog — A19
+# Implementation handoff — architecture A19
 
 **A19 current — Implemented:** the five existing approved profiles share one native-derived bounded enrollment, collector and association path. Fresh sessions use enrollment/0.2, observation-session/0.2 and observation/0.7. Strict historical0.1–0.6 readers remain; duplicate fixed-pair runtime paths are removed. Incompatible sessions fail before runtime access. [A19 results](../implementation/A19/RESULTS.md) and [current observation contract](OBSERVATION_CONTRACT.md) define actual verification, migration and limitations. TT-01, historical Q statuses and177-case denominator are unchanged.
 
 **Inferred next:** a finite sustained-refresh/recovery qualification of an existing approved profile, with predeclared budgets and fresh-session cleanup, before capability expansion. Peer/continuity/NOS health/forwarding remain unknown. No new kinds, discovery, operational controls or authorization work is implied.
 
-### Current dependency-ordered follow-up
+### A19 completion and next execution boundary
 
-| Item | State | Acceptance / mapping |
-|---|---|---|
-| B5 consolidated observer | Implemented in A19 | Five approved profiles, explicit0.7 migration, historical readers; scoped Q-05/S-01/S-02/S-05/S-07 evidence |
-| B5 finite reliability trial | Proposed next; requires explicit runtime task | Predeclare duration/cadence/budgets, disconnect/reconnect/cancel and scoped cleanup; no adoption or new capabilities |
-| B3 broader native/context coverage | Independent remaining work | Preserve originals, specific native errors and177 denominator; Q-03/Q-04 unchanged |
-| Broader operational targeting | Blocked/unqualified | Peer/continuity/ownership/freshness evidence and explicitly authorized scope before B6/B7 |
-| Login/multi-user authorization | OUT_OF_SCOPE under TT-01 | Do not reintroduce as a dependency |
-
-The historical backlog below is superseded where it describes an already implemented next slice.
+B5 consolidation is implemented; no budget or native-kind expansion. D-24 replaces active legacy pair paths with common graph-derived enrollment and strict fresh-session migration. Keep runtime changes opt-in and separate from ordinary build/tests. A proposed next reliability trial must state finite duration, sample thresholds, disconnect/recovery/cancellation and teardown expectations before execution; it may use only an explicitly authorized fresh VM and approved fixture. B2–B4 source/context gaps and B6–B7 operational capabilities remain independently gated. [README](../../README.md) gives current commands; old commands below are historical.
 
 ## Historical design context (A18 and earlier)
 
@@ -185,18 +163,146 @@ The historical backlog below is superseded where it describes an already impleme
 
 **A8 active scope — user-selected TT-01:** trusted single-user test environment. R2 caller/job authorization, R3 identity/ownership integration and P6 multi-user work are **OUT_OF_SCOPE**, not passed or prerequisites. This supersedes authorization requirements and next-step recommendations in earlier sections below. Retain native correctness, containment, limits, data minimization and metadata compatibility/expiry. See [test profile](TEST_PROFILE.md). **Observed:** [EXP-013](../../experiments/EXP-013-context-coverage/RESULTS.md) resolved 25/26 context derivatives versus 0/26 original fragments and confirmed a one-ended dummy link. New VM stopped; historical Q scores unchanged.
 
-| Item | Current state | Next work / acceptance | Mapping |
-|---|---|---|---|
-| P0 DTO/fixture harness | Synthetic implementation tested | Implemented p1a/0.2 recorded DTO; independent native fixtures pass; retain budget/reference checks | B2/B4, D-02, Q-04 |
-| P1 upstream GUI reuse | Exact package assessment blocked by access; fallback available | Assess pinned bytes if supplied; does not block minimal fixture renderer | B4, D-03 |
-| P2 graph/inspectors | Synthetic and recorded-native implementation tested | Single-ended marker/inspector and unresolved provenance delivered; live resolution remains separate | B4, Q-04, S-01/S-05/S-07 |
-| P3 input bundles | Ephemeral fixture design ready; sensitive persistence separate | Exact bytes/hashes, declared inputs/missing dependencies, bounded staging and cleanup; no user auth | B2, D-13 non-auth parts |
-| P4 native projection | Recorded projection implemented; live fixture invocation next under TT-01 | Pinned getters + minimized actual version metadata, no operational socket; require explicit native contract and meaningful negative tests | B2, R2 non-auth, Q-02/Q-04 |
-| P5 corpus/context | Selected trial complete, broader work remains | Preserve 26 originals/26 derivatives; pin CTX-C168 mapping dependency; no universal pass from 25 resolutions | B3, Q-03/Q-04 |
-| P6 multi-user preview | OUT_OF_SCOPE | No login/ownership/job-authorization subsystem | D-16; R3 excluded |
-| P7 preview acceptance | Pending native DTO/render implementation | Native result-to-graph comparison, bounded failures and applicable non-auth controls; corpus fidelity separate | B2–B4, Q-02/Q-04 |
+**Inferred/proposed plan; not executed.** The architecture task authorizes this handoff, not application implementation. Qualification remains Q-01/Q-07/Q-08 PASS, Q-02/Q-03/Q-05/Q-06 PARTIAL and Q-04 FAIL. See [architecture](ARCHITECTURE.md), [decisions](DECISIONS.md) and [acceptance meanings](../../../containerlab-investigation/docs/QUALIFICATION_ACCEPTANCE.md).
 
-Smallest next executable slice: connect a bounded isolated native invocation for pinned local fixture bundles to the implemented projection, retaining recorded fixtures as regression oracles. Keep real-source persistence and operational actions separate. R2/R3 authorization must not reappear as a blocker under TT-01.
+Three classes of remaining work:
+
+- **Decision blocker:** evidence needed before committing to a particular implementation boundary. It need not block independent static design or research.
+- **Enablement gate:** a concrete behavior must pass before the corresponding feature can be enabled or accepted. Designing the behavior is insufficient.
+- **Later expansion:** preserves scope in the architecture but does not block the initial Linux-veth/SRL-inspection milestone.
+
+## A4 next executable scope
+
+[Readiness](READINESS.md) narrows CP-01, identity reuse, native export and GUI boundaries. [P1a backlog](P1A_BACKLOG.md) is the concrete dependency-ordered subset of B1–B4. [Contract/fixtures](P1A_CONTRACT.md) provide independent expected behavior; [bounded qualification](RUNTIME_QUALIFICATION_PLAN.md) defines later T1–T4 without authorizing execution.
+
+Begin P0 fixture/DTO harness and P1 component-fit assessment after implementation authorization, then P2 synthetic graph/inspectors. Real-source P3/P4/P6 and P1a acceptance remain blocked by native isolation/auth and applicable S gates. CP-01 is not built or runtime-qualified. B3 static work can continue on original/context pairs and recursive discovery without native execution. No new production code or runtime operations were performed in A4.
+
+## 1. Decision blockers and discriminating research
+
+No new runtime experiment was required for A1/A2/A3: the design explicitly exposes conditional alternatives. The following tests remain necessary; their absence is not a reason to claim the proposed safeguards already work.
+
+| Blocker | Evidence gap and impact | Smallest discriminating test | Required environment | Dependency / decision |
+|---|---|---|---|---|
+| R1 Version profile | API v0.6.0 embeds v0.78.0; resolver is v0.79.0. Runtime and source semantics cannot be assumed aligned. | Inspect an immutable candidate API dependency; repeat fixture aliases/resolution and owned/unowned lifecycle/interfaces/events/restart on aligned versions. Compare against preserved baseline. | Fresh dedicated Linux VM, exact API/native builds, synthetic users/labs; static source inspection first | B1, U-05, D-01; choose release vs pinned upstream build vs defer |
+| R2 Export and isolation | Native internal API exposes useful values, but full origins/type-specific fields and safe effects are unresolved. Adapter size and resolver deployment boundary depend on this. | Compare CLI/export/API/library outputs for defaults/groups, two templates, parallel/disconnected, host/mgmt/special endpoints and unknown metadata; track every field and injected filesystem/network effect. | Pinned source, independent expected fixtures, isolated scratch daemon/filesystem/network; no corpus deployment | B2, U-01, D-02; native public export vs small internal wrapper/upstream extension |
+| R3 Identity bridge | Native login/ownership passed selected cases; verified identity delegation and artifact revocation semantics were not qualified. | Trace supported native middleware/verification; test forged subject, expired/restarted token, foreign lab and owner-change requests through the candidate extension boundary. | Pinned API source then fresh VM with two synthetic identities, no real accounts | B1/B5/B7, U-05/U-06, D-04; supported native extension vs separately verified integration |
+| R4 Capture ownership/freshness | Restart orphan and ignored extra generation observed; no qualified native durable session/freshness contract. Determines whether custom runner/storage is needed. | Review supported configuration/upstream fix, then crash a live session and race admission with native restart/redeploy/interface reuse. Require exact child ownership, deadline enforcement and a proven capture binding/fence. | Fresh dedicated Linux VM, pinned native capture prerequisites, synthetic two-link lab, controlled supervisor faults | B5/B6, U-06, D-06/D-07; upstream extension vs narrow runner/policy, or disabled capture |
+
+For R4, “check once before spawn” is not a race solution. State the exact start linearization/point-binding guarantee and what happens for out-of-band native operations. If a chosen integration cannot meet it, record the blocked capability and alternative; do not weaken the guarantee silently.
+
+Version qualification matrix for B1: baseline native v0.79.0 fixture/corpus remains one profile; API v0.6.0/native v0.78.0 remains historical operational evidence; a proposed aligned profile is a third, separately pinned run until accepted. Record binary/image/toolchain hashes and test outcomes independently. Do not overwrite the baseline or choose a new version solely because it is newer.
+
+## 2. Dependency-ordered work packages
+
+The B identifiers retain the qualification handoff's meaning. Static investigation within B2/B3 can proceed alongside B1; final operational contracts depend on the selected profile. Implementation work below requires separate authorization.
+
+| Work package | Dependencies and scope | Concrete acceptance tests / exit |
+|---|---|---|
+| **B1 — Version/auth integration contract** | First operational decision; R1/R3. Pin chosen upstream versions, exposed routes, verified identity mechanism and owner semantics. | Aligned-profile load/lifecycle/interfaces/aliases; Alice/Bob/anonymous/expired-token cases; restart/reauthentication. Record supported versus deferred native routes. No cross-version equivalence assumption. |
+| **B2 — Source bundle and native resolver contract** | R2; final pin from B1, static work can start independently. Preserve bytes, inputs and diagnostics; qualify isolated native export. | Independent expected fields/endpoints/origins; immutable input hashes; original unknown keys recoverable; missing vars/includes/config explicit; denied network/filesystem effects; timeout/resource cleanup; no operational socket exposure. Document irreducible native provenance loss. |
+| **B3 — Corpus reconciliation and failure disposition** | Independent discovery alongside B1/B2. Keep existing IDs/aliases and classify failures; add pinned context only through explicit manifests. | Reconcile docs includes/fences/external references/generated cases; distinguish source-invalid, missing-input and environment-dependent cases; C088 original/correction separate. Counts and hashes reconcile; all cases have six independent stage outcomes. Completeness does not imply compatibility. |
+| **B4 — Read-only React Flow graph/inspectors** | Approved B2 contract; B3 denominator. Evaluate adopting/extending the upstream React GUI before custom frontend work; React Flow interface handles and source/native/runtime inspectors. No topology editor. Source/native/runtime fields and special endpoint roles remain distinct. | Every included case independently compared, not just compared to its own projection. Unknowns/invalids visible; all nodes/link occurrences/endpoints/attributes accounted for; selection inspectors; dense labels; accessible state explanations. Rerun the corpus on React Flow; historical Cytoscape render evidence cannot pass this gate. Q-04 remains FAIL until universal fidelity passes. |
+| **B5 — Runtime observations and resync** | B1 identity contract, B2 revision identities; no capture enablement yet. Reuse native inspection/events. | Undeployed/down/partial/restart/redeploy states; gap/reorder/overflow; snapshot during lifecycle changes; reconnect/token expiry; epoch invalidation and fresh reinspection. Old mapping cannot authorize capture. Qualify SRL alias/port inspection on the aligned profile. Add native xterm terminal creation/attachment authorization, origin/expiry/revocation, resize/backpressure, idle/disconnect, limits, API restart and redeploy cleanup. Terminal capability is separately enabled; it is not read-only. |
+| **B6 — Capture ownership, freshness and bounded execution** | B5 and R4 decision; B1 authorization. Implement only gaps not supplied by qualified upstream facilities. | Selected/unrelated traffic controls; readiness; two distinct sessions; cancel/timeout/bad BPF/interface/unwritable output; early exit/SIGKILL; packet/snaplen/storage saturation; native redeploy races; client disconnect; crash at each transition; deadline survives coordinator failure; no orphan or unsafe PID/name adoption. |
+| **B7 — Artifact access and retention** | B6 outcomes/provenance, B1 identity bridge. Conditional private store/journal if native contract insufficient. | Decode corrupt quota files despite exit 0; valid partial vs complete distinction; manifest/PCAP hash and provenance; interrupted/resumed range download; Alice/Bob/revoked-access tests; expiry/delete; crash during publication/deletion; journal/storage exhaustion and reservation recovery. Add TShark packet-summary/detail accuracy, BPF versus display-filter handling, malformed-input isolation, CPU/memory/output/time bounds, cancellation, paging/index consistency, analysis access/revocation and derived-cache expiry/deletion. |
+| **B8 — Broader capabilities and capacity** | B4–B7 initial contract; appropriate legitimate images/licenses/platforms. Enable each kind/link/runtime separately. | Guest-to-wrapper mapping; NOS-specific visibility; shared/tunnel positive/unrelated negative traffic; Podman comparison. Dense/live browser and host-contention trials with measured thresholds before capacity claims. No generic-Linux inference. |
+
+## 3. Proposed Phase 1 milestones and release gates
+
+**P1a — Read-only source preview:** B2/B3/B4 contract and inspector work, with diagnostics and immutable source. This can be an explicitly limited internal milestone while some corpus failures remain, but it is not universal static acceptance. A preview never enables capture from intended topology alone.
+
+**P1b — Operational inspection and separately gated terminals:** accepted B1/B5 on the selected profile. Show Linux and the demonstrated SRL inspection path; all other capabilities remain explicitly unknown/unsupported until evidence exists. Node terminals use xterm.js and qualified native session routes, with separate command-execution permission; inspection can ship while terminal gates remain unmet. Source rendering continues if runtime is unavailable. Freshness/permission failures remove operational actions, not source objects.
+
+**P1c — Bounded Linux-veth capture, artifacts and packet analysis:** B6/B7 pass for that exact scope; capture start must enforce the agreed freshness guarantee and independent deadlines. Live VNC/Packetflix stays disabled unless its own authorization, disconnect and restart recovery pass; stored capture correctness does not imply live streaming correctness. A React packet list/details/bytes viewer consumes bounded TShark analysis of stored captures; qualify analysis independently. Native VNC is optional; live analysis is deferred until separately tested.
+
+**Universal static release gate:** B3 discovery completeness plus B2/B4 full acceptance across the final pinned denominator. Currently unmet, independently of P1b/P1c success. An unchanged incompatible upstream example can keep this gate failed; an explicit future requirements change would be needed to alter the target. No exclusion or corrected fixture silently substitutes for original source.
+
+Each milestone also requires the applicable S-01–S-07 tests below, including P1a before real sensitive input. Operational release also requires deployed privilege boundaries, native identity verification, no browser/runtime socket path, artifact authorization and all relevant failure tests. An architecture document or successful happy-path demo cannot pass these gates. No elapsed-time or effort estimate is assigned without completing the boundary decisions.
+
+## 4. Remaining unknowns and environments
+
+| Existing unknown | Current narrowing / remaining issue | Class and next test | Dependency and affected decision |
+|---|---|---|---|
+| U-01 Native export | Resolved objects observed; full field origin/effects incomplete | Decision blocker R2; controlled native output/effect comparison in isolated Linux | B2; D-02/D-03 |
+| U-02 Corpus completeness | 177 inputs pinned; complete expansion/context/external-page audit unresolved | Enablement gate: B3 static source/network audit, reviewed dependencies, no example deployment | B3; D-08 and universal static scope |
+| U-03 Shared/tunnel/guest mapping | No generalized capture proof | Later expansion: one synthetic topology per family, reciprocal/guest mapping and traffic controls | B8 after B6/B7; D-09 |
+| U-04 Other NOS/runtimes | One SRL API inspection; broader capture/Podman unqualified | Later expansion: legitimate architecture-compatible images and alternate-runtime comparison in fresh Linux | B8; D-09 |
+| U-05 Native integration | Basic API/GUI/auth observed; version/identity/cursor behavior not fully qualified | Decision blockers R1/R3 plus B5 enablement tests; pinned source and fresh VM | B1/B5; D-01/D-04/D-05 |
+| U-06 Capture lifecycle/artifacts | Standalone failures demonstrated; native orphan and artifact gaps remain | Decision blocker R4 plus B6/B7 enablement; two-link lab, quota volume, controlled crash/identity tests | B5–B7; D-06/D-07 |
+| U-07 Semantic/visual fidelity | Render retention observed; all cases still partial | Enablement: independent source/native/graph field oracle and visual class review; browser + isolated resolver | B2–B4; D-02/D-03 |
+| U-08 Dense/live performance | Single-trial rings do not establish production behavior | Initial supported-size acceptance in B4; broader expansion in B8. Test 10/50/100/500 sparse+dense graphs, realistic labels/update rates and capture contention | D-05/D-09; measured update/layout/capacity policy |
+
+Use evidence-based failure categories, not estimated counts without a full audit. Invalidity under the selected native contract, missing static input, host-dependent parent-interface lookup and visual/projection loss lead to different remedies. Keep all original failure logs and revised-input comparisons.
+
+## 5. Execution and handoff controls
+
+For future research, allocate the next unused experiment ID and write the question, scope, commands, expected alternatives and cleanup before executing. Runtime tests must use a **new uniquely named checksum-pinned VM**, never a stopped prior investigation/qualification VM. No pre-existing VM is entered, changed, started or stopped. Use lab-owned traffic, private services, no agent forwarding/host mounts by default, resource limits and controlled quota volumes. Do not deploy external examples or execute their hooks merely to parse/render them.
+
+Preserve old evidence before reruns; log actual versions, timestamps, exit/signal, hashes and cleanup. Keep captures, credentials and generated state out of version control. Stop the new VM after scoped resource cleanup and evidence transfer. If runtime or required inputs are unavailable, continue independent static work and record the exact failed prerequisite, reproduction command, unrun cases and decision impact. No fabricated PASS, silent scope reduction or promotion based on a planned safeguard.
+
+After separate implementation authorization, begin with B1/R3 and B2/R2 while B3 proceeds independently. Commit to the capture process/storage boundary only after R4. Build source/graph then observation and narrowly qualified capture/artifact behavior, retaining the universal static gate. No application or Phase 1 work was performed during architecture A3. The new security requirements below are enablement tests, not qualification passes.
+
+## A2 change-specific acceptance
+
+The user-selected React/React Flow/xterm.js/TShark stack supersedes the old Cytoscape constraint. Reopen D-03; B4 first assesses the pinned upstream GUI's extension and permission boundaries, then chooses reuse versus a separate React frontend based on evidence. Record dependency/version pins and retained topology semantics, not just visual similarity.
+
+D-11 adds native terminal workflow tests under B5/Q-05. D-12 adds packet analysis under B7/Q-06, with UI rendering in B4. These are new enablement tests, not passes inherited from the old renderer or standalone TShark checks. The historical run-03 statuses and original corpus files remain untouched. An initial topology-only preview is still useful; terminal, capture and packet-analysis capabilities are enabled separately as their gates pass.
+
+
+## A3 security and publication acceptance
+
+**Inferred/proposed work; all S tests below are NOT_RUN.** These tests supplement the existing B1–B8 gates; they do not replace corpus acceptance or create independent Q passes. [Architecture sections 9–11](ARCHITECTURE.md) and [D-13–D-15](DECISIONS.md) define the contracts. A3 document/link/hash verification is recorded separately in `COMPLETION.json`.
+
+| Test | Concrete required evidence | Dependency / gate |
+|---|---|---|
+| S-01 Disclosure allowlist | Synthetic secrets in known/unknown/nested attributes, labels, input variables and native output; verify graph/detail/error/cache responses with two users and revoked access. Originals retain byte hashes while unauthorized fields never reach browser DTOs. Approved display fields also enforce content/redaction rules; raw reveal disabled until independently authorized. | B1/B2/B4; Q-02/Q-04/Q-05; before P1a sensitive input |
+| S-02 Log and diagnostic exclusion | Inject canaries through successful/failed resolver jobs, auth, malformed requests, filters, terminal streams and packet dissections. Inspect app/native-wrapper logs, traces, crash paths, support exports and screenshot/test artifacts for leaks; only reviewed safe diagnostic codes/IDs remain. Uncontrolled upstream logging blocks that path. | B1/B2/B4/B5/B7; each affected feature |
+| S-03 Encryption/key profile | Inventory persistent and temporary paths, journal side files, swap/dumps and backup locations. Verify transport/certificate rejection, at-rest coverage, service permissions, missing-key refusal, rotation and recovery using synthetic data. Record actual provider/volume scope; no inferred remote protection from host disk encryption. | B1/B2/B7; before sensitive persistence or network use |
+| S-04 Retention and recovery | Set finite class-specific deadlines; expire/delete source, artifact, exports and caches during active jobs/downloads and across restart. Verify tombstone denial, cancellation, no stale cache/reappearing restored payload, quota reconciliation and bounded scratch cleanup. Test backup restoration/deletion ledger before enabling backups. Record residual backup lifetime and erasure limits. | B2/B5/B7; Q-02/Q-06; per data class |
+| S-05 Browser trust/CSP | Exercise HTML/script payloads, dangerous URLs, remote image references, diagnostics and packet fields across custom nodes, tooltips, inspectors and packet trees. Verify no code execution, unintended requests/navigation or active artifact serving; CSP enforced on the pinned production build with documented narrow style/worker exceptions. | B4/B7; Q-04/Q-06; graph then packet UI |
+| S-06 Terminal policy | Send OSC hyperlinks, clipboard reads/writes, titles, unknown controls and browser/shell-action bait. Verify no automatic action, no output-to-input feedback, and separate explicit user copy/paste behavior. Repeat origin, owner, expiry, revocation and restart tests from B5. | B1/B5; Q-05; before terminal enablement |
+| S-07 Output bounds | Choose and record numeric field/page/queue/scrollback/time limits; exceed each with oversized fields, packet trees, terminal floods and slow clients. Demonstrate bounded producer/browser memory, safe visible truncation/cancel and lifecycle resync. Test useful accepted workloads as well as rejections. | B4/B5/B7 and U-08; each UI/stream capability |
+| S-08 Publication interruption | In a disposable document fixture, interrupt snapshot copy, verification and replacement at each boundary; simulate concurrent source change, manifest mismatch and filename collision. Verify incomplete sets cannot be accepted and rollback/finish touches only listed files. No VM needed. | D-15; future design publication; Q-07/Q-08 scores unchanged |
+
+### Initial delivery and scope
+
+A3 supplies inherited security requirements; A4 adds static preparation and the linked P1a backlog only. After separate implementation authorization, begin B1/R1/R3 and B2/R2 contract work while B3 corpus reconciliation proceeds independently. B4 assesses upstream GUI fit, including CSP and xterm constraints, before selecting a separate frontend or fork. Choose an explicit deployment encryption/key/retention profile before accepting real configuration; synthetic, secret-free fixtures may support isolated development meanwhile.
+
+P1a remains a read-only source preview, with field-safe graph/inspectors and diagnostics; S-01–S-05/S-07 apply to its actual surfaces and storage. Do not enable raw-source/secret disclosure implicitly. P1b inspection and terminals retain separate gates; S-02/S-04/S-06/S-07 supplement terminal qualification. P1c capture/analysis waits for R4 and B6/B7, including all applicable sensitive-data and packet-view tests. Universal static acceptance stays independent and failed until B2–B4 establish full fidelity over the final pinned denominator.
+
+No backend language, new secrets service, custom capture runner or permanent storage implementation is selected by these safeguards. Exact encryption provider, finite retention periods, CSP style fit and numeric output budgets are enablement choices with written failure behavior, not assumptions of safety. A named unsupported boundary disables the affected capability while independent work continues.
+
+### Workspace publication and recovery
+
+Use this workspace's `artifacts/design` as the current baseline and sibling investigation links as read-only evidence. The flat `history/A2-before-A3` archive contains the predecessor design set, executing prompt and prior root handoff. Original locations are recorded in its manifest; no nested copies of workspace roots are needed. `COMPLETION.json` is the last-written current-revision marker and hashes every delivered document and the updated root handoff. Verify those hashes before treating publication as complete. Architecture section 11 specifies snapshot, concurrent-change detection and interruption recovery; this successful normal publication does not pass S-08's unrun fault-injection tests.
+
+For A4 the verified predecessor is `history/A3-before-A4`; preserve both its original completion marker and source-path manifest. Static source/corpus checks do not pass S-08 crash-injection acceptance.
+
+## A5 next gated step
+
+Complete P1 exact package assessment when approved bytes become available; P5 static corpus/context work is independently ready. P3 real-source storage awaits accepted key/retention/authorization design; P4 native integration awaits T2 and P3. This task does not authorize executing T1–T4 or enabling operational routes. See P1A_BACKLOG for dependencies.
+
+## A6 next risk-reduction priorities
+
+1. B2/R2: select a supported initialization path that does not give the resolver a privileged daemon socket; compare a real version-information boundary if no daemon-free option exists. Preserve native semantics and no-fork preference.
+2. T2 follow-up: original/context pairs, broader kinds, template includes/env/effects, output quotas, cancellation/crash cleanup and provenance. EXP-011 is only a bounded subset.
+3. B1/R3 + P3: settle trusted identity verification, owner/revocation, encryption/key custody and finite retention before source ingestion. Synthetic metadata is not authorization.
+4. After those gates, implement and qualify the smallest native-source preview slice. Continue P1 package access and P5 static corpus work independently.
+
+## A7 next executable risk-reduction scope
+
+Qualify per-job peer identity or descriptor passing for the metadata responder, and bind snapshot hash/native pin/daemon identity/acquisition time with fail-closed expiry and incompatible-version behavior. Test cross-job denial rather than trusting a socket name. Then expand native kinds, explicit runtimes and original/context pairs without expanding daemon privileges by default. R3/P3 identity, encrypted storage, retention and cleanup design can proceed independently; application ingestion remains blocked.
+
+## A8 active next implementation scope (supersedes A7 priorities)
+
+1. Version the native DTO independently of the synthetic profile, supporting one-ended links and explicit unresolved source tokens/coordinates. Add independent acceptance fixtures including F7 before renderer changes.
+2. Implement a minimal local ephemeral projection for pinned fixture bundles using native getters and the constrained metadata interface. Preserve bytes/hash/occurrences; no raw configuration disclosure or operational actions. No authorization subsystem.
+3. Exercise the DTO/renderer against native outcomes, including special roles, aliases, missing input and partial/rejected states. Do not count native resolver success as graph fidelity.
+4. Pin CTX-C168's actual mapping dependency and continue corpus/context reconciliation separately. Persistent sensitive-source features retain their own storage/retention requirements.
+
+## A9 next executable slice
+
+The versioned DTO and recorded native projection are complete for the selected fixture profile. Next integrate an isolated local native fixture invocation with bounded execution/output and explicit input bundles, preserving the replay suite as independent regression evidence. Do not add arbitrary uploads, persistent sensitive-source storage or operational actions implicitly. Metadata must stay finite and no-forwarding; per-user/per-job authorization remains out of scope under TT-01.
 
 
 ## A14 dependency-ordered continuation
@@ -219,16 +325,6 @@ Smallest next executable slice: connect a bounded isolated native invocation for
 2. **Ready for separate authorization:** replace fixed two-node/one-link enrollment with a bounded native-derived contract for multiple endpoint occurrences in approved bundles. Define independent parallel/disconnected and alias expectations first; keep source/deployment/native identity explicit.
 3. **Blocked pending independent evidence:** generalized kinds/aliases, arbitrary source ingestion, qualified peer identity, durable continuity and capture/action targeting. Universal B3/B4/Q-04 fidelity remains separate; don't expand kinds merely to improve counts.
 
-## A17 dependency-ordered continuation
+A17 delivery: bounded native-derived enrollment, strict0.5 DTO, MULTI-ENDPOINT-V2 fixture, per-node batched inventories, occurrence-aware inspectors and scoped actual/mocked qualification. Next executable slice: measured collection budgets at increasing approved synthetic sizes within8/16/32; no new capabilities or budget increases without evidence. Capture/terminal/peer identity remain gated.
 
-1. Ready: review collection failure/latency distribution for the same qualified kinds under bounded node/endpoint counts; independent fixture expectations first, fresh resources only.
-2. Ready after that evidence: decide supported runtime capacity and consolidate legacy profile enrollment without rewriting historical DTOs/evidence.
-3. Blocked on explicit scope + native evidence: additional kinds or special roles, peer/continuity identity, NOS-specific state.
-4. Blocked on separate authorization/qualification: capture/action targeting, terminals and operational controls. A17 matching attributes are insufficient.
-
-## A18 dependency-ordered continuation
-
-1. Complete: measured selected-fixture capacity and partial failures within existing bounds (B5, Q-05 subset, scoped S tests).
-2. Ready for next authorized slice: consolidate RUNTIME-PAIR/SRL-PAIR active enrollment/collectors into the bounded native-derived path. Specify session migration and retain historical DTO readers first; then independent regressions on fresh resources.
-3. Still gated: broader approved topology/kind/role coverage and long-duration capacity claims need their own fixtures/evidence.
-4. Still blocked: capture/action targeting, peer/continuous identity and operational capabilities require separate contracts/authorization. Matching attributes are insufficient.
+A18: capacity qualification complete for three explicit approved shapes, budgets unchanged. Next implementation dependency is a cohesive legacy-path consolidation with reviewed fresh-session migration and regressions, followed by an evidence-backed decision on broader approved deployment coverage. Do not introduce discovery, persistence or operational features as part of consolidation.

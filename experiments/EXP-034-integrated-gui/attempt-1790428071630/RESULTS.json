@@ -1,0 +1,57 @@
+{
+  "vm": "clab-load-20260926-130336-exp016",
+  "checks": [
+    "actual native declarations, exact enrollment and observed running nodes",
+    "per-node log identity, literal hostile text, follow/stop and selection reset",
+    "actual capture → reviewed filter → disjoint reanalysis → identical downloaded bytes and expiry",
+    "invalid filter distinct from zero matches, original PCAP retained",
+    "observed capability withdrawal refuses analysis/download; explicit disconnect/reconnect cannot resurrect evicted artifact",
+    "disconnect cancels pending capture, rejects late output, reconnect permits new capture",
+    "navigation clears prior evidence; mobile width and browser exception checks"
+  ],
+  "browserErrors": [],
+  "capture": {
+    "sha256": "ef22a387f9808d3d57fa1584c11afc1b55ecffff149fd76e1a145d1f43487ffd",
+    "bytes": 2234,
+    "firstFrames": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33
+    ],
+    "secondFrames": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34
+    ],
+    "expiryUnchanged": true
+  },
+  "outcome": "PASS"
+}

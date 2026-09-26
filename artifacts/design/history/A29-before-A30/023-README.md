@@ -1,17 +1,3 @@
-# A30 — Phase 5 integrated GUI acceptance
-
-**Observed:** A29's 1,823 file hashes and predecessor snapshot verified; complete33-file D-15 archive retained. One unmocked browser session exercised actual native declarations, exact runtime enrollment/observation, per-node stdout logs with follow/stop, selected-endpoint capture, reviewed Lua filtering, same-PCAP reanalysis and byte-identical download, invalid-filter retention, capability-withdrawal refusal, disconnect during capture and successful reconnect/new capture. Node/view changes cleared prior evidence. No production source changes were needed.
-
-**Observed verification:** 85 unit/contract tests, six native static checks, build/typecheck,19 replay browser tests and one54.7-second integrated live browser scenario passed. The integrated test is skipped in the ordinary replay invocation and ran separately with explicit opt-in; it does not provision VMs automatically. Desktop/mobile screenshots were inspected and the mobile width check passed. This is not an accessibility-conformance audit. Actual capture contained2,234 bytes with distinct sequence7/8 frame sets; reanalysis/download preserved hash, bytes and original expiry.
-
-**Observed cleanup:** finite synthetic traffic completed, task-owned lab removed, no capture/reanalysis scratch remained, and fresh VM `clab-load-20260926-130336-exp016` is stopped. No pre-existing VM or sibling workspace was accessed for runtime or modified. GUI-1 revision3 layout remains unchanged. Historical Q gates,177-case denominator and TT-01 unchanged.
-
-**Readiness / next:** Phase5 passes for the selected Linux RUNTIME-PAIR profile and reviewed synthetic Lua module. It does not qualify every native kind, four-radio/VITA application behavior, arbitrary scripts, production hosting or serial consoles. Next is Phase6a: pin a freely distributable guest image and launcher, verify host/guest architecture and virtualization feasibility, then qualify authoritative serial backing/discovery before any xterm transport. The second generated QEMU-detector four-radio configuration remains separate from the original container-only fixture and follows that platform qualification. No sibling fixture changes or Phase6 runtime work were performed here.
-
-See artifacts/implementation/A30/RESULTS.md, artifacts/design/GUI_CONTINUATION.md and experiments/EXP-034-integrated-gui/README.md (workspace-relative). Existing serial discovery criteria remain in experiments/EXP-028-console-discovery/RUNTIME_PLAN.md. Preview uses port4173; ordinary checks never create VMs. Live use requires a new explicitly created session.
-
-## Historical baseline (retained)
-
 # A29 — Phase 4 managed PCAP reanalysis
 
 **Observed:** A28's 1,742 manifest files and predecessor snapshot verified before work; full D-15 archive retained. The link inspector can reanalyze its current managed PCAP with a new display filter or reviewed Lua choice, without recapture. The request supplies only artifact ID/hash, a distinct analysis job ID and reviewed analysis options. The server supplies the retained bytes; identity, original capture metadata, download bytes and five-minute expiry remain unchanged. Cancellation keeps a valid original artifact. Displayed analysis identifies its applied filter and analysis time.
@@ -76,7 +62,7 @@ TT-01, native authority, existing contracts, historical Q outcomes and177 denomi
 
 ## Historical baseline (retained)
 
-# Implementation handoff — A24
+# A24 current — serial discovery design
 
 **Documented:** pinned Containerlab generic runtime/container interfaces expose inspection and ports, not a dedicated serial-console capability. generic_vm documentation describes a serial Telnet convention separately from shell/SSH; a port or native kind is not proof of a serial console.
 
@@ -84,11 +70,11 @@ TT-01, native authority, existing contracts, historical Q outcomes and177 denomi
 
 **Inferred next:** pin and inspect one freely distributable generic_vm/vrnetlab Ubuntu image and its serial backing, establish virtualization feasibility, then qualify a read-only image-specific discovery adapter in a fresh dedicated VM. No image/adapter is yet qualified. Do not promote generic TCP listeners, shell access or documentation hints to available consoles. TT-01, native authority, historical Q outcomes and177 denominator remain unchanged.
 
-Read artifacts/design/SERIAL_CONSOLE_CONTRACT.md and experiments/EXP-028-console-discovery/RUNTIME_PLAN.md. Verify COMPLETION.json. The smallest executable next step is immutable image/launcher and virtualization qualification; do not begin transport from an unverified port convention. Previous trial VMs remain off-limits.
+See SERIAL_CONSOLE_CONTRACT.md and ../implementation/A24/RESULTS.md.
 
-## Historical A23 handoff
+## Historical A23 and earlier — former next-step statements superseded
 
-# Implementation handoff — A23
+# A23 current — bounded node logs
 
 **Observed:** A23 implements generic selected-node container stdout/stderr logs, bounded initial tail, polling follow/stop, cancellation, explicit truncation and unavailable/error states in the approved GUI-1 revision3 inspector. Native identity checks bind full container IDs to the exact source/bundle/deployment before and after reads. No shell/exec endpoint, private file reader, console transport or capture is added.
 
@@ -96,11 +82,11 @@ Read artifacts/design/SERIAL_CONSOLE_CONTRACT.md and experiments/EXP-028-console
 
 **Inferred next:** specify native serial-console capability discovery for exact enrolled nodes, distinguishing unchecked/absent/unavailable before adding a transport; independently qualify more native kinds/logging drivers as needed. Keep generic bounded logs separate from arbitrary application files and application-health signals. Capture/Lua execution remains deferred. TT-01,177-case denominator and historical Q-gate outcomes remain unchanged.
 
-Read artifacts/design/NODE_LOG_CONTRACT.md, artifacts/implementation/A23/RESULTS.md and experiments/EXP-027-node-logs/README.md. Verify COMPLETION.json. The trial VM is stopped; never restart it. Preview remains on4173 but has no active runtime session after cleanup. Use a fresh explicit session for live logs.
+Read NODE_LOG_CONTRACT.md and ../implementation/A23/RESULTS.md.
 
-## Historical A22 handoff
+## Historical A22 and earlier — prior current/next entries superseded
 
-# Implementation handoff — A22
+# A22 current — approved generic workbench
 
 **Observed:** GUI-1 revision 3 is explicitly approved. The default UI is a generic graph-centered workbench with native-kind cards, exact occurrence/port selection, local layout, search/table/inspector synchronization, and separate recorded/executed/runtime states. Link capture/TShark/Lua settings and node Logs/Serial console views are draft or unavailable controls, not implemented operations.
 
@@ -108,18 +94,74 @@ Read artifacts/design/NODE_LOG_CONTRACT.md, artifacts/implementation/A23/RESULTS
 
 **Inferred next:** qualify generic enrollment and observation in a separately authorized fresh dedicated VM before operational capability expansion. Independently ready: define a bounded generic node-log contract and capability states using pinned native sources. Serial-console discovery/transport, capture storage/TShark/Lua execution and application health remain separate gated work. Four-radio is an example, never application policy. TT-01, native authority, the177-case denominator and historical Q-gate outcomes are unchanged.
 
-Read artifacts/design/GUI_CONTRACT.md and artifacts/implementation/A22/RESULTS.md. Verify COMPLETION.json. Approved revision: GUI-1 revision 3. Source/runtime migration needs fresh enrollment; no runtime trial was run. Keep siblings read-only, preserve existing Git work, and never access pre-existing VMs.
+Current evidence: artifacts/implementation/A22/RESULTS.md (workspace-relative); current UI contract: GUI_CONTRACT.md.
 
-## Historical A21 handoff
+## Historical A21 and earlier — previous current/next statements superseded
 
-# Implementation handoff — A21
+# A21 current — actual four-radio workflow
 
-**Observed:** A21 implements the unchanged approved four-radio SDR bundle:8 nodes,7 exact links and14 endpoint occurrences load through native declarations, render in the GUI and associate with an explicitly enrolled actual deployment. SR Linux25.10.1 native aliases were observed. SDR application health remains unassessed.
+**Observed:** A21 implements the unchanged approved four-radio SDR bundle:8 nodes,7 exact links and14 endpoint occurrences load through native declarations, render in the GUI and associate with an explicitly enrolled actual deployment. SR Linux25.10.1 native aliases were observed. SDR application health remains unassessed. [Evidence](../implementation/A21/RESULTS.md).
 
-Read [A21 results](artifacts/implementation/A21/RESULTS.md), [commands](experiments/EXP-026-four-radio/README.md), observation/on-demand contracts and D-26. Verify COMPLETION.json. The task lab is removed and its VM stopped; never reuse that VM. Both siblings remain read-only evidence/source. No arbitrary ingestion, discovery, GUI deployment, terminals, logs/metrics or capture/packet analysis was added.
+**Inferred next:** Define and qualify one bounded read-only SDR application-health signal from the actual VRT application contract, beginning with radio readiness/control status. Specify unavailable/stale/failed states and independent expected transitions; do not infer streaming, loss-free processing, detections or recorder completeness from containers/interfaces. Keep each later pipeline capability separately gated.
 
-Contract tests67 pass; offline Chromium25 pass/12 skip; live Chromium2 pass (one actual, one mock);20 native samples plus cancellation/recovery pass. Other live profiles/30-minute soak/full corpus were not rerun. Historical gates and177 denominator remain unchanged. TT-01 still excludes login/multi-user authorization. The new sixth profile retains all resource/containment/disclosure limits; enrollment0.2 remains graph-derived, new session0.3/deployment0.1/observation0.8 make the approved native lab identity explicit. Old five profiles remain session0.2/observation0.7.
+## Historical A20 and earlier (superseded current/next entries)
 
-**Inferred smallest next:** Define and qualify one bounded read-only SDR application-health signal from the actual VRT application contract, beginning with radio readiness/control status. Specify unavailable/stale/failed states and independent expected transitions; do not infer streaming, loss-free processing, detections or recorder completeness from containers/interfaces. Keep each later pipeline capability separately gated.
+# A20 current — finite reliability
 
-Do not infer application success from this networking acceptance. Preserve the source label mismatch as provenance evidence; actual VRT source hashes/imageID are authoritative. D-15 predecessor is artifacts/design/history/A20-before-A21. Rollback source through Git and only manifest-listed documents through that verified archive; fresh runtime enrollment required.
+**Observed:** A20 records a finite CAPACITY-MAX reliability trial: PASS, 328 healthy-window refresh attempts. The current observation/0.7 contract, five approved profiles and existing budgets remain unchanged. [A20 evidence](../implementation/A20/RESULTS.md). Earlier current/next entries below are historical.
+
+**Inferred next:** Implement one explicitly approved user-owned local topology bundle using the existing declaration/enrollment/observation path. Define its companion files, source hashes, native kinds, dependency gaps and per-occurrence expectations before enabling it. Use a new dedicated trial VM and existing Linux/SRL association rules. Keep load/display acceptance separate from runtime capability; do not add generic upload, discovery or operational controls. A topology requiring a new kind or native version needs a separate bounded compatibility gate.
+
+## Historical A19 and earlier
+
+# Architecture handoff — A19
+
+**A19 current — Implemented:** the five existing approved profiles share one native-derived bounded enrollment, collector and association path. Fresh sessions use enrollment/0.2, observation-session/0.2 and observation/0.7. Strict historical0.1–0.6 readers remain; duplicate fixed-pair runtime paths are removed. Incompatible sessions fail before runtime access. [A19 results](../implementation/A19/RESULTS.md) and [current observation contract](OBSERVATION_CONTRACT.md) define actual verification, migration and limitations. TT-01, historical Q statuses and177-case denominator are unchanged.
+
+**Inferred next:** a finite sustained-refresh/recovery qualification of an existing approved profile, with predeclared budgets and fresh-session cleanup, before capability expansion. Peer/continuity/NOS health/forwarding remain unknown. No new kinds, discovery, operational controls or authorization work is implied.
+
+Current reading: [architecture](ARCHITECTURE.md), [D-24 decisions](DECISIONS.md), [observation contract](OBSERVATION_CONTRACT.md), [readiness](READINESS.md), [backlog](P1A_BACKLOG.md), [implementation plan](IMPLEMENTATION_PLAN.md), [traceability](TRACEABILITY.md), [verified completion](COMPLETION.json), [A19 results](../implementation/A19/RESULTS.md). [Predecessor archive](history/A18-before-A19/MANIFEST.json) preserves A18 and the exact executing brief.
+
+## Historical design context (A18 and earlier)
+
+**A18 current — Observed:** selected approved capacity fixtures qualify3/2/4,5/8/16 and8/16/32 nodes/links/endpoint occurrences under unchanged6s/256KiB collection limits. Twenty guest and twenty host samples plus ten browser refreshes per fixture all meet predeclared thresholds. Maximum native collection448.6ms, host transport500.4ms, browser refresh521.0ms, combined native/Linux output61985 bytes. CAPACITY-MEDIUM/MAX use observation/0.6; prior profiles retain their DTOs. [A18 evidence](../implementation/A18/RESULTS.md). This is selected-fixture/local-hardware qualification, not arbitrary-topology or NOS-performance capacity. TT-01, historical Q outcomes and177 denominator unchanged. Earlier current/next statements below are historical. **Next, Inferred:** consolidate legacy pair collectors onto bounded native-derived enrollment with explicit fresh-session migration and regression evidence before broadening supported deployments.
+
+
+**A17 current — Observed:** MULTI-ENDPOINT-V2 adds native-graph-derived bounded enrollment and observation/0.5 for three nodes, two parallel veth links and four endpoint occurrences. Exact native alias/literal rules are retained; disconnected container state is independent. The original reserved-host fixture failure and transition expectation failure are preserved. RUNTIME-PAIR0.3 and SRL-PAIR0.4 remain regression-supported, with historical recordings unchanged. [A17 results](../implementation/A17/RESULTS.md) and [observation contract](OBSERVATION_CONTRACT.md) define limits. TT-01, historical Q outcomes and177 denominator unchanged. Earlier current/next statements below are historical. **Next, Inferred:** qualify observation collection at the declared bounds and failure distribution before expanding approved runtime bundles or enabling operational capabilities.
+
+
+**A16 current — Observed:** real SR Linux24.10.1 ARM64 ixrd2 plus Linux peer are qualified as SRL-PAIR. observation/0.4 preserves declared ethernet-1/1 separately from native e1-1/alias evidence; no custom alias conversion. RUNTIME-PAIR stays0.3 and passes regression. Missing alias is unavailable, not guessed absence; peer/continuity/link health unknown. [A16 evidence](../implementation/A16/RESULTS.md). TT-01, historical Q gates and177 denominator unchanged. Earlier current/next statements below are historical. **Next, Inferred:** bounded native-derived enrollment for multiple approved declared endpoint occurrences before broader runtime integration.
+
+**A15 current — Observed:** observation/0.3 adds separately sourced Linux administrative state and conditional carrier to native endpoint inspectors. Actual exact-name/MAC/index recreation confirms matching attributes do not prove continuity. Peer, continuity and link health stay unknown. [A15 evidence](../implementation/A15/RESULTS.md) records fresh trials, verification and cleanup. TT-01, historical Q outcomes and177 denominator unchanged. Earlier current/next statements below are historical. **Next, Inferred:** qualify one additional native kind/alias profile before broadening endpoint association; capture/action targeting still requires a separate identity contract.
+
+**A14 current — Observed:** controlled native interface observations are implemented for RUNTIME-PAIR, in a separate observation/0.2 DTO and the existing node/link inspectors. Full container IDs and enrolled namespace/index/MAC attributes guard endpoint association; removal, replacement and unavailable inspection remain distinct. Native operational state is displayed; administrative state, carrier, peer, continuity and link health stay unknown. Task lab removed and fresh VM stopped; pre-existing session untouched. See [A14 evidence](../implementation/A14/RESULTS.md). Historical Q statuses and177 denominator unchanged; TT-01 active. Earlier current/next statements below are historical. **Next, Inferred:** qualify native-supported state/peer/continuity evidence for this same bounded profile before broader endpoint correlation or capture/action targeting.
+
+
+**A13 current — Observed:** controlled read-only runtime observation is implemented for RUNTIME-PAIR. Native full-ID association, stop/start, inspection failure/recovery, stale display, cancellation, absence and same-name replacement refusal are qualified in a new VM, now stopped with the lab removed. Declaration and runtime data remain separate; link health stays unknown. This supersedes prior recommendations to expand parsing fixtures before any runtime work. Historical Q statuses and 177 denominator unchanged; TT-01 active. See [A13 results](../implementation/A13/RESULTS.md) and [observation contract](OBSERVATION_CONTRACT.md). Earlier current/next statements below are historical.
+
+**A12 current — Observed:** 23 approved native bundles (14 added) with p1a/0.5 executed provenance, stitched-link retention, native environment-file references and reviewed dependency labels. Bundle availability is explicitly scoped; external prerequisites and inventory remain unresolved/partial. Expansion yielded 11 graphs and three specific native rejections. 30 contract tests, 14 outcome checks, A11 regression and 18 supervisor checks pass; Chromium 19 live / 17 offline pass. Original malformed-brief graph expectation remains unmet with a separately documented native rejection disposition. New VM stopped. Historical Q gates and 177 denominator unchanged; TT-01 remains active. See [A12 evidence](../implementation/A12/RESULTS.md). **Next:** bounded remaining corpus/context and dependency coverage, not operational features. Earlier current/next paragraphs below are historical.
+
+**A11 current — Observed:** approved fixture bundles now execute on demand through a socket-free isolated native declaration worker. Nine approved bundles qualified; 29 contract tests, 18 worker checks, independent native comparisons and live/offline browser suites pass. The qualification VM is stopped. [A11 results](../implementation/A11/RESULTS.md). Earlier A10/A9 status and next-step sections are historical.
+
+**A10 current — Observed:** recorded declared-topology preview (`p1a/0.3`) is implemented: 31 graphs / 32 specific rejections from 63 pinned EXP-015 inputs. Dependencies remain explicitly unresolved; no live loading or operations. 27 contract / 14 Chromium checks pass. See [A10 results](../implementation/A10/RESULTS.md). Earlier A9/A8 sections below are historical.
+
+**A9 current implementation — Observed:** the local preview now supports 58 hash-verified recorded native fixture DTOs (`p1a/0.2`) alongside the synthetic profile. Single-ended links render without a fabricated peer; native aliases, occurrence identity and unresolved source provenance are explicit. 21 contract tests, TypeScript/build and 10 Chromium tests pass. [Evidence](../implementation/A9/RESULTS.md). This is recorded-result projection, not live resolution or source ingestion. TT-01 still excludes R2/R3 authorization; historical Q scores remain unchanged.
+
+**A8 active scope — user-selected TT-01:** trusted single-user test environment. R2 caller/job authorization, R3 identity/ownership integration and P6 multi-user work are **OUT_OF_SCOPE**, not passed or prerequisites. This supersedes authorization requirements and next-step recommendations in earlier sections below. Retain native correctness, containment, limits, data minimization and metadata compatibility/expiry. See [test profile](TEST_PROFILE.md). **Observed:** [EXP-013](../../experiments/EXP-013-context-coverage/RESULTS.md) resolved 25/26 context derivatives versus 0/26 original fragments and confirmed a one-ended dummy link. New VM stopped; historical Q scores unchanged.
+
+**Historical A4 preparation:** application implementation and runtime qualification had not been performed. A4 preserves A3 security/publication requirements and narrows B1/B2/B3 and upstream GUI reuse through immutable source inspection and a disposable static audit.
+
+- [Readiness findings](READINESS.md): concrete CP-01 candidate, identity boundary, native export comparison, corpus disposition and GUI fit.
+- [Candidate profile](CANDIDATE_PROFILE.json): native v0.79.0 + API `7376ab9…`, with build/toolchain/image gates explicitly pending.
+- [P1a contract](P1A_CONTRACT.md) and [independent fixtures](../../experiments/EXP-010-readiness-static/fixtures/README.md).
+- [P1a backlog](P1A_BACKLOG.md): ready synthetic work versus blocked native/source/multi-user enablement.
+- [Bounded qualification plan](RUNTIME_QUALIFICATION_PLAN.md): T1–T4, all NOT_RUN.
+- [Architecture](ARCHITECTURE.md), [decisions](DECISIONS.md), [traceability](TRACEABILITY.md), [implementation plan](IMPLEMENTATION_PLAN.md).
+- [EXP-010 results](../../experiments/EXP-010-readiness-static/RESULTS.md): 435 source hashes, 177 stage records, 54 failure dispositions, 26 separate context fixtures and 27 pinned source files checked.
+- [A3 predecessor snapshot](history/A3-before-A4/MANIFEST.json), [current completion marker](COMPLETION.json), [executing brief](READINESS_BRIEF.md), [handoff](../../IMPLEMENTATION_HANDOFF.md).
+
+**A4 recommendation (now superseded by this authorized synthetic slice):** P0 fixture/DTO harness plus P1 upstream-component fit, then P2 synthetic graph/inspectors. Real source ingestion/authorization and native integration await R1–R3 and relevant S tests; capture ownership R4 remains later B6/B7 work. No new service, fork or operational environment is implicitly approved.
+
+**Observed historical status remains:** Q-01/Q-07/Q-08 PASS; Q-02/Q-03/Q-05/Q-06 PARTIAL; Q-04 FAIL; universal static fidelity 0/177. No new native validation, React Flow corpus run, terminal or packet-UI acceptance. All S-01–S-08 tests remain NOT_RUN. Context fixture creation is not a native pass.
+
+Sibling investigation files and VM environments were not changed. A4 source citations link to the read-only investigation and pinned upstream source; current design files live only in this workspace. Verify `COMPLETION.json` before accepting the document set.

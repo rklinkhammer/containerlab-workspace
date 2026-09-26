@@ -1,17 +1,3 @@
-# A30 — Phase 5 integrated GUI acceptance
-
-**Observed:** A29's 1,823 file hashes and predecessor snapshot verified; complete33-file D-15 archive retained. One unmocked browser session exercised actual native declarations, exact runtime enrollment/observation, per-node stdout logs with follow/stop, selected-endpoint capture, reviewed Lua filtering, same-PCAP reanalysis and byte-identical download, invalid-filter retention, capability-withdrawal refusal, disconnect during capture and successful reconnect/new capture. Node/view changes cleared prior evidence. No production source changes were needed.
-
-**Observed verification:** 85 unit/contract tests, six native static checks, build/typecheck,19 replay browser tests and one54.7-second integrated live browser scenario passed. The integrated test is skipped in the ordinary replay invocation and ran separately with explicit opt-in; it does not provision VMs automatically. Desktop/mobile screenshots were inspected and the mobile width check passed. This is not an accessibility-conformance audit. Actual capture contained2,234 bytes with distinct sequence7/8 frame sets; reanalysis/download preserved hash, bytes and original expiry.
-
-**Observed cleanup:** finite synthetic traffic completed, task-owned lab removed, no capture/reanalysis scratch remained, and fresh VM `clab-load-20260926-130336-exp016` is stopped. No pre-existing VM or sibling workspace was accessed for runtime or modified. GUI-1 revision3 layout remains unchanged. Historical Q gates,177-case denominator and TT-01 unchanged.
-
-**Readiness / next:** Phase5 passes for the selected Linux RUNTIME-PAIR profile and reviewed synthetic Lua module. It does not qualify every native kind, four-radio/VITA application behavior, arbitrary scripts, production hosting or serial consoles. Next is Phase6a: pin a freely distributable guest image and launcher, verify host/guest architecture and virtualization feasibility, then qualify authoritative serial backing/discovery before any xterm transport. The second generated QEMU-detector four-radio configuration remains separate from the original container-only fixture and follows that platform qualification. No sibling fixture changes or Phase6 runtime work were performed here.
-
-See artifacts/implementation/A30/RESULTS.md, artifacts/design/GUI_CONTINUATION.md and experiments/EXP-034-integrated-gui/README.md (workspace-relative). Existing serial discovery criteria remain in experiments/EXP-028-console-discovery/RUNTIME_PLAN.md. Preview uses port4173; ordinary checks never create VMs. Live use requires a new explicitly created session.
-
-## Historical baseline (retained)
-
 # A29 — Phase 4 managed PCAP reanalysis
 
 **Observed:** A28's 1,742 manifest files and predecessor snapshot verified before work; full D-15 archive retained. The link inspector can reanalyze its current managed PCAP with a new display filter or reviewed Lua choice, without recapture. The request supplies only artifact ID/hash, a distinct analysis job ID and reviewed analysis options. The server supplies the retained bytes; identity, original capture metadata, download bytes and five-minute expiry remain unchanged. Cancellation keeps a valid original artifact. Displayed analysis identifies its applied filter and analysis time.
@@ -84,7 +70,7 @@ TT-01, native authority, existing contracts, historical Q outcomes and177 denomi
 
 **Inferred next:** pin and inspect one freely distributable generic_vm/vrnetlab Ubuntu image and its serial backing, establish virtualization feasibility, then qualify a read-only image-specific discovery adapter in a fresh dedicated VM. No image/adapter is yet qualified. Do not promote generic TCP listeners, shell access or documentation hints to available consoles. TT-01, native authority, historical Q outcomes and177 denominator remain unchanged.
 
-Ready: pinned candidate image/launcher inspection. Blocked on those pins and virtualization feasibility: positive runtime serial discovery. Blocked on qualified discovery: console transport. A23 logs stay available only with fresh qualified runtime enrollment. No capture/Lua expansion.
+B5: proposed serial capability identity/freshness; S-01/S-02/S-05/S-07: disclosure/targeting/budget requirements only, not new runtime passes; D-15/S-08: verified archival publication. No Q-05 promotion from synthetic state tests.
 
 See SERIAL_CONSOLE_CONTRACT.md and ../implementation/A24/RESULTS.md.
 
@@ -98,7 +84,7 @@ See SERIAL_CONSOLE_CONTRACT.md and ../implementation/A24/RESULTS.md.
 
 **Inferred next:** specify native serial-console capability discovery for exact enrolled nodes, distinguishing unchecked/absent/unavailable before adding a transport; independently qualify more native kinds/logging drivers as needed. Keep generic bounded logs separate from arbitrary application files and application-health signals. Capture/Lua execution remains deferred. TT-01,177-case denominator and historical Q-gate outcomes remain unchanged.
 
-Dependency order: (1) ready, define evidence-backed serial-console discovery contract and independent absent/unsupported fixtures; (2) gated, qualify discovery in an explicitly authorized fresh VM before enabling a console; (3) separately qualify bounded xterm.js transport, origin and escape/link/clipboard policy; (4) separate capture endpoint/storage/TShark/Lua work. Additional log profiles need fresh evidence and exact enrollment; no arbitrary file browsing. Previous A22 node-log tasks below are completed only within A23’s stated Linux scope.
+B5/Q-05: selected native runtime association and replacement refusal; S-01/S-02/S-05/S-07: fixed operation, exact identity, text-only disclosure and finite output/time/concurrency/cancellation. S-08/D-15: predecessor snapshot and completion-last publication. Historical gate statuses are not promoted. Evidence: experiments/EXP-027-node-logs (workspace-relative).
 
 Read NODE_LOG_CONTRACT.md and ../implementation/A23/RESULTS.md.
 
@@ -112,13 +98,7 @@ Read NODE_LOG_CONTRACT.md and ../implementation/A23/RESULTS.md.
 
 **Inferred next:** qualify generic enrollment and observation in a separately authorized fresh dedicated VM before operational capability expansion. Independently ready: define a bounded generic node-log contract and capability states using pinned native sources. Serial-console discovery/transport, capture storage/TShark/Lua execution and application health remain separate gated work. Four-radio is an example, never application policy. TT-01, native authority, the177-case denominator and historical Q-gate outcomes are unchanged.
 
-## Dependency-ordered next work
-
-1. Ready: specify generic node-log sources, bounded tail/follow/stop, safe output and unknown/unavailable/error states; independent hostile-output and selection-cancellation fixtures (B5/S-02/S-05/S-07). No transport enabled yet.
-2. Runtime gated: new-VM qualification of current enrollment/session/observation versions across differing lab names/counts and native identities; replacement/expiry/cancel/cleanup tests (B5/Q-05). Requires explicit fresh runtime trial authorization; never reuse old VMs.
-3. After qualification: one bounded read-only log transport to the approved node view; no arbitrary command field.
-4. Separately gated: native serial-console capability discovery and xterm.js lifecycle; capture endpoint/storage and TShark/Lua isolation (R4 and S boundaries).
-5. Independent presentation extension: hierarchical grouping/collapse/isolation without topology mutation; obtain review for material layout changes.
+A22 maps GUI fidelity to B4/Q-04 and observation identity to B5/Q-05, with scoped S-01/S-02/S-05/S-07 checks. D-15/S-08 covers verified publication; none of these mappings promotes a historical gate. See GUI_CONTRACT.md and ../implementation/A22/RESULTS.md.
 
 Current evidence: artifacts/implementation/A22/RESULTS.md (workspace-relative); current UI contract: GUI_CONTRACT.md.
 
@@ -130,6 +110,8 @@ Current evidence: artifacts/implementation/A22/RESULTS.md (workspace-relative); 
 
 **Inferred next:** Define and qualify one bounded read-only SDR application-health signal from the actual VRT application contract, beginning with radio readiness/control status. Specify unavailable/stale/failed states and independent expected transitions; do not infer streaming, loss-free processing, detections or recorder completeness from containers/interfaces. Keep each later pipeline capability separately gated.
 
+B2/Q-03: exact-byte approved native declarations only. B5/Q-05: actual selected deployment observation and GUI association. S-01/S-05: field/rendering regressions. S-02/S-07: bounded identity, session compatibility, cancellation/recovery and scoped cleanup. D-15/S-08: full verified predecessor archive, guarded staged replacement, completion last. Historical gates/177 denominator unchanged.
+
 ## Historical A20 and earlier (superseded current/next entries)
 
 # A20 current — finite reliability
@@ -138,25 +120,27 @@ Current evidence: artifacts/implementation/A22/RESULTS.md (workspace-relative); 
 
 **Inferred next:** Implement one explicitly approved user-owned local topology bundle using the existing declaration/enrollment/observation path. Define its companion files, source hashes, native kinds, dependency gaps and per-occurrence expectations before enabling it. Use a new dedicated trial VM and existing Linux/SRL association rules. Keep load/display acceptance separate from runtime capability; do not add generic upload, discovery or operational controls. A topology requiring a new kind or native version needs a separate bounded compatibility gate.
 
+B5/Q-05: finite selected-profile reliability only. S-02/S-07: owned transport teardown, cancellation, bounded recovery/resource evidence. S-01/S-05: existing disclosure/rendering regressions. D-15/S-08: verified predecessor snapshot and guarded completion-last publication. No historical gate promotion.
+
 ## Historical A19 and earlier
 
-# Dependency-ordered P1a backlog — A19
+# Requirement-to-evidence traceability — A19
 
 **A19 current — Implemented:** the five existing approved profiles share one native-derived bounded enrollment, collector and association path. Fresh sessions use enrollment/0.2, observation-session/0.2 and observation/0.7. Strict historical0.1–0.6 readers remain; duplicate fixed-pair runtime paths are removed. Incompatible sessions fail before runtime access. [A19 results](../implementation/A19/RESULTS.md) and [current observation contract](OBSERVATION_CONTRACT.md) define actual verification, migration and limitations. TT-01, historical Q statuses and177-case denominator are unchanged.
 
 **Inferred next:** a finite sustained-refresh/recovery qualification of an existing approved profile, with predeclared budgets and fresh-session cleanup, before capability expansion. Peer/continuity/NOS health/forwarding remain unknown. No new kinds, discovery, operational controls or authorization work is implied.
 
-### Current dependency-ordered follow-up
+### A19 evidence map
 
-| Item | State | Acceptance / mapping |
-|---|---|---|
-| B5 consolidated observer | Implemented in A19 | Five approved profiles, explicit0.7 migration, historical readers; scoped Q-05/S-01/S-02/S-05/S-07 evidence |
-| B5 finite reliability trial | Proposed next; requires explicit runtime task | Predeclare duration/cadence/budgets, disconnect/reconnect/cancel and scoped cleanup; no adoption or new capabilities |
-| B3 broader native/context coverage | Independent remaining work | Preserve originals, specific native errors and177 denominator; Q-03/Q-04 unchanged |
-| Broader operational targeting | Blocked/unqualified | Peer/continuity/ownership/freshness evidence and explicitly authorized scope before B6/B7 |
-| Login/multi-user authorization | OUT_OF_SCOPE under TT-01 | Do not reintroduce as a dependency |
-
-The historical backlog below is superseded where it describes an already implemented next slice.
+| Requirement | Current evidence / disposition |
+|---|---|
+| B5 / Q-05 application runtime association | EXP-024 independent five-profile expectations, native transitions and maximum fault trials; scoped evidence, historical gate unchanged |
+| D-24 compatibility | session-migration.test.ts: old/tampered session rejected before runtime sentinel; strict actual0.1–0.6 replay; GUI fresh-enrollment/recorded fallback |
+| S-01/S-05 disclosure/rendering | Strict DTOs, malicious-field rejection and Chromium transport mocks; no raw output/new targets |
+| S-02/S-07 limits and lifecycle | Unchanged bounded Reader, one collector, process-fault/timeout/output/cancel/recovery trials and per-VM cleanup evidence |
+| D-15 / S-08 publication | history/A18-before-A19 full snapshot, write inventory and completion manifest last; no crash-atomicity claim |
+| B3 / Q-03/Q-04 corpus | Original fixture bytes/IDs and177 denominator unchanged; no universal fidelity claim |
+| R2/R3 authorization | OUT_OF_SCOPE per TT-01; excluded controls are not passed |
 
 ## Historical design context (A18 and earlier)
 
@@ -177,58 +161,193 @@ The historical backlog below is superseded where it describes an already impleme
 
 **A12 current — Observed:** 23 approved native bundles (14 added) with p1a/0.5 executed provenance, stitched-link retention, native environment-file references and reviewed dependency labels. Bundle availability is explicitly scoped; external prerequisites and inventory remain unresolved/partial. Expansion yielded 11 graphs and three specific native rejections. 30 contract tests, 14 outcome checks, A11 regression and 18 supervisor checks pass; Chromium 19 live / 17 offline pass. Original malformed-brief graph expectation remains unmet with a separately documented native rejection disposition. New VM stopped. Historical Q gates and 177 denominator unchanged; TT-01 remains active. See [A12 evidence](../implementation/A12/RESULTS.md). **Next:** bounded remaining corpus/context and dependency coverage, not operational features. Earlier current/next paragraphs below are historical.
 
-**A11 current — Observed:** bounded approved-bundle loading is implemented and qualified for nine fixtures. **Next bounded slice:** expand approved official-example/context bundle coverage with intact local assets and independent expectations for additional native link/dependency categories. No arbitrary upload, persistence or operations. [Results](../implementation/A11/RESULTS.md). Earlier next-step paragraphs below are historical.
+**A11 / B2/B3/B4 → Q-02/Q-03/Q-04 and scoped S-01/S-02/S-05/S-07:** actual approved-bundle native invocation and UI, companion context admission, bounded worker/fault checks and executed provenance delivered. Historical gates unchanged. [Evidence](../implementation/A11/RESULTS.md).
 
-**A10 current scope — Observed:** recorded declared preview complete; contract/browser verification passes. **Next gated slice:** bounded ephemeral native fixture-bundle loading through the qualified declaration API, with pinned inputs, reviewed disclosure, dependency coverage and worker fault/cleanup checks. No live ingestion or operation is enabled yet; TT-01 remains active. [Evidence](../implementation/A10/RESULTS.md). Earlier next-step statements below are historical.
+**A10 / B2/B3/B4 → Q-02/Q-03/Q-04, S-01/S-02:** declared DTO/renderer consumes pinned EXP-015 evidence with unresolved prerequisites and strict browser allowlists. 27 contract / 14 Chromium tests; historical gates unchanged. [Results](../implementation/A10/RESULTS.md).
 
 **A9 current implementation — Observed:** the local preview now supports 58 hash-verified recorded native fixture DTOs (`p1a/0.2`) alongside the synthetic profile. Single-ended links render without a fabricated peer; native aliases, occurrence identity and unresolved source provenance are explicit. 21 contract tests, TypeScript/build and 10 Chromium tests pass. [Evidence](../implementation/A9/RESULTS.md). This is recorded-result projection, not live resolution or source ingestion. TT-01 still excludes R2/R3 authorization; historical Q scores remain unchanged.
 
 **A8 active scope — user-selected TT-01:** trusted single-user test environment. R2 caller/job authorization, R3 identity/ownership integration and P6 multi-user work are **OUT_OF_SCOPE**, not passed or prerequisites. This supersedes authorization requirements and next-step recommendations in earlier sections below. Retain native correctness, containment, limits, data minimization and metadata compatibility/expiry. See [test profile](TEST_PROFILE.md). **Observed:** [EXP-013](../../experiments/EXP-013-context-coverage/RESULTS.md) resolved 25/26 context derivatives versus 0/26 original fragments and confirmed a one-ended dummy link. New VM stopped; historical Q scores unchanged.
 
-| Item | Current state | Next work / acceptance | Mapping |
-|---|---|---|---|
-| P0 DTO/fixture harness | Synthetic implementation tested | Implemented p1a/0.2 recorded DTO; independent native fixtures pass; retain budget/reference checks | B2/B4, D-02, Q-04 |
-| P1 upstream GUI reuse | Exact package assessment blocked by access; fallback available | Assess pinned bytes if supplied; does not block minimal fixture renderer | B4, D-03 |
-| P2 graph/inspectors | Synthetic and recorded-native implementation tested | Single-ended marker/inspector and unresolved provenance delivered; live resolution remains separate | B4, Q-04, S-01/S-05/S-07 |
-| P3 input bundles | Ephemeral fixture design ready; sensitive persistence separate | Exact bytes/hashes, declared inputs/missing dependencies, bounded staging and cleanup; no user auth | B2, D-13 non-auth parts |
-| P4 native projection | Recorded projection implemented; live fixture invocation next under TT-01 | Pinned getters + minimized actual version metadata, no operational socket; require explicit native contract and meaningful negative tests | B2, R2 non-auth, Q-02/Q-04 |
-| P5 corpus/context | Selected trial complete, broader work remains | Preserve 26 originals/26 derivatives; pin CTX-C168 mapping dependency; no universal pass from 25 resolutions | B3, Q-03/Q-04 |
-| P6 multi-user preview | OUT_OF_SCOPE | No login/ownership/job-authorization subsystem | D-16; R3 excluded |
-| P7 preview acceptance | Pending native DTO/render implementation | Native result-to-graph comparison, bounded failures and applicable non-auth controls; corpus fidelity separate | B2–B4, Q-02/Q-04 |
+Architecture responses below are **Inferred/proposed**. Evidence classifications and Q statuses are inherited unchanged from run 03. Decisions D-01–D-15 are in [DECISIONS.md](DECISIONS.md); B1–B8 acceptance work is in [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md).
 
-Smallest next executable slice: connect a bounded isolated native invocation for pinned local fixture bundles to the implemented projection, retaining recorded fixtures as regression oracles. Keep real-source persistence and operational actions separate. R2/R3 authorization must not reappear as a blocker under TT-01.
+| Requirement | Evidence/finding | Native interface or proposed responsibility | Remaining gap / validation gate | Decision / backlog |
+|---|---|---|---|---|
+| Native topology/kinds/lifecycle authority | Documented original brief; Observed API deploy/start/stop, F-025 | Containerlab + native API; no duplicate engine | Selected profile must align and retain native behavior; Q-05 | D-01/D-10; B1 |
+| React / React Flow frontend | User-selected A2 change; pinned upstream dependency match; historical F-023/F-025 | Upstream frontend reuse first, native-derived graph and React inspectors | All-corpus React Flow fidelity/readability NOT_RUN; Q-04 remains unmet | D-03; B4/U-07/U-08 |
+| Preserve bytes and unknown metadata | Observed strict rejection; F-022/F-024 | Private immutable source/input store, source references | Unknown values remain accessible with authorization; no guessed semantics; Q-02/Q-04 | D-02/D-03; B2/B4 |
+| Defaults/groups/templates/provenance | Observed independent fixture, F-022 | Pinned native core resolution; provenance adapter only | Full field origin and expansion coordinates; Q-02 PARTIAL | D-02; B2/U-01 |
+| Safe static processing | Observed HTTP fetch and daemon dependency, F-022 | Isolated resolver/daemon with scratch inputs | Kind-specific effects and sandbox boundary; Q-02 | D-02/D-10; B2 |
+| Every pinned official example remains accounted for | Observed manifest 435/177/258, F-023 | Corpus/index and dependency manifest | Includes/context/external pages/generation discovery; Q-03 PARTIAL | D-08; B3/U-02 |
+| Original C088 failure retained | Documented history, Observed strict failure/corrected fixture, F-024 | Separate original/correction IDs | Upstream disposition and original compatibility still unresolved; Q-03/Q-04 | D-08; B3 |
+| Correct objects, endpoints, aliases and attributes | Observed per-case ledgers, SRL fixture; F-022/F-023 | Native object projection + source logical roles | Independent full parity; 0/177 complete static passes; Q-04 | D-02/D-03; B2/B4 |
+| Parallel/disconnected/component/external semantics | Observed fixture and partial render review, F-022/F-023 | Occurrence IDs, native nodes, explicit derived endpoints | Every class/readability/origin independently checked; Q-04 | D-03; B4/U-07 |
+| Versioned identity and ownership | Observed mixed dependencies, native ownership responses, F-025 | Native authentication bridge and per-user native requests | Delegation, restart token behavior, revocation; Q-05/Q-06 | D-01/D-04; B1/B5/B7 |
+| Runtime intended/observed separation | Observed Linux generations and SRL interfaces, F-009/F-025/F-027 | Native inspect/interfaces + observation reconciler | Partial/down/undeployed and kind-specific freshness; Q-05 | D-05/D-09; B5/B8 |
+| Event continuity and stale-state handling | Observed snapshots/reconnect, no qualified cursor, F-025 | Native NDJSON inputs; local epoch/resync | Snapshot/delta races, lost events, overflow; Q-05 | D-05; B5/U-05 |
+| Correct authorized capture point | Observed controls and redeploy identity changes, F-027 | Native capture or restricted runner with qualified admission fence | Race-safe freshness including out-of-band changes; Q-06 PARTIAL | D-06; B5/B6/U-06 |
+| Capture readiness/cancel/bounds/concurrency | Observed standalone tests and VNC readiness, F-026/F-027 | Reused tools + missing admission/supervisor policy | Native versus standalone guarantees, strict quota semantics; Q-06 | D-06/D-07; B6 |
+| Crash/client-disconnect cleanup | Observed native orphan/404, F-026 | One durable owner + independent supervisor deadline | Native fix or narrowly scoped recovery extension; Q-05/Q-06 | D-06; B6 |
+| Valid stored PCAP and provenance | Observed corrupt quota file/decodable interrupted output, F-027 | Decode/hash/manifest and explicit outcome state | Correct-point/complete-session checks plus storage failures; Q-06 | D-07; B6/B7 |
+| Authorized transfer, expiry and deletion | Observed SSH integrity only, F-027; native contract Unresolved | Artifact API reauthorization, tombstones, local storage | Cross-user/revoked/range/restart/expiry tests; Q-06 | D-04/D-07; B7 |
+| Private browser/Linux boundary | Observed isolated run, F-025; proposed deployment policy | Private native API, TLS ingress, no browser runtime socket | Extension privilege/credential/route allowlist tests; Q-05/Q-06 | D-04/D-10; B1/B2/B6/B7 |
+| Broader runtime/link/guest support | Unresolved U-03/U-04; limited matrix | Capability data + per-family qualification | Real mappings/visibility/negative controls; later enablement | D-09; B8 |
+| Performance without unsupported promises | Observed single-trial ring measurements; U-08 | Bounded graph updates/selection labels | Dense 10/50/100/500-node trials and update/capture resource contention | D-05/D-09; B4/B8 |
+| Research isolation and no implementation | Observed run-03 cleanup; fixed AGENTS boundaries | Fresh VM only for future runtime tests; documents in this phase | No runtime accessed in A1/A2/A3; qualification statuses unchanged | Q-01/Q-07/Q-08; all future probes |
+| Interactive xterm.js node terminals | Documented native session/stream routes; no new runtime test | Native terminal lifecycle + xterm rendering and separate terminal permission | Ownership/attach/origin/resize/backpressure/expiry/restart/redeploy cleanup NOT_RUN | D-04/D-05/D-11; B1/B5/Q-05 |
+| TShark-backed React packet inspector | Documented structured output; historical standalone decode evidence | Restricted analysis jobs, normalized queries/details and private cache | GUI accuracy, query bounds, filters, access/revocation/deletion and cache retention NOT_RUN | D-07/D-10/D-12; B4/B7/Q-06 |
+| Restricted source/resolved-data disclosure | Documented loss ledger and updated brief; proposed D-13 | Restricted originals, allowlisted DTOs, redacted errors and value-free audit | S-01/S-02 NOT_RUN; no raw browser/log fallback | D-13; B1/B2/B4/B5/B7; Q-02/Q-04/Q-05/Q-06 |
+| Encryption and key custody | Updated brief; deployment profile Unresolved | Operator-managed transport/storage encryption; protected keys | S-03 NOT_RUN; verify scratch/swap/journal/cache/backup coverage and fail-closed behavior | D-13/D-10; B1/B2/B7 |
+| Whole-data retention and deletion | Updated brief; inherited artifact tests remain partial | Tombstones, cancellation, cache invalidation, recovery and backup expiry | S-04 NOT_RUN; no secure-erasure claim without proof | D-13/D-07; B2/B5/B7; Q-06 |
+| Untrusted browser content and CSP | Updated brief; pinned frontend fit Unresolved | Text rendering, URL restrictions, safe downloads and CSP | S-05 NOT_RUN; malicious labels/dissections/errors and CSP enforcement | D-14/D-03/D-12; B4/B7; Q-04/Q-06 |
+| Terminal escape and clipboard policy | Updated brief; workflow remains unqualified | Restricted xterm handlers; independent native authorization | S-06 NOT_RUN; OSC/link/clipboard and received-output tests | D-14/D-11; B5; Q-05 |
+| Bounded UI and stream output | Updated brief; numeric profile Unresolved | Producer/browser limits, backpressure, truncation and resync | S-07 NOT_RUN; slow-client and oversized-output tests | D-14; B4/B5/B7; U-08 |
+| Complete history and recoverable publication | Updated brief and user's directory arrangement | Flat full-set snapshot, source map/hashes, final completion marker | Normal document checks recorded in completion manifest; S-08 interruption tests NOT_RUN | D-15; all B work; Q-07/Q-08 historical only |
+
+## Independent stage ledger
+
+| Stage | Current outcome | Required evidence for acceptance |
+|---|---|---|
+| Native parse/validation | 123 PASS, 54 FAIL | Accepted unchanged source under pinned semantics, with dependencies/effects recorded; YAML syntax alone insufficient |
+| Semantic projection | 177 PARTIAL | Independent per-object/endpoint/attribute/origin comparisons, special semantics, no omissions or invented resolution |
+| Render | 177 PARTIAL | Retention plus representative readable labels/inspectors and unresolved-state presentation |
+| Corpus deployment | 177 NOT_RUN | Per-case legitimate runtime prerequisites and observed native deployment; not needed merely for inventory/display |
+| Corpus inspection | 177 NOT_RUN | Per-case live object/interface/kind mapping; synthetic inspection cannot fill these rows |
+| Corpus capture | 177 NOT_RUN | Per-case qualified points/ownership/controls; synthetic Linux evidence is a separate capability result |
+
+Evidence: [stage CSV](../../../containerlab-investigation/artifacts/compatibility/results.csv), [summary](../../../containerlab-investigation/artifacts/compatibility/summary.json), [capability matrix](../../../containerlab-investigation/artifacts/runtime/capabilities.csv). A3 changes none of these historical counts. The 177 render results apply to Cytoscape, not React Flow. Corpus-wide React Flow rendering, xterm session workflows and the TShark analysis API/GUI are NOT_RUN. Discovery completion and universal semantic acceptance are separate gates; better error display alone cannot turn an invalid original example into a full static pass.
 
 
-## A14 dependency-ordered continuation
+## A4 preparation traceability
 
-1. **Complete, Observed — B5/Q-05 subset:** fixed native endpoint collection, strict observation/0.2 association, inspector integration and controlled transitions. [A14 evidence](../implementation/A14/RESULTS.md). S-01 disclosure, S-02 identity metadata, S-05 rendering and S-07 bounds have scoped evidence only.
-2. **Ready for a separately authorized qualification — B5:** inspect native-supported admin/carrier/peer/continuity mechanisms; write independent same-lab expectations and identify missing fields explicitly. First deliverable is a capability/association contract, not broad implementation or traffic testing.
-3. **Blocked pending evidence — B5/B6/B7:** generalized endpoint targeting, capture association, durable adoption/event reconciliation and other native kinds. Matching interface attributes do not close those gates. Universal B3/B4/Q-04 fidelity remains separate and unchanged; no corpus expansion is necessary to finish the present slice.
+| Preparation result | Evidence class and artifact | Decision / remaining acceptance |
+|---|---|---|
+| Aligned candidate CP-01 | Documented pinned module; Inferred build preference; [profile](CANDIDATE_PROFILE.json) | D-01; B1/R1/T1, Q-05 unchanged |
+| Native login-session bridge candidate | Documented middleware/routes/GUI session flow; [readiness](READINESS.md) | D-04; B1/R3/T1, S-01–S-03, no new auth PASS |
+| Native export/library comparison and contract | Documented source; Inferred DTO and [independent fixtures](../../experiments/EXP-010-readiness-static/fixtures/README.md) | D-02/D-13; B2/R2/T2, Q-02/Q-04 unchanged |
+| 435 hashes / 54 dispositions / 26 context derivatives | Observed bookkeeping; Inferred remedies; [EXP-010](../../experiments/EXP-010-readiness-static/RESULTS.md) | D-08; B3/U-02/U-07, original counts unchanged, derivatives NOT_RUN |
+| Restricted upstream GUI reuse | Documented YAML snapshot/edit mode; Inferred component boundary; [contract](P1A_CONTRACT.md) | D-03/D-14; B4/T3, S-01/S-05/S-07 NOT_RUN |
+| Ready versus blocked implementation work | Inferred [P1a backlog](P1A_BACKLOG.md) | B1–B4; P0/P1/P2 synthetic scope after authorization; R4 deferred, not closed |
+
+A4 adds no native runtime, renderer or S-gate pass. EXP-010's successful bookkeeping and fixture structure checks are separate from product acceptance.
+
+## A5 implementation evidence mapping
+
+| Work | Gate mapping | Result and remaining boundary |
+|---|---|---|
+| P0 strict DTO + independent expectations | B2/B4, D-02/D-13, Q-02/Q-04, S-01/S-02 | 13 contract tests PASS; native fidelity/auth not run |
+| P1 package fit | B4, D-03/D-14, U-07/U-08, S-01/S-05/S-07 | Exact package BLOCKED by 401; no integrity/interface assertion |
+| P2 synthetic graph/inspectors | B4, Q-04, S-01/S-05/S-07 | Seven Chromium tests PASS, screenshots reviewed; no full S or Q closure |
+| D-15 publication | S-08 | A4 flat snapshot and A5 file hashes verified; interruption/crash injection NOT_RUN |
+
+Evidence: [results](../implementation/RESULTS.md), [verification](../implementation/verification.json), and [tests](../../tests/contract.test.ts). No denominator, historical failure or independent expectation was rewritten.
+
+## A6 evidence mapping
+
+| Evidence | Mapping | Scope/status |
+|---|---|---|
+| F1 native getters vs unchanged expectations | B2, R2, Q-02/Q-04 | Observed selected fixture under synthetic runtime version; no universal pass |
+| Public export silent minimal fallback | B2, D-02/D-13, S-01 | Observed; fail-closed output validation required |
+| UID/filesystem/network/deadline/file-limit controls | B2, R2, S-03/S-04/S-07 | Observed bounded subset, not complete S acceptance |
+| Native version-information dependency | B1/B2, R1/R2 | Native build proven; CP-01 API/identity still unqualified |
+| Synthetic alias correction and regression | B4, P0/P2, Q-04 | 13 contract + 7 browser tests pass; no corpus status change |
+| Fresh VM shutdown / A5 archive / A6 marker | Q-01 scope discipline, D-15/S-08 | Task VM stopped; hashes verified; publication crash injection not run |
+
+All results and commands are in [EXP-011](../../experiments/EXP-011-resolver-isolation/RESULTS.md). F1–F6 expectation hashes and investigation stage records are unchanged.
+
+## A7 evidence mapping
+
+| Evidence | Mapping | Scope/result |
+|---|---|---|
+| Real metadata + pinned client negotiation | B1/B2, R1/R2, D-02 | Observed selected fixtures; CP-01 API and production profile not qualified |
+| No real socket; no forwarding; forbidden routes/expiry | B2, S-01/S-02/S-03 | 38 behavior checks total; per-job peer authorization unresolved |
+| Independent fixture comparisons / fallback failure | B2/B3, Q-02/Q-04 | Same expectations retained; no corpus gate change |
+| New VM stopped and A6 archive | D-15/S-08 | Hash-verified publication; crash injection not performed |
+
+See [EXP-012](../../experiments/EXP-012-runtime-information/RESULTS.md). No application source or dependencies changed, so application regression suites were not rerun.
+
+## A8 applicability and new evidence
+
+| Work/gate | TT-01 disposition | Evidence or next action |
+|---|---|---|
+| R2 caller/job authorization, R3, P6 | OUT_OF_SCOPE | User scope change / D-16; no pass claimed |
+| S auth subrequirements / T1 identity | OUT_OF_SCOPE | Other security/version requirements retained separately |
+| B2/B3, R2 resolution, Q-02/Q-03/Q-04 | Remain applicable | EXP-013: 52 preserved inputs, 25 derivative resolutions, one missing-context rejection |
+| B4 / native DTO contract | Next implementation slice | Independent F7: one native endpoint; synthetic two-ended contract insufficient |
+| S-01 disclosure / S-03–S-07 non-auth controls | Retained by feature | EXP-013 reuses bounded isolation/route controls; no full-gate assertion |
+| D-15/S-08 publication | Snapshot/manifest checks | A7 archived; no crash-injection claim |
+
+Historical run-03 Q scores and universal denominator remain unchanged. EXP-013 is native-library resolution coverage, not all-corpus rendering or deployment.
+
+## A9 implementation evidence
+
+| Work | Evidence | Gate interpretation |
+|---|---|---|
+| Native DTO/projection + immutable fixture provenance | 21 contract tests total; source/result hashes checked; independent F1/F4/F5/F7 comparisons | B2/B4, D-02/D-13; selected projection evidence only |
+| Single-ended/native inspectors and safe shared renderer | 10 Chromium tests; desktop/narrow screenshots reviewed | B4, Q-04 and non-auth S-01/S-05/S-07 subsets, no full gate closure |
+| Original/context separation | 58 records: 29 partial graphs / 29 diagnostic-only rejections | B3; historical corpus IDs/results unchanged |
+| TT-01 | Authorization not implemented | R2/R3 auth OUT_OF_SCOPE, not passed |
+| D-15 | A8 snapshot and A9 marker verified | S-08 crash tests still NOT_RUN |
+
+See [A9 results](../implementation/A9/RESULTS.md) for commands, warnings and unrun checks. No VM/native execution occurred in A9.
+
+**A12 / D-17 mapping:** B2/R2 native typed declaration projection; B3/Q-03 bundle/source/companion identity; B4/Q-04 selected node/endpoint/dependency/error browser checks; S-01/S-02/S-05/S-07 disclosure, finite diagnostics, safe rendering and limits. [Category inventory](../../experiments/EXP-017-coverage/CATEGORY_INVENTORY.md). All historical Q outcomes unchanged.
 
 
-## A15 next bounded work
+## A14 endpoint observation trace
 
-1. **Complete / Observed:** B5 controlled Linux-veth state supplement, strict provenance, partial failure and identity qualification. Q-05 and S-01/S-02/S-05/S-07 subset evidence only.
-2. **Ready for separately authorized qualification:** select one additional native kind/interface-alias profile with available pinned image and independent declaration/runtime association expectations. Preserve unknown fields instead of generalizing literal eth1 matching.
-3. **Blocked pending a separate contract/evidence:** qualified peer mapping, capture/action targeting and durable event/continuity guarantees. Exact-attribute reuse is a demonstrated limitation, not a gate to silently waive. Universal B3/B4/Q-04 corpus work stays separate.
+| Requirement | Decision / work / gates | Evidence and limit |
+|---|---|---|
+| Native interface projection and endpoint association | D-19, B5, Q-05 subset | EXP-019 actual up/down/removal/recreation; 39 contract tests; ordinary Linux-veth scope only |
+| Distinct absent/unavailable/unresolved and stale observations | D-18/D-19, B5, S-02/S-05 subset | Runtime node/lab transitions; mock partial/race faults; live and offline inspector tests; no atomicity/continuity claim |
+| Disclosure and bounded process work | D-13/D-14/D-19, S-01/S-07 subset | Strict DTO, canary exclusion, four subprocess fault checks, aggregate bounds; root observer remains privileged |
+| Controlled publication and cleanup | D-15, B5 | A13-before-A14 archive, staged writes, completion last; EXP-019 cleanup.json |
+
+No historical Q status,177-case denominator or unrelated S acceptance changes.
 
 
-## A16 bounded continuation
+## A15 evidence mapping
 
-1. **Complete / Observed — B5/Q-05 subset:** one native SR Linux alias profile, actual interface association and Linux regression; explicit unavailable/error/provenance fields. S-01/S-02/S-05/S-07 evidence remains scoped.
-2. **Ready for separate authorization:** replace fixed two-node/one-link enrollment with a bounded native-derived contract for multiple endpoint occurrences in approved bundles. Define independent parallel/disconnected and alias expectations first; keep source/deployment/native identity explicit.
-3. **Blocked pending independent evidence:** generalized kinds/aliases, arbitrary source ingestion, qualified peer identity, durable continuity and capture/action targeting. Universal B3/B4/Q-04 fidelity remains separate; don't expand kinds merely to improve counts.
+| Requirement | Mapping | Evidence / limit |
+|---|---|---|
+| Native plus Linux facts with explicit provenance | D-20/B5/Q-05 subset | EXP-020 actual admin/carrier transitions; native operstate remains separate |
+| Replacement identity and continuity limits | D-19/D-20/B5/S-02 subset | Actual exact-tuple recreation and namespace/full-ID replacement; no peer or continuity claim |
+| Disclosure, partial failure, bounds and UI | D-13/D-14/D-20/S-01/S-05/S-07 subsets |44 contracts, subprocess/mock faults, live/offline browser results; root observer remains trusted |
+| Publication and cleanup | D-15 | A14-before-A15 archive; staged writes, completion last; two scoped fresh-trial cleanup records |
 
-## A17 dependency-ordered continuation
+No historical Q acceptance or corpus denominator changed.
 
-1. Ready: review collection failure/latency distribution for the same qualified kinds under bounded node/endpoint counts; independent fixture expectations first, fresh resources only.
-2. Ready after that evidence: decide supported runtime capacity and consolidate legacy profile enrollment without rewriting historical DTOs/evidence.
-3. Blocked on explicit scope + native evidence: additional kinds or special roles, peer/continuity identity, NOS-specific state.
-4. Blocked on separate authorization/qualification: capture/action targeting, terminals and operational controls. A17 matching attributes are insufficient.
 
-## A18 dependency-ordered continuation
+## A16 traceability
 
-1. Complete: measured selected-fixture capacity and partial failures within existing bounds (B5, Q-05 subset, scoped S tests).
-2. Ready for next authorized slice: consolidate RUNTIME-PAIR/SRL-PAIR active enrollment/collectors into the bounded native-derived path. Specify session migration and retain historical DTO readers first; then independent regressions on fresh resources.
-3. Still gated: broader approved topology/kind/role coverage and long-duration capacity claims need their own fixtures/evidence.
-4. Still blocked: capture/action targeting, peer/continuous identity and operational capabilities require separate contracts/authorization. Matching attributes are insufficient.
+| Requirement | Mapping | Evidence / limit |
+|---|---|---|
+| Native kind and alias authority | D-21/B5/Q-05 subset | Pinned SRL mapping source, real NOS version, native name/alias and independent DTO tests |
+| Source/runtime separation and replacement refusal | D-19/D-21/B2/B5/S-02 subset | Immutable SRL bundle, full-ID/tuple checks, actual wrong-alias/deletion/restart/replacement outcomes |
+| Display and containment | D-13/D-14/D-21/S-01/S-05/S-07 subsets | Both-profile browser suites, strict DTO and subprocess/mock faults; observer remains privileged |
+| History and cleanup | D-15 | A15-before-A16 archive, staged writes/completion last, two fresh trial cleanup records |
+
+No historical Q score or177-case denominator changes.
+
+## A17 scope mapping
+
+| Work / gates | Evidence | Outcome boundary |
+|---|---|---|
+| B5 / Q-05 subset | EXP-022 actual new and legacy profile trials | Native-derived enrollment/observations for approved synthetic profiles only |
+| B2 / R2 native authority | derivePlan + pinned native source ledger | No topology parser or alias conversion; R2 identity authorization excluded by TT-01 |
+| S-01 / S-02 subset | plan binding, strict DTOs, fixed target policy, replacement tests | Containment/disclosure; no multi-user ownership claim |
+| S-05 subset | browser occurrence selection, hostile text, stale/cancel tests | React safe text and retained CSP; no terminals/capture |
+| S-07 subset |6s/256KiB fault harness, bounded schema, stopped VM evidence | Scoped resource/cleanup evidence; maximum runtime capacity unresolved |
+
+Historical Q statuses and177 original cases unchanged. Two new synthetic bundle IDs do not enter the official corpus denominator.
+
+## A18 scope mapping
+
+| Work/gates | New evidence | Scope |
+|---|---|---|
+| B5 / Q-05 subset | EXP-02320 guest+20 host+10 browser samples per fixture; actual max-size transitions | Three approved shapes, not universal inspection fidelity |
+| S-01/S-02 subset | strict0.6, source/bundle/full-ID guards, old-contract regressions | No socket/raw-source/target expansion; TT-01 auth exclusions retained |
+| S-05 subset | live occurrence/keyboard/narrow-view checks; actual process-failure UI and mocked hostile/stale/cancel checks | Chromium only, no WCAG certification |
+| S-07 subset | unchanged bounds, injected timeout/output/overlap/cancel recovery and three stopped VMs | Local sampled capacity and scoped cleanup, not soak/SLO |
+
+Official corpus denominator177 and historical Q outcomes unchanged. See A18 results for separately unrun checks.
