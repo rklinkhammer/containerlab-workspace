@@ -1,0 +1,253 @@
+{
+  "vm": "clab-load-20260926-122927-exp016",
+  "cases": [
+    "actual endpoint capture and reviewed filter PASS",
+    "empty reviewed capture PASS",
+    "reviewed capture cancellation PASS"
+  ],
+  "capture": {
+    "contract": "capture/0.1",
+    "id": "5c332ad56dec21480a0dc5cc548754ef",
+    "deploymentId": "0072d6258426d70dcf60b32a8e708edc2dba813bad489277e908bfa1dcf1fb5b",
+    "endpointId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:l0:endpoint:0",
+    "filename": "reviewed.pcap",
+    "sha256": "3d5e93b7a03b1f8cf372fe5e1cc016b321d7875fbfbf47926cce7a2e8b2f5456",
+    "bytes": 3599,
+    "createdAt": "2026-09-26T12:37:24.491Z",
+    "expiresAt": "2026-09-26T12:42:24.496Z",
+    "limited": false,
+    "packets": [
+      {
+        "number": 1,
+        "seconds": "0.000000000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 3,
+        "seconds": "0.108607000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 5,
+        "seconds": "0.217338000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 7,
+        "seconds": "0.325259000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 9,
+        "seconds": "0.435341000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 11,
+        "seconds": "0.545278000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 13,
+        "seconds": "0.655383000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 15,
+        "seconds": "0.758621000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 17,
+        "seconds": "0.868719000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 19,
+        "seconds": "0.975288000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 21,
+        "seconds": "1.085399000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 23,
+        "seconds": "1.195495000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 25,
+        "seconds": "1.305577000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 27,
+        "seconds": "1.408633000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 29,
+        "seconds": "1.509883000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 31,
+        "seconds": "1.619993000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 33,
+        "seconds": "1.730112000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 35,
+        "seconds": "1.840228000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 37,
+        "seconds": "1.950355000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 39,
+        "seconds": "2.060494000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 41,
+        "seconds": "2.161282000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 43,
+        "seconds": "2.271404000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 45,
+        "seconds": "2.375353000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 47,
+        "seconds": "2.485460000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 49,
+        "seconds": "2.592004000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 51,
+        "seconds": "2.694092000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 53,
+        "seconds": "2.804213000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      },
+      {
+        "number": 55,
+        "seconds": "2.908665000",
+        "bytes": 49,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "CLABPROBE"
+      }
+    ],
+    "analysis": "complete",
+    "lua": {
+      "id": "clab-probe-v1",
+      "sha256": "bebea9f48c2de34c63de241a5bf43819c2a41702a05a8dc57c2816ebca019523"
+    },
+    "completeness": "not_established"
+  },
+  "outcome": "PASS"
+}

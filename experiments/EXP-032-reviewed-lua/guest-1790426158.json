@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "case": "independent sequence filter excludes other sequence, short, wrong magic and version",
+      "outcome": "PASS"
+    }
+  ],
+  "fixtureSha256": "a5d4c65442f0c436d0b3bbabefbe72f3fdfe6da11b4cf651818a069a2bf480e0",
+  "filterOutput": "1\t7\tCLABPROBE\n",
+  "outcome": "FAIL",
+  "reason": "ValueError('LUA_INTEGRITY')"
+}

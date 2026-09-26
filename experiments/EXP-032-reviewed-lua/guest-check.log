@@ -1,0 +1,17 @@
+{
+  "cases": [
+    {
+      "case": "independent sequence filter excludes other sequence, short, wrong magic and version",
+      "outcome": "PASS"
+    }
+  ],
+  "fixtureSha256": "a5d4c65442f0c436d0b3bbabefbe72f3fdfe6da11b4cf651818a069a2bf480e0",
+  "filterOutput": "1\t7\tCLABPROBE\n",
+  "outcome": "FAIL",
+  "reason": "ValueError('LUA_INTEGRITY')"
+}
+Traceback (most recent call last):
+  File "/Users/rklinkhammer/workspace/containerlab-workspace/experiments/EXP-032-reviewed-lua/check.py", line 7, in <module>
+    x=json.loads(p.stdout);print(json.dumps(x,indent=2));assert p.returncode==0 and x['outcome']=='PASS'
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

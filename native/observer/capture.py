@@ -1,8 +1,32 @@
 """Exact enrolled Linux veth capture; bounded scratch; separately sandboxed TShark."""
 import sys,json,os,re,base64,tempfile,subprocess,resource,signal,hashlib,fcntl,struct
 import importlib.util
+from pathlib import Path
 spec=importlib.util.spec_from_file_location('observer','/opt/clab-observer.py');observer=importlib.util.module_from_spec(spec);spec.loader.exec_module(observer)
 LIMIT=1048576
+LUA_ID='clab-probe-v1'
+LUA_HASH='bebea9f48c2de34c63de241a5bf43819c2a41702a05a8dc57c2816ebca019523'
+ANALYSIS_ROOT='/opt/clab-analysis-root'
+
+def analysis_args(path,lua_id=None):
+ props=['DynamicUser=yes','PrivateNetwork=yes','PrivateTmp=yes','PrivateDevices=yes','ProtectSystem=strict','ProtectHome=yes','NoNewPrivileges=yes','ProtectProc=invisible','MemoryMax=256M','TasksMax=16','RuntimeMaxSec=8','TimeoutStopSec=1','KillMode=control-group','LimitFSIZE=1048576','LimitCORE=0','BindReadOnlyPaths='+path+':/capture.pcap']
+ if lua_id:
+  if lua_id!=LUA_ID:raise ValueError('INVALID_REQUEST')
+  script=ANALYSIS_ROOT+'/reviewed/'+LUA_ID+'.lua'
+  if hashlib.sha256(open(script,'rb').read()).hexdigest()!=LUA_HASH:raise ValueError('LUA_INTEGRITY')
+  # Verify immutable install manifest on every reviewed run (not a caller-controlled root).
+  manifest=json.load(open('/opt/clab-analysis-manifest.json'))
+  actual=list(Path(ANALYSIS_ROOT).rglob('*'))
+  if any(p.is_symlink() and not (str(p.relative_to(ANALYSIS_ROOT))=='bin' and os.readlink(p)=='usr/bin') for p in actual) or {str(p.relative_to(ANALYSIS_ROOT)) for p in actual if p.is_file()}!=set(manifest):raise ValueError('LUA_INTEGRITY')
+  for name,digest in manifest.items():
+   if name.startswith('/') or '..' in name.split('/') or hashlib.sha256(open(ANALYSIS_ROOT+'/'+name,'rb').read()).hexdigest()!=digest:raise ValueError('LUA_INTEGRITY')
+  props+=['RootDirectory='+ANALYSIS_ROOT,'MountAPIVFS=yes','ProcSubset=pid','RestrictAddressFamilies=AF_UNIX','CapabilityBoundingSet=','RestrictSUIDSGID=yes','LockPersonality=yes','TemporaryFileSystem=/tmp:size=1M /var/tmp:size=1M','SystemCallFilter=~@mount @privileged @reboot @swap @module @raw-io @debug']
+ else:props+=['InaccessiblePaths=/opt /root /home']
+ args=['/usr/bin/systemd-run','--quiet','--pipe','--wait','--collect']
+ for prop in props:args+=['-p',prop]
+ args+=['--','/usr/bin/tshark','-n','-r','/capture.pcap','-c','100','-T','fields','-E','separator=/t']
+ if lua_id:args+=['-X','lua_script:/reviewed/'+LUA_ID+'.lua']
+ return args
 
 def bounded(args,timeout,limit=131072,filesize=LIMIT):
  def limits():
@@ -18,10 +42,11 @@ def bounded(args,timeout,limit=131072,filesize=LIMIT):
   return code,data
 
 def collect(x):
- if set(x)!={'node','cid','namespace','item','endpointId','source','bundle','duration','snaplen','captureFilter','displayFilter'}:raise ValueError('INVALID_REQUEST')
+ if set(x)-{'luaId'}!={'node','cid','namespace','item','endpointId','source','bundle','duration','snaplen','captureFilter','displayFilter'}:raise ValueError('INVALID_REQUEST')
  if any(not isinstance(x[k],str) or not re.fullmatch('[a-f0-9]{64}',x[k]) for k in ['cid','namespace','source','bundle']):raise ValueError('INVALID_REQUEST')
  if type(x['duration'])!=int or not 1<=x['duration']<=10 or type(x['snaplen'])!=int or not 64<=x['snaplen']<=65535:raise ValueError('INVALID_REQUEST')
  if any(not isinstance(x[k],str) or len(x[k])>1024 or re.search(r'[\x00-\x1f\x7f]',x[k]) for k in ['captureFilter','displayFilter']):raise ValueError('INVALID_REQUEST')
+ if 'luaId' in x and x['luaId']!=LUA_ID:raise ValueError('INVALID_REQUEST')
  p=observer.plan();e=next((e for e in p['endpoints'] if e['endpointId']==x['endpointId']),None)
  if p['sourceSha256']!=x['source'] or p['bundleSha256']!=x['bundle'] or not e or e['node']!=x['node']:raise ValueError('ASSOCIATION_CONFLICT')
  if e['kind']!='linux' or e['mode']!='literal':raise ValueError('CAPTURE_UNSUPPORTED')
@@ -62,7 +87,7 @@ def collect(x):
     if usec>=1000000 or inc>orig or inc>x['snaplen'] or pos+inc>len(data):raise ValueError('MALFORMED_CAPTURE')
     pos+=inc
    os.chmod(path,0o444)
-   args=['/usr/bin/systemd-run','--quiet','--pipe','--wait','--collect','-p','DynamicUser=yes','-p','PrivateNetwork=yes','-p','PrivateTmp=yes','-p','PrivateDevices=yes','-p','ProtectSystem=strict','-p','ProtectHome=yes','-p','NoNewPrivileges=yes','-p','ProtectProc=invisible','-p','MemoryMax=256M','-p','TasksMax=16','-p','RuntimeMaxSec=8','-p','InaccessiblePaths=/opt /root /home','-p','BindReadOnlyPaths='+path+':/capture.pcap','--','/usr/bin/tshark','-n','-r','/capture.pcap','-c','100','-T','fields','-E','separator=/t']
+   args=analysis_args(path,x.get('luaId'))
    for f in ['frame.number','frame.time_relative','frame.len','ip.src','ip.dst','_ws.col.Protocol']:args+=['-e',f]
    if x['displayFilter']:args+=['-Y',x['displayFilter']]
    code,output=bounded(args,10)
@@ -73,7 +98,7 @@ def collect(x):
      if len(cols)!=6 or not cols[0].isdigit() or not cols[2].isdigit():raise ValueError('MALFORMED_ANALYSIS')
      safe=lambda s:re.sub(r'[\x00-\x1f\x7f]','',s)[:64]
      packets.append(dict(number=int(cols[0]),seconds=safe(cols[1])[:32],bytes=int(cols[2]),source=safe(cols[3]),destination=safe(cols[4]),protocol=safe(cols[5])))
-   return {'ok':True,'data':base64.b64encode(data).decode(),'limited':len(data)>=1000*1000,'packets':packets,'analysis':analysis}
+   return {'ok':True,'data':base64.b64encode(data).decode(),'limited':len(data)>=1000*1000,'packets':packets,'analysis':analysis,**({'lua':{'id':LUA_ID,'sha256':LUA_HASH}} if x.get('luaId') else {})}
  finally:lock.close()
 if __name__=='__main__':
  try:
@@ -81,5 +106,5 @@ if __name__=='__main__':
   if len(raw)>8192:raise ValueError('INVALID_REQUEST')
   print(json.dumps(collect(json.loads(raw))))
  except Exception as e:
-  allowed=['INVALID_REQUEST','ASSOCIATION_CONFLICT','CAPTURE_UNSUPPORTED','BUSY','CAPTURE_TIMEOUT','OUTPUT_LIMIT','CAPTURE_FAILED','MALFORMED_CAPTURE','MALFORMED_ANALYSIS']
+  allowed=['LUA_INTEGRITY','INVALID_REQUEST','ASSOCIATION_CONFLICT','CAPTURE_UNSUPPORTED','BUSY','CAPTURE_TIMEOUT','OUTPUT_LIMIT','CAPTURE_FAILED','MALFORMED_CAPTURE','MALFORMED_ANALYSIS']
   print(json.dumps({'ok':False,'code':str(e) if str(e) in allowed else 'CAPTURE_FAILED'}))

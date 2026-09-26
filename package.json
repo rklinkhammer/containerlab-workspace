@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
-    "test": "node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts tests/observation.test.ts tests/interfaces.test.ts tests/link-state.test.ts tests/profile.test.ts tests/multi.test.ts tests/capacity.test.ts tests/session-migration.test.ts tests/observation-cleanup.test.ts tests/four-radio.test.ts tests/workbench.test.ts tests/node-logs.test.ts tests/capture.test.ts",
+    "test": "node --test tests/contract.test.ts tests/native.test.ts tests/declared.test.ts tests/live.test.ts tests/observation.test.ts tests/interfaces.test.ts tests/link-state.test.ts tests/profile.test.ts tests/multi.test.ts tests/capacity.test.ts tests/session-migration.test.ts tests/observation-cleanup.test.ts tests/four-radio.test.ts tests/workbench.test.ts tests/node-logs.test.ts tests/capture.test.ts tests/reviewed-lua.test.ts",
     "build": "npm run fixtures:native && npm run fixtures:declared && npm run typecheck && vite build",
     "preview": "node scripts/preview.mjs",
     "test:browser": "playwright test",

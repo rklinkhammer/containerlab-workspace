@@ -1,0 +1,3 @@
+extra []
+changed []
+links ['/opt/clab-analysis-root/bin']

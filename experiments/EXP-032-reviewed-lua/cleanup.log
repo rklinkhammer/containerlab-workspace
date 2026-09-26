@@ -1,0 +1,14 @@
+08:38:26 INFO Parsing & checking topology file=topology.clab.yml
+08:38:26 INFO Parsing & checking topology file=topology.clab.yml
+08:38:26 INFO Destroying lab name=observation-slice
+08:38:26 INFO Removed container name=clab-observation-slice-left
+08:38:26 INFO Removed container name=clab-observation-slice-right
+08:38:26 INFO Removing host entries path=/etc/hosts
+08:38:26 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-observation-slice.conf
+time="2026-09-26T08:38:26-04:00" level=info msg="Sending SIGINT to hostagent process 13609"
+time="2026-09-26T08:38:26-04:00" level=info msg="Waiting for the host agent and the driver processes to shut down"
+time="2026-09-26T08:38:26-04:00" level=info msg="[hostagent] Received SIGINT, shutting down the host agent"
+time="2026-09-26T08:38:26-04:00" level=info msg="[hostagent] Shutting down the host agent"
+time="2026-09-26T08:38:26-04:00" level=info msg="[hostagent] Shutting down VZ"
+time="2026-09-26T08:38:56-04:00" level=info msg="Waiting for the instance to shut down"
+time="2026-09-26T08:38:57-04:00" level=info msg="The instance clab-load-20260926-122927-exp016 has shut down"

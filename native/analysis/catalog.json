@@ -1,0 +1,10 @@
+{
+  "id": "clab-probe-v1",
+  "sha256": "bebea9f48c2de34c63de241a5bf43819c2a41702a05a8dc57c2816ebca019523",
+  "label": "CLAB probe v1 (synthetic UDP/49321)",
+  "fields": [
+    "clabprobe.version",
+    "clabprobe.sequence"
+  ],
+  "arguments": []
+}

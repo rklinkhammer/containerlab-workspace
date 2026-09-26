@@ -1,0 +1,1 @@
+User: continue with phase 4. Continue A27 with reviewed Lua IDs, isolated TShark and independent synthetic acceptance. Preserve siblings and pre-existing VMs. Fresh dedicated runtime trial only, task lab cleanup and stop afterward. No serial or application-specific hardcoding.
