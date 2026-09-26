@@ -326,14 +326,3 @@ Alternatives: hardcoded demonstration roles rejected; rebuilding native topology
 **Observed:**12 synthetic state fixtures and6 source hashes verified;5 browser checks/build pass. No live discovery, image qualification or adapter implemented. First candidate: freely distributable vrnetlab Ubuntu/generic_vm, pending immutable image/launcher pins and host virtualization feasibility.
 
 Risks: image/version-specific launch conventions, incomplete inventories, serial session exclusivity, stale/replaced identities. Absent requires exhaustive qualified evidence; available requires exact identity/current adapter evidence and still does not enable transport. Reopen on authoritative native discovery API or qualified image changes. Rollback restores A23 inspector wording and verified predecessor documents; no persistent-state migration. B5 and scoped S requirements remain proposed; historical gates unchanged.
-
-
-## D-30 — GUI continuation order and runtime evidence invalidation
-
-**Selected:** complete approved-source navigation before new operational capabilities. Explicit disconnect clears observation/log binding and cancels pending work, retaining declaration selection. Reconnect discards old runtime evidence before enrollment. Replacement/association conflict invalidates runtime and selection; transient inspection failures retain labeled last-known evidence. Repeated/older observations cannot count as refreshed evidence. Native results must match selected approved bundle/source/job identity.
-
-**Observed:** EXP-029 tests these frontend transitions through mocked/replayed transport; no new native capability claim. A second recorded graph comes from EXP-024, never its old VM/session. B4/B5 and scoped S-01/S-02/S-05/S-07; no Q-04/Q-05 promotion. D-15/S-08 publication verified without claiming crash-atomic whole-set replacement.
-
-**Alternatives:** retaining overlays while replacing enrollment risks stale association; adopting replacement by name violates native identity; blocking all GUI work on a console image has no dependency justification. Keep existing backend contracts and approved GUI layout. No persistence migration. Rollback reviewed source and verified A24 archive; never reuse trial VMs.
-
-**Risks/reopening:** approved bundles are not arbitrary source ingestion; current Linux/SRL observation support is not universal. Future capability transport, source ingestion, shared hosting or material layout changes require explicit contract/review. User-directed serial work is now final Phase6, using a second four-radio configuration with a QEMU detector after platform qualification; logs and telemetry remain separate from the guest serial console.

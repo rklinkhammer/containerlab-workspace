@@ -1,15 +1,3 @@
-# A25 — GUI continuation Phases 1–2
-
-**Observed:** A24 baseline verified (1472 files, no mismatch), full D-15 predecessor snapshot retained. Current approved-bundle workbench has explicit runtime disconnect, clean reconnect, identity-conflict invalidation, late-response refusal, and repeated/older observation handling. Native load acceptance also checks approved source/bundle identity. A second recorded native graph exposes parallel links and a disconnected node without reusing its historical session.
-
-**Observed verification:** 75 unit/contract tests, typecheck/build and10 targeted Chromium tests passed. Browser evidence is replayed/mocked; no new native/runtime qualification or VM access. Initial browser attempt failed because only one workbench recording existed; retained and corrected with separately pinned historical graph evidence. Approved GUI-1 revision3 layout retained. Existing build chunk-size warning remains.
-
-**Inferred next:** Phase3 log usability/availability audit and remaining bounded log workflow, then Phase4 capture/TShark/reviewed Lua, Phase5 integrated qualification, Phase6 serial discovery then transport using a separately generated QEMU-detector four-radio variant. Neither sibling edits nor VM operations were performed. Do not convert the original fixture or infer console capability from node role.
-
-TT-01, native authority, existing contracts, historical Q outcomes and177 denominator unchanged. Source ingestion remains approved local bundles; arbitrary upload/private source storage and new lifecycle controls are not implemented. See artifacts/design/GUI_CONTINUATION.md and artifacts/implementation/A25/RESULTS.md (paths relative to workspace root). Earlier next-step directives are historical and superseded by this phase order.
-
-## Historical baseline (retained)
-
 > A24 current: [serial-console discovery design](artifacts/design/SERIAL_CONSOLE_CONTRACT.md) is specified; runtime discovery/transport are not yet implemented. [Findings and next qualification](experiments/EXP-028-console-discovery/RESULTS.md). A23 node logs and the approved layout remain in place. Earlier revision summaries below are historical.
 
 > A23 current: selected-node container logs now support bounded Load/Follow/Stop in the approved layout. See [results](artifacts/implementation/A23/RESULTS.md), [contract](artifacts/design/NODE_LOG_CONTRACT.md) and [setup/cleanup](experiments/EXP-027-node-logs/README.md). The fresh Linux trial passed and its VM is stopped; live logs require a newly qualified matching session. Serial console and capture remain unavailable. Earlier revision summaries below are historical.

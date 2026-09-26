@@ -1,0 +1,19 @@
+[WebServer] (node:35642) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:35643) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/navigation.spec.ts:9:1 › disconnect refuses late configuration and snapshot replies, clears observations and log bindings (1.8s)
+  ✓   2 tests/browser/navigation.spec.ts:18:1 › replacement conflict invalidates selection and runtime; repeated evidence cannot masquerade as recovery (459ms)
+  ✓   3 tests/browser/navigation.spec.ts:26:1 › switching to a different recorded shape clears runtime and selections (305ms)
+  ✓   4 tests/browser/navigation.spec.ts:32:1 › native load checks approved source identity and keeps recorded evidence explicit on refusal (316ms)
+  ✓   5 tests/browser/node-logs.spec.ts:3:1 › logs load and follow safely; errors clear output, selection cancels and isolates, recovery works (1.5s)
+  ✓   6 tests/browser/workbench.spec.ts:4:1 › lab chooser first; exact handles, synchronized table selection, search and safe offline runtime (342ms)
+  ✓   7 tests/browser/workbench.spec.ts:5:1 › matched replay overlay refresh/failure/cancel/recovery preserves selection; stale and identity mismatch explicit (1.3s)
+  ✓   8 tests/browser/workbench.spec.ts:9:1 › keyboard selection, recorded disclosure, reduced-motion mobile reflow and local layout persistence (196ms)
+  ✓   9 tests/browser/workbench.spec.ts:10:1 › selected link capture drafts are occurrence-scoped, inert and include Lua settings (522ms)
+  ✓  10 tests/browser/workbench.spec.ts:18:1 › node log and serial views preserve unknown capability and do not imply runtime access (342ms)
+
+  10 passed (7.9s)

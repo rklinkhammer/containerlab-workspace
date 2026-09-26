@@ -1,0 +1,6 @@
+{
+  "source": "experiments/EXP-024-consolidation/MULTI-ENDPOINT-V2-session.json",
+  "sourceSha256": "71f8488e16b9ea93dc295f424c467926d7e5efcb03c4b4b92a2b46a6c1b9fc18",
+  "projection": "graph only; no historical VM/session binding used",
+  "bundleId": "MULTI-ENDPOINT-V2"
+}
