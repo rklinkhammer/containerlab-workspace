@@ -1,3 +1,19 @@
+# A37 — D-40 presentation amendment
+
+**Selected/implemented:** expose existing native limited/analysis/expiry fields accurately. Analysis completion never implies all traffic was captured. Distinguish empty capture from zero matching display rows. Preserve size-bound provenance and original expiry across reanalysis. Client validation reuses contract fields and complements server validation. No DTO/native policy changes, endpoint selection, topology constants or new dependencies. Table scrolling stays within the approved inspector arrangement.
+
+**Observed:** LIVE-004 installed Safari validation/capture/reanalysis and app-only restart pass for the current user lab. Unit tests cover unavailable/rejected analysis and expiry; those failure/expiry cases are not newly runtime-qualified. Rollback installs the prior archive with exact-runtime reconciliation; in-memory captures do not survive app replacement. D-15 A36 snapshot preserved. Reopen for capture retention/rotation or new dissector policies.
+
+## Prior decisions
+
+# A36 — D-40 corrective amendment
+
+**Observed problem:** a stopped VM produced a transport failure before native deployment but the lifecycle persisted partial. **Selected fix:** read-only availability/owner/native-pin preflight before intent, with serialization and post-preflight source recheck. Preflight failure leaves stopped/ready; native invocation failure remains partial. Errors disclose reviewed guidance only. This is not an atomic guarantee that a VM cannot fail after preflight.
+
+**Observed:** LIVE-003 has independent offline/retry/race/source-change tests and actual installed Safari GO/logs/Follow after explicit user-approved runtime resume. Prior false-partial host state was backed up and repaired only after exact owner/null deployment/native-record-absent/empty-inventory checks. General automatic repair or VM resume remains unimplemented. No helper API, topology or approved layout change. Rollback uses A35-before-A36; app archive replacement is separate from persistent lab state. Reopen for automatic recovery, multi-user scope or changed native identity contracts.
+
+## Prior decisions
+
 # A35 decision update
 
 ## D-40 — Installed link capture and separately owned continuous user runtime

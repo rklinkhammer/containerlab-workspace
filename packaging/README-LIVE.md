@@ -1,4 +1,4 @@
-# Live application — 0.3.0-preview.6
+# Live application — 0.3.0-preview.8
 
 This Apple Silicon preview contains no topology bundles, recorded graphs or developer catalog. User topology files, companions and container images are separate inputs.
 

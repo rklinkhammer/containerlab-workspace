@@ -1,3 +1,23 @@
+# A37 — Installed capture feedback
+
+**Observed:** preview.8 is running at http://127.0.0.1:4173. The link inspector now surfaces size-limited capture status, original-expiry save countdown and distinct empty/no-match/filter-rejected/analysis-unavailable explanations. Contract-based field guidance disables invalid submissions; packet rows scroll within a bounded region. Existing layout, native capture policy and server validation are unchanged.
+
+**Observed:**25 TypeScript+9 Python checks and build/typecheck pass. Actual installed Safari capture displayed the size-limit warning and two filtered rows; no-match reanalysis retained the original PCAP and decreasing expiry. Invalid filename disabled Start with guidance. App-only replacement reconciled unchanged deployment and all eight container IDs; user lab remains running. No GO/Stop, native helper change or new VM. See artifacts/implementation/LIVE-004/RESULTS.md and RUNNING.md (workspace-relative).
+
+**Next/limits:** continue hands-on presentation review and explicit runtime resume/recovery UX. Actual expiry waiting, broader browser matrix and native/corpus qualification were not rerun. Serial, arbitrary/VITA Lua, persistent/rotating PCAP and signed distribution remain outside this slice. TT-01, historical Q results and177 denominator unchanged.
+
+## Prior published scope
+
+# A36 — Offline GO preflight and installed recovery fix
+
+**Observed:** interactive Safari review found that GO against a stopped VM incorrectly recorded partial deployment. Preview.7 now verifies owned runtime availability/native identity before deployment intent; offline failure preserves ready/stopped and permits retry with actionable guidance. Project files are rechecked after preflight. Failure after native mutation still remains partial. Approved layout is unchanged; stopped logs/capture guidance points to GO.
+
+**Observed:**22 TypeScript+9 Python checks,85 regression tests and build/typecheck pass. Offline/concurrent/source-change cases are mocked; actual installed Safari GO, all eight node observations, logs and Follow pass after user-approved resume. The exact owner/project's prior false-partial state was privately backed up and repaired only after confirming empty native inventory and no deployment record. No VM was newly created, no qualification VM reused, no deployment identity adopted. The existing durable user runtime and preview.7 server remain running at http://127.0.0.1:4173.
+
+See artifacts/implementation/LIVE-003/RESULTS.md and RUNNING.md (workspace-relative). Serial, automatic VM resume/recovery UX, project retirement, long-duration soak and signed distribution remain open. No new PCAP/official-demo/full-corpus claim. TT-01, historical Q statuses and177 denominator remain unchanged. Next: continue real-user presentation review, then implement explicit owned-runtime resume and recovery UX; do not bypass mismatched identities.
+
+## Prior published scope
+
 # A35 — Installed live workflow available for user interaction
 
 **Observed:** fixture-free 0.3.0-preview.6 runs outside the repository against the unchanged four-radio YAML and seven explicitly inventoried companions. The separately created user runtime `clab-app-3a2d71d640034b2d` and local server remain running at http://127.0.0.1:4173. Select a node for logs or a link for capture settings; there is no endpoint picker. GO/Stop remain native Containerlab operations. No example names/counts/roles are production policy.

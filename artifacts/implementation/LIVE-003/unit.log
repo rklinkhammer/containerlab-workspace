@@ -1,0 +1,39 @@
+
+> containerlab-synthetic-preview@0.1.0 test:live
+> node --test tests/live/*.test.ts && python3 tests/live/service_test.py
+
+✔ filename is a basename; no client endpoint or arbitrary Lua path accepted (1.355417ms)
+✔ one selected link produces actual hash-bound bytes and chosen download name (2.676917ms)
+✔ malformed worker PCAP cannot become a downloadable artifact (0.193167ms)
+✔ late completion after cancellation cannot publish an artifact (0.12275ms)
+✔ replacement enrollment revokes retained bytes (0.1545ms)
+✔ GO is serialized, intent persisted first, explicit stop removes deployment (2.565292ms)
+✔ failed deploy stays partial until scoped recovery, not a success or invisible rollback (0.136292ms)
+✔ source changes before GO refuse native invocation (0.065541ms)
+✔ restart cannot silently adopt an existing runtime (0.084708ms)
+✔ offline preflight leaves ready unchanged, persists no intent, and retry succeeds (0.130416ms)
+✔ preflight serializes GO and rechecks changed source before deployment intent (0.122792ms)
+✔ one deterministic capture point observes both directions, not both endpoints (0.677ms)
+✔ SRL-Linux chooses qualified Linux side automatically (0.093917ms)
+✔ wrong deployment, different occurrence and external link cannot capture (0.174583ms)
+✔ unassociated interfaces cannot become targets (0.07675ms)
+✔ exact bytes, explicit context only and no private root disclosed (1.476541ms)
+✔ nested companion paths preserved and changes refuse GO (1.839208ms)
+✔ traversal, absolute paths and duplicate inventory refused (0.48925ms)
+✔ symlink file and directory refused (0.654333ms)
+✔ missing context and size bounds are failures not invented content (1.178208ms)
+✔ runtime reads and capture execute serially, queue is bounded and recovers after failure (0.758708ms)
+✔ local HTTP boundary rejects foreign origins and requires explicit GO revision (12.61175ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.576958
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.012s
+
+OK

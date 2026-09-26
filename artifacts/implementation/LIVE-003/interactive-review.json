@@ -1,0 +1,21 @@
+{
+  "browser": "Safari via native accessibility UI",
+  "package": "0.3.0-preview.7",
+  "checks": {
+    "initialStoppedGuidance": "PASS",
+    "GO": "PASS",
+    "allEightRuntimeNodes": "running",
+    "processorInterface": "observed/admin up/carrier up",
+    "realLogs": "Logs loaded;51 fetched lines",
+    "follow": "57 fetched lines; newer fetch timestamp",
+    "approvedLayout": "preserved"
+  },
+  "lab": "intentionally left running",
+  "runtime": "clab-app-3a2d71d640034b2d",
+  "limitations": [
+    "No application-health interpretation",
+    "Capture and official demos not rerun",
+    "Offline preflight regression mocked; prior actual failure preserved"
+  ],
+  "recordedAt": "2026-09-26T17:13:37.878321+00:00"
+}

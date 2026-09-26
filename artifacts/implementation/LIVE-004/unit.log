@@ -1,0 +1,42 @@
+
+> containerlab-synthetic-preview@0.1.0 test:live
+> node --test tests/live/*.test.ts && python3 tests/live/service_test.py
+
+✔ form rejects traversal and fractional/out-of-range settings without exposing input (1.80525ms)
+✔ empty capture differs from no display matches; size cap does not vanish after reanalysis (0.141416ms)
+✔ expiry does not extend after reanalysis; unavailable analysis does not imply empty traffic (0.065291ms)
+✔ filename is a basename; no client endpoint or arbitrary Lua path accepted (1.48775ms)
+✔ one selected link produces actual hash-bound bytes and chosen download name (3.166667ms)
+✔ malformed worker PCAP cannot become a downloadable artifact (0.259667ms)
+✔ late completion after cancellation cannot publish an artifact (0.143583ms)
+✔ replacement enrollment revokes retained bytes (0.206709ms)
+✔ GO is serialized, intent persisted first, explicit stop removes deployment (1.6665ms)
+✔ failed deploy stays partial until scoped recovery, not a success or invisible rollback (0.246083ms)
+✔ source changes before GO refuse native invocation (0.117083ms)
+✔ restart cannot silently adopt an existing runtime (0.161792ms)
+✔ offline preflight leaves ready unchanged, persists no intent, and retry succeeds (0.249375ms)
+✔ preflight serializes GO and rechecks changed source before deployment intent (0.503042ms)
+✔ one deterministic capture point observes both directions, not both endpoints (0.720417ms)
+✔ SRL-Linux chooses qualified Linux side automatically (0.085167ms)
+✔ wrong deployment, different occurrence and external link cannot capture (0.185083ms)
+✔ unassociated interfaces cannot become targets (0.068541ms)
+✔ exact bytes, explicit context only and no private root disclosed (1.474458ms)
+✔ nested companion paths preserved and changes refuse GO (1.23325ms)
+✔ traversal, absolute paths and duplicate inventory refused (0.535041ms)
+✔ symlink file and directory refused (0.692417ms)
+✔ missing context and size bounds are failures not invented content (0.9105ms)
+✔ runtime reads and capture execute serially, queue is bounded and recovers after failure (0.784208ms)
+✔ local HTTP boundary rejects foreign origins and requires explicit GO revision (12.808708ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 113.845209
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.015s
+
+OK

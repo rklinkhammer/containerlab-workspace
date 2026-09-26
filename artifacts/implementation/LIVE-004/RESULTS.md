@@ -1,0 +1,15 @@
+# LIVE-004 — capture presentation in the installed GUI
+
+**Observed:** A36 manifest verified2748 hashes with no drift. Safari's old panel showed a1,007,650-byte capture as analysis complete without surfacing its size-limited status. The100-row table extended the page. This review uses the explicitly authorized continuous user lab, not a disposable qualification VM.
+
+**Implemented:** native size-limited flag is now visible; save-expiry countdown uses the original artifact expiry; empty PCAP, no display matches, rejected filter and unavailable analysis have different explanations. The100-row table has a keyboard-focusable bounded scrolling region. Filename/numeric/filter character validation reuses existing contract fields, provides associated guidance and disables invalid capture submission. Server validation and capture limits remain authoritative and unchanged. Invalid filename settings do not prevent reanalysis of an already valid PCAP. No endpoint picker or application-specific semantics were added.
+
+**Observed checks:**25 TypeScript live tests and9 Python helper tests pass; typecheck and fixture-free build pass. Independent tests cover traversal/fractional bounds, no sensitive input echo, header-only vs nonmatching display results, rejected/unavailable analysis, original expiry and persistent size-limit warning after reanalysis. External preview.8 package has920 verified payload files and no fixture bundles. Existing native/backend/capture APIs were not changed.
+
+**Observed installed Safari:** invalid ../invalid.pcap disabled Start and showed filename guidance. Correcting it enabled capture. Actual selected-link capture produced1,003,640 bytes, displayed the size-limited warning and save countdown, and showed two rows with an explicit maximum100/non-total explanation. The deployed lab remained running throughout app-only replacement; native reconciliation returned running and all eight full container IDs/deployment ID remained unchanged (restart-verification.json).
+
+**Not rerun:** universal corpus/official demo deployment, destructive lifecycle or fault trials, full desktop/mobile/browser matrix, serial, actual five-minute expiry wait, Apple Installer transaction/signing/notarization. Expiry boundary/analysis-failure cases have unit evidence; this is not new native qualification. Package remains unsigned and prior pkgbuild diagnostics remain unresolved. No new VM, helper installation, GO/Stop or user-lab redeployment occurred.
+
+**Next:** continue user-led presentation adjustments and explicit runtime resume/recovery UX. Persistent/rotating captures and arbitrary/VITA Lua are separate work. Historical Q results,177 denominator, TT-01 and approved layout are unchanged. B6/B7 capture presentation and S-03/S-05 disclosure/text rendering receive scoped evidence only.
+
+**Observed reanalysis:** frame.number == 0 returned no rows. Safari displayed “No packets matched this display filter. The PCAP still contains captured data.” Size-limited warning remained, Save PCAP remained available and countdown decreased rather than resetting. No recapture was invoked.

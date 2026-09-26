@@ -1,0 +1,6 @@
+{
+  "phase": "running",
+  "deploymentId": "unchanged",
+  "containerIds": "all eight unchanged",
+  "nativeReconciliation": "application returned running after inspect; no GO or Stop invoked"
+}

@@ -18,7 +18,10 @@ export class Application{
  constructor(project:Project,runtime:Runtime,stateDir:string){
   this.project=project;this.runtime=runtime;this.capture=new LinkCapture(()=>{if(this.lifecycle.state.phase!=='running'||!this.graph||!this.binding||!this.deployment)throw Error('ASSOCIATION_CONFLICT');return{project:project.id,graph:this.graph,binding:this.binding,deployment:this.deployment};},(q,signal)=>runtimeCall(runtime,q,signal));mkdirSync(stateDir,{recursive:true,mode:0o700});this.file=join(stateDir,project.id+'.json');
   const persist=(state:State)=>{const temp=this.file+'.tmp';writeFileSync(temp,JSON.stringify({state,deployment:this.deployment,graph:this.graph,binding:this.binding,runtimeOwner:this.runtime.owner}),{mode:0o600});renameSync(temp,this.file);};
-  this.lifecycle=new Lifecycle(project.revision,{checkProject:()=>{recheckProject(project);if(!this.graph)throw Error('NATIVE_LOAD_REQUIRED');derivePlan(this.graph);},persist,deploy:async()=>{
+  this.lifecycle=new Lifecycle(project.revision,{checkProject:()=>{recheckProject(project);if(!this.graph)throw Error('NATIVE_LOAD_REQUIRED');derivePlan(this.graph);},persist,prepare:async()=>{
+   try{const status=await runtimeCall(runtime,{action:'status'});if(status.owner!==runtime.owner||status.nativeSha256!==runtime.nativeSha256)throw Error();}
+   catch{throw Error('RUNTIME_PREFLIGHT_FAILED');}
+  },deploy:async()=>{
    if(!this.graph||this.graph.status!=='declarations_only')throw Error('NATIVE_LOAD_REQUIRED');
    const out=await runtimeCall(runtime,{action:'deploy',project:project.id});this.deployment=enrollDeployment(this.graph,out.inventory,out.labName);
    const deploymentId=createHash('sha256').update(JSON.stringify(this.deployment)).digest('hex');

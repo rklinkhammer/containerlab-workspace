@@ -1,6 +1,6 @@
 export type Phase='ready'|'deploying'|'running'|'partial'|'stopping'|'stopped'|'disconnected'|'failed';
 export type State={generation:number;sequence:number;phase:Phase;projectRevision:string;deploymentId:string|null;reason:string|null;updatedAt:string};
-export type Driver={deploy:()=>Promise<{deploymentId:string}>;stop:(deploymentId:string|null)=>Promise<void>;checkProject:()=>void;persist:(s:State)=>void};
+export type Driver={deploy:()=>Promise<{deploymentId:string}>;stop:(deploymentId:string|null)=>Promise<void>;checkProject:()=>void;prepare?:()=>Promise<void>;persist:(s:State)=>void};
 export class Lifecycle{
  state:State;private driver:Driver;private busy=false;private listeners=new Set<(s:State)=>void>();
  constructor(revision:string,driver:Driver){this.driver=driver;this.state={generation:1,sequence:0,phase:'ready',projectRevision:revision,deploymentId:null,reason:null,updatedAt:new Date().toISOString()};}
@@ -9,8 +9,12 @@ export class Lifecycle{
  async go(revision:string){
   if(this.busy)throw Error('BUSY');if(revision!==this.state.projectRevision)throw Error('PROJECT_CHANGED');if(!['ready','stopped'].includes(this.state.phase))throw Error('DEPLOYMENT_EXISTS_OR_UNRECONCILED');
   this.driver.checkProject();this.busy=true;
-  try{this.set('deploying');const result=await this.driver.deploy();this.set('running',null,result.deploymentId);}
-  catch{this.set('partial','DEPLOYMENT_FAILED_REQUIRES_RECONCILIATION');throw Error('DEPLOYMENT_FAILED');}finally{this.busy=false;}
+  try{
+   if(this.driver.prepare)await this.driver.prepare();
+   this.driver.checkProject();
+   try{this.set('deploying');const result=await this.driver.deploy();this.set('running',null,result.deploymentId);}
+   catch{this.set('partial','DEPLOYMENT_FAILED_REQUIRES_RECONCILIATION');throw Error('DEPLOYMENT_FAILED');}
+  }finally{this.busy=false;}
  }
  async stop(){
   if(this.busy)throw Error('BUSY');if(!['running','partial','failed','disconnected'].includes(this.state.phase))throw Error('NO_ACTIVE_DEPLOYMENT');this.busy=true;

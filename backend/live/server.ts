@@ -2,7 +2,7 @@ import {createServer,type ServerResponse} from 'node:http';
 import {readFileSync} from 'node:fs';
 import {resolve,extname,sep} from 'node:path';
 import type {Application} from './application.ts';
-const reasons=new Set(['BUSY','PROJECT_CHANGED','DEPLOYMENT_EXISTS_OR_UNRECONCILED','DEPLOYMENT_FAILED','STOP_FAILED','NO_ACTIVE_DEPLOYMENT','ASSOCIATION_CONFLICT','NODE_UNAVAILABLE','LOG_SOURCE_UNSUPPORTED','OUTPUT_LIMIT','CANCELLED','RUNTIME_UNAVAILABLE','RUNTIME_OPERATION_FAILED','NATIVE_TIMEOUT','MALFORMED_OUTPUT','LINK_CAPTURE_UNSUPPORTED','LINK_CAPTURE_UNAVAILABLE','CAPTURE_FAILED','CAPTURE_TIMEOUT','CAPTURE_UNSUPPORTED','MALFORMED_CAPTURE','MALFORMED_ANALYSIS','ARTIFACT_UNAVAILABLE','ARTIFACT_MISMATCH','LUA_INTEGRITY']);
+const reasons=new Set(['RUNTIME_PREFLIGHT_FAILED','BUSY','PROJECT_CHANGED','DEPLOYMENT_EXISTS_OR_UNRECONCILED','DEPLOYMENT_FAILED','STOP_FAILED','NO_ACTIVE_DEPLOYMENT','ASSOCIATION_CONFLICT','NODE_UNAVAILABLE','LOG_SOURCE_UNSUPPORTED','OUTPUT_LIMIT','CANCELLED','RUNTIME_UNAVAILABLE','RUNTIME_OPERATION_FAILED','NATIVE_TIMEOUT','MALFORMED_OUTPUT','LINK_CAPTURE_UNSUPPORTED','LINK_CAPTURE_UNAVAILABLE','CAPTURE_FAILED','CAPTURE_TIMEOUT','CAPTURE_UNSUPPORTED','MALFORMED_CAPTURE','MALFORMED_ANALYSIS','ARTIFACT_UNAVAILABLE','ARTIFACT_MISMATCH','LUA_INTEGRITY']);
 export function createApplicationServer(app:Application,dist:string,port=4173){
  const host=`127.0.0.1:${port}`,origin=`http://${host}`,clients=new Set<ServerResponse>();let sequence=0;
  const unsubscribe=app.subscribe(()=>{const frame=`id: ${++sequence}\nevent: snapshot\ndata: ${JSON.stringify(app.snapshot())}\n\n`;for(const client of clients){if(client.writableLength>2097152||!client.write(frame)){client.destroy();clients.delete(client);}}});

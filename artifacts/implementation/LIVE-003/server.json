@@ -1,0 +1,24 @@
+{
+  "pid": 70621,
+  "command": [
+    "/Users/rklinkhammer/workspace/containerlab-releases/0.3.0-preview.7/Containerlab GUI Live.app/Contents/Resources/runtime/node",
+    "/Users/rklinkhammer/workspace/containerlab-releases/0.3.0-preview.7/Containerlab GUI Live.app/Contents/Resources/packaging/live-cli.mjs",
+    "/Users/rklinkhammer/workspace/containerlab-vrt/generated/four-radio.clab.yml",
+    "--include",
+    "radio1.json",
+    "--include",
+    "radio2.json",
+    "--include",
+    "radio3.json",
+    "--include",
+    "radio4.json",
+    "--include",
+    "processor.json",
+    "--include",
+    "detector.json",
+    "--include",
+    "srlinux.cli",
+    "--no-open"
+  ],
+  "cwd": "/tmp"
+}

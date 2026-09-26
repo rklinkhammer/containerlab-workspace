@@ -1,0 +1,11 @@
+{
+  "browser": "Safari native UI",
+  "package": "0.3.0-preview.8",
+  "invalidFilename": "Start disabled; associated guidance shown",
+  "captureBytes": 1003640,
+  "sizeLimitedWarning": "visible",
+  "initialDisplayedRows": 2,
+  "noMatchReanalysis": "original PCAP retained; warning persists; countdown decreases",
+  "deployment": "unchanged throughout; no GO/Stop",
+  "recordedAt": "2026-09-26T17:21:08.163564+00:00"
+}

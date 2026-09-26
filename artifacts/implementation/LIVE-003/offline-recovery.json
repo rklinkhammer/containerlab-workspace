@@ -1,0 +1,17 @@
+{
+  "project": "project-5391b4cb243598fe551f9075",
+  "previousSha256": "8f179c78aec0b80292b08923fce1aa3a3afeae1cc9f66355b69384ddc946117b",
+  "priorState": {
+    "generation": 1,
+    "sequence": 6,
+    "phase": "partial",
+    "projectRevision": "5391b4cb243598fe551f9075f26f5fdc884d46ce13bd0da172f549f5d67bf94c",
+    "deploymentId": null,
+    "reason": "DEPLOYMENT_FAILED_REQUIRES_RECONCILIATION",
+    "updatedAt": "2026-09-26T17:08:57.341Z"
+  },
+  "nativeDeploymentRecord": "absent",
+  "containers": "empty",
+  "repair": "stopped; scoped owner and null deployment verified; private backup retained",
+  "vm": "clab-app-3a2d71d640034b2d"
+}

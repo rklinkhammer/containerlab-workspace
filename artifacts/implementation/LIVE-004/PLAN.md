@@ -1,0 +1,5 @@
+# LIVE-004 — capture presentation
+
+Continue the installed live review without stopping/redeploying the user lab. A36 manifest2748 files verified, zero drift. Safari observed a1,007,650-byte capture with100 rows described only as analysis complete. Implement explicit native size-limited warning, expiry/save guidance, empty-capture vs no-match vs rejected-filter/unavailable-analysis messages, bounded scrollable packet table, and client field validation using the existing contract. No native/API/capture-policy or layout-panel change.
+
+Independent expectations: invalid paths and numeric bounds prevent Start; arbitrary input is not echoed in validation guidance. A size-limited result remains marked after reanalysis. A24-byte header is empty, but nonempty PCAP with zero display rows means no matches, not no traffic. Original expiry never extends. Preserve live deployment IDs through installed app-only restart. Leave user VM/lab running; no qualification VM access. Tests must not provision anything.
