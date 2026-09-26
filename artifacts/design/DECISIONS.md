@@ -1,3 +1,15 @@
+# A38 — D-40 runtime continuity and recovery amendment
+
+**Selected / implemented:** explicitly resume only an instance anchored while verified running against its original creation record. Anchor the canonical Lima directory, config/VZ hashes and disk identity; verify before and after starting, then verify guest identity/native pins. Reject unprepared stopped instances and replacements. This is local TT-01 continuity, not adversarial-host attestation. Resume does not deploy. GUI recovery serializes against lifecycle mutation and checks native inventory under the helper operation lock.
+
+**Selected / implemented:** preserve exact deployment identity. Empty attributed inventory may clear obsolete intent; partial/exited resources remain partial; replacement or unrecorded resources cannot be adopted. Identical container IDs alone do not establish running state. Native Stop/GO is the explicit path from exited containers to a new deployment. Startup recovery applies the same rule. Safe reviewed reason codes survive lifecycle failures; arbitrary native stderr does not reach the browser.
+
+**Observed:** LIVE-005 preserves the initial false-running assessment and verifies its correction with actual node states. Installed preview.10 passes two authorized VM cycles and ends with all eight nodes observed running. Unit negatives cover replacement/refusal and serialized recovery. The helper update uses a fixed target, verified content and atomic replacement under lock. No native version or topology semantics changed.
+
+**Risks / recovery:** host disk/config replacement intentionally invalidates the anchor; do not refresh it silently. A post-boot verification failure leaves operations refused and may leave the VM running. An older stopped installation must first be started through its established manual workflow and explicitly prepared while verified running. New instance creation prepares the anchor, but that new-creation branch was not runtime rerun here. Preserve private identity/project state during app upgrades. Rollback may install the prior app/helper under the same ownership checks; prior versions lack this recovery behavior and must not be used to infer running state after VM restart. D-15 predecessor is A37-before-A38. Reopen for runtime backend/identity changes, shared-host scope or automatic recovery.
+
+## Prior decisions
+
 # A37 — D-40 presentation amendment
 
 **Selected/implemented:** expose existing native limited/analysis/expiry fields accurately. Analysis completion never implies all traffic was captured. Distinguish empty capture from zero matching display rows. Preserve size-bound provenance and original expiry across reanalysis. Client validation reuses contract fields and complements server validation. No DTO/native policy changes, endpoint selection, topology constants or new dependencies. Table scrolling stays within the approved inspector arrangement.

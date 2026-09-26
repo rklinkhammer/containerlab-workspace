@@ -1,7 +1,8 @@
+import {controlRuntime} from './runtime-control.ts';
 import {LinkCapture} from './capture.ts';
 import {randomBytes,createHash} from 'node:crypto';
 import {writeFileSync,renameSync,existsSync,readFileSync,mkdirSync} from 'node:fs';
-import {join} from 'node:path';
+import {join,dirname} from 'node:path';
 import {publicProject,workerRecord,recheckProject,type Project} from './project.ts';
 import {runtimeCall,type Runtime} from './runtime.ts';
 import {Lifecycle,type State} from './lifecycle.ts';
@@ -14,9 +15,9 @@ import {logSnapshotSchema} from '../../contracts/node-logs.ts';
 export class Application{
  capture:LinkCapture;project:Project;runtime:Runtime;graph:LiveGraph|null=null;loadError:string|null=null;binding:EnrollmentBinding|null=null;details:MultiObservation|null=null;lifecycle:Lifecycle;deployment:ReturnType<typeof enrollDeployment>|null=null;
  observation:{observedAt:string;states:Record<string,string>;reason:string|null}|null=null;
- private file:string;private listeners=new Set<()=>void>();private timer:ReturnType<typeof setTimeout>|null=null;private polling=false;private closed=false;
+ private file:string;private stateDir:string;private listeners=new Set<()=>void>();private timer:ReturnType<typeof setTimeout>|null=null;private polling=false;private closed=false;
  constructor(project:Project,runtime:Runtime,stateDir:string){
-  this.project=project;this.runtime=runtime;this.capture=new LinkCapture(()=>{if(this.lifecycle.state.phase!=='running'||!this.graph||!this.binding||!this.deployment)throw Error('ASSOCIATION_CONFLICT');return{project:project.id,graph:this.graph,binding:this.binding,deployment:this.deployment};},(q,signal)=>runtimeCall(runtime,q,signal));mkdirSync(stateDir,{recursive:true,mode:0o700});this.file=join(stateDir,project.id+'.json');
+  this.stateDir=stateDir;this.project=project;this.runtime=runtime;this.capture=new LinkCapture(()=>{if(this.lifecycle.state.phase!=='running'||!this.graph||!this.binding||!this.deployment)throw Error('ASSOCIATION_CONFLICT');return{project:project.id,graph:this.graph,binding:this.binding,deployment:this.deployment};},(q,signal)=>runtimeCall(runtime,q,signal));mkdirSync(stateDir,{recursive:true,mode:0o700});this.file=join(stateDir,project.id+'.json');
   const persist=(state:State)=>{const temp=this.file+'.tmp';writeFileSync(temp,JSON.stringify({state,deployment:this.deployment,graph:this.graph,binding:this.binding,runtimeOwner:this.runtime.owner}),{mode:0o600});renameSync(temp,this.file);};
   this.lifecycle=new Lifecycle(project.revision,{checkProject:()=>{recheckProject(project);if(!this.graph)throw Error('NATIVE_LOAD_REQUIRED');derivePlan(this.graph);},persist,prepare:async()=>{
    try{const status=await runtimeCall(runtime,{action:'status'});if(status.owner!==runtime.owner||status.nativeSha256!==runtime.nativeSha256)throw Error();}
@@ -35,19 +36,34 @@ export class Application{
   const record=workerRecord(this.project),job=randomBytes(16).toString('hex');
   // Existing deployment must never be overwritten by a reload.
   if(this.lifecycle.state.phase==='disconnected'){
-   if(!this.graph||!this.deployment)throw Error('RECONCILIATION_REQUIRED');
-   const out=await runtimeCall(this.runtime,{action:'inspect',project:this.project.id});const current=enrollDeployment(this.graph,out.inventory,out.labName);
-   const ids=(d:typeof current)=>d.containers.map(n=>n.id).sort().join(',');if(ids(current)!==ids(this.deployment))throw Error('ASSOCIATION_CONFLICT');
-   this.lifecycle.reconciled();this.schedule();return;
+   if(!this.graph)throw Error('RECONCILIATION_REQUIRED');
+   await this.reconnect();return;
   }
   const out=await runtimeCall(this.runtime,{action:'load',project:this.project.id,record,files:Object.fromEntries([...this.project.contents].map(([k,v])=>[k,v.toString('base64')])),job});
   this.graph=projectLive(record,out,job,this.runtime.workerSha256);this.emit();this.schedule();
+ }
+ async reconnect(resume=false){
+  await this.lifecycle.reconcile(async()=>{
+   if(this.capture.busy())throw Error('BUSY');
+   if(resume)await controlRuntime(join(dirname(this.stateDir),'runtime.json'),'start');
+   const status=await runtimeCall(this.runtime,{action:'status'});if(status.owner!==this.runtime.owner||status.nativeSha256!==this.runtime.nativeSha256)throw Error('RUNTIME_IDENTITY_MISMATCH');
+   recheckProject(this.project);
+   if(!this.graph){await this.load();this.loadError=null;return 'stopped';}
+   const out=await runtimeCall(this.runtime,{action:'recover',project:this.project.id});
+   if(out.recovery==='absent'){this.capture.discard();this.deployment=null;this.binding=null;this.details=null;this.observation=null;this.loadError=null;return 'stopped';}
+   if(!['partial','running'].includes(out.recovery))throw Error('MALFORMED_OUTPUT');
+   if(out.recovery==='partial'||!this.deployment||!this.binding)return 'partial';
+   const current=enrollDeployment(this.graph,out.inventory,out.labName);
+   const ids=(d:typeof current)=>d.containers.map(n=>n.id).sort().join(',');if(ids(current)!==ids(this.deployment))throw Error('ASSOCIATION_CONFLICT');
+   const raw=await runtimeCall(this.runtime,{action:'observe',project:this.project.id,plan:{...this.binding.plan,deployment:this.deployment}});
+   this.binding=enroll(raw,this.binding.plan,this.binding.deploymentId,this.deployment.labName);this.details=associateMulti(raw,this.binding,1);this.observation=null;this.loadError=null;this.schedule();return 'running';
+  });
  }
  loadFailed(){this.loadError='Native load or runtime reconciliation failed. Check included context and runtime availability; no new deployment was started.';this.emit();}
  snapshot(){return {loadError:this.loadError,project:publicProject(this.project),graph:this.graph,lifecycle:this.lifecycle.state,observation:this.observation,details:this.details};}
  subscribe(fn:()=>void){this.listeners.add(fn);return()=>this.listeners.delete(fn);}
  private emit(){for(const listener of this.listeners)listener();}
- private schedule(){if(!this.closed)this.timer=setTimeout(()=>void this.poll(),3000);}
+ private schedule(){if(this.timer)clearTimeout(this.timer);if(!this.closed)this.timer=setTimeout(()=>void this.poll(),3000);}
  private async poll(){
   if(this.polling)return;this.polling=true;
   try{if(!this.capture.busy()&&this.deployment&&this.lifecycle.state.phase==='running'){

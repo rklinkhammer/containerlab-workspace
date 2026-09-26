@@ -1,0 +1,42 @@
+[
+  {
+    "step": "recover exact live deployment",
+    "result": "PASS",
+    "at": "2026-09-26T17:31:03.695Z"
+  },
+  {
+    "step": "scoped Stop lab",
+    "result": "PASS",
+    "at": "2026-09-26T17:31:04.860Z"
+  },
+  {
+    "step": "stopped status without guest access",
+    "result": "PASS",
+    "at": "2026-09-26T17:31:06.215Z"
+  },
+  {
+    "step": "offline GO preserves stopped",
+    "result": "PASS",
+    "at": "2026-09-26T17:31:06.239Z"
+  },
+  {
+    "step": "installed start and absent recovery",
+    "result": "PASS",
+    "at": "2026-09-26T17:31:16.799Z"
+  },
+  {
+    "step": "GO after resume",
+    "result": "PASS",
+    "at": "2026-09-26T17:31:27.863Z"
+  },
+  {
+    "step": "GUI resume/reconnect after active VM shutdown; deployment identity unchanged",
+    "result": "PASS",
+    "at": "2026-09-26T17:31:40.058Z"
+  },
+  {
+    "step": "final state",
+    "result": "running; user lab intentionally retained",
+    "at": "2026-09-26T17:31:40.058Z"
+  }
+]

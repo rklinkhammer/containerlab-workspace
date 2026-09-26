@@ -4,14 +4,15 @@ import {dirname,resolve,join} from 'node:path';
 import {homedir} from 'node:os';
 import {spawn,spawnSync} from 'node:child_process';
 import {existsSync} from 'node:fs';
-const root=resolve(dirname(fileURLToPath(import.meta.url)),'..'),state=join(homedir(),'Library/Application Support/Containerlab GUI');
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');let state=join(homedir(),'Library/Application Support/Containerlab GUI');
 const args=process.argv.slice(2);
-if(args[0]==='runtime'&&args[1]==='create'&&args.length===2){const r=spawnSync('python3',[join(root,'packaging/runtime-create.py')],{stdio:'inherit'});process.exitCode=r.status??1;}
+if(args[0]==='--state-dir'&&args[1]){state=resolve(args[1]);args.splice(0,2);}
+if(args[0]==='runtime'&&args[1]==='create'&&args.length===2){const r=spawnSync('python3',[join(root,'packaging/runtime-create.py'),'--state-dir',state],{stdio:'inherit'});process.exitCode=r.status??1;if(r.status===0){const {controlRuntime}=await import('../backend/live/runtime-control.ts');await controlRuntime(join(state,'runtime.json'),'prepare-resume');}}
 else if(args[0]==='runtime'){try{const {runtimeCommand}=await import('./runtime-commands.mjs');await runtimeCommand(join(state,'runtime.json'),args.slice(1));}catch(e){console.error(/^[A-Z_]+$/.test(e.message)?e.message:'RUNTIME_UNAVAILABLE');process.exitCode=1;}}
 else if(args[0]==='doctor'){
  for(const [name,command,opts] of [['Lima','limactl',['--version']],['Python','python3',['--version']]]){const r=spawnSync(command,opts,{encoding:'utf8',timeout:5000});console.log(`${name}: ${r.status===0?r.stdout.trim():'unavailable'}`);}
  console.log(`Owned runtime configured: ${existsSync(join(state,'runtime.json'))}. Link capture requires an active enrolled deployment. Serial transport is not enabled.`);
-}else if(!args.length||args[0]==='help')console.log('containerlab-gui runtime create\ncontainerlab-gui runtime status\ncontainerlab-gui runtime load-image /path/image.tar\ncontainerlab-gui runtime stop\ncontainerlab-gui /path/to/topology.clab.yml [--include relative/companion] [--no-open]\ncontainerlab-gui doctor\n\nNo topology examples are bundled. Explicitly include each required local companion file.\nClosing the browser or application does not destroy a lab. Use Stop lab in the GUI.');
+}else if(!args.length||args[0]==='help')console.log('containerlab-gui runtime create\ncontainerlab-gui runtime status\ncontainerlab-gui runtime start\ncontainerlab-gui runtime prepare-resume\ncontainerlab-gui runtime update-helper\ncontainerlab-gui runtime load-image /path/image.tar\ncontainerlab-gui runtime stop\ncontainerlab-gui /path/to/topology.clab.yml [--include relative/companion] [--no-open]\ncontainerlab-gui doctor\n\nNo topology examples are bundled. Explicitly include each required local companion file.\nClosing the browser or application does not destroy a lab. Use Stop lab in the GUI.');
 else{
  try{
   const [{openProject},{readRuntime},{Application},{createApplicationServer}]=await Promise.all([import('../backend/live/project.ts'),import('../backend/live/runtime.ts'),import('../backend/live/application.ts'),import('../backend/live/server.ts')]);

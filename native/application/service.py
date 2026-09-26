@@ -73,7 +73,7 @@ def operate(q):
     owner = json.loads((BASE/'owner.json').read_text())
     if not isinstance(q, dict) or q.get('owner')!=owner['id']: fail('RUNTIME_IDENTITY_MISMATCH')
     action = q.get('action')
-    if action not in ['status','load','deploy','stop','inspect','logs','observe','capture','analyze']: fail('INVALID_ACTION')
+    if action not in ['status','load','deploy','stop','inspect','logs','observe','capture','analyze','recover']: fail('INVALID_ACTION')
     required = {'owner','action'} if action=='status' else {'owner','action','project'}
     if action=='load': required |= {'record','files','job'}
     if action=='logs': required |= {'containerId'}
@@ -134,9 +134,16 @@ def operate(q):
             except Exception: fail('CLEANUP_UNCONFIRMED')
             if error: raise error
             return {'labName':name,'inventory':{name:rows}}
+        if action=='recover' and not statefile.exists():
+            if inventory(name): fail('ASSOCIATION_CONFLICT')
+            return {'recovery':'absent'}
         state=json.loads(statefile.read_text()); rows=inventory(name)
         current=identities(rows,name,topology)
         if not isinstance(state.get('ids'),list) or any(cid not in state['ids'] for cid in current): fail('ASSOCIATION_CONFLICT')
+        if action=='recover':
+            if not current:
+                statefile.unlink(); return {'recovery':'absent'}
+            return {'recovery':'running' if state.get('status')=='running' and current==state['ids'] and all(row.get('State')=='running' for row in rows) else 'partial','labName':name,'inventory':{name:rows}}
         if action in ['observe','capture']:
             plan=q['plan'];deployment=plan.get('deployment',{})
             if deployment.get('labName')!=name or sorted(c.get('id','') for c in deployment.get('containers',[]))!=state['ids']: fail('ASSOCIATION_CONFLICT')

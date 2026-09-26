@@ -2,7 +2,7 @@ import {createServer,type ServerResponse} from 'node:http';
 import {readFileSync} from 'node:fs';
 import {resolve,extname,sep} from 'node:path';
 import type {Application} from './application.ts';
-const reasons=new Set(['RUNTIME_PREFLIGHT_FAILED','BUSY','PROJECT_CHANGED','DEPLOYMENT_EXISTS_OR_UNRECONCILED','DEPLOYMENT_FAILED','STOP_FAILED','NO_ACTIVE_DEPLOYMENT','ASSOCIATION_CONFLICT','NODE_UNAVAILABLE','LOG_SOURCE_UNSUPPORTED','OUTPUT_LIMIT','CANCELLED','RUNTIME_UNAVAILABLE','RUNTIME_OPERATION_FAILED','NATIVE_TIMEOUT','MALFORMED_OUTPUT','LINK_CAPTURE_UNSUPPORTED','LINK_CAPTURE_UNAVAILABLE','CAPTURE_FAILED','CAPTURE_TIMEOUT','CAPTURE_UNSUPPORTED','MALFORMED_CAPTURE','MALFORMED_ANALYSIS','ARTIFACT_UNAVAILABLE','ARTIFACT_MISMATCH','LUA_INTEGRITY']);
+const reasons=new Set(['RUNTIME_IDENTITY_MISMATCH','RESUME_ANCHOR_REQUIRED','INVALID_ACTION','RUNTIME_PREFLIGHT_FAILED','BUSY','PROJECT_CHANGED','DEPLOYMENT_EXISTS_OR_UNRECONCILED','DEPLOYMENT_FAILED','STOP_FAILED','NO_ACTIVE_DEPLOYMENT','ASSOCIATION_CONFLICT','NODE_UNAVAILABLE','LOG_SOURCE_UNSUPPORTED','OUTPUT_LIMIT','CANCELLED','RUNTIME_UNAVAILABLE','RUNTIME_OPERATION_FAILED','NATIVE_TIMEOUT','MALFORMED_OUTPUT','LINK_CAPTURE_UNSUPPORTED','LINK_CAPTURE_UNAVAILABLE','CAPTURE_FAILED','CAPTURE_TIMEOUT','CAPTURE_UNSUPPORTED','MALFORMED_CAPTURE','MALFORMED_ANALYSIS','ARTIFACT_UNAVAILABLE','ARTIFACT_MISMATCH','LUA_INTEGRITY']);
 export function createApplicationServer(app:Application,dist:string,port=4173){
  const host=`127.0.0.1:${port}`,origin=`http://${host}`,clients=new Set<ServerResponse>();let sequence=0;
  const unsubscribe=app.subscribe(()=>{const frame=`id: ${++sequence}\nevent: snapshot\ndata: ${JSON.stringify(app.snapshot())}\n\n`;for(const client of clients){if(client.writableLength>2097152||!client.write(frame)){client.destroy();clients.delete(client);}}});
@@ -31,10 +31,10 @@ export function createApplicationServer(app:Application,dist:string,port=4173){
     const input=JSON.parse(Buffer.concat(chunks).toString());const result=u.pathname.endsWith('/analyze')?await app.capture.analyze(input,ctrl.signal):await app.capture.capture(input,ctrl.signal);send(200,{result});
    }catch(e){send(422,{code:e instanceof Error&&reasons.has(e.message)?e.message:'INVALID_CAPTURE_REQUEST'});}return;
   }
-  if(['/api/live/go','/api/live/stop'].includes(u.pathname)&&req.method==='POST'){
+  if(['/api/live/go','/api/live/stop','/api/live/recover','/api/live/resume'].includes(u.pathname)&&req.method==='POST'){
    if(req.headers.origin!==origin){send(403,{code:'ORIGIN_DENIED'});return;}
    let bytes=0;const chunks:Buffer[]=[];try{for await(const chunk of req){bytes+=chunk.length;if(bytes>1024){send(413,{code:'REQUEST_LIMIT'});return;}chunks.push(chunk);}const value=JSON.parse(Buffer.concat(chunks).toString());
-    if(u.pathname.endsWith('/go')){if(Object.keys(value).join()!=='revision')throw Error('PROJECT_CHANGED');await app.lifecycle.go(value.revision);}else{if(Object.keys(value).length)throw Error('INVALID_REQUEST');await app.lifecycle.stop();}send(200,app.snapshot());
+    if(u.pathname.endsWith('/go')){if(Object.keys(value).join()!=='revision')throw Error('PROJECT_CHANGED');await app.lifecycle.go(value.revision);}else{if(Object.keys(value).length)throw Error('INVALID_REQUEST');if(u.pathname.endsWith('/stop'))await app.lifecycle.stop();else await app.reconnect(u.pathname.endsWith('/resume'));}send(200,app.snapshot());
    }catch(e){send(422,{code:e instanceof Error&&reasons.has(e.message)?e.message:'RUNTIME_OPERATION_FAILED'});}return;
   }
   if(req.method!=='GET'||u.pathname.startsWith('/api/')){send(404,{code:'NOT_FOUND'});return;}

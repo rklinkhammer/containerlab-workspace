@@ -1,3 +1,15 @@
+# A38 — Installed runtime resume and scoped recovery
+
+**Observed:** fixture-free preview.10 is running at http://127.0.0.1:4173, outside the repository. Installed status reports a stopped VM without guest transport; start verifies a previously prepared local instance anchor and rechecks guest identity/native pins. GUI Resume / reconnect and Check recovery serialize with GO/Stop. An installed update-helper command updates only the verified owned runtime helper under its operation lock.
+
+**Observed:** the authorized existing development lab passed native Stop, VM stop/status/start, offline GO refusal, recovery and GO. A second active-lab shutdown exposed exited containers with unchanged IDs: recovery now reports partial and requires explicit Stop/GO. Final native redeployment independently observed all eight nodes running. The failed identity-only assessment is preserved. No new VM or unrelated VM was used; the user lab remains running.
+
+**Verification:** 30 TypeScript and 14 Python live checks pass; 85 regression checks and build/typecheck pass. Same-name replacement faults are mocked, not destructive trials on user resources. Fresh creation with alternate state directory, full mouse-driven cycling, installer transactions, signing and long soak remain unrun. See artifacts/implementation/LIVE-005/RESULTS.md, RUNNING.md and UX_ISSUES.md (workspace-relative).
+
+**Next:** improve specific sanitized native deployment diagnostics, qualify an official Linux demo through capture, and finish normal installer/upgrade handling. No new serial, arbitrary Lua, persistent capture or universal corpus claim. TT-01, historical Q outcomes and the 177-case denominator remain unchanged. Recovery is scoped lifecycle evidence for B4/B6 and S-01/S-03/S-07, not application-health evidence.
+
+## Prior published scope
+
 # A37 — Installed capture feedback
 
 **Observed:** preview.8 is running at http://127.0.0.1:4173. The link inspector now surfaces size-limited capture status, original-expiry save countdown and distinct empty/no-match/filter-rejected/analysis-unavailable explanations. Contract-based field guidance disables invalid submissions; packet rows scroll within a bounded region. Existing layout, native capture policy and server validation are unchanged.

@@ -52,4 +52,23 @@ class ServiceTests(unittest.TestCase):
   with patch.object(s,'inventory',side_effect=[[self.row()],[]]),patch.object(s,'native',return_value=b'') as native:
    self.assertTrue(s.operate(self.request('stop'))['stopped']);self.assertEqual(native.call_args.args[0],['destroy','--topo',str(self.folder/'input/topo.yml'),'--cleanup'])
   self.assertFalse((self.folder/'deployment.json').exists())
+ def test_recover_absent_never_mutates_containers(self):
+  with patch.object(s,'inventory',return_value=[]),patch.object(s,'native') as native:
+   self.assertEqual(s.operate(self.request('recover')),{'recovery':'absent'});native.assert_not_called()
+ def test_recover_unrecorded_containers_refused(self):
+  with patch.object(s,'inventory',return_value=[self.row()]):
+   with self.assertRaisesRegex(ValueError,'ASSOCIATION_CONFLICT'):s.operate(self.request('recover'))
+ def test_recover_partial_and_replacement(self):
+  s.write(self.folder/'deployment.json',{'ids':['1'*64],'status':'partial'})
+  with patch.object(s,'inventory',return_value=[self.row()]):self.assertEqual(s.operate(self.request('recover'))['recovery'],'partial')
+  with patch.object(s,'inventory',return_value=[self.row('2'*64)]):
+   with self.assertRaisesRegex(ValueError,'ASSOCIATION_CONFLICT'):s.operate(self.request('recover'))
+ def test_recover_empty_record_is_cleared(self):
+  s.write(self.folder/'deployment.json',{'ids':['1'*64],'status':'partial'})
+  with patch.object(s,'inventory',return_value=[]):self.assertEqual(s.operate(self.request('recover'))['recovery'],'absent')
+  self.assertFalse((self.folder/'deployment.json').exists())
+ def test_recover_exited_ids_are_partial_not_running(self):
+  s.write(self.folder/'deployment.json',{'ids':['1'*64],'status':'running'})
+  with patch.object(s,'inventory',return_value=[{**self.row(),'State':'exited'}]):self.assertEqual(s.operate(self.request('recover'))['recovery'],'partial')
+  with patch.object(s,'inventory',return_value=[{**self.row(),'State':'running'}]):self.assertEqual(s.operate(self.request('recover'))['recovery'],'running')
 if __name__=='__main__':unittest.main()

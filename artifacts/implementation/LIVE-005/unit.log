@@ -1,0 +1,47 @@
+
+> containerlab-synthetic-preview@0.1.0 test:live
+> node --test tests/live/*.test.ts && python3 tests/live/service_test.py
+
+✔ form rejects traversal and fractional/out-of-range settings without exposing input (1.808167ms)
+✔ empty capture differs from no display matches; size cap does not vanish after reanalysis (0.138416ms)
+✔ expiry does not extend after reanalysis; unavailable analysis does not imply empty traffic (0.058958ms)
+✔ filename is a basename; no client endpoint or arbitrary Lua path accepted (1.684167ms)
+✔ one selected link produces actual hash-bound bytes and chosen download name (2.976708ms)
+✔ malformed worker PCAP cannot become a downloadable artifact (0.28525ms)
+✔ late completion after cancellation cannot publish an artifact (0.153875ms)
+✔ replacement enrollment revokes retained bytes (0.19525ms)
+✔ GO is serialized, intent persisted first, explicit stop removes deployment (1.89925ms)
+✔ failed deploy stays partial until scoped recovery, not a success or invisible rollback (0.154ms)
+✔ source changes before GO refuse native invocation (0.072458ms)
+✔ restart cannot silently adopt an existing runtime (0.084708ms)
+✔ offline preflight leaves ready unchanged, persists no intent, and retry succeeds (0.13875ms)
+✔ preflight serializes GO and rechecks changed source before deployment intent (0.123583ms)
+✔ recovery is serialized and refuses to hide uncertain failures (0.151208ms)
+✔ reviewed native failure code survives without leaking native stderr (0.078667ms)
+✔ one deterministic capture point observes both directions, not both endpoints (0.700875ms)
+✔ SRL-Linux chooses qualified Linux side automatically (0.09825ms)
+✔ wrong deployment, different occurrence and external link cannot capture (0.183458ms)
+✔ unassociated interfaces cannot become targets (0.071666ms)
+✔ exact bytes, explicit context only and no private root disclosed (1.498375ms)
+✔ nested companion paths preserved and changes refuse GO (1.340583ms)
+✔ traversal, absolute paths and duplicate inventory refused (0.58725ms)
+✔ symlink file and directory refused (0.741ms)
+✔ missing context and size bounds are failures not invented content (1.017833ms)
+✔ stopped unanchored VM cannot be started; status remains readable (2.970667ms)
+✔ prepare requires live verified owner; replacement refuses before boot (1.175084ms)
+✔ anchored start verifies guest after boot and running start is idempotent (1.316292ms)
+✔ runtime reads and capture execute serially, queue is bounded and recovers after failure (0.796291ms)
+✔ local HTTP boundary rejects foreign origins and requires explicit GO revision (13.206875ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 117.318041
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 0.021s
+
+OK

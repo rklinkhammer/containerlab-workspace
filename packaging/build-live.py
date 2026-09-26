@@ -2,7 +2,7 @@
 """Build a macOS ARM64 package without experiment/runtime state."""
 from pathlib import Path
 import subprocess,hashlib,json,shutil,plistlib,tarfile,os
-r=Path(__file__).resolve().parents[1];out=r/'.runtime-live-release';out.mkdir(exist_ok=True);meta={'version':'0.3.0-preview.8','packageVersion':'0.3.0'};root=out/'payload'
+r=Path(__file__).resolve().parents[1];out=r/'.runtime-live-release';out.mkdir(exist_ok=True);meta={'version':'0.3.0-preview.10','packageVersion':'0.3.0'};root=out/'payload'
 archive=r/'.runtime-release/node.tar.gz';expected='6e577fd0d9db776db82306629e441a9dace416702622aebdd171c9dfaa41f4d2'
 assert hashlib.sha256(archive.read_bytes()).hexdigest()==expected
 assert (r/'dist-live/index.html').exists(),'Run npm run build:live first'
@@ -42,10 +42,10 @@ launcher='#!/bin/sh\nset -eu\nBASE=$(CDPATH= cd -- "$(dirname -- "$0")/../Resour
 plist={'CFBundleName':'Containerlab GUI','CFBundleIdentifier':'local.containerlab.gui.live','CFBundleVersion':meta['packageVersion'],'CFBundleShortVersionString':meta['packageVersion'],'CFBundleExecutable':'ContainerlabGUI','CFBundlePackageType':'APPL','LSUIElement':True};(app/'Contents/Info.plist').write_bytes(plistlib.dumps(plist))
 cli=root/'usr/local/bin/containerlab-gui';cli.parent.mkdir(parents=True);cli.write_text('#!/bin/sh\nexec "/Applications/Containerlab GUI Live.app/Contents/Resources/runtime/node" "/Applications/Containerlab GUI Live.app/Contents/Resources/packaging/live-cli.mjs" "$@"\n');cli.chmod(0o755)
 rows=[{'path':str(p.relative_to(app)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size} for p in sorted(app.rglob('*')) if p.is_file()];(resources/'MANIFEST.json').write_text(json.dumps(rows,indent=2)+'\n')
-pkg=out/'Containerlab-GUI-0.3.0-preview.8-arm64.pkg';subprocess.run(['pkgbuild','--root',str(root),'--identifier','local.containerlab.gui.live','--version',meta['packageVersion'],'--install-location','/',str(pkg)],check=True)
-portable=out/'Containerlab-GUI-0.3.0-preview.8-arm64.tar.gz'
+pkg=out/'Containerlab-GUI-0.3.0-preview.10-arm64.pkg';subprocess.run(['pkgbuild','--root',str(root),'--identifier','local.containerlab.gui.live','--version',meta['packageVersion'],'--install-location','/',str(pkg)],check=True)
+portable=out/'Containerlab-GUI-0.3.0-preview.10-arm64.tar.gz'
 with tarfile.open(portable,'w:gz') as t:
  t.add(app,arcname=app.name)
  t.add(r/'packaging/install-live.command',arcname='install.command')
 checks={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [pkg,portable]};(out/'SHA256SUMS').write_text(''.join(v+'  '+k+'\n' for k,v in checks.items()))
-(r/'artifacts/implementation/LIVE-004/package-build.json').write_text(json.dumps({'version':meta['version'],'files':len(rows),'artifacts':checks,'bundledNodeSha256':expected,'signing':'unsigned local preview'},indent=2)+'\n');print(json.dumps(checks,indent=2))
+(r/'artifacts/implementation/LIVE-005/package-build.json').write_text(json.dumps({'version':meta['version'],'files':len(rows),'artifacts':checks,'bundledNodeSha256':expected,'signing':'unsigned local preview'},indent=2)+'\n');print(json.dumps(checks,indent=2))

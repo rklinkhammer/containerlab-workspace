@@ -1,0 +1,30 @@
+{
+  "phase": "running",
+  "reason": null,
+  "loadError": null,
+  "observation": {
+    "observedAt": "2026-09-26T17:34:38.849Z",
+    "states": {
+      "adb8fdc45cce3d31c02488ef2f871c88e944e2d97b8f9b3a5bce2205a2e44365:n0": "exited",
+      "adb8fdc45cce3d31c02488ef2f871c88e944e2d97b8f9b3a5bce2205a2e44365:n1": "exited",
+      "adb8fdc45cce3d31c02488ef2f871c88e944e2d97b8f9b3a5bce2205a2e44365:n2": "exited",
+      "adb8fdc45cce3d31c02488ef2f871c88e944e2d97b8f9b3a5bce2205a2e44365:n3": "exited",
+      "adb8fdc45cce3d31c02488ef2f871c88e944e2d97b8f9b3a5bce2205a2e44365:n4": "exited",
+      "adb8fdc45cce3d31c02488ef2f871c88e944e2d97b8f9b3a5bce2205a2e44365:n5": "exited",
+      "adb8fdc45cce3d31c02488ef2f871c88e944e2d97b8f9b3a5bce2205a2e44365:n6": "exited",
+      "adb8fdc45cce3d31c02488ef2f871c88e944e2d97b8f9b3a5bce2205a2e44365:n7": "exited"
+    },
+    "reason": null
+  },
+  "nodeStates": [
+    "exited",
+    "exited",
+    "exited",
+    "exited",
+    "exited",
+    "exited",
+    "exited",
+    "exited"
+  ],
+  "recordedAt": "2026-09-26T17:34:40.046Z"
+}

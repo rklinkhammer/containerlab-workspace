@@ -1,0 +1,3 @@
+# Superseded first trial
+
+The first trial proved VM/identity reconnection but its final assertion checked lifecycle phase only. A follow-up actual observation found all eight containers exited. Therefore attempt1-runtime-results.json is NOT acceptance of resumed running containers. attempt1-final-state.json preserves the contradictory node evidence. Recovery now requires native State=running for every recorded container before reporting running; exited resources are partial. A new regression checks this and the final trial requires all eight observed states running after explicit native Stop/GO. No original evidence was rewritten.

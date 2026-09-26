@@ -3,7 +3,8 @@
 from pathlib import Path
 import sys,subprocess,uuid,secrets,json,hashlib,datetime,os,shutil
 root=Path(__file__).resolve().parents[1]
-state=Path.home()/'Library/Application Support/Containerlab GUI'
+import argparse
+parser=argparse.ArgumentParser();parser.add_argument('--state-dir',type=Path,default=Path.home()/'Library/Application Support/Containerlab GUI');state=parser.parse_args().state.resolve()
 state.mkdir(parents=True,exist_ok=True,mode=0o700)
 manifest=state/'runtime.json'
 if manifest.exists():sys.exit('A runtime is already configured. No VM was accessed or changed.')

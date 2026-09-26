@@ -1,9 +1,9 @@
 {
-  "revision": "A37",
-  "status": "installed_capture_presentation_verified_user_lab_running",
-  "published_utc": "2026-09-26T17:21:08.289838+00:00",
-  "predecessor_snapshot": "artifacts/design/history/A36-before-A37/MANIFEST.json",
-  "predecessor_manifest_sha256": "aafe600e776bc9ef842f9c84f833d7db2842a2fd5ad68db972476740d5ae12dc",
+  "revision": "A38",
+  "status": "installed_resume_recovery_verified_user_lab_running",
+  "published_utc": "2026-09-26T17:40:52.209209+00:00",
+  "predecessor_snapshot": "artifacts/design/history/A37-before-A38/MANIFEST.json",
+  "predecessor_manifest_sha256": "ccb63aa390d98d20ac230d3f37d7e26ba5b0a0f4ec8dc13fe4703a15798c8011",
   "file_paths_relative_to": "workspace root",
   "explained_predecessor_drift": [],
   "files": [
@@ -29,13 +29,13 @@
     },
     {
       "path": "IMPLEMENTATION_HANDOFF.md",
-      "sha256": "9bfe5abb1d68689e542911ed79f8a0380db91d000131fead7595e6368dda78b4",
-      "bytes": 29457
+      "sha256": "0f036abd990815d6bf64e506f79b38ac1cdeee7bd5ce75ffd79cd01cfccb3dd0",
+      "bytes": 31280
     },
     {
       "path": "README.md",
-      "sha256": "b1c09d49597367bda64727fa697e629f9ac66124c928f09de59fda26807ce090",
-      "bytes": 7799
+      "sha256": "2d910abb73f8ff068ce2f2809137a55f032162ab7af76902b1b58ef36ba2ef01",
+      "bytes": 9622
     },
     {
       "path": "apps/live/Capture.tsx",
@@ -54,8 +54,8 @@
     },
     {
       "path": "apps/live/main.tsx",
-      "sha256": "bd3585fdea45f82c9ffbcc99900d9a265a7fc08452aff30a82e343a4c366caf9",
-      "bytes": 6951
+      "sha256": "77aa3271f0d3fde638b25404fca4051428522aac05f9106147432451fea2e8c1",
+      "bytes": 7734
     },
     {
       "path": "apps/live/style.css",
@@ -159,8 +159,8 @@
     },
     {
       "path": "artifacts/design/ARCHITECTURE.md",
-      "sha256": "a2db07ce04cfa407ce98c9408289fc717b691aa4a9427d35306125bc79838972",
-      "bytes": 92900
+      "sha256": "415cc91844a102de8c3d853d12204a958a3041f19994f17edbe8ff56264c9ce6",
+      "bytes": 94723
     },
     {
       "path": "artifacts/design/CANDIDATE_PROFILE.json",
@@ -174,8 +174,8 @@
     },
     {
       "path": "artifacts/design/DECISIONS.md",
-      "sha256": "12445230a73a0a2005bd9a44f14e394a266e1b104fd3b0d75e9120ac607ec273",
-      "bytes": 78442
+      "sha256": "331bdf6aff3360848aaebc232d5f455bbcce04090eca7cf6b91eedad5d14931b",
+      "bytes": 80802
     },
     {
       "path": "artifacts/design/DECLARED_PREVIEW_BRIEF.md",
@@ -204,18 +204,18 @@
     },
     {
       "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
-      "sha256": "884c73ec133a48cc36efd94cab6e2157ff04790286f32cef2a9c2ce934091167",
-      "bytes": 67826
+      "sha256": "a731d1b222da5d077677ca482c8f12229b652190fe2cb4a17a05e9ec24cb93a9",
+      "bytes": 69649
     },
     {
       "path": "artifacts/design/INSTALLED_WORKFLOW.md",
-      "sha256": "a90aae632812310a3c94318fde3c9ad5ab9fae55c5e7ba7e051c0fa91c380bd8",
-      "bytes": 8836
+      "sha256": "a9d0cb5db3a464d47a6aa1785c8336e049238ae653aa2e05bc4d430c497ecdad",
+      "bytes": 10659
     },
     {
       "path": "artifacts/design/LIVE_APPLICATION.md",
-      "sha256": "6f8089c8b4896936298f62148d2f785aa97dfa5c7a550643765788d30badbfd6",
-      "bytes": 18284
+      "sha256": "14adfe68b38e38429e6d7f2196063c1e0f7375254bedbabecc4c0a8cca9bba32",
+      "bytes": 20107
     },
     {
       "path": "artifacts/design/NATIVE_PREVIEW_BRIEF.md",
@@ -259,8 +259,8 @@
     },
     {
       "path": "artifacts/design/READINESS.md",
-      "sha256": "bbfb1b064f567d41c3c1417b342f70a409b44d4283674fb19d5ab51ef4194452",
-      "bytes": 50094
+      "sha256": "91b3a38ab116fddd6f6be33d505720a1eacbc3a1d68fd3b99ff74371e9d9b65b",
+      "bytes": 51917
     },
     {
       "path": "artifacts/design/READINESS_BRIEF.md",
@@ -269,8 +269,8 @@
     },
     {
       "path": "artifacts/design/README.md",
-      "sha256": "da9a706d64f55e4dbe0c93b0c817544c63a5a6a970e420d3950e3dd3fbdafc0d",
-      "bytes": 38466
+      "sha256": "80f63f6632691483258487fa77cd9083b4316d4c36477ee7be9d211ec47fd6f8",
+      "bytes": 40289
     },
     {
       "path": "artifacts/design/RISK_REDUCTION_BRIEF.md",
@@ -299,8 +299,8 @@
     },
     {
       "path": "artifacts/design/TRACEABILITY.md",
-      "sha256": "e2386b439deeff18ad3d1811019e51cac3dd9b3d7aff69f5fe77b8cde8d9445f",
-      "bytes": 58023
+      "sha256": "25e955a28008932d46fcd85a588741cec3df27b25e2bdea7d605b9e00fb4eec5",
+      "bytes": 59846
     },
     {
       "path": "artifacts/design/TRUSTED_TEST_BRIEF.md",
@@ -4668,6 +4668,196 @@
       "bytes": 8198
     },
     {
+      "path": "artifacts/design/history/A37-before-A38/000-IMPLEMENTATION_HANDOFF.md",
+      "sha256": "9bfe5abb1d68689e542911ed79f8a0380db91d000131fead7595e6368dda78b4",
+      "bytes": 29457
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/001-README.md",
+      "sha256": "b1c09d49597367bda64727fa697e629f9ac66124c928f09de59fda26807ce090",
+      "bytes": 7799
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/002-ARCHITECTURE.md",
+      "sha256": "a2db07ce04cfa407ce98c9408289fc717b691aa4a9427d35306125bc79838972",
+      "bytes": 92900
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/003-CANDIDATE_PROFILE.json",
+      "sha256": "4e4b45ccba844640b983e5b8cc883e5bc8bebe565a7ff8b6a8a4d584759564a4",
+      "bytes": 4857
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/004-CAPTURE_CONTRACT.md",
+      "sha256": "444334fb7f564b94b7cf5dcb266a2cffc2bce372028bf35737287ae81ceaed5f",
+      "bytes": 13652
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/005-COMPLETION.json",
+      "sha256": "f3505248393c08c68769dec60b8b0b38fae15e53639095bc1b3b6e2f7705ee88",
+      "bytes": 529867
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/006-DECISIONS.md",
+      "sha256": "12445230a73a0a2005bd9a44f14e394a266e1b104fd3b0d75e9120ac607ec273",
+      "bytes": 78442
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/007-DECLARED_PREVIEW_BRIEF.md",
+      "sha256": "68af43294e35d03631ed6cd82dd984873814b5d87502d4f85df38000c2345a78",
+      "bytes": 403
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/008-DECLARED_PREVIEW_CONTRACT.md",
+      "sha256": "5bbc56c578a1ff0a5791241fa70a53d68b2009d3f0492479986ce88e323cb555",
+      "bytes": 1562
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/009-GUI_CONTINUATION.md",
+      "sha256": "52a06651f5c716838f40267d818dfe32be748532ca604d1640144f4c19552ad3",
+      "bytes": 15775
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/010-GUI_CONTRACT.md",
+      "sha256": "97e96c1ed4fb19ab004759bbe1611534743c3f18cffb312808411265bfcb6eac",
+      "bytes": 3903
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/011-IMPLEMENTATION_BRIEF.md",
+      "sha256": "c2c362aaa6e00682acabb8cfdfe24457748e67ecd60e95ecc40cb5f5b28b8ee3",
+      "bytes": 2788
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/012-IMPLEMENTATION_PLAN.md",
+      "sha256": "884c73ec133a48cc36efd94cab6e2157ff04790286f32cef2a9c2ce934091167",
+      "bytes": 67826
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/013-INSTALLED_WORKFLOW.md",
+      "sha256": "a90aae632812310a3c94318fde3c9ad5ab9fae55c5e7ba7e051c0fa91c380bd8",
+      "bytes": 8836
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/014-LIVE_APPLICATION.md",
+      "sha256": "6f8089c8b4896936298f62148d2f785aa97dfa5c7a550643765788d30badbfd6",
+      "bytes": 18284
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/015-NATIVE_PREVIEW_BRIEF.md",
+      "sha256": "f70d8066a138b21213f3e5f83af08fd7cd2e055b7125f313102577bf79340687",
+      "bytes": 548
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/016-NODE_LOG_CONTRACT.md",
+      "sha256": "5abeb52cc5dd23ea40666c62744b750c3faa2ca9077ddc2a786cbd8144ac001e",
+      "bytes": 4255
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/017-OBSERVATION_CONTRACT.md",
+      "sha256": "1af0ee1a1686416fadd809395da97e675629bcc0ba4f7417fa137e88db9af54f",
+      "bytes": 12115
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/018-ON_DEMAND_BRIEF.md",
+      "sha256": "8e2907835b545061f32deab896c134b7cfc627fc2b4bafbd8f183a70ed456515",
+      "bytes": 442
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/019-ON_DEMAND_CONTRACT.md",
+      "sha256": "3321bc886818e9875587d0f92637fff55a68e4e2c8f62b420fba76b7113b4fa9",
+      "bytes": 4847
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/020-P1A_BACKLOG.md",
+      "sha256": "dd895b84dd24b161c501c93b7b0a857ca84a046ac3bf2d16faa20455126dc355",
+      "bytes": 41552
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/021-P1A_CONTRACT.md",
+      "sha256": "b5e31ddee7edddbb3ad59a9e45d473d9c1409e1eed7ab216b1c3ae2cea42154a",
+      "bytes": 10259
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/022-R2_NEXT_BRIEF.md",
+      "sha256": "7f3892c6b48fe1b6c7f3d37e34f9186f9ad7e8d05930d03e776331c8db7cab90",
+      "bytes": 514
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/023-READINESS.md",
+      "sha256": "bbfb1b064f567d41c3c1417b342f70a409b44d4283674fb19d5ab51ef4194452",
+      "bytes": 50094
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/024-READINESS_BRIEF.md",
+      "sha256": "b6c61a9b3be888da38d582209a9437ec2e76c38dfd4ac9c7708acce1e65105f5",
+      "bytes": 2322
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/025-README.md",
+      "sha256": "da9a706d64f55e4dbe0c93b0c817544c63a5a6a970e420d3950e3dd3fbdafc0d",
+      "bytes": 38466
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/026-RISK_REDUCTION_BRIEF.md",
+      "sha256": "1e719ce4e7754512fae4e188bf006225d96ea9d581094ddba7106a729d0ed195",
+      "bytes": 1040
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/027-RUNTIME_QUALIFICATION_PLAN.md",
+      "sha256": "b3acc43a0249b61554bf03e54fff509afec02cf3bd1f0c3da6a5877742c278af",
+      "bytes": 7214
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/028-SERIAL_CONSOLE_CONTRACT.md",
+      "sha256": "19555da76c345fe77eadcec86dc740b285cc1f134abf23be0d48c41de6c969bc",
+      "bytes": 3318
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/029-SERIAL_PLATFORM_PROFILE.json",
+      "sha256": "cf082d591224943d1d43245b87e86196fbb3a7911ce47484f74793b607ca467e",
+      "bytes": 1853
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/030-TEST_PROFILE.md",
+      "sha256": "3c1bdd63c7ea485367edd75330962b52cc798870b723eea57135de2364a8602c",
+      "bytes": 2572
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/031-TRACEABILITY.md",
+      "sha256": "e2386b439deeff18ad3d1811019e51cac3dd9b3d7aff69f5fe77b8cde8d9445f",
+      "bytes": 58023
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/032-TRUSTED_TEST_BRIEF.md",
+      "sha256": "72e27c49a682a1abb74e2aced291d7e297cb08bd8b3b8ca7c7f5a4ba0a535b66",
+      "bytes": 900
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/033-DESIGN_WRITE_INVENTORY.json",
+      "sha256": "28cf35eaf187456330ed8927976600db4f3a7d6ce9e1af0efbdfb9123c75e064",
+      "bytes": 2424
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/034-RESULTS.md",
+      "sha256": "6f4176f8ba26cdad5a24262d40daef5af238ee05f53f550d1ea41ca6b860eeda",
+      "bytes": 10814
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/AUTHORIZATION_ADDENDUM.md",
+      "sha256": "06361d68425ade352a7e4677193bf783e4e02800615756b1b44ec457a32683ae",
+      "bytes": 239
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/EXECUTING_BRIEF.md",
+      "sha256": "2e3a4fa69012bc62d8cdce05371034e9688e09bcc3351fd6063ba6b8d1fefa25",
+      "bytes": 1267
+    },
+    {
+      "path": "artifacts/design/history/A37-before-A38/MANIFEST.json",
+      "sha256": "ccb63aa390d98d20ac230d3f37d7e26ba5b0a0f4ec8dc13fe4703a15798c8011",
+      "bytes": 8420
+    },
+    {
       "path": "artifacts/design/history/A4-before-A5/ARCHITECTURE.md",
       "sha256": "e1a204f4a9069cb0e2d4e34073ccb13488b33d8253aa5f569f7b16f86fc373cd",
       "bytes": 50319
@@ -6139,8 +6329,8 @@
     },
     {
       "path": "artifacts/implementation/DESIGN_WRITE_INVENTORY.json",
-      "sha256": "28cf35eaf187456330ed8927976600db4f3a7d6ce9e1af0efbdfb9123c75e064",
-      "bytes": 2424
+      "sha256": "6058bda9f23898700037be8236a02246e101644a18c29a58fa8ac3a2be059982",
+      "bytes": 2928
     },
     {
       "path": "artifacts/implementation/INSTALL-001/EXECUTING_BRIEF.txt",
@@ -7108,9 +7298,129 @@
       "bytes": 2461
     },
     {
+      "path": "artifacts/implementation/LIVE-005/PLAN.md",
+      "sha256": "a0ab2b55ca489a09199deb0c5e17a315181c1b52806656d9bcadc7a390bd4ae3",
+      "bytes": 1516
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/RESULTS.md",
+      "sha256": "232257e1614efc62c0d675c8c6f7aebb88b0121caa6cf173e958da28e25de76d",
+      "bytes": 5360
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/RUNNING.md",
+      "sha256": "5058b4028855f802424c8a3436d63d96f64314a5cd4df5ab780ce6733091a966",
+      "bytes": 3283
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/UX_ISSUES.md",
+      "sha256": "c687392a3dc1fd45961287e1d36defcb1a11af32c31d828bcec81811dee23edc",
+      "bytes": 2025
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/attempt1-disposition.md",
+      "sha256": "9afeeeffdede3b39d916da5f5f4e1f5e367235624cadf90a79127bb05cf99716",
+      "bytes": 639
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/attempt1-final-state.json",
+      "sha256": "e5ecb8f0637c8b04f38df0aedbb57ae109fc713de6692568d0c464a51de2bca8",
+      "bytes": 1049
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/attempt1-runtime-results.json",
+      "sha256": "6e4b0217179538a5fa76227e4ce13e2be865aa1979e40ee38e7c58720eaf01f8",
+      "bytes": 955
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/build.log",
+      "sha256": "710fa80671708570455fc14be4d11fcec94304af6329a87bcf71a56863e85b18",
+      "bytes": 1239
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/exited-recovery.json",
+      "sha256": "1c74d8a0e316e33c942fe056c359b9f7bf4535f81ec793eefeb5940e3731d4aa",
+      "bytes": 67
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/helper-update-final.log",
+      "sha256": "ae4252bc837df84f39f1a8409dd6f230682f8cf238e1badc8c294d5410cc86d0",
+      "bytes": 78
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/package-build.json",
+      "sha256": "7dd98040f93b940e0d084157b31885e6e55a873733ccb5b367c6b4c7a1c43e9a",
+      "bytes": 444
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/package-verification.json",
+      "sha256": "ac3313aa3b22966a76e3d65aa47b3022a4b1ae4c0ddc8ea87e9241f8cdc8cadd",
+      "bytes": 61
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/package.log",
+      "sha256": "603d8367569b3963643ca65f50e5521de389b5d08a85ba80ce11fd4b6821366b",
+      "bytes": 718
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/prepare-resume.log",
+      "sha256": "c4b6d5c5df7ee62a2f2a9974697008939fe4cd4ef86cb1fefdcd33ed5fc2bb79",
+      "bytes": 92
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/regression.log",
+      "sha256": "34ca70f3d3d7f40a42bc86295069a661e9b543812451b2d7fe40102aeea62844",
+      "bytes": 8915
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/runtime-final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/runtime-results.json",
+      "sha256": "a43f0079d4f99973ad4f3e074f5ec2a84e2a8ab0149766acb3126486ae786d36",
+      "bytes": 1093
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/runtime.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/server-final.log",
+      "sha256": "e9d101fb19c4b2563b3573eee66779ffe9e8b5b9ecb89a8effef2616405efaa4",
+      "bytes": 22
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/server.json",
+      "sha256": "001fed16d896bfc869e25434aec1f6c7979370060cf50b19c9cadc6e3f4abbd4",
+      "bytes": 691
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/server.log",
+      "sha256": "e9d101fb19c4b2563b3573eee66779ffe9e8b5b9ecb89a8effef2616405efaa4",
+      "bytes": 22
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/status.log",
+      "sha256": "c4b6d5c5df7ee62a2f2a9974697008939fe4cd4ef86cb1fefdcd33ed5fc2bb79",
+      "bytes": 92
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/unit.log",
+      "sha256": "acef102c61e5ecbcf5b1317890bde143692672d1e252703fdd00449094b864fe",
+      "bytes": 2885
+    },
+    {
+      "path": "artifacts/implementation/LIVE-005/update-helper.log",
+      "sha256": "ae4252bc837df84f39f1a8409dd6f230682f8cf238e1badc8c294d5410cc86d0",
+      "bytes": 78
+    },
+    {
       "path": "artifacts/implementation/RESULTS.md",
-      "sha256": "6f4176f8ba26cdad5a24262d40daef5af238ee05f53f550d1ea41ca6b860eeda",
-      "bytes": 10814
+      "sha256": "989e7877503e420287b37972795e4767b0e67604d798b2ad89b3d5ab405ac0b9",
+      "bytes": 12637
     },
     {
       "path": "artifacts/implementation/SOURCE_INVENTORY.json",
@@ -7139,8 +7449,8 @@
     },
     {
       "path": "backend/live/application.ts",
-      "sha256": "20b82105e267917cb7439fc5b998091e12ce002e3d239fb226bb4369b36cbe07",
-      "bytes": 7858
+      "sha256": "2a346ba48329d6712258c5b88a125eb6152d9a15060da4580e3a5530cdb80d7b",
+      "bytes": 9196
     },
     {
       "path": "backend/live/capture.ts",
@@ -7149,8 +7459,8 @@
     },
     {
       "path": "backend/live/lifecycle.ts",
-      "sha256": "5d0257fc031838d1b35e67d187e6fabf169acdf3c0d541566bb264f96f834bc2",
-      "bytes": 2742
+      "sha256": "43004e3fee604a8154ed0dd52d4dec3d99da2a559f4b470e7e6e954fcb5ec986",
+      "bytes": 3230
     },
     {
       "path": "backend/live/link-target.ts",
@@ -7163,14 +7473,19 @@
       "bytes": 3338
     },
     {
+      "path": "backend/live/runtime-control.ts",
+      "sha256": "5b4fe2592326192df0517d5067987cbdb9dc6a8ebc641b2f4c0b23d45f596cd9",
+      "bytes": 4306
+    },
+    {
       "path": "backend/live/runtime.ts",
       "sha256": "0c6f180bc7a1d63f63425bd80a9143a368b1b11671de944b7183c2f2dc540e1e",
       "bytes": 3171
     },
     {
       "path": "backend/live/server.ts",
-      "sha256": "272e83569fd2588233ec4922a139c19c9057eafb1d249aca586b6939443eed19",
-      "bytes": 5508
+      "sha256": "9b244b33e0b1cfc126a2662335a98d9f84c73a5fdd283517823dc084a248e995",
+      "bytes": 5706
     },
     {
       "path": "backend/native-api.ts",
@@ -13444,8 +13759,8 @@
     },
     {
       "path": "native/application/service.py",
-      "sha256": "8e701e09555bea897d4fecaa4dc91fb6c9e120fd5ddfdaba261049be56c9393f",
-      "bytes": 11423
+      "sha256": "82d14771388072e77604e1ab0b0de8fa79bc466d7090361fe44ed22842ee8f5b",
+      "bytes": 11924
     },
     {
       "path": "native/observer/capture.py",
@@ -13499,8 +13814,8 @@
     },
     {
       "path": "packaging/README-LIVE.md",
-      "sha256": "4c392ef331797f6e1d4b5c8018c728151b81673eaad3863c0df7b48f4dd73760",
-      "bytes": 3351
+      "sha256": "7fa4d7415e10f3379a443eb95aedbc1a042d2306bcf32858cc567fe0391ea9b9",
+      "bytes": 6142
     },
     {
       "path": "packaging/README.md",
@@ -13509,8 +13824,8 @@
     },
     {
       "path": "packaging/build-live.py",
-      "sha256": "27b9e7ad8d0b00e7ae00eb2fff17fbf5693d103b5dab546f8c31279a99006a3b",
-      "bytes": 5210
+      "sha256": "7d8cc45d238a957f987b1458bffd378c4183889f8bd9226e3a67a615b3e42708",
+      "bytes": 5213
     },
     {
       "path": "packaging/build.py",
@@ -13534,8 +13849,8 @@
     },
     {
       "path": "packaging/live-cli.mjs",
-      "sha256": "41fd11cc430275f639c366ec2236c0d8fb9e3d78332f9f329c55e1ea7aea6c96",
-      "bytes": 3460
+      "sha256": "77c8abba75907e3d3c4fce474080aa8cc4640d579f7fc9dc1b5dacde6764b6d4",
+      "bytes": 3834
     },
     {
       "path": "packaging/node-SHASUMS256.txt",
@@ -13549,13 +13864,13 @@
     },
     {
       "path": "packaging/runtime-commands.mjs",
-      "sha256": "a2ea619cf0010866c227198ebdaa278e1cdac2e14b950f6afe11c57db84b8bcb",
-      "bytes": 1477
+      "sha256": "b7dc8481267e11ff251caf12ec4dd330383467470cb258be4f470f4c1666782e",
+      "bytes": 2957
     },
     {
       "path": "packaging/runtime-create.py",
-      "sha256": "3452a0082f4f83823182a7534459039d7676a93e431079cbcd7790fb6bb5fa12",
-      "bytes": 4700
+      "sha256": "49268ce666f7e5538f81fd3deac292df2f063d3fd1039dea46da843f6ad44c38",
+      "bytes": 4838
     },
     {
       "path": "packaging/smoke.py",
@@ -13914,8 +14229,8 @@
     },
     {
       "path": "tests/live/lifecycle.test.ts",
-      "sha256": "5cf8e63bde378f3410a0863e6371f0025a1fe7938a04ae13b46cddfa1b1dd290",
-      "bytes": 3331
+      "sha256": "9b636d9b73d2e1e835b980a4f09c078be06804cf2b0ad8cfb9fd5370257be337",
+      "bytes": 4347
     },
     {
       "path": "tests/live/link-target.test.ts",
@@ -13933,6 +14248,16 @@
       "bytes": 2079
     },
     {
+      "path": "tests/live/recovery-installed.mjs",
+      "sha256": "0210374e2c25d2c00e52e9470506ec5eac6ab6b0eca8752ac947329ff35536aa",
+      "bytes": 3739
+    },
+    {
+      "path": "tests/live/runtime-control.test.ts",
+      "sha256": "3775c752ff9d95daf263d15fd2248ebf6019f8512d13d14fa47d2ea0dc28f91c",
+      "bytes": 2365
+    },
+    {
       "path": "tests/live/runtime-queue.test.ts",
       "sha256": "81301173bee326ff4c08611628a9f47ea6f1ef2427dc4b196734bcf8cfeb4f92",
       "bytes": 933
@@ -13944,8 +14269,8 @@
     },
     {
       "path": "tests/live/service_test.py",
-      "sha256": "197471c5557d0a546320d3f216c7946015a1e9d16ca491046f9b7177f3ffae33",
-      "bytes": 4377
+      "sha256": "f3577961c0013d4b78e64a4911ff6d4a22945b354528aaf0e480c6d50901b497",
+      "bytes": 6039
     },
     {
       "path": "tests/live/user-interaction.mjs",

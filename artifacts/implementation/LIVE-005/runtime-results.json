@@ -1,0 +1,47 @@
+[
+  {
+    "step": "recover exact live deployment",
+    "result": "PASS",
+    "at": "2026-09-26T17:36:50.102Z"
+  },
+  {
+    "step": "scoped Stop lab",
+    "result": "PASS",
+    "at": "2026-09-26T17:36:50.782Z"
+  },
+  {
+    "step": "stopped status without guest access",
+    "result": "PASS",
+    "at": "2026-09-26T17:36:52.138Z"
+  },
+  {
+    "step": "offline GO preserves stopped",
+    "result": "PASS",
+    "at": "2026-09-26T17:36:52.162Z"
+  },
+  {
+    "step": "installed start and absent recovery",
+    "result": "PASS",
+    "at": "2026-09-26T17:37:03.711Z"
+  },
+  {
+    "step": "GO after resume",
+    "result": "PASS",
+    "at": "2026-09-26T17:37:14.791Z"
+  },
+  {
+    "step": "GUI resume detects exited containers as partial; identity unchanged",
+    "result": "PASS",
+    "at": "2026-09-26T17:37:27.894Z"
+  },
+  {
+    "step": "native Stop/GO after partial resume; all eight observed running",
+    "result": "PASS",
+    "at": "2026-09-26T17:37:39.106Z"
+  },
+  {
+    "step": "final state",
+    "result": "running; user lab intentionally retained",
+    "at": "2026-09-26T17:37:39.107Z"
+  }
+]

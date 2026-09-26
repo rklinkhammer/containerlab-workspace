@@ -1,0 +1,1 @@
+The user explicitly permits stopping and restarting the identified running user lab for development. This supersedes the initial fresh-VM trial plan for this task only; do not access unrelated VMs. Leave the user lab running after checks.
