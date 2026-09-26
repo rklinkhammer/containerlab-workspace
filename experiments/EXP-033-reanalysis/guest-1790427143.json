@@ -1,0 +1,9 @@
+{
+  "cases": [
+    "empty PCAP analysis without native runtime access PASS",
+    "malformed headers/records and oversized data refused PASS",
+    "hash, Lua ID, path and base64 refusal PASS",
+    "shared capture/reanalysis lock refuses concurrent work PASS"
+  ],
+  "outcome": "PASS"
+}

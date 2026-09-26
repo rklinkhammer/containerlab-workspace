@@ -1,0 +1,10 @@
+✔ reanalysis accepts artifact references only, separate job identity and reviewed options (1.667625ms)
+✔ managed reanalysis uses unchanged bytes/TTL; refuses mismatch, expiry, malformed/oversized output, cancellation and capability changes (920.017ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1022.850292

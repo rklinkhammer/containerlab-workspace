@@ -8,10 +8,10 @@ LUA_ID='clab-probe-v1'
 LUA_HASH='bebea9f48c2de34c63de241a5bf43819c2a41702a05a8dc57c2816ebca019523'
 ANALYSIS_ROOT='/opt/clab-analysis-root'
 
-def analysis_args(path,lua_id=None):
+def analysis_args(path,lua_id=None,isolated=False):
  props=['DynamicUser=yes','PrivateNetwork=yes','PrivateTmp=yes','PrivateDevices=yes','ProtectSystem=strict','ProtectHome=yes','NoNewPrivileges=yes','ProtectProc=invisible','MemoryMax=256M','TasksMax=16','RuntimeMaxSec=8','TimeoutStopSec=1','KillMode=control-group','LimitFSIZE=1048576','LimitCORE=0','BindReadOnlyPaths='+path+':/capture.pcap']
- if lua_id:
-  if lua_id!=LUA_ID:raise ValueError('INVALID_REQUEST')
+ if lua_id or isolated:
+  if lua_id is not None and lua_id!=LUA_ID:raise ValueError('INVALID_REQUEST')
   script=ANALYSIS_ROOT+'/reviewed/'+LUA_ID+'.lua'
   if hashlib.sha256(open(script,'rb').read()).hexdigest()!=LUA_HASH:raise ValueError('LUA_INTEGRITY')
   # Verify immutable install manifest on every reviewed run (not a caller-controlled root).
@@ -40,6 +40,21 @@ def bounded(args,timeout,limit=131072,filesize=LIMIT):
   out.seek(0);data=out.read(limit+1)
   if len(data)>limit:raise ValueError('OUTPUT_LIMIT')
   return code,data
+
+def analyze_file(path,x,isolated=False):
+ args=analysis_args(path,x.get('luaId'),isolated)
+ for f in ['frame.number','frame.time_relative','frame.len','ip.src','ip.dst','_ws.col.Protocol']:args+=['-e',f]
+ if x['displayFilter']:args+=['-Y',x['displayFilter']]
+ code,output=bounded(args,10)
+ packets=[];analysis='complete' if code==0 else 'unavailable'
+ if code==0:
+  for line in output.decode('utf8','replace').splitlines()[:100]:
+   cols=line.split('\t')
+   if len(cols)!=6 or not cols[0].isdigit() or not cols[2].isdigit():raise ValueError('MALFORMED_ANALYSIS')
+   safe=lambda s:re.sub(r'[\x00-\x1f\x7f]','',s)[:64]
+   packets.append(dict(number=int(cols[0]),seconds=safe(cols[1])[:32],bytes=int(cols[2]),source=safe(cols[3]),destination=safe(cols[4]),protocol=safe(cols[5])))
+ return {'packets':packets,'analysis':analysis,**({'lua':{'id':LUA_ID,'sha256':LUA_HASH}} if x.get('luaId') else {})}
+
 
 def collect(x):
  if set(x)-{'luaId'}!={'node','cid','namespace','item','endpointId','source','bundle','duration','snaplen','captureFilter','displayFilter'}:raise ValueError('INVALID_REQUEST')
@@ -87,18 +102,8 @@ def collect(x):
     if usec>=1000000 or inc>orig or inc>x['snaplen'] or pos+inc>len(data):raise ValueError('MALFORMED_CAPTURE')
     pos+=inc
    os.chmod(path,0o444)
-   args=analysis_args(path,x.get('luaId'))
-   for f in ['frame.number','frame.time_relative','frame.len','ip.src','ip.dst','_ws.col.Protocol']:args+=['-e',f]
-   if x['displayFilter']:args+=['-Y',x['displayFilter']]
-   code,output=bounded(args,10)
-   packets=[];analysis='complete' if code==0 else 'unavailable'
-   if code==0:
-    for line in output.decode('utf8','replace').splitlines()[:100]:
-     cols=line.split('\t')
-     if len(cols)!=6 or not cols[0].isdigit() or not cols[2].isdigit():raise ValueError('MALFORMED_ANALYSIS')
-     safe=lambda s:re.sub(r'[\x00-\x1f\x7f]','',s)[:64]
-     packets.append(dict(number=int(cols[0]),seconds=safe(cols[1])[:32],bytes=int(cols[2]),source=safe(cols[3]),destination=safe(cols[4]),protocol=safe(cols[5])))
-   return {'ok':True,'data':base64.b64encode(data).decode(),'limited':len(data)>=1000*1000,'packets':packets,'analysis':analysis,**({'lua':{'id':LUA_ID,'sha256':LUA_HASH}} if x.get('luaId') else {})}
+   analysis=analyze_file(path,x)
+   return {'ok':True,'data':base64.b64encode(data).decode(),'limited':len(data)>=1000*1000,**analysis}
  finally:lock.close()
 if __name__=='__main__':
  try:

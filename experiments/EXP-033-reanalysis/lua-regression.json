@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "case": "independent sequence filter excludes other sequence, short, wrong magic and version",
+      "outcome": "PASS"
+    },
+    {
+      "case": "exact valid occurrences, no malformed fields",
+      "outcome": "PASS"
+    },
+    {
+      "case": "unknown reviewed ID refusal",
+      "outcome": "PASS"
+    },
+    {
+      "case": "script integrity refusal",
+      "outcome": "PASS"
+    },
+    {
+      "case": "private file, proc-root escape, root write, shell and socket module refused",
+      "outcome": "PASS"
+    },
+    {
+      "case": "infinite Lua terminated by runtime budget",
+      "outcome": "PASS"
+    },
+    {
+      "case": "excessive script output refused",
+      "outcome": "PASS"
+    }
+  ],
+  "fixtureSha256": "a5d4c65442f0c436d0b3bbabefbe72f3fdfe6da11b4cf651818a069a2bf480e0",
+  "filterOutput": "1\t7\tCLABPROBE\n",
+  "boundaryOutput": "BOUNDARY_PASS\n1\n2\n3\n4\n5\n",
+  "deadlineSeconds": 8.171442808999927,
+  "outcome": "PASS"
+}

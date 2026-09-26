@@ -1,0 +1,1 @@
+Continue phase4 from A28: reanalyze current managed PCAP without recapture; exact artifact identity/hash/TTL, reviewed scripts only, finite analysis/cancellation. Preserve siblings and prior evidence; use a fresh dedicated VM and clean up/stop it. No uploads, arbitrary paths, persistent storage, serial or broader lifecycle.

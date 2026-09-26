@@ -1,0 +1,28 @@
+[WebServer] (node:19154) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 19 tests using 1 worker
+
+(node:19155) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/capture.spec.ts:6:1 › qualified exact endpoint capture produces safe metadata and managed download; Lua stays gated (479ms)
+  ✓   2 tests/browser/capture.spec.ts:9:1 › cancel is scoped to job and stale capture response cannot return artifact (1.1s)
+  ✓   3 tests/browser/capture.spec.ts:13:1 › reviewed Lua ID, hash provenance and filter are explicit; unknown scripts and arguments stay disabled (404ms)
+  ✓   4 tests/browser/capture.spec.ts:19:1 › reanalyze retained PCAP with current reviewed filter, no capture settings or expiry reset; invalid analysis retains download (524ms)
+  ✓   5 tests/browser/capture.spec.ts:23:1 › cancel reanalysis preserves original result and ignores late response; expiry hides download (1.1s)
+  ✓   6 tests/browser/log-workflow.spec.ts:5:1 › tail and literal filter are local, bounded, safe and distinguish no matches from empty source (559ms)
+  ✓   7 tests/browser/log-workflow.spec.ts:9:1 › clear cancels pending follow and refuses late output; unsupported errors stop follow and manual retry recovers (1.3s)
+  ✓   8 tests/browser/log-workflow.spec.ts:13:1 › expired session removes log binding and requires enrollment reconnect (339ms)
+  ✓   9 tests/browser/log-workflow.spec.ts:16:1 › timeout rejects even a transport that resolves after abort and stops following (334ms)
+  ✓  10 tests/browser/navigation.spec.ts:9:1 › disconnect refuses late configuration and snapshot replies, clears observations and log bindings (1.8s)
+  ✓  11 tests/browser/navigation.spec.ts:18:1 › replacement conflict invalidates selection and runtime; repeated evidence cannot masquerade as recovery (444ms)
+  ✓  12 tests/browser/navigation.spec.ts:26:1 › switching to a different recorded shape clears runtime and selections (298ms)
+  ✓  13 tests/browser/navigation.spec.ts:32:1 › native load checks approved source identity and keeps recorded evidence explicit on refusal (333ms)
+  ✓  14 tests/browser/node-logs.spec.ts:3:1 › logs load and follow safely; errors clear output, selection cancels and isolates, recovery works (1.6s)
+  ✓  15 tests/browser/workbench.spec.ts:4:1 › lab chooser first; exact handles, synchronized table selection, search and safe offline runtime (367ms)
+  ✓  16 tests/browser/workbench.spec.ts:5:1 › matched replay overlay refresh/failure/cancel/recovery preserves selection; stale and identity mismatch explicit (1.3s)
+  ✓  17 tests/browser/workbench.spec.ts:9:1 › keyboard selection, recorded disclosure, reduced-motion mobile reflow and local layout persistence (220ms)
+  ✓  18 tests/browser/workbench.spec.ts:10:1 › selected link capture drafts are occurrence-scoped, inert and include Lua settings (539ms)
+  ✓  19 tests/browser/workbench.spec.ts:18:1 › node log and serial views preserve unknown capability and do not imply runtime access (328ms)
+
+  19 passed (14.2s)

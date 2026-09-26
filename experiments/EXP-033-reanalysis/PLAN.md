@@ -1,0 +1,7 @@
+# EXP-033 — reanalysis acceptance before implementation
+
+Question: can the current memory-only PCAP be filtered/re-dissected without another native capture, while keeping its bytes, identity and original expiry?
+
+Independent expectations: request contains artifact ID, unique analysis job ID, exact source hash, display filter and optional reviewed ID only. No bytes, paths, capture settings or arbitrary arguments from browser. A captured mixed synthetic CLAB sequence7/8 stream yields different matching frame sets for filters7/8; zero matches and invalid filter are distinguishable. Hash/size/createdAt/expiresAt and downloadable bytes remain identical; analyzedAt is new. Original capture metadata remains immutable. Unknown/mismatched/expired/replaced artifacts, capability revocation and malformed output refuse publication. Expiry during analysis rejects completion and does not extend TTL. Cancelling reanalysis retains a still-valid original download; delayed cancellation does not cancel a new job. Concurrent capture/analysis returns BUSY. Node/session changes reject late GUI output. Test safe text, output limits, malformed PCAP and cleanup; no upload route. First100-frame limit still applies.
+
+Runtime: newly created RUNTIME-PAIR, synthetic UDP only, explicit setup; no old VM access. Stop test traffic, remove lab and stop VM on completion/failure. Ordinary tests never create VMs. Qualify initial capture and repeated analysis on the exact saved bytes; unit/replay mocks are separate from live evidence. Historical Q gates and177 denominator unchanged.
