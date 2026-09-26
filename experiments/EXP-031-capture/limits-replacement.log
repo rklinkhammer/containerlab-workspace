@@ -1,0 +1,58 @@
+22:25:30 INFO Applying node filter: ["right"]
+22:25:30 INFO Parsing & checking topology file=topology.clab.yml
+22:25:30 INFO Applying node filter: ["right"]
+22:25:30 INFO Parsing & checking topology file=topology.clab.yml
+22:25:30 INFO Destroying lab name=observation-slice
+22:25:30 INFO Stopping container: clab-observation-slice-right
+node:internal/child_process:1144
+    result.error = new ErrnoException(result.error, 'spawnSync ' + options.file);
+                   ^
+
+<ref *1> Error: spawnSync limactl ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1144:20)
+    at spawnSync (node:child_process:928:24)
+    at execFileSync (node:child_process:971:15)
+    at guest (file:///Users/rklinkhammer/workspace/containerlab-workspace/experiments/EXP-031-capture/limits-replacement.ts:3:30)
+    at file:///Users/rklinkhammer/workspace/containerlab-workspace/experiments/EXP-031-capture/limits-replacement.ts:8:49
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  errno: -60,
+  code: 'ETIMEDOUT',
+  syscall: 'spawnSync limactl',
+  path: 'limactl',
+  spawnargs: [
+    'shell',
+    'clab-load-20260926-021229-exp016',
+    'sudo',
+    'containerlab',
+    'destroy',
+    '--topo',
+    '/opt/observation-slice/topology.clab.yml',
+    '--node-filter',
+    'right',
+    '--keep-mgmt-net',
+    '--graceful'
+  ],
+  error: [Circular *1],
+  status: null,
+  signal: 'SIGTERM',
+  output: [
+    null,
+    '',
+    '22:25:30 INFO Applying node filter: ["right"]\n' +
+      '22:25:30 INFO Parsing & checking topology file=topology.clab.yml\n' +
+      '22:25:30 INFO Applying node filter: ["right"]\n' +
+      '22:25:30 INFO Parsing & checking topology file=topology.clab.yml\n' +
+      '22:25:30 INFO Destroying lab name=observation-slice\n' +
+      '22:25:30 INFO Stopping container: clab-observation-slice-right\n'
+  ],
+  pid: 41759,
+  stdout: '',
+  stderr: '22:25:30 INFO Applying node filter: ["right"]\n' +
+    '22:25:30 INFO Parsing & checking topology file=topology.clab.yml\n' +
+    '22:25:30 INFO Applying node filter: ["right"]\n' +
+    '22:25:30 INFO Parsing & checking topology file=topology.clab.yml\n' +
+    '22:25:30 INFO Destroying lab name=observation-slice\n' +
+    '22:25:30 INFO Stopping container: clab-observation-slice-right\n'
+}
+
+Node.js v26.8.1

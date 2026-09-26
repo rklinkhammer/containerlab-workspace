@@ -1,0 +1,7 @@
+import{z}from'zod';
+const hash=z.string().regex(/^[a-f0-9]{64}$/);
+export const captureRequest=z.strictObject({jobId:z.string().regex(/^[a-f0-9]{32}$/),deploymentId:hash,endpointId:z.string().min(1).max(160),filename:z.string().max(128).regex(/^[A-Za-z0-9][A-Za-z0-9_.-]*\.pcap$/),duration:z.number().int().min(1).max(10),snaplen:z.number().int().min(64).max(65535),captureFilter:z.string().max(1024).refine(s=>!/[\x00-\x1f\x7f]/.test(s)),displayFilter:z.string().max(1024).refine(s=>!/[\x00-\x1f\x7f]/.test(s))});
+export type CaptureRequest=z.infer<typeof captureRequest>;
+export const packet=z.strictObject({number:z.number().int().positive(),seconds:z.string().max(32),bytes:z.number().int().nonnegative(),source:z.string().max(64),destination:z.string().max(64),protocol:z.string().max(64)});
+export const captureResult=z.strictObject({contract:z.literal('capture/0.1'),id:z.string().regex(/^[a-f0-9]{32}$/),deploymentId:hash,endpointId:z.string().max(160),filename:z.string().max(128),sha256:hash,bytes:z.number().int().min(24).max(1048576),createdAt:z.iso.datetime(),expiresAt:z.iso.datetime(),limited:z.boolean(),packets:z.array(packet).max(100),analysis:z.enum(['complete','filter_rejected','unavailable']),completeness:z.literal('not_established')});
+export type CaptureResult=z.infer<typeof captureResult>;

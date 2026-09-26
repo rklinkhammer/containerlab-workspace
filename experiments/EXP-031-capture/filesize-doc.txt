@@ -1,0 +1,20 @@
+\fBfilesize\fP:\fIvalue\fP Stop writing to a capture file after it reaches a size of
+\fIvalue\fP kB. If this option is used together with the \-b option, dumpcap will
+stop writing to the current capture file and switch to the next one if filesize
+is reached.  Note that the filesize is limited to a maximum value of 2 GiB.
+.sp
+\fBpackets\fP:\fIvalue\fP Stop writing to a capture file after \fIvalue\fP packets
+have been written. Acts the same as \fB\-c\fP <capture packet count>.
+.RE
+.sp
+\-b|\-\-ring\-buffer  <capture ring buffer option>
+--
+requires either \fBduration\fP, \fBinterval\fP or \fBfilesize\fP to be specified to
+control when to go to the next file.  It should be noted that each \fB\-b\fP
+parameter takes exactly one criterion; to specify two criterion, each must be
+preceded by the \fB\-b\fP option.
+.sp
+\fBfilesize\fP:\fIvalue\fP switch to the next file after it reaches a size of
+\fIvalue\fP kB.  Note that the filesize is limited to a maximum value of 2 GiB.
+.sp
+\fBinterval\fP:\fIvalue\fP switch to the next file when the time is an exact

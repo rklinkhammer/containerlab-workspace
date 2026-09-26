@@ -1,0 +1,5 @@
+{
+  "vm": "clab-load-20260926-021229-exp016",
+  "outcome": "FAIL",
+  "reason": "The expression evaluated to a falsy value:\n\n  assert.ok(x.limited)\n"
+}

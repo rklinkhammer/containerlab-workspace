@@ -1,0 +1,2 @@
+User: continue with phase 4
+Implement exact enrolled endpoint capture, bounded managed PCAP artifacts and TShark filtering in approved inspector. Reviewed Lua remains separately gated: no arbitrary scripts. Preserve TT-01, identity/freshness, containment, disclosure, native authority and historical gates. Runtime qualification only in fresh task VM; clean lab and stop afterward. Siblings read-only. Port4173 only; no unrelated process termination.

@@ -1,0 +1,12 @@
+{
+  "vm": "clab-load-20260926-021229-exp016",
+  "cases": [],
+  "initialObservation": "observation/0.9",
+  "pins": {
+    "worker": "36191381a564e25bc065709a7aebc5b53070d4533ce4b5c2f3980e9a83b11c50  /opt/clab-capture.py",
+    "tools": "tshark 4.2.2-1.1build3\nwireshark-common 4.2.2-1.1build3\n",
+    "tshark": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3)."
+  },
+  "outcome": "FAIL",
+  "reason": "ASSOCIATION_CONFLICT"
+}

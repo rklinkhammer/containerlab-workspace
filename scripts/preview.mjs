@@ -1,3 +1,4 @@
+import {captureAPI,discardCapture} from '../backend/capture.ts';
 // Loopback preview plus approved-bundle native load API; no uploads or operational routes.
 import {nodeLogsAPI,stopNodeLogs} from '../backend/node-logs.ts';
 import {observationAPI,stopObservations} from '../backend/observation.ts';
@@ -12,6 +13,7 @@ const csp="default-src 'none'; script-src 'self'; style-src 'self'; style-src-el
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.png':'image/png'};
 const server=createServer(async(req,res)=>{
   res.setHeader('Content-Security-Policy',csp);res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Cache-Control','no-store');res.setHeader('Referrer-Policy','no-referrer');
+  if(await captureAPI(req,res,port))return;
   if(await nativeAPI(req,res,port))return;
   if(await nodeLogsAPI(req,res,port))return;
   if(await observationAPI(req,res,port))return;
@@ -27,7 +29,7 @@ const server=createServer(async(req,res)=>{
 let stopping=false;
 async function shutdown(){
  if(stopping)return;stopping=true;
- server.close();server.closeAllConnections();
+ discardCapture();server.close();server.closeAllConnections();
  await Promise.all([stopObservations(),stopNodeLogs()]);
 }
 process.on('SIGTERM',()=>void shutdown());

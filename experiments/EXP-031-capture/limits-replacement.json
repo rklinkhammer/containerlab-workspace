@@ -1,0 +1,15 @@
+{
+  "vm": "clab-load-20260926-021229-exp016",
+  "observedLimit": {
+    "bytes": 1000212,
+    "rows": 100,
+    "limited": true
+  },
+  "limit": {
+    "outcome": "PASS",
+    "bytes": 1000212,
+    "rows": 100
+  },
+  "outcome": "FAIL",
+  "reason": "spawnSync limactl ETIMEDOUT"
+}

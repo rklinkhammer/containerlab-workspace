@@ -1,0 +1,9 @@
+{
+  "vm": "clab-load-20260926-021229-exp016",
+  "oldId": "82debbacc8fd4cc7cf957ee4b9cf2be894d5bb5f0ebc1a05858f7d5020b29fec",
+  "forceStop": "already stopped/removed; native reconciliation follows",
+  "destroy": "",
+  "deploy": "{\n  \"observation-slice\": [\n    {\n      \"lab_name\": \"observation-slice\",\n      \"labPath\": \"/opt/observation-slice/topology.clab.yml\",\n      \"absLabPath\": \"/opt/observation-slice/topology.clab.yml\",\n      \"name\": \"clab-observation-slice-left\",\n      \"container_id\": \"fb4415f65ea5\",\n      \"image\": \"alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659\",\n      \"kind\": \"linux\",\n      \"state\": \"running\",\n      \"status\": \"Up 14 minutes\",\n      \"ipv4_address\": \"172.31.249.2/24\",\n      \"ipv6_address\": \"N/A\",\n      \"owner\": \"rklinkhammer\"\n    },\n    {\n      \"lab_name\": \"observation-slice\",\n      \"labPath\": \"/opt/observation-slice/topology.clab.yml\",\n      \"absLabPath\": \"/opt/observation-slice/topology.clab.yml\",\n      \"name\": \"clab-observation-slice-right\",\n      \"container_id\": \"54cc0280f1e8\",\n      \"image\": \"alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659\",\n      \"kind\": \"linux\",\n      \"state\": \"running\",\n      \"status\": \"Up Less than a second\",\n      \"ipv4_address\": \"172.31.249.3/24\",\n      \"ipv6_address\": \"N/A\",\n      \"owner\": \"rklinkhammer\"\n    }\n  ]\n}\n",
+  "newId": "54cc0280f1e8603b246ebaeb3816187644e433dd578f3df2e6916b6d4ea68fa2",
+  "outcome": "PASS"
+}

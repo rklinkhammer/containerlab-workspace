@@ -1,0 +1,19 @@
+
+> containerlab-synthetic-preview@0.1.0 build
+> npm run fixtures:native && npm run fixtures:declared && npm run typecheck && vite build
+
+
+> containerlab-synthetic-preview@0.1.0 fixtures:native
+> node scripts/project-native.ts
+
+Projected 58 verified native fixture records; no runtime executed.
+
+> containerlab-synthetic-preview@0.1.0 fixtures:declared
+> node scripts/project-declared.ts
+
+Projected 63 pinned declaration fixtures. No native execution.
+
+> containerlab-synthetic-preview@0.1.0 typecheck
+> tsc --noEmit
+
+backend/capture.ts(49,294): error TS18047: 'active' is possibly 'null'.

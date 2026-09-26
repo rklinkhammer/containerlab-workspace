@@ -1,0 +1,10 @@
+file:///Users/rklinkhammer/workspace/containerlab-workspace/backend/capture.ts:30
+  if(c.signal.aborted)throw Error('CANCELLED');if(!raw.ok)throw Error(codes.has(raw.code)?raw.code:'CAPTURE_FAILED');
+                                                                ^
+
+Error: ASSOCIATION_CONFLICT
+    at collectCapture (file:///Users/rklinkhammer/workspace/containerlab-workspace/backend/capture.ts:30:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///Users/rklinkhammer/workspace/containerlab-workspace/experiments/EXP-031-capture/qualify.ts:13:10
+
+Node.js v26.8.1

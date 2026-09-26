@@ -9,3 +9,5 @@
 .wb-capture input:not([type=checkbox]),.wb-capture textarea{display:block;width:100%;min-width:0;margin:6px 0 12px;padding:8px;border:1px solid #bbcbd7;border-radius:5px;background:white;color:var(--ink);font:inherit}.wb-capture textarea{resize:vertical}.wb-capture fieldset{min-width:0;border:1px solid var(--line);border-radius:5px;margin:14px 0;padding:10px}.wb-capture legend{font-size:11px;font-weight:600}.wb-capture>button{margin:4px 0}.wb-capture [role=alert]{font-size:11px;color:#923e20}.wb-capture textarea:focus-visible{outline:3px solid #b96e11;outline-offset:2px}
 .wb-console-empty{background:#172b3a;color:#cad9e3;border:1px solid #395065;border-radius:5px;padding:18px 12px;min-height:140px;margin:12px 0;font:12px/1.6 monospace;overflow-wrap:anywhere}
 .wb-log-output{background:#172b3a;color:#cad9e3;white-space:pre-wrap;overflow-wrap:anywhere;max-height:360px;overflow:auto;min-height:140px;padding:12px;border-radius:5px;font:12px/1.5 monospace}
+
+.wb-capture [aria-label="Capture result"]{overflow-wrap:anywhere;overflow:auto}.wb-capture table{width:100%;table-layout:fixed;font-size:10px}.wb-capture td,.wb-capture th{overflow-wrap:anywhere}

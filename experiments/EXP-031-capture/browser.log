@@ -1,0 +1,72 @@
+[WebServer] (node:40633) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 16 tests using 1 worker
+
+(node:40634) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 tests/browser/capture.spec.ts:5:1 › qualified exact endpoint capture produces safe metadata and managed download; Lua stays gated (30.0s)
+(node:40722) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 tests/browser/capture.spec.ts:8:1 › cancel is scoped to job and stale capture response cannot return artifact (30.0s)
+(node:40839) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 tests/browser/log-workflow.spec.ts:5:1 › tail and literal filter are local, bounded, safe and distinguish no matches from empty source (558ms)
+  ✓   4 tests/browser/log-workflow.spec.ts:9:1 › clear cancels pending follow and refuses late output; unsupported errors stop follow and manual retry recovers (1.3s)
+  ✓   5 tests/browser/log-workflow.spec.ts:13:1 › expired session removes log binding and requires enrollment reconnect (323ms)
+  ✓   6 tests/browser/log-workflow.spec.ts:16:1 › timeout rejects even a transport that resolves after abort and stops following (332ms)
+  ✓   7 tests/browser/navigation.spec.ts:9:1 › disconnect refuses late configuration and snapshot replies, clears observations and log bindings (1.8s)
+  ✓   8 tests/browser/navigation.spec.ts:18:1 › replacement conflict invalidates selection and runtime; repeated evidence cannot masquerade as recovery (450ms)
+  ✓   9 tests/browser/navigation.spec.ts:26:1 › switching to a different recorded shape clears runtime and selections (299ms)
+  ✓  10 tests/browser/navigation.spec.ts:32:1 › native load checks approved source identity and keeps recorded evidence explicit on refusal (332ms)
+  ✓  11 tests/browser/node-logs.spec.ts:3:1 › logs load and follow safely; errors clear output, selection cancels and isolates, recovery works (1.6s)
+  ✓  12 tests/browser/workbench.spec.ts:4:1 › lab chooser first; exact handles, synchronized table selection, search and safe offline runtime (345ms)
+  ✓  13 tests/browser/workbench.spec.ts:5:1 › matched replay overlay refresh/failure/cancel/recovery preserves selection; stale and identity mismatch explicit (1.3s)
+  ✓  14 tests/browser/workbench.spec.ts:9:1 › keyboard selection, recorded disclosure, reduced-motion mobile reflow and local layout persistence (216ms)
+  ✓  15 tests/browser/workbench.spec.ts:10:1 › selected link capture drafts are occurrence-scoped, inert and include Lua settings (555ms)
+  ✓  16 tests/browser/workbench.spec.ts:18:1 › node log and serial views preserve unknown capability and do not imply runtime access (344ms)
+
+
+  1) tests/browser/capture.spec.ts:5:1 › qualified exact endpoint capture produces safe metadata and managed download; Lua stays gated 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Start capture', exact: true })
+
+
+      4 | function result(x:any){return{contract:'capture/0.1',id:x.jobId,deploymentId,endpointId,filename:x.filename,sha256:'c'.repeat(64),bytes:128,createdAt:new Date().toISOString(),expiresAt:new Date(Date.now()+300000).toISOString(),limited:true,packets:[{number:1,seconds:'0.0',bytes:64,source:'192.0.2.1',destination:'192.0.2.2',protocol:'<script>bad</script>'}],analysis:'complete',completeness:'not_established'};}
+      5 | test('qualified exact endpoint capture produces safe metadata and managed download; Lua stays gated',async({page})=>{
+    > 6 |  let sent:any;await page.route('**/api/capture',r=>{sent=r.request().postDataJSON();return r.fulfill({json:{capture:result(sent)}});});await open(page);await page.getByLabel('Capture filter (BPF)',{exact:true}).fill('icmp');await page.getByLabel('TShark display filter',{exact:true}).fill('icmp');await page.getByRole('button',{name:'Start capture',exact:true}).click();await expect(page.getByLabel('Capture result')).toContainText('Byte limit reached');expect(sent.endpointId).toBe(endpointId);expect(sent.captureFilter).toBe('icmp');await expect(page.getByRole('link',{name:'Download trial.pcap'})).toHaveAttribute('href',`/api/capture/${sent.jobId}/download`);await expect(page.getByRole('cell',{name:'<script>bad</script>',exact:true})).toBeVisible();await page.getByLabel('Include Lua settings').check();await expect(page.getByRole('button',{name:'Start capture',exact:true})).toBeDisabled();await page.screenshot({path:'test-results/capture-operational.png',fullPage:true});await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
+        |                                                                                                                                                                                                                                                                                                                                                                           ^
+      7 | });
+      8 | test('cancel is scoped to job and stale capture response cannot return artifact',async({page})=>{
+      9 |  let sent:any,cancel:any;await page.route('**/api/capture',async r=>{sent=r.request().postDataJSON();await new Promise(resolve=>setTimeout(resolve,600));await r.fulfill({json:{capture:result(sent)}}).catch(()=>{});});await page.route('**/api/capture/cancel',r=>{cancel=r.request().postDataJSON();return r.fulfill({json:{cancelled:true}});});await open(page);await page.getByRole('button',{name:'Start capture',exact:true}).click();await page.getByRole('button',{name:'Cancel capture'}).click();await page.waitForTimeout(700);expect(cancel.jobId).toBe(sent.jobId);await expect(page.getByRole('link',{name:'Download trial.pcap'})).toHaveCount(0);await expect(page.getByText('Capture cancelled; no artifact retained.')).toBeVisible();
+        at /Users/rklinkhammer/workspace/containerlab-workspace/tests/browser/capture.spec.ts:6:363
+
+    Error Context: test-results/capture-qualified-exact-en-3d6c1-ed-download-Lua-stays-gated/error-context.md
+
+  2) tests/browser/capture.spec.ts:8:1 › cancel is scoped to job and stale capture response cannot return artifact 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Start capture', exact: true })
+
+
+       7 | });
+       8 | test('cancel is scoped to job and stale capture response cannot return artifact',async({page})=>{
+    >  9 |  let sent:any,cancel:any;await page.route('**/api/capture',async r=>{sent=r.request().postDataJSON();await new Promise(resolve=>setTimeout(resolve,600));await r.fulfill({json:{capture:result(sent)}}).catch(()=>{});});await page.route('**/api/capture/cancel',r=>{cancel=r.request().postDataJSON();return r.fulfill({json:{cancelled:true}});});await open(page);await page.getByRole('button',{name:'Start capture',exact:true}).click();await page.getByRole('button',{name:'Cancel capture'}).click();await page.waitForTimeout(700);expect(cancel.jobId).toBe(sent.jobId);await expect(page.getByRole('link',{name:'Download trial.pcap'})).toHaveCount(0);await expect(page.getByText('Capture cancelled; no artifact retained.')).toBeVisible();
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      10 | });
+      11 |
+        at /Users/rklinkhammer/workspace/containerlab-workspace/tests/browser/capture.spec.ts:9:424
+
+    Error Context: test-results/capture-cancel-is-scoped-t-d74dd-onse-cannot-return-artifact/error-context.md
+
+  2 failed
+    tests/browser/capture.spec.ts:5:1 › qualified exact endpoint capture produces safe metadata and managed download; Lua stays gated 
+    tests/browser/capture.spec.ts:8:1 › cancel is scoped to job and stale capture response cannot return artifact 
+  14 passed (1.2m)

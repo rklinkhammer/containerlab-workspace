@@ -1,0 +1,13 @@
+Error response from daemon: cannot kill container: 82debbacc8fd4cc7cf957ee4b9cf2be894d5bb5f0ebc1a05858f7d5020b29fec: No such container: 82debbacc8fd4cc7cf957ee4b9cf2be894d5bb5f0ebc1a05858f7d5020b29fec
+22:27:45 INFO Applying node filter: ["right"]
+22:27:45 INFO Parsing & checking topology file=topology.clab.yml
+22:27:45 INFO Containerlab started version=0.79.0
+22:27:45 INFO Parsing & checking topology file=topology.clab.yml
+22:27:45 INFO Applying link change without node lifecycle action node=left change="added link"
+22:27:45 INFO Creating lab directory path=/opt/observation-slice/clab-observation-slice
+22:27:45 INFO Creating node node=right
+22:27:45 INFO Creating container name=right
+22:27:45 INFO Creating link link="left:eth1 -- right:eth1"
+22:27:45 INFO Created link: left:eth1 ▪┄┄▪ right:eth1
+22:27:45 INFO Adding host entries path=/etc/hosts
+22:27:45 INFO Adding SSH config for nodes path=/etc/ssh/ssh_config.d/clab-observation-slice.conf

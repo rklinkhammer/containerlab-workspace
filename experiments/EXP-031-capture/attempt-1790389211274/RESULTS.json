@@ -1,0 +1,256 @@
+{
+  "vm": "clab-load-20260926-021229-exp016",
+  "cases": [
+    "native capture, bounded metadata and artifact hash PASS",
+    "invalid BPF refused PASS",
+    "empty capture retained, invalid analysis explicit PASS",
+    "active host cancellation PASS; guest deadline separate"
+  ],
+  "initialObservation": "observation/0.9",
+  "pins": {
+    "worker": "bf92ca57f2d19fe41f4010baa35657cadfb3cc6f4f3521a4fe5aa2625cecd35e  /opt/clab-capture.py",
+    "tools": "tshark 4.2.2-1.1build3\nwireshark-common 4.2.2-1.1build3\n",
+    "tshark": "TShark (Wireshark) 4.2.2 (Git v4.2.2 packaged as 4.2.2-1.1build3)."
+  },
+  "capture": {
+    "contract": "capture/0.1",
+    "id": "ad6800acffedd896e98cc103c26e71ab",
+    "deploymentId": "9d23988dfcad7e390053e1c3c78582da649584f93d79b6389ad25f990d3915e5",
+    "endpointId": "ad2b73d808030a3b3fb7a673b97c50b8915d6dd7aa99f10c0fd2efced68fceca:l0:endpoint:0",
+    "filename": "trial.pcap",
+    "sha256": "e11a7c51e6074393e2e9a3d40c49cf0503c44ccadcfa77a1f9fb778da1827b3b",
+    "bytes": 3216,
+    "createdAt": "2026-09-26T02:20:15.248Z",
+    "expiresAt": "2026-09-26T02:25:15.249Z",
+    "limited": false,
+    "packets": [
+      {
+        "number": 1,
+        "seconds": "0.000000000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 2,
+        "seconds": "0.000024000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 3,
+        "seconds": "0.204958000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 4,
+        "seconds": "0.204989000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 5,
+        "seconds": "0.409734000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 6,
+        "seconds": "0.409768000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 7,
+        "seconds": "0.611183000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 8,
+        "seconds": "0.611224000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 9,
+        "seconds": "0.811501000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 10,
+        "seconds": "0.811521000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 11,
+        "seconds": "1.018707000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 12,
+        "seconds": "1.018730000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 13,
+        "seconds": "1.221353000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 14,
+        "seconds": "1.221386000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 15,
+        "seconds": "1.424665000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 16,
+        "seconds": "1.424684000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 17,
+        "seconds": "1.634913000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 18,
+        "seconds": "1.634946000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 19,
+        "seconds": "1.838152000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 20,
+        "seconds": "1.838185000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 21,
+        "seconds": "2.040874000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 22,
+        "seconds": "2.040905000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 23,
+        "seconds": "2.250678000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 24,
+        "seconds": "2.250741000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 25,
+        "seconds": "2.460856000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 26,
+        "seconds": "2.460878000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 27,
+        "seconds": "2.667769000",
+        "bytes": 98,
+        "source": "192.0.2.1",
+        "destination": "192.0.2.2",
+        "protocol": "ICMP"
+      },
+      {
+        "number": 28,
+        "seconds": "2.667834000",
+        "bytes": 98,
+        "source": "192.0.2.2",
+        "destination": "192.0.2.1",
+        "protocol": "ICMP"
+      }
+    ],
+    "analysis": "complete",
+    "completeness": "not_established"
+  },
+  "outcome": "PASS"
+}

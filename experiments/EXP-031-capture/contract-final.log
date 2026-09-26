@@ -1,0 +1,12 @@
+✔ capture request bounds and path/command separation (0.794833ms)
+✔ capture target resolves only frozen Linux endpoint identity (0.236833ms)
+✔ capture metadata rejects oversized artifacts and unreviewed packet fields (1.406667ms)
+✔ capture HTTP rejects cross-origin and path/size input before any native operation (19.824875ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 148.679875

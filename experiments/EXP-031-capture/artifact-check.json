@@ -1,0 +1,5 @@
+{
+  "outcome": "PASS",
+  "method": "actual empty capture; injected host clock beyond TTL; restoration cannot resurrect artifact",
+  "bytes": 24
+}

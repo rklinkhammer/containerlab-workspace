@@ -1,0 +1,5 @@
+
+> containerlab-synthetic-preview@0.1.0 preview
+> node scripts/preview.mjs
+
+Local preview: http://127.0.0.1:4173
