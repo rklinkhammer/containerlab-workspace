@@ -1,0 +1,8 @@
+{
+  "cliProfile": "containerized-private-pid",
+  "image": "sha256:a61e144f6c2e1b932626a4a8d0848a2ec8d3177b1339dba11e0c3d90d9eecdb9",
+  "boot": "NOT_RUN",
+  "discovery": "NOT_RUN",
+  "outcome": "FAIL",
+  "error": "Command '['limactl', 'shell', 'clab-serial-20260926-140705-exp036', 'sudo', 'docker', 'run', '--rm', '--privileged', '--network', 'host', '--memory', '256m', '--pids-limit', '128', '-v', '/var/run/docker.sock:/var/run/docker.sock', '-v', '/var/run/netns:/v"
+}

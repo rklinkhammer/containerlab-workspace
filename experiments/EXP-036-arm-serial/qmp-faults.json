@@ -1,0 +1,23 @@
+[
+  {
+    "case": "silent",
+    "outcome": "PASS",
+    "durationSeconds": 3.09,
+    "exit": 1,
+    "reason": "TimeoutError"
+  },
+  {
+    "case": "malformed",
+    "outcome": "PASS",
+    "durationSeconds": 0.08,
+    "exit": 1,
+    "reason": "JSONDecodeError"
+  },
+  {
+    "case": "oversized",
+    "outcome": "PASS",
+    "durationSeconds": 0.08,
+    "exit": 1,
+    "reason": "OUTPUT_LIMIT"
+  }
+]

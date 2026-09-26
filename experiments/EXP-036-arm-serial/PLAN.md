@@ -1,0 +1,10 @@
+# EXP-036 — ARM appliance boot and serial backing
+
+Written expectations before execution. Scope: disposable appliance fixture, not a production vrnetlab replacement. A31 demonstrated the stock Ubuntu launcher/base cannot simply be reused for ARM/KVM. Use a minimal independent fixed QEMU launcher to isolate firmware/guest and backing questions. Native lifecycle and GUI enrollment remain distinct gates.
+
+1. Verify A31 hashes; preserve all existing work. New unique VZ/aarch64 VM only, pinned Ubuntu image, nested KVM, no host mounts/agent forwarding/port publication; finite45-minute lease. Stop on completion/failure.
+2. Pin Docker base by pulled immutable digest before build. Install explicitly recorded QEMU/AAVMF package versions; record full package inventory, firmware hashes and built image ID. Guest original matches A31 Ubuntu ARM SHA256; writable overlay separate. No upstream modification.
+3. Actual guest must emit a fixed cloud-init completion marker to ttyAMA0 within180seconds, with KVM enabled and QMP running. Process-only running is insufficient. No guest network, credentials or interactive login provisioned.
+4. Read-only discovery prototype must correlate the exact running image/container ID, fixed QEMU process arguments, QMP chardev inventory and serial binding. Never infer serial from exposed ports. QMP monitor and controlled ordinary Unix listener must not be classified serial. No console input; recording of synthetic boot output stays ephemeral and only booleans/hashes enter evidence.
+5. Unknown image, malformed/partial inventory, changed identity, absent serial, expired evidence and oversized output must fail closed in independent fixture tests. No new production GUI capability until native generic_vm enrollment and discovery boundaries pass.
+6. Budget: one guest,2 vCPU,768MiB inner memory, bounded180second boot,64KiB QMP inventory, no external guest traffic. Cleanup exact owned container/process/temp files, then stop new VM. Failed attempts retained. No original four-radio or sibling modification.

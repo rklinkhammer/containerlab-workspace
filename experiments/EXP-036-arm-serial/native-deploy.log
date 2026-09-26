@@ -1,0 +1,12 @@
+14:18:15 INFO Containerlab started version=0.79.0
+14:18:15 INFO Parsing & checking topology file=native.clab.yml
+14:18:15 INFO Creating lab directory path=/tmp/exp036/clab-exp036-serial-native
+14:18:15 INFO Creating container name=guest
+14:18:15 ERRO container "clab-exp036-serial-native-guest" exited immediately with no log output
+14:18:15 ERRO node "guest" deploy: namespace path not available for container "clab-exp036-serial-native-guest"
+          
+   ERROR  
+          
+  Deployment failed for one or more nodes: node "guest" deploy: namespace path not available for container "clab-     
+  exp036-serial-native-guest".                                                                                        
+

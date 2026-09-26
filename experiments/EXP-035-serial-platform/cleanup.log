@@ -1,0 +1,7 @@
+time="2026-09-26T09:54:30-04:00" level=info msg="Sending SIGINT to hostagent process 28230"
+time="2026-09-26T09:54:30-04:00" level=info msg="Waiting for the host agent and the driver processes to shut down"
+time="2026-09-26T09:54:30-04:00" level=info msg="[hostagent] Received SIGINT, shutting down the host agent"
+time="2026-09-26T09:54:30-04:00" level=info msg="[hostagent] Shutting down the host agent"
+time="2026-09-26T09:54:30-04:00" level=info msg="[hostagent] Shutting down VZ"
+time="2026-09-26T09:55:00-04:00" level=info msg="Waiting for the instance to shut down"
+time="2026-09-26T09:55:00-04:00" level=info msg="The instance clab-serial-20260926-134839-exp035 has shut down"

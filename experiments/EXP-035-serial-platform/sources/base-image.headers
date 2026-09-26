@@ -1,0 +1,11 @@
+HTTP/2 200 
+content-length: 1789
+content-type: application/vnd.docker.distribution.manifest.v2+json
+docker-content-digest: sha256:57f36ae1cf44a78a6b2cad35a6276565c56edfd28e8160ae9a772929db28fd6d
+docker-distribution-api-version: registry/2.0
+etag: "sha256:57f36ae1cf44a78a6b2cad35a6276565c56edfd28e8160ae9a772929db28fd6d"
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+date: Sat, 26 Sep 2026 13:50:10 GMT
+x-github-request-id: D48E:193E16:1509E19:183F5AC:6AB7CD92
+x-github-edge-region: iad
+

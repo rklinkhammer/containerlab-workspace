@@ -1,0 +1,7 @@
+{
+  "image": "sha256:a61e144f6c2e1b932626a4a8d0848a2ec8d3177b1339dba11e0c3d90d9eecdb9",
+  "boot": "NOT_RUN",
+  "discovery": "NOT_RUN",
+  "outcome": "FAIL",
+  "error": "Command '['limactl', 'shell', 'clab-serial-20260926-140705-exp036', 'sudo', '/tmp/exp036/containerlab', 'deploy', '-t', '/tmp/exp036/native.clab.yml']' returned non-zero exit status 1."
+}

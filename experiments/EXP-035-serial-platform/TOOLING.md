@@ -1,0 +1,1 @@
+Initial Python urllib source fetch failed certificate-chain verification before data retrieval. Retained as a tooling failure, not product evidence. Switched to system curl with ordinary TLS verification (no insecure flag), which retrieved pinned HTTPS sources successfully. No system trust-store change was made.

@@ -1,0 +1,9 @@
+name: exp036-serial-native
+topology:
+  nodes:
+    guest:
+      kind: generic_vm
+      image: exp036-arm-serial:qualified-candidate
+      network-mode: none
+      memory: 1536MiB
+      cpu: 2

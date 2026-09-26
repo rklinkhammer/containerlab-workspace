@@ -1,0 +1,6 @@
+{
+  "id": "sha256:a61e144f6c2e1b932626a4a8d0848a2ec8d3177b1339dba11e0c3d90d9eecdb9",
+  "architecture": "arm64",
+  "base": "ubuntu@sha256:008173c23f95b170204355c12626cb5a965d779a7e1283b09e9cffbb1bf33ca3",
+  "guestSha256": "7df0201546f75b8bcc1044594c806c35749421ad3c9bc1be2a3ab806cfae39cc"
+}

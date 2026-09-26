@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/rklinkhammer/workspace/containerlab-workspace/experiments/EXP-036-arm-serial/native_runtime.py", line 12, in <module>
+    subprocess.run(['limactl','shell',v,'sudo','/tmp/exp036/containerlab','deploy','-t','/tmp/exp036/native.clab.yml'],stdout=f,stderr=subprocess.STDOUT,check=True,timeout=90)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['limactl', 'shell', 'clab-serial-20260926-140705-exp036', 'sudo', '/tmp/exp036/containerlab', 'deploy', '-t', '/tmp/exp036/native.clab.yml']' returned non-zero exit status 1.

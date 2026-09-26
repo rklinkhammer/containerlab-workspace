@@ -1,0 +1,27 @@
+{
+  "outcome": "PASS",
+  "actualQmp": {
+    "kvm": {
+      "enabled": true,
+      "present": true
+    },
+    "status": {
+      "status": "prelaunch",
+      "singlestep": false,
+      "running": false
+    },
+    "chardev": [
+      {
+        "frontend-open": true,
+        "filename": "unix:/run/appliance/qmp.sock,server=on",
+        "label": "compat_monitor0"
+      }
+    ]
+  },
+  "result": {
+    "status": "unsupported",
+    "reason": "SERIAL_MAPPING_UNQUALIFIED",
+    "consoles": []
+  },
+  "ordinaryListenerExists": true
+}

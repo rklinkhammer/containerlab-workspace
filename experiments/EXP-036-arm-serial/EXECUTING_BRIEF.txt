@@ -1,0 +1,1 @@
+User: continue with phase 6. Continue A31 with actual ARM appliance/guest qualification and serial backing investigation; preserve existing changes, historical Q gates and sibling evidence. No old VM access. Serial transport and second four-radio configuration remain downstream of successful platform/discovery qualification.

@@ -1,0 +1,39 @@
+qemu-system-arm:
+  Installed: (none)
+  Candidate: 1:8.2.2+ds-0ubuntu1.18
+  Version table:
+     1:8.2.2+ds-0ubuntu1.18 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages
+     1:8.2.2+ds-0ubuntu1.16 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages
+     1:8.2.2+ds-0ubuntu1 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 Packages
+qemu-utils:
+  Installed: (none)
+  Candidate: 1:8.2.2+ds-0ubuntu1.18
+  Version table:
+     1:8.2.2+ds-0ubuntu1.18 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages
+     1:8.2.2+ds-0ubuntu1.16 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages
+     1:8.2.2+ds-0ubuntu1 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 Packages
+qemu-efi-aarch64:
+  Installed: (none)
+  Candidate: 2024.02-2ubuntu0.9
+  Version table:
+     2024.02-2ubuntu0.9 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages
+     2024.02-2ubuntu0.7 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages
+     2024.02-2 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 Packages
+python3:
+  Installed: (none)
+  Candidate: 3.12.3-0ubuntu2.1
+  Version table:
+     3.12.3-0ubuntu2.1 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages
+        500 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages
+     3.12.3-0ubuntu1 500
+        500 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 Packages

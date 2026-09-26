@@ -1,0 +1,42 @@
+{
+  "revision": "A32",
+  "status": "PARTIAL",
+  "hardware_feasibility": "PASS",
+  "stock_appliance_candidate": "BLOCKED_ARCHITECTURE",
+  "host": {
+    "model": "Mac16,5",
+    "cpu": "Apple M4 Max",
+    "arch": "arm64",
+    "macos": "27.0 (26A428)",
+    "lima": "2.2.0"
+  },
+  "outer_vm": {
+    "type": "vz",
+    "arch": "aarch64",
+    "nestedVirtualization": true,
+    "status": "Stopped"
+  },
+  "vrnetlab_commit": "4baf0a6fc0b035775f9c6eda398f8867b7e83a65",
+  "native_containerlab_commit": "5ae50094a3afd70e4e1674fe5385e64d8979da26",
+  "stock_base": "ghcr.io/srl-labs/vrnetlab-base@sha256:57f36ae1cf44a78a6b2cad35a6276565c56edfd28e8160ae9a772929db28fd6d",
+  "stock_base_arch": "amd64",
+  "proposed_guest_url": "https://cloud-images.ubuntu.com/releases/noble/release-20260705/ubuntu-24.04-server-cloudimg-arm64.img",
+  "guest_sha256": "7df0201546f75b8bcc1044594c806c35749421ad3c9bc1be2a3ab806cfae39cc",
+  "guest_note": "Actual inner ARM cloud-init boot passed under KVM; no guest networking",
+  "final_appliance_digest": null,
+  "firmware_pin": {
+    "package": "qemu-efi-aarch64=2024.02-2ubuntu0.9",
+    "hashes": "experiments/EXP-036-arm-serial/firmware.txt"
+  },
+  "inner_guest_boot": "PASS_EXPERIMENTAL_FIXED_IMAGE",
+  "serial_discovery": "PASS_EXPERIMENT_ONLY_NOT_PUBLIC_API",
+  "console_transport": "NOT_RUN",
+  "runtime_evidence": "experiments/EXP-036-arm-serial/runtime-1790432197.json",
+  "experimental_appliance_image_id": "sha256:a61e144f6c2e1b932626a4a8d0848a2ec8d3177b1339dba11e0c3d90d9eecdb9",
+  "experimental_base": "ubuntu@sha256:008173c23f95b170204355c12626cb5a965d779a7e1283b09e9cffbb1bf33ca3",
+  "native_lifecycle": "BLOCKED_ARM_HOST_CHECK_AND_PRIVATE_PID_NAMESPACE",
+  "native_evidence": [
+    "experiments/EXP-036-arm-serial/native-runtime-1790432220.json",
+    "experiments/EXP-036-arm-serial/native-runtime-1790432295.json"
+  ]
+}

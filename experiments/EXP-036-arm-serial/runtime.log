@@ -1,0 +1,85 @@
+{
+  "image": "sha256:a61e144f6c2e1b932626a4a8d0848a2ec8d3177b1339dba11e0c3d90d9eecdb9",
+  "boot": "PASS",
+  "discovery": {
+    "status": "available",
+    "reason": "FIXED_IMAGE_SERIAL_BACKING",
+    "consoles": [
+      {
+        "label": "Guest serial 0"
+      }
+    ]
+  },
+  "containerId": "43f4076ca5c9af781795d360146049155cc0fa352f1331ab20bc6e650cbb632f",
+  "bootEvidence": {
+    "ready": true,
+    "bytes": 81576,
+    "sha256": "56af233ed7475cdd86d0db94b79f34528046c7867ed26f4a559c083e15822bae"
+  },
+  "bootSeconds": 175.85,
+  "qmp": {
+    "kvm": {
+      "enabled": true,
+      "present": true
+    },
+    "status": {
+      "status": "running",
+      "singlestep": false,
+      "running": true
+    },
+    "chardev": [
+      {
+        "frontend-open": true,
+        "filename": "unix:/run/appliance/qmp.sock,server=on",
+        "label": "compat_monitor0"
+      },
+      {
+        "frontend-open": true,
+        "filename": "disconnected:unix:/run/appliance/serial.sock,server=on",
+        "label": "serial0"
+      }
+    ]
+  },
+  "identity": {
+    "container": "43f4076ca5c9af781795d360146049155cc0fa352f1331ab20bc6e650cbb632f",
+    "image": "sha256:a61e144f6c2e1b932626a4a8d0848a2ec8d3177b1339dba11e0c3d90d9eecdb9",
+    "pid": 6871,
+    "startTime": "2026-09-26T14:13:41.540335228Z"
+  },
+  "argv": [
+    "qemu-system-aarch64",
+    "-accel",
+    "kvm",
+    "-cpu",
+    "host",
+    "-machine",
+    "virt",
+    "-smp",
+    "2",
+    "-m",
+    "768",
+    "-display",
+    "none",
+    "-nodefaults",
+    "-no-reboot",
+    "-drive",
+    "if=pflash,format=raw,readonly=on,file=/usr/share/AAVMF/AAVMF_CODE.fd",
+    "-drive",
+    "if=pflash,format=raw,file=/run/appliance/vars.fd",
+    "-drive",
+    "if=none,id=osdisk,file=/run/appliance/disk.qcow2,format=qcow2",
+    "-device",
+    "virtio-blk-pci,drive=osdisk",
+    "-drive",
+    "if=none,id=seed,file=/opt/seed.iso,format=raw,readonly=on",
+    "-device",
+    "virtio-blk-pci,drive=seed",
+    "-chardev",
+    "socket,id=serial0,path=/run/appliance/serial.sock,server=on,wait=off,logfile=/run/appliance/serial.log",
+    "-serial",
+    "chardev:serial0",
+    "-qmp",
+    "unix:/run/appliance/qmp.sock,server=on,wait=off"
+  ],
+  "outcome": "PASS"
+}

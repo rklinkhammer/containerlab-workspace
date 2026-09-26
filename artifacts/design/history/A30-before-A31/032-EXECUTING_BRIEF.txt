@@ -1,0 +1,1 @@
+User: continue with phase6a. Pin/inspect freely distributable guest and launcher; qualify platform architecture feasibility using fresh dedicated VM only. No serial GUI transport, no sibling changes, no reuse of prior VMs. Stop new VM and preserve precise blockers.

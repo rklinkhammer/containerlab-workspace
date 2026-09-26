@@ -1,0 +1,74 @@
+[
+  {
+    "path": "IMPLEMENTATION_HANDOFF.md",
+    "priorSha256": "3cb36d514a9a353465170903af6dd77a83d817f2cda66714b8c027bea0b7d4e9",
+    "sha256": "9a0b763e847e316d086b3dc4a2e541464fb4aef64624fceb6c635b2831002431",
+    "bytes": 20514
+  },
+  {
+    "path": "README.md",
+    "priorSha256": "cb8f6871b8fe5f593075548144eb150f5d5e0eb2b57b9ed9f2f9db5dc78f09e5",
+    "sha256": "8f3bbc6b88eee1cf56a498ffc607db832d5025e300885ccc7c90df05abd481d3",
+    "bytes": 24308
+  },
+  {
+    "path": "artifacts/design/ARCHITECTURE.md",
+    "priorSha256": "9fa41d751e329582aecac24112aec8b9bcae2e76ba68f1f1ec556fc5d006878b",
+    "sha256": "d608adb37fe840ccb6736ce508cc813faffdc88fee8869d1f5c55a230149435e",
+    "bytes": 85610
+  },
+  {
+    "path": "artifacts/design/DECISIONS.md",
+    "priorSha256": "01ce246d2270b136499a3365592859d2f4e2178a334ba128396a96d3e9c0d655",
+    "sha256": "d9784c669893731ad492445db71e518c5a67f9c0c0966aa9aa988194c682380e",
+    "bytes": 67309
+  },
+  {
+    "path": "artifacts/design/GUI_CONTINUATION.md",
+    "priorSha256": "c61ad0b8204ea00c5df49bd253b72155af88756ea64093ff200b3df959ea279c",
+    "sha256": "c9568b5bad13f9b4b8300f50c278e18af5fb1612fd5aebb0ed49eea7476786e5",
+    "bytes": 7872
+  },
+  {
+    "path": "artifacts/design/IMPLEMENTATION_PLAN.md",
+    "priorSha256": "f66c2d87bb29131428aca7a6f445250c362cf95ffb27cc4e17c038c620e088f4",
+    "sha256": "77df5ba1c69df0bfffbeebd46f79946d210640efc6511dc3b839a47c7f6e01e4",
+    "bytes": 60536
+  },
+  {
+    "path": "artifacts/design/P1A_BACKLOG.md",
+    "priorSha256": "cb3f4588168041092b91326fe146dd81ad1e5032404c82b57d9fe27a6c5adfe6",
+    "sha256": "21f374c1a7bd8d9b7119f9adc60683a942430374d3ec444b73623c6847bcf7fc",
+    "bytes": 37203
+  },
+  {
+    "path": "artifacts/design/READINESS.md",
+    "priorSha256": "4a2d7910143ba6c2d4d21965cd80ebf87e50d4dc5f6c74e367ec4e46873b9760",
+    "sha256": "e6caa2452bdda371a88c76a706e33de9d2af976a4000e6afeb818cffa89012bf",
+    "bytes": 42804
+  },
+  {
+    "path": "artifacts/design/README.md",
+    "priorSha256": "160a1cd38a14e4ae726037ca02eeaf453ccd3bfe6bb68d226807c44a54b7d336",
+    "sha256": "4538abcdd093a205b0087bba0f90c78d21549084d2588c1c361da7ffaf5d04f9",
+    "bytes": 31176
+  },
+  {
+    "path": "artifacts/design/TRACEABILITY.md",
+    "priorSha256": "7c427c58e9fbea50100716f8b411d17fd8e153b655262af243edb5d47a604def",
+    "sha256": "38cd15bd7bfa7b0b67e510ea04b8c8dffd0e59c82b9d0c26e530038efe429696",
+    "bytes": 50733
+  },
+  {
+    "path": "artifacts/implementation/A30/RESULTS.md",
+    "priorSha256": null,
+    "sha256": "bd1e47550f2251eab6a3dc5e0155a850898b78a65b69537453cbc4bc5aaf7063",
+    "bytes": 3749
+  },
+  {
+    "path": "artifacts/implementation/RESULTS.md",
+    "priorSha256": "cf1ba0bbac9a0c5b99fd1b70e6d56780ec422750476b98c22d1f90341edc447d",
+    "sha256": "ff1f54e4d39e78bd21f7b13eac17a2cae3bc803a87b2ba5840c11693096ae8a6",
+    "bytes": 14675
+  }
+]

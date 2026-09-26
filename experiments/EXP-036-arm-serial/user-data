@@ -1,0 +1,6 @@
+#cloud-config
+users: []
+disable_root: true
+ssh_pwauth: false
+runcmd:
+  - [sh, -c, 'echo EXP036_GUEST_READY > /dev/ttyAMA0']

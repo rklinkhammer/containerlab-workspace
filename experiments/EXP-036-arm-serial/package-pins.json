@@ -1,0 +1,6 @@
+{
+  "qemu-system-arm": "1:8.2.2+ds-0ubuntu1.18",
+  "qemu-utils": "1:8.2.2+ds-0ubuntu1.18",
+  "qemu-efi-aarch64": "2024.02-2ubuntu0.9",
+  "python3": "3.12.3-0ubuntu2.1"
+}

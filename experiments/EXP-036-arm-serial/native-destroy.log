@@ -1,0 +1,6 @@
+10:19:01 INFO Parsing & checking topology file=native.clab.yml
+10:19:01 INFO Parsing & checking topology file=native.clab.yml
+10:19:01 INFO Destroying lab name=exp036-serial-native
+10:19:01 INFO Removed container name=clab-exp036-serial-native-guest
+10:19:01 INFO Removing host entries path=/etc/hosts
+10:19:01 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-exp036-serial-native.conf

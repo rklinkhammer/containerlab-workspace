@@ -1,0 +1,6 @@
+Mac16,5
+Apple M4 Max
+ProductName:		macOS
+ProductVersion:		27.0
+BuildVersion:		26A428
+limactl version 2.2.0

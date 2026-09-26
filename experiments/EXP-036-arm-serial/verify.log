@@ -1,0 +1,1 @@
+PASS: source hashes; actual boot/backing and negative/fault outcomes; preserved failures; image identity; empty containers; stopped VM

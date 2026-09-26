@@ -1,0 +1,64 @@
+{
+  "architecture": "aarch64",
+  "kernel": "6.8.0-134-generic",
+  "kvmDevice": true,
+  "cases": [
+    {
+      "arch": "aarch64",
+      "command": [
+        "qemu-system-aarch64",
+        "-accel",
+        "kvm",
+        "-cpu",
+        "host",
+        "-machine",
+        "virt",
+        "-smp",
+        "1",
+        "-m",
+        "128",
+        "-S",
+        "-display",
+        "none",
+        "-nodefaults",
+        "-qmp",
+        "stdio"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"QMP\": {\"version\": {\"qemu\": {\"micro\": 2, \"minor\": 2, \"major\": 8}, \"package\": \"Debian 1:8.2.2+ds-0ubuntu1.18\"}, \"capabilities\": [\"oob\"]}}\n{\"return\": {}}\n{\"return\": {\"enabled\": true, \"present\": true}}\n{\"return\": {\"status\": \"prelaunch\", \"singlestep\": false, \"running\": false}}\n{\"timestamp\": {\"seconds\": 1790430837, \"microseconds\": 897513}, \"event\": \"SHUTDOWN\", \"data\": {\"guest\": false, \"reason\": \"host-qmp-quit\"}}\n{\"return\": {}}\n",
+      "stderr": "",
+      "kvmEnabled": true,
+      "paused": true,
+      "outcome": "PASS"
+    },
+    {
+      "arch": "x86_64",
+      "command": [
+        "qemu-system-x86_64",
+        "-accel",
+        "kvm",
+        "-cpu",
+        "host",
+        "-machine",
+        "pc",
+        "-smp",
+        "1",
+        "-m",
+        "128",
+        "-S",
+        "-display",
+        "none",
+        "-nodefaults",
+        "-qmp",
+        "stdio"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "qemu-system-x86_64: -accel kvm: invalid accelerator kvm\n",
+      "outcome": "PASS_EXPECTED_REFUSAL"
+    }
+  ],
+  "kvmApi": 12,
+  "outcome": "PASS"
+}
+

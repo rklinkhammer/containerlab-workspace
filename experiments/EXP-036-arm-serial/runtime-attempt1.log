@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/rklinkhammer/workspace/containerlab-workspace/experiments/EXP-036-arm-serial/runtime.py", line 31, in <module>
+    assert result['discovery']['status']=='available',result['discovery']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'status': 'unavailable', 'reason': 'SERIAL_BACKING_UNCONFIRMED', 'consoles': []}

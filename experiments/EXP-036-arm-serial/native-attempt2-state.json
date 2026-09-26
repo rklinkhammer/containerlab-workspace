@@ -1,0 +1,23 @@
+{
+  "id": "ff117c171defc04fc581d92bbc22dcbfe4dfabfbb8c8dc487ec979d1b354d983",
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 10222,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-26T14:18:15.626412792Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "path": "/usr/bin/python3",
+  "entrypoint": [
+    "/usr/bin/python3",
+    "/opt/launcher.py"
+  ],
+  "runtime": "runc",
+  "privileged": true
+}

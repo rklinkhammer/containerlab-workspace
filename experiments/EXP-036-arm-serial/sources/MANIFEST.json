@@ -1,0 +1,32 @@
+[
+  {
+    "path": "qemu-v8.2.2-char.json",
+    "url": "https://raw.githubusercontent.com/qemu/qemu/v8.2.2/qapi/char.json",
+    "sha256": "bcee0bba17cfda4406c89abfeae210f86865d5f6d07ef79ac91d17352b1c9eea"
+  },
+  {
+    "path": "qemu-v8.2.2-virt.rst",
+    "url": "https://raw.githubusercontent.com/qemu/qemu/v8.2.2/docs/system/arm/virt.rst",
+    "sha256": "87c4dad29a1818b06bb98bd422463bc417e2dcebb43f1f51ca32f164c0f24ef1"
+  },
+  {
+    "path": "qemu-v8.2.2-char-socket.c",
+    "url": "https://raw.githubusercontent.com/qemu/qemu/v8.2.2/chardev/char-socket.c",
+    "sha256": "6926e23642846e3ad4ac544adbe49b982ed0f3d57311994be1a38ba8124c132f"
+  },
+  {
+    "path": "containerlab-virt.go",
+    "url": "https://raw.githubusercontent.com/srl-labs/containerlab/5ae50094a3afd70e4e1674fe5385e64d8979da26/virt/virt.go",
+    "sha256": "4149de643656b96077899962b40dfbf2368dbeec818dc68fc54a1c043177482a"
+  },
+  {
+    "path": "containerlab-install.md",
+    "url": "https://raw.githubusercontent.com/srl-labs/containerlab/5ae50094a3afd70e4e1674fe5385e64d8979da26/docs/install.md",
+    "sha256": "849b449267e0bf974bbc2ac98e339fb173a5b77aaea2faa94a37c9eec079b4aa"
+  },
+  {
+    "path": "containerlab-host-requirements.go",
+    "url": "https://raw.githubusercontent.com/srl-labs/containerlab/5ae50094a3afd70e4e1674fe5385e64d8979da26/types/host_requirements.go",
+    "sha256": "b835c6c8270c3ec1fc2d065a76ea9263642ee7c690f203246bf983d67fc6537d"
+  }
+]

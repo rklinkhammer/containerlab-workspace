@@ -1,0 +1,37 @@
+[
+  {
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/srl-labs/vrnetlab/4baf0a6fc0b035775f9c6eda398f8867b7e83a65/LICENSE",
+    "sha256": "c0c063470c3349c249716c35c12ca7dbdc3975876a2c76d3c156ac2f58a5bb80"
+  },
+  {
+    "path": "common/vrnetlab.py",
+    "url": "https://raw.githubusercontent.com/srl-labs/vrnetlab/4baf0a6fc0b035775f9c6eda398f8867b7e83a65/common/vrnetlab.py",
+    "sha256": "e683f7e971ad9dc783034287964b0170c61ec83a5f90bba0a39c58291153f278"
+  },
+  {
+    "path": "ubuntu/README.md",
+    "url": "https://raw.githubusercontent.com/srl-labs/vrnetlab/4baf0a6fc0b035775f9c6eda398f8867b7e83a65/ubuntu/README.md",
+    "sha256": "4c41fdab6cbb621c9701f4b3813e4545604599c1c5a22398967891d257fe9166"
+  },
+  {
+    "path": "ubuntu/Makefile",
+    "url": "https://raw.githubusercontent.com/srl-labs/vrnetlab/4baf0a6fc0b035775f9c6eda398f8867b7e83a65/ubuntu/Makefile",
+    "sha256": "5fc4d21f6851e8701764b9fa79d469f598b504cf476afd390ee13974338b1431"
+  },
+  {
+    "path": "ubuntu/docker/Dockerfile",
+    "url": "https://raw.githubusercontent.com/srl-labs/vrnetlab/4baf0a6fc0b035775f9c6eda398f8867b7e83a65/ubuntu/docker/Dockerfile",
+    "sha256": "2c815137f62433a008f8bc5a9e4e39df09efb41e751aeabf7ef61b08fa7a8f3c"
+  },
+  {
+    "path": "ubuntu/docker/launch.py",
+    "url": "https://raw.githubusercontent.com/srl-labs/vrnetlab/4baf0a6fc0b035775f9c6eda398f8867b7e83a65/ubuntu/docker/launch.py",
+    "sha256": "7d410bbbad8cfc2c3798b14ece3abc65cae318fda27538c91b81969caabef0bf"
+  },
+  {
+    "path": "ubuntu/download.sh",
+    "url": "https://raw.githubusercontent.com/srl-labs/vrnetlab/4baf0a6fc0b035775f9c6eda398f8867b7e83a65/ubuntu/download.sh",
+    "sha256": "f675f640ed53eade81f474b927acdbbd43631398edcb420c3fdd23850b69b0e1"
+  }
+]
