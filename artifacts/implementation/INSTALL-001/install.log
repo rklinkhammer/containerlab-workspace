@@ -1,0 +1,3 @@
+Installed: /Users/rklinkhammer/Applications/Containerlab GUI.app
+Start from Finder, or run:
+"/Users/rklinkhammer/Applications/Containerlab GUI.app/Contents/Resources/runtime/node" "/Users/rklinkhammer/Applications/Containerlab GUI.app/Contents/Resources/packaging/cli.mjs" serve --open

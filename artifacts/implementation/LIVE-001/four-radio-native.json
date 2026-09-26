@@ -1,0 +1,308 @@
+{
+  "ok": true,
+  "jobId": "2ed13ff4e0b04f1b9eddedf2af57d08a",
+  "bundleId": "project-7a89d7d3d86bf2146bf67785",
+  "bundleSha256": "feea89a24dc287f824287c57e104800b32b8e0a1332d62661c8ad4e91f1a5b4c",
+  "summary": {
+    "dependencies": [
+      {
+        "kind": "bind",
+        "owner": "detector",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "8205456954895c67ce17a0cff99a74bcec1aefdbe4df8e7df706a01bd9de4dea",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "detector",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "e7c5886cab5c6fd944c1adae217b14316c74828371050fb151e5a347e8429aeb",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "processor",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "a9a930998beb9d4692f3113c287161afac9d3bd28143b70852405ce45f61e74b",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "processor",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "e7c5886cab5c6fd944c1adae217b14316c74828371050fb151e5a347e8429aeb",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "radio1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "e7b3d018e4f75e750ebdd96be6c75b7327a0e0b829f7a802b953e4fe81f284c6",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "radio1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "e7c5886cab5c6fd944c1adae217b14316c74828371050fb151e5a347e8429aeb",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "radio2",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "0655a6bcb69df579e836196fec1571a85a1cb9fe07417df5dd03fcd60fad3ec3",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "radio2",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "e7c5886cab5c6fd944c1adae217b14316c74828371050fb151e5a347e8429aeb",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "radio3",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "803984f21dd5894bc850dfedbef3b023fa410d9d8d36a5f283285db12df8e606",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "radio3",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "e7c5886cab5c6fd944c1adae217b14316c74828371050fb151e5a347e8429aeb",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "radio4",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "08bc705ad9f60bc31d76745382c68f5dfec732cc24774ee0c7372f9607c8485e",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "radio4",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "e7c5886cab5c6fd944c1adae217b14316c74828371050fb151e5a347e8429aeb",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "recorder",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "e7c5886cab5c6fd944c1adae217b14316c74828371050fb151e5a347e8429aeb",
+        "state": "unresolved"
+      },
+      {
+        "kind": "startup-config",
+        "owner": "switch1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "f62f068c2b0a2e7208b295d6a416cf7a1cbef8cc0a30456ad657daf906b269a8",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "switch1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "5cdec170e46443c77cce0b8d8618bb91805e063af7c9f570b1974760c2219f4f",
+        "state": "unresolved"
+      }
+    ],
+    "dependency_inventory": "partial_allowlist",
+    "deployment": "NOT_RUN",
+    "diagnostics": [],
+    "field_provenance": "unresolved",
+    "lab_name": "four-radio-sdr",
+    "links": [
+      {
+        "endpoints": [
+          {
+            "interface": "ethernet-1/1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "switch1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "radio1",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 0,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "ethernet-1/2",
+            "interface_state": "declared_unresolved_alias",
+            "node": "switch1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "radio2",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 1,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "ethernet-1/3",
+            "interface_state": "declared_unresolved_alias",
+            "node": "switch1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "radio3",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 2,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "ethernet-1/4",
+            "interface_state": "declared_unresolved_alias",
+            "node": "switch1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "radio4",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 3,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "ethernet-1/5",
+            "interface_state": "declared_unresolved_alias",
+            "node": "switch1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "processor",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 4,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "ethernet-1/6",
+            "interface_state": "declared_unresolved_alias",
+            "node": "switch1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "detector",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 5,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "ethernet-1/7",
+            "interface_state": "declared_unresolved_alias",
+            "node": "switch1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "recorder",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 6,
+        "state": "declared",
+        "type": "veth"
+      }
+    ],
+    "mode": "declarations",
+    "nodes": [
+      {
+        "id": "detector",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "processor",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "radio1",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "radio2",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "radio3",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "radio4",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "recorder",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "switch1",
+        "kind": "nokia_srlinux",
+        "kind_state": "native_getter"
+      }
+    ],
+    "status": "declarations_only"
+  },
+  "workerSha256": "e6f93a352a35ff3f93038599833a83e952f4ef19ed9ad078457bac340f5a83cd",
+  "cleanup": "complete"
+}

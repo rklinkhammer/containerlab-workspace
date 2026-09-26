@@ -1,0 +1,12 @@
+{
+  "revision": "A33",
+  "verified": 2141,
+  "drift": [
+    {
+      "path": "artifacts/implementation/INSTALL-001/package.json",
+      "published": "b12a7d132d6920dd36af951161c79e393771b5a7b26db133bebe7ae753624fbf",
+      "current": "c91428064fb84decc4d01edec52c4273ce8b4abfb664bfc762474c5e009d9eb6"
+    }
+  ],
+  "disposition": "User rebuild changed artifact hashes. Preserve current file and prior published hash; do not describe A33 as fully matching."
+}

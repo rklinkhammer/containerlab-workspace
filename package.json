@@ -23,7 +23,9 @@
     "test:multi": "node --test tests/integration/multi.test.ts",
     "test:capacity": "node tests/integration/capacity-measure.ts",
     "test:capacity:faults": "node --test tests/integration/capacity-faults.ts",
-    "test:capacity:transitions": "node --test tests/integration/capacity-transitions.test.ts"
+    "test:capacity:transitions": "node --test tests/integration/capacity-transitions.test.ts",
+    "build:live": "npm run typecheck && vite build --config vite.live.config.ts",
+    "test:live": "node --test tests/live/*.test.ts && python3 tests/live/service_test.py"
   },
   "dependencies": {
     "@xyflow/react": "12.10.2",

@@ -1,0 +1,15 @@
+{
+  "path": "/Users/rklinkhammer/workspace/containerlab-user-tests/live-002/topology.clab.yml",
+  "sha256": "6c492108c5dade332a5a46f8316baa8b2b1e920a977ab8132c17b0daa1620e2b",
+  "expectedNodes": [
+    "sender",
+    "receiver"
+  ],
+  "expectedLink": [
+    "sender:eth1",
+    "receiver:eth1"
+  ],
+  "traffic": "Lab-owned ICMP only; no external destinations",
+  "logExpectation": "sender-heartbeat",
+  "captureExpectation": "Nonempty PCAP with ICMP, hash-identical save/reanalysis; no endpoint UI"
+}

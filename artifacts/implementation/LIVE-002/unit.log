@@ -1,0 +1,37 @@
+
+> containerlab-synthetic-preview@0.1.0 test:live
+> node --test tests/live/*.test.ts && python3 tests/live/service_test.py
+
+✔ filename is a basename; no client endpoint or arbitrary Lua path accepted (1.483125ms)
+✔ one selected link produces actual hash-bound bytes and chosen download name (2.626334ms)
+✔ malformed worker PCAP cannot become a downloadable artifact (0.204125ms)
+✔ late completion after cancellation cannot publish an artifact (0.131125ms)
+✔ replacement enrollment revokes retained bytes (0.158583ms)
+✔ GO is serialized, intent persisted first, explicit stop removes deployment (1.414209ms)
+✔ failed deploy stays partial until scoped recovery, not a success or invisible rollback (0.149083ms)
+✔ source changes before GO refuse native invocation (0.075333ms)
+✔ restart cannot silently adopt an existing runtime (0.086167ms)
+✔ one deterministic capture point observes both directions, not both endpoints (0.730542ms)
+✔ SRL-Linux chooses qualified Linux side automatically (0.090083ms)
+✔ wrong deployment, different occurrence and external link cannot capture (0.186167ms)
+✔ unassociated interfaces cannot become targets (0.063709ms)
+✔ exact bytes, explicit context only and no private root disclosed (1.608958ms)
+✔ nested companion paths preserved and changes refuse GO (1.346083ms)
+✔ traversal, absolute paths and duplicate inventory refused (0.478667ms)
+✔ symlink file and directory refused (0.622958ms)
+✔ missing context and size bounds are failures not invented content (0.93775ms)
+✔ runtime reads and capture execute serially, queue is bounded and recovers after failure (0.803833ms)
+✔ local HTTP boundary rejects foreign origins and requires explicit GO revision (12.638291ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 120.116375
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.017s
+
+OK

@@ -1,0 +1,19 @@
+{
+  "revision": 2,
+  "status": "APPROVED",
+  "approval": "Explicit user reply: Approve revision 2",
+  "scope": [
+    "Wide selected-node output pane beneath topology with Logs and Serial console tabs",
+    "Link capture settings in right inspector without endpoint picker"
+  ],
+  "constraints": [
+    "Approval covers layout only, not runtime capability or test completion",
+    "Serial controls require a discovered, supported endpoint",
+    "Request renewed visual approval for material layout changes"
+  ],
+  "artifacts": {
+    "layout-review-v2.html": "54675fd02652879dbeb52e82c84d6ce5c9ce55fdd0b9f3fee7805e5bcd6ceac7",
+    "layout-review-v2-logs.png": "03e4171aa5fb92a1cbdc23c03bb8dc2f15ce4a1d5105cc8f206ea531d176898d",
+    "layout-review-v2-serial.png": "d7e88101b2093b921e841959ab9f9a007d4f8aba4e4510b09f1ab8ee7d612656"
+  }
+}

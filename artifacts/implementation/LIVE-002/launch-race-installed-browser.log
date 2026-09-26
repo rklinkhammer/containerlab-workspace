@@ -1,0 +1,14 @@
+{
+  scope: 'Installed application, real runtime and real browser; no route mocks',
+  nativeLoad: 'NOT_RUN',
+  deployment: 'NOT_RUN',
+  logs: 'NOT_RUN',
+  capture: 'NOT_RUN',
+  reanalysis: 'NOT_RUN',
+  download: 'NOT_RUN',
+  browserReconnect: 'NOT_RUN',
+  stop: 'NOT_RUN',
+  failure: 'page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/\n' +
+    'Call log:\n' +
+    '\x1B[2m  - navigating to "http://127.0.0.1:4173/", waiting until "load"\x1B[22m\n'
+}

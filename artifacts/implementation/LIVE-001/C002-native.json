@@ -1,0 +1,124 @@
+{
+  "ok": true,
+  "jobId": "c77c3895c1b445b3b20362d953cf4013",
+  "bundleId": "project-fdc98571fc93e8482954dcc8",
+  "bundleSha256": "24c4f68437412c1c67091b46fea80e2161d4456f53ec68e077331959f73c2231",
+  "summary": {
+    "dependencies": [
+      {
+        "kind": "image",
+        "owner": "srl1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "967b1f725bed47555c276a736451988f9d535cb31a894dd748415742437bd8d4",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "srl2",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "967b1f725bed47555c276a736451988f9d535cb31a894dd748415742437bd8d4",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "srl3",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "967b1f725bed47555c276a736451988f9d535cb31a894dd748415742437bd8d4",
+        "state": "unresolved"
+      }
+    ],
+    "dependency_inventory": "partial_allowlist",
+    "deployment": "NOT_RUN",
+    "diagnostics": [],
+    "field_provenance": "unresolved",
+    "lab_name": "br01",
+    "links": [
+      {
+        "endpoints": [
+          {
+            "interface": "e1-1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "srl1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "br-clab",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 0,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "e1-1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "srl2",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth2",
+            "interface_state": "declared_unresolved_alias",
+            "node": "br-clab",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 1,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "e1-1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "srl3",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth3",
+            "interface_state": "declared_unresolved_alias",
+            "node": "br-clab",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 2,
+        "state": "declared",
+        "type": "veth"
+      }
+    ],
+    "mode": "declarations",
+    "nodes": [
+      {
+        "id": "br-clab",
+        "kind": "bridge",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "srl1",
+        "kind": "nokia_srlinux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "srl2",
+        "kind": "nokia_srlinux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "srl3",
+        "kind": "nokia_srlinux",
+        "kind_state": "native_getter"
+      }
+    ],
+    "status": "declarations_only"
+  },
+  "workerSha256": "e6f93a352a35ff3f93038599833a83e952f4ef19ed9ad078457bac340f5a83cd",
+  "cleanup": "complete"
+}

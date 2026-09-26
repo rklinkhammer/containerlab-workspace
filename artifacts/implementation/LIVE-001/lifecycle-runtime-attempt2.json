@@ -1,0 +1,8 @@
+{
+  "profile": "task-owned synthetic lifecycle; not installed GUI acceptance",
+  "loading": "PASS",
+  "deployment": "PASS",
+  "logs": "PASS",
+  "cleanup": "PASS",
+  "applicationRestart": "PASS"
+}

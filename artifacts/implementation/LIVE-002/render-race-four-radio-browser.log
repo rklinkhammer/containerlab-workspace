@@ -1,0 +1,12 @@
+{
+  scope: 'Installed application, real runtime and real browser; no route mocks',
+  nativeLoad: 'PASS',
+  deployment: 'NOT_RUN',
+  logs: 'NOT_RUN',
+  capture: 'NOT_RUN',
+  reanalysis: 'NOT_RUN',
+  download: 'NOT_RUN',
+  browserReconnect: 'NOT_RUN',
+  stop: 'NOT_RUN',
+  failure: 'EXPECTED_EIGHT_NATIVE_NODES'
+}

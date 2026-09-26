@@ -1,0 +1,16 @@
+{
+  "archiveManifest": "PASS",
+  "files": 914,
+  "noFixturesOrRecordedResources": "PASS",
+  "externalCwdDoctor": "PASS",
+  "pkgExpansion": "PASS",
+  "installerTransaction": "NOT_RUN",
+  "signing": "unsigned",
+  "installedBrowser": "NOT_RUN_PORT_OCCUPIED",
+  "candidatePath": "/Users/rklinkhammer/workspace/containerlab-releases/0.3.0-preview.1",
+  "pkgbuildPermissionDiagnostics": "UNRESOLVED: pkg expanded successfully; warning origin not established",
+  "pkgPayloadHashes": "PASS",
+  "packageSha256": "2f4813b26496c13a28cfd5dc9a34add8031a2b0d52470f8cd58cb850f1c61357",
+  "overlayUpgrade": "FAIL: macOS SIGKILL; preserved in package-overlay-attempt.json",
+  "freshExtractionDoctor": "PASS"
+}

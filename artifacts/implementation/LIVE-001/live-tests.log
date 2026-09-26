@@ -1,0 +1,31 @@
+
+> containerlab-synthetic-preview@0.1.0 test:live
+> node --test tests/live/*.test.ts && python3 tests/live/service_test.py
+
+✔ GO is serialized, intent persisted first, explicit stop removes deployment (1.390042ms)
+✔ failed deploy stays partial until scoped recovery, not a success or invisible rollback (0.150458ms)
+✔ source changes before GO refuse native invocation (0.076542ms)
+✔ restart cannot silently adopt an existing runtime (0.085ms)
+✔ one deterministic capture point observes both directions, not both endpoints (0.855458ms)
+✔ SRL-Linux chooses qualified Linux side automatically (0.089916ms)
+✔ wrong deployment, different occurrence and external link cannot capture (0.191375ms)
+✔ unassociated interfaces cannot become targets (0.080417ms)
+✔ exact bytes, explicit context only and no private root disclosed (1.327083ms)
+✔ nested companion paths preserved and changes refuse GO (1.161583ms)
+✔ traversal, absolute paths and duplicate inventory refused (0.462458ms)
+✔ symlink file and directory refused (0.667583ms)
+✔ missing context and size bounds are failures not invented content (1.368875ms)
+✔ local HTTP boundary rejects foreign origins and requires explicit GO revision (11.816958ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 97.959541
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.014s
+
+OK

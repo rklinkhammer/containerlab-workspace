@@ -1,0 +1,6 @@
+{
+  "filename": "vrt-image.tar",
+  "bytes": 34500608,
+  "sha256": "19bc82ca71871633774a88b1e0d1e2915a4fe801f35920a322eaa559acb131c4",
+  "source": "qualified task-owned VRT build; imported through installed CLI"
+}

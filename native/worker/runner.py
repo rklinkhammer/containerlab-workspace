@@ -36,7 +36,7 @@ def kill(unit):subprocess.run(['systemctl','kill','--kill-whom=all','--signal=KI
 def execute(directory,entry,job,args=None,timeout=30,limit=MAX_OUTPUT):
  """args override is solely a local qualification seam; never accepted over stdin/API."""
  unit='clab-load-'+job+'.service';cancel=RUN/('cancel-'+job);started=time.monotonic();code=None
- scratch=directory/'scratch';scratch.mkdir();scratch.chmod(0o777)
+ scratch=directory/'scratch';scratch.mkdir(exist_ok=True);scratch.chmod(0o777)
  cmd=['systemd-run','--quiet','--wait','--pipe','--collect','--unit='+unit,'-p','MemoryMax=1G','-p','MemorySwapMax=0','-p','TasksMax=64','-p',f'RuntimeMaxSec={timeout+2}','-p','LimitFSIZE=2097152','-p','KillMode=control-group','/usr/bin/bwrap','--unshare-all','--die-with-parent','--new-session','--ro-bind','/usr','/usr','--symlink','usr/bin','/bin','--symlink','usr/lib','/lib','--ro-bind',str(BASE/'etc'),'/etc','--ro-bind',str(directory/'input'),'/input','--ro-bind',str(BASE/'worker'),'/worker','--bind',str(scratch),'/tmp','--proc','/proc','--dev','/dev','--clearenv','--setenv','PATH','/usr/bin','--setenv','HOME','/tmp','--chdir','/tmp','--uid','65534','--gid','65534','--cap-drop','ALL']+(args if args is not None else ['/worker','/input/'+entry])
  if cancel.exists():raise Failure('CANCELLED')
  p=subprocess.Popen(cmd,stdout=subprocess.PIPE,stderr=subprocess.PIPE);sel=selectors.DefaultSelector();sel.register(p.stdout,selectors.EVENT_READ,'out');sel.register(p.stderr,selectors.EVENT_READ,'err');out=bytearray();count=0

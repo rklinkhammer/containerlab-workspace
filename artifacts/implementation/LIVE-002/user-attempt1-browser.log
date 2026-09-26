@@ -1,0 +1,9 @@
+file:///Users/rklinkhammer/workspace/containerlab-workspace/tests/live/user-interaction.mjs:10
+for(let i=0;i<50;i++){try{const r=await fetch('http://127.0.0.1:4173/');if(r.ok)break;}catch{}if(i===49)throw Error('INSTALLED_SERVER_NOT_READY');await new Promise(r=>setTimeout(r,200));}
+                                                                                                              ^
+
+Error: INSTALLED_SERVER_NOT_READY
+    at file:///Users/rklinkhammer/workspace/containerlab-workspace/tests/live/user-interaction.mjs:10:111
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+Node.js v26.8.1

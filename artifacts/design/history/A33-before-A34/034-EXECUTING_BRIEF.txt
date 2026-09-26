@@ -1,0 +1,315 @@
+Work in:
+/Users/rklinkhammer/workspace/containerlab-workspace
+
+Implement an architecture-led transition from the qualification preview
+to an installed application for deploying and interacting with real
+Containerlab labs.
+
+Preserve the existing sibling-directory arrangement and unrelated changes.
+Treat containerlab-investigation, GraphX and containerlab-vrt as read-only
+reference sources unless separately authorized to modify them.
+
+Read:
+- AGENTS.md
+- IMPLEMENTATION_HANDOFF.md
+- artifacts/design/COMPLETION.json
+- Current architecture, decisions, contracts and traceability
+- artifacts/design/INSTALLED_WORKFLOW.md
+- GUI_COMPARISON.md and GUI_DIRECTION_PROMPT.md
+- A30–A33 implementation results
+- packaging/ and relevant frontend/backend/native code
+- The pinned official Containerlab corpus and its failure dispositions
+
+Verify the published baseline before relying on it. If user rebuilds or
+other changes caused manifest drift, explain and preserve the differences;
+do not regenerate hashes merely to conceal them.
+
+The A32 snapshot is a recovery checkpoint. Preserve historical evidence
+and qualification outcomes. Earlier experiment-focused workflows are
+lessons and regression sources, not the desired product experience.
+
+PRODUCT WORKFLOW
+
+The user launches the installed application with a topology path:
+
+    containerlab-gui /path/to/topology.clab.yml
+
+The application starts a local webserver and opens the browser GUI.
+
+Containerlab natively loads the selected topology and its required context.
+Before deployment, the GUI presents the user's selected configuration
+with an explicit “Not deployed” state. Do not display prerecorded topology
+or runtime evidence as a substitute for loading or observation.
+
+The user presses GO. The application invokes Containerlab deployment,
+shows progress and actionable errors, enrolls the resulting runtime
+identities, and begins live monitoring.
+
+The user interacts with nodes and links, views logs, and captures traffic.
+Closing the browser does not destroy the lab. Reopening reconnects to
+the application. An explicit Stop lab action invokes native teardown.
+
+ARCHITECTURAL REQUIREMENTS
+
+1. Separate application, user project and runtime state.
+
+   The installed package contains no example topology bundles, fixture
+   catalogs, recorded graphs or developer evidence-view interface.
+   Test resources remain outside production artifacts.
+
+   User YAML and companion files remain user-owned project data.
+   Mutable application/runtime state lives outside the installation.
+
+   Replace mandatory fixture-catalog dependencies with a generic project
+   loading contract. Preserve original bytes, relative layouts, native
+   kinds, unknown attributes and source provenance.
+
+   Define handling of templates, environment values, referenced files,
+   missing context and project changes. Never silently fabricate or repair
+   inputs, execute topology hooks during loading, or transfer an entire
+   directory without an explicit inventory and containment policy.
+
+2. Keep Containerlab authoritative.
+
+   Use supported, pinned native interfaces for topology loading,
+   deployment, inspection and destruction.
+
+   Do not implement an alternative YAML semantics engine, topology DSL,
+   deployment engine or custom network control plane.
+
+   Graph data is a projection. Keep declared configuration, deployment
+   progress and observed runtime state distinct.
+
+   Native kinds such as SR Linux and generic_vm must retain their native
+   identity and capability limits.
+
+3. Implement the local application and runtime boundary.
+
+   The browser communicates with the local backend, never directly with
+   a privileged daemon socket.
+
+   On macOS, use an explicitly owned Linux runtime for Containerlab and
+   privileged helpers. Define the supported architecture, image,
+   dependency versions, transport and resource requirements.
+
+   Separate:
+   - Project loading
+   - Deployment lifecycle
+   - Runtime identity/enrollment
+   - Observation and event delivery
+   - Node logs
+   - Link capture and packet analysis
+
+   Prefer cohesive modules and the existing qualified mechanisms over
+   speculative services, databases or brokers.
+
+4. Make deployment an application function.
+
+   Define explicit states and transitions for loading, ready, deploying,
+   running, degraded/partially deployed, stopping, stopped, disconnected
+   and failed.
+
+   Prevent overlapping GO/Stop operations and accidental duplicate labs.
+   Bind operations to the selected project revision and owned deployment.
+
+   Preserve partial-deployment errors and provide scoped recovery.
+   Never adopt same-name replacement containers silently.
+
+   Define cancellation behavior, startup recovery, browser reconnect,
+   application restart and runtime restart. Do not equate a running
+   container with application readiness or health.
+
+5. Deliver live GUI updates.
+
+   Select and justify an event transport such as SSE or WebSocket.
+   Reuse bounded native polling where appropriate behind that transport.
+
+   Include ordering, timestamps, freshness, cancellation, backpressure,
+   reconnect/resynchronization and explicit stale/unavailable states.
+
+   Node and link selections must remain bound to the correct deployment.
+   Late responses must not restore data from an earlier project, node,
+   link or runtime session.
+
+   Reuse initial-development lessons on identity checks, safe rendering,
+   resource limits, supported native kinds and actionable diagnostics.
+
+6. Make capture a link-level interaction.
+
+   Selecting a link identifies the capture target. Do not require the
+   user to select an endpoint, interface, namespace or container.
+
+   The user supplies the PCAP filename and relevant file/capture settings:
+   duration, size/rotation/retention where implemented, capture filter,
+   TShark display filter and supported reviewed Lua configuration.
+
+   The backend resolves the exact deployed link to a qualified capture
+   point. Define stable selection rules for ordinary veth links and
+   explicit capability handling for other native link families.
+
+   Do not silently capture both endpoints, duplicate packets, omit a
+   direction or invent a capture point. Explain unsupported or ambiguous
+   capture cases without exposing internal endpoint selection machinery.
+
+   Define where PCAP files reside, how filenames are validated, overwrite
+   behavior, quotas, download/save behavior and cleanup. A displayed
+   filename must correspond to an actual artifact, not merely UI state.
+
+   Keep capture-time filtering separate from post-capture analysis.
+   Preserve artifact identity and bytes during reanalysis. Retain the
+   lessons from capture cancellation, expiry and Lua containment.
+   Arbitrary Lua execution remains unavailable unless separately qualified.
+
+7. Preserve generic node interactions.
+
+   Provide actual supported node logs and clear unsupported/unavailable
+   states. Preserve bounded output, follow/stop and identity-safe switching.
+
+   Serial remains capability-gated. Do not invent serial ports for ordinary
+   containers or treat shell/SSH/monitor listeners as serial consoles.
+
+   Preserve A31/A32 findings; the ARM generic_vm blocker must not prevent
+   delivery of the container-only workflow.
+
+   Do not hardcode four-radio names, counts, images, roles, protocol details
+   or application behavior anywhere in generic production logic.
+
+8. Ship and test an installed product.
+
+   Build a versioned package with explicit bundled and external
+   dependencies, licenses, hashes and installation instructions.
+
+   Separate build-time tools from runtime requirements. A user must not
+   need this repository, sibling repositories, private .runtime snapshots,
+   npm, Go or C++ builds to launch the application.
+
+   Resolve and document runtime and lab-image acquisition explicitly.
+   Do not assume locally built images exist.
+
+   Provide installed diagnostics and clear start/status/stop/uninstall
+   behavior. GUI upgrades or removal must not implicitly destroy labs.
+
+   Address the first package's lessons:
+   - No copied fixture directory or embedded recorded graphs
+   - No Homebrew-linked Node binary masquerading as self-contained
+   - No dependency on current working directory
+   - No experiment-only VM names, session files or short leases
+   - No developer build instructions presented as user installation steps
+
+   Investigate the pkgbuild permission diagnostics and verify package
+   contents. Distinguish archive installation, Installer transactions,
+   signing/notarization and actual installed execution.
+
+VALIDATION THROUGH REAL USER WORKFLOWS
+
+Use both the user's four-radio project and standard Containerlab demos.
+
+Pin the official demo source revision and retain the existing 177-case
+historical denominator. Do not ship those demos in the application.
+
+Maintain separate evidence for:
+- Native loading
+- Graph projection/rendering
+- Deployment
+- Runtime observation
+- Logs
+- Capture/analysis
+- Installed user experience
+
+Select a representative runnable official-demo batch before execution.
+State the coverage rationale and independent expectations, including
+multiple node kinds, link shapes, parallel links and disconnected nodes
+where available.
+
+Record image, architecture, license and external-context blockers
+individually. A demo that cannot deploy must not disappear from loading
+or visualization coverage. Never claim every official example deploys
+because a selected batch passes.
+
+Use recorded fixtures for automated regression tests only. They cannot
+satisfy live or installed acceptance.
+
+Required end-to-end acceptance:
+1. Install outside the repository.
+2. Launch with a user-supplied topology path.
+3. Load it through Containerlab's native mechanisms.
+4. Press GO in the GUI and observe actual deployment progress.
+5. Observe real node/interface/link updates.
+6. Select a node and view/follow its actual logs.
+7. Select a link and capture without choosing an endpoint.
+8. Inspect/filter/reanalyze and save the actual PCAP.
+9. Close/reopen the browser and reconnect without redeploying.
+10. Exercise a controlled failure and display actionable recovery.
+11. Stop the lab through the GUI and verify scoped native cleanup.
+
+Run this workflow against selected official demos and the complete
+four-radio example, whose current topology contains eight native nodes.
+Do not modify the original example merely to satisfy the GUI.
+
+USER EXPERIENCE AND REVIEW
+
+Preserve useful aspects of the approved GraphX-inspired layout.
+Remove qualification-oriented navigation and terminology from the
+production user flow.
+
+Present concrete graphical layouts before committing to material
+presentation changes. Request user review and iterate until explicitly
+approved. Existing layout approval does not automatically approve a
+material redesign.
+
+Continue independent backend, packaging and regression work while
+visual review is pending.
+
+Keep a user-task issue list: intended action, actual behavior,
+presentation problem, proposed change and retest result.
+
+RUNTIME AUTHORIZATION AND SAFETY
+
+This task authorizes implementation, packaging and runtime qualification
+using newly created, explicitly owned resources.
+
+Never access or reuse pre-existing Lima VMs.
+
+Disposable qualification VMs must be cleaned up and stopped.
+The separately identified user-interaction environment is intended to
+remain running until the user explicitly stops it. Document its ownership,
+capacity, retention, shutdown and recovery before creating it; do not
+apply an experiment auto-shutdown lease to that environment.
+
+Use port 4173 without terminating unrelated processes.
+Ordinary builds/tests must not create VMs or deploy labs automatically.
+
+TT-01 remains active: login and multi-user authorization are out of scope.
+Retain containment, exact runtime identity, disclosure allowlists, safe
+rendering and bounded operations.
+
+DELIVERABLES AND EXECUTION ORDER
+
+First produce:
+- A concise current-to-target architecture and interaction diagram
+- A gap analysis identifying reusable code versus experiment coupling
+- Contracts for project loading, lifecycle, runtime events and link capture
+- A complete dependency inventory with unresolved items explicitly marked
+- Independent installed-workflow acceptance criteria
+- A dependency-ordered implementation plan
+
+Record the corrected direction in architecture, decisions, traceability
+and handoff using D-15 archival/publication rules. Preserve historical
+evidence and unrelated work.
+
+Then implement the dependency-ordered slices. Do not stop at a static
+viewer, packaging wrapper or plan when independent authorized
+implementation can proceed. Keep genuinely blocked capabilities explicit.
+
+Finish with:
+- Installation artifact and reproducible user commands
+- What works through the installed application
+- Actual official-demo and four-radio results
+- Failed and unrun checks separately identified
+- Remaining unsupported capabilities
+- User-visible issues awaiting review
+- Exactly which owned resources remain running
+- Explicit stop, recovery and uninstall instructions
+
+Do not claim continuous monitoring, application health, universal fidelity
+or complete feature readiness beyond the actual evidence.

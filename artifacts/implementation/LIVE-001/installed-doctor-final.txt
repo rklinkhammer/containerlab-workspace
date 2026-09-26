@@ -1,0 +1,3 @@
+Lima: limactl version 2.2.0
+Python: Python 3.13.5
+Owned runtime configured: false. Live capture/serial transport: not yet enabled.

@@ -150,6 +150,7 @@ func main() {
 		}
 		links = append(links, M{"id": i, "type": linkType, "state": state, "endpoints": eps, "external_role": external})
 	}
+	out["lab_name"] = c.Config.Name
 	out["nodes"] = nodes
 	out["links"] = links
 	out["dependencies"] = deps

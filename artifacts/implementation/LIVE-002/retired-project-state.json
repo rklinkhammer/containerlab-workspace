@@ -1,0 +1,26 @@
+[
+  {
+    "file": "project-eaf775ec61cd8374961faaa5.json",
+    "sha256": "206e84b97df1407e7cf311ff7a63f914f744e8e114680b7f226e0c10ecb82b37",
+    "phase": "stopped",
+    "action": "moved to private retired qualification directory"
+  },
+  {
+    "file": "project-97058d30f61083f6cab22a75.json",
+    "sha256": "b2add4bcd0d3ab2687c5a20d29e4e0d7e77adc1dfe78dcfa4662af36ed9d6073",
+    "phase": "stopped",
+    "action": "moved to private retired qualification directory"
+  },
+  {
+    "file": "project-5391b4cb243598fe551f9075.json",
+    "sha256": "102f62d6492f9780ac09d7b4f57c09a60f7c5a7f8931da656891c01321864ac2",
+    "phase": "stopped",
+    "action": "moved to private retired qualification directory"
+  },
+  {
+    "file": "project-78c0275cd25de7fcf8c251a9.json",
+    "sha256": "4b6d111608f98b5fd5f9503cb584819416609d0bf9a4807d7eb9ab1d885b6e7f",
+    "phase": "stopped",
+    "action": "moved to private retired qualification directory"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "node": "processor",
+    "event": "heartbeat",
+    "state": "healthy",
+    "data": {
+      "context_updates": 1882,
+      "datagrams": 375341,
+      "discard_reasons": {
+        "invalid_context": 0,
+        "invalid_data": 0,
+        "invalid_envelope": 0,
+        "invalid_samples": 0,
+        "limits": 0,
+        "timestamp_range": 0,
+        "waiting_context": 0
+      },
+      "discard_schema": "processor.discards/1",
+      "discarded": 0,
+      "downstream_delivery": null,
+      "health": {
+        "activity_window_ms": 10000,
+        "counter_reset": false,
+        "error_total": 0,
+        "new_errors": 0,
+        "reason": "recent_activity",
+        "sample_window_ms": 5000,
+        "scope": "local_activity"
+      },
+      "malformed": 0,
+      "observed_unix_ns": 1790441038050538800,
+      "packet_gaps": 0,
+      "processing_calls": 375341,
+      "processing_ns_total": 7340411664,
+      "proven_packet_loss": null,
+      "queue_depth": null,
+      "rx_bytes": 1541736616,
+      "send_failures": 0,
+      "spectra": 186729,
+      "tx_bytes": 1601387904,
+      "tx_packets": 186729,
+      "unavailable": 0
+    }
+  },
+  {
+    "node": "radio1",
+    "event": "heartbeat",
+    "state": "healthy",
+    "data": {
+      "clipped_samples": 0,
+      "control_rx_bytes": 4560,
+      "control_rx_packets": 103,
+      "downstream_delivery": null,
+      "health": {
+        "activity_window_ms": 10000,
+        "counter_reset": false,
+        "error_total": 0,
+        "new_errors": 0,
+        "reason": "recent_activity",
+        "sample_window_ms": 5000,
+        "scope": "local_activity"
+      },
+      "proven_packet_loss": null,
+      "queue_depth": null,
+      "sample_ordinal": 95774720,
+      "streaming": true,
+      "tx_bytes": 386131512,
+      "tx_completed_submissions": 94310,
+      "tx_failed_submissions": 0,
+      "write_retries": 0
+    }
+  },
+  {
+    "node": "detector",
+    "event": "heartbeat",
+    "state": "healthy",
+    "data": {
+      "datagrams": 186526,
+      "detections": 186526,
+      "downstream_delivery": null,
+      "gapped": 0,
+      "health": {
+        "activity_window_ms": 10000,
+        "counter_reset": false,
+        "error_total": 0,
+        "new_errors": 0,
+        "reason": "recent_activity",
+        "sample_window_ms": 5001,
+        "scope": "local_activity"
+      },
+      "malformed": 0,
+      "observed_unix_ns": 1790441037947218000,
+      "processing_calls": 186526,
+      "processing_ns_total": 1241442086,
+      "proven_packet_loss": null,
+      "queue_depth": null,
+      "rx_bytes": 1599646976,
+      "sequence_gaps": 0,
+      "tx_bytes": null,
+      "tx_packets": null,
+      "unavailable": 0,
+      "zero": 0
+    }
+  }
+]

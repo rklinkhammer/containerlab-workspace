@@ -1,0 +1,11 @@
+{
+  "manifest": "PASS",
+  "outsideRepositoryCwd": "/tmp",
+  "runtimePATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+  "httpAndCsp": "PASS",
+  "catalog": "PASS_RECORDED_ONLY",
+  "occupiedPort": "PASS_NO_EXISTING_PROCESS_TERMINATED",
+  "browser": "PASS_INSTALLED_APP_UNMOCKED_RECORDED_WORKFLOW",
+  "installer": "user-level archive installed; macOS pkg transaction NOT_RUN",
+  "liveRuntime": "NOT_RUN_NOT_IMPLEMENTED"
+}

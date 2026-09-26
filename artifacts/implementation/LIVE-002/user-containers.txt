@@ -1,0 +1,8 @@
+clab-four-radio-sdr-switch1 Up About a minute
+clab-four-radio-sdr-radio3 Up About a minute
+clab-four-radio-sdr-radio1 Up About a minute
+clab-four-radio-sdr-processor Up About a minute
+clab-four-radio-sdr-radio4 Up About a minute
+clab-four-radio-sdr-radio2 Up About a minute
+clab-four-radio-sdr-detector Up About a minute
+clab-four-radio-sdr-recorder Up About a minute

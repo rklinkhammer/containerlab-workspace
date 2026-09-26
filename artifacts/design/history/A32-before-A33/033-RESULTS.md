@@ -1,0 +1,33 @@
+# A32 / EXP-036 — ARM guest and serial backing; native lifecycle blocked
+
+**Observed:** A31's1,969 manifest files verified before work; a34-file D-15 predecessor archive preserves all published design documents and the executing brief. Existing changes were retained. This revision adds a disposable appliance fixture and evidence only; no production source, third-party checkout, sibling project or GUI layout changed.
+
+| Stage | Outcome | Evidence and practical meaning |
+| --- | --- | --- |
+| ARM container image build | PASS, experimental | Dockerfile pins ARM Ubuntu base digest and top-level package versions; image.json identifies exact local build; packages.txt and firmware.txt record installed dependencies/firmware. Not a distributed or bit-reproducible release image. |
+| ARM guest boot under KVM | PASS | runtime-1790432197.json: actual Ubuntu cloud-init marker on ttyAMA0 at175.85s; QMP running and KVM enabled. Original qcow2 checksum verified; separate overlay. No guest NIC/network. |
+| Fixed-image serial backing | PASS, experiment only | Exact container/image/process identity before/after, fixed serial selector and QMP serial0 frontend distinguish serial from monitor. No serial connection or input. Not a qualified public GUI adapter. |
+| Monitor plus ordinary listener | PASS, actual negative | negative-runtime.json: real monitor and ordinary Unix listener at the serial-looking path remain unsupported; no console returned. Does not establish exhaustive absence. |
+| QMP faults | PASS, actual process tests | qmp-faults.json: silent peer timed out at3.09s; malformed/oversized replies refused at0.08s each. Raw replies do not enter frontend. |
+| Classifier regression checks | PASS,15 unit tests | Identity/image mismatch, expiry/clock rollback, partial/malformed/duplicate/oversized inventory, unbound frontend, monitor/listener, disconnected backing and path spoofing. Unit fixtures, not live identity replacement tests. |
+| Native direct generic_vm deployment | FAIL / BLOCKED | native-runtime-1790432220.json and native-deploy.log.attempt1: `CPU virtualization support is required for node "guest" (generic_vm)`. |
+| Native private-PID containerized CLI | FAIL / BLOCKED | native-runtime-1790432295.json and native-deploy.log.attempt2: native namespace path unavailable; container was actually running (native-attempt2-state.json), so native's immediate-exit message is not sufficient diagnosis. |
+| Scoped cleanup | PASS | Native destroy removed partial lab; cleanup.json contains zero remaining containers; vm-state.json confirms fresh `clab-serial-20260926-140705-exp036` Stopped. No pre-existing VM accessed. |
+
+## Failures preserved and explained
+
+**Observed / corrected:** first boot succeeded at176.46s, but experimental classifier returned SERIAL_BACKING_UNCONFIRMED. QMP reported `disconnected:unix:/run/appliance/serial.sock,server=on`. **Documented:** QEMU8.2.2 chardev/char-socket.c explicitly prefixes a socket without a client with `disconnected:`; frontend-open identifies the attached guest frontend independently. The corrected classifier accepts only the two exact reviewed connected/disconnected forms and exact launcher mapping; lookalike paths remain rejected. Original helper, log and runtime-1790431985.json are preserved. Acceptance stayed “genuine backing without opening a console,” not “active client connection.”
+
+**Documented:** pinned Containerlab0.79.0 commit5ae50094a3afd70e4e1674fe5385e64d8979da26's virt/virt.go recognizes host virtualization only through x86 vmx/svm flags, after a container/PID-namespace detection branch. **Observed:** the same host ran an actual ARM KVM guest, yet direct native deployment refused. **Inferred:** this host check is the native ARM compatibility blocker, not absent hardware virtualization.
+
+**Observed:** the second, explicitly recorded candidate used a private PID namespace to exercise that existing native container branch. It got past the check, created the generic_vm container, then failed to resolve its namespace. **Inferred:** hiding host PIDs makes that profile unsuitable for normal native lifecycle. The pinned install.md recipe uses host PID. No cpuinfo forgery, native patch, Linux relabeling or successful-deployment claim was made. The failing partial container was destroyed through the native CLI.
+
+## Pins, scope and next acceptance
+
+**Observed pins:** experimental image ID `sha256:a61e144f6c2e1b932626a4a8d0848a2ec8d3177b1339dba11e0c3d90d9eecdb9`; Ubuntu base `sha256:008173c23f95b170204355c12626cb5a965d779a7e1283b09e9cffbb1bf33ca3`; QEMU1:8.2.2+ds-0ubuntu1.18; AAVMF2024.02-2ubuntu0.9; original Ubuntu ARM image SHA2567df0201546f75b8bcc1044594c806c35749421ad3c9bc1be2a3ab806cfae39cc. Firmware and all installed versions are separate evidence files. Image is retained only in the stopped disposable VM; scripts/build inputs reproduce the candidate subject to repository availability, not guaranteed byte-identical rebuilds.
+
+**Unresolved / NOT_RUN:** successful native generic_vm lifecycle, production enrollment/discovery API, live replacement/stale/cancellation tests at that boundary, xterm/Telnet transport, keyboard/clipboard/link controls, console concurrency/backpressure/recovery, guest dataplane wiring and detector application behavior. The fixture is not a production vrnetlab replacement. No application/build/browser rerun was required for unchanged application code; A30 browser evidence keeps its original scope. No performance capacity or universal-kind claim; the NIC-free cloud-init boot is close to the180s bound.
+
+**Next gated work:** review a minimal architecture-aware native virtualization check (open /dev/kvm and validate its API/capability rather than x86 flags), or choose a separately qualified upstream version/AMD64 host. Preserve native authority and host namespace visibility. Qualify the changed native candidate on ARM positive, missing/denied KVM negatives and x86 regression cases before adopting it. Then repeat native generic_vm lifecycle and exact-identity discovery in a fresh VM; wire read-only discovery into the existing inspector only after its independent contract cases pass. Console transport follows; the second generated QEMU-detector four-radio variant follows guest networking/application parity. Preserve the original fixture; sibling changes require their own bounded scope.
+
+Phase6 remains PARTIAL, native lifecycle BLOCKED. B5/Q-05 and S-01/S-02/S-05/S-07 are relevant, not passed wholesale. Historical Q outcomes,177-case denominator and TT-01 remain unchanged. Commands and cleanup are in README.md; PLAN.md and NATIVE_PLAN.md record acceptance before trials. Primary sources are pinned in sources/MANIFEST.json.

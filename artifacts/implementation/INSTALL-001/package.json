@@ -1,0 +1,10 @@
+{
+  "version": "0.2.0-preview.1",
+  "files": 947,
+  "artifacts": {
+    "Containerlab-GUI-0.2.0-arm64.pkg": "f327bff846e3a0ba72a6a6166730cbaa938a101e51d77010ebedf3649463e9f2",
+    "Containerlab-GUI-0.2.0-arm64.tar.gz": "6556b162bf356be56dca73d15b451bf22a6181234edf08a9521f69e6471a5595"
+  },
+  "bundledNodeSha256": "6e577fd0d9db776db82306629e441a9dace416702622aebdd171c9dfaa41f4d2",
+  "signing": "unsigned local preview"
+}

@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "jobId": "a11e9ff283e044f9be8d4fa689e5de9e",
+  "bundleId": "project-b6c424045240996a5213110f",
+  "bundleSha256": "3839e12f6934bd935a15c3fdaae8d9cc6bb3fca85538a4a1e8d48ea40a0ab9f1",
+  "summary": {
+    "dependencies": [
+      {
+        "kind": "image",
+        "owner": "srl",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "27792b2bdc0649c8d88af4d4b8377d67e8703ed8c2372eacd7f741e454991d82",
+        "state": "unresolved"
+      }
+    ],
+    "dependency_inventory": "partial_allowlist",
+    "deployment": "NOT_RUN",
+    "diagnostics": [],
+    "field_provenance": "unresolved",
+    "lab_name": "srl",
+    "links": [],
+    "mode": "declarations",
+    "nodes": [
+      {
+        "id": "srl",
+        "kind": "nokia_srlinux",
+        "kind_state": "native_getter"
+      }
+    ],
+    "status": "declarations_only"
+  },
+  "workerSha256": "e6f93a352a35ff3f93038599833a83e952f4ef19ed9ad078457bac340f5a83cd",
+  "cleanup": "complete"
+}

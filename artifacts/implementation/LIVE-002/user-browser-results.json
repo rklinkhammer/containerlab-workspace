@@ -1,0 +1,23 @@
+{
+  "scope": "Installed application, real runtime and real browser; no route mocks",
+  "nativeLoad": "PASS",
+  "deployment": "PASS",
+  "logs": "PASS",
+  "capture": "PASS",
+  "reanalysis": "PASS",
+  "download": "PASS",
+  "browserReconnect": "PASS",
+  "stop": "NOT_RUN_INTENTIONALLY_LEFT_RUNNING_FOR_USER",
+  "trafficPrecondition": "Observed processor received datagrams",
+  "captureArtifact": {
+    "bytes": 1003556,
+    "sha256": "114598e883cb0967c8e0fab7ad2008dd4be92bbee1964f51d6f97cc8c7c25588",
+    "filename": "four-radio-link.pcap",
+    "packets": 100,
+    "reanalysisPackets": 2,
+    "lua": {
+      "id": "clab-probe-v1",
+      "sha256": "bebea9f48c2de34c63de241a5bf43819c2a41702a05a8dc57c2816ebca019523"
+    }
+  }
+}

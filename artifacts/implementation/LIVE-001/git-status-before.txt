@@ -1,0 +1,20 @@
+ M IMPLEMENTATION_HANDOFF.md
+ M README.md
+ M artifacts/design/ARCHITECTURE.md
+ M artifacts/design/COMPLETION.json
+ M artifacts/design/DECISIONS.md
+ M artifacts/design/GUI_CONTINUATION.md
+ M artifacts/design/IMPLEMENTATION_PLAN.md
+ M artifacts/design/P1A_BACKLOG.md
+ M artifacts/design/READINESS.md
+ M artifacts/design/README.md
+ M artifacts/design/TRACEABILITY.md
+ M artifacts/implementation/DESIGN_WRITE_INVENTORY.json
+ M artifacts/implementation/RESULTS.md
+ M scripts/preview.mjs
+?? artifacts/design/INSTALLED_WORKFLOW.md
+?? artifacts/design/history/A32-before-A33/
+?? artifacts/implementation/A33/
+?? artifacts/implementation/INSTALL-001/
+?? artifacts/implementation/LIVE-001/
+?? packaging/

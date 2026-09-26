@@ -1,0 +1,12 @@
+{
+  "scope": "Mocked transport; no installed/live acceptance",
+  "result": "PASS",
+  "checks": [
+    "approved layout node output",
+    "node switching clears logs",
+    "hostile log text rendered inert",
+    "serial unavailable explicitly",
+    "link capture form has no endpoint picker",
+    "no recorded-topology chooser"
+  ]
+}

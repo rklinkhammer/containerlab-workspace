@@ -1,0 +1,7 @@
+{
+  "externalDoctor": "FAIL",
+  "signal": "SIGKILL 9",
+  "trigger": "overlay-extract updated archive onto candidate previously executed in same task",
+  "hashVerification": "PASS before execution",
+  "cause": "Unresolved; investigate macOS executable replacement/signature caching. Production installer refuses overwrite."
+}

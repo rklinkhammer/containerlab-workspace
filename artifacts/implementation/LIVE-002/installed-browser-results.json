@@ -1,0 +1,22 @@
+{
+  "scope": "Installed application, real runtime and real browser; no route mocks",
+  "nativeLoad": "PASS",
+  "deployment": "PASS",
+  "logs": "PASS",
+  "capture": "PASS",
+  "reanalysis": "PASS",
+  "download": "PASS",
+  "browserReconnect": "PASS",
+  "stop": "PASS",
+  "captureArtifact": {
+    "bytes": 252,
+    "sha256": "88886ab7480b89d1e8aaf05a0cc9a3b6b807b1eabe4d1238f53b411f4f827c87",
+    "filename": "accepted-link.pcap",
+    "packets": 2,
+    "reanalysisPackets": 1,
+    "lua": {
+      "id": "clab-probe-v1",
+      "sha256": "bebea9f48c2de34c63de241a5bf43819c2a41702a05a8dc57c2816ebca019523"
+    }
+  }
+}

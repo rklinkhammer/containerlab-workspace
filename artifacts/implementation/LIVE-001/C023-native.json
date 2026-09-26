@@ -1,0 +1,257 @@
+{
+  "ok": true,
+  "jobId": "ef4af855a1c44d72a983a7ca29731ef5",
+  "bundleId": "project-8734b1f0805709381e29796d",
+  "bundleSha256": "10856c91ef6c681cfba9d3adcdc3dee666e821c17f94f65b78dac3fa098d7587",
+  "summary": {
+    "dependencies": [
+      {
+        "kind": "image",
+        "owner": "PC1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "46a4e7c2e7333e431ce0bf96e28578a64ca01bcd83187fbe9ce582c78bf8612d",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "PC2",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "46a4e7c2e7333e431ce0bf96e28578a64ca01bcd83187fbe9ce582c78bf8612d",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "PC3",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "46a4e7c2e7333e431ce0bf96e28578a64ca01bcd83187fbe9ce582c78bf8612d",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "router1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "c3753c40e9adf8d981045bd252f0df820a829788484e0f2a7984544763c28fe8",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "router1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "91878ff26ef8d37bb9515d598b2c4db588cbb2e17efda3bef25fca90c36f7dff",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "router1",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "561aa6e47a57a955de604f145e96db585fd3caefb6559c7af32137ccb0a78d99",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "router2",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "34668b9b8d176f203239f12bc316498cf57cc344d59e85b51670605fa8577b5c",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "router2",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "480df86bc9d0013e2595fc2d96c764d298ce3da4f3434c744d151f3732f6140f",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "router2",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "561aa6e47a57a955de604f145e96db585fd3caefb6559c7af32137ccb0a78d99",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "router3",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "6227632f18880fad41b602a0f393ce24ba1fc0289ddef1b78754f621fe28ee47",
+        "state": "unresolved"
+      },
+      {
+        "kind": "bind",
+        "owner": "router3",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "92d43fab5a155e079d88a91a2ec281c02364b3421ecb0ea2ed425676073489e4",
+        "state": "unresolved"
+      },
+      {
+        "kind": "image",
+        "owner": "router3",
+        "reason": "NOT_CHECKED_DISPLAY_ONLY",
+        "reference": "561aa6e47a57a955de604f145e96db585fd3caefb6559c7af32137ccb0a78d99",
+        "state": "unresolved"
+      }
+    ],
+    "dependency_inventory": "partial_allowlist",
+    "deployment": "NOT_RUN",
+    "diagnostics": [],
+    "field_provenance": "unresolved",
+    "lab_name": "frr01",
+    "links": [
+      {
+        "endpoints": [
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router2",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 0,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "eth2",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router3",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 1,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "eth2",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router2",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth2",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router3",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 2,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "PC1",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth3",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router1",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 3,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "PC2",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth3",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router2",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 4,
+        "state": "declared",
+        "type": "veth"
+      },
+      {
+        "endpoints": [
+          {
+            "interface": "eth1",
+            "interface_state": "declared_unresolved_alias",
+            "node": "PC3",
+            "reference_state": "declared"
+          },
+          {
+            "interface": "eth3",
+            "interface_state": "declared_unresolved_alias",
+            "node": "router3",
+            "reference_state": "declared"
+          }
+        ],
+        "external_role": "",
+        "id": 5,
+        "state": "declared",
+        "type": "veth"
+      }
+    ],
+    "mode": "declarations",
+    "nodes": [
+      {
+        "id": "PC1",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "PC2",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "PC3",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "router1",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "router2",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      },
+      {
+        "id": "router3",
+        "kind": "linux",
+        "kind_state": "native_getter"
+      }
+    ],
+    "status": "declarations_only"
+  },
+  "workerSha256": "e6f93a352a35ff3f93038599833a83e952f4ef19ed9ad078457bac340f5a83cd",
+  "cleanup": "complete"
+}

@@ -1,0 +1,5 @@
+# Runtime build and qualification plan
+
+Disposable build/qualification VM: fresh uniquely named clab-app-build-UTC, VZ ARM64, pinned Ubuntu24.04 SHA2567df0201546f75b8bcc1044594c806c35749421ad3c9bc1be2a3ab806cfae39cc,8CPU/16GiB/50GiB, no host mounts/agent/port forwarding;2h lease and explicit stop on completion/failure. It is not the durable user runtime. Build-only Go1.27.1 archive verified by established SHA256 and Containerlab0.79.0 source archive verified against established SHA256. Existing pinned Linux Containerlab binary may be copied with exact hash. All runtime tools and built worker hashes must be recorded before qualification. No existing VMs.
+
+Before execution: select official demos from pinned177-case inventory, preserve exact source IDs/hashes and original context, independent node/link expectations. Run actual installed lifecycle only after package/ownership contracts exist; currently build prep is independent. Do not deploy examples merely by loading them. No Q status changes. User runtime will be a different new owned VM without lease after installed flow succeeds; keep user runtime active only as explicitly requested.

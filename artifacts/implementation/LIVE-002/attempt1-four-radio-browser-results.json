@@ -1,0 +1,12 @@
+{
+  "scope": "Installed application, real runtime and real browser; no route mocks",
+  "nativeLoad": "PASS",
+  "deployment": "PASS",
+  "logs": "PASS",
+  "capture": "NOT_RUN",
+  "reanalysis": "NOT_RUN",
+  "download": "NOT_RUN",
+  "browserReconnect": "NOT_RUN",
+  "stop": "NOT_RUN",
+  "failure": "CAPTURE_EXPECTATION"
+}

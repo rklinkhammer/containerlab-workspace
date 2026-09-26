@@ -1,0 +1,46 @@
+[
+  {
+    "id": "C042",
+    "sourceSha256": "a2f9770b091163982363342028fc2296d4293e6d91751e49a43835127b831cdf",
+    "nativeLoading": "PASS",
+    "projection": "NOT_RUN",
+    "deployment": "NOT_RUN",
+    "observation": "NOT_RUN",
+    "logs": "NOT_RUN",
+    "capture": "NOT_RUN",
+    "installedE2E": "NOT_RUN"
+  },
+  {
+    "id": "C043",
+    "sourceSha256": "148d7f54b5d4620e529a8af6968d645abe84b182393a727b7d9e770a0bf184ce",
+    "nativeLoading": "PASS",
+    "projection": "NOT_RUN",
+    "deployment": "NOT_RUN",
+    "observation": "NOT_RUN",
+    "logs": "NOT_RUN",
+    "capture": "NOT_RUN",
+    "installedE2E": "NOT_RUN"
+  },
+  {
+    "id": "C023",
+    "sourceSha256": "fbc2b89610bb8042bb78899d68d542d3145621e5960293fc26239429b0d96a98",
+    "nativeLoading": "PASS",
+    "projection": "NOT_RUN",
+    "deployment": "NOT_RUN",
+    "observation": "NOT_RUN",
+    "logs": "NOT_RUN",
+    "capture": "NOT_RUN",
+    "installedE2E": "NOT_RUN"
+  },
+  {
+    "id": "C002",
+    "sourceSha256": "250d4a848019a0b1e4a8bb87635bd698b9448bca32971643f4c711da216349f3",
+    "nativeLoading": "PASS",
+    "projection": "NOT_RUN",
+    "deployment": "NOT_RUN",
+    "observation": "NOT_RUN",
+    "logs": "NOT_RUN",
+    "capture": "NOT_RUN",
+    "installedE2E": "NOT_RUN"
+  }
+]

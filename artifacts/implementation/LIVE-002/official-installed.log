@@ -1,0 +1,22 @@
+[
+  {
+    id: 'C042',
+    sha256: 'a2f9770b091163982363342028fc2296d4293e6d91751e49a43835127b831cdf',
+    loading: 'PASS',
+    deployment: 'PASS',
+    observation: 'PASS',
+    logs: 'PASS',
+    cleanup: 'PASS',
+    capture: 'UNSUPPORTED_NO_QUALIFIED_LINUX_POINT'
+  },
+  {
+    id: 'C043',
+    sha256: '148d7f54b5d4620e529a8af6968d645abe84b182393a727b7d9e770a0bf184ce',
+    loading: 'PASS',
+    deployment: 'PASS',
+    observation: 'PASS',
+    logs: 'PASS',
+    cleanup: 'PASS',
+    capture: 'UNSUPPORTED_NO_QUALIFIED_LINUX_POINT'
+  }
+]

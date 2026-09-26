@@ -1,0 +1,12 @@
+write: Permission denied
+write: Permission denied
+write: Permission denied
+write: Permission denied
+write: Permission denied
+pkgbuild: Inferring bundle components from contents of /Users/rklinkhammer/workspace/containerlab-workspace/.runtime-live-release/payload
+pkgbuild: Adding component at Applications/Containerlab GUI Live.app
+pkgbuild: Wrote package to /Users/rklinkhammer/workspace/containerlab-workspace/.runtime-live-release/Containerlab-GUI-0.3.0-preview.1-arm64.pkg
+{
+  "Containerlab-GUI-0.3.0-preview.1-arm64.pkg": "2f4813b26496c13a28cfd5dc9a34add8031a2b0d52470f8cd58cb850f1c61357",
+  "Containerlab-GUI-0.3.0-preview.1-arm64.tar.gz": "03120988a093276efa45826aca1b445d1b971bb0d5a458b478a6d9fccab6f851"
+}

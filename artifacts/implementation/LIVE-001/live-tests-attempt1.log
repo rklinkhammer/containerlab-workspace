@@ -1,0 +1,46 @@
+
+> containerlab-synthetic-preview@0.1.0 test:live
+> node --test tests/live/*.test.ts && python3 tests/live/service_test.py
+
+✔ GO is serialized, intent persisted first, explicit stop removes deployment (1.37425ms)
+✔ failed deploy stays partial until scoped recovery, not a success or invisible rollback (0.143625ms)
+✔ source changes before GO refuse native invocation (0.093625ms)
+✔ restart cannot silently adopt an existing runtime (0.099ms)
+✔ one deterministic capture point observes both directions, not both endpoints (0.695ms)
+✔ SRL-Linux chooses qualified Linux side automatically (0.079834ms)
+✔ wrong deployment, different occurrence and external link cannot capture (0.177833ms)
+✔ unassociated interfaces cannot become targets (0.0635ms)
+✔ exact bytes, explicit context only and no private root disclosed (1.353417ms)
+✔ nested companion paths preserved and changes refuse GO (1.229292ms)
+✔ traversal, absolute paths and duplicate inventory refused (0.56625ms)
+✔ symlink file and directory refused (0.658958ms)
+✔ missing context and size bounds are failures not invented content (1.096958ms)
+✖ local HTTP boundary rejects foreign origins and requires explicit GO revision (16.734542ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 13
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 112.443792
+
+✖ failing tests:
+
+test at tests/live/server.test.ts:7:1
+✖ local HTTP boundary rejects foreign origins and requires explicit GO revision (16.734542ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  403 !== 200
+  
+      at TestContext.<anonymous> (file:///Users/rklinkhammer/workspace/containerlab-workspace/tests/live/server.test.ts:13:52)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 403,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

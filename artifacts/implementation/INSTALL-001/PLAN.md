@@ -1,0 +1,11 @@
+# Installed application milestone
+
+User direction: shift from experiment-led development to installed-package usability and a continuously running lab. A32 is snapshotted. Serial work is paused as the next priority; retain evidence and disabled capabilities.
+
+Initial target assumption: Apple Silicon macOS, loopback browser GUI, separately owned persistent Lima runtime. User may override target. First acceptance: build a versioned installation artifact containing frontend, server, Node runtime, runtime JS dependencies, licenses and dependency inventory; launch and browse from an installation directory outside the repository with no npm/build/checkout requirement. All live capabilities must report honestly unavailable until runtime setup is implemented. Never label a recorded graph live.
+
+Independent acceptance: clean external install path, minimal PATH (no Homebrew Node), initial HTTP/GUI load and catalog, correct CSP, no repository path references in installed code/config, clear occupied-port error without killing a process, dependency diagnostics and shutdown. Verify checksum manifest and excluded private/test/history files. Distinguish staging/extraction tests from an actual macOS Installer transaction and signed/notarized distribution.
+
+Second milestone: durable new runtime owned by the installation, explicit start/stop/reconnect/status, no test lease or expiring experiment identity; Containerlab remains lifecycle authority. Bundle or explicitly install/pin native worker, observer, Docker, Containerlab, TShark, Python/Linux tools and approved lab images/context. Existing four-radio example is eight native nodes, not four total. Continuous operation, GUI logs/observation/capture and restart/reconnect must be demonstrated through the installed package before claiming end-user readiness. No pre-existing VM adoption and no example-specific GUI branches.
+
+Interactive review: user drives the installed app against the persistent lab; keep a task-based issue list and iterate presentation. Material layout changes require visual review. Capability matrix distinguishes working, unsupported and not implemented. Arbitrary Lua, unsupported serial and inferred application health must not appear functional.

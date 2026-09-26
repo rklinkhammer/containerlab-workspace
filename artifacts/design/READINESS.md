@@ -1,12 +1,26 @@
-# A32 — Phase6 ARM serial qualification; native deployment blocked
+# A35 — Installed live workflow available for user interaction
 
-**Observed:** an immutable experimental ARM container boots the pinned Ubuntu guest under nested KVM and exposes a genuine QEMU serial backend. Fixed-image discovery, an actual monitor/ordinary-listener negative, three QMP process faults and15 classifier tests pass. The first disconnected-backend parsing failure is preserved with its correction. No production GUI capability is enabled.
+**Observed:** fixture-free 0.3.0-preview.6 runs outside the repository against the unchanged four-radio YAML and seven explicitly inventoried companions. The separately created user runtime `clab-app-3a2d71d640034b2d` and local server remain running at http://127.0.0.1:4173. Select a node for logs or a link for capture settings; there is no endpoint picker. GO/Stop remain native Containerlab operations. No example names/counts/roles are production policy.
 
-**Observed / Documented:** Containerlab0.79.0 direct generic_vm deployment refuses ARM virtualization because its pinned host check recognizes vmx/svm. A separately tested private-PID CLI gets past that branch but fails native namespace resolution; its partial node was destroyed. Native lifecycle/enrollment remain BLOCKED, and Phase6 is PARTIAL. Do not relabel this kind Linux or hide the failed deployment.
+**Observed:** installed synthetic and full four-radio workflows pass actual deployment, logs, capture, reviewed Lua loading, unchanged-byte download/reanalysis and reconnect; qualification also passed Stop. Two pinned official SR Linux demos pass loading/deployment/observation/logs/cleanup, with capture explicitly unsupported for their native profile. Final source checks:20 TypeScript+9 Python live checks,85 regression checks, build/typecheck and six mocked browser checks pass. Final installed user-runtime smoke passes; Stop is intentionally not invoked there. See `artifacts/implementation/LIVE-002/RESULTS.md`, `USER_RUNTIME.md` and `RUNNING.md` (workspace-relative evidence paths).
 
-**Next / Inferred:** qualify an ARM-aware native KVM check or another supported native/host candidate, retaining host namespace visibility. Then qualify native generic_vm lifecycle and production read-only discovery before console transport and the second QEMU-detector four-radio variant. Original four-radio and siblings remain unchanged. Details, pins, failures and acceptance: artifacts/implementation/A32/RESULTS.md and experiments/EXP-036-arm-serial/README.md (workspace-relative).
+**Observed cleanup:** the separate qualification VM `clab-app-c581a60705899c2f` is empty and stopped. Old stopped qualification state was privately archived after exact ownership checks; no pre-existing VM was adopted. Current app assets contain no fixture catalogs/recordings. Approved revision-2 bottom node-output pane and right link inspector are retained.
 
-**Observed cleanup:** fresh VM clab-serial-20260926-140705-exp036 is Stopped, task lab destroyed, no containers remain. A31 manifest and34-file archive verified. Historical Q statuses,177 denominator, TT-01 and approved GUI-1 revision3 unchanged; no application/build/browser checks rerun for unchanged application code. Preview remains4173. Full native/transport/guest-networking qualification remains unrun.
+**Remaining:** serial, arbitrary Lua, persistent/rotating PCAP, universal kind/corpus deployment, runtime resume/upgrade/project retirement, long-duration soak, signing/notarization and Apple Installer transaction. APT transitive dependencies are inventoried but not snapshot-pinned. Capture is one MiB/1–10 seconds/100 rows/five minutes in memory. No application-health or continuous-duration qualification claim. Historical Q results,177 denominator and TT-01 remain unchanged.
+
+**Next:** interact with the installed running lab and adjust presentation from actual usage; then qualify restart/resume, explicit project retirement and resource retention/soak. Follow D-40 and retain exact source/native identity. Do not run destructive qualification suites against this continuous user runtime. Stop lab in the GUI before the installed `runtime stop` command.
+
+## Historical baseline (scope retained; current status above supersedes it)
+
+# A34 — Live application core; installed acceptance remains incomplete
+
+**User direction:** launch a supplied YAML project, use GO for native deployment, and interact with a live lab. The installed production entry contains no topology examples or recorded graphs. Four-radio and pinned official demos are external acceptance inputs, never production constants. This supersedes historical example-bundle and endpoint-picker directives below.
+
+**Observed:** explicit source inventory, native loading, GO/Stop, container/interface enrollment, bounded node logs and application restart passed on a newly created disposable Linux runtime. The approved revision-2 bottom Logs / Serial pane is implemented. Four official demos and the unchanged eight-node four-radio project passed native declaration checks. See `artifacts/implementation/LIVE-001/RESULTS.md` (workspace-relative) for stage-specific evidence.
+
+**Partial:** the fixture-free 0.3.0-preview.1 candidate builds and external-directory doctor runs, but installed browser acceptance and fresh installed-runtime provisioning are not qualified. Capture/reanalysis/Lua and serial are disabled in this production path. Port 4173 remains occupied by the user's preview; it was not terminated. No persistent user lab has been created. The qualification VM is stopped and its synthetic lab removed.
+
+**Next:** integrate exact-link capture/reanalysis, qualify installed provisioning and image acquisition, then execute the 11 installed acceptance steps against selected official demos and full four-radio. Keep TT-01, historical Q outcomes, the 177-case denominator, native authority and no pre-existing VM access. The A33 user-rebuild hash drift is preserved explicitly in LIVE-001/baseline.json and the predecessor archive.
 
 ## Prior baseline (retained for scope and evidence)
 

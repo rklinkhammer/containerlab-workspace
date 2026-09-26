@@ -1,3 +1,31 @@
+# A35 decision update
+
+## D-40 — Installed link capture and separately owned continuous user runtime
+
+**Selected:** reuse the pinned native observer/capture/reanalysis boundaries in the fixture-free application. Resolve selected links server-side to one enrolled Linux interface; no endpoint picker or user command interface. A bounded FIFO of four pending requests serializes shared helper access. Artifacts are memory-only, one MiB, five-minute TTL, structurally validated classic Ethernet PCAP. Reanalysis preserves bytes/hash/expiry; only the reviewed checksum-pinned Lua ID is accepted. Unsupported native kinds remain unavailable.
+
+**Observed:** LIVE-002 installed synthetic and full four-radio browsers passed load, GO, logs, capture, reviewed Lua, download, reanalysis, reconnect and Stop. C042/C043 official SR Linux demos passed deployment, observation, logs and cleanup, with capture explicitly unsupported. Independent unit/fault checks cover filenames, malformed output, cancellation and changed identities. The first BUSY race and empty pre-traffic capture are preserved, not hidden. Production contains no four-radio semantics.
+
+**Selected:** qualification and continuous user use have separate fresh VMs/ownership. Stop qualification; keep the specifically authorized user runtime on. External local images use an explicit fixed image-import command, never app-bundled workflow assets. Resource profile: eight projects, 8CPU/16GiB/50GiB, Docker local logs10MiB×3, no host mounts/agent forwarding, wildcard ignored TCP/UDP forwarding. Closing the browser/app does not destroy a lab. Runtime stop requires matching recorded identity.
+
+**Tradeoffs / unresolved:** short bounded captures omit high-volume traffic past the cap; no rotating/persistent PCAP, arbitrary Lua, serial, runtime resume UI or automated project retirement. Eight project directories bound count, not all native runtime disk writes; the finite VM disk and log rotation remain operational limits. Transitive APT closure/signing/Installer diagnostics/soak remain open. No durability or application-health claim. See LIVE-002/RESULTS.md and USER_RUNTIME.md.
+
+**Recovery / reopening:** app files are separate from user configuration/state. Do not overlay a running bundled Node; extract a new release directory. No implicit source/project migration, VM adoption or same-name identity replacement. Stop the owned lab before runtime shutdown. Reopen for changed native/tool/Lua/image pins or shared/untrusted hosting. D-15 predecessor A34 is preserved with both explained evidence drifts. Historical Q statuses,177 denominator and TT-01 remain unchanged.
+
+## Prior decision record
+
+# A34 decision update
+
+## D-39 — User project, native lifecycle and live installed application
+
+**Designed:** separate app assets, original explicitly inventoried project data, private runtime state and native generated outputs. Use Containerlab APIs/CLI as authority; original files stay byte-identical. The application package contains no corpus/fixture/recorded resources. GO/Stop act on exact enrolled native identities; restart requires reconciliation. SSE supplies bounded full snapshots. Use native `CLAB_LABDIR_BASE` to keep generated lab files outside the input manifest.
+
+**Observed:** approved layout revision 2; native load/deploy/interfaces/logs/restart/Stop qualification; four official demo declaration checks; four-radio declaration check; fixture-free candidate content verification. Failed attempts and limitations are preserved in LIVE-001/RESULTS.md.
+
+**Unresolved:** installed continuous workflow, image acquisition, transitive Linux dependency closure, connected link capture/reanalysis/Lua, serial, fault/cancellation coverage and pkgbuild diagnostics. Existing backend mechanisms remain reuse candidates; their earlier experiment qualification does not automatically qualify this application boundary. Product readiness and historical Q gates are not promoted.
+
+**Alternatives:** retain fixture catalog (rejected by user); implement a new topology parser (rejected: competing authority); use native declaration loading and exact native lifecycle (chosen). Revisit this decision if supported native APIs or deployment profile changes. Candidate uses a separate app name to preserve the existing installation; removing the app does not destroy a lab.
+
 # A21 current
 
 D-26 adds the approved actual deployment boundary; historical decisions below retain their scope.
@@ -401,3 +429,13 @@ Risks: image/version-specific launch conventions, incomplete inventories, serial
 **Selected / Inferred:** do not promote the prototype into a supported appliance or GUI adapter. Retain generic_vm identity and native lifecycle authority. Next qualify a minimal ARM-aware KVM check/upstream candidate while preserving host PID visibility; AMD64/KVM is an alternative requiring separate qualification. No third-party patch was made. Image/backend inventory alone cannot pass native enrollment or enable transport. B5/Q-05 and scoped S controls remain open; historical Q scores unchanged.
 
 **Tradeoffs / recovery:** the independent fixed launcher isolates guest/firmware feasibility but omits vrnetlab interface wiring and is not a production fork. Source scripts plus base/package/firmware/guest hashes and local image ID identify the experiment; no distributed image or deterministic rebuild guarantee. Additive evidence requires no data migration; document rollback uses D-15. Reopen for native/image/firmware/QEMU/host changes. Second four-radio guest networking/application parity and xterm safety stay downstream. See A32 results, NATIVE_PLAN.md and SERIAL_PLATFORM_PROFILE.json.
+
+## D-38 — Installed user experience and durable lab before further serial investigation
+
+**User-selected direction:** build an installation package first, then demonstrate a continuous real lab with interactive GUI monitoring and iterative presentation review. A32's serial work is deferred; preserve its failures and snapshot.
+
+**Observed:** INSTALL-001 packages the existing GUI with an upstream bundled Node runtime (Homebrew Node was rejected for its external dylib dependencies), locked frontend/server dependencies and notices. User-level archive installation and an unmocked offline browser workflow pass outside the checkout. No live-system claim; `.pkg` transaction/signing and durable runtime remain unrun. No GUI layout change.
+
+**Inferred design:** separate installed application files from persistent user runtime/data; no automatic adoption of old VMs or experiment-manifest workaround. Containerlab owns deployment. Runtime/image bundles carry exact pins/context/licenses and diagnostics. The user-requested durable instance stays running until explicit stop; disposable qualification rules continue for experiments. TT-01 and identity/freshness/disclosure/resource controls remain. Scope maps to B1/B2/B4–B7 and relevant S/Q acceptance, without gate promotion.
+
+**Recovery/reopening:** current user-level install can be removed after stopping its own server; no VM/data created by INSTALL-001. Future GUI upgrade/removal must not delete a lab. Revisit for shared access, public distribution, another OS/architecture or new privileged operations. See INSTALLED_WORKFLOW.md and INSTALL-001 results.
